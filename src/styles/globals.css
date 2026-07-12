@@ -1,0 +1,225 @@
+/* ═══════════════════════════════════════════════
+   ZeeShaoor.pk — Navbar + Announcement Bar CSS
+   Kahan lagayein: src/styles/globals.css ke neeche paste karein
+   ═══════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ── NAVBAR ─────────────────────────────────── */
+
+.zs-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 3rem;
+  background: rgba(8, 11, 18, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── Logo ── */
+.zs-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.zs-logo-img {
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 18px rgba(123, 47, 247, 0.35);
+}
+
+.zs-logo-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+.zs-logo-pk {
+  color: #00c6ff;   /* .pk cyan mein */
+}
+
+/* ── Nav Links ── */
+.zs-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.zs-nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.2s ease, background 0.2s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.zs-nav-links a:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.zs-nav-links a svg {
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.zs-nav-links a:hover svg {
+  opacity: 1;
+}
+
+/* ── Buttons ── */
+.zs-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.zs-btn-login {
+  background: transparent;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 9px 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+
+.zs-btn-login:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.zs-btn-signup {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  padding: 9px 24px;
+  border-radius: 9px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00c6ff 0%, #7b2ff7 100%);
+  box-shadow: 0 4px 18px rgba(123, 47, 247, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.zs-btn-signup:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(123, 47, 247, 0.5);
+}
+
+/* ── ANNOUNCEMENT BAR ────────────────────────── */
+
+.zs-ann-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 1rem 0;
+  background: #080b12;
+}
+
+.zs-ann-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 26px 11px 16px;
+  border-radius: 100px;
+  background: rgba(0, 198, 255, 0.06);
+  border: 1px solid rgba(0, 198, 255, 0.2);
+  cursor: default;
+  transition: background 0.3s, border-color 0.3s, transform 0.25s;
+}
+
+.zs-ann-badge:hover {
+  background: rgba(0, 198, 255, 0.11);
+  border-color: rgba(0, 198, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+/* pulsing dot */
+.zs-live-dot-wrap {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zs-live-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #00e5b0;
+  box-shadow: 0 0 8px #00e5b0;
+  position: relative;
+  z-index: 2;
+}
+
+.zs-live-dot-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.5px solid #00e5b0;
+  animation: zs-pulse 1.8s ease-out infinite;
+}
+
+@keyframes zs-pulse {
+  0%   { transform: scale(0.4); opacity: 0.8; }
+  100% { transform: scale(1.7); opacity: 0; }
+}
+
+/* LIVE pill */
+.zs-live-pill {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #00e5b0;
+  background: rgba(0, 229, 176, 0.12);
+  padding: 3px 9px;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* main text */
+.zs-ann-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+}
+
+.zs-ann-text em {
+  font-style: normal;
+  color: #00c6ff;
+}
+
+.zs-ann-arrow {
+  font-size: 14px;
+  color: rgba(0, 198, 255, 0.55);
+}

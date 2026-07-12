@@ -9,15 +9,29 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "chart.js": "^4.5.1",
+    "framer-motion": "^12.42.2",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^1.24.0",
     "mongoose": "^9.6.3",
     "next": "16.2.6",
     "next-auth": "^4.24.14",
+    "papaparse": "^5.5.4",
+    "puppeteer-core": "^25.3.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "19.2.4",
+    "react-qr-code": "^2.2.0",
+    "recharts": "^3.9.2",
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^16.2.10",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/papaparse": "^5.5.2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
