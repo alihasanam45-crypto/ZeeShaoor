@@ -1,4 +1,4 @@
-// ZeeShaoor.Pk — Short Question Generation Engine
+// ZeeShaoor.pk — Short Question Generation Engine
 // Every SQ = 2 marks (BISE Punjab standard)
 
 export type SloTag = 'Knowledge' | 'Comprehension' | 'Application';

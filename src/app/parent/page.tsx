@@ -53,7 +53,7 @@ export default function GuardianPortal() {
             <div style={{ background: 'linear-gradient(180deg, #18181B, #09090B)', border: '1px solid rgba(0, 240, 255, 0.2)', borderRadius: '16px', padding: '32px', position: 'relative', overflow: 'hidden' }}>
               <div style={{ position: 'absolute', top: 0, left: 0, width: '4px', height: '100%', background: 'linear-gradient(180deg, #00f0ff, #a855f7)' }}></div>
               <h3 style={{ fontSize: '18px', margin: '0 0 8px 0', color: '#FAFAFA', fontWeight: '700' }}>AI Cognitive Trajectory Predictor</h3>
-              <p style={{ color: '#A1A1AA', fontSize: '14px', marginBottom: '24px' }}>ZeeShaoor.Pk neural engine's projection for upcoming Board Exams based on current data.</p>
+              <p style={{ color: '#A1A1AA', fontSize: '14px', marginBottom: '24px' }}>ZeeShaoor.pk neural engine's projection for upcoming Board Exams based on current data.</p>
               
               <div style={{ background: '#000', borderRadius: '12px', padding: '24px', border: '1px solid rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <div>

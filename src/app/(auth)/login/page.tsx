@@ -156,8 +156,8 @@ export default function LoginPage() {
             <>
               {/* Logo small top */}
               <div className="flex items-center gap-2 mb-6">
-                <Image src="/logo.png" alt="ZeeShaoor" width={32} height={32} className="rounded-lg"/>
-                <span className="text-sm font-black"><span className="text-cyan-400">ZeeShaoor</span><span className="text-white">.Pk</span></span>
+                <Image src="/logo.png" alt="ZeeShaoor.pk" width={32} height={32} className="rounded-lg"/>
+                <span className="text-sm font-black"><span className="text-cyan-400">ZeeShaoor</span><span className="text-white">.pk</span></span>
               </div>
               <ForgotPassword onBack={() => setForgotPw(false)}/>
             </>
@@ -168,13 +168,13 @@ export default function LoginPage() {
                 <div className="relative">
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-violet-600/20 blur-xl"/>
                   <div className="relative h-16 w-16 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
-                    <Image src="/logo.png" alt="ZeeShaoor" width={64} height={64} className="object-contain" priority/>
+                    <Image src="/logo.png" alt="ZeeShaoor.pk" width={64} height={64} className="object-contain" priority/>
                   </div>
                 </div>
                 <div>
                   <div className="text-2xl font-black tracking-tight">
                     <span className="text-cyan-400">ZeeShaoor</span>
-                    <span className="text-white">.Pk</span>
+                    <span className="text-white">.pk</span>
                   </div>
                   <h1 className="mt-1 text-lg font-bold text-white">Welcome Back</h1>
                   <p className="text-sm text-slate-500">Sign in to your portal</p>

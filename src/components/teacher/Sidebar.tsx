@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import type { ElementType } from 'react'
 import {
@@ -72,11 +73,16 @@ export default function TeacherSidebar() {
   return (
     <aside className="z-50 flex h-full w-72 shrink-0 flex-col border-r border-slate-200 bg-white">
       <div className="flex h-16 shrink-0 items-center gap-3 border-b border-slate-100 px-6">
-        <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 shadow-lg shadow-indigo-500/20">
-          <GraduationCap className="h-5 w-5 text-white" />
-        </div>
+        <Image
+          src="/logo.png"
+          alt="ZeeShaoor.pk"
+          width={36}
+          height={36}
+          priority
+          className="rounded-xl shadow-lg shadow-indigo-500/20"
+        />
         <div>
-          <h1 className="text-sm font-bold tracking-tight text-slate-900">ZeeShaoor</h1>
+          <h1 className="text-sm font-bold tracking-tight text-slate-900">ZeeShaoor.pk</h1>
           <p className="text-[10px] font-medium uppercase tracking-wider text-slate-400">Teacher Portal</p>
         </div>
       </div>

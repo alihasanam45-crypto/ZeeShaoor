@@ -35,7 +35,7 @@ export function useFreemium(initialStatus: boolean = false) {
             Access Restricted
           </h2>
           <p style={{ color: '#A1A1AA', fontSize: '15px', lineHeight: '1.6', marginBottom: '24px' }}>
-            The neural pathway to <strong style={{ color: '#ff2a7a', textTransform: 'uppercase', letterSpacing: '1px' }}>{attemptedFeature}</strong> requires an elevated clearance level. Upgrade your workspace to unlock unrestricted architectural power across ZeeShaoor.Pk.
+            The neural pathway to <strong style={{ color: '#ff2a7a', textTransform: 'uppercase', letterSpacing: '1px' }}>{attemptedFeature}</strong> requires an elevated clearance level. Upgrade your workspace to unlock unrestricted architectural power across ZeeShaoor.pk.
           </p>
           
           <div style={{ display: 'flex', gap: '12px', justifyContent: 'center' }}>

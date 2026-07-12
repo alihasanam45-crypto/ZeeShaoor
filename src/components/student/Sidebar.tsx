@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import {
   LayoutDashboard, TrendingUp, Flame, BookOpen, Video, Clock,
@@ -100,12 +101,17 @@ export default function Sidebar({ focusMode, onToggleFocus }: SidebarProps) {
         }`}
       >
         <Link href="/student/dashboard" className="flex items-center gap-3">
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 text-sm font-black text-white shadow-md shadow-indigo-500/25">
-            Z
-          </span>
+          <Image
+            src="/logo.png"
+            alt="ZeeShaoor.pk"
+            width={36}
+            height={36}
+            priority
+            className="shrink-0 rounded-2xl shadow-md shadow-indigo-500/25"
+          />
           {!focusMode && (
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-lg font-black tracking-tight text-transparent">
-              ZeeShaoor
+              ZeeShaoor.pk
             </span>
           )}
         </Link>

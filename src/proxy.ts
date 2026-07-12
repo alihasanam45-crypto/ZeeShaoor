@@ -7,12 +7,16 @@ import { validateTeacherPath } from '@/middleware/teacherAuth'
 // Next 16 renamed the `middleware` file convention to `proxy` (middleware.ts
 // is deprecated). Same engine: runs before every matched request.
 //
-// RBAC contract:
+// RBAC contract (strict per-role portal isolation):
 // - /admin/*   → role 'admin' only
 // - /teacher/* → role 'teacher' only (plus per-subject path validation)
 // - /student/* → role 'student' only
-// - admin carries superAccess and passes every gate (PDF B1: "the Admin sees
-//   everything") — the one sanctioned cross-role passage
+// - Every role is confined to its OWN page area. A role hitting another
+//   portal's pages is redirected to its own dashboard — including admin, which
+//   stays within /admin/* (no cross-portal page passage).
+// - Admin retains superAccess on API routes only (data oversight): the admin
+//   dashboards read cross-cutting /api/* data, and /api/admin/* is not covered
+//   by the '/admin' page prefix, so the API passthrough is required.
 // - unauthenticated page requests → /login (with callbackUrl)
 // - unauthenticated/foreign-role API requests → 401/403 JSON, never a redirect
 // - authenticated users on `/` → their role dashboard
@@ -82,16 +86,14 @@ export async function proxy(request: NextRequest) {
   }
 
   // --------- Page routes ----------------------------------------------------------------------------------------
-  if (token?.role === 'admin') {
-    return attachHeaders(NextResponse.next(), token)
-  }
-
   if (!token) {
     const loginUrl = new URL('/login', request.url)
     loginUrl.searchParams.set('callbackUrl', pathname)
     return NextResponse.redirect(loginUrl)
   }
 
+  // Every role — admin included — is confined to its own portal for page
+  // navigation. Foreign-portal page requests bounce to the role's own home.
   if (!isRoleOwnPath(token.role, pathname)) {
     return NextResponse.redirect(new URL(getHomeForRole(token.role), request.url))
   }

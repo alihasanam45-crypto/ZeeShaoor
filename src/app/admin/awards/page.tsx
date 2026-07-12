@@ -341,7 +341,7 @@ export default function AwardsPage() {
                 </svg>
               </div>
               <div>
-                <p className="text-[11px] text-slate-500 font-medium tracking-widest uppercase">ZeeShaoor.Pk — Admin</p>
+                <p className="text-[11px] text-slate-500 font-medium tracking-widest uppercase">ZeeShaoor.pk — Admin</p>
                 <h1 className="text-2xl font-bold text-white tracking-tight">Scholarship & Award Engine</h1>
               </div>
             </div>

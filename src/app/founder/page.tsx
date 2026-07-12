@@ -24,7 +24,7 @@ export default function FounderProfile() {
           </p>
           
           <p style={{ color: '#A1A1AA', fontSize: '18px', lineHeight: '2', maxWidth: '850px', margin: '0 auto 40px auto' }}>
-            At ZeeShaoor.Pk, our vision is <strong style={{ color: '#FAFAFA', fontWeight: '700' }}>strictly grounded in reality and precision</strong>. We have built a flawless, automated system that takes the burden of paper generation off your shoulders. We demand <strong style={{ color: '#00f0ff', fontWeight: '700' }}>100% accuracy</strong> in our technology, so you can deliver excellence in your classrooms.
+            At ZeeShaoor.pk, our vision is <strong style={{ color: '#FAFAFA', fontWeight: '700' }}>strictly grounded in reality and precision</strong>. We have built a flawless, automated system that takes the burden of paper generation off your shoulders. We demand <strong style={{ color: '#00f0ff', fontWeight: '700' }}>100% accuracy</strong> in our technology, so you can deliver excellence in your classrooms.
           </p>
 
           <p style={{ color: '#E4E4E7', fontSize: '20px', lineHeight: '1.8', maxWidth: '850px', margin: '0 auto 48px auto', fontWeight: '500' }}>
@@ -54,7 +54,7 @@ export default function FounderProfile() {
             Meet the <span style={{ color: '#00f0ff' }}>Founder</span>
           </h2>
           <p style={{ color: '#A1A1AA', fontSize: '15px' }}>
-            The academic excellence and technical innovation behind ZeeShaoor.Pk, designed to transform assessment creation.
+            The academic excellence and technical innovation behind ZeeShaoor.pk, designed to transform assessment creation.
           </p>
         </div>
 
@@ -88,11 +88,11 @@ export default function FounderProfile() {
                 ALI HASAN
               </h3>
               <p style={{ color: '#00f0ff', fontSize: '16px', fontWeight: '700', margin: '0 0 24px 0', letterSpacing: '0.5px' }}>
-                Lead Educator, ZeeShaoor.Pk
+                Lead Educator, ZeeShaoor.pk
               </p>
               
               <p style={{ color: '#E4E4E7', fontSize: '16px', lineHeight: '1.8', marginBottom: '40px', fontWeight: '400' }}>
-                Ali Hasan is a passionate educator and systems architect dedicated to revolutionizing Pakistan's academic landscape. By fusing cutting-edge software engineering with standard board curricula, he created ZeeShaoor.Pk to empower institutions, teachers, and students with high-fidelity resources and rapid exam generation tools.
+                Ali Hasan is a passionate educator and systems architect dedicated to revolutionizing Pakistan's academic landscape. By fusing cutting-edge software engineering with standard board curricula, he created ZeeShaoor.pk to empower institutions, teachers, and students with high-fidelity resources and rapid exam generation tools.
               </p>
 
               {/* Z Support Helpdesk Area */}

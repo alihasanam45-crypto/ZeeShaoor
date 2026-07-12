@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "ZeeShaoor.Pk",
+  title: "ZeeShaoor.pk",
   description: "Pakistan's No. 1 Educational Software and Paper Generator.",
 };
 

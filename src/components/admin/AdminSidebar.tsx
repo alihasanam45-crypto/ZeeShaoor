@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { Shield } from 'lucide-react'
+import Image from 'next/image'
 import { ADMIN_NAV } from './nav'
 
 export default function AdminSidebar() {
@@ -11,11 +11,16 @@ export default function AdminSidebar() {
   return (
     <aside className="flex h-full w-72 shrink-0 flex-col border-r border-slate-800 bg-slate-900/80 backdrop-blur-xl">
       <div className="flex h-16 shrink-0 items-center gap-3 border-b border-slate-800 px-6">
-        <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-500 shadow-lg shadow-indigo-500/25">
-          <Shield className="h-5 w-5 text-white" />
-        </div>
+        <Image
+          src="/logo.png"
+          alt="ZeeShaoor.pk"
+          width={36}
+          height={36}
+          priority
+          className="rounded-xl shadow-lg shadow-indigo-500/25"
+        />
         <div>
-          <h1 className="text-sm font-bold tracking-tight text-white">ZeeShaoor</h1>
+          <h1 className="text-sm font-bold tracking-tight text-white">ZeeShaoor.pk</h1>
           <p className="text-[10px] font-medium uppercase tracking-wider text-slate-500">God Mode Console</p>
         </div>
       </div>

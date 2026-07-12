@@ -899,9 +899,9 @@ export default function GeneratorPage() {
         display:"flex", flexDirection:"column", overflow:"hidden",
       }}>
         <div style={{ display:"flex", alignItems:"center", gap:10, padding:"18px 16px 15px", background:"#0a0a14", flexShrink:0 }}>
-          <img src="/logo.png" alt="ZeeShaoor.Pk" style={{ width:36, height:36, objectFit:"contain", flexShrink:0 }}/>
+          <img src="/logo.png" alt="ZeeShaoor.pk" style={{ width:36, height:36, objectFit:"contain", flexShrink:0 }}/>
           <div style={{ minWidth:0 }}>
-            <div style={{ fontSize:15, fontWeight:700, color:"#FFFFFF", whiteSpace:"nowrap" }}>ZeeShaoor.Pk</div>
+            <div style={{ fontSize:15, fontWeight:700, color:"#FFFFFF", whiteSpace:"nowrap" }}>ZeeShaoor.pk</div>
             <div style={{ fontSize:11, color:"rgba(255,255,255,0.6)" }}>Paper Generator</div>
           </div>
         </div>

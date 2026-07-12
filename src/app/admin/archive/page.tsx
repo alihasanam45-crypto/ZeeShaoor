@@ -84,7 +84,7 @@ export default function ArchivePage() {
                 </svg>
               </div>
               <div>
-                <p className="text-[11px] text-slate-500 font-medium tracking-widest uppercase">ZeeShaoor.Pk — Admin</p>
+                <p className="text-[11px] text-slate-500 font-medium tracking-widest uppercase">ZeeShaoor.pk — Admin</p>
                 <h1 className="text-2xl font-bold text-white tracking-tight">Legacy Data Archiver</h1>
               </div>
             </div>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth/options'
+import { ROUTE_CONFIG } from '@/config/routes'
 import { getStudentDashboardMetrics } from '@/actions/student-dashboard-actions'
 import BrainMeter from '@/components/student/BrainMeter'
 import StreakCounter from '@/components/student/StreakCounter'
@@ -98,8 +99,9 @@ function EmptyHint({ title, hint }: { title: string; hint: string }) {
 export default async function StudentDashboard() {
   const session = await getServerSession(authOptions)
   if (!session?.user) redirect('/login')
-  // non-students (e.g. an admin browsing) go back to their own portal via the proxy
-  if (session.user.role !== 'student') redirect('/')
+  // Defense-in-depth behind the proxy: send a wrong-role visitor to their own
+  // dashboard, never to '/' (which would bounce back through the root redirect).
+  if (session.user.role !== 'student') redirect(ROUTE_CONFIG.redirectAfterLogin[session.user.role])
 
   const data = await getStudentDashboardMetrics()
   const { metrics } = data

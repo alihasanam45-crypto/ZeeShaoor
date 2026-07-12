@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
-//  ZeeShaoor.Pk — Navbar Component
+//  ZeeShaoor.pk — Navbar Component
 //  Kahan lagayein: src/components/Navbar.tsx
 //  Phir page.tsx mein import karein:
 //    import Navbar from '@/components/Navbar'
@@ -24,7 +24,7 @@ export default function Navbar() {
             priority
           />
           <span className="zs-logo-name">
-            ZeeShaoor<span className="zs-logo-Pk">.Pk</span>
+            ZeeShaoor<span className="zs-logo-Pk">.pk</span>
           </span>
         </a>
 

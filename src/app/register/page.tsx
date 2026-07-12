@@ -63,7 +63,7 @@ export default function RegisterPage() {
             <div className="brand-header-wrapper">
               {/* Yahan aap ka logo public folder se load hoga */}
               <img src="/logo.png" alt="ZeeShaoor Logo" className="custom-logo-img" />
-              <h1 className="brand-title">ZeeShaoor.Pk</h1>
+              <h1 className="brand-title">ZeeShaoor.pk</h1>
             </div>
 
             <div className="header-text">
