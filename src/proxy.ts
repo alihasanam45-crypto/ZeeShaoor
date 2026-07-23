@@ -6,8 +6,17 @@ import { validateTeacherPath } from '@/middleware/teacherAuth'
 
 const VALID_ROLES: UserRole[] = ['admin', 'teacher', 'student']
 
+// Roles permitted on the /api/admin/* surface. Staff only — students never
+// reach it. Route handlers re-check the session themselves; this is the outer
+// gate, not the only one.
+const ADMIN_API_ROLES: readonly UserRole[] = ['admin', 'teacher']
+
 function isValidRole(role: string): role is UserRole {
   return (VALID_ROLES as readonly string[]).includes(role)
+}
+
+function isAdminApiPath(pathname: string): boolean {
+  return pathname === '/api/admin' || pathname.startsWith('/api/admin/')
 }
 
 function isPublicRoute(pathname: string): boolean {
@@ -59,10 +68,22 @@ export async function proxy(request: NextRequest) {
     secret: process.env.NEXTAUTH_SECRET,
   })) as ZeeTokenPayload | null
 
-  // --------- API routes: role-prefix check doesn't apply (paths are /api/*, not /teacher/api/*) -------------------
+  // --------- API routes: NEVER redirect (breaks client fetch CORS) -----------------------------------------------
+  // The generic per-role prefix check doesn't apply here: API paths are
+  // /api/*, not /teacher/api/*, so ROUTE_CONFIG's page prefixes never match.
+  // Sensitive API surfaces are gated explicitly instead.
   if (pathname.startsWith('/api/')) {
     if (!token) {
       return NextResponse.json({ error: 'Unauthorized', message: 'Login required.' }, { status: 401 })
+    }
+    if (!token.role || !isValidRole(token.role)) {
+      return NextResponse.json({ error: 'Forbidden', message: 'Unrecognized role.' }, { status: 403 })
+    }
+    if (isAdminApiPath(pathname) && !ADMIN_API_ROLES.includes(token.role)) {
+      return NextResponse.json(
+        { error: 'Forbidden', message: 'Staff access required.' },
+        { status: 403 },
+      )
     }
     return attachHeaders(NextResponse.next(), token)
   }

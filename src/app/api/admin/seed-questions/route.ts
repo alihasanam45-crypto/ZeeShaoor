@@ -1,10 +1,23 @@
 import { NextResponse } from 'next/server'
+import { getServerSession } from 'next-auth'
 import fs from 'fs'
 import path from 'path'
 import Papa from 'papaparse'
+import { authOptions } from '@/lib/auth/options'
 import { connectDB } from '@/lib/mongodb'
 import Question from '@/models/Question'
 import type { IQuestion } from '@/models/Question'
+import type { UserRole } from '@/types/auth'
+
+// Seeding walks the whole data/ tree and writes to the shared question bank —
+// staff only. Defence in depth: proxy.ts already gates /api/admin/*, but this
+// handler must stand on its own in case the matcher or ROUTE_CONFIG changes.
+//
+// authOptions MUST be passed to getServerSession — the session callback that
+// copies `role` onto session.user only runs when the options are supplied.
+// Calling it bare yields a session with no role, and this check would then
+// reject everyone.
+const ALLOWED_ROLES: readonly UserRole[] = ['admin', 'teacher']
 
 const DATA_ROOT = path.join(process.cwd(), 'data')
 
@@ -146,7 +159,17 @@ function normalizeHeaders(parsed: Papa.ParseResult<Record<string, string>>): voi
 
 export async function GET() {
   const startTime = Date.now()
-  console.log('=== SEED: Started ===')
+
+  const session = await getServerSession(authOptions)
+  if (!session?.user) {
+    return NextResponse.json({ success: false, message: 'Unauthorized' }, { status: 401 })
+  }
+  if (!ALLOWED_ROLES.includes(session.user.role)) {
+    console.warn(`SEED: Rejected seed attempt by ${session.user.email} (role: ${session.user.role})`)
+    return NextResponse.json({ success: false, message: 'Forbidden' }, { status: 403 })
+  }
+
+  console.log(`=== SEED: Started by ${session.user.email} (${session.user.role}) ===`)
 
   try {
     await connectDB()
