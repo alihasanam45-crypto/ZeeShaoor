@@ -160,7 +160,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ success: false, message: 'Class aur Subject zaruri hain.' }, { status: 400 })
     }
 
-    const cleanClass = String(resolvedClass).replace(/th|st|nd|rd/gi, '')
+    const cleanClass = String(resolvedClass).replace(/^(Class\s*)/i, '').replace(/th|st|nd|rd/gi, '').trim()
     const subjectKey = resolvedSubject.toLowerCase().includes('physics')   ? 'physics'
                      : resolvedSubject.toLowerCase().includes('chemistry') ? 'chemistry'
                      : resolvedSubject.toLowerCase().includes('biology')   ? 'biology'
@@ -168,9 +168,10 @@ export async function POST(req: Request) {
 
     const baseQuery: Record<string, any> = { classLevel: cleanClass, subject: resolvedSubject }
 
-    if (chapter && chapter !== 'mixed') {
+    if (chapter && chapter !== 'mixed' && chapter !== 'mix') {
       const chMap = CHAPTER_MAP[subjectKey] || CHAPTER_MAP.default
-      baseQuery.chapter = chMap[String(chapter)] || chapter
+      const cleanChapter = String(chapter).replace(/^ch\s*/i, '').trim()
+      baseQuery.chapter = chMap[cleanChapter] || cleanChapter
     }
 
     let mCount = 0, sCount = 0, lCount = 0

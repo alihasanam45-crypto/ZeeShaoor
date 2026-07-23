@@ -28,8 +28,16 @@ import {
   ListChecks,
   ChevronUp,
   ChevronRight,
+  ScrollText,
+  Gauge,
+  BrainCircuit,
+  Sun,
+  Moon,
+  Trash2,
 } from "lucide-react";
-import { ninthPhysicsChapters, Topic } from "@/data/ninthPhysicsChapters";
+import { AnimatePresence, motion } from "framer-motion";
+import { ninthPhysicsChapters, type Topic, type Chapter } from "@/data/ninthPhysicsChapters";
+import TopicSelectionModal from '@/components/teacher/TopicSelectionModal';
 import {
   SQ_PRESETS as SQ_ENGINE_PRESETS,
   SQ_MODE_ORDER,
@@ -50,24 +58,12 @@ import {
   type LqSectionDef,
 } from "@/lib/lq-engine";
 
-const P = {
-  bg: "#F7F8FA",
-  bgPanel: "#FFFFFF",
-  bgElevated: "#F1F3F6",
-  bgHover: "rgba(15,23,42,0.04)",
-  border: "rgba(15,23,42,0.08)",
-  borderStrong: "rgba(15,23,42,0.16)",
-  borderActive: "rgba(37,99,235,0.45)",
-  steel: "#64748B",
-  blue: "#2563EB",
-  purple: "#7C3AED",
-  gradient: "linear-gradient(135deg,#2563EB,#7C3AED)",
-  text: "#1F2937",
-  textMuted: "#374151",
-  textDim: "rgba(31,41,55,0.72)",
-  success: "#059669",
-  danger: "#DC2626",
-};
+// ---------------------------------------------------------------------------------------------------------------------------------------
+// GLOBAL THEME — palettes + theme state now live in @/components/theme/ThemeProvider
+// (mounted in the teacher layout.tsx), so the ENTIRE portal — outer TeacherSidebar,
+// layout shell, and this page — switches together. This page only consumes it.
+// ---------------------------------------------------------------------------------------------------------------------------------------
+import { useGlobalTheme, usePalette as useP, type Palette } from "@/components/theme/ThemeProvider";
 
 const CLASS_SUBJECTS: Record<string, string[]> = {
   "Class 5": ["Maths","English","Urdu","Science","Islamiat","S.Studies"],
@@ -182,6 +178,7 @@ interface LiveConfig {
 
 interface Particle { id:number; x:number; y:number; angle:number; color:string }
 function useParticles() {
+  const P = useP();
   const [particles, setParticles] = useState<Particle[]>([]);
   const burst = useCallback((e: React.MouseEvent<HTMLElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -193,11 +190,12 @@ function useParticles() {
     }));
     setParticles(ps);
     setTimeout(() => setParticles([]), 700);
-  }, []);
+  }, [P]);
   return { particles, burst };
 }
 
 function FlipNum({ value }: { value: number }) {
+  const P = useP();
   const [display, setDisplay] = useState(value);
   const [flip, setFlip] = useState(false);
   useEffect(() => {
@@ -216,6 +214,7 @@ function FlipNum({ value }: { value: number }) {
 }
 
 function Toast({ msg, onDone }: { msg:string; onDone:()=>void }) {
+  const P = useP();
   useEffect(() => { const t = setTimeout(onDone, 2800); return ()=>clearTimeout(t); }, [onDone]);
   return (
     <div style={{
@@ -229,6 +228,7 @@ function Toast({ msg, onDone }: { msg:string; onDone:()=>void }) {
 
 function Stepper({ value, onChange, min=0, max=100, compact }:
   { value:number; onChange:(v:number)=>void; min?:number; max?:number; compact?:boolean }) {
+  const P = useP();
   const s = compact ? { w:24, h:24, font:14, minW:22, gap:4 } : { w:32, h:32, font:18, minW:30, gap:6 };
   return (
     <div style={{ display:"flex", alignItems:"center", gap:s.gap }}>
@@ -253,6 +253,7 @@ interface OptionBoxProps {
   wide?: boolean;
 }
 function OptionBox({ label, sub, selected, onClick, wide }: OptionBoxProps) {
+  const P = useP();
   const [hover, setHover] = useState(false);
   return (
     <div role="button" tabIndex={0}
@@ -267,19 +268,19 @@ function OptionBox({ label, sub, selected, onClick, wide }: OptionBoxProps) {
         padding: wide ? "10px 18px" : "9px 12px",
         minWidth: wide ? 120 : 78,
         borderRadius:12,
-        border:`1.5px solid ${selected ? 'rgba(99,102,241,0.5)' : (hover ? 'rgba(148,163,184,0.4)' : 'rgba(148,163,184,0.2)')}`,
+        border:`1.5px solid ${selected ? 'rgba(129,140,248,0.6)' : (hover ? 'rgba(148,163,184,0.35)' : 'rgba(148,163,184,0.16)')}`,
         background: selected
-          ? "linear-gradient(135deg, rgba(238,242,255,0.9), rgba(255,255,255,0.8))"
-          : (hover ? "rgba(248,250,252,0.9)" : "rgba(255,255,255,0.5)"),
+          ? "linear-gradient(135deg, rgba(99,102,241,0.22), rgba(168,85,247,0.14))"
+          : (hover ? P.bgHover : P.glassFaint),
         transition:"all 0.25s ease",
         transform: hover && !selected ? "translateY(-1px)" : "none",
         boxShadow: selected
-          ? "0 4px 12px rgba(99,102,241,0.12), 0 0 0 1px rgba(99,102,241,0.15)"
-          : (hover ? "0 4px 12px rgba(0,0,0,0.06)" : "0 1px 2px rgba(0,0,0,0.03)"),
+          ? "0 4px 16px rgba(99,102,241,0.25), 0 0 0 1px rgba(129,140,248,0.3)"
+          : (hover ? "0 4px 12px rgba(0,0,0,0.3)" : "none"),
       }}>
       <span style={{
         fontSize:14, fontWeight: selected ? 700 : 500,
-        color: selected ? '#1e293b' : (hover ? '#1e293b' : P.textMuted),
+        color: selected ? '#F1F5F9' : (hover ? P.text : P.textMuted),
       }}>{label}</span>
       {sub && <span style={{ fontSize:11, color:P.textDim, fontWeight:500 }}>{sub}</span>}
       {selected && (
@@ -294,6 +295,7 @@ function OptionBox({ label, sub, selected, onClick, wide }: OptionBoxProps) {
 }
 
 function TopicChip({ label, selected, onClick }: { label:string; selected:boolean; onClick:()=>void }) {
+  const P = useP();
   return (
     <button onClick={onClick} style={{
       textAlign:"left", padding:"4px 8px", borderRadius:5,
@@ -322,19 +324,22 @@ interface SelectCardProps {
   onSelect: (key:string) => void;
 }
 function SelectCard({ icon, label, value, disabled, options, onSelect, compact }: SelectCardProps & { compact?: boolean }) {
+  const P = useP();
   const [open, setOpen] = useState(false);
 
   if (compact && value) {
     return (
-      <button onClick={() => setOpen(o=>!o)} style={{
-        position:"relative", width:"100%", display:"flex", alignItems:"center", gap:8,
-        padding:"8px 12px", borderRadius:9, border:`1px solid ${P.border}`,
-        background:P.bgElevated, cursor:"pointer", textAlign:"left",
-      }}>
-        <span style={{ color:P.steel, display:"flex", flexShrink:0 }}>{icon}</span>
-        <span style={{ fontSize:10, color:P.textDim, flexShrink:0 }}>{label}:</span>
-        <span style={{ fontSize:13, fontWeight:600, color:P.text, flex:1, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{value}</span>
-        <ChevronDown size={13} color={P.textMuted} style={{ flexShrink:0 }}/>
+      <div style={{ position:"relative", width:"100%" }}>
+        <button onClick={() => setOpen(o=>!o)} style={{
+          width:"100%", display:"flex", alignItems:"center", gap:8,
+          padding:"8px 12px", borderRadius:9, border:`1px solid ${P.border}`,
+          background:P.bgElevated, cursor:"pointer", textAlign:"left",
+        }}>
+          <span style={{ color:P.steel, display:"flex", flexShrink:0 }}>{icon}</span>
+          <span style={{ fontSize:10, color:P.textDim, flexShrink:0 }}>{label}:</span>
+          <span style={{ fontSize:13, fontWeight:600, color:P.text, flex:1, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{value}</span>
+          <ChevronDown size={13} color={P.textMuted} style={{ flexShrink:0 }}/>
+        </button>
         {open && (
           <div onClick={e=>e.stopPropagation()} style={{
             position:"absolute", top:"calc(100% + 4px)", left:0, right:0, zIndex:30,
@@ -351,7 +356,7 @@ function SelectCard({ icon, label, value, disabled, options, onSelect, compact }
             ))}
           </div>
         )}
-      </button>
+      </div>
     );
   }
 
@@ -421,6 +426,7 @@ interface GridModalProps {
   onApply: () => void;
 }
 function GridModal({ open, onClose, selectedClass, selectedSubject, selectedChapter, onClassChange, onSubjectChange, onChapterChange, onApply }: GridModalProps) {
+  const P = useP();
   const [step, setStep] = useState<"class"|"subject"|"chapter">("class");
   const { particles, burst } = useParticles();
   const subjects = selectedClass ? CLASS_SUBJECTS[selectedClass] || [] : [];
@@ -448,7 +454,7 @@ function GridModal({ open, onClose, selectedClass, selectedSubject, selectedChap
   return (
     <>
       <div onClick={onClose} style={{
-        position:"fixed", inset:0, zIndex:40, background:"rgba(6,6,12,0.7)",
+        position:"fixed", inset:0, zIndex:40, background:P.scrim,
         backdropFilter: open ? "blur(6px)" : "none",
         opacity: open ? 1 : 0, pointerEvents: open ? "auto" : "none", transition:"opacity 0.25s",
       }}/>
@@ -578,6 +584,7 @@ function GridModal({ open, onClose, selectedClass, selectedSubject, selectedChap
 
 function ModeTabs<T extends string>({ order, labels, active, onChange }:
   { order: readonly T[]; labels: Record<T,string>; active: T; onChange:(m:T)=>void }) {
+  const P = useP();
   return (
     <div style={{ display:"flex", gap:4, flexWrap:"wrap" }}>
       {order.map(m => (
@@ -616,10 +623,13 @@ interface AccordionRowProps {
   open: boolean; onToggle: () => void; children: React.ReactNode;
 }
 function AccordionRow({ icon, label, summary, open, onToggle, children }: AccordionRowProps) {
+  const P = useP();
   return (
     <div style={{
       border:`1.5px solid ${open ? P.borderActive : P.border}`, borderRadius:12,
-      background: open ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.7)",
+      background: open ? P.bgHover : P.glassFaint,
+      backdropFilter:"blur(8px)", WebkitBackdropFilter:"blur(8px)",
+      boxShadow: open ? "0 8px 30px rgba(99,102,241,0.10)" : "none",
       overflow:"hidden", transition:"all 0.15s",
     }}>
       <div onClick={onToggle} style={{
@@ -646,6 +656,296 @@ function AccordionRow({ icon, label, summary, open, onToggle, children }: Accord
   );
 }
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
+// Live Paper Blueprint — real-time visual skeleton of the paper the current
+// configuration will produce (section headers, mark distribution) plus the
+// Neural Cognitive Meter (difficulty + SLO balance from sqBalance).
+// ---------------------------------------------------------------------------------------------------------------------------------------
+type BlueprintKind = "mcq" | "sq" | "lq";
+interface BlueprintSection {
+  key: string;
+  roman: string;
+  title: string;
+  detail: string;
+  marks: number;
+  kind: BlueprintKind;
+}
+const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
+const KIND_META: Record<BlueprintKind, { label: string; color: string; tint: string }> = {
+  mcq: { label: "MCQ", color: "#818CF8", tint: "rgba(129,140,248,0.14)" },
+  sq: { label: "SQ", color: "#C084FC", tint: "rgba(192,132,252,0.14)" },
+  lq: { label: "LQ", color: "#FB7185", tint: "rgba(251,113,133,0.14)" },
+};
+
+interface CognitiveBalance {
+  easy: number; medium: number; hard: number;
+  knowledge: number; comprehension: number; application: number;
+  theory: number; numerical: number;
+}
+// Round three raw weights to integer percentages that always sum to 100.
+function pct3(a: number, b: number, c: number): [number, number, number] {
+  const t = a + b + c || 1;
+  const x = Math.round((a / t) * 100);
+  const y = Math.round((b / t) * 100);
+  return [x, y, Math.max(0, 100 - x - y)];
+}
+function pct2(a: number, b: number): [number, number] {
+  const t = a + b || 1;
+  const x = Math.round((a / t) * 100);
+  return [x, 100 - x];
+}
+// Which subjects lean numerical vs. theory — drives the Question-Type meter.
+const NUMERIC_BIAS: Record<string, number> = {
+  Physics: 0.45, Maths: 0.55, Chemistry: 0.4, Computer: 0.3, Economics: 0.28,
+};
+// Derive the Neural Cognitive Meter from the live paper composition so the bars
+// move as the teacher changes counts/patterns. MCQs skew easy + knowledge, SQs
+// mid + comprehension, LQs hard + application; theory/numerical follows subject.
+function deriveCognitiveBalance(
+  blueprint: BlueprintSection[], subject: string, diagrams: boolean,
+): CognitiveBalance {
+  const km = { mcq: 0, sq: 0, lq: 0 };
+  blueprint.forEach((s) => { km[s.kind] += s.marks; });
+  const totMarks = km.mcq + km.sq + km.lq;
+  const [m, s, l] = totMarks === 0
+    ? [1 / 3, 1 / 3, 1 / 3]
+    : [km.mcq / totMarks, km.sq / totMarks, km.lq / totMarks];
+
+  const [easy, medium, hard] = pct3(
+    m * 0.60 + s * 0.20 + l * 0.10,
+    m * 0.30 + s * 0.55 + l * 0.35,
+    m * 0.10 + s * 0.25 + l * 0.55,
+  );
+  const [knowledge, comprehension, application] = pct3(
+    m * 0.55 + s * 0.30 + l * 0.15,
+    m * 0.30 + s * 0.45 + l * 0.35,
+    m * 0.15 + s * 0.25 + l * 0.50,
+  );
+  const numW = Math.min(0.8, (NUMERIC_BIAS[subject] ?? 0.12) + l * 0.10 + (diagrams ? 0.08 : 0));
+  const [theory, numerical] = pct2(1 - numW, numW);
+
+  return { easy, medium, hard, knowledge, comprehension, application, theory, numerical };
+}
+
+function MeterBar({ title, icon, segments }: {
+  title: string;
+  icon: React.ReactNode;
+  segments: { label: string; value: number; color: string }[];
+}) {
+  const P = useP();
+  const total = segments.reduce((s, x) => s + x.value, 0) || 1;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+        <span style={{ color: P.steel, display: "flex" }}>{icon}</span>
+        <span style={{ fontSize: 11, fontWeight: 700, color: P.textMuted, letterSpacing: 0.4, textTransform: "uppercase" }}>{title}</span>
+      </div>
+      <div style={{ display: "flex", height: 9, borderRadius: 6, overflow: "hidden", border: `1px solid ${P.border}` }}>
+        {segments.map((s) => (
+          <div key={s.label} title={`${s.label} ${s.value}%`}
+            style={{ width: `${(s.value / total) * 100}%`, background: s.color, transition: "width 0.35s ease" }} />
+        ))}
+      </div>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+        {segments.map((s) => (
+          <span key={s.label} style={{ display: "inline-flex", alignItems: "center", gap: 5, fontSize: 10.5, color: P.textDim, fontWeight: 500 }}>
+            <span style={{ width: 8, height: 8, borderRadius: 2, background: s.color }} />
+            {s.label} <strong style={{ color: P.textMuted }}>{s.value}%</strong>
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+interface LivePaperBlueprintProps {
+  blueprint: BlueprintSection[];
+  balance: { easy: number; medium: number; hard: number; knowledge: number; comprehension: number; application: number; theory: number; numerical: number };
+  scopeLabel: string;
+  generating: boolean;
+}
+function LivePaperBlueprint({ blueprint, balance, scopeLabel, generating }: LivePaperBlueprintProps) {
+  const P = useP();
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+      {/* Panel header */}
+      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+        <div style={{ width: 30, height: 30, borderRadius: 8, background: P.gradient, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+          <ScrollText size={16} color="#fff" />
+        </div>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontSize: 13.5, fontWeight: 700, color: P.text }}>Live Paper Blueprint</div>
+          <div style={{ fontSize: 10.5, color: P.textDim, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{scopeLabel}</div>
+        </div>
+        <span style={{ display: "inline-flex", alignItems: "center", gap: 5, fontSize: 9.5, fontWeight: 700, color: P.success, textTransform: "uppercase", letterSpacing: 0.6 }}>
+          <span style={{ position: "relative", display: "flex", width: 7, height: 7 }}>
+            <span style={{ position: "absolute", inset: 0, borderRadius: "50%", background: P.success, opacity: 0.5, animation: "blueprintPing 1.4s ease-out infinite" }} />
+            <span style={{ position: "relative", width: 7, height: 7, borderRadius: "50%", background: P.success }} />
+          </span>
+          Live
+        </span>
+      </div>
+
+      {/* Holographic structural skeleton — a translucent wireframe of the paper.
+          Totals live in the bottom dock; this panel is purely the shape of the paper. */}
+      <div style={{
+        position: "relative", borderRadius: 14, border: `1px dashed ${P.borderStrong}`,
+        background: P.glassFaint,
+        backdropFilter: "blur(14px)", WebkitBackdropFilter: "blur(14px)",
+        overflow: "hidden",
+      }}>
+        <div style={{ padding: "12px 14px 14px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 10 }}>
+            <span style={{ width: 5, height: 5, borderRadius: "50%", background: P.blue, boxShadow: `0 0 8px ${P.blue}`, flexShrink: 0 }} />
+            <span style={{ fontSize: 9, fontWeight: 800, letterSpacing: 1.4, color: P.textDim, textTransform: "uppercase" }}>Structure</span>
+            <span style={{ flex: 1, height: 1, background: `linear-gradient(90deg, ${P.border}, transparent)` }} />
+          </div>
+
+          {blueprint.length === 0 ? (
+            <div style={{ padding: "26px 10px", textAlign: "center", border: `1px dashed ${P.border}`, borderRadius: 10 }}>
+              <FileText size={22} color={P.textDim} style={{ marginBottom: 6 }} />
+              <div style={{ fontSize: 11.5, color: P.textDim }}>Adjust options on the left to preview the paper structure.</div>
+            </div>
+          ) : (
+            <div style={{ display: "flex", flexDirection: "column", gap: 7 }}>
+              {blueprint.map((sec, i) => {
+                const meta = KIND_META[sec.kind];
+                return (
+                  <div key={sec.key} style={{
+                    position: "relative", display: "flex", alignItems: "center", gap: 10,
+                    padding: "9px 11px 9px 14px", borderRadius: 10,
+                    border: `1px solid ${P.border}`, background: "transparent",
+                    overflow: "hidden",
+                  }}>
+                    <span style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 2, background: meta.color, opacity: 0.7 }} />
+                    <span style={{ fontSize: 10, fontWeight: 800, color: meta.color, minWidth: 16, flexShrink: 0, fontVariantNumeric: "tabular-nums" }}>{sec.roman}</span>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <div style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
+                        <span style={{ fontSize: 11.5, fontWeight: 700, color: P.text, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{sec.title}</span>
+                        <span style={{ fontSize: 9.5, color: P.textDim, whiteSpace: "nowrap", flexShrink: 0 }}>{sec.detail}</span>
+                      </div>
+                      <div style={{ display: "flex", flexDirection: "column", gap: 3, marginTop: 6 }}>
+                        <span style={{ height: 3, width: "85%", borderRadius: 2, background: P.borderStrong, animation: `holoPulse 2.4s ease-in-out ${i * 0.25}s infinite` }} />
+                        <span style={{ height: 3, width: "60%", borderRadius: 2, background: P.border, animation: `holoPulse 2.4s ease-in-out ${i * 0.25 + 0.4}s infinite` }} />
+                      </div>
+                    </div>
+                    <span style={{ fontSize: 10.5, fontWeight: 800, color: meta.color, border: `1px solid ${meta.color}`, background: "transparent", padding: "2px 8px", borderRadius: 20, flexShrink: 0, opacity: 0.85 }}>{sec.marks}M</span>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+
+        {generating && (
+          <motion.div
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+            style={{ position: "absolute", inset: 0, overflow: "hidden", background: P.scrim, display: "flex", alignItems: "center", justifyContent: "center", backdropFilter: "blur(2px)" }}
+          >
+            <motion.div
+              animate={{ y: ["-120%", "120%"] }} transition={{ repeat: Infinity, duration: 1.4, ease: "linear" }}
+              style={{ position: "absolute", left: 0, right: 0, height: "45%", background: "linear-gradient(180deg, transparent, rgba(129,140,248,0.20), transparent)" }}
+            />
+            <span style={{ fontSize: 11, fontWeight: 700, color: P.text, letterSpacing: 0.5, zIndex: 1 }}>Synthesizing…</span>
+          </motion.div>
+        )}
+      </div>
+
+      {/* Neural Cognitive Meter */}
+      <div style={{
+        display: "flex", flexDirection: "column", gap: 14, padding: "14px 16px",
+        borderRadius: 14, border: `1px solid ${P.border}`, background: P.glassCard,
+        backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)",
+      }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 7 }}>
+          <BrainCircuit size={15} color={P.blue} />
+          <span style={{ fontSize: 12, fontWeight: 800, color: P.text }}>Neural Cognitive Meter</span>
+        </div>
+        <MeterBar title="Difficulty" icon={<Gauge size={13} />} segments={[
+          { label: "Easy", value: balance.easy, color: "#34D399" },
+          { label: "Medium", value: balance.medium, color: "#FBBF24" },
+          { label: "Hard", value: balance.hard, color: "#FB7185" },
+        ]} />
+        <MeterBar title="Cognitive (SLO)" icon={<BrainCircuit size={13} />} segments={[
+          { label: "Knowledge", value: balance.knowledge, color: "#818CF8" },
+          { label: "Comprehension", value: balance.comprehension, color: "#C084FC" },
+          { label: "Application", value: balance.application, color: "#22D3EE" },
+        ]} />
+        <MeterBar title="Question Type" icon={<ScrollText size={13} />} segments={[
+          { label: "Theory", value: balance.theory, color: "#60A5FA" },
+          { label: "Numerical", value: balance.numerical, color: "#F472B6" },
+        ]} />
+      </div>
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+// Master–detail question-type picker: a clean button in the master list (left)
+// that drives which config panel slides into the detail column (right).
+// Replaces the old bulky vertical accordions.
+// ---------------------------------------------------------------------------------------------------------------------------------------
+function MasterButton({ icon, label, summary, active, onClick }:
+  { icon: React.ReactNode; label: string; summary: string; active: boolean; onClick: () => void }) {
+  const P = useP();
+  const [hover, setHover] = useState(false);
+  return (
+    <button onClick={onClick} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
+      style={{
+        display:"flex", alignItems:"center", gap:10, width:"100%", textAlign:"left",
+        padding:"10px 11px", borderRadius:11, cursor:"pointer",
+        border:`1.5px solid ${active ? P.borderActive : (hover ? P.borderStrong : P.border)}`,
+        background: active
+          ? "linear-gradient(135deg, rgba(99,102,241,0.20), rgba(168,85,247,0.12))"
+          : (hover ? P.bgHover : P.glassFaint),
+        boxShadow: active ? "0 6px 20px rgba(99,102,241,0.18)" : "none",
+        transition:"all 0.18s ease",
+      }}>
+      <span style={{
+        width:30, height:30, borderRadius:8, flexShrink:0,
+        background: active ? P.gradient : P.bgElevated,
+        display:"flex", alignItems:"center", justifyContent:"center",
+        color: active ? "#fff" : P.steel,
+      }}>{icon}</span>
+      <span style={{ flex:1, minWidth:0 }}>
+        <span style={{ display:"block", fontSize:13, fontWeight:700, color: active ? P.text : P.textMuted }}>{label}</span>
+        <span style={{ display:"block", fontSize:10.5, color:P.textDim, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>{summary}</span>
+      </span>
+      {active && <ChevronRight size={14} color={P.blue} style={{ flexShrink:0 }} />}
+    </button>
+  );
+}
+
+function DetailHeader({ icon, label, summary }: { icon: React.ReactNode; label: string; summary: string }) {
+  const P = useP();
+  return (
+    <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:14 }}>
+      <div style={{ width:32, height:32, borderRadius:9, flexShrink:0, background:P.gradient, display:"flex", alignItems:"center", justifyContent:"center", color:"#fff" }}>{icon}</div>
+      <div style={{ flex:1, minWidth:0 }}>
+        <div style={{ fontSize:14, fontWeight:700, color:P.text }}>{label}</div>
+        <div style={{ fontSize:11, color:P.textDim, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>{summary}</div>
+      </div>
+    </div>
+  );
+}
+
+// Shared slide-in animation + glass card style for the detail panel.
+const panelAnim = {
+  initial: { opacity: 0, x: 16 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: -12 },
+  transition: { duration: 0.22, ease: "easeOut" as const },
+};
+const detailCardStyle = (P: Palette): React.CSSProperties => ({
+  border: `1.5px solid ${P.borderActive}`,
+  borderRadius: 14,
+  background: P.glassCard,
+  backdropFilter: "blur(10px)",
+  WebkitBackdropFilter: "blur(10px)",
+  boxShadow: "0 10px 34px rgba(99,102,241,0.10)",
+  padding: 16,
+});
+
 export default function GeneratorPage() {
   const { data: session, status } = useSession();
   const router = useRouter();
@@ -660,6 +960,7 @@ export default function GeneratorPage() {
   const [selectedSubject, setSelectedSubject] = useState("Physics");
   const [selectedChapters, setSelectedChapters] = useState<string[]>([]);
   const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
+  const [modalChapter, setModalChapter] = useState<Chapter | null>(null);
 
   const [mcqCount, setMcqCount] = useState(10);
 
@@ -684,16 +985,12 @@ export default function GeneratorPage() {
   const [customDiagram, setCustomDiagram] = useState(false);
 
   const [activePhase, setActivePhase] = useState<Phase>("mcq");
-  const [openSection, setOpenSection] = useState<Phase | null>("mcq");
-  const [templateTab, setTemplateTab] = useState<"hybrid"|"board">("hybrid");
+  const [configOpen, setConfigOpen] = useState(false);
+  const { theme, toggleTheme } = useGlobalTheme();
+  const P = useP();
   const [toast, setToast] = useState("");
   const [generating, setGenerating] = useState(false);
   const [genPulse, setGenPulse] = useState(false);
-
-  const toggleSection = (p: Phase) => {
-    setActivePhase(p);
-    setOpenSection(prev => prev===p ? null : p);
-  };
 
   useEffect(() => {
     const t = setInterval(() => { setGenPulse(true); setTimeout(() => setGenPulse(false), 500); }, 4000);
@@ -701,12 +998,12 @@ export default function GeneratorPage() {
   }, []);
 
   useEffect(() => {
-    const map: Record<string, Phase> = { "1":"mcq", "2":"sq", "3":"lq", "4":"hybrid", "5":"board", "6":"custom" };
+    const map: Record<string, Phase> = { "1":"mcq", "2":"sq", "3":"lq", "4":"custom", "5":"hybrid", "6":"board" };
     function handler(e: KeyboardEvent) {
       if (e.target instanceof HTMLInputElement) return;
-      if (map[e.key]) toggleSection(map[e.key]);
+      if (map[e.key]) { setActivePhase(map[e.key]); setConfigOpen(true); }
       if (e.key==="g" || e.key==="G") handleGenerate();
-      if (e.key==="Escape") setGridOpen(false);
+      if (e.key==="Escape") { setGridOpen(false); setConfigOpen(false); }
     }
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
@@ -807,10 +1104,90 @@ export default function GeneratorPage() {
 
   const live = getLiveConfig();
 
+  // ------ Live Paper Blueprint: section-level breakdown mirroring getLiveConfig
+  // marks formulas so the per-section marks sum to the dock total. ------
+  function buildBlueprint(): BlueprintSection[] {
+    const out: BlueprintSection[] = [];
+    const add = (title: string, detail: string, marks: number, kind: BlueprintKind) =>
+      out.push({ key: `${kind}-${out.length}`, roman: ROMAN[out.length] ?? `${out.length + 1}`, title, detail, marks, kind });
+
+    switch (activePhase) {
+      case "mcq":
+        if (mcqCount > 0) add("Objective — MCQs", `${mcqCount} questions × 1 mark · attempt all`, mcqCount, "mcq");
+        break;
+      case "sq": {
+        const preset = SQ_PRESETS.find(p => p.id === sqPattern);
+        const secs = sqMode === "custom_builder" ? sqSections : (preset?.sections || []);
+        secs.forEach((sec, i) => add(
+          secs.length > 1 ? `Short Questions · Part ${i + 1}` : "Short Questions",
+          `Attempt ${sec.attempt} of ${sec.given} × 2 marks`,
+          sec.attempt * 2, "sq"));
+        break;
+      }
+      case "lq": {
+        if (lqMode === "custom_builder" && lqSections.length > 0) {
+          lqSections.forEach(s => add(
+            `Long Questions · ${s.label}`,
+            `Attempt ${s.attempt} of ${s.given}${s.abPairing ? " · a+b paired" : ""}`,
+            lqTotalFromSections([{ label: s.label, given: s.given, attempt: s.attempt, enforcePairing: s.abPairing }]).totalMarks,
+            "lq"));
+        } else {
+          const preset = LQ_PRESETS.find(p => p.id === lqPattern);
+          const given = preset?.given || 3, attempt = preset?.attempt || 2, pairing = preset?.enforcePairing ?? true;
+          add("Long Questions", `Attempt ${attempt} of ${given}${pairing ? " · a+b paired" : ""}`, lqTotalMarks(given, attempt, pairing), "lq");
+        }
+        break;
+      }
+      case "hybrid": {
+        const hp = HYBRID_PRESETS.find(p => p.id === hybridPreset);
+        if (hp) {
+          if (hp.mcq > 0) add("Objective — MCQs", `${hp.mcq} × 1 mark`, hp.mcq, "mcq");
+          const sqMarks = hp.sq.reduce((s, sec) => s + sec.attempt, 0) * 2;
+          hp.sq.forEach((sec, i) => add(
+            hp.sq.length > 1 ? `Short Questions · Part ${i + 1}` : "Short Questions",
+            `Attempt ${sec.attempt} of ${sec.given} × 2 marks`, sec.attempt * 2, "sq"));
+          const lqAttempt = hp.lq.reduce((s, sec) => s + sec.attempt, 0);
+          if (lqAttempt > 0) {
+            const detail = hp.lq.map(l => `attempt ${l.attempt} of ${l.given}`).join(" · ");
+            add("Long Questions", `${detail}${hp.lq.some(l => l.pairing) ? " · a+b paired" : ""}`, Math.max(0, hp.marks - hp.mcq - sqMarks), "lq");
+          }
+        }
+        break;
+      }
+      case "board": {
+        const bp = getBoardPresets().find(p => p.id === boardPattern);
+        if (bp) {
+          add("Objective — MCQs", `${bp.mcq} × 1 mark`, bp.mcq, "mcq");
+          bp.sqSections.forEach((sec, i) => add(
+            bp.sqSections.length > 1 ? `Short Questions · Part ${i + 1}` : "Short Questions",
+            `Attempt ${sec.attempt} of ${sec.given} × ${bp.sqMarksPerQ} marks`, sec.attempt * bp.sqMarksPerQ, "sq"));
+          add("Long Questions", `Attempt ${bp.lqAttempt} of ${bp.lqGiven} × ${bp.lqMarksPerQ} marks`, bp.lqAttempt * bp.lqMarksPerQ, "lq");
+        }
+        break;
+      }
+      case "custom":
+        if (customMcq > 0) add("Objective — MCQs", `${customMcq} × 1 mark`, customMcq, "mcq");
+        if (customSq > 0) add("Short Questions", `${customSq} × 3 marks${customChoice ? " · with choice" : ""}`, customSq * 3, "sq");
+        if (customLq > 0) add("Long Questions", `${customLq} × 5 marks${customDiagram ? " · diagrams" : ""}`, customLq * 5, "lq");
+        break;
+    }
+    return out;
+  }
+
+  const blueprint = buildBlueprint();
+  // Reactive cognitive distribution — recomputed from the live paper each render
+  // so the Neural Cognitive Meter tracks option changes (seed kept in sqBalance).
+  const cognitiveBalance = deriveCognitiveBalance(blueprint, selectedSubject, customDiagram);
+  const scopeLabel = [selectedClass, selectedSubject].filter(Boolean).join(" · ")
+    + (selectedChapters.length > 0 ? ` · ${selectedChapters.length} chapter${selectedChapters.length > 1 ? "s" : ""}` : "")
+    || "No scope selected";
+
   // ------ Summary strings for collapsed accordion rows ------
   const sqPresetForSummary = SQ_PRESETS.find(p=>p.id===sqPattern);
   const sqSummary = sqMode==="custom_builder"
-    ? `Custom · ${sqSections[0]?.given||0}→${sqSections[0]?.attempt||0}`
+    ? `Custom · ${sqSections.length} part${sqSections.length!==1?"s":""} · ${
+        sqSections.map(s => `${s.given}→${s.attempt}`).join(" | ")
+      }`
     : `${sqPresetForSummary?.label||"—"} · ${sqPresetForSummary ? sqTotalAttempts(sqPresetForSummary.sections) : 0} Qs`;
   const lqPresetForSummary = LQ_PRESETS.find(p=>p.id===lqPattern);
   const lqSummary = lqMode==="custom_builder"
@@ -826,7 +1203,7 @@ export default function GeneratorPage() {
       const bp = getBoardPresets().find(p => p.id === boardPattern);
       const payload = {
         class: selectedClass, subject: selectedSubject,
-        chapter: selectedChapters[0] || "mix", topics: selectedTopics,
+        chapter: selectedChapters[0] || "mixed", topics: selectedTopics,
         phase: activePhase,
         mcqCount: cfg.mcq, sqCount: cfg.sq, lqCount: cfg.lq,
         sqConfig: {
@@ -855,12 +1232,17 @@ export default function GeneratorPage() {
         customChoice, customDiagram,
       };
       const res = await fetch("/api/generator", { method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(payload) });
-      const data = await res.json();
-      if (data.success) {
+      let data: any = null;
+      try { data = await res.json(); } catch { /* non-JSON (e.g. middleware redirect page) */ }
+      if (data?.success) {
         sessionStorage.setItem("generatorData", JSON.stringify({ ...payload, result: data.data }));
         router.push("/teacher/paper");
+      } else if (res.status === 401) {
+        setToast(data?.message || "Session expired — please sign in again.");
+      } else if (res.status === 403) {
+        setToast(data?.message || "Access denied — teacher role required.");
       } else {
-        setToast(data.error || "Generation failed");
+        setToast(data?.message || data?.error || "Generation failed");
       }
     } catch {
       setToast("Network error. Try again.");
@@ -879,6 +1261,8 @@ export default function GeneratorPage() {
     ::-webkit-scrollbar-track{background:transparent;}
     ::-webkit-scrollbar-thumb{background:${P.border};border-radius:4px;}
     @keyframes spin{to{transform:rotate(360deg);}}
+    @keyframes blueprintPing { 0%{transform:scale(1);opacity:0.6;} 80%,100%{transform:scale(2.6);opacity:0;} }
+    @keyframes holoPulse { 0%,100%{opacity:0.35;} 50%{opacity:0.7;} }
   `;
 
   if (status === "loading") {
@@ -890,7 +1274,7 @@ export default function GeneratorPage() {
   }
 
   return (
-    <div style={{ height:"100vh", background:P.bg, display:"flex", fontFamily:"-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif", color:P.text, overflow:"hidden" }}>
+    <div style={{ height:"100%", background:P.bg, display:"flex", fontFamily:"-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif", color:P.text, overflow:"hidden", transition:"background 0.35s ease, color 0.35s ease" }}>
       <style>{styleTag}</style>
 
       {/* ------ SIDEBAR ------ */}
@@ -898,14 +1282,8 @@ export default function GeneratorPage() {
         width:280, flexShrink:0, background:P.bgPanel, borderRight:`1px solid ${P.border}`,
         display:"flex", flexDirection:"column", overflow:"hidden",
       }}>
-        <div style={{ display:"flex", alignItems:"center", gap:10, padding:"18px 16px 15px", background:"#0a0a14", flexShrink:0 }}>
-          <img src="/logo.png" alt="ZeeShaoor.pk" style={{ width:36, height:36, objectFit:"contain", flexShrink:0 }}/>
-          <div style={{ minWidth:0 }}>
-            <div style={{ fontSize:15, fontWeight:700, color:"#FFFFFF", whiteSpace:"nowrap" }}>ZeeShaoor.pk</div>
-            <div style={{ fontSize:11, color:"rgba(255,255,255,0.6)" }}>Paper Generator</div>
-          </div>
-        </div>
-
+        {/* Inner branding removed (Task 5) — ZeeShaoor.pk branding already lives
+            in the outer TeacherSidebar; this panel now opens straight into scope. */}
         <div style={{ padding:16, display:"flex", flexDirection:"column", gap:10, borderBottom:`1px solid ${P.border}`, flexShrink:0 }}>
           <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between" }}>
             <span style={{ fontSize:11, color:P.textDim, letterSpacing:0.5, fontWeight:600 }}>
@@ -950,7 +1328,7 @@ export default function GeneratorPage() {
           )}
         </div>
 
-        <div style={{ flex:1, overflowY:"auto", padding:"10px 12px" }}>
+        <div style={{ flex:1, overflowY:"auto", padding:"10px 12px 120px" }}>
           {!selectedSubject ? (
             <p style={{ fontSize:12, color:P.textDim, lineHeight:1.4 }}>Select a subject to see chapters & topics here.</p>
           ) : (
@@ -971,20 +1349,11 @@ export default function GeneratorPage() {
                   const chapterTopics: Topic[] = chData?.topics || [];
                   const chId = ch.id;
                   const checked = selectedChapters.includes(chId);
-                  const allTopicsInChapter = chapterTopics.length > 0 && chapterTopics.every(t => selectedTopics.includes(t.id));
+                  const selectedCount = chapterTopics.filter(t => selectedTopics.includes(t.id)).length;
 
                   return (
                     <div key={chId}>
-                      <button onClick={() => {
-                        setSelectedChapters(prev => {
-                          if (checked) {
-                            setSelectedTopics(st => st.filter(id => !chapterTopics.some(t => t.id === id)));
-                            return prev.filter(c => c !== chId);
-                          }
-                          setSelectedTopics(st => [...st, ...chapterTopics.map(t => t.id).filter(id => !st.includes(id))]);
-                          return [...prev, chId];
-                        });
-                      }} style={{
+                      <button onClick={() => setModalChapter(chData)} style={{
                         textAlign:"left", padding:"5px 8px", borderRadius:5,
                         border:`1px solid ${checked ? P.borderActive : "transparent"}`,
                         background: checked ? "rgba(74,158,202,0.10)" : "transparent",
@@ -1001,28 +1370,10 @@ export default function GeneratorPage() {
                         <span style={{ flex:1 }}>{ch.label}</span>
                         {checked && chapterTopics.length > 0 && (
                           <span style={{ fontSize:9.5, color:P.blue, fontWeight:600 }}>
-                            {chapterTopics.filter(t=>selectedTopics.includes(t.id)).length}/{chapterTopics.length}
+                            {selectedCount}/{chapterTopics.length}
                           </span>
                         )}
-                        <span style={{ color:P.steel, fontSize:10, transition:"transform 0.15s", transform: checked ? "rotate(0deg)" : "rotate(-90deg)" }}>▼</span>
                       </button>
-
-                      {checked && chapterTopics.length > 0 && (
-                        <div style={{
-                          marginLeft:18, paddingLeft:8, borderLeft:`2px solid rgba(74,158,202,0.2)`,
-                          display:"flex", flexDirection:"column", gap:1, marginBottom:4, marginTop:2,
-                        }}>
-                          <TopicChip label="All topics in this chapter" selected={allTopicsInChapter} onClick={() => {
-                            setSelectedTopics(st => {
-                              const ids = chapterTopics.map(t => t.id);
-                              return allTopicsInChapter ? st.filter(id => !ids.includes(id)) : [...st, ...ids.filter(id => !st.includes(id))];
-                            });
-                          }}/>
-                          {chapterTopics.map(t => (
-                            <TopicChip key={t.id} label={t.name} selected={selectedTopics.includes(t.id)} onClick={() => toggleTopic(t.id)}/>
-                          ))}
-                        </div>
-                      )}
                     </div>
                   );
                 })}
@@ -1033,7 +1384,7 @@ export default function GeneratorPage() {
       </aside>
 
       {/* ------ MAIN ------ */}
-      <div style={{ flex:1, display:"flex", flexDirection:"column", overflow:"hidden" }}>
+      <div style={{ flex:1, display:"flex", flexDirection:"column", overflow:"hidden", position:"relative" }}>
 
         <div style={{
           height:52, flexShrink:0, display:"flex", alignItems:"center", justifyContent:"space-between",
@@ -1074,6 +1425,20 @@ export default function GeneratorPage() {
             )}
           </div>
           <div style={{ display:"flex", alignItems:"center", gap:9, fontSize:13, color:P.textMuted }}>
+            <button
+              onClick={toggleTheme}
+              title={theme === "dark" ? "Switch to Frosted Silver" : "Switch to Dark"}
+              aria-label="Toggle theme"
+              style={{
+                width:30, height:30, borderRadius:8, flexShrink:0,
+                border:`1px solid ${P.border}`, background:P.glassCard,
+                color: theme === "dark" ? "#FBBF24" : "#6366F1",
+                cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center",
+                transition:"all 0.25s ease",
+              }}
+            >
+              {theme === "dark" ? <Sun size={15}/> : <Moon size={15}/>}
+            </button>
             <div style={{
               width:28, height:28, borderRadius:"50%", background:P.gradient,
               display:"flex", alignItems:"center", justifyContent:"center", fontSize:12, fontWeight:600, color:"#fff",
@@ -1083,16 +1448,135 @@ export default function GeneratorPage() {
           </div>
         </div>
 
-        {/* ------ Accordion phase area ------ */}
-        <div style={{ flex:1, display:"flex", flexDirection:"column", gap:16, padding:"16px 20px 90px", overflowY:"auto" }}>
+        {/* ------ Split view: config (left) + Live Paper Blueprint (right) ------ */}
+        <div className="gen-split" style={{ flex:1, display:"grid", gridTemplateColumns:"minmax(0,1fr) 380px", gap:16, padding:"16px 20px 96px", overflow:"hidden", minHeight:0 }}>
 
-          {/* Group 1: Question Types */}
-          <div style={{ display:"flex", flexDirection:"column", gap:2 }}>
-            <span style={{ fontSize:11, color:P.textDim, letterSpacing:0.5, fontWeight:600, marginBottom:6 }}>QUESTION TYPES</span>
-            <div style={{ display:"flex", flexDirection:"column", gap:8 }}>
+          {/* LEFT: configuration accordions */}
+          <div className="gen-config" style={{ overflow:"hidden", display:"flex", flexDirection:"column", minWidth:0, minHeight:0 }}>
 
-              <AccordionRow icon={<Zap size={16}/>} label="MCQ" summary={`${mcqCount} MCQs`}
-                open={openSection==="mcq"} onToggle={() => toggleSection("mcq")}>
+          {/* Question-type launcher (Task 4) — clicking a card opens the
+              full-screen configuration modal instead of an inline panel. */}
+          <div style={{ flex:1, overflowY:"auto", minHeight:0, paddingBottom:120 }}>
+            <span style={{ fontSize:11, color:P.textDim, letterSpacing:0.5, fontWeight:600 }}>QUESTION TYPES</span>
+            <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill, minmax(200px, 1fr))", gap:10, marginTop:10, alignContent:"start" }}>
+              {([
+                { phase:"mcq" as Phase,    icon:<Zap size={16}/>,      label:"MCQ",     summary:`${mcqCount} MCQs` },
+                { phase:"sq" as Phase,     icon:<FileText size={16}/>, label:"Short Q", summary: sqSummary },
+                { phase:"lq" as Phase,     icon:<BookOpen size={16}/>, label:"Long Q",  summary: lqSummary },
+                { phase:"custom" as Phase, icon:<Settings size={16}/>, label:"Custom",  summary: customSummary },
+                { phase:"hybrid" as Phase, icon:<Layers size={16}/>,   label:"Hybrid",  summary: HYBRID_PRESETS.find(p=>p.id===hybridPreset)?.label||"" },
+                { phase:"board" as Phase,  icon:<Award size={16}/>,     label:"Board",   summary: getBoardPresets().find(p=>p.id===boardPattern)?.label||"" },
+              ]).map(t => (
+                <MasterButton key={t.phase} icon={t.icon} label={t.label} summary={t.summary}
+                  active={activePhase===t.phase} onClick={() => { setActivePhase(t.phase); setConfigOpen(true); }} />
+              ))}
+            </div>
+          </div>
+          </div>{/* /gen-config (left column) */}
+
+          {/* RIGHT: Live Paper Blueprint */}
+          <div className="gen-blueprint" style={{ overflowY:"auto", paddingBottom:120, minWidth:0 }}>
+            <LivePaperBlueprint blueprint={blueprint} balance={cognitiveBalance} scopeLabel={scopeLabel} generating={generating} />
+          </div>
+        </div>
+
+        {/* Floating PILL dock (Task 1) — absolutely positioned INSIDE the main
+            column (which is position:relative), so it physically cannot cover the
+            chapters sidebar or the outer TeacherSidebar. Centered, max 900px. */}
+        <div style={{
+          position:"absolute", bottom:24, left:0, right:0, zIndex:50,
+          display:"flex", justifyContent:"center", padding:"0 16px",
+          pointerEvents:"none",
+        }}>
+        <div style={{
+          height:56, display:"flex", alignItems:"center",
+          width:"100%", maxWidth:900, pointerEvents:"auto",
+          background:P.dock,
+          backdropFilter:"blur(18px)", WebkitBackdropFilter:"blur(18px)",
+          border:`1px solid ${P.borderStrong}`,
+          borderRadius:99,
+          boxShadow:"0 12px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(129,140,248,0.10)",
+          padding:"0 8px 0 16px", gap:0,
+        }}>
+          {[{ label:"MCQ", val:live.mcq }, { label:"SQ", val:live.sq }, { label:"LQ", val:live.lq }].map((s) => (
+            <div key={s.label} style={{ display:"flex", alignItems:"center", gap:5, padding:"0 12px", borderRight:`1px solid ${P.border}` }}>
+              <span style={{ fontSize:11, color:P.textDim, fontWeight:500 }}>{s.label}:</span>
+              <FlipNum value={s.val}/>
+            </div>
+          ))}
+          <div style={{ padding:"0 12px", borderRight:`1px solid ${P.border}` }}>
+            <span style={{ fontSize:11, color:P.textDim, fontWeight:500 }}>Total: </span>
+            <FlipNum value={live.totalMarks}/><span style={{ fontSize:11, color:P.textDim }}> marks</span>
+          </div>
+          <div style={{ padding:"0 12px", borderRight:`1px solid ${P.border}` }}>
+            <span style={{ fontSize:11, color:P.textDim, fontWeight:500 }}>Est. Time: </span>
+            <FlipNum value={live.estTime}/><span style={{ fontSize:11, color:P.textDim }}> min</span>
+          </div>
+          <div style={{ flex:1, padding:"0 12px", fontSize:11, color:P.textDim, fontWeight:500, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>
+            {live.selectionLabel}
+          </div>
+
+          <div role="button" tabIndex={0} onClick={() => !generating && handleGenerate()} style={{
+            display:"flex", alignItems:"center", gap:8, padding:"0 24px", height:40, borderRadius:99,
+            background: generating ? "rgba(99,102,241,0.22)" : P.gradient,
+            color:"#fff", fontWeight:600, fontSize:14, cursor: generating ? "not-allowed" : "pointer",
+            animation: genPulse && !generating ? "genPulse 0.9s ease" : "none",
+            flexShrink:0, boxShadow:"0 4px 20px rgba(99,102,241,0.4)",
+            border: generating ? "1px solid rgba(129,140,248,0.4)" : "1px solid transparent",
+          }}>
+            {generating ? (
+              <motion.span initial={{ opacity:0 }} animate={{ opacity:1 }}
+                style={{ display:"flex", alignItems:"center", gap:8, color:"#fff" }}>
+                <motion.span
+                  animate={{ rotate:360 }} transition={{ repeat:Infinity, duration:0.8, ease:"linear" }}
+                  style={{ width:14, height:14, borderRadius:"50%", border:"2px solid rgba(255,255,255,0.3)", borderTopColor:"#fff", display:"inline-block" }}/>
+                <span>Synthesizing Neural Grid</span>
+                {[0, 1, 2].map((i) => (
+                  <motion.span key={i}
+                    animate={{ opacity:[0.2, 1, 0.2] }}
+                    transition={{ repeat:Infinity, duration:1.1, delay:i * 0.18 }}
+                    style={{ width:4, height:4, borderRadius:"50%", background:"#fff", display:"inline-block" }}/>
+                ))}
+              </motion.span>
+            ) : (
+              <><Sparkles size={15}/>Generate Paper</>
+            )}
+          </div>
+        </div>
+        </div>{/* /dock wrapper */}
+      </div>
+
+
+      {/* ------ FULL-SCREEN QUESTION-TYPE CONFIG MODAL (Task 4) ------ */}
+      <AnimatePresence>
+        {configOpen && (
+          <motion.div key="cfg-scrim"
+            initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }} transition={{ duration:0.2 }}
+            onClick={() => setConfigOpen(false)}
+            style={{
+              position:"fixed", inset:0, zIndex:60, background:P.scrim,
+              backdropFilter:"blur(10px)", WebkitBackdropFilter:"blur(10px)",
+              display:"flex", alignItems:"center", justifyContent:"center", padding:24,
+            }}>
+            <motion.div key="cfg-panel"
+              initial={{ opacity:0, scale:0.96, y:14 }} animate={{ opacity:1, scale:1, y:0 }} exit={{ opacity:0, scale:0.97, y:10 }}
+              transition={{ duration:0.22, ease:"easeOut" }}
+              onClick={(e) => e.stopPropagation()}
+              style={{
+                width:"min(780px, 94vw)", maxHeight:"86vh", display:"flex", flexDirection:"column",
+                borderRadius:18, border:`1px solid ${P.borderStrong}`, background:P.bgPanel,
+                boxShadow:"0 30px 90px rgba(0,0,0,0.5)", overflow:"hidden",
+              }}>
+              <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", padding:"14px 18px", borderBottom:`1px solid ${P.border}`, flexShrink:0 }}>
+                <span style={{ fontSize:11, fontWeight:700, letterSpacing:0.8, color:P.textDim, textTransform:"uppercase" }}>Configure question type</span>
+                <button onClick={() => setConfigOpen(false)} aria-label="Close" style={{ width:30, height:30, borderRadius:8, border:`1px solid ${P.border}`, background:"transparent", color:P.textMuted, cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center" }}><X size={15}/></button>
+              </div>
+              <div style={{ overflowY:"auto", padding:18, minHeight:0 }}>
+                <AnimatePresence mode="wait" initial={false}>
+
+              {activePhase==="mcq" && (
+              <motion.div key="mcq" {...panelAnim} style={detailCardStyle(P)}>
+                <DetailHeader icon={<Zap size={16}/>} label="MCQ" summary={`${mcqCount} MCQs`}/>
                 <div style={{ display:"flex", alignItems:"center", gap:6, flexWrap:"wrap" }}>
                   {[10, 15, 20, 30, 50].map(n => (
                     <OptionBox key={n} label={`${n}`} sub="MCQs" selected={mcqCount===n}
@@ -1103,10 +1587,11 @@ export default function GeneratorPage() {
                     <Stepper value={mcqCount} onChange={setMcqCount} min={1} max={100}/>
                   </div>
                 </div>
-              </AccordionRow>
+              </motion.div>)}
 
-              <AccordionRow icon={<FileText size={16}/>} label="Short Q" summary={sqSummary}
-                open={openSection==="sq"} onToggle={() => toggleSection("sq")}>
+              {activePhase==="sq" && (
+              <motion.div key="sq" {...panelAnim} style={detailCardStyle(P)}>
+                <DetailHeader icon={<FileText size={16}/>} label="Short Q" summary={sqSummary}/>
                 <div style={{ display:"flex", flexDirection:"column", gap:8, width:"100%" }}>
                   <ModeTabs order={SQ_MODE_ORDER} labels={SQ_MODE_LABELS} active={sqMode}
                     onChange={(m) => {
@@ -1120,27 +1605,49 @@ export default function GeneratorPage() {
                         onClick={() => setSqPattern(p.id)}/>
                     ))}
                     {sqMode==="custom_builder" && (
-                      <div style={{ display:"flex", alignItems:"center", gap:14, borderLeft:`1px solid ${P.border}`, paddingLeft:12 }}>
-                        <div style={{ display:"flex", alignItems:"center", gap:6 }}>
-                          <span style={{ fontSize:12, color:P.textDim }}>Given:</span>
-                          <Stepper value={sqSections[0]?.given||5}
-                            onChange={v => setSqSections([{ label:"All", given:v, attempt: Math.min(sqSections[0]?.attempt||v, v) } as SqSectionDef])}
-                            min={1} max={40}/>
+                      <div style={{ display:"flex", flexDirection:"column", gap:8, borderLeft:`1px solid ${P.border}`, paddingLeft:12, minWidth:280 }}>
+                        {/* Controls header */}
+                        <div style={{ display:"flex", alignItems:"center", gap:8 }}>
+                          <span style={{ fontSize:11, color:P.textDim, fontWeight:600 }}>Parts:</span>
+                          <button disabled={sqSections.length >= 5} onClick={() => setSqSections(prev => [...prev, {
+                            label:`Part ${prev.length + 1}`, given:8, attempt:5, } as SqSectionDef])} style={{
+                            padding:"3px 10px", borderRadius:5, border:`1px solid ${sqSections.length >= 5 ? P.border : P.borderActive}`,
+                            background: sqSections.length >= 5 ? "transparent" : "rgba(37,99,235,0.08)",
+                            color: sqSections.length >= 5 ? P.textDim : P.blue, cursor: sqSections.length >= 5 ? "not-allowed" : "pointer",
+                            fontSize:11, fontWeight:600, opacity: sqSections.length >= 5 ? 0.5 : 1,
+                          }}>+ Add Another Part</button>
+                          {sqSections.length >= 5 && <span style={{ fontSize:10, color:P.textDim, fontStyle:"italic" }}>Max 5</span>}
+                          {sqSections.length > 0 && (
+                            <span style={{ fontSize:10, color:P.blue, fontWeight:600 }}>{sqSections.length}/5</span>
+                          )}
                         </div>
-                        <div style={{ display:"flex", alignItems:"center", gap:6 }}>
-                          <span style={{ fontSize:12, color:P.textDim }}>Attempt:</span>
-                          <Stepper value={sqSections[0]?.attempt||5}
-                            onChange={v => setSqSections([{ label:"All", given: sqSections[0]?.given||v, attempt: Math.min(v, sqSections[0]?.given||v) } as SqSectionDef])}
-                            min={1} max={sqSections[0]?.given||40}/>
-                        </div>
+                        {/* Section rows */}
+                        {sqSections.map((sec, i) => (
+                          <div key={i} style={{ display:"flex", alignItems:"center", gap:10, fontSize:11 }}>
+                            <span style={{ color:P.textMuted, minWidth:42, fontWeight:500 }}>{sec.label}:</span>
+                            <span style={{ color:P.textDim }}>Given:</span>
+                            <Stepper compact value={sec.given} min={1} max={40}
+                              onChange={v => setSqSections(prev => prev.map((s,idx) => idx===i ? {...s, given:v, attempt:Math.min(s.attempt,v)} : s))}/>
+                            <span style={{ color:P.textDim }}>Attempt:</span>
+                            <Stepper compact value={sec.attempt} min={1} max={sec.given}
+                              onChange={v => setSqSections(prev => prev.map((s,idx) => idx===i ? {...s, attempt:Math.min(v,s.given)} : s))}/>
+                            <button disabled={sqSections.length <= 1} onClick={() => setSqSections(prev => prev.filter((_,idx) => idx !== i))} style={{
+                              width:22, height:22, borderRadius:5, border:`1px solid ${P.border}`,
+                              background:"transparent", color: sqSections.length <= 1 ? P.textDim : P.danger,
+                              cursor: sqSections.length <= 1 ? "not-allowed" : "pointer",
+                              display:"flex", alignItems:"center", justifyContent:"center", opacity: sqSections.length <= 1 ? 0.3 : 1,
+                            }} title="Remove part"><Trash2 size={11}/></button>
+                          </div>
+                        ))}
                       </div>
                     )}
                   </div>
                 </div>
-              </AccordionRow>
+              </motion.div>)}
 
-              <AccordionRow icon={<BookOpen size={16}/>} label="Long Q" summary={lqSummary}
-                open={openSection==="lq"} onToggle={() => toggleSection("lq")}>
+              {activePhase==="lq" && (
+              <motion.div key="lq" {...panelAnim} style={detailCardStyle(P)}>
+                <DetailHeader icon={<BookOpen size={16}/>} label="Long Q" summary={lqSummary}/>
                 <div style={{ display:"flex", flexDirection:"column", gap:8, width:"100%" }}>
                   <ModeTabs order={LQ_MODE_ORDER} labels={LQ_MODE_LABELS} active={lqMode}
                     onChange={(m) => {
@@ -1188,10 +1695,11 @@ export default function GeneratorPage() {
                     </div>
                   )}
                 </div>
-              </AccordionRow>
+              </motion.div>)}
 
-              <AccordionRow icon={<Settings size={16}/>} label="Custom" summary={customSummary}
-                open={openSection==="custom"} onToggle={() => toggleSection("custom")}>
+              {activePhase==="custom" && (
+              <motion.div key="custom" {...panelAnim} style={detailCardStyle(P)}>
+                <DetailHeader icon={<Settings size={16}/>} label="Custom" summary={customSummary}/>
                 <div style={{ display:"flex", alignItems:"center", gap:2, flexWrap:"wrap" }}>
                   <div style={{ display:"flex", alignItems:"center", gap:5, padding:"0 6px" }}>
                     <span style={{ fontSize:11, color:P.textDim, fontWeight:600, minWidth:28 }}>MCQ</span>
@@ -1233,11 +1741,11 @@ export default function GeneratorPage() {
                     </button>
                   ))}
                 </div>
-              </AccordionRow>
+              </motion.div>)}
 
-              <AccordionRow icon={<Layers size={16}/>} label="Hybrid"
-                summary={HYBRID_PRESETS.find(p=>p.id===hybridPreset)?.label||""}
-                open={openSection==="hybrid"} onToggle={() => { setActivePhase("hybrid"); toggleSection("hybrid"); }}>
+              {activePhase==="hybrid" && (
+              <motion.div key="hybrid" {...panelAnim} style={detailCardStyle(P)}>
+                <DetailHeader icon={<Layers size={16}/>} label="Hybrid" summary={HYBRID_PRESETS.find(p=>p.id===hybridPreset)?.label||""}/>
                 <div style={{ display:"flex", gap:4, flexWrap:"wrap", marginBottom:10 }}>
                   {HYBRID_GROUPS.map(g => (
                     <button key={g.id} onClick={() => { setHybridGroup(g.id);
@@ -1274,11 +1782,11 @@ export default function GeneratorPage() {
                     );
                   })}
                 </div>
-              </AccordionRow>
+              </motion.div>)}
 
-              <AccordionRow icon={<Award size={16}/>} label="Board"
-                summary={getBoardPresets().find(p=>p.id===boardPattern)?.label||""}
-                open={openSection==="board"} onToggle={() => { setActivePhase("board"); toggleSection("board"); }}>
+              {activePhase==="board" && (
+              <motion.div key="board" {...panelAnim} style={detailCardStyle(P)}>
+                <DetailHeader icon={<Award size={16}/>} label="Board" summary={getBoardPresets().find(p=>p.id===boardPattern)?.label||""}/>
                 <div style={{ display:"grid", gridTemplateColumns:"repeat(2, 1fr)", gap:6 }}>
                   {getBoardPresets().filter(p=>p.template==="punjab").map(p => {
                     const sel = boardPattern===p.id;
@@ -1330,59 +1838,20 @@ export default function GeneratorPage() {
                     );
                   })}
                 </div>
-              </AccordionRow>
-            </div>
-          </div>
-        </div>
-
-        {/* Floating bottom dock */}
-        <div style={{
-          height:56, display:"flex", alignItems:"center",
-          position:"fixed", bottom:14, left:"50%", transform:"translateX(-50%)",
-          width:"calc(100% - 32px)", maxWidth:1140,
-          background:"rgba(255,255,255,0.85)",
-          backdropFilter:"blur(16px)", WebkitBackdropFilter:"blur(16px)",
-          border:"1px solid rgba(226,232,240,0.5)",
-          borderRadius:16,
-          boxShadow:"0 8px 32px rgba(0,0,0,0.08), 0 0 0 1px rgba(15,23,42,0.04)",
-          padding:"0 12px", gap:0, zIndex:50,
-        }}>
-          {[{ label:"MCQ", val:live.mcq }, { label:"SQ", val:live.sq }, { label:"LQ", val:live.lq }].map((s) => (
-            <div key={s.label} style={{ display:"flex", alignItems:"center", gap:5, padding:"0 12px", borderRight:`1px solid ${P.border}` }}>
-              <span style={{ fontSize:11, color:P.textDim, fontWeight:500 }}>{s.label}:</span>
-              <FlipNum value={s.val}/>
-            </div>
-          ))}
-          <div style={{ padding:"0 12px", borderRight:`1px solid ${P.border}` }}>
-            <span style={{ fontSize:11, color:P.textDim, fontWeight:500 }}>Total: </span>
-            <FlipNum value={live.totalMarks}/><span style={{ fontSize:11, color:P.textDim }}> marks</span>
-          </div>
-          <div style={{ padding:"0 12px", borderRight:`1px solid ${P.border}` }}>
-            <span style={{ fontSize:11, color:P.textDim, fontWeight:500 }}>Est. Time: </span>
-            <FlipNum value={live.estTime}/><span style={{ fontSize:11, color:P.textDim }}> min</span>
-          </div>
-          <div style={{ flex:1, padding:"0 12px", fontSize:11, color:P.textDim, fontWeight:500, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>
-            {live.selectionLabel}
-          </div>
-
-          <div role="button" tabIndex={0} onClick={() => !generating && handleGenerate()} style={{
-            display:"flex", alignItems:"center", gap:8, padding:"0 24px", height:40, borderRadius:10,
-            background: generating ? "rgba(74,158,202,0.2)" : P.gradient,
-            color:"#fff", fontWeight:600, fontSize:14, cursor: generating ? "not-allowed" : "pointer",
-            animation: genPulse && !generating ? "genPulse 0.9s ease" : "none",
-            flexShrink:0, boxShadow:"0 4px 16px rgba(37,99,235,0.3)",
-          }}>
-            {generating ? (
-              <>
-                <div style={{ width:14, height:14, borderRadius:"50%", border:"2px solid rgba(255,255,255,0.3)", borderTopColor:"#fff", animation:"spin 0.8s linear infinite" }}/>
-                Generating...
-              </>
-            ) : (
-              <><Sparkles size={15}/>Generate Paper</>
-            )}
-          </div>
-        </div>
-      </div>
+              </motion.div>)}
+                </AnimatePresence>
+              </div>
+              <div style={{ display:"flex", justifyContent:"flex-end", padding:"12px 18px", borderTop:`1px solid ${P.border}`, flexShrink:0 }}>
+                <button onClick={() => setConfigOpen(false)} style={{
+                  padding:"9px 28px", borderRadius:99, border:"1px solid transparent",
+                  background:P.gradient, color:"#fff", fontWeight:600, fontSize:13, cursor:"pointer",
+                  boxShadow:"0 4px 16px rgba(99,102,241,0.35)",
+                }}>Done</button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <GridModal
         open={gridOpen}
@@ -1393,6 +1862,29 @@ export default function GeneratorPage() {
         onChapterChange={ch => setSelectedChapters(prev => prev.includes(ch) ? prev.filter(c=>c!==ch) : [...prev, ch])}
         onApply={() => setGridOpen(false)}
       />
+
+      {modalChapter && (
+        <TopicSelectionModal
+          chapterName={modalChapter.name}
+          topics={modalChapter.topics}
+          initiallySelectedIds={selectedTopics.filter(id => modalChapter.topics.some(t => t.id === id))}
+          onConfirm={(selectedIds) => {
+            const chId = `ch${modalChapter.id}`;
+            const allTopicIds = modalChapter.topics.map(t => t.id);
+            setSelectedTopics(prev => {
+              const without = prev.filter(id => !allTopicIds.includes(id));
+              return selectedIds.length > 0 ? [...without, ...selectedIds] : without;
+            });
+            setSelectedChapters(prev =>
+              selectedIds.length > 0
+                ? (prev.includes(chId) ? prev : [...prev, chId])
+                : prev.filter(c => c !== chId)
+            );
+            setModalChapter(null);
+          }}
+          onClose={() => setModalChapter(null)}
+        />
+      )}
 
       {toast && <Toast msg={toast} onDone={() => setToast("")}/>}
     </div>

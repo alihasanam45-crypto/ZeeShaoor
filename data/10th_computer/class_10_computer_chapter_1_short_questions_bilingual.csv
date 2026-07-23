@@ -1,0 +1,72 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,1.1.1 Operating System (OS) as the Central System Controller,topic_separator,,,,,,1
+q_10_cs_ch1_sq_001,1,1.1.1 Operating System (OS) as the Central System Controller,definition_function,Define an operating system and state its central role in a computer system.,Operating System کی تعریف کریں اور کمپیوٹر سسٹم میں اس کا مرکزی کردار بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,1.1.2 Role in User-Hardware Interaction,topic_separator,,,,,,1
+q_10_cs_ch1_sq_002,1,1.1.2 Role in User-Hardware Interaction,definition_example,"Explain how an operating system acts as a translator between the user and computer hardware, and give one relevant example.",وضاحت کریں کہ Operating System صارف اور کمپیوٹر ہارڈویئر کے درمیان مترجم کے طور پر کیسے کام کرتا ہے، اور ایک متعلقہ مثال دیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,1.1.3 Responsibilities in Multi-User Environments Tasks,topic_separator,,,,,,1
+q_10_cs_ch1_sq_003,1,1.1.3 Responsibilities in Multi-User Environments Tasks,features_characteristics,State any three responsibilities of an operating system in a multi-user environment.,Multi-user environment میں Operating System کی کوئی تین ذمہ داریاں بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,1.1.4 Creating and Managing User Accounts,topic_separator,,,,,,1
+q_10_cs_ch1_sq_004,1,1.1.4 Creating and Managing User Accounts,process_steps,Explain how a new user account can be created in Windows and state one benefit of separate user accounts.,Windows میں نیا user account بنانے کا طریقہ بیان کریں اور الگ user accounts کا ایک فائدہ لکھیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,1.2.1 Kernel vs Shell,topic_separator,,,,,,1
+q_10_cs_ch1_sq_005,1,1.2.1 Kernel vs Shell,difference,Differentiate between the kernel and the shell using any two points.,Kernel اور Shell کے درمیان کوئی دو فرق بیان کریں۔,Medium,2,PRO,1
+q_10_cs_ch1_sq_006,1,1.2.1 Kernel vs Shell,definition_function,Define the kernel and explain its role when a user opens a file.,Kernel کی تعریف کریں اور صارف کے فائل کھولنے کے وقت اس کا کردار بیان کریں۔,Easy,2,ULTRA,1
+q_10_cs_ch1_sq_007,1,1.2.1 Kernel vs Shell,difference,"Distinguish between a graphical shell and a command-line shell, and give one example of each.",Graphical shell اور command-line shell میں فرق کریں، اور ہر ایک کی ایک مثال دیں۔,Medium,2,ULTRA,1
+q_10_cs_ch1_sq_008,1,1.2.1 Kernel vs Shell,diagram_based,"Explain the relationship among user applications, the shell, the kernel, and hardware in an operating system.",Operating System میں user applications، Shell، Kernel اور hardware کے باہمی تعلق کی وضاحت کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,1.2.2 OS Layers and Modular Design,topic_separator,,,,,,1
+q_10_cs_ch1_sq_009,1,1.2.2 OS Layers and Modular Design,diagram_based,"State the functions of the lower, middle, and upper layers in a layered operating system.",Layered Operating System میں lower، middle اور upper layers کے افعال بیان کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,1.2.3 System Libraries and Device Drivers,topic_separator,,,,,,1
+q_10_cs_ch1_sq_010,1,1.2.3 System Libraries and Device Drivers,difference,"Differentiate between a system library and a device driver in terms of function, and give one example of each.",System library اور device driver میں فعل کے لحاظ سے فرق کریں، اور ہر ایک کی ایک مثال دیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,1.3 Process Management in Operating System (OS),topic_separator,,,,,,1
+q_10_cs_ch1_sq_011,1,1.3 Process Management in Operating System (OS),definition_function,Define a process and explain why process management is important in an operating system.,Process کی تعریف کریں اور وضاحت کریں کہ Operating System میں process management کیوں اہم ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,1.3.1 Process Life Cycle,topic_separator,,,,,,1
+q_10_cs_ch1_sq_012,1,1.3.1 Process Life Cycle,process_steps,Explain the three stages of the process life cycle and relate them to opening a web browser.,Process life cycle کے تین مراحل بیان کریں اور انہیں web browser کھولنے کی مثال سے واضح کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,1.3.2 Multitasking and Concurrency,topic_separator,,,,,,1
+q_10_cs_ch1_sq_013,1,1.3.2 Multitasking and Concurrency,difference,"Differentiate between multitasking and concurrency, and give one example of each.",Multitasking اور concurrency میں فرق کریں، اور ہر ایک کی ایک مثال دیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,1.3.3 Process Scheduling Concepts,topic_separator,,,,,,1
+q_10_cs_ch1_sq_014,1,1.3.3 Process Scheduling Concepts,definition_function,Define process scheduling and state the two main decisions an operating system makes while scheduling processes.,Process scheduling کی تعریف کریں اور processes کو schedule کرتے وقت Operating System کے دو بنیادی فیصلے بیان کریں۔,Easy,2,ULTRA,1
+q_10_cs_ch1_sq_015,1,1.3.3 Process Scheduling Concepts,law_principle,"Explain the First Come, First Served (FCFS) scheduling method and state its basic execution rule.","First Come, First Served (FCFS) scheduling method کی وضاحت کریں اور اس کا بنیادی execution rule بیان کریں۔",Easy,2,PRO,1
+q_10_cs_ch1_sq_016,1,1.3.3 Process Scheduling Concepts,advantages_disadvantages,Write one advantage and one disadvantage of the FCFS scheduling method.,FCFS scheduling method کا ایک فائدہ اور ایک نقصان لکھیں۔,Easy,2,PRO,1
+q_10_cs_ch1_sq_017,1,1.3.3 Process Scheduling Concepts,numerical_short,"Arrange the processes in FCFS execution order and draw their execution timeline using the given data: P1 (arrival 0 s, burst 4 s), P2 (arrival 1 s, burst 3 s), P3 (arrival 2 s, burst 1 s).","دیے گئے ڈیٹا کی بنیاد پر processes کو FCFS execution order میں ترتیب دیں اور ان کی execution timeline بنائیں: P1 (arrival 0 s, burst 4 s), P2 (arrival 1 s, burst 3 s), P3 (arrival 2 s, burst 1 s)",Hard,2,PRO,1
+q_10_cs_ch1_sq_018,1,1.3.3 Process Scheduling Concepts,numerical_short,"Calculate the waiting time of each process and the average waiting time under FCFS using the given data: P1 (arrival 0 s, burst 4 s), P2 (arrival 1 s, burst 3 s), P3 (arrival 2 s, burst 1 s).","FCFS کے تحت ہر process کا waiting time اور average waiting time معلوم کریں: P1 (arrival 0 s, burst 4 s), P2 (arrival 1 s, burst 3 s), P3 (arrival 2 s, burst 1 s)",Hard,2,PRO,1
+q_10_cs_ch1_sq_019,1,1.3.3 Process Scheduling Concepts,explain_reason,Explain why a short process may still wait for a long time in FCFS scheduling.,وضاحت کریں کہ FCFS scheduling میں کم burst time والا process بھی زیادہ دیر کیوں انتظار کر سکتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,1.4.1 Primary Memory (RAM),topic_separator,,,,,,1
+q_10_cs_ch1_sq_020,1,1.4.1 Primary Memory (RAM),definition_function,Define primary memory (RAM) and state its role during program execution.,Primary memory (RAM) کی تعریف کریں اور program execution کے دوران اس کا کردار بیان کریں۔,Easy,2,ULTRA,1
+q_10_cs_ch1_sq_021,1,1.4.1 Primary Memory (RAM),definition_example,Explain why RAM is called temporary memory and give one example of its use.,وضاحت کریں کہ RAM کو temporary memory کیوں کہا جاتا ہے، اور اس کے استعمال کی ایک مثال دیں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,1.4.2 Virtual Memory,topic_separator,,,,,,1
+q_10_cs_ch1_sq_022,1,1.4.2 Virtual Memory,difference,Differentiate between RAM and virtual memory using any two points.,RAM اور virtual memory کے درمیان کوئی دو فرق بیان کریں۔,Medium,2,PRO,1
+q_10_cs_ch1_sq_023,1,1.4.2 Virtual Memory,definition_function,Define virtual memory and explain why it is slower than RAM.,Virtual memory کی تعریف کریں اور وضاحت کریں کہ یہ RAM سے سست کیوں ہوتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,1.5 Process vs Threads,topic_separator,,,,,,1
+q_10_cs_ch1_sq_024,1,1.5 Process vs Threads,difference,Differentiate between a process and a thread using any two points.,Process اور thread کے درمیان کوئی دو فرق بیان کریں۔,Medium,2,PRO,1
+q_10_cs_ch1_sq_025,1,1.5 Process vs Threads,definition_function,Define a thread and state how multiple threads operate within a single process.,Thread کی تعریف کریں اور بیان کریں کہ ایک process کے اندر multiple threads کیسے کام کرتے ہیں۔,Easy,2,ULTRA,1
+q_10_cs_ch1_sq_026,1,1.5 Process vs Threads,application_scenario,"Explain how a web browser can use separate threads for loading a webpage, playing media, and downloading files.",وضاحت کریں کہ web browser webpage load کرنے، media چلانے اور files download کرنے کے لیے الگ threads کیسے استعمال کر سکتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,1.5.1 Multithreading,topic_separator,,,,,,1
+q_10_cs_ch1_sq_027,1,1.5.1 Multithreading,definition_function,Define multithreading and state how it divides the work of a process.,Multithreading کی تعریف کریں اور بیان کریں کہ یہ ایک process کے کام کو کیسے تقسیم کرتی ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,1.5.2 Benefits of Multithreading,topic_separator,,,,,,1
+q_10_cs_ch1_sq_028,1,1.5.2 Benefits of Multithreading,advantages_disadvantages,State any two benefits of multithreading and give one relevant application example.,Multithreading کے کوئی دو فوائد بیان کریں اور ایک متعلقہ application example دیں۔,Medium,2,PRO,1
+q_10_cs_ch1_sq_029,1,1.5.2 Benefits of Multithreading,explain_reason,Explain why threads use system resources more efficiently than separate processes.,وضاحت کریں کہ threads الگ processes کے مقابلے میں system resources کو زیادہ مؤثر طریقے سے کیوں استعمال کرتے ہیں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,1.6 System Calls,topic_separator,,,,,,1
+q_10_cs_ch1_sq_030,1,1.6 System Calls,definition_example,Define a system call and give any two examples.,System call کی تعریف کریں اور اس کی کوئی دو مثالیں دیں۔,Easy,2,PRO,1
+q_10_cs_ch1_sq_031,1,1.6 System Calls,function_purpose,Explain the purpose of system calls in providing safe access to hardware and core operating-system functions.,Hardware اور Operating System کے core functions تک محفوظ رسائی فراہم کرنے میں system calls کا مقصد بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,1.6.1 Types of System Calls,topic_separator,,,,,,1
+q_10_cs_ch1_sq_032,1,1.6.1 Types of System Calls,list_state,"State the functions of the open, read, write, and fork system calls.",open، read، write اور fork system calls کے افعال بیان کریں۔,Medium,2,PRO,1
+q_10_cs_ch1_sq_033,1,1.6.1 Types of System Calls,application_scenario,Explain how system calls are used when a user saves a file from a text editor to a storage device.,وضاحت کریں کہ text editor سے فائل storage device پر محفوظ کرتے وقت system calls کیسے استعمال ہوتی ہیں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,1.7 File System Structure and Management,topic_separator,,,,,,1
+q_10_cs_ch1_sq_034,1,1.7 File System Structure and Management,definition_function,Define a file system and state its main role in organizing and managing data.,File system کی تعریف کریں اور data کو منظم اور manage کرنے میں اس کا بنیادی کردار بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,1.7.1 Files and 1.7.2 Folders,topic_separator,,,,,,1
+q_10_cs_ch1_sq_035,1,1.7.1 Files and 1.7.2 Folders,difference,"Differentiate between a file and a folder, and state the purpose of each.",File اور folder میں فرق کریں اور ہر ایک کا مقصد بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,1.7.3 Metadata,topic_separator,,,,,,1
+q_10_cs_ch1_sq_036,1,1.7.3 Metadata,definition_example,Define metadata and list any four details that may be stored as file metadata.,Metadata کی تعریف کریں اور file metadata میں محفوظ ہونے والی کوئی چار تفصیلات لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,1.7.4 File Systems,topic_separator,,,,,,1
+q_10_cs_ch1_sq_037,1,1.7.4 File Systems,classification,"Classify FAT32, NTFS, APFS/HFS+, and EXT4 according to the operating systems with which they are commonly associated.",FAT32، NTFS، APFS/HFS+ اور EXT4 کو ان Operating Systems کے مطابق classify کریں جن کے ساتھ یہ عام طور پر منسلک ہیں۔,Hard,2,ELITE,1
+q_10_cs_ch1_sq_038,1,1.7.4 File Systems,concept_explanation,"Explain how a well-designed file system keeps data organized, secure, and easily retrievable, and give one example.",وضاحت کریں کہ ایک اچھی طرح design کیا گیا file system data کو منظم، محفوظ اور آسانی سے قابلِ بازیافت کیسے رکھتا ہے، اور ایک مثال دیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,1.8.1 Real-Time Operating System (RTOS),topic_separator,,,,,,1
+q_10_cs_ch1_sq_039,1,1.8.1 Real-Time Operating System (RTOS),definition_example,"Define a Real-Time Operating System (RTOS), state its key feature, and give one application.",Real-Time Operating System (RTOS) کی تعریف کریں، اس کی بنیادی خصوصیت بیان کریں اور ایک application دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,1.8.2 Embedded Operating System (EOS),topic_separator,,,,,,1
+q_10_cs_ch1_sq_040,1,1.8.2 Embedded Operating System (EOS),definition_example,"Define an Embedded Operating System (EOS), state its key feature, and give two examples of devices in which it is used.",Embedded Operating System (EOS) کی تعریف کریں، اس کی بنیادی خصوصیت بیان کریں اور ایسے دو devices کی مثالیں دیں جن میں یہ استعمال ہوتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,1.8.3 Network Operating System (NOS),topic_separator,,,,,,1
+q_10_cs_ch1_sq_041,1,1.8.3 Network Operating System (NOS),definition_example,"Define a Network Operating System (NOS), state its main purpose, and give one practical example.",Network Operating System (NOS) کی تعریف کریں، اس کا بنیادی مقصد بیان کریں اور ایک عملی مثال دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,1.8.4 Mobile Operating System,topic_separator,,,,,,1
+q_10_cs_ch1_sq_042,1,1.8.4 Mobile Operating System,definition_example,"Define a Mobile Operating System, state its key feature, and name two devices on which it is used.",Mobile Operating System کی تعریف کریں، اس کی بنیادی خصوصیت بیان کریں اور ایسے دو devices کے نام لکھیں جن پر یہ استعمال ہوتا ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,1.8 Types of Operating Systems,topic_separator,,,,,,1
+q_10_cs_ch1_sq_043,1,1.8 Types of Operating Systems,difference,Differentiate between a Real-Time Operating System and an Embedded Operating System using any two points.,Real-Time Operating System اور Embedded Operating System کے درمیان کوئی دو فرق بیان کریں۔,Medium,2,PRO,1
+q_10_cs_ch1_sq_044,1,1.8 Types of Operating Systems,compare_contrast,Compare a Network Operating System and a Mobile Operating System in terms of purpose and commonly used devices.,Network Operating System اور Mobile Operating System کا مقصد اور عام استعمال ہونے والے devices کے لحاظ سے موازنہ کریں۔,Hard,2,PRO,1

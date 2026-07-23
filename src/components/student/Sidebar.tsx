@@ -14,7 +14,6 @@ interface NavItem {
   label: string
   href: string
   icon: typeof LayoutDashboard
-  /** Match nested routes against this prefix instead of href (e.g. dynamic segments) */
   activePrefix?: string
 }
 
@@ -90,13 +89,13 @@ export default function Sidebar({ focusMode, onToggleFocus }: SidebarProps) {
 
   return (
     <aside
-      className={`flex h-full shrink-0 flex-col overflow-hidden border-r border-slate-200 bg-white/95 backdrop-blur-2xl transition-[width] duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+      className={`flex h-full shrink-0 flex-col overflow-hidden border-r border-slate-200 bg-white/95 backdrop-blur-2xl transition-[width] duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] dark:border-slate-800 dark:bg-slate-950/95 ${
         focusMode ? 'w-20' : 'w-72'
       }`}
     >
       {/* Brand */}
       <div
-        className={`flex h-16 shrink-0 items-center border-b border-slate-100 ${
+        className={`flex h-16 shrink-0 items-center border-b border-slate-100 dark:border-slate-800 ${
           focusMode ? 'justify-center' : 'px-6'
         }`}
       >
@@ -110,7 +109,7 @@ export default function Sidebar({ focusMode, onToggleFocus }: SidebarProps) {
             className="shrink-0 rounded-2xl shadow-md shadow-indigo-500/25"
           />
           {!focusMode && (
-            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-lg font-black tracking-tight text-transparent">
+            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-lg font-black tracking-tight text-transparent dark:from-indigo-400 dark:to-purple-400">
               ZeeShaoor.pk
             </span>
           )}
@@ -118,11 +117,11 @@ export default function Sidebar({ focusMode, onToggleFocus }: SidebarProps) {
       </div>
 
       {/* Navigation */}
-      <nav className={`flex-1 space-y-6 overflow-y-auto py-6 ${focusMode ? 'px-3' : 'px-4'}`}>
+      <nav className={`flex-1 space-y-6 overflow-y-auto py-6 transition-colors duration-300 ${focusMode ? 'px-3' : 'px-4'}`}>
         {NAV_SECTIONS.map(section => (
           <div key={section.title}>
             {!focusMode && (
-              <p className="mb-2 px-3 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
+              <p className="mb-2 px-3 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
                 {section.title}
               </p>
             )}
@@ -140,11 +139,11 @@ export default function Sidebar({ focusMode, onToggleFocus }: SidebarProps) {
                       focusMode ? 'justify-center' : 'gap-4'
                     } ${
                       active
-                        ? 'bg-indigo-50 text-indigo-600 shadow-sm'
-                        : 'text-slate-600 hover:bg-slate-50 hover:text-indigo-600 hover:shadow-sm'
+                        ? 'bg-indigo-50 text-indigo-600 shadow-sm dark:bg-indigo-950 dark:text-indigo-400'
+                        : 'text-slate-600 hover:bg-slate-50 hover:text-indigo-600 hover:shadow-sm dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-indigo-400'
                     }`}
                   >
-                    <Icon className={`h-5 w-5 shrink-0 ${active ? 'text-indigo-500' : 'text-slate-400'}`} />
+                    <Icon className={`h-5 w-5 shrink-0 transition-colors duration-300 ${active ? 'text-indigo-500' : 'text-slate-400 dark:text-slate-500'}`} />
                     {!focusMode && <span className="truncate">{item.label}</span>}
                   </Link>
                 )
@@ -155,23 +154,23 @@ export default function Sidebar({ focusMode, onToggleFocus }: SidebarProps) {
       </nav>
 
       {/* Focus Mode toggle */}
-      <div className={`shrink-0 border-t border-slate-100 py-3 ${focusMode ? 'px-3' : 'px-4'}`}>
+      <div className={`shrink-0 border-t border-slate-100 py-3 transition-colors duration-300 dark:border-slate-800 ${focusMode ? 'px-3' : 'px-4'}`}>
         <button
           onClick={onToggleFocus}
           aria-pressed={focusMode}
           title={focusMode ? 'Exit Focus Mode' : 'Enter Focus Mode'}
           className={`flex w-full items-center rounded-2xl p-3 transition-all duration-300 ${
             focusMode
-              ? 'justify-center bg-indigo-50 text-indigo-600 shadow-sm'
-              : 'gap-4 text-slate-600 hover:bg-slate-50 hover:text-indigo-600 hover:shadow-sm'
+              ? 'justify-center bg-indigo-50 text-indigo-600 shadow-sm dark:bg-indigo-950 dark:text-indigo-400'
+              : 'gap-4 text-slate-600 hover:bg-slate-50 hover:text-indigo-600 hover:shadow-sm dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-indigo-400'
           }`}
         >
           <Focus className="h-5 w-5 shrink-0" />
           {!focusMode && (
             <>
               <span className="text-[15px] font-medium">Focus Mode</span>
-              <span className="ml-auto flex h-6 w-11 shrink-0 items-center rounded-full bg-slate-200 p-0.5">
-                <span className="h-5 w-5 rounded-full bg-white shadow-sm" />
+              <span className="ml-auto flex h-6 w-11 shrink-0 items-center rounded-full bg-slate-200 p-0.5 dark:bg-slate-700">
+                <span className="h-5 w-5 rounded-full bg-white shadow-sm dark:bg-slate-300" />
               </span>
             </>
           )}
@@ -179,7 +178,7 @@ export default function Sidebar({ focusMode, onToggleFocus }: SidebarProps) {
       </div>
 
       {/* User */}
-      <div className={`shrink-0 border-t border-slate-100 py-4 ${focusMode ? 'px-3' : 'px-4'}`}>
+      <div className={`shrink-0 border-t border-slate-100 py-4 transition-colors duration-300 dark:border-slate-800 ${focusMode ? 'px-3' : 'px-4'}`}>
         <div className={`flex items-center ${focusMode ? 'justify-center' : 'gap-3'}`}>
           <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 text-xs font-black text-white">
             AH
@@ -187,12 +186,12 @@ export default function Sidebar({ focusMode, onToggleFocus }: SidebarProps) {
           {!focusMode && (
             <>
               <div className="min-w-0">
-                <p className="truncate text-xs font-bold text-slate-800">Ali Hasan</p>
-                <p className="text-[10px] text-slate-500">Student</p>
+                <p className="truncate text-xs font-bold text-slate-800 dark:text-slate-200">Ali Hasan</p>
+                <p className="text-[10px] text-slate-500 dark:text-slate-400">Student</p>
               </div>
               <button
                 aria-label="Log out"
-                className="ml-auto rounded-xl p-2 text-slate-400 transition-all hover:bg-red-50 hover:text-red-500"
+                className="ml-auto rounded-xl p-2 text-slate-400 transition-all hover:bg-red-50 hover:text-red-500 dark:text-slate-500 dark:hover:bg-red-950/30 dark:hover:text-red-400"
               >
                 <LogOut className="h-4 w-4" />
               </button>

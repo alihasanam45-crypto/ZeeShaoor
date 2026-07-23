@@ -1,25 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getToken } from 'next-auth/jwt'
 import { ROUTE_CONFIG } from '@/config/routes'
-import type { ZeeTokenPayload } from '@/types/auth'
+import type { UserRole, ZeeTokenPayload } from '@/types/auth'
 import { validateTeacherPath } from '@/middleware/teacherAuth'
 
-// Next 16 renamed the `middleware` file convention to `proxy` (middleware.ts
-// is deprecated). Same engine: runs before every matched request.
-//
-// RBAC contract (strict per-role portal isolation):
-// - /admin/*   → role 'admin' only
-// - /teacher/* → role 'teacher' only (plus per-subject path validation)
-// - /student/* → role 'student' only
-// - Every role is confined to its OWN page area. A role hitting another
-//   portal's pages is redirected to its own dashboard — including admin, which
-//   stays within /admin/* (no cross-portal page passage).
-// - Admin retains superAccess on API routes only (data oversight): the admin
-//   dashboards read cross-cutting /api/* data, and /api/admin/* is not covered
-//   by the '/admin' page prefix, so the API passthrough is required.
-// - unauthenticated page requests → /login (with callbackUrl)
-// - unauthenticated/foreign-role API requests → 401/403 JSON, never a redirect
-// - authenticated users on `/` → their role dashboard
+const VALID_ROLES: UserRole[] = ['admin', 'teacher', 'student']
+
+function isValidRole(role: string): role is UserRole {
+  return (VALID_ROLES as readonly string[]).includes(role)
+}
 
 function isPublicRoute(pathname: string): boolean {
   return ROUTE_CONFIG.public.some(
@@ -28,12 +17,13 @@ function isPublicRoute(pathname: string): boolean {
 }
 
 function isRoleOwnPath(role: ZeeTokenPayload['role'], pathname: string): boolean {
-  const ownPrefixes = ROUTE_CONFIG[role] as readonly string[]
+  const ownPrefixes = ROUTE_CONFIG[role] as readonly string[] | undefined
+  if (!ownPrefixes) return false
   return ownPrefixes.some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`))
 }
 
-function getHomeForRole(role: ZeeTokenPayload['role']): string {
-  return ROUTE_CONFIG.redirectAfterLogin[role]
+function getHomeForRole(role: UserRole): string {
+  return ROUTE_CONFIG.redirectAfterLogin[role] ?? '/login'
 }
 
 function attachHeaders(response: NextResponse, token: ZeeTokenPayload): NextResponse {
@@ -50,15 +40,13 @@ export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
   // --------- Root: role-aware landing --------------------------------------------------------------------------
-  // Authenticated users never see the marketing page — they go straight to
-  // their dashboard. Guests fall through to the public landing page.
   if (pathname === '/') {
     const token = (await getToken({
       req: request,
       secret: process.env.NEXTAUTH_SECRET,
     })) as ZeeTokenPayload | null
 
-    if (token) {
+    if (token?.role && isValidRole(token.role)) {
       return NextResponse.redirect(new URL(getHomeForRole(token.role), request.url))
     }
     return NextResponse.next()
@@ -71,29 +59,22 @@ export async function proxy(request: NextRequest) {
     secret: process.env.NEXTAUTH_SECRET,
   })) as ZeeTokenPayload | null
 
-  // --------- API routes: NEVER redirect (breaks client fetch CORS) ------------------------------------------------
+  // --------- API routes: role-prefix check doesn't apply (paths are /api/*, not /teacher/api/*) -------------------
   if (pathname.startsWith('/api/')) {
-    if (token?.role === 'admin') {
-      return attachHeaders(NextResponse.next(), token)
-    }
     if (!token) {
       return NextResponse.json({ error: 'Unauthorized', message: 'Login required.' }, { status: 401 })
-    }
-    if (!isRoleOwnPath(token.role, pathname)) {
-      return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
     }
     return attachHeaders(NextResponse.next(), token)
   }
 
   // --------- Page routes ----------------------------------------------------------------------------------------
-  if (!token) {
+  if (!token || !token.role || !isValidRole(token.role)) {
     const loginUrl = new URL('/login', request.url)
     loginUrl.searchParams.set('callbackUrl', pathname)
     return NextResponse.redirect(loginUrl)
   }
 
-  // Every role — admin included — is confined to its own portal for page
-  // navigation. Foreign-portal page requests bounce to the role's own home.
+  // Confine every role to its own portal
   if (!isRoleOwnPath(token.role, pathname)) {
     return NextResponse.redirect(new URL(getHomeForRole(token.role), request.url))
   }

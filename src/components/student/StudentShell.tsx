@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { Bell, Focus } from 'lucide-react'
 import Sidebar from './Sidebar'
+import ThemeToggle from '@/components/ThemeToggle'
 import AIAssistOrb from './AIAssistOrb'
 import NotificationHub, { SEED_NOTIFICATIONS, type HubNotification } from './NotificationHub'
 
@@ -48,31 +49,32 @@ export default function StudentShell({ children }: { children: React.ReactNode }
   return (
     <div
       data-focus={focusMode ? 'on' : 'off'}
-      className="group/shell flex h-screen w-full overflow-hidden bg-[#F8FAFC] font-sans text-slate-900"
+      className="group/shell flex h-screen w-full overflow-hidden bg-[#F8FAFC] font-sans text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-50"
     >
       <Sidebar focusMode={focusMode} onToggleFocus={() => setFocusMode(v => !v)} />
 
       <div className="flex h-full min-w-0 flex-1 flex-col">
-        <header className="flex h-16 shrink-0 items-center justify-between border-b border-slate-200/70 bg-white/70 px-6 backdrop-blur-xl lg:px-10">
+        <header className="flex h-16 shrink-0 items-center justify-between border-b border-slate-200/70 bg-white/70 px-6 backdrop-blur-xl transition-colors duration-300 dark:border-slate-800/70 dark:bg-slate-900/70 lg:px-10">
           <div className="flex items-baseline gap-2.5">
-            <span className="hidden text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400 sm:inline">
+            <span className="hidden text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400 transition-colors duration-300 dark:text-slate-500 sm:inline">
               Student Portal
             </span>
-            <span className="hidden text-slate-300 sm:inline">/</span>
-            <span className="text-sm font-bold text-slate-800">{sectionTitle}</span>
+            <span className="hidden text-slate-300 transition-colors duration-300 dark:text-slate-600 sm:inline">/</span>
+            <span className="text-sm font-bold text-slate-800 transition-colors duration-300 dark:text-slate-200">{sectionTitle}</span>
           </div>
 
           <div className="flex items-center gap-2">
             {focusMode && (
-              <span className="hidden items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1.5 text-[11px] font-semibold text-indigo-600 sm:flex">
+              <span className="hidden items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1.5 text-[11px] font-semibold text-indigo-600 transition-colors duration-300 dark:bg-indigo-950 dark:text-indigo-400 sm:flex">
                 <Focus className="h-3.5 w-3.5" />
                 Focus Mode on
               </span>
             )}
+            <ThemeToggle />
             <button
               onClick={() => setHubOpen(true)}
               aria-label={`Open notification hub${unreadCount > 0 ? ` (${unreadCount} unread)` : ''}`}
-              className="relative rounded-2xl p-2.5 text-slate-500 transition-all hover:bg-slate-50 hover:text-indigo-600 hover:shadow-sm"
+              className="relative rounded-2xl p-2.5 text-slate-500 transition-all hover:bg-slate-50 hover:text-indigo-600 hover:shadow-sm dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-indigo-400"
             >
               <Bell className="h-5 w-5" />
               {unreadCount > 0 && (

@@ -127,10 +127,22 @@ export default function LoginPage() {
       if (!result)        { setError('DEFAULT'); return }
       if (result.error)   { setError(result.error); return }
       if (result.ok) {
-        const s    = await fetch('/api/auth/session')
-        const sess = await s.json()
-        const role = sess?.user?.role as UserRole | undefined
-        router.replace(role && ROUTE_CONFIG.redirectAfterLogin[role] ? ROUTE_CONFIG.redirectAfterLogin[role] : '/')
+        // Small retry loop: session cookie may not be ready immediately
+        let role: UserRole | undefined
+        for (let i = 0; i < 3; i++) {
+          if (i > 0) await new Promise((r) => setTimeout(r, 200))
+          try {
+            const s    = await fetch('/api/auth/session')
+            const sess = await s.json()
+            role = sess?.user?.role as UserRole | undefined
+            if (role && ROUTE_CONFIG.redirectAfterLogin[role]) break
+          } catch { /* retry */ }
+        }
+        if (role && ROUTE_CONFIG.redirectAfterLogin[role]) {
+          router.replace(ROUTE_CONFIG.redirectAfterLogin[role])
+        } else {
+          router.replace('/login')
+        }
       }
     })
   }

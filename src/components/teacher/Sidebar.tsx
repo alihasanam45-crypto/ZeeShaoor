@@ -16,10 +16,16 @@ type NavSection = { heading: string; items: NavItem[] }
 
 // /teacher/paper is intentionally absent — it renders the generated paper
 // from sessionStorage and redirects to /teacher/generator when empty.
+//
+// Paper Generator is the flagship tool, so it sits at the very top under
+// Dashboard (not buried in Assessment).
 const SECTIONS: NavSection[] = [
   {
     heading: 'Overview',
-    items: [{ label: 'Dashboard', href: '/teacher', icon: LayoutDashboard }],
+    items: [
+      { label: 'Dashboard', href: '/teacher', icon: LayoutDashboard },
+      { label: 'Paper Generator', href: '/teacher/generator', icon: WandSparkles },
+    ],
   },
   {
     heading: 'Teaching',
@@ -35,7 +41,6 @@ const SECTIONS: NavSection[] = [
     heading: 'Assessment',
     items: [
       { label: 'Test Creator', href: '/teacher/test-creator', icon: FileCheck },
-      { label: 'Paper Generator', href: '/teacher/generator', icon: WandSparkles },
       { label: 'Homework Autopilot', href: '/teacher/homework', icon: ClipboardList },
       { label: 'Rubric Scorer', href: '/teacher/rubric', icon: NotebookPen },
       { label: 'Grade Distribution', href: '/teacher/grade-distribution', icon: BarChart3 },
@@ -67,30 +72,36 @@ const SECTIONS: NavSection[] = [
   },
 ]
 
+// Executive Dark / Neon glassmorphism — matches the Paper Generator palette
+// (bg #0a0a14, deep slate panels, neon indigo/purple accents) so the whole
+// teacher portal reads as one unified command center.
 export default function TeacherSidebar() {
   const pathname = usePathname() ?? ''
 
   return (
-    <aside className="z-50 flex h-full w-72 shrink-0 flex-col border-r border-slate-200 bg-white">
-      <div className="flex h-16 shrink-0 items-center gap-3 border-b border-slate-100 px-6">
+    <aside className="relative z-50 flex h-full w-72 shrink-0 flex-col border-r border-white/10 bg-[#0a0a14]">
+      {/* Neon hairline down the right edge */}
+      <div aria-hidden className="pointer-events-none absolute inset-y-0 right-0 w-px bg-gradient-to-b from-indigo-500/40 via-purple-500/20 to-transparent" />
+
+      <div className="relative flex h-16 shrink-0 items-center gap-3 border-b border-white/10 px-6">
         <Image
           src="/logo.png"
           alt="ZeeShaoor.pk"
           width={36}
           height={36}
           priority
-          className="rounded-xl shadow-lg shadow-indigo-500/20"
+          className="rounded-xl shadow-lg shadow-indigo-500/30"
         />
         <div>
-          <h1 className="text-sm font-bold tracking-tight text-slate-900">ZeeShaoor.pk</h1>
-          <p className="text-[10px] font-medium uppercase tracking-wider text-slate-400">Teacher Portal</p>
+          <h1 className="text-sm font-bold tracking-tight text-white">ZeeShaoor.pk</h1>
+          <p className="text-[10px] font-medium uppercase tracking-wider text-white/40">Teacher Portal</p>
         </div>
       </div>
 
       <nav className="flex-1 overflow-y-auto px-3 py-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {SECTIONS.map((section) => (
           <div key={section.heading} className="mb-6">
-            <p className="mb-2 px-3 text-[10px] font-semibold uppercase tracking-[0.14em] text-slate-400">
+            <p className="mb-2 px-3 text-[10px] font-semibold uppercase tracking-[0.14em] text-white/35">
               {section.heading}
             </p>
             <ul className="space-y-0.5">
@@ -104,19 +115,21 @@ export default function TeacherSidebar() {
                     <Link
                       href={item.href}
                       aria-current={isActive ? 'page' : undefined}
-                      className={`group flex items-center gap-3 rounded-xl px-3 py-2 text-sm transition-colors duration-150 ${
+                      className={`group flex items-center gap-3 rounded-xl px-3 py-2 text-sm transition-all duration-150 ${
                         isActive
-                          ? 'bg-indigo-50 font-medium text-indigo-700'
-                          : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'
+                          ? 'bg-gradient-to-r from-indigo-500/25 to-purple-500/10 font-semibold text-white ring-1 ring-inset ring-indigo-400/30 shadow-[0_4px_20px_rgba(99,102,241,0.18)]'
+                          : 'text-slate-400 hover:bg-white/[0.06] hover:text-white'
                       }`}
                     >
                       <item.icon
                         className={`h-4 w-4 shrink-0 transition-colors ${
-                          isActive ? 'text-indigo-600' : 'text-slate-400 group-hover:text-slate-600'
+                          isActive ? 'text-indigo-300' : 'text-slate-500 group-hover:text-slate-300'
                         }`}
                       />
                       <span className="truncate">{item.label}</span>
-                      {isActive && <span className="ml-auto h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" />}
+                      {isActive && (
+                        <span className="ml-auto h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-400 shadow-[0_0_8px_2px_rgba(129,140,248,0.6)]" />
+                      )}
                     </Link>
                   </li>
                 )
@@ -126,8 +139,8 @@ export default function TeacherSidebar() {
         ))}
       </nav>
 
-      <div className="shrink-0 border-t border-slate-100 px-6 py-3">
-        <p className="text-[10px] leading-relaxed text-slate-400">
+      <div className="shrink-0 border-t border-white/10 px-6 py-3">
+        <p className="text-[10px] leading-relaxed text-white/30">
           Awakening Intellect, Anchoring Truth
         </p>
       </div>

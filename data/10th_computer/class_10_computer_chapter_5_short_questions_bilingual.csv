@@ -1,0 +1,90 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,5.1 Introduction to Data Science,topic_separator,,,,,,1
+q_10_cs_ch5_sq_001,1,5.1 Introduction to Data Science,definition_function,Define Data Science and state its main purpose in solving problems and making decisions.,Data Science کی تعریف کریں اور مسائل حل کرنے اور فیصلے کرنے میں اس کا بنیادی مقصد بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,5.1.1 Importance of Data in Decision Making,topic_separator,,,,,,1
+q_10_cs_ch5_sq_002,1,5.1.1 Importance of Data in Decision Making,explain_reason,Explain why data-based decisions are more reliable than decisions based on guesses or personal opinions.,وضاحت کریں کہ data پر مبنی فیصلے guesses یا personal opinions پر مبنی فیصلوں سے زیادہ قابلِ اعتماد کیوں ہوتے ہیں۔,Medium,2,PRO,1
+q_10_cs_ch5_sq_003,1,5.1.1 Importance of Data in Decision Making,difference,Differentiate between data-driven decision making and decision making based on personal opinion.,Data-driven decision making اور personal opinion پر مبنی decision making کے درمیان فرق بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,5.1.2 Real-Life Applications of Data Science,topic_separator,,,,,,1
+q_10_cs_ch5_sq_004,1,5.1.2 Real-Life Applications of Data Science,list_state,State any three real-life applications of Data Science and briefly mention how data is used in each.,Data Science کی کوئی تین real-life applications بیان کریں اور مختصراً لکھیں کہ ہر ایک میں data کیسے استعمال ہوتا ہے۔,Easy,2,PRO,1
+q_10_cs_ch5_sq_005,1,5.1.2 Real-Life Applications of Data Science,application_scenario,Explain how online shopping platforms use previous purchases to suggest products to customers.,وضاحت کریں کہ online shopping platforms پچھلی purchases استعمال کرتے ہوئے customers کو products کیسے suggest کرتے ہیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,5.2 Overview of the Data Science Life Cycle,topic_separator,,,,,,1
+q_10_cs_ch5_sq_006,1,5.2 Overview of the Data Science Life Cycle,process_steps,Define the Data Science Life Cycle (DSLC) and list its six main steps in the correct sequence.,Data Science Life Cycle (DSLC) کی تعریف کریں اور اس کے چھ بنیادی steps درست sequence میں لکھیں۔,Easy,2,PRO,1
+q_10_cs_ch5_sq_007,1,5.2 Overview of the Data Science Life Cycle,sequence,Explain why the steps of the Data Science Life Cycle should be followed in a logical sequence.,وضاحت کریں کہ Data Science Life Cycle کے steps کو logical sequence میں follow کرنا کیوں ضروری ہے۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,5.2.1 Understanding the Problem,topic_separator,,,,,,1
+q_10_cs_ch5_sq_008,1,5.2.1 Understanding the Problem,explain_reason,Explain the importance of understanding a problem clearly before collecting data.,Data collect کرنے سے پہلے problem کو واضح طور پر سمجھنے کی اہمیت بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.2.1 Identifying and Defining a Problem,topic_separator,,,,,,1
+q_10_cs_ch5_sq_009,1,5.2.1 Identifying and Defining a Problem,difference,Differentiate between identifying a problem and defining a problem clearly.,Problem identify کرنے اور problem کو واضح طور پر define کرنے کے درمیان فرق بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,5.2.1 Setting Clear Objectives,topic_separator,,,,,,1
+q_10_cs_ch5_sq_010,1,5.2.1 Setting Clear Objectives,definition_function,Define objectives in a Data Science project and state how they guide the remaining stages of the project.,Data Science project میں objectives کی تعریف کریں اور بیان کریں کہ یہ project کے باقی stages کی رہنمائی کیسے کرتے ہیں۔,Easy,2,PRO,1
+q_10_cs_ch5_sq_011,1,5.2.1 Setting Clear Objectives,application_scenario,Formulate two clear objectives for investigating why students arrive late at school.,Students کے school دیر سے پہنچنے کی وجوہات معلوم کرنے کے لیے دو clear objectives بنائیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,5.2.2 Collecting Data,topic_separator,,,,,,1
+q_10_cs_ch5_sq_012,1,5.2.2 Collecting Data,list_state,Name any two methods of data collection and give one suitable example of each.,Data collection کے کوئی دو methods کے نام لکھیں اور ہر ایک کی ایک مناسب مثال دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,5.2.2 Methods of Data Collection,topic_separator,,,,,,1
+q_10_cs_ch5_sq_013,1,5.2.2 Methods of Data Collection,definition_example,Define a survey and state one online and one paper-based method of conducting it.,Survey کی تعریف کریں اور اسے conduct کرنے کا ایک online اور ایک paper-based method بیان کریں۔,Easy,2,ULTRA,1
+q_10_cs_ch5_sq_014,1,5.2.2 Methods of Data Collection,difference,Differentiate between data collection through APIs and data collection through IoT sensors.,APIs کے ذریعے data collection اور IoT sensors کے ذریعے data collection کے درمیان فرق بیان کریں۔,Medium,2,PRO,1
+q_10_cs_ch5_sq_015,1,5.2.2 Methods of Data Collection,definition_example,"Define web scraping, give one business-related example, and state the condition under which it should be performed.",Web scraping کی تعریف کریں، ایک business-related مثال دیں اور وہ شرط بیان کریں جس کے تحت اسے perform کرنا چاہیے۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.2.2 Choosing the Right Data Source,topic_separator,,,,,,1
+q_10_cs_ch5_sq_016,1,5.2.2 Choosing the Right Data Source,features_characteristics,State the three main qualities of a suitable data source.,مناسب data source کی تین بنیادی qualities بیان کریں۔,Easy,2,ULTRA,1
+q_10_cs_ch5_sq_017,1,5.2.2 Choosing the Right Data Source,explain_reason,Explain why data should be recent and directly related to the problem being investigated.,وضاحت کریں کہ data کا recent اور زیرِ تحقیق problem سے directly related ہونا کیوں ضروری ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,5.2.2 Assessing Data Quality and Bias,topic_separator,,,,,,1
+q_10_cs_ch5_sq_018,1,5.2.2 Assessing Data Quality and Bias,definition_function,"Define data quality and bias, and state how each can affect the reliability of results.",Data quality اور bias کی تعریف کریں اور بیان کریں کہ ہر ایک results کی reliability کو کیسے متاثر کر سکتا ہے۔,Medium,2,PRO,1
+q_10_cs_ch5_sq_019,1,5.2.2 Assessing Data Quality and Bias,cause_effect,"Explain how surveying only one group of students can produce biased results, and state one way to reduce this bias.",وضاحت کریں کہ صرف ایک group کے students کا survey biased results کیسے پیدا کر سکتا ہے، اور اس bias کو کم کرنے کا ایک طریقہ بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.2.2 Collecting Data,topic_separator,,,,,,1
+q_10_cs_ch5_sq_020,1,5.2.2 Collecting Data,process_steps,"Design a short survey by stating the steps for preparing questions, selecting respondents, collecting responses, and storing the data.",Short survey design کرنے کے لیے questions تیار کرنے، respondents منتخب کرنے، responses collect کرنے اور data store کرنے کے steps بیان کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,5.2.3 Cleaning and Validating Data,topic_separator,,,,,,1
+q_10_cs_ch5_sq_021,1,5.2.3 Cleaning and Validating Data,difference,Differentiate between raw data and cleaned data using any two points.,Raw data اور cleaned data کے درمیان کوئی دو فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.2.3 Raw Data,topic_separator,,,,,,1
+q_10_cs_ch5_sq_022,1,5.2.3 Raw Data,definition_example,Define raw data and give one example of raw data collected through a survey.,Raw data کی تعریف کریں اور survey کے ذریعے collect ہونے والے raw data کی ایک مثال دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,5.2.3 Common Data Errors,topic_separator,,,,,,1
+q_10_cs_ch5_sq_023,1,5.2.3 Common Data Errors,list_state,List the five common types of errors that may occur in raw data.,Raw data میں پیدا ہونے والی پانچ common error types لکھیں۔,Easy,2,PRO,1
+q_10_cs_ch5_sq_024,1,5.2.3 Common Data Errors,difference,"Differentiate between missing data and duplicate entries, and give one example of each.",Missing data اور duplicate entries میں فرق کریں اور ہر ایک کی ایک مثال دیں۔,Easy,2,ULTRA,1
+q_10_cs_ch5_sq_025,1,5.2.3 Common Data Errors,difference,Differentiate between inconsistent formats and spelling mistakes in a dataset.,Dataset میں inconsistent formats اور spelling mistakes کے درمیان فرق بیان کریں۔,Medium,2,ELITE,1
+q_10_cs_ch5_sq_026,1,5.2.3 Common Data Errors,definition_example,Define an outlier and give one example of an unrealistic value in a student survey.,Outlier کی تعریف کریں اور student survey میں unrealistic value کی ایک مثال دیں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,5.2.3 Data Validation Techniques,topic_separator,,,,,,1
+q_10_cs_ch5_sq_027,1,5.2.3 Data Validation Techniques,process_steps,"Explain how range checks, value-type checks, and accepted-value lists can be used to validate data.",وضاحت کریں کہ range checks، value-type checks اور accepted-value lists کو data validate کرنے کے لیے کیسے استعمال کیا جا سکتا ہے۔,Hard,2,PRO,1
+q_10_cs_ch5_sq_028,1,5.2.3 Data Validation Techniques,list_state,State any three techniques that improve the quality of responses in an online survey form.,Online survey form میں responses کی quality بہتر بنانے والی کوئی تین techniques بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,5.2.3 Data Cleaning Methods,topic_separator,,,,,,1
+q_10_cs_ch5_sq_029,1,5.2.3 Data Cleaning Methods,definition_function,Define data cleaning and list any four methods used to correct or remove errors.,Data cleaning کی تعریف کریں اور errors درست یا remove کرنے کے لیے استعمال ہونے والے کوئی چار methods لکھیں۔,Easy,2,PRO,1
+q_10_cs_ch5_sq_030,1,5.2.3 Data Cleaning Methods,application_scenario,"Explain how you would clean a dataset containing Football and football, Cricket and CRICKET, duplicate names, blank cells, and an unrealistic frequency value.","وضاحت کریں کہ ایسے dataset کو کیسے clean کریں گے جس میں capitalization differences، duplicate names، blank cells اور unrealistic frequency value موجود ہوں: Football/football, Cricket/CRICKET",Hard,2,PRO,1
+TOPIC_SEP,1,5.2.3 Why Cleaning Data Matters,topic_separator,,,,,,1
+q_10_cs_ch5_sq_031,1,5.2.3 Why Cleaning Data Matters,cause_effect,Explain how dirty data can lead to incorrect analysis and wrong decisions.,وضاحت کریں کہ dirty data incorrect analysis اور wrong decisions کا سبب کیسے بن سکتا ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.2.4 Analyzing Data,topic_separator,,,,,,1
+q_10_cs_ch5_sq_032,1,5.2.4 Analyzing Data,definition_function,Define data analysis and state any three purposes of analyzing data.,Data analysis کی تعریف کریں اور data analyze کرنے کے کوئی تین purposes بیان کریں۔,Easy,2,PRO,1
+q_10_cs_ch5_sq_033,1,5.2.4 Analyzing Data,list_state,"State the meanings of count, average, and frequency as simple measures used in data analysis.",Data analysis میں استعمال ہونے والے simple measures یعنی count، average اور frequency کے meanings بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,5.2.4 Using Simple Tools for Analysis,topic_separator,,,,,,1
+q_10_cs_ch5_sq_034,1,5.2.4 Using Simple Tools for Analysis,function_purpose,"State how Google Sheets, Microsoft Excel, or a notebook can be used for simple data analysis.",بیان کریں کہ Google Sheets، Microsoft Excel یا notebook کو simple data analysis کے لیے کیسے استعمال کیا جا سکتا ہے۔,Easy,2,ELITE,1
+TOPIC_SEP,1,5.2.4 Analyzing Data,topic_separator,,,,,,1
+q_10_cs_ch5_sq_035,1,5.2.4 Analyzing Data,table_based,"Analyze the given sports-frequency data, identify the most and least popular sports, and write one conclusion: Cricket 7, Football 6, Hockey 5, Badminton 2.","دیے گئے sports-frequency data کا analysis کریں، most popular اور least popular sport شناخت کریں اور ایک conclusion لکھیں: Cricket 7, Football 6, Hockey 5, Badminton 2",Hard,2,PRO,1
+TOPIC_SEP,1,5.2.5 Interpreting Data,topic_separator,,,,,,1
+q_10_cs_ch5_sq_036,1,5.2.5 Interpreting Data,definition_function,Define data interpretation and state the main questions that should be asked while interpreting summarized data.,Data interpretation کی تعریف کریں اور summarized data interpret کرتے وقت پوچھے جانے والے بنیادی questions بیان کریں۔,Medium,2,PRO,1
+q_10_cs_ch5_sq_037,1,5.2.5 Interpreting Data,difference,Differentiate between analyzing data and interpreting data.,Data analyze کرنے اور data interpret کرنے کے درمیان فرق بیان کریں۔,Medium,2,ULTRA,1
+q_10_cs_ch5_sq_038,1,5.2.5 Interpreting Data,application_scenario,A survey shows that most late students live far from school. Interpret this pattern and recommend one suitable action.,Survey سے معلوم ہوا کہ زیادہ تر late students school سے دور رہتے ہیں۔ اس pattern کی interpretation کریں اور ایک مناسب action recommend کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,5.2.6 Visualizing and Communicating Results,topic_separator,,,,,,1
+q_10_cs_ch5_sq_039,1,5.2.6 Visualizing and Communicating Results,definition_function,Define data visualization and state its main purpose in presenting findings.,Data visualization کی تعریف کریں اور findings پیش کرنے میں اس کا بنیادی مقصد بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,5.2.6 Importance of Data Visualization,topic_separator,,,,,,1
+q_10_cs_ch5_sq_040,1,5.2.6 Importance of Data Visualization,advantages_disadvantages,State any three advantages of presenting data through charts or graphs.,Charts یا graphs کے ذریعے data پیش کرنے کے کوئی تین advantages بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,5.2.6 Common Types of Charts and Graphs,topic_separator,,,,,,1
+q_10_cs_ch5_sq_041,1,5.2.6 Common Types of Charts and Graphs,compare_contrast,"Compare bar charts, pie charts, and line charts in terms of the type of information each is best suited to display.",Bar charts، pie charts اور line charts کا اس information کے لحاظ سے موازنہ کریں جسے ہر chart بہترین طور پر display کرتا ہے۔,Hard,2,PRO,1
+q_10_cs_ch5_sq_042,1,5.2.6 Common Types of Charts and Graphs,application_scenario,"Select a suitable chart for comparing student groups, showing parts of a whole, and displaying change over time, and justify each selection.",Student groups compare کرنے، whole کے parts دکھانے اور time کے ساتھ change display کرنے کے لیے مناسب chart منتخب کریں اور ہر selection کی وجہ بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.2.6 Communicating Results,topic_separator,,,,,,1
+q_10_cs_ch5_sq_043,1,5.2.6 Communicating Results,list_state,State any three guidelines for communicating data findings clearly and effectively.,Data findings کو clear اور effective انداز میں communicate کرنے کے کوئی تین guidelines بیان کریں۔,Easy,2,ULTRA,1
+q_10_cs_ch5_sq_044,1,5.2.6 Communicating Results,concept_explanation,Explain how visuals and short written statements can work together to create a clear data story.,وضاحت کریں کہ visuals اور short written statements مل کر clear data story کیسے بناتے ہیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,5.3.1 Creating Charts in Spreadsheets,topic_separator,,,,,,1
+q_10_cs_ch5_sq_045,1,5.3.1 Creating Charts in Spreadsheets,process_steps,Write the main steps for creating and customizing a chart in Google Sheets or Microsoft Excel.,Google Sheets یا Microsoft Excel میں chart create اور customize کرنے کے بنیادی steps لکھیں۔,Hard,2,PRO,1
+q_10_cs_ch5_sq_046,1,5.3.1 Creating Charts in Spreadsheets,advantages_disadvantages,State any three advantages of using Google Sheets for beginner-level chart creation.,Beginner-level chart creation کے لیے Google Sheets استعمال کرنے کے کوئی تین advantages بیان کریں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,5.3 Tools for Visualization,topic_separator,,,,,,1
+q_10_cs_ch5_sq_047,1,5.3 Tools for Visualization,definition_function,Define a dashboard and state how it helps communicate several visual findings in one place.,Dashboard کی تعریف کریں اور بیان کریں کہ یہ کئی visual findings کو ایک جگہ communicate کرنے میں کیسے مدد دیتا ہے۔,Easy,2,ELITE,1
+TOPIC_SEP,1,5.4 Databases and Storing Data,topic_separator,,,,,,1
+q_10_cs_ch5_sq_048,1,5.4 Databases and Storing Data,difference,"Differentiate between spreadsheets and databases in terms of structure, dataset size, and typical use.",Structure، dataset size اور typical use کے لحاظ سے spreadsheets اور databases کے درمیان فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.4.1 What is Database?,topic_separator,,,,,,1
+q_10_cs_ch5_sq_049,1,5.4.1 What is Database?,definition_function,Define a database and state any two benefits of storing related data in tables.,Database کی تعریف کریں اور related data کو tables میں store کرنے کے کوئی دو benefits بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,5.4.1 Database Terms,topic_separator,,,,,,1
+q_10_cs_ch5_sq_050,1,5.4.1 Database Terms,difference,"Differentiate among a table, a record, and a field, and give one example of each.",Table، record اور field کے درمیان فرق کریں اور ہر ایک کی ایک مثال دیں۔,Hard,2,PRO,1
+TOPIC_SEP,1,5.4.1 Database Management System (DBMS),topic_separator,,,,,,1
+q_10_cs_ch5_sq_051,1,5.4.1 Database Management System (DBMS),definition_example,Define a Database Management System (DBMS) and give any two examples.,Database Management System (DBMS) کی تعریف کریں اور اس کی کوئی دو examples دیں۔,Easy,2,ULTRA,1
+q_10_cs_ch5_sq_052,1,5.4.1 Database Management System (DBMS),difference,Differentiate between DBMS and SQL in terms of their roles in working with databases.,Databases کے ساتھ کام کرنے میں DBMS اور SQL کے roles کے لحاظ سے فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.4.1 Structured Query Language (SQL),topic_separator,,,,,,1
+q_10_cs_ch5_sq_053,1,5.4.1 Structured Query Language (SQL),function_purpose,State the purpose of SQL and name the four basic data operations described for it.,SQL کا purpose بیان کریں اور اس کے لیے بیان کردہ چار basic data operations کے نام لکھیں۔,Easy,2,ULTRA,1
+q_10_cs_ch5_sq_054,1,5.4.1 Structured Query Language (SQL),application_scenario,Write an SQL query to display all records from a table named Sports.,Sports نامی table کے تمام records display کرنے کے لیے SQL query لکھیں۔,Hard,2,PRO,1
+q_10_cs_ch5_sq_055,1,5.4.1 Structured Query Language (SQL),application_scenario,Write an SQL query to display the names of students whose favorite sport is Cricket from the Sports table.,Sports table سے ان students کے names display کرنے کے لیے SQL query لکھیں جن کا favorite sport Cricket ہے۔,Hard,2,PRO,1
+q_10_cs_ch5_sq_056,1,5.4.1 Structured Query Language (SQL),application_scenario,Write an SQL query to insert a new record into the Sports table with the values Ali and Football for the Name and Favorite_Sport fields.,"Sports table میں Name اور Favorite_Sport fields کے لیے نیا record insert کرنے کی SQL query لکھیں: Ali, Football",Hard,2,PRO,1

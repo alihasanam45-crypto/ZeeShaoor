@@ -30,7 +30,7 @@ const CLASS_SUBJECTS = [
 
 // The one glassmorphism spec every widget sits in
 const GLASS_CARD =
-  'rounded-[2.5rem] border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] lg:p-10'
+  'rounded-[2.5rem] border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-colors duration-300 lg:p-10 dark:border-slate-700 dark:bg-slate-900'
 
 // Widgets that are not part of an active study session dim out in Focus Mode
 const FOCUS_DIM =
@@ -49,12 +49,12 @@ function CardHeader({
 }) {
   return (
     <div className="mb-8 flex items-center gap-3">
-      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600">
+      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400">
         {icon}
       </span>
       <div>
-        <h2 className="text-lg font-bold text-slate-800">{title}</h2>
-        {subtitle && <p className="text-xs text-slate-400">{subtitle}</p>}
+        <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">{title}</h2>
+        {subtitle && <p className="text-xs text-slate-400 dark:text-slate-500">{subtitle}</p>}
       </div>
     </div>
   )
@@ -73,15 +73,15 @@ function StatTile({
 }) {
   return (
     <div className="flex items-center gap-4">
-      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600">
+      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400">
         {icon}
       </span>
       <div className="min-w-0">
-        <p className="truncate text-xl font-black leading-tight text-slate-800">
+        <p className="truncate text-xl font-black leading-tight text-slate-800 dark:text-slate-100">
           {value}
-          {sub && <span className="ml-1 text-xs font-semibold text-slate-400">{sub}</span>}
+          {sub && <span className="ml-1 text-xs font-semibold text-slate-400 dark:text-slate-500">{sub}</span>}
         </p>
-        <p className="text-xs font-medium text-slate-400">{label}</p>
+        <p className="text-xs font-medium text-slate-400 dark:text-slate-500">{label}</p>
       </div>
     </div>
   )
@@ -90,8 +90,8 @@ function StatTile({
 function EmptyHint({ title, hint }: { title: string; hint: string }) {
   return (
     <div className="py-8 text-center">
-      <p className="text-xs font-semibold text-slate-500">{title}</p>
-      <p className="mt-1 text-xs text-slate-400">{hint}</p>
+      <p className="text-xs font-semibold text-slate-500 dark:text-slate-400">{title}</p>
+      <p className="mt-1 text-xs text-slate-400 dark:text-slate-500">{hint}</p>
     </div>
   )
 }
@@ -115,7 +115,7 @@ export default async function StudentDashboard() {
         weeklyGrowth={data.weeklyGrowth}
       />
 
-      <section className={`rounded-[2.5rem] border border-slate-100 bg-white p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] lg:p-8 ${FOCUS_DIM}`}>
+      <section className={`rounded-[2.5rem] border border-slate-100 bg-white p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-colors duration-300 lg:p-8 dark:border-slate-700 dark:bg-slate-900 ${FOCUS_DIM}`}>
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
           <StatTile
             icon={<Gauge className="h-5 w-5" />}
@@ -180,7 +180,7 @@ export default async function StudentDashboard() {
                 <Link
                   key={subject}
                   href={`/student/subject/${toSlug(subject)}`}
-                  className="group flex items-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-700"
+                  className="group flex items-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700 transition-all hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:border-indigo-700 dark:hover:bg-indigo-950 dark:hover:text-indigo-400"
                 >
                   <span className="h-2 w-2 shrink-0 rounded-full bg-indigo-400" />
                   <span className="flex-1 truncate">{subject}</span>
@@ -204,13 +204,13 @@ export default async function StudentDashboard() {
                 {data.upcomingExams.map(exam => (
                   <div
                     key={`${exam.subject}-${exam.date}`}
-                    className="flex items-center justify-between rounded-2xl border border-slate-100 bg-slate-50 p-4"
+                    className="flex items-center justify-between rounded-2xl border border-slate-100 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-800"
                   >
                     <div>
-                      <p className="text-sm font-semibold text-slate-800">{exam.subject}</p>
-                      <p className="mt-0.5 text-xs text-slate-500">{exam.type}</p>
+                      <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">{exam.subject}</p>
+                      <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">{exam.type}</p>
                     </div>
-                    <span className="rounded-full bg-indigo-50 px-3 py-1.5 text-xs font-bold text-indigo-600">
+                    <span className="rounded-full bg-indigo-50 px-3 py-1.5 text-xs font-bold text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400">
                       {exam.date}
                     </span>
                   </div>
