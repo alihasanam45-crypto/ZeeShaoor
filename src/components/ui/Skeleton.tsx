@@ -1,51 +1,85 @@
-import React from 'react';
+import { cn } from './cn'
 
-// ==========================================
-// QUANTUM SKELETON ENGINE (Cinematic Loading)
-// ==========================================
+/**
+ * Loading placeholder.
+ *
+ * Uses the `.zs-skeleton` shimmer from globals.css, which is theme-aware — the
+ * previous implementation hardcoded a near-black fill and injected a `<style>`
+ * tag on every instance, so it was invisible in light mode and duplicated the
+ * same keyframes N times per page.
+ *
+ * Skeletons should mirror the *shape* of the content they replace. A generic
+ * grey box that snaps to a different layout is worse than a spinner.
+ */
+export default function Skeleton({
+  className,
+  rounded = 'md',
+}: {
+  className?: string
+  rounded?: 'sm' | 'md' | 'lg' | 'xl' | 'full'
+}) {
+  const radius = {
+    sm: 'rounded-sm',
+    md: 'rounded-md',
+    lg: 'rounded-lg',
+    xl: 'rounded-xl',
+    full: 'rounded-full',
+  }[rounded]
 
-interface SkeletonProps {
-  width?: string;
-  height?: string;
-  borderRadius?: string;
-  className?: string;
+  return <div aria-hidden className={cn('zs-skeleton', radius, className)} />
 }
 
-export default function Skeleton({ width = '100%', height = '20px', borderRadius = '8px', className = '' }: SkeletonProps) {
+/** Multi-line text placeholder. The last line is short, as real text wraps. */
+export function SkeletonText({
+  lines = 3,
+  className,
+}: {
+  lines?: number
+  className?: string
+}) {
   return (
-    <>
-      <style>{`
-        .skeleton-shimmer {
-          background: rgba(20, 20, 20, 0.8);
-          border: 1px solid rgba(255, 255, 255, 0.03);
-          position: relative;
-          overflow: hidden;
-        }
-        .skeleton-shimmer::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 50%;
-          height: 100%;
-          background: linear-gradient(
-            90deg, 
-            transparent, 
-            rgba(168, 85, 247, 0.08), 
-            transparent
-          );
-          animation: shimmer 1.5s infinite linear;
-        }
-        @keyframes shimmer {
-          0% { left: -100%; }
-          100% { left: 200%; }
-        }
-      `}</style>
-      
-      <div 
-        className={`skeleton-shimmer ${className}`}
-        style={{ width, height, borderRadius }}
-      />
-    </>
-  );
+    <div className={cn('flex flex-col gap-2', className)} aria-hidden>
+      {Array.from({ length: lines }, (_, i) => (
+        <Skeleton
+          key={i}
+          className={cn('h-3.5', i === lines - 1 ? 'w-2/3' : 'w-full')}
+        />
+      ))}
+    </div>
+  )
+}
+
+/** Card-shaped placeholder matching the StatCard footprint. */
+export function SkeletonCard({ className }: { className?: string }) {
+  return (
+    <div className={cn('zs-card p-5 sm:p-6', className)} aria-hidden>
+      <div className="flex items-center gap-4">
+        <Skeleton className="h-11 w-11" rounded="xl" />
+        <div className="flex-1 space-y-2">
+          <Skeleton className="h-6 w-20" />
+          <Skeleton className="h-3 w-28" />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/**
+ * Wrap a loading region so assistive tech announces the state change once the
+ * content arrives, instead of silently swapping shimmering boxes.
+ */
+export function SkeletonRegion({
+  loading,
+  label = 'Loading content',
+  children,
+}: {
+  loading: boolean
+  label?: string
+  children: React.ReactNode
+}) {
+  return (
+    <div aria-busy={loading} aria-live="polite" aria-label={loading ? label : undefined}>
+      {children}
+    </div>
+  )
 }

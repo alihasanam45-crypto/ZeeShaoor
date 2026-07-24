@@ -1,17 +1,35 @@
 import type { ReactNode } from 'react'
-import AdminSidebar from '@/components/admin/AdminSidebar'
-import AdminHeader from '@/components/admin/AdminHeader'
+import PortalShell from '@/components/shell/PortalShell'
+import { ADMIN_NAV } from '@/components/shell/nav'
+import { requirePortal } from '@/lib/security/page-guard'
 
-export default function AdminLayout({ children }: { children: ReactNode }) {
+/**
+ * Admin console frame.
+ *
+ * The bespoke AdminSidebar/AdminHeader pair is replaced by the shared shell:
+ * the console keeps its ⌘K palette (now available in every portal, not just
+ * this one) and gains light-theme support, a mobile drawer and a collapsible
+ * rail that it previously lacked.
+ */
+export default async function AdminLayout({ children }: { children: ReactNode }) {
+  // Second, independent gate behind the proxy — see requirePortal().
+  await requirePortal('admin')
+
   return (
-    <div className="flex h-screen w-full overflow-hidden bg-slate-950 font-sans text-slate-200">
-      <AdminSidebar />
-      <div className="flex h-full min-w-0 flex-1 flex-col">
-        <AdminHeader />
-        <main className="flex-1 overflow-y-auto p-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {children}
-        </main>
-      </div>
-    </div>
+    <PortalShell
+      brand={{ title: 'ZeeShaoor.pk', subtitle: 'Admin Console', href: '/admin' }}
+      nav={ADMIN_NAV}
+      role="Super Admin"
+      sidebarFooter={
+        <p className="text-[10px] leading-relaxed text-fg-faint">
+          Awakening Intellect, Anchoring Truth
+          <span className="mt-0.5 block font-mono text-fg-faint/70">
+            Neural Learning Matrix v7.0
+          </span>
+        </p>
+      }
+    >
+      {children}
+    </PortalShell>
   )
 }

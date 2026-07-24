@@ -1,104 +1,94 @@
 'use client'
 
 import { useState } from 'react'
-import { usePathname } from 'next/navigation'
 import { Bell, Focus } from 'lucide-react'
-import Sidebar from './Sidebar'
-import ThemeToggle from '@/components/ThemeToggle'
+import PortalShell from '@/components/shell/PortalShell'
+import { STUDENT_NAV } from '@/components/shell/nav'
+import { cn } from '@/components/ui/cn'
 import AIAssistOrb from './AIAssistOrb'
 import NotificationHub, { SEED_NOTIFICATIONS, type HubNotification } from './NotificationHub'
 
-const SECTION_TITLES: Record<string, string> = {
-  dashboard: 'Dashboard',
-  progress: 'Progress',
-  study: 'Study',
-  quiz: 'Quiz',
-  'past-papers': 'Past Papers',
-  simulator: 'Exam Simulator',
-  schedule: 'Schedule',
-  'ai-ask': 'AI Ask',
-  toppers: 'Toppers',
-  essay: 'Essay Lab',
-  'board-news': 'Board News',
-  helpdesk: 'Help Desk',
-  'ai-checker': 'AI Checker',
-  'brain-gym': 'Brain Gym',
-  exams: 'Exams',
-  lectures: 'Lectures',
-  streak: 'Streak',
-  feedback: 'Feedback',
-  subject: 'Subjects',
-  checkout: 'Checkout',
-}
-
+/**
+ * Student portal frame.
+ *
+ * Runs on the shared `AppShell` (via `PortalShell`) so the student portal now
+ * matches the teacher and admin portals exactly, and contributes its own
+ * portal-specific extras through the header and overlay slots.
+ *
+ * Focus Mode is redefined here. It used to only narrow the sidebar, which the
+ * shell's own persisted collapse control already does better. It now does what
+ * the name promises: silences the ambient distractions — the AI orb and the
+ * notification bell — so a student mid-revision is not pulled away.
+ */
 export default function StudentShell({ children }: { children: React.ReactNode }) {
   const [focusMode, setFocusMode] = useState(false)
   const [hubOpen, setHubOpen] = useState(false)
   const [notifications, setNotifications] = useState<HubNotification[]>(SEED_NOTIFICATIONS)
-  const pathname = usePathname()
 
-  const segment = pathname?.split('/')[2] ?? ''
-  const sectionTitle = SECTION_TITLES[segment] ?? 'Dashboard'
-  const unreadCount = notifications.filter(n => n.unread).length
+  const unreadCount = notifications.filter((n) => n.unread).length
 
   const markRead = (id: string) =>
-    setNotifications(prev => prev.map(n => (n.id === id ? { ...n, unread: false } : n)))
+    setNotifications((prev) => prev.map((n) => (n.id === id ? { ...n, unread: false } : n)))
   const markAllRead = () =>
-    setNotifications(prev => prev.map(n => ({ ...n, unread: false })))
+    setNotifications((prev) => prev.map((n) => ({ ...n, unread: false })))
 
   return (
-    <div
-      data-focus={focusMode ? 'on' : 'off'}
-      className="group/shell flex h-screen w-full overflow-hidden bg-[#F8FAFC] font-sans text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-50"
-    >
-      <Sidebar focusMode={focusMode} onToggleFocus={() => setFocusMode(v => !v)} />
-
-      <div className="flex h-full min-w-0 flex-1 flex-col">
-        <header className="flex h-16 shrink-0 items-center justify-between border-b border-slate-200/70 bg-white/70 px-6 backdrop-blur-xl transition-colors duration-300 dark:border-slate-800/70 dark:bg-slate-900/70 lg:px-10">
-          <div className="flex items-baseline gap-2.5">
-            <span className="hidden text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400 transition-colors duration-300 dark:text-slate-500 sm:inline">
-              Student Portal
-            </span>
-            <span className="hidden text-slate-300 transition-colors duration-300 dark:text-slate-600 sm:inline">/</span>
-            <span className="text-sm font-bold text-slate-800 transition-colors duration-300 dark:text-slate-200">{sectionTitle}</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            {focusMode && (
-              <span className="hidden items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1.5 text-[11px] font-semibold text-indigo-600 transition-colors duration-300 dark:bg-indigo-950 dark:text-indigo-400 sm:flex">
-                <Focus className="h-3.5 w-3.5" />
-                Focus Mode on
-              </span>
+    <PortalShell
+      brand={{ title: 'ZeeShaoor.pk', subtitle: 'Student Portal', href: '/student/dashboard' }}
+      nav={STUDENT_NAV}
+      role="Student"
+      // Dashboard widgets dim themselves in focus mode via
+      // `group-data-[focus=on]/shell:*`, so the shell root must keep exposing
+      // both the group name and the state attribute.
+      rootClassName="group/shell"
+      rootData={{ 'data-focus': focusMode ? 'on' : 'off' }}
+      headerActions={
+        <>
+          <button
+            onClick={() => setFocusMode((v) => !v)}
+            aria-pressed={focusMode}
+            title={focusMode ? 'Exit Focus Mode' : 'Enter Focus Mode — hides notifications and the AI orb'}
+            className={cn(
+              'flex h-9 items-center gap-1.5 rounded-xl px-2.5 text-[13px] font-medium transition-colors',
+              focusMode
+                ? 'bg-accent-soft text-accent-text'
+                : 'text-fg-subtle hover:bg-surface-hover hover:text-fg',
             )}
-            <ThemeToggle />
+          >
+            <Focus className="h-[18px] w-[18px] shrink-0" aria-hidden />
+            <span className="hidden lg:inline">{focusMode ? 'Focus on' : 'Focus'}</span>
+          </button>
+
+          {!focusMode && (
             <button
               onClick={() => setHubOpen(true)}
-              aria-label={`Open notification hub${unreadCount > 0 ? ` (${unreadCount} unread)` : ''}`}
-              className="relative rounded-2xl p-2.5 text-slate-500 transition-all hover:bg-slate-50 hover:text-indigo-600 hover:shadow-sm dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-indigo-400"
+              aria-label={`Notifications${unreadCount > 0 ? ` (${unreadCount} unread)` : ''}`}
+              className="relative rounded-xl p-2 text-fg-subtle transition-colors hover:bg-surface-hover hover:text-fg"
             >
-              <Bell className="h-5 w-5" />
+              <Bell className="h-[18px] w-[18px]" aria-hidden />
               {unreadCount > 0 && (
-                <span className="absolute -right-0.5 -top-0.5 flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-indigo-600 px-1 text-[10px] font-bold leading-none text-white">
-                  {unreadCount}
+                <span className="absolute right-1 top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-accent px-1 text-[10px] font-bold leading-none text-accent-fg">
+                  {unreadCount > 9 ? '9+' : unreadCount}
                 </span>
               )}
             </button>
-          </div>
-        </header>
-
-        <main className="flex-1 overflow-y-auto scroll-smooth [scrollbar-gutter:stable]">
-          {children}
-        </main>
-      </div>
-
-      <NotificationHub
-        open={hubOpen}
-        notifications={notifications}
-        onClose={() => setHubOpen(false)}
-        onMarkRead={markRead}
-        onMarkAllRead={markAllRead}
-      />
-      <AIAssistOrb />
-    </div>
+          )}
+        </>
+      }
+      overlays={
+        <>
+          <NotificationHub
+            open={hubOpen}
+            notifications={notifications}
+            onClose={() => setHubOpen(false)}
+            onMarkRead={markRead}
+            onMarkAllRead={markAllRead}
+          />
+          {!focusMode && <AIAssistOrb />}
+        </>
+      }
+    >
+      {children}
+    </PortalShell>
   )
 }

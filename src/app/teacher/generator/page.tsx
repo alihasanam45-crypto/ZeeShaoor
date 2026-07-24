@@ -37,6 +37,7 @@ import {
 } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ninthPhysicsChapters, type Topic, type Chapter } from "@/data/ninthPhysicsChapters";
+import { chaptersFor } from "@/data/chapter-registry";
 import TopicSelectionModal from '@/components/teacher/TopicSelectionModal';
 import {
   SQ_PRESETS as SQ_ENGINE_PRESETS,
@@ -65,21 +66,31 @@ import {
 // ---------------------------------------------------------------------------------------------------------------------------------------
 import { useGlobalTheme, usePalette as useP, type Palette } from "@/components/theme/ThemeProvider";
 
+// Subject names MUST match CLASS_SUBJECT_MATRIX in src/models/Question.ts
+// exactly — they are the literal values stored in the `subject` field and are
+// matched with strict equality. This list previously said "Maths", "Islamiat"
+// and "S.Studies", none of which exist in the database, so those subjects
+// could never return a question.
 const CLASS_SUBJECTS: Record<string, string[]> = {
-  "Class 5": ["Maths","English","Urdu","Science","Islamiat","S.Studies"],
-  "Class 6": ["Maths","English","Urdu","Science","Islamiat","S.Studies"],
-  "Class 7": ["Maths","English","Urdu","Science","Islamiat","S.Studies"],
-  "Class 8": ["Maths","English","Urdu","Science","Islamiat","S.Studies"],
-  "Class 9": ["Physics","Chemistry","Biology","Maths","English","Urdu","Islamiat","Computer"],
-  "Class 10": ["Physics","Chemistry","Biology","Maths","English","Urdu","Islamiat","Computer"],
-  "Class 11": ["Physics","Chemistry","Biology","Maths","English","Urdu","Islamiat","Computer","Economics"],
-  "Class 12": ["Physics","Chemistry","Biology","Maths","English","Urdu","Islamiat","Computer","Economics"],
+  "Class 5": ["Mathematics","English","Urdu","Science","Islamiyat","Social Studies"],
+  "Class 6": ["Mathematics","English","Urdu","Science","Islamiyat","Computer"],
+  "Class 7": ["Mathematics","English","Urdu","Science","Islamiyat","Computer"],
+  "Class 8": ["Mathematics","English","Urdu","Science","Islamiyat","Computer"],
+  "Class 9": ["Physics","Chemistry","Biology","Mathematics","English","Urdu","Islamiyat (Compulsory)","Computer"],
+  "Class 10": ["Physics","Chemistry","Biology","Mathematics","English","Urdu","Islamiyat (Compulsory)","Computer"],
+  "Class 11": ["Physics","Chemistry","Biology","Mathematics","English","Urdu","Islamiyat (Compulsory)","Computer","Economics"],
+  "Class 12": ["Physics","Chemistry","Biology","Mathematics","English","Urdu","Islamiyat (Compulsory)","Computer","Economics"],
 };
 
+/** "Class 10" -> "10". Matches the normalization the generator API applies. */
+function classLevelOf(label: string): string {
+  return label.replace(/^Class\s*/i, "").replace(/th|st|nd|rd/gi, "").trim();
+}
+
 const SUBJECT_ICONS: Record<string, string> = {
-  Physics:"⚛️", Chemistry:"🧪", Biology:"🧬", Maths:"∑",
-  English:"A", Urdu:"ا", Islamiat:"☪", Computer:"💻",
-  Science:"🔭", "S.Studies":"🌍", Economics:"₨",
+  Physics:"⚛️", Chemistry:"🧪", Biology:"🧬", Mathematics:"∑",
+  English:"A", Urdu:"ا", "Islamiyat (Compulsory)":"☪", Islamiyat:"☪", Computer:"💻",
+  Science:"🔭", "Social Studies":"🌍", Economics:"₨",
 };
 
 const SQ_PRESETS = SQ_ENGINE_PRESETS;
@@ -435,7 +446,10 @@ function GridModal({ open, onClose, selectedClass, selectedSubject, selectedChap
     if (selectedClass==="Class 9" && selectedSubject==="Physics") {
       return ninthPhysicsChapters.map(c => ({ id:`ch${c.id}`, label:`Ch ${c.id}: ${c.name}` }));
     }
-    return [];
+    // Every other class+subject comes from the shared registry, so a subject
+    // with imported questions is never stuck with an empty chapter list.
+    return chaptersFor(classLevelOf(selectedClass), selectedSubject)
+      .map(c => ({ id:`ch${c.id}`, label:`Ch ${c.id}: ${c.name}` }));
   }, [selectedClass, selectedSubject]);
 
   useEffect(() => { if (open) setStep("class"); }, [open]);
@@ -1013,7 +1027,10 @@ export default function GeneratorPage() {
     if (selectedClass==="Class 9" && selectedSubject==="Physics") {
       return ninthPhysicsChapters.map(c => ({ id:`ch${c.id}`, label:`Ch ${c.id}: ${c.name}`, data: c }));
     }
-    return [];
+    // Registry-backed chapters have no topic breakdown yet, hence `data:
+    // undefined` — the topic modal simply stays unavailable for them.
+    return chaptersFor(classLevelOf(selectedClass), selectedSubject)
+      .map(c => ({ id:`ch${c.id}`, label:`Ch ${c.id}: ${c.name}`, data: undefined as Chapter | undefined }));
   }, [selectedClass, selectedSubject]);
 
   const topics: Topic[] = useMemo(() => {
@@ -1203,7 +1220,11 @@ export default function GeneratorPage() {
       const bp = getBoardPresets().find(p => p.id === boardPattern);
       const payload = {
         class: selectedClass, subject: selectedSubject,
-        chapter: selectedChapters[0] || "mixed", topics: selectedTopics,
+        // `chapter` kept for backward compatibility; `chapters` carries the full
+        // multi-select, which is what the teacher actually ticked.
+        chapter: selectedChapters[0] || "mixed",
+        chapters: selectedChapters,
+        topics: selectedTopics,
         phase: activePhase,
         mcqCount: cfg.mcq, sqCount: cfg.sq, lqCount: cfg.lq,
         sqConfig: {
@@ -1353,7 +1374,7 @@ export default function GeneratorPage() {
 
                   return (
                     <div key={chId}>
-                      <button onClick={() => setModalChapter(chData)} style={{
+                      <button onClick={() => setModalChapter(chData ?? null)} style={{
                         textAlign:"left", padding:"5px 8px", borderRadius:5,
                         border:`1px solid ${checked ? P.borderActive : "transparent"}`,
                         background: checked ? "rgba(74,158,202,0.10)" : "transparent",

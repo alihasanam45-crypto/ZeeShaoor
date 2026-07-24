@@ -1,85 +1,149 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { connectDB } from '@/lib/mongodb'
 import Student from '@/models/Student'
+import { ADMIN_ONLY, requireApiRole } from '@/lib/security/rbac'
+import { apiError, apiSuccess, handleApiError, readJsonBody } from '@/lib/security/errors'
+import { audit } from '@/lib/security/audit'
+import { pick, safeContains, toEnumOptional, toPagination, toStr } from '@/lib/security/sanitize'
 
-// --------- GET — All students ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/**
+ * Student roster — admin only.
+ *
+ * Holds minors' PII (names, roll numbers, guardian contacts, wellbeing risk
+ * flags), making it one of the most sensitive surfaces on the platform. It
+ * previously had no authorization at all and, because the proxy admitted
+ * teachers to /api/admin/*, was readable and writable by every teacher.
+ */
+
+const RISK_LEVELS = ['safe', 'watch', 'danger', 'critical'] as const
+const STATUSES = ['active', 'inactive', 'graduated', 'expelled'] as const
+
+/**
+ * Fields a client may set. Everything else the schema defines — gpa,
+ * attendance, wellbeingScore, riskLevel, subjects — is derived by the platform
+ * and must not be settable from a request body.
+ */
+const WRITABLE = [
+  'name',
+  'rollNo',
+  'class',
+  'section',
+  'gender',
+  'dateOfBirth',
+  'guardianName',
+  'guardianPhone',
+  'address',
+  'admissionDate',
+  'status',
+] as const
+
 export async function GET(req: NextRequest) {
+  const guard = await requireApiRole(ADMIN_ONLY, { action: 'GET /api/admin/students' })
+  if (guard instanceof NextResponse) return guard
+
   try {
     await connectDB()
 
     const { searchParams } = new URL(req.url)
-    const cls      = searchParams.get('class')
-    const section  = searchParams.get('section')
-    const status   = searchParams.get('status')
-    const risk     = searchParams.get('riskLevel')
-    const search   = searchParams.get('search')
-    const page     = parseInt(searchParams.get('page')  || '1')
-    const limit    = parseInt(searchParams.get('limit') || '50')
+    const { page, limit, skip } = toPagination(searchParams, 100)
 
     const filter: Record<string, unknown> = {}
-    if (cls     && cls     !== 'all') filter.class     = cls
-    if (section && section !== 'all') filter.section   = section
-    if (status  && status  !== 'all') filter.status    = status
-    if (risk    && risk    !== 'all') filter.riskLevel = risk
 
-    if (search) {
-      filter.$or = [
-        { name:   { $regex: search, $options: 'i' } },
-        { rollNo: { $regex: search, $options: 'i' } },
-      ]
-    }
+    // Scalar-only assignment. URLSearchParams values are always strings, so no
+    // operator object can reach the filter through this path.
+    const cls = toStr(searchParams.get('class'), 20)
+    if (cls && cls !== 'all') filter.class = cls
 
-    const skip = (page - 1) * limit
+    const section = toStr(searchParams.get('section'), 10)
+    if (section && section !== 'all') filter.section = section
+
+    const status = toEnumOptional(searchParams.get('status'), STATUSES)
+    if (status) filter.status = status
+
+    const risk = toEnumOptional(searchParams.get('riskLevel'), RISK_LEVELS)
+    if (risk) filter.riskLevel = risk
+
+    // Escaped — an unescaped user regex is both an injection and a ReDoS lever.
+    const search = safeContains(searchParams.get('search'), 60)
+    if (search) filter.$or = [{ name: search }, { rollNo: search }]
 
     const [students, total] = await Promise.all([
       Student.find(filter).sort({ name: 1 }).skip(skip).limit(limit).lean(),
       Student.countDocuments(filter),
     ])
 
-    return NextResponse.json({
-      success: true,
-      data: students,
+    return apiSuccess({
+      students,
       pagination: { total, page, limit, pages: Math.ceil(total / limit) },
     })
-  } catch (error) {
-    return NextResponse.json(
-      { success: false, error: 'Failed to fetch students' },
-      { status: 500 }
-    )
+  } catch (err) {
+    return handleApiError(err, 'GET /api/admin/students')
   }
 }
 
-// --------- POST — Add student ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 export async function POST(req: NextRequest) {
+  const guard = await requireApiRole(ADMIN_ONLY, { action: 'POST /api/admin/students' })
+  if (guard instanceof NextResponse) return guard
+
   try {
+    const body = await readJsonBody(req)
+    if (body instanceof NextResponse) return body
+
+    // Allowlist projection. The previous `Student.create({ ...body })` let a
+    // caller set any schema field, including gpa and riskLevel.
+    const data = pick<Record<string, unknown>, (typeof WRITABLE)[number]>(body, WRITABLE)
+
+    const name = toStr(data.name, 80)
+    const rollNo = toStr(data.rollNo, 30)
+    const cls = toStr(data.class, 20)
+    const section = toStr(data.section, 10)
+    const gender = toEnumOptional(data.gender, ['male', 'female'] as const)
+
+    const fieldErrors: Record<string, string> = {}
+    if (!name) fieldErrors.name = 'Name is required.'
+    if (!rollNo) fieldErrors.rollNo = 'Roll number is required.'
+    if (!cls) fieldErrors.class = 'Class is required.'
+    if (!section) fieldErrors.section = 'Section is required.'
+    if (!gender) fieldErrors.gender = 'Gender must be male or female.'
+    if (Object.keys(fieldErrors).length > 0) {
+      return apiError('VALIDATION_FAILED', { fieldErrors })
+    }
+
     await connectDB()
 
-    const body = await req.json()
-    const { name, rollNo, class: cls, section, gender } = body
-
-    if (!name || !rollNo || !cls || !section || !gender) {
-      return NextResponse.json(
-        { success: false, error: 'name, rollNo, class, section, gender required' },
-        { status: 400 }
-      )
-    }
-
-    // Check duplicate rollNo
-    const existing = await Student.findOne({ rollNo })
+    const existing = await Student.findOne({ rollNo }).lean()
     if (existing) {
-      return NextResponse.json(
-        { success: false, error: `Roll number ${rollNo} already exists` },
-        { status: 409 }
-      )
+      return apiError('CONFLICT', { message: 'That roll number is already in use.' })
     }
 
-    const student = await Student.create({ ...body, class: cls })
+    // Every field is coerced explicitly rather than spread from `data`: the
+    // allowlist controls *which* keys survive, but their values are still
+    // untrusted `unknown` until sanitized. The schema stores both dates as
+    // strings, so `toStr` is the correct coercion for them.
+    const student = await Student.create({
+      name,
+      rollNo,
+      class: cls,
+      section,
+      gender,
+      dateOfBirth: toStr(data.dateOfBirth, 40),
+      guardianName: toStr(data.guardianName, 80),
+      guardianPhone: toStr(data.guardianPhone, 30),
+      address: toStr(data.address, 200),
+      admissionDate: toStr(data.admissionDate, 40),
+      status: toEnumOptional(data.status, STATUSES) ?? 'active',
+    })
 
-    return NextResponse.json({ success: true, data: student }, { status: 201 })
-  } catch (error) {
-    return NextResponse.json(
-      { success: false, error: 'Failed to add student' },
-      { status: 500 }
-    )
+    void audit({
+      action: 'student.create',
+      actor: guard.user,
+      targetType: 'Student',
+      targetId: String(student._id),
+      metadata: { rollNo, class: cls, section },
+    })
+
+    return apiSuccess({ student }, { status: 201 })
+  } catch (err) {
+    return handleApiError(err, 'POST /api/admin/students')
   }
 }

@@ -1,30 +1,34 @@
 // --------- Role Definitions ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 export type UserRole = 'admin' | 'teacher' | 'student'
 
-// Admin token — God mode
-export interface AdminTokenPayload {
+// Fields every token carries regardless of role. `name` is optional because a
+// user record may have none — `authorize()` copies it through when present and
+// the jwt callback assigns it onto the token, so consumers can rely on it
+// existing whenever the account has one.
+interface BaseTokenPayload {
   id: string
+  email: string
+  name?: string
+}
+
+// Admin token — God mode
+export interface AdminTokenPayload extends BaseTokenPayload {
   role: 'admin'
   superAccess: true          // always true for admin
-  email: string
 }
 
 // Teacher token — scoped to assigned subjects/classes
 // e.g. permissions: ['teacher:physics:10A', 'teacher:chemistry:9B']
-export interface TeacherTokenPayload {
-  id: string
+export interface TeacherTokenPayload extends BaseTokenPayload {
   role: 'teacher'
   superAccess: false
-  email: string
   permissions: string[]      // format: "teacher:<subject>:<class>"
 }
 
 // Student token — isolated to their own data only
-export interface StudentTokenPayload {
-  id: string
+export interface StudentTokenPayload extends BaseTokenPayload {
   role: 'student'
   superAccess: false
-  email: string
   classId: string            // e.g. "10A"
   boardId: string            // e.g. "lahore-board"
   enrolledSubjects: string[] // e.g. ["physics", "chemistry"]

@@ -2,6 +2,7 @@
 // ZeeShaoor.pk — Paper Generator API (SQ Engine v2 + Dual-Template Board System)
 
 import { NextResponse } from 'next/server'
+import { normalizeChapter } from '@/data/chapter-registry'
 import { connectDB } from '@/lib/mongodb'
 import Question from '@/models/Question'
 import { generateSQPaper, type SqGenerationConfig, type SqQuestion } from '@/lib/sq-engine'
@@ -17,31 +18,11 @@ const BOARD_WEIGHTAGE: Record<string, { mcq: number; short: number; long: number
   urdu:      { mcq: 10, short: 20, long: 20 },
 }
 
-const CHAPTER_MAP: Record<string, Record<string, string>> = {
-  physics: {
-    '1': 'Physical Quantities and Measurements',
-    '2': 'Kinematics', '3': 'Dynamics', '4': 'Turning Effect of Forces',
-    '5': 'Gravitation', '6': 'Work and Energy', '7': 'Properties of Matter',
-    '8': 'Thermal Properties of Matter', '9': 'Transfer of Heat',
-  },
-  chemistry: {
-    '1': 'Fundamentals of Chemistry', '2': 'Structure of Atoms',
-    '3': 'Periodic Table and Periodicity of Properties', '4': 'Structure of Molecules',
-    '5': 'Physical States of Matter', '6': 'Solutions',
-    '7': 'Electrochemistry', '8': 'Chemical Reactivity',
-  },
-  biology: {
-    '1': 'Introduction to Biology', '2': 'Solving a Biological Problem',
-    '3': 'Biodiversity', '4': 'Cells and Tissues', '5': 'Cell Cycle',
-    '6': 'Enzymes', '7': 'Bioenergetics', '8': 'Nutrition', '9': 'Transport',
-  },
-  default: {
-    '1': 'Chapter 1', '2': 'Chapter 2', '3': 'Chapter 3',
-    '4': 'Chapter 4', '5': 'Chapter 5', '6': 'Chapter 6',
-    '7': 'Chapter 7', '8': 'Chapter 8', '9': 'Chapter 9',
-    '10': 'Chapter 10', '11': 'Chapter 11', '12': 'Chapter 12',
-  }
-}
+// Chapters are matched by NUMBER, never by prose name. The map that used to
+// live here disagreed with both the textbook and the CSVs from chapter 5 on
+// (it called Class 9 Physics ch5 "Gravitation"; the book calls it "Work,
+// Energy and Power"), so every chapter-filtered query matched zero documents.
+// See src/data/chapter-registry.ts.
 
 const TEST_MODELS: Record<string, { mcq: number; short: number; long: number; difficulty?: string; boardPattern?: boolean; custom?: boolean }> = {
   '1':  { mcq: 10, short: 0,  long: 0  },
@@ -168,11 +149,18 @@ export async function POST(req: Request) {
 
     const baseQuery: Record<string, any> = { classLevel: cleanClass, subject: resolvedSubject }
 
-    if (chapter && chapter !== 'mixed' && chapter !== 'mix') {
-      const chMap = CHAPTER_MAP[subjectKey] || CHAPTER_MAP.default
-      const cleanChapter = String(chapter).replace(/^ch\s*/i, '').trim()
-      baseQuery.chapter = chMap[cleanChapter] || cleanChapter
-    }
+    // Accept every shape the UI has ever sent ("ch4", "Ch 4", "4"); null means
+    // "mixed", i.e. do not narrow by chapter at all.
+    const chapterNo = normalizeChapter(chapter)
+    if (chapterNo) baseQuery.chapter = chapterNo
+
+    // Multi-chapter selection: the UI lets a teacher tick several chapters but
+    // only ever forwarded the first. Prefer the full list when present.
+    const chapterList: string[] = Array.isArray(body.chapters)
+      ? body.chapters.map(normalizeChapter).filter((c: string | null): c is string => Boolean(c))
+      : []
+    if (chapterList.length > 1) baseQuery.chapter = { $in: chapterList }
+    else if (chapterList.length === 1) baseQuery.chapter = chapterList[0]
 
     let mCount = 0, sCount = 0, lCount = 0
     let diff: string | undefined
@@ -229,11 +217,44 @@ export async function POST(req: Request) {
       ? await fetchWithFallback(baseQuery, 'Long', lCount, boardLabel, diff)
       : await fetchQ(baseQuery, 'Long', lCount, diff)
 
+    console.log(`GEN: query=${JSON.stringify(baseQuery)} want{mcq:${mCount},short:${sCount},long:${lCount}} diff=${diff ?? 'any'} board=${isBoardMode}`)
+    console.log(`GEN: got{mcq:${rawMcqs.length},short:${rawShort.length},long:${rawLong.length}}`)
+
     if (rawMcqs.length + rawShort.length + rawLong.length === 0) {
       const name = testModel ? MODEL_NAMES[String(testModel)] : 'Generator'
+
+      // Work out WHICH filter emptied the result, so the message names the real
+      // problem instead of always blaming the CSV import. Each probe drops one
+      // more filter; the first one that returns rows identifies the culprit.
+      // `classLevel` is a literal union on the model; the incoming value is a
+      // plain string, so widen the filter type rather than the schema.
+      const classFilter = { classLevel: cleanClass } as Record<string, unknown>
+      const inSubject = await Question.countDocuments({ ...classFilter, subject: resolvedSubject })
+      const inClass = await Question.countDocuments(classFilter)
+      const grandTotal = await Question.estimatedDocumentCount()
+
+      let reason: string
+      if (grandTotal === 0) {
+        reason = 'Question bank is empty — run the CSV import (GET /api/admin/seed-questions as admin).'
+      } else if (inClass === 0) {
+        reason = `No questions exist for Class ${cleanClass}.`
+      } else if (inSubject === 0) {
+        const subjects = await Question.distinct('subject', classFilter)
+        reason = `No questions for "${resolvedSubject}" in Class ${cleanClass}. Available: ${subjects.join(', ') || 'none'}.`
+      } else if (baseQuery.chapter) {
+        const chapters = await Question.distinct('chapter', { ...classFilter, subject: resolvedSubject } as Record<string, unknown>)
+        reason = `Class ${cleanClass} ${resolvedSubject} has ${inSubject} questions, but none in the selected chapter. Chapters available: ${chapters.sort((a, b) => Number(a) - Number(b)).join(', ')}.`
+      } else if (diff) {
+        reason = `Class ${cleanClass} ${resolvedSubject} has ${inSubject} questions, but none at "${diff}" difficulty.`
+      } else {
+        reason = `Class ${cleanClass} ${resolvedSubject} has ${inSubject} questions, but none of the requested types.`
+      }
+
+      console.warn(`GEN: 0 results — ${reason}`)
       return NextResponse.json({
         success: false,
-        message: `${name} — Koi questions nahi mile. Pehle CSV import karo.`
+        message: `${name} — ${reason}`,
+        diagnostics: { query: baseQuery, requested: { mcq: mCount, short: sCount, long: lCount }, inSubject, inClass, grandTotal },
       }, { status: 404 })
     }
 

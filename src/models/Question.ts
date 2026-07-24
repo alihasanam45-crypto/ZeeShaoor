@@ -62,7 +62,17 @@ export interface IQuestion {
   _id:           string
   classLevel:    '5' | '6' | '7' | '8' | '9' | '10' | '11' | '12'
   subject:       string
+  /**
+   * Chapter NUMBER as a string ("1".."12") — the query key. Never a prose
+   * name: see src/data/chapter-registry.ts for why identity is numeric.
+   */
   chapter:       string
+  /** Display-only chapter title. Not used for matching. */
+  chapterName?:  string
+  /** Raw topic heading from the source CSV, e.g. "2.3 Types of Motion". */
+  topic?:        string
+  /** Dotted topic id parsed from the topic heading, e.g. "2.3". */
+  topicId?:      string
   questionType:  'MCQ' | 'Short' | 'Long'
   questionText:  string
   options:       string[]
@@ -118,7 +128,28 @@ const QuestionSchema = new Schema<IQuestion>(
       type:      String,
       required:  [true, 'chapter is required'],
       trim:      true,
-      maxlength: [120, 'chapter name too long (max 120 chars)'],
+      // Numeric chapter key. Enforced so a prose name can never be written
+      // here again — that mismatch is what silently emptied every
+      // chapter-filtered query. See src/data/chapter-registry.ts.
+      match:     [/^\d{1,2}$/, 'chapter must be a chapter NUMBER as a string, e.g. "4"'],
+    },
+    chapterName: {
+      type:      String,
+      trim:      true,
+      maxlength: [120, 'chapterName too long (max 120 chars)'],
+      default:   undefined,
+    },
+    topic: {
+      type:      String,
+      trim:      true,
+      maxlength: [200, 'topic too long (max 200 chars)'],
+      default:   undefined,
+    },
+    topicId: {
+      type:      String,
+      trim:      true,
+      maxlength: [20, 'topicId too long (max 20 chars)'],
+      default:   undefined,
     },
     questionType: {
       type:     String,
@@ -244,6 +275,12 @@ QuestionSchema.index({ classLevel: 1, subject: 1 })
 QuestionSchema.index({ classLevel: 1, subject: 1, chapter: 1 })
 QuestionSchema.index({ classLevel: 1, difficulty: 1 })
 QuestionSchema.index({ questionType: 1 })
+// The generator's hot path is always {classLevel, subject, questionType} with
+// chapter and difficulty as optional narrowings, fed to $sample. Prefix order
+// matches that so the $match stage is a pure index scan.
+QuestionSchema.index({ classLevel: 1, subject: 1, questionType: 1, chapter: 1, difficulty: 1 })
+// The LQ engine splits the Long pool by questionCategory before pairing.
+QuestionSchema.index({ classLevel: 1, subject: 1, questionType: 1, questionCategory: 1 })
 QuestionSchema.index({ boardId: 1, year: 1 })
 QuestionSchema.index({ boardTags: 1 })
 QuestionSchema.index({ region: 1 })

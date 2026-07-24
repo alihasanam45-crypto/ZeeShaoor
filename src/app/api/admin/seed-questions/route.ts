@@ -1,23 +1,17 @@
 import { NextResponse } from 'next/server'
-import { getServerSession } from 'next-auth'
 import fs from 'fs'
 import path from 'path'
 import Papa from 'papaparse'
-import { authOptions } from '@/lib/auth/options'
+import { chapterFromFilename, chapterName } from '@/data/chapter-registry'
 import { connectDB } from '@/lib/mongodb'
+import { ADMIN_ONLY, requireApiRole } from '@/lib/security/rbac'
 import Question from '@/models/Question'
 import type { IQuestion } from '@/models/Question'
-import type { UserRole } from '@/types/auth'
 
-// Seeding walks the whole data/ tree and writes to the shared question bank —
-// staff only. Defence in depth: proxy.ts already gates /api/admin/*, but this
-// handler must stand on its own in case the matcher or ROUTE_CONFIG changes.
-//
-// authOptions MUST be passed to getServerSession — the session callback that
-// copies `role` onto session.user only runs when the options are supplied.
-// Calling it bare yields a session with no role, and this check would then
-// reject everyone.
-const ALLOWED_ROLES: readonly UserRole[] = ['admin', 'teacher']
+// Seeding walks the whole data/ tree and bulk-writes the shared question bank.
+// Admin-only, matching the /api/admin policy in route-policy.ts. The proxy is
+// the outer gate; this guard is the one that actually holds if the matcher
+// changes or the handler is reached directly on the Node server.
 
 const DATA_ROOT = path.join(process.cwd(), 'data')
 
@@ -113,9 +107,13 @@ function detectQuestionType(filePath: string): 'MCQ' | 'Short' | 'Long' | null {
   return null
 }
 
-function extractChapter(topic: string): string {
-  const m = topic.match(/^(\d+)/)
-  return m ? m[1] : topic
+/**
+ * Dotted topic id from a topic heading: "2.3 Types of Motion" -> "2.3".
+ * Returns undefined for unnumbered prose headings like "Exercise MCQs".
+ */
+function extractTopicId(topic: string): string | undefined {
+  const m = topic.match(/^(\d+(?:\.\d+)*)/)
+  return m ? m[1] : undefined
 }
 
 function parseNum(val: string | undefined): number | undefined {
@@ -160,16 +158,13 @@ function normalizeHeaders(parsed: Papa.ParseResult<Record<string, string>>): voi
 export async function GET() {
   const startTime = Date.now()
 
-  const session = await getServerSession(authOptions)
-  if (!session?.user) {
-    return NextResponse.json({ success: false, message: 'Unauthorized' }, { status: 401 })
-  }
-  if (!ALLOWED_ROLES.includes(session.user.role)) {
-    console.warn(`SEED: Rejected seed attempt by ${session.user.email} (role: ${session.user.role})`)
-    return NextResponse.json({ success: false, message: 'Forbidden' }, { status: 403 })
-  }
+  const guard = await requireApiRole(ADMIN_ONLY, {
+    rateLimit: 'bulkWrite',
+    action: 'GET /api/admin/seed-questions',
+  })
+  if (guard instanceof NextResponse) return guard
 
-  console.log(`=== SEED: Started by ${session.user.email} (${session.user.role}) ===`)
+  console.log(`=== SEED: Started by ${guard.user.email} (${guard.user.role}) ===`)
 
   try {
     await connectDB()
@@ -244,6 +239,17 @@ export async function GET() {
 
         normalizeHeaders(parsed)
 
+        // Chapter comes from the FILENAME, not the topic column. Topic headings
+        // mix numbered entries ("2.3 Types of Motion") with free prose
+        // ("Exercise MCQs", "Alignment of Domains"); deriving the chapter from
+        // them produced ~40 junk chapter values that matched nothing.
+        const chapter = chapterFromFilename(path.basename(csvFile))
+        if (!chapter) {
+          console.warn(`SEED:   [SKIP] ${relativePath} — no chapter number in filename`)
+          continue
+        }
+        const resolvedChapterName = chapterName(classLevel, subject, chapter)
+
         const docs: IQuestion[] = []
 
         for (const row of parsed.data) {
@@ -251,7 +257,6 @@ export async function GET() {
             if (isSeparatorRow(row)) continue
 
             const topic = (row.topic || '').trim()
-            const chapter = extractChapter(topic)
             const bloom = (row.bloom_level || '').trim()
             const sloTag = BLOOM_SLO_MAP[bloom]
             const marks = parseNum(row.marks)
@@ -263,6 +268,9 @@ export async function GET() {
               classLevel,
               subject,
               chapter,
+              chapterName: resolvedChapterName,
+              topic: topic || undefined,
+              topicId: extractTopicId(topic),
               questionType,
               questionText,
               options: [],
