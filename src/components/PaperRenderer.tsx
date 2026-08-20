@@ -10,6 +10,12 @@ import QRCode from 'react-qr-code';
 interface PaperProps {
   paperData: { mcqs: any[]; shortQuestions: any[]; longQuestions: any[] };
   metadata: { class: string; subject: string; totalQuestions: number; chapter?: string };
+  /**
+   * Leave the full-screen preview. Supplied by the host route: this component
+   * no longer renders inside the portal shell, so it owns the only way back to
+   * the generator. Omit it and the control simply is not rendered.
+   */
+  onExit?: () => void;
 }
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1014,7 +1020,7 @@ const ZoomStepper = ({ zoom, setZoom }: any) => (
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // MAIN EXPORT — PaperRenderer
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-export default function PaperRenderer({ paperData, metadata }: PaperProps) {
+export default function PaperRenderer({ paperData, metadata, onExit }: PaperProps) {
   const { mcqs: rawMcqs = [], shortQuestions: rawShort = [], longQuestions: rawLong = [] } = paperData;
 
   // Question state
@@ -1141,14 +1147,27 @@ export default function PaperRenderer({ paperData, metadata }: PaperProps) {
 
   // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   return (
-    <div style={{ width: '100%', minHeight: '100vh', background: c.bg, display: 'flex', transition: 'background 0.3s' }}>
+    // Fills its host rather than measuring the viewport itself. Under the
+    // full-screen route that host *is* the viewport (`h-dvh`), so the engine
+    // now spans the whole screen — but the two `100vh` boxes this used to
+    // carry are gone, which is what produced a second scrollbar and the
+    // cramped, double-framed look when it rendered inside the portal shell.
+    <div className="zs-paper-shell" style={{ width: '100%', height: '100%', minHeight: 0, background: c.bg, display: 'flex', overflow: 'hidden', transition: 'background 0.3s' }}>
 
       {/* ══════════ SIDEBAR ══════════ */}
       {sidebarOpen && (
-        <div className="no-print" style={{ width: '260px', flexShrink: 0, height: '100vh', position: 'sticky', top: 0, overflowY: 'auto', background: c.sidebar, borderRight: `1px solid ${c.border}`, display: 'flex', flexDirection: 'column', zIndex: 200 }}>
+        <div className="no-print zs-paper-rail" style={{ width: '260px', flexShrink: 0, height: '100%', overflowY: 'auto', background: c.sidebar, borderRight: `1px solid ${c.border}`, display: 'flex', flexDirection: 'column', zIndex: 200 }}>
 
           {/* Sidebar Header */}
           <div style={{ padding: '16px 16px 10px', borderBottom: `1px solid ${c.border}`, flexShrink: 0 }}>
+            {/* Without the portal sidebar there is no other exit from this
+                screen, so the rail carries one. */}
+            {onExit && (
+              <button onClick={onExit}
+                style={{ display: 'flex', alignItems: 'center', gap: '6px', width: '100%', marginBottom: '10px', padding: '7px 9px', background: 'rgba(255,255,255,0.04)', border: `1px solid ${c.border}`, borderRadius: '8px', color: c.muted, fontSize: '11px', fontWeight: '700', cursor: 'pointer', letterSpacing: '0.3px' }}>
+                ← Back to Generator
+              </button>
+            )}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <div>
                 <div style={{ fontSize: '12px', fontWeight: '900', color: '#a855f7', letterSpacing: '1px' }}>ZSH PAPER ENGINE</div>
@@ -1243,7 +1262,12 @@ export default function PaperRenderer({ paperData, metadata }: PaperProps) {
       )}
 
       {/* ══════════ MAIN CONTENT ══════════ */}
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '24px 24px 80px', overflowX: 'auto', position: 'relative' }}>
+      {/* The paper canvas is now the scroll container (the page used to be), so
+          it claims every pixel the rail leaves and the sticky status bar pins to
+          the top of the canvas rather than to a shell header above it.
+          `minWidth: 0` lets a zoomed-past-100% sheet scroll horizontally instead
+          of forcing the flex row wider than the screen. */}
+      <div className="zs-paper-canvas" style={{ flex: 1, minWidth: 0, height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '24px 24px 80px', overflow: 'auto', position: 'relative' }}>
 
         {/* Collapsed sidebar toggle */}
         {!sidebarOpen && (
@@ -1383,6 +1407,14 @@ export default function PaperRenderer({ paperData, metadata }: PaperProps) {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
         @media print {
+          /* The full-screen frame is a fixed-height, clipped flex row. Printing
+             through it would emit exactly one viewport-sized page and drop the
+             rest of the paper, so every scroll box in the chain is unwound back
+             to normal document flow before the sheet is laid out. */
+          html, body, .zs-fullscreen, .zs-paper-shell, .zs-paper-canvas {
+            height: auto !important; max-height: none !important;
+            overflow: visible !important; display: block !important; padding: 0 !important;
+          }
           body * { visibility: hidden; }
           .print-matrix, .print-matrix * { visibility: visible; }
           .print-preview-only, .print-preview-only * { display: none !important; visibility: hidden !important; }

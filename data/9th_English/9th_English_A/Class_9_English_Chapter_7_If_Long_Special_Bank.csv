@@ -1,0 +1,17 @@
+﻿question_hash,active,topic,question_type,question_style,question,difficulty,marks,weightage,smart_syllabus
+sep_9_eng_ch7_001,1,ENGLISH_A | Unit 7 - If | Poem Summary,Topic,topic_separator,,,,,1
+q_9_eng_ch7_lq_001,1,ENGLISH_A | Unit 7 - If | Poem Summary,Long,poem_summary,Write an objective summary of the poem “If.”,Medium,5,PRO,1
+sep_9_eng_ch7_002,1,ENGLISH_A | Unit 7 - If | Stanza Explanation,Topic,topic_separator,,,,,1
+q_9_eng_ch7_lq_002,1,ENGLISH_A | Unit 7 - If | Stanza Explanation,Long,stanza_explanation,Explain the first stanza of “If” with reference to the context.,Medium,5,PRO,1
+q_9_eng_ch7_lq_003,1,ENGLISH_A | Unit 7 - If | Stanza Explanation,Long,stanza_explanation,Explain the second stanza of “If” with reference to the context.,Medium,5,PRO,1
+q_9_eng_ch7_lq_004,1,ENGLISH_A | Unit 7 - If | Stanza Explanation,Long,stanza_explanation,Explain the third stanza of “If” with reference to the context.,Medium,5,PRO,1
+q_9_eng_ch7_lq_005,1,ENGLISH_A | Unit 7 - If | Stanza Explanation,Long,stanza_explanation,Explain the fourth stanza of “If” with reference to the context.,Medium,5,PRO,1
+sep_9_eng_ch7_003,1,ENGLISH_A | Unit 7 - If | Paraphrasing,Topic,topic_separator,,,,,1
+q_9_eng_ch7_lq_006,1,ENGLISH_A | Unit 7 - If | Paraphrasing,Long,rewrite_simple_english,Paraphrase the second stanza of “If” in simple prose while preserving its original meaning.,Medium,5,ULTRA,1
+q_9_eng_ch7_lq_007,1,ENGLISH_A | Unit 7 - If | Paraphrasing,Long,rewrite_simple_english,Paraphrase the third stanza of “If” in simple prose while preserving its original meaning.,Medium,5,ULTRA,1
+sep_9_eng_ch7_004,1,ENGLISH_A | Unit 7 - If | Story Writing,Topic,topic_separator,,,,,1
+q_9_eng_ch7_lq_008,1,ENGLISH_A | Unit 7 - If | Story Writing,Long,story,Write a story of your own choice using conjunctions and transitional devices.,Hard,8,PRO,1
+sep_9_eng_ch7_005,1,ENGLISH_A | Unit 7 - If | Oral Communication,Topic,topic_separator,,,,,1
+q_9_eng_ch7_lq_009,1,ENGLISH_A | Unit 7 - If | Oral Communication,Long,dialogue,Rewrite and perform the gardening-club dialogue using suitable turn-taking and polite expressions.,Hard,8,ULTRA,1
+sep_9_eng_ch7_006,1,ENGLISH_A | Unit 7 - If | Creative Poetry,Topic,topic_separator,,,,,1
+q_9_eng_ch7_lq_010,1,ENGLISH_A | Unit 7 - If | Creative Poetry,Long,poem_summary,"Compose a short original poem on resilience and integrity, then identify its theme.",Medium,5,PRO,1

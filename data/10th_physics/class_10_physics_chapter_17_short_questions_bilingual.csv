@@ -1,0 +1,65 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,17.1 Magnetic Effect of Current,topic_separator,,,,,,1
+q_10_phy_ch17_sq_001,1,17.1 Magnetic Effect of Current,definition_function,State the magnetic effect of a steady electric current.,steady electric current کا magnetic effect بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,17.1 Magnetic Field Around a Straight Wire,topic_separator,,,,,,1
+q_10_phy_ch17_sq_002,1,17.1 Magnetic Field Around a Straight Wire,diagram_based,Describe the pattern of magnetic field lines around a straight current-carrying wire.,straight current-carrying wire کے around magnetic field lines کا pattern بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,17.1 Right-Hand Grip Rule,topic_separator,,,,,,1
+q_10_phy_ch17_sq_003,1,17.1 Right-Hand Grip Rule,law_principle,State the right-hand grip rule for a straight current-carrying conductor.,straight current-carrying conductor کے لیے right-hand grip rule بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,17.1 Dot-and-Cross Convention,topic_separator,,,,,,1
+q_10_phy_ch17_sq_004,1,17.1 Dot-and-Cross Convention,definition_function,State what the dot and cross symbols represent for current direction.,current direction کے لیے dot اور cross symbols کیا represent کرتے ہیں، بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,17.1 Magnetic Field Strength,topic_separator,,,,,,1
+q_10_phy_ch17_sq_005,1,17.1 Magnetic Field Strength,cause_effect,State how current magnitude and distance from the wire affect magnetic field strength.,بیان کریں کہ current magnitude اور wire سے distance magnetic field strength کو کیسے affect کرتے ہیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,17.1 Solenoid,topic_separator,,,,,,1
+q_10_phy_ch17_sq_006,1,17.1 Solenoid,definition_function,Define a solenoid and state the form of its magnetic field.,solenoid کی تعریف کریں اور اس کے magnetic field کی form بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,17.1 Electromagnet,topic_separator,,,,,,1
+q_10_phy_ch17_sq_007,1,17.1 Electromagnet,definition_function,Define an electromagnet and state the purpose of its soft-iron core.,electromagnet کی تعریف کریں اور اس کے soft-iron core کا purpose بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,17.2 Parallel Current-Carrying Conductors,topic_separator,,,,,,1
+q_10_phy_ch17_sq_008,1,17.2 Parallel Current-Carrying Conductors,compare_contrast,State the force between parallel conductors carrying currents in the same direction and in opposite directions.,same direction اور opposite directions میں currents carry کرنے والے parallel conductors کے درمیان force بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,17.3 Force on a Current-Carrying Conductor,topic_separator,,,,,,1
+q_10_phy_ch17_sq_009,1,17.3 Force on a Current-Carrying Conductor,definition_function,State what happens when a current-carrying conductor is placed in a magnetic field.,بیان کریں کہ current-carrying conductor کو magnetic field میں place کرنے پر کیا ہوتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,17.3 Fleming's Left-Hand Rule,topic_separator,,,,,,1
+q_10_phy_ch17_sq_010,1,17.3 Fleming's Left-Hand Rule,law_principle,State Fleming's left-hand rule and identify what the thumb and two fingers represent.,Fleming's left-hand rule بیان کریں اور thumb و two fingers کی representations لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,17.3 Magnetic Force,topic_separator,,,,,,1
+q_10_phy_ch17_sq_011,1,17.3 Magnetic Force,definition_formula,Write the expression for force on a current-carrying conductor perpendicular to a magnetic field and identify its symbols.,magnetic field کے perpendicular current-carrying conductor پر force کا expression لکھیں اور symbols identify کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,17.4 Turning Effect on a Coil,topic_separator,,,,,,1
+q_10_phy_ch17_sq_012,1,17.4 Turning Effect on a Coil,concept_explanation,State why a current-carrying coil experiences a turning effect in a magnetic field.,بیان کریں کہ current-carrying coil magnetic field میں turning effect کیوں experience کرتی ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,17.5 DC Motor,topic_separator,,,,,,1
+q_10_phy_ch17_sq_013,1,17.5 DC Motor,definition_function,State the energy conversion performed by a DC motor.,DC motor کی performed energy conversion بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch17_sq_014,1,17.5 DC Motor,function_purpose,State the functions of the split-ring commutator and carbon brushes in a DC motor.,DC motor میں split-ring commutator اور carbon brushes کے functions بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,17.6 Electromagnetic Relay,topic_separator,,,,,,1
+q_10_phy_ch17_sq_015,1,17.6 Electromagnetic Relay,definition_function,Define an electromagnetic relay and state its main purpose.,electromagnetic relay کی تعریف کریں اور اس کا main purpose بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,17.6 Earth's Magnetic Field,topic_separator,,,,,,1
+q_10_phy_ch17_sq_016,1,17.6 Earth's Magnetic Field,definition_function,Describe Earth's magnetic field and state one protective role of the magnetosphere.,Earth's magnetic field بیان کریں اور magnetosphere کا one protective role لکھیں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,17.1 Magnetic Field Experiment,topic_separator,,,,,,1
+q_10_phy_ch17_sq_017,1,17.1 Magnetic Field Experiment,process_steps,Describe an experiment using a compass or iron filings to show the magnetic field around a straight current-carrying wire.,compass یا iron filings سے straight current-carrying wire کے around magnetic field show کرنے والا experiment بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,17.1 Magnetic Field Direction,topic_separator,,,,,,1
+q_10_phy_ch17_sq_018,1,17.1 Magnetic Field Direction,cause_effect,Explain what happens to the magnetic field when the direction of current is reversed.,وضاحت کریں کہ current direction reverse ہونے پر magnetic field کے ساتھ کیا ہوتا ہے۔,Medium,2,PRO,1
+q_10_phy_ch17_sq_019,1,17.1 Solenoid,diagram_based,Explain how the north and south poles of a current-carrying solenoid are identified.,وضاحت کریں کہ current-carrying solenoid کے north اور south poles کیسے identify کیے جاتے ہیں۔,Medium,2,PRO,1
+q_10_phy_ch17_sq_020,1,17.1 Electromagnet,cause_effect,"Explain how current, number of turns, and core material affect the strength of an electromagnet.",وضاحت کریں کہ current، number of turns اور core material electromagnet strength کو کیسے affect کرتے ہیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,17.2 Parallel Conductors,topic_separator,,,,,,1
+q_10_phy_ch17_sq_021,1,17.2 Parallel Conductors,concept_explanation,Explain why parallel currents in the same direction attract while opposite currents repel.,وضاحت کریں کہ same direction parallel currents attract جبکہ opposite currents repel کیوں کرتی ہیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,17.3 Force on a Conductor,topic_separator,,,,,,1
+q_10_phy_ch17_sq_022,1,17.3 Force on a Conductor,process_steps,Describe an experiment to show that a force acts on a current-carrying conductor in a magnetic field.,current-carrying conductor پر magnetic field میں force act ہونے کو show کرنے والا experiment بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,17.3 Force Direction,topic_separator,,,,,,1
+q_10_phy_ch17_sq_023,1,17.3 Force Direction,cause_effect,State the effect on force direction when either the current direction or magnetic field direction is reversed.,current direction یا magnetic field direction میں سے کسی ایک کو reverse کرنے پر force direction کا effect بیان کریں۔,Medium,2,PRO,1
+q_10_phy_ch17_sq_024,1,17.3 Magnetic Force,numerical_short,"Calculate the force on a conductor using the given data: B = 0.5 T, I = 2 A, L = 0.4 m, conductor perpendicular to the field.","دیے گئے data سے conductor پر force معلوم کریں: B = 0.5 T, I = 2 A, L = 0.4 m, conductor perpendicular to field",Medium,2,PRO,1
+q_10_phy_ch17_sq_025,1,17.4 Turning Effect on a Coil,cause_effect,"Explain how the number of turns, current, and magnetic field strength affect the turning effect on a coil.",وضاحت کریں کہ number of turns، current اور magnetic field strength coil کے turning effect کو کیسے affect کرتے ہیں۔,Medium,2,PRO,1
+q_10_phy_ch17_sq_026,1,17.5 DC Motor,process_steps,Describe the working of a simple DC motor during one complete rotation.,simple DC motor کی one complete rotation کے دوران working بیان کریں۔,Medium,2,PRO,1
+q_10_phy_ch17_sq_027,1,17.5 DC Motor,explain_reason,Explain why the current in a DC motor coil must reverse after every half-turn.,وضاحت کریں کہ DC motor coil میں current ہر half-turn کے بعد reverse کیوں ہونی چاہیے۔,Medium,2,PRO,1
+q_10_phy_ch17_sq_028,1,17.6 Electromagnetic Relay,process_steps,Explain how a small control current operates a high-current circuit through an electromagnetic relay.,وضاحت کریں کہ small control current electromagnetic relay کے ذریعے high-current circuit کو کیسے operate کرتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,17.6 Loudspeaker,topic_separator,,,,,,1
+q_10_phy_ch17_sq_029,1,17.6 Loudspeaker,process_steps,Explain how alternating current in the voice coil produces sound in a loudspeaker.,وضاحت کریں کہ voice coil میں alternating current loudspeaker میں sound کیسے produce کرتی ہے۔,Medium,2,PRO,1
+q_10_phy_ch17_sq_030,1,17.6 Earth's Magnetic Field,cause_effect,Explain how Earth's molten outer core and rotation are related to the origin of its magnetic field.,وضاحت کریں کہ Earth's molten outer core اور rotation اس کے magnetic field کے origin سے کیسے related ہیں۔,Medium,2,PRO,1
+q_10_phy_ch17_sq_031,1,17.6 Earth's Magnetic Field,application_scenario,Explain how Earth's magnetic field assists navigation and protects the planet from solar wind.,وضاحت کریں کہ Earth's magnetic field navigation میں help اور planet کو solar wind سے protect کیسے کرتا ہے۔,Medium,2,ELITE,1
+q_10_phy_ch17_sq_032,1,17.5 DC Motor,application_scenario,State two applications of DC motors and identify the useful mechanical output in each.,DC motors کی two applications بیان کریں اور ہر ایک میں useful mechanical output identify کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,17.1 Magnetic Field Patterns,topic_separator,,,,,,1
+q_10_phy_ch17_sq_033,1,17.1 Magnetic Field Patterns,compare_contrast,"Compare the magnetic field patterns of a straight wire, a solenoid, and a bar magnet.",straight wire، solenoid اور bar magnet کے magnetic field patterns کا موازنہ کریں۔,Hard,2,PRO,1
+q_10_phy_ch17_sq_034,1,17.2 Parallel Conductors,diagram_based,Use magnetic field patterns to explain attraction and repulsion between two parallel current-carrying conductors.,magnetic field patterns کی مدد سے two parallel current-carrying conductors کے درمیان attraction اور repulsion explain کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,17.3 Force and Direction,topic_separator,,,,,,1
+q_10_phy_ch17_sq_035,1,17.3 Force and Direction,application_scenario,A conductor experiences a force in a magnetic field. Explain how the force changes if current is doubled and its direction is reversed.,ایک conductor magnetic field میں force experience کرتا ہے۔ explain کریں کہ current double اور direction reverse ہونے پر force کیسے change ہوتی ہے۔,Hard,2,PRO,1
+q_10_phy_ch17_sq_036,1,17.4 Turning Effect on a Coil,concept_explanation,Explain how opposite forces on the two sides of a rectangular current-carrying coil produce a couple.,وضاحت کریں کہ rectangular current-carrying coil کی two sides پر opposite forces couple کیسے produce کرتی ہیں۔,Hard,2,ELITE,1
+q_10_phy_ch17_sq_037,1,17.5 DC Motor,diagram_based,"Describe the roles of armature, magnetic field, split ring, brushes, and power supply in a DC motor.",DC motor میں armature، magnetic field، split ring، brushes اور power supply کے roles بیان کریں۔,Hard,2,PRO,1
+q_10_phy_ch17_sq_038,1,17.5 DC Motor,cause_effect,A DC motor coil stops after turning through 90° when current is not reversed. Explain the mechanical reason.,اگر current reverse نہ ہو تو DC motor coil 90° turn کے بعد stop ہو جاتی ہے۔ mechanical reason explain کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,17.6 Relay and Loudspeaker,topic_separator,,,,,,1
+q_10_phy_ch17_sq_039,1,17.6 Relay and Loudspeaker,compare_contrast,Compare the use of the magnetic effect of current in a relay and a loudspeaker.,relay اور loudspeaker میں magnetic effect of current کے use کا موازنہ کریں۔,Hard,2,ELITE,1
+q_10_phy_ch17_sq_040,1,17.6 Earth's Magnetic Field,concept_explanation,Explain the dynamo-effect model for Earth's magnetic field and relate it to the magnetosphere.,Earth's magnetic field کے dynamo-effect model کو explain کریں اور اسے magnetosphere سے relate کریں۔,Hard,2,ELITE,1

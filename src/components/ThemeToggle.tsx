@@ -1,7 +1,7 @@
 'use client'
 
 import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
+import { useSyncExternalStore } from 'react'
 import { Sun, Moon, Monitor } from 'lucide-react'
 
 type Variant = 'icon' | 'segmented'
@@ -23,13 +23,19 @@ const OPTIONS = [
  * Theme state is read from next-themes, so every instance stays in sync and
  * persists via the shared `zs-theme` key.
  */
+/* Hydration gate. The server cannot know the OS colour preference, so the
+   control renders a same-sized placeholder until the client takes over.
+   `useSyncExternalStore` expresses this directly — server snapshot false,
+   client snapshot true — with no post-mount setState or cascading render. */
+const noopSubscribe = () => () => {}
+
 export default function ThemeToggle({ variant = 'icon' }: { variant?: Variant }) {
   const { theme, resolvedTheme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-
-  // The server cannot know the OS preference, so the control renders a
-  // same-sized placeholder until hydration to avoid a layout shift.
-  useEffect(() => setMounted(true), [])
+  const mounted = useSyncExternalStore(
+    noopSubscribe,
+    () => true,
+    () => false,
+  )
 
   if (!mounted) {
     return variant === 'segmented' ? (

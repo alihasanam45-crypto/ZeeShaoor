@@ -1,65 +1,110 @@
-import { NextResponse } from "next/server";
-import { connectToDatabase } from "@/lib/mongodb";
-import Question from "@/models/Question";
+import { NextResponse } from 'next/server'
+import { connectToDatabase } from '@/lib/mongodb'
+import Question from '@/models/Question'
+import { STAFF, requireApiRole } from '@/lib/security/rbac'
+import { apiError, apiSuccess, handleApiError, readJsonBody } from '@/lib/security/errors'
+import { audit } from '@/lib/security/audit'
+import { safeContains, toEnumOptional, toPagination, toStr } from '@/lib/security/sanitize'
+import {
+  DIFFICULTIES,
+  QUESTION_TYPES,
+  normalizeQuestion,
+} from '@/lib/security/question-input'
+
+/**
+ * Question bank — staff only (admins and teachers).
+ *
+ * Students must not read this surface: `correctAnswer` is stored on every
+ * document, so an open read is an answer key for every exam in the platform.
+ * The route was previously unauthenticated on both verbs.
+ */
 
 export async function GET(req: Request) {
+  const guard = await requireApiRole(STAFF, { action: 'GET /api/questions' })
+  if (guard instanceof NextResponse) return guard
+
   try {
-    await connectToDatabase();
-    const url = new URL(req.url);
-    const filter: Record<string, any> = {};
-    const classLevel = url.searchParams.get('classLevel');
-    const subject = url.searchParams.get('subject');
-    const type = url.searchParams.get('type');
-    const chapter = url.searchParams.get('chapter');
-    const search = url.searchParams.get('search');
+    await connectToDatabase()
 
-    if (classLevel) filter.classLevel = classLevel;
-    if (subject) filter.subject = subject;
-    if (type) filter.questionType = type;
-    if (chapter) filter.chapter = chapter;
-    if (search) filter.questionText = { $regex: search, $options: 'i' };
+    const { searchParams } = new URL(req.url)
+    const { page, limit, skip } = toPagination(searchParams, 200)
 
-    const questions = await Question.find(filter)
-      .sort({ chapter: 1, difficulty: 1 })
-      .limit(200)
-      .lean();
+    const filter: Record<string, unknown> = {}
 
-    return NextResponse.json({ data: questions, total: questions.length });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    const classLevel = toStr(searchParams.get('classLevel'), 4)
+    if (classLevel) filter.classLevel = classLevel
+
+    const subject = toStr(searchParams.get('subject'), 60)
+    if (subject) filter.subject = subject
+
+    const type = toEnumOptional(searchParams.get('type'), QUESTION_TYPES)
+    if (type) filter.questionType = type
+
+    const difficulty = toEnumOptional(searchParams.get('difficulty'), DIFFICULTIES)
+    if (difficulty) filter.difficulty = difficulty
+
+    const chapter = toStr(searchParams.get('chapter'), 4)
+    if (chapter) filter.chapter = chapter
+
+    // Escaped: `{ $regex: search }` with raw input was a ReDoS lever against a
+    // 2000-character text field.
+    const search = safeContains(searchParams.get('search'), 80)
+    if (search) filter.questionText = search
+
+    const [questions, total] = await Promise.all([
+      Question.find(filter)
+        .sort({ chapter: 1, difficulty: 1 })
+        .skip(skip)
+        .limit(limit)
+        .lean(),
+      Question.countDocuments(filter),
+    ])
+
+    return apiSuccess({
+      questions,
+      pagination: { total, page, limit, pages: Math.ceil(total / limit) },
+    })
+  } catch (err) {
+    return handleApiError(err, 'GET /api/questions')
   }
 }
 
 export async function POST(req: Request) {
+  const guard = await requireApiRole(STAFF, { action: 'POST /api/questions' })
+  if (guard instanceof NextResponse) return guard
+
   try {
-    // 1. Establish Secure Matrix Connection
-    await connectToDatabase();
+    const body = await readJsonBody(req)
+    if (body instanceof NextResponse) return body
 
-    // 2. Parse Incoming Payload
-    const body = await req.json();
-
-    // 3. Bulletproof Validation: Ensure critical fields exist and are not empty spaces
-    if (!body.questionText?.trim() || !body.subject || !body.standard) {
-      return NextResponse.json(
-        { error: "SYSTEM HALT: Invalid Payload. Critical data missing." },
-        { status: 400 }
-      );
+    // Validated and normalized before it reaches the driver. The previous
+    // `Question.create(body)` accepted the raw payload, which let a caller
+    // choose `_id` (the schema declares a String id with no default) and set
+    // `createdBy` to anyone.
+    const result = normalizeQuestion(body, guard.user.email)
+    if (!result.ok) {
+      return apiError('VALIDATION_FAILED', {
+        message: result.errors.join(' '),
+      })
     }
 
-    // 4. Inject Data into MongoDB
-    const newQuestion = await Question.create(body);
+    await connectToDatabase()
+    const question = await Question.create(result.value)
 
-    // 5. Return Success Transmission
-    return NextResponse.json(
-      { message: "DATA INJECTED SUCCESSFULLY: Question anchored in the Vault.", data: newQuestion },
-      { status: 201 }
-    );
+    void audit({
+      action: 'question.create',
+      actor: guard.user,
+      targetType: 'Question',
+      targetId: String(question._id),
+      metadata: {
+        classLevel: result.value.classLevel,
+        subject: result.value.subject,
+        questionType: result.value.questionType,
+      },
+    })
 
-  } catch (error: any) {
-    console.error("DATA INJECTION FAILURE:", error);
-    return NextResponse.json(
-      { error: "Matrix Failure: Unable to anchor data.", details: error.message },
-      { status: 500 }
-    );
+    return apiSuccess({ question }, { status: 201 })
+  } catch (err) {
+    return handleApiError(err, 'POST /api/questions')
   }
 }

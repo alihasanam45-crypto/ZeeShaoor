@@ -1,3 +1,12 @@
+'use client'
+
+/* Marked client-only on purpose: every nav item's `icon` is a React component,
+   which is not serializable across the server→client boundary. Pinning this
+   module (and the icons it pulls in) to the client bundle means the lists are
+   constructed where they are consumed, and never travel through the RSC
+   payload — which is what produced a flood of "Only plain objects can be
+   passed to Client Components" errors, one per nav item, on every render. */
+
 import {
   Activity,
   BarChart3,
@@ -7,6 +16,7 @@ import {
   BrainCircuit,
   CalendarRange,
   Calendar,
+  CalendarCheck,
   ClipboardList,
   Clock,
   CreditCard,
@@ -62,29 +72,37 @@ export const TEACHER_NAV: NavSection[] = [
       { label: 'Live Class', href: '/teacher/live-class', icon: MonitorPlay, hint: 'Run a live session' },
       { label: 'Lesson Planner', href: '/teacher/lesson-planner', icon: BookOpen, hint: 'Plan lessons' },
       { label: 'Pacing Tracker', href: '/teacher/pacing', icon: Clock, hint: 'Syllabus pace' },
-      { label: 'Collab Board', href: '/teacher/collab', icon: Users, hint: 'Shared planning' },
+      { label: 'Collaboration Board', href: '/teacher/collab', icon: Users, hint: 'Shared planning' },
       { label: 'Substitute Briefing', href: '/teacher/substitute', icon: FileText, hint: 'Cover notes' },
     ],
   },
   {
-    heading: 'Assessment',
+    heading: 'Assessments',
     items: [
       { label: 'Test Creator', href: '/teacher/test-creator', icon: FileCheck, hint: 'Build tests' },
-      { label: 'Homework Autopilot', href: '/teacher/homework', icon: ClipboardList, hint: 'Assign homework' },
+      { label: 'Homework', href: '/teacher/homework', icon: ClipboardList, hint: 'Assign homework' },
       { label: 'Rubric Scorer', href: '/teacher/rubric', icon: NotebookPen, hint: 'Score with rubrics' },
       { label: 'Grade Distribution', href: '/teacher/grade-distribution', icon: BarChart3, hint: 'Grade spread' },
     ],
   },
   {
-    heading: 'Student Insight',
+    heading: 'Students',
     items: [
-      { label: 'At-Risk Playbook', href: '/teacher/at-risk', icon: ShieldAlert, hint: 'Intervention plans' },
+      { label: 'At-Risk Students', href: '/teacher/at-risk', icon: ShieldAlert, hint: 'Intervention plans' },
+      { label: 'Learning Paths', href: '/teacher/learning-paths', icon: Route, hint: 'Per-student paths' },
+      { label: 'Student Portfolio', href: '/teacher/portfolio', icon: GraduationCap, hint: 'Student portfolios' },
+      { label: 'Attendance', href: '#', icon: CalendarCheck, disabled: true, hint: 'Not built yet' },
+      { label: 'Student Overview', href: '#', icon: Users, disabled: true, hint: 'Not built yet' },
+    ],
+  },
+  {
+    heading: 'Reports & Insights',
+    items: [
       { label: 'Mark Predictor', href: '/teacher/mark-predictor', icon: BrainCircuit, hint: 'Predicted marks' },
       { label: 'Emotion Report', href: '/teacher/emotion-report', icon: Smile, hint: 'Class mood' },
       { label: 'Energy Map', href: '/teacher/energy-map', icon: Zap, hint: 'Attention by period' },
-      { label: 'Learning Paths', href: '/teacher/learning-paths', icon: Route, hint: 'Per-student paths' },
-      { label: 'Absence Patterns', href: '/teacher/absence-patterns', icon: UserX, hint: 'Attendance trends' },
-      { label: 'Portfolio Builder', href: '/teacher/portfolio', icon: GraduationCap, hint: 'Student portfolios' },
+      { label: 'Attendance Patterns', href: '/teacher/absence-patterns', icon: UserX, hint: 'Attendance trends' },
+      { label: 'Growth Tracker', href: '/teacher/growth', icon: TrendingUp, hint: 'Your development' },
     ],
   },
   {
@@ -92,13 +110,7 @@ export const TEACHER_NAV: NavSection[] = [
     items: [
       { label: 'Parent Hub', href: '/teacher/parent-hub', icon: MessageSquare, hint: 'Message parents' },
       { label: 'Meetings', href: '/teacher/meetings', icon: Calendar, hint: 'Schedule meetings' },
-      { label: 'Rapid Feedback', href: '/teacher/feedback', icon: Activity, hint: 'Quick pulse checks' },
-    ],
-  },
-  {
-    heading: 'Personal',
-    items: [
-      { label: 'Growth Tracker', href: '/teacher/growth', icon: TrendingUp, hint: 'Your development' },
+      { label: 'Feedback', href: '/teacher/feedback', icon: Activity, hint: 'Quick pulse checks' },
     ],
   },
 ]

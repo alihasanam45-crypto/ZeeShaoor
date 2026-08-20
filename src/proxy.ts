@@ -102,12 +102,11 @@ export async function proxy(request: NextRequest) {
 
   const authenticated = Boolean(token && isValidRole(token.role))
 
-  // --------- Root: send signed-in users to their own portal ------------------
+  // --------- Root: always show the public landing page -----------------------
+  // '/' is never gated — a signed-in user still sees the marketing page here,
+  // and reaches their portal through the nav or a direct portal URL.
   if (pathname === '/') {
-    if (authenticated) {
-      return NextResponse.redirect(new URL(homeFor(token!.role), request.url))
-    }
-    return passThrough(request)
+    return authenticated ? forward(request, token!) : passThrough(request)
   }
 
   // --------- Public surfaces -------------------------------------------------

@@ -1,0 +1,81 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,11 Introduction to Loci and Construction,topic_separator,,,,,,1
+q_9_math_ch11_sq_001,1,11 Introduction to Loci and Construction,definition_function,Define a locus and state how it is described by a geometrical condition.,locus کی تعریف کریں اور بیان کریں کہ اسے geometrical condition سے کیسے describe کیا جاتا ہے۔,Easy,2,IMPORTANT,1
+TOPIC_SEP,1,11.1 Construction of Triangles,topic_separator,,,,,,1
+q_9_math_ch11_sq_002,1,11.1 Construction of Triangles,list_state,"State the four sets of measurements used for constructing triangles: SSS, SAS, one side with two angles, and SSA.",triangles construct کرنے کے four sets of measurements بیان کریں: SSS، SAS، one side with two angles، اور SSA۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,11.1 Triangle Inequality,topic_separator,,,,,,1
+q_9_math_ch11_sq_003,1,11.1 Triangle Inequality,law_principle,State the triangle inequality condition required for three given lengths to form a triangle.,three given lengths سے triangle form ہونے کے لیے triangle inequality condition بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,11.1 Classification of Triangles,topic_separator,,,,,,1
+q_9_math_ch11_sq_004,1,11.1 Classification of Triangles,classification,Classify triangles according to sides and according to angles.,triangles کو sides اور angles کے مطابق classify کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,11.1 SSS Construction,topic_separator,,,,,,1
+q_9_math_ch11_sq_005,1,11.1 SSS Construction,process_steps,State the construction steps for a triangle when all three side lengths are given.,all three side lengths given ہونے پر triangle construction کے steps بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,11.1 SAS Construction,topic_separator,,,,,,1
+q_9_math_ch11_sq_006,1,11.1 SAS Construction,process_steps,State the construction steps for a triangle when two sides and their included angle are given.,two sides اور included angle given ہونے پر triangle construction کے steps بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,11.1 One Side and Two Angles,topic_separator,,,,,,1
+q_9_math_ch11_sq_007,1,11.1 One Side and Two Angles,process_steps,State the construction steps for a triangle when one side and two angles are given.,one side اور two angles given ہونے پر triangle construction کے steps بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,11.1 Ambiguous Case,topic_separator,,,,,,1
+q_9_math_ch11_sq_008,1,11.1 Ambiguous Case,concept_explanation,"Explain why the SSA data may produce no triangle, one triangle, or two triangles.",وضاحت کریں کہ SSA data سے no triangle، one triangle یا two triangles کیوں بن سکتے ہیں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,11.2 Perpendicular Bisector,topic_separator,,,,,,1
+q_9_math_ch11_sq_009,1,11.2 Perpendicular Bisector,definition_function,Define the perpendicular bisector of a line segment and state its equidistance property.,line segment کے perpendicular bisector کی تعریف کریں اور اس کی equidistance property بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,11.2 Median,topic_separator,,,,,,1
+q_9_math_ch11_sq_010,1,11.2 Median,definition_function,Define a median of a triangle and identify its endpoint on the opposite side.,triangle کی median کی تعریف کریں اور opposite side پر اس کا endpoint identify کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,11.2 Circumcenter,topic_separator,,,,,,1
+q_9_math_ch11_sq_011,1,11.2 Circumcenter,definition_function,Define the circumcenter of a triangle and state how it is constructed.,triangle کے circumcenter کی تعریف کریں اور بیان کریں کہ اسے کیسے construct کیا جاتا ہے۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,11.2 Centroid,topic_separator,,,,,,1
+q_9_math_ch11_sq_012,1,11.2 Centroid,definition_function,Define the centroid of a triangle and state the lines whose intersection determines it.,triangle کے centroid کی تعریف کریں اور وہ lines بیان کریں جن کا intersection اسے determine کرتا ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,11.3 Angle Bisectors,topic_separator,,,,,,1
+q_9_math_ch11_sq_013,1,11.3 Angle Bisectors,definition_function,Define an angle bisector and state its equidistance property.,angle bisector کی تعریف کریں اور اس کی equidistance property بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,11.3 Incenter,topic_separator,,,,,,1
+q_9_math_ch11_sq_014,1,11.3 Incenter,definition_function,Define the incenter and state its relationship with the sides of a triangle.,incenter کی تعریف کریں اور triangle کی sides کے ساتھ اس کا relationship بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,11.4 Altitudes,topic_separator,,,,,,1
+q_9_math_ch11_sq_015,1,11.4 Altitudes,definition_function,Define an altitude of a triangle and state how it differs from a median.,triangle کی altitude کی تعریف کریں اور median سے اس کا فرق بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,11.4 Orthocenter,topic_separator,,,,,,1
+q_9_math_ch11_sq_016,1,11.4 Orthocenter,definition_function,"Define the orthocenter and state how its position varies in acute, right, and obtuse triangles.",orthocenter کی تعریف کریں اور acute، right اور obtuse triangles میں اس کی position کا فرق بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,11.5 Basic Loci,topic_separator,,,,,,1
+q_9_math_ch11_sq_017,1,11.5 Basic Loci,classification,"State the loci of points at a fixed distance from a fixed point, a fixed line, and two fixed points.",fixed point، fixed line اور two fixed points سے fixed distance والے points کے loci بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,11.5 Intersection of Loci,topic_separator,,,,,,1
+q_9_math_ch11_sq_018,1,11.5 Intersection of Loci,concept_explanation,Explain how the intersection of two loci determines points satisfying two conditions simultaneously.,وضاحت کریں کہ two loci کا intersection simultaneously two conditions satisfy کرنے والے points کیسے determine کرتا ہے۔,Hard,2,ELITE,1
+TOPIC_SEP,1,Exercise 11.1 — SSS Construction,topic_separator,,,,,,1
+q_9_math_ch11_sq_019,1,Exercise 11.1 — SSS Construction,diagram_based,"Construct a triangle with side lengths 5 cm, 6 cm, and 7 cm, and verify the triangle inequality.",side lengths 5 cm، 6 cm اور 7 cm والا triangle construct کریں اور triangle inequality verify کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 11.1 — SAS Construction,topic_separator,,,,,,1
+q_9_math_ch11_sq_020,1,Exercise 11.1 — SAS Construction,diagram_based,"Construct triangle ABC with AB = 6 cm, AC = 5 cm, and ∠A = 60°.",triangle ABC construct کریں جب AB = 6 cm، AC = 5 cm اور ∠A = 60° ہو۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 11.1 — ASA Construction,topic_separator,,,,,,1
+q_9_math_ch11_sq_021,1,Exercise 11.1 — ASA Construction,diagram_based,"Construct triangle PQR with PQ = 7 cm, ∠P = 45°, and ∠Q = 70°.",triangle PQR construct کریں جب PQ = 7 cm، ∠P = 45° اور ∠Q = 70° ہو۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 11.1 — Triangle Inequality,topic_separator,,,,,,1
+q_9_math_ch11_sq_022,1,Exercise 11.1 — Triangle Inequality,classification,"Determine whether lengths 3 cm, 4 cm, and 8 cm can form a triangle, giving the required inequality check.",determine کریں کہ lengths 3 cm، 4 cm اور 8 cm triangle form کر سکتی ہیں یا نہیں اور required inequality check دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 11.1 — Ambiguous SSA Case,topic_separator,,,,,,1
+q_9_math_ch11_sq_023,1,Exercise 11.1 — Ambiguous SSA Case,diagram_based,"Construct all possible triangles when a side, a non-included acute angle, and the side opposite that angle are given as 6 cm, 40°, and 5 cm.",all possible triangles construct کریں جب side، non-included acute angle اور opposite side 6 cm، 40° اور 5 cm given ہوں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 11.1 — Perpendicular Bisectors,topic_separator,,,,,,1
+q_9_math_ch11_sq_024,1,Exercise 11.1 — Perpendicular Bisectors,diagram_based,Construct the perpendicular bisectors of all three sides of a scalene triangle and mark their point of concurrency.,scalene triangle کی all three sides کے perpendicular bisectors construct کریں اور point of concurrency mark کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 11.1 — Circumcircle,topic_separator,,,,,,1
+q_9_math_ch11_sq_025,1,Exercise 11.1 — Circumcircle,diagram_based,Construct the circumcircle of a given acute triangle using its perpendicular bisectors.,given acute triangle کا circumcircle اس کے perpendicular bisectors استعمال کرکے construct کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 11.1 — Medians,topic_separator,,,,,,1
+q_9_math_ch11_sq_026,1,Exercise 11.1 — Medians,diagram_based,Construct all three medians of a triangle and mark the centroid.,triangle کی all three medians construct کریں اور centroid mark کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 11.1 — Angle Bisectors,topic_separator,,,,,,1
+q_9_math_ch11_sq_027,1,Exercise 11.1 — Angle Bisectors,diagram_based,Construct all three internal angle bisectors of a triangle and mark the incenter.,triangle کے all three internal angle bisectors construct کریں اور incenter mark کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 11.1 — Incircle,topic_separator,,,,,,1
+q_9_math_ch11_sq_028,1,Exercise 11.1 — Incircle,diagram_based,Construct the incircle of a given triangle using the incenter.,given triangle کا incircle، incenter استعمال کرکے construct کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 11.1 — Altitudes,topic_separator,,,,,,1
+q_9_math_ch11_sq_029,1,Exercise 11.1 — Altitudes,diagram_based,Construct all three altitudes of an acute triangle and mark the orthocenter.,acute triangle کی all three altitudes construct کریں اور orthocenter mark کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 11.1 — Right Triangle Orthocenter,topic_separator,,,,,,1
+q_9_math_ch11_sq_030,1,Exercise 11.1 — Right Triangle Orthocenter,explain_reason,Explain why the orthocenter of a right triangle lies at its right-angled vertex.,وضاحت کریں کہ right triangle کا orthocenter right-angled vertex پر کیوں ہوتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,Exercise 11.1 — Obtuse Triangle Orthocenter,topic_separator,,,,,,1
+q_9_math_ch11_sq_031,1,Exercise 11.1 — Obtuse Triangle Orthocenter,diagram_based,Construct the altitudes of an obtuse triangle and locate its orthocenter.,obtuse triangle کی altitudes construct کریں اور orthocenter locate کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 11.2 — Fixed Distance from a Point,topic_separator,,,,,,1
+q_9_math_ch11_sq_032,1,Exercise 11.2 — Fixed Distance from a Point,diagram_based,Construct the locus of points exactly 4 cm from a fixed point P.,fixed point P سے exactly 4 cm distant points کا locus construct کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 11.2 — Fixed Distance from a Line,topic_separator,,,,,,1
+q_9_math_ch11_sq_033,1,Exercise 11.2 — Fixed Distance from a Line,diagram_based,Construct the locus of points 3 cm from a given straight line.,given straight line سے 3 cm distant points کا locus construct کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 11.2 — Equidistant from Two Points,topic_separator,,,,,,1
+q_9_math_ch11_sq_034,1,Exercise 11.2 — Equidistant from Two Points,diagram_based,Construct the locus of points equidistant from two fixed points A and B.,two fixed points A اور B سے equidistant points کا locus construct کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 11.2 — Equidistant from Intersecting Lines,topic_separator,,,,,,1
+q_9_math_ch11_sq_035,1,Exercise 11.2 — Equidistant from Intersecting Lines,diagram_based,Construct the locus of points equidistant from two intersecting lines.,two intersecting lines سے equidistant points کا locus construct کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 11.2 — Intersection of Loci,topic_separator,,,,,,1
+q_9_math_ch11_sq_036,1,Exercise 11.2 — Intersection of Loci,diagram_based,"Find the possible positions of a point that is 5 cm from A and 4 cm from B, where AB = 6 cm.",possible positions معلوم کریں of a point جو A سے 5 cm اور B سے 4 cm distant ہو، جب AB = 6 cm ہو۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 11.2 — Rectangle Locus,topic_separator,,,,,,1
+q_9_math_ch11_sq_037,1,Exercise 11.2 — Rectangle Locus,application_scenario,"Inside a rectangle, locate points equidistant from two adjacent sides and also equidistant from two opposite vertices.",rectangle کے اندر وہ points locate کریں جو two adjacent sides سے equidistant اور two opposite vertices سے بھی equidistant ہوں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,Exercise 11.2 — Water Source,topic_separator,,,,,,1
+q_9_math_ch11_sq_038,1,Exercise 11.2 — Water Source,application_scenario,Two villages A and B require a water source equidistant from both. Construct the possible location line.,two villages A اور B کو دونوں سے equidistant water source چاہیے۔ possible location line construct کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,Exercise 11.2 — Circular Safety Zone,topic_separator,,,,,,1
+q_9_math_ch11_sq_039,1,Exercise 11.2 — Circular Safety Zone,application_scenario,A robot must remain within 5 m of a control point. Represent its permissible region as a locus.,robot کو control point سے 5 m کے اندر رہنا ہے۔ permissible region کو locus کے طور پر represent کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Review Exercise 11 — Combined Construction,topic_separator,,,,,,1
+q_9_math_ch11_sq_040,1,Review Exercise 11 — Combined Construction,diagram_based,"Construct a triangle from suitable given measurements and then construct its circumcenter, centroid, incenter, and orthocenter.",suitable given measurements سے triangle construct کریں، پھر circumcenter، centroid، incenter اور orthocenter construct کریں۔,Hard,2,PRO,1

@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react'
 import PortalShell from '@/components/shell/PortalShell'
-import { ADMIN_NAV } from '@/components/shell/nav'
 import { requirePortal } from '@/lib/security/page-guard'
 
 /**
@@ -18,7 +17,7 @@ export default async function AdminLayout({ children }: { children: ReactNode })
   return (
     <PortalShell
       brand={{ title: 'ZeeShaoor.pk', subtitle: 'Admin Console', href: '/admin' }}
-      nav={ADMIN_NAV}
+      portal="admin"
       role="Super Admin"
       sidebarFooter={
         <p className="text-[10px] leading-relaxed text-fg-faint">
@@ -29,7 +28,12 @@ export default async function AdminLayout({ children }: { children: ReactNode })
         </p>
       }
     >
-      {children}
+      {/* The previous admin layout padded <main> directly. The shared shell
+          leaves padding to the page (the student and teacher portals use
+          <PageContainer>), so the gutter is reproduced here to keep all ~24
+          admin console pages laid out exactly as before — now with an
+          ultra-wide cap so tables stop stretching on very large displays. */}
+      <div className="mx-auto w-full max-w-[1600px] p-4 sm:p-6">{children}</div>
     </PortalShell>
   )
 }

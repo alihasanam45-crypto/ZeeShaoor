@@ -1,0 +1,77 @@
+﻿question_hash,active,topic,bloom_level,question,urdu_translation,A,B,C,D,correct_answer,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,13.1 Basic Probability,Topic,,,,,,,,,,,1
+q_9_math_ch13_001,1,13.1 Basic Probability,Remember,Probability is the numerical measure of the:,probability کس چیز کی numerical measure ہے؟,Size of a class interval / class interval کا size,Slope of a line / line کی slope,Chance of occurrence of an event / event کے occur ہونے کا chance,Similarity of figures / figures کی similarity,C | Chance of occurrence of an event / event کے occur ہونے کا chance,Easy,1,PRO,1
+TOPIC_SEP,1,13.1 Probability Formula,Topic,,,,,,,,,,,1
+q_9_math_ch13_002,1,13.1 Probability Formula,Remember,"For equally likely outcomes, P(A) equals:",equally likely outcomes کے لیے P(A) کس کے equal ہے؟,n(S)/n(A),n(A)+n(S),n(A)/n(S),n(A)×n(S),C | n(A)/n(S),Easy,1,PRO,1
+TOPIC_SEP,1,13.1 Experiment,Topic,,,,,,,,,,,1
+q_9_math_ch13_003,1,13.1 Experiment,Remember,"A process that generates results, such as tossing a coin, is called an:",coin toss جیسا results generate کرنے والا process کیا کہلاتا ہے؟,Event only / صرف event,Frequency polygon / frequency polygon,Experiment / experiment,Axiom / axiom,C | Experiment / experiment,Easy,1,PRO,1
+TOPIC_SEP,1,13.1 Outcomes,Topic,,,,,,,,,,,1
+q_9_math_ch13_004,1,13.1 Outcomes,Remember,The results of an experiment are called:,experiment کے results کو کیا کہتے ہیں؟,Class limits / class limits,Asymptotes / asymptotes,Premises / premises,Outcomes / outcomes,D | Outcomes / outcomes,Easy,1,PRO,1
+TOPIC_SEP,1,13.1 Sample Space,Topic,,,,,,,,,,,1
+q_9_math_ch13_005,1,13.1 Sample Space,Remember,The set of all possible outcomes of an experiment is the:,experiment کے all possible outcomes کے set کو کیا کہتے ہیں؟,Event complement / event complement,Frequency table / frequency table,Sample space / sample space,Scale factor / scale factor,C | Sample space / sample space,Easy,1,PRO,1
+TOPIC_SEP,1,13.1 Sample Point,Topic,,,,,,,,,,,1
+q_9_math_ch13_006,1,13.1 Sample Point,Remember,Each element of a sample space is called a:,sample space کے each element کو کیا کہتے ہیں؟,Class mark / class mark,Tangent / tangent,Sample point / sample point,Conjecture / conjecture,C | Sample point / sample point,Easy,1,PRO,1
+TOPIC_SEP,1,13.1 Event,Topic,,,,,,,,,,,1
+q_9_math_ch13_007,1,13.1 Event,Remember,A set of selected outcomes of an experiment is called an:,experiment کے selected outcomes کے set کو کیا کہتے ہیں؟,Event / event,Experiment / experiment,Histogram / histogram,Polygon / polygon,A | Event / event,Easy,1,PRO,1
+TOPIC_SEP,1,13.1 Certain Event,Topic,,,,,,,,,,,1
+q_9_math_ch13_008,1,13.1 Certain Event,Remember,The probability of a certain event is:,certain event کی probability کیا ہے؟,0,1,1/2,−1,B | 1,Easy,1,PRO,1
+TOPIC_SEP,1,13.1 Impossible Event,Topic,,,,,,,,,,,1
+q_9_math_ch13_009,1,13.1 Impossible Event,Remember,The probability of an impossible event is:,impossible event کی probability کیا ہے؟,1,1/2,−1,0,D | 0,Easy,1,PRO,1
+TOPIC_SEP,1,13.1 Probability Range,Topic,,,,,,,,,,,1
+q_9_math_ch13_010,1,13.1 Probability Range,Remember,"For any event A, the probability satisfies:",any event A کے لیے probability کون سی condition satisfy کرتی ہے؟,P(A)>1,0 ≤ P(A) ≤ 1,P(A)<0,−1≤P(A)≤0,B | 0 ≤ P(A) ≤ 1,Easy,1,PRO,1
+TOPIC_SEP,1,13.1 Equally Likely Event,Topic,,,,,,,,,,,1
+q_9_math_ch13_011,1,13.1 Equally Likely Event,Remember,An equally likely event on the probability scale has probability:,probability scale پر equally likely event کی probability کیا ہے؟,0.5,0,0.25,1,A | 0.5,Easy,1,PRO,1
+TOPIC_SEP,1,13.2 Complement of an Event,Topic,,,,,,,,,,,1
+q_9_math_ch13_012,1,13.2 Complement of an Event,Remember,The complement of event A is denoted by:,event A کے complement کو کیسے denote کیا جاتا ہے؟,A′,A∩A,2A,S/A only,A | A′,Easy,1,PRO,1
+TOPIC_SEP,1,13.2 Complement Rule,Topic,,,,,,,,,,,1
+q_9_math_ch13_013,1,13.2 Complement Rule,Remember,The complement rule is:,complement rule کیا ہے؟,P(A′)=P(A),P(A′)=1−P(A),P(A′)=1+P(A),P(A′)=P(A)/2,B | P(A′)=1−P(A),Easy,1,PRO,1
+TOPIC_SEP,1,13.5 Relative Frequency,Topic,,,,,,,,,,,1
+q_9_math_ch13_014,1,13.5 Relative Frequency,Remember,Relative frequency is calculated as:,relative frequency کیسے calculate ہوتی ہے؟,Total trials/Frequency,Frequency/Total number of trials,Frequency×Total trials,Frequency−Total trials,B | Frequency/Total number of trials,Easy,1,PRO,1
+TOPIC_SEP,1,13.5 Estimated Probability,Topic,,,,,,,,,,,1
+q_9_math_ch13_015,1,13.5 Estimated Probability,Understand,Relative frequency is used as an estimate of:,relative frequency کس کی estimate کے طور پر use ہوتی ہے؟,Probability / probability,Class width / class width,Gradient / gradient,Scale factor / scale factor,A | Probability / probability,Easy,1,PRO,1
+TOPIC_SEP,1,13.6 Expected Frequency,Topic,,,,,,,,,,,1
+q_9_math_ch13_016,1,13.6 Expected Frequency,Remember,Expected frequency of an event is:,event کی expected frequency کیا ہے؟,Probability/Number of trials,Number of trials+Probability,Frequency/Probability,Number of trials × Probability,D | Number of trials × Probability,Easy,1,PRO,1
+TOPIC_SEP,1,13.1 Die Probability,Topic,,,,,,,,,,,1
+q_9_math_ch13_017,1,13.1 Die Probability,Apply,A fair die is rolled. The probability of getting a number divisible by 3 is:,fair die roll کرنے پر number divisible by 3 آنے کی probability کیا ہے؟,1/6,1/2,1/3,2/3,C | 1/3,Medium,1,PRO,1
+TOPIC_SEP,1,13.1 Sample Space of Two Dice,Topic,,,,,,,,,,,1
+q_9_math_ch13_018,1,13.1 Sample Space of Two Dice,Remember,The number of outcomes when two fair dice are rolled is:,two fair dice roll کرنے پر outcomes کی number کیا ہے؟,6,36,12,216,B | 36,Medium,1,PRO,1
+TOPIC_SEP,1,13.1 Two-Dice Probability,Topic,,,,,,,,,,,1
+q_9_math_ch13_019,1,13.1 Two-Dice Probability,Apply,The probability of getting even numbers on both fair dice is:,both fair dice پر even numbers آنے کی probability کیا ہے؟,1/2,1/6,3/4,1/4,D | 1/4,Medium,1,PRO,1
+q_9_math_ch13_020,1,13.1 Two-Dice Probability,Apply,The probability of getting multiples of 3 on both fair dice is:,both fair dice پر multiples of 3 آنے کی probability کیا ہے؟,1/3,2/9,1/9,1/6,C | 1/9,Medium,1,PRO,1
+TOPIC_SEP,1,13.1 Ordered Dice Outcomes,Topic,,,,,,,,,,,1
+q_9_math_ch13_021,1,13.1 Ordered Dice Outcomes,Apply,The probability of an even number on the first die and 3 on the second die is:,first die پر even number اور second die پر 3 آنے کی probability کیا ہے؟,1/12,1/6,1/9,1/4,A | 1/12,Medium,1,PRO,1
+TOPIC_SEP,1,13.2 Complement on a Die,Topic,,,,,,,,,,,1
+q_9_math_ch13_022,1,13.2 Complement on a Die,Apply,The probability of not getting 6 on a fair die is:,fair die پر 6 نہ آنے کی probability کیا ہے؟,1/6,1/2,2/3,5/6,D | 5/6,Medium,1,PRO,1
+TOPIC_SEP,1,13.2 Two-Dice Complement,Topic,,,,,,,,,,,1
+q_9_math_ch13_023,1,13.2 Two-Dice Complement,Apply,The probability of not getting double six when two fair dice are rolled is:,two fair dice roll کرنے پر double six نہ آنے کی probability کیا ہے؟,35/36,1/36,5/6,31/36,A | 35/36,Medium,1,PRO,1
+TOPIC_SEP,1,13.2 Sum Complement,Topic,,,,,,,,,,,1
+q_9_math_ch13_024,1,13.2 Sum Complement,Apply,The probability that the sum of two fair dice is not 8 is:,two fair dice کا sum 8 نہ ہونے کی probability کیا ہے؟,31/36,5/36,30/36,35/36,A | 31/36,Medium,1,PRO,1
+TOPIC_SEP,1,13.3 Balls in a Bag,Topic,,,,,,,,,,,1
+q_9_math_ch13_025,1,13.3 Balls in a Bag,Apply,A bag contains 5 blue and 8 green balls. The probability of selecting a blue ball is:,bag میں 5 blue اور 8 green balls ہیں۔ blue ball select ہونے کی probability کیا ہے؟,5/13,8/13,5/8,1/2,A | 5/13,Medium,1,PRO,1
+TOPIC_SEP,1,13.3 Cards,Topic,,,,,,,,,,,1
+q_9_math_ch13_026,1,13.3 Cards,Apply,The probability of drawing a heart from a standard pack of 52 cards is:,standard 52-card pack سے heart draw ہونے کی probability کیا ہے؟,1/13,1/4,1/2,3/4,B | 1/4,Medium,1,PRO,1
+q_9_math_ch13_027,1,13.3 Cards,Apply,The probability of drawing neither a spade nor a heart is:,neither spade nor heart draw ہونے کی probability کیا ہے؟,1/2,1/4,3/4,13/52,A | 1/2,Medium,1,PRO,1
+TOPIC_SEP,1,13.3 Word Probability,Topic,,,,,,,,,,,1
+q_9_math_ch13_028,1,13.3 Word Probability,Apply,One letter is selected from 'MATHEMATICS'. The probability of selecting a vowel is:,'MATHEMATICS' سے one letter select کیا جائے۔ vowel آنے کی probability کیا ہے؟,3/11,5/11,4/11,7/11,C | 4/11,Medium,1,PRO,1
+q_9_math_ch13_029,1,13.5 Relative Frequency,Apply,An event occurs 18 times in 60 trials. Its relative frequency is:,event 60 trials میں 18 times occur ہوتا ہے۔ relative frequency کیا ہے؟,0.18,0.3,0.6,3.0,B | 0.3,Medium,1,PRO,1
+TOPIC_SEP,1,13.5 Relative Frequencies,Topic,,,,,,,,,,,1
+q_9_math_ch13_030,1,13.5 Relative Frequencies,Understand,The sum of relative frequencies for all outcomes of an experiment is:,experiment کے all outcomes کی relative frequencies کا sum کیا ہے؟,0,Number of classes,1,Number of trials,C | 1,Medium,1,PRO,1
+q_9_math_ch13_031,1,13.6 Expected Frequency,Apply,An event has probability 0.25 and an experiment is repeated 200 times. Its expected frequency is:,event کی probability 0.25 اور experiment 200 times repeat ہو تو expected frequency کیا ہے؟,25,50,75,800,B | 50,Medium,1,PRO,1
+TOPIC_SEP,1,13.7 Expected Frequency Application,Topic,,,,,,,,,,,1
+q_9_math_ch13_032,1,13.7 Expected Frequency Application,Apply,A fair die is rolled 300 times. The expected number of times that 1 or 6 appears is:,fair die 300 times roll کی جاتی ہے۔ 1 یا 6 آنے کی expected number کیا ہے؟,100,50,150,200,A | 100,Medium,1,PRO,1
+TOPIC_SEP,1,13.1 Two-Dice Analysis,Topic,,,,,,,,,,,1
+q_9_math_ch13_033,1,13.1 Two-Dice Analysis,Analyze,"When two fair dice are rolled, the probability that their sum is at least 4 is:",two fair dice roll کرنے پر sum at least 4 ہونے کی probability کیا ہے؟,1/12,3/4,5/6,11/12,D | 11/12,Hard,1,PRO,1
+TOPIC_SEP,1,13.1 Difference of Dice,Topic,,,,,,,,,,,1
+q_9_math_ch13_034,1,13.1 Difference of Dice,Analyze,"When two fair dice are rolled, the probability that the absolute difference is 4 is:",two fair dice roll کرنے پر absolute difference 4 ہونے کی probability کیا ہے؟,1/6,2/9,1/12,1/9,D | 1/9,Hard,1,PRO,1
+TOPIC_SEP,1,13.1 Restricted Dice Outcomes,Topic,,,,,,,,,,,1
+q_9_math_ch13_035,1,13.1 Restricted Dice Outcomes,Analyze,"For two fair dice, the probability that the first is at least 5 and the second is at least 4 is:",two fair dice میں first at least 5 اور second at least 4 ہونے کی probability کیا ہے؟,1/9,1/4,5/12,1/6,D | 1/6,Hard,1,PRO,1
+TOPIC_SEP,1,13.3 Three Coins,Topic,,,,,,,,,,,1
+q_9_math_ch13_036,1,13.3 Three Coins,Analyze,Three fair coins are tossed. The probability of exactly three heads is:,three fair coins toss کرنے پر exactly three heads کی probability کیا ہے؟,1/4,1/8,3/8,1/2,B | 1/8,Hard,1,PRO,1
+TOPIC_SEP,1,13.3 Three Coins Complement,Topic,,,,,,,,,,,1
+q_9_math_ch13_037,1,13.3 Three Coins Complement,Analyze,Three fair coins are tossed. The probability of not getting exactly two heads is:,three fair coins toss کرنے پر exactly two heads نہ آنے کی probability کیا ہے؟,3/8,1/2,7/8,5/8,D | 5/8,Hard,1,PRO,1
+TOPIC_SEP,1,13.6 Expected Sum Frequency,Topic,,,,,,,,,,,1
+q_9_math_ch13_038,1,13.6 Expected Sum Frequency,Analyze,"In 500 rolls of two fair dice, the expected frequency of a sum greater than 8 is approximately:",two fair dice کے 500 rolls میں sum greater than 8 کی expected frequency approximately کیا ہے؟,100,139,125,250,B | 139,Hard,1,PRO,1
+TOPIC_SEP,1,13.7 Defective Items,Topic,,,,,,,,,,,1
+q_9_math_ch13_039,1,13.7 Defective Items,Analyze,"If the probability of a defective bolt is 0.3, the expected number of non-defective bolts in 800 bolts is:",defective bolt کی probability 0.3 ہو تو 800 bolts میں non-defective bolts کی expected number کیا ہے؟,240,500,560,640,C | 560,Hard,1,PRO,1
+TOPIC_SEP,1,13.6 Expected Frequency Table,Topic,,,,,,,,,,,1
+q_9_math_ch13_040,1,13.6 Expected Frequency Table,Analyze,An outcome has probability 0.18 and the experiment is repeated 200 times. Its expected frequency is:,outcome کی probability 0.18 اور experiment 200 times repeat ہو تو expected frequency کیا ہے؟,18,20,90,36,D | 36,Hard,1,PRO,1

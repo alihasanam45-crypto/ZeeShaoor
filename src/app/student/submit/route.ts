@@ -1,50 +1,127 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server'
+import { connectToDatabase } from '@/lib/mongodb'
+import Question from '@/models/Question'
+import { ANY_ROLE, requireApiRole } from '@/lib/security/rbac'
+import { apiError, apiSuccess, handleApiError, readJsonBody } from '@/lib/security/errors'
+import { audit } from '@/lib/security/audit'
+import { toStr } from '@/lib/security/sanitize'
 
-// ELITE EVALUATION MATRIX
+/**
+ * Quiz submission and grading.
+ *
+ * Fixed here:
+ * - The endpoint was unauthenticated.
+ * - It did not grade. `finalScore` was `Math.random()`, so every submission
+ *   produced a fabricated result and awarded XP for it. Marks that appear in a
+ *   student record must be derived from stored data, never invented and never
+ *   accepted from the client.
+ *
+ * Grading now compares each answer against `correctAnswer` server-side. The
+ * client sends question ids and the student's selections; it is never trusted
+ * to say whether an answer was right.
+ */
+
+const MAX_ANSWERS = 200
+const XP_PER_CORRECT = 50
+
+interface SubmittedAnswer {
+  questionId: string
+  selected: string
+}
+
+/** Normalize for comparison: case- and whitespace-insensitive. */
+function normalizeAnswer(value: string): string {
+  return value.trim().toLowerCase().replace(/\s+/g, ' ')
+}
+
 export async function POST(req: Request) {
-  try {
-    const body = await req.json();
-    const { answers, totalQuestions } = body;
+  const guard = await requireApiRole(ANY_ROLE, { action: 'POST /student/submit' })
+  if (guard instanceof NextResponse) return guard
 
-    if (!answers || totalQuestions === undefined) {
-      return NextResponse.json(
-        { error: "SYSTEM HALT: Payload corrupted. Missing answer data." },
-        { status: 400 }
-      );
+  try {
+    const body = await readJsonBody(req)
+    if (body instanceof NextResponse) return body
+
+    const rawAnswers = (body as { answers?: unknown })?.answers
+    if (!Array.isArray(rawAnswers) || rawAnswers.length === 0) {
+      return apiError('VALIDATION_FAILED', { message: 'A non-empty answers array is required.' })
+    }
+    if (rawAnswers.length > MAX_ANSWERS) {
+      return apiError('PAYLOAD_TOO_LARGE', {
+        message: `At most ${MAX_ANSWERS} answers may be submitted at once.`,
+      })
     }
 
-    // SIMULATED AI GRADING ALGORITHM
-    // In a real scenario, this matches student answers against the exact MongoDB 'correctAnswer' field.
-    let correctCount = 0;
-    
-    // For now, we simulate checking (assuming 80% accuracy for demo purposes if real DB matching is pending)
-    // We calculate raw score and XP
-    answers.forEach((ans: any) => {
-      // Assuming ans.selected is compared with ans.correct
-      if (ans.selected) correctCount++; 
-    });
+    const answers: SubmittedAnswer[] = rawAnswers
+      .map((a) => ({
+        questionId: toStr((a as { questionId?: unknown })?.questionId, 64),
+        selected: toStr((a as { selected?: unknown })?.selected, 500),
+      }))
+      .filter((a) => a.questionId.length > 0)
 
-    // We will randomly assign correct answers for this elite demo payload
-    const finalScore = Math.floor(Math.random() * (totalQuestions - 1)) + 1; 
-    const xpGained = finalScore * 50; // 50 XP per correct answer
-    const accuracy = ((finalScore / totalQuestions) * 100).toFixed(1);
+    if (answers.length === 0) {
+      return apiError('VALIDATION_FAILED', {
+        message: 'Each answer must carry a questionId.',
+      })
+    }
 
-    return NextResponse.json(
-      { 
-        message: "EVALUATION COMPLETE", 
-        score: finalScore,
-        total: totalQuestions,
-        xp: xpGained,
-        accuracy: `${accuracy}%`
+    await connectToDatabase()
+
+    // Fetch the authoritative answers for exactly the submitted ids.
+    const questions = await Question.find(
+      { _id: { $in: answers.map((a) => a.questionId) } },
+      { correctAnswer: 1 },
+    ).lean()
+
+    const answerKey = new Map(
+      questions.map((q) => [String(q._id), normalizeAnswer(String(q.correctAnswer ?? ''))]),
+    )
+
+    let correctCount = 0
+    let gradedCount = 0
+    const perQuestion: { questionId: string; correct: boolean }[] = []
+
+    for (const answer of answers) {
+      const expected = answerKey.get(answer.questionId)
+      // An id with no matching question is skipped rather than counted — it
+      // must not be able to inflate or deflate the denominator.
+      if (expected === undefined) continue
+
+      gradedCount++
+      const isCorrect = normalizeAnswer(answer.selected) === expected
+      if (isCorrect) correctCount++
+      perQuestion.push({ questionId: answer.questionId, correct: isCorrect })
+    }
+
+    if (gradedCount === 0) {
+      return apiError('VALIDATION_FAILED', {
+        message: 'None of the submitted questions could be found.',
+      })
+    }
+
+    const accuracy = Math.round((correctCount / gradedCount) * 1000) / 10
+    const xpGained = correctCount * XP_PER_CORRECT
+
+    void audit({
+      action: 'student.action',
+      actor: guard.user,
+      targetType: 'QuizSubmission',
+      metadata: {
+        operation: 'submit',
+        graded: gradedCount,
+        correct: correctCount,
+        accuracy,
       },
-      { status: 200 }
-    );
+    })
 
-  } catch (error: any) {
-    console.error("EVALUATION ENGINE FAILURE:", error);
-    return NextResponse.json(
-      { error: "Matrix Failure: Unable to evaluate submission.", details: error.message },
-      { status: 500 }
-    );
+    return apiSuccess({
+      score: correctCount,
+      total: gradedCount,
+      accuracy,
+      xp: xpGained,
+      results: perQuestion,
+    })
+  } catch (err) {
+    return handleApiError(err, 'POST /student/submit')
   }
 }

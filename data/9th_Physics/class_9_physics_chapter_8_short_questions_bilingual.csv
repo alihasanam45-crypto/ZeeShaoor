@@ -1,0 +1,72 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,8.1 Magnetic Materials,topic_separator,,,,,,1
+q_9_phy_ch8_sq_001,1,8.1 Magnetic Materials,definition_example,Define magnetic materials and give three examples.,magnetic materials کی تعریف کریں اور تین examples دیں۔,Easy,2,PRO,1
+q_9_phy_ch8_sq_002,1,8.1 Magnetic Materials,definition_example,Define non-magnetic materials and give three examples.,non-magnetic materials کی تعریف کریں اور تین examples دیں۔,Easy,2,ELITE,1
+q_9_phy_ch8_sq_003,1,8.1 Magnetic Materials,concept_explanation,State the magnetic importance of lodestone and mention its early use.,lodestone کی magnetic importance بیان کریں اور اس کا early use لکھیں۔,Easy,2,IMPORTANT,1
+TOPIC_SEP,1,8.2 Properties of Magnets,topic_separator,,,,,,1
+q_9_phy_ch8_sq_004,1,8.2 Properties of Magnets,definition_function,Define the north and south poles of a freely suspended bar magnet.,freely suspended bar magnet کے north اور south poles کی تعریف کریں۔,Easy,2,PRO,1
+q_9_phy_ch8_sq_005,1,8.2 Properties of Magnets,law_principle,State the rule of attraction and repulsion between magnetic poles.,magnetic poles کے درمیان attraction اور repulsion کا rule بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,8.2 Identification of a Magnet,topic_separator,,,,,,1
+q_9_phy_ch8_sq_006,1,8.2 Identification of a Magnet,process_steps,Describe how repulsion can be used as a sure test to identify a magnet.,بیان کریں کہ repulsion کو magnet identify کرنے کے sure test کے طور پر کیسے use کیا جاتا ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,8.2 Isolated Magnetic Pole,topic_separator,,,,,,1
+q_9_phy_ch8_sq_007,1,8.2 Isolated Magnetic Pole,concept_explanation,Explain why an isolated magnetic pole cannot be obtained by cutting a bar magnet.,وضاحت کریں کہ bar magnet کو cut کرنے سے isolated magnetic pole کیوں حاصل نہیں ہو سکتا۔,Medium,2,PRO,1
+TOPIC_SEP,1,8.3 Induced Magnetism,topic_separator,,,,,,1
+q_9_phy_ch8_sq_008,1,8.3 Induced Magnetism,definition_function,Define induced magnetism and state when it disappears.,induced magnetism کی تعریف کریں اور بیان کریں کہ یہ کب disappear ہوتی ہے۔,Easy,2,PRO,1
+q_9_phy_ch8_sq_009,1,8.3 Induced Magnetism,application_scenario,State the poles induced at the near and far ends of an iron piece placed near the north pole of a magnet.,magnet کے north pole کے near رکھے iron piece کے near اور far ends پر induced poles بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,8.4 Temporary and Permanent Magnets,topic_separator,,,,,,1
+q_9_phy_ch8_sq_010,1,8.4 Temporary and Permanent Magnets,difference,Differentiate between temporary and permanent magnets using retention of magnetism and material.,retention of magnetism اور material کے لحاظ سے temporary اور permanent magnets میں فرق بیان کریں۔,Easy,2,PRO,1
+q_9_phy_ch8_sq_011,1,8.4 Temporary and Permanent Magnets,list_state,Give three examples each of temporary magnets and permanent magnets.,temporary magnets اور permanent magnets کی تین تین examples دیں۔,Easy,2,PRO,1
+q_9_phy_ch8_sq_012,1,8.4 Temporary and Permanent Magnets,cause_effect,Explain why an iron-nail chain collapses after removing a magnet whereas a steel-nail chain may remain magnetised.,وضاحت کریں کہ magnet remove کرنے پر iron-nail chain collapse کیوں ہو جاتی ہے جبکہ steel-nail chain magnetised رہ سکتی ہے۔,Hard,2,ELITE,1
+TOPIC_SEP,1,8.5 Magnetic Fields,topic_separator,,,,,,1
+q_9_phy_ch8_sq_013,1,8.5 Magnetic Fields,definition_function,Define a magnetic field and state what a magnetic object experiences inside it.,magnetic field کی تعریف کریں اور بیان کریں کہ اس کے اندر magnetic object کیا experience کرتی ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,8.5 Magnetic Lines of Force,topic_separator,,,,,,1
+q_9_phy_ch8_sq_014,1,8.5 Magnetic Lines of Force,definition_function,Define magnetic lines of force and state their direction outside a bar magnet.,magnetic lines of force کی تعریف کریں اور bar magnet کے outside ان کی direction بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,8.5 Strength of Magnetic Field,topic_separator,,,,,,1
+q_9_phy_ch8_sq_015,1,8.5 Strength of Magnetic Field,formula_relationship,State how the spacing of magnetic field lines represents the relative strength of a magnetic field.,بیان کریں کہ magnetic field lines کی spacing magnetic field کی relative strength کو کیسے represent کرتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,8.5 Magnetic Field Patterns,topic_separator,,,,,,1
+q_9_phy_ch8_sq_016,1,8.5 Magnetic Field Patterns,diagram_based,"Describe the magnetic-field patterns between unlike poles, like poles, and the poles of a horseshoe magnet.",unlike poles، like poles اور horseshoe magnet کے poles کے درمیان magnetic-field patterns بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,8.6 Uses of Permanent Magnets,topic_separator,,,,,,1
+q_9_phy_ch8_sq_017,1,8.6 Uses of Permanent Magnets,list_state,State four uses of permanent magnets in electrical devices and everyday applications.,electrical devices اور everyday applications میں permanent magnets کے چار uses بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,8.6 A.C. Generator,topic_separator,,,,,,1
+q_9_phy_ch8_sq_018,1,8.6 A.C. Generator,process_steps,Explain the role of a permanent magnet in an A.C. generator.,A.C. generator میں permanent magnet کا role explain کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,8.6 Moving-Coil Loudspeaker,topic_separator,,,,,,1
+q_9_phy_ch8_sq_019,1,8.6 Moving-Coil Loudspeaker,process_steps,Describe how a moving-coil loudspeaker converts varying current into sound.,بیان کریں کہ moving-coil loudspeaker varying current کو sound میں کیسے convert کرتا ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,8.7 Electromagnets,topic_separator,,,,,,1
+q_9_phy_ch8_sq_020,1,8.7 Electromagnets,definition_function,Define an electromagnet and state the condition under which an iron nail becomes magnetised.,electromagnet کی تعریف کریں اور وہ condition بیان کریں جس میں iron nail magnetised ہوتی ہے۔,Easy,2,PRO,1
+q_9_phy_ch8_sq_021,1,8.7 Electromagnets,cause_effect,State how the current and number of coil turns affect the strength of an electromagnet.,بیان کریں کہ current اور coil turns کی تعداد electromagnet کی strength کو کیسے affect کرتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,8.7 Uses of Electromagnets,topic_separator,,,,,,1
+q_9_phy_ch8_sq_022,1,8.7 Uses of Electromagnets,list_state,Enlist four devices that use electromagnets.,electromagnets استعمال کرنے والے چار devices لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,8.7 Magnetic Relay,topic_separator,,,,,,1
+q_9_phy_ch8_sq_023,1,8.7 Magnetic Relay,process_steps,Describe the working of a magnetic relay and state why it uses separate low-current and high-current circuits.,magnetic relay کی working بیان کریں اور state کریں کہ یہ separate low-current اور high-current circuits کیوں use کرتی ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,8.7 Circuit Breaker,topic_separator,,,,,,1
+q_9_phy_ch8_sq_024,1,8.7 Circuit Breaker,process_steps,Describe how an electromagnetic circuit breaker protects an appliance from excessive current.,بیان کریں کہ electromagnetic circuit breaker appliance کو excessive current سے کیسے protect کرتی ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,8.7 Telephone Receiver,topic_separator,,,,,,1
+q_9_phy_ch8_sq_025,1,8.7 Telephone Receiver,process_steps,Explain how an electromagnet and iron diaphragm produce sound in a telephone receiver.,وضاحت کریں کہ telephone receiver میں electromagnet اور iron diaphragm sound کیسے produce کرتے ہیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,8.7 Maglev Train,topic_separator,,,,,,1
+q_9_phy_ch8_sq_026,1,8.7 Maglev Train,application_scenario,Explain how electromagnets are used for levitation and propulsion in a maglev train.,وضاحت کریں کہ maglev train میں electromagnets کو levitation اور propulsion کے لیے کیسے use کیا جاتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,8.7 Electromagnetic Cranes,topic_separator,,,,,,1
+q_9_phy_ch8_sq_027,1,8.7 Electromagnetic Cranes,application_scenario,Explain why an electromagnetic crane can lift and release heavy iron or steel objects easily.,وضاحت کریں کہ electromagnetic crane heavy iron یا steel objects کو easily lift اور release کیوں کر سکتی ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,8.8 Domain Theory of Magnetism,topic_separator,,,,,,1
+q_9_phy_ch8_sq_028,1,8.8 Domain Theory of Magnetism,definition_function,Define a magnetic domain and state how each domain behaves.,magnetic domain کی تعریف کریں اور بیان کریں کہ ہر domain کیسے behave کرتی ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,8.8 Alignment of Domains,topic_separator,,,,,,1
+q_9_phy_ch8_sq_029,1,8.8 Alignment of Domains,compare_contrast,Compare the arrangement of domains in unmagnetised and magnetised ferromagnetic materials.,unmagnetised اور magnetised ferromagnetic materials میں domains کی arrangement کا موازنہ کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,8.8 Paramagnetic and Diamagnetic Materials,topic_separator,,,,,,1
+q_9_phy_ch8_sq_030,1,8.8 Paramagnetic and Diamagnetic Materials,difference,Differentiate between paramagnetic and diamagnetic materials using electron magnetic fields and examples.,electron magnetic fields اور examples کے لحاظ سے paramagnetic اور diamagnetic materials میں فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,8.8 Ferromagnetic Materials,topic_separator,,,,,,1
+q_9_phy_ch8_sq_031,1,8.8 Ferromagnetic Materials,features_characteristics,State two characteristics of ferromagnetic materials and give three examples.,ferromagnetic materials کی دو characteristics بیان کریں اور تین examples دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,8.8 Magnetic Materials,topic_separator,,,,,,1
+q_9_phy_ch8_sq_032,1,8.8 Magnetic Materials,compare_contrast,"Compare paramagnetic, diamagnetic, and ferromagnetic materials with reference to domain theory.",domain theory کے حوالے سے paramagnetic، diamagnetic اور ferromagnetic materials کا موازنہ کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,8.9 Magnetisation by Stroking,topic_separator,,,,,,1
+q_9_phy_ch8_sq_033,1,8.9 Magnetisation by Stroking,process_steps,Describe the single-touch method of magnetising a steel bar.,steel bar کو magnetise کرنے کا single-touch method بیان کریں۔,Medium,2,PRO,1
+q_9_phy_ch8_sq_034,1,8.9 Magnetisation by Stroking,process_steps,Describe the double-touch method of magnetising a steel bar.,steel bar کو magnetise کرنے کا double-touch method بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,8.9 Magnetisation by Solenoid,topic_separator,,,,,,1
+q_9_phy_ch8_sq_035,1,8.9 Magnetisation by Solenoid,process_steps,Explain how a steel bar is magnetised inside a solenoid and how its polarity is determined.,وضاحت کریں کہ solenoid کے اندر steel bar کیسے magnetised ہوتی ہے اور اس کی polarity کیسے determine کی جاتی ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,8.9 Demagnetisation of Magnets,topic_separator,,,,,,1
+q_9_phy_ch8_sq_036,1,8.9 Demagnetisation of Magnets,cause_effect,Explain how heating demagnetises a magnet.,وضاحت کریں کہ heating magnet کو demagnetise کیسے کرتی ہے۔,Medium,2,ELITE,1
+q_9_phy_ch8_sq_037,1,8.9 Demagnetisation of Magnets,compare_contrast,Compare demagnetisation by hammering and by alternating current.,hammering اور alternating current کے ذریعے demagnetisation کا موازنہ کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,8.10 Magnetic Tape Recording,topic_separator,,,,,,1
+q_9_phy_ch8_sq_038,1,8.10 Magnetic Tape Recording,process_steps,Describe how varying electrical signals are recorded on and reproduced from magnetic tape.,بیان کریں کہ varying electrical signals magnetic tape پر کیسے record اور reproduce ہوتے ہیں۔,Hard,2,PRO,1
+TOPIC_SEP,1,8.10 Hard-Disk Recording,topic_separator,,,,,,1
+q_9_phy_ch8_sq_039,1,8.10 Hard-Disk Recording,process_steps,Explain how a magnetic read/write head stores and reads binary data on a hard disk.,وضاحت کریں کہ magnetic read/write head hard disk پر binary data کیسے store اور read کرتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,8.11 Soft Iron as Magnetic Shield,topic_separator,,,,,,1
+q_9_phy_ch8_sq_040,1,8.11 Soft Iron as Magnetic Shield,explain_reason,Explain why soft iron is used as a magnetic shield around sensitive devices.,وضاحت کریں کہ sensitive devices کے گرد soft iron کو magnetic shield کے طور پر کیوں use کیا جاتا ہے۔,Hard,2,PRO,1

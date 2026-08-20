@@ -1,0 +1,66 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,5.1 Linear Equations in One Variable,topic_separator,,,,,,1
+q_9_math_ch5_sq_001,1,5.1 Linear Equations in One Variable,definition_formula,Define a linear equation in one variable and state its general form.,one variable میں linear equation کی تعریف کریں اور اس کی general form بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch5_sq_002,1,5.1 Linear Equations in One Variable,process_steps,State the main steps used to solve a linear equation in one variable.,one variable میں linear equation solve کرنے کے main steps بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch5_sq_003,1,5.1 Linear Equations in One Variable,numerical_short,Solve the linear equation: 5x − 10 = 10,درج ذیل linear equation solve کریں: 5x − 10 = 10,Easy,2,PRO,1
+TOPIC_SEP,1,5.1 Verification of a Solution,topic_separator,,,,,,1
+q_9_math_ch5_sq_004,1,5.1 Verification of a Solution,process_steps,State how the solution of a linear equation is verified in the original equation.,بیان کریں کہ linear equation کے solution کو original equation میں کیسے verify کیا جاتا ہے۔,Easy,2,ELITE,1
+TOPIC_SEP,1,5.1 Number-Line Representation,topic_separator,,,,,,1
+q_9_math_ch5_sq_005,1,5.1 Number-Line Representation,diagram_based,Explain how a single solution of a linear equation is represented on a number line.,وضاحت کریں کہ linear equation کے single solution کو number line پر کیسے represent کیا جاتا ہے۔,Easy,2,ELITE,1
+TOPIC_SEP,1,5.2 Linear Inequalities,topic_separator,,,,,,1
+q_9_math_ch5_sq_006,1,5.2 Linear Inequalities,definition_formula,Define a linear inequality in one variable and give one symbolic example.,one variable میں linear inequality کی تعریف کریں اور one symbolic example دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,5.2 Properties of Inequalities,topic_separator,,,,,,1
+q_9_math_ch5_sq_007,1,5.2 Properties of Inequalities,law_principle,State how adding or subtracting the same real number on both sides affects an inequality.,بیان کریں کہ both sides پر same real number add یا subtract کرنے سے inequality کیسے affect ہوتی ہے۔,Easy,2,ULTRA,1
+q_9_math_ch5_sq_008,1,5.2 Properties of Inequalities,law_principle,State the rule for multiplying or dividing both sides of an inequality by a negative number.,inequality کے both sides کو negative number سے multiply یا divide کرنے کا rule بیان کریں۔,Easy,2,PRO,1
+q_9_math_ch5_sq_009,1,5.2 Linear Inequalities,numerical_short,Solve the inequality and express the solution set: x − 6 ≤ −2,inequality solve کریں اور solution set express کریں: x − 6 ≤ −2,Easy,2,PRO,1
+TOPIC_SEP,1,5.2 Interval Notation,topic_separator,,,,,,1
+q_9_math_ch5_sq_010,1,5.2 Interval Notation,definition_example,Define open and closed intervals and give one example of each.,open اور closed intervals کی تعریف کریں اور ہر ایک کی one example دیں۔,Easy,2,ULTRA,1
+q_9_math_ch5_sq_011,1,5.2 Interval Notation,numerical_short,Write the inequality in interval notation: x > 1,درج ذیل inequality کو interval notation میں لکھیں: x > 1,Easy,2,PRO,1
+q_9_math_ch5_sq_012,1,5.2 Interval Notation,numerical_short,Write the inequality in interval notation: x ≤ 1,درج ذیل inequality کو interval notation میں لکھیں: x ≤ 1,Easy,2,PRO,1
+TOPIC_SEP,1,5.2 Linear Inequalities in Two Variables,topic_separator,,,,,,1
+q_9_math_ch5_sq_013,1,5.2 Linear Inequalities in Two Variables,definition_function,Define a linear inequality in two variables and state what its graph represents.,two variables میں linear inequality کی تعریف کریں اور بیان کریں کہ اس کا graph کیا represent کرتا ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,5.2 Associated Equation,topic_separator,,,,,,1
+q_9_math_ch5_sq_014,1,5.2 Associated Equation,definition_function,Define the associated equation of a linear inequality and state its use in graphing.,linear inequality کی associated equation کی تعریف کریں اور graphing میں اس کا use بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,5.3 Feasible Region,topic_separator,,,,,,1
+q_9_math_ch5_sq_015,1,5.3 Feasible Region,definition_function,Define a feasible region and state the role of non-negative constraints.,feasible region کی تعریف کریں اور non-negative constraints کا role بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,5.3 Corner Point,topic_separator,,,,,,1
+q_9_math_ch5_sq_016,1,5.3 Corner Point,definition_function,Define a corner point or vertex of a feasible region and state how it is obtained.,feasible region کے corner point یا vertex کی تعریف کریں اور بیان کریں کہ یہ کیسے obtain ہوتا ہے۔,Easy,2,ULTRA,1
+q_9_math_ch5_sq_017,1,5.1 Linear Equations in One Variable,numerical_short,Solve the linear equation: 12x + 30 = −6,درج ذیل linear equation solve کریں: 12x + 30 = −6,Medium,2,PRO,1
+q_9_math_ch5_sq_018,1,5.1 Linear Equations in One Variable,numerical_short,Solve the linear equation: x/3 + 6 = −12,درج ذیل linear equation solve کریں: x/3 + 6 = −12,Medium,2,PRO,1
+TOPIC_SEP,1,5.1 Equations Containing Fractions,topic_separator,,,,,,1
+q_9_math_ch5_sq_019,1,5.1 Equations Containing Fractions,process_steps,Explain how the LCM of denominators is used while solving a linear equation containing fractions.,وضاحت کریں کہ fractions والی linear equation solve کرتے وقت denominators کا LCM کیسے use ہوتا ہے۔,Medium,2,ELITE,1
+q_9_math_ch5_sq_020,1,5.1 Equations Containing Fractions,numerical_short,Solve the equation: (x − 2)/5 − (x − 4)/2 = 2,درج ذیل equation solve کریں: (x − 2)/5 − (x − 4)/2 = 2,Medium,2,PRO,1
+q_9_math_ch5_sq_021,1,5.2 Linear Inequalities,numerical_short,Solve the inequality and represent the result on a number line: 7x + 4 < 6x + 6,inequality solve کریں اور result کو number line پر represent کریں: 7x + 4 < 6x + 6,Medium,2,PRO,1
+q_9_math_ch5_sq_022,1,5.2 Linear Inequalities,numerical_short,Solve the inequality and write its interval: −2x > 6,inequality solve کریں اور اس کا interval لکھیں: −2x > 6,Medium,2,PRO,1
+TOPIC_SEP,1,5.2 Boundary Lines,topic_separator,,,,,,1
+q_9_math_ch5_sq_023,1,5.2 Boundary Lines,difference,Differentiate between the boundary lines used for strict and non-strict inequalities.,strict اور non-strict inequalities کے لیے used boundary lines میں فرق بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,5.2 Half-Planes,topic_separator,,,,,,1
+q_9_math_ch5_sq_024,1,5.2 Half-Planes,compare_contrast,Compare the half-planes produced by vertical and non-vertical boundary lines.,vertical اور non-vertical boundary lines سے produced half-planes کا موازنہ کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,5.2 Test-Point Method,topic_separator,,,,,,1
+q_9_math_ch5_sq_025,1,5.2 Test-Point Method,process_steps,State the test-point method for identifying the solution half-plane of a linear inequality.,linear inequality کا solution half-plane identify کرنے کے لیے test-point method بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,5.2 Graphing a Linear Inequality,topic_separator,,,,,,1
+q_9_math_ch5_sq_026,1,5.2 Graphing a Linear Inequality,diagram_based,Graph the solution region of the inequality by using intercepts and a test point: x + 2y < 6,intercepts اور test point استعمال کرکے inequality کا solution region graph کریں: x + 2y < 6,Medium,2,PRO,1
+TOPIC_SEP,1,5.2 System of Linear Inequalities,topic_separator,,,,,,1
+q_9_math_ch5_sq_027,1,5.2 System of Linear Inequalities,concept_explanation,Explain how the common solution region of a system of linear inequalities is obtained.,وضاحت کریں کہ system of linear inequalities کا common solution region کیسے obtain ہوتا ہے۔,Medium,2,ULTRA,1
+q_9_math_ch5_sq_028,1,5.2 System of Linear Inequalities,diagram_based,"Graph the common solution region of the system: x − y ≤ 3, x + 2y ≤ 6, x ≥ 0, y ≥ 0","given system کا common solution region graph کریں: x − y ≤ 3, x + 2y ≤ 6, x ≥ 0, y ≥ 0",Medium,2,PRO,1
+TOPIC_SEP,1,5.3 Objective Function,topic_separator,,,,,,1
+q_9_math_ch5_sq_029,1,5.3 Objective Function,definition_function,Define an objective function and distinguish maximization from minimization.,objective function کی تعریف کریں اور maximization کو minimization سے distinguish کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,5.3 Optimal Solution,topic_separator,,,,,,1
+q_9_math_ch5_sq_030,1,5.3 Optimal Solution,process_steps,State the corner-point procedure used to determine an optimal solution.,optimal solution determine کرنے کے لیے corner-point procedure بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,5.3 Evaluation at Corner Points,topic_separator,,,,,,1
+q_9_math_ch5_sq_031,1,5.3 Evaluation at Corner Points,numerical_short,"Evaluate the objective function at the given point: f(x,y) = 2x + 3y, (x,y) = (3,1)","given point پر objective function evaluate کریں: f(x,y) = 2x + 3y, (x,y) = (3,1)",Medium,2,PRO,1
+TOPIC_SEP,1,5.3 Feasible Solutions,topic_separator,,,,,,1
+q_9_math_ch5_sq_032,1,5.3 Feasible Solutions,difference,Differentiate between a feasible solution and an optimal solution.,feasible solution اور optimal solution میں فرق بیان کریں۔,Medium,2,ELITE,1
+q_9_math_ch5_sq_033,1,5.2 Linear Inequalities,numerical_short,Solve the inequality and express the answer in interval notation: 5(x − 3) ≥ 26x − (10x + 4),inequality solve کریں اور answer کو interval notation میں express کریں: 5(x − 3) ≥ 26x − (10x + 4),Hard,2,PRO,1
+TOPIC_SEP,1,5.2 Solution Regions,topic_separator,,,,,,1
+q_9_math_ch5_sq_034,1,5.2 Solution Regions,application_scenario,"Determine whether the point (0,3) lies in the solution region of the inequality: 3x + 7y ≥ 21","determine کریں کہ point (0,3) inequality کے solution region میں lie کرتا ہے یا نہیں: 3x + 7y ≥ 21",Hard,2,PRO,1
+TOPIC_SEP,1,5.2 Systems of Inequalities,topic_separator,,,,,,1
+q_9_math_ch5_sq_035,1,5.2 Systems of Inequalities,application_scenario,"Determine whether the point (1,1) satisfies both inequalities: x − 2y ≤ 6 and 2x + y ≥ 2","determine کریں کہ point (1,1) دونوں inequalities satisfy کرتا ہے یا نہیں: x − 2y ≤ 6 and 2x + y ≥ 2",Hard,2,PRO,1
+q_9_math_ch5_sq_036,1,5.3 Feasible Region,diagram_based,"Determine the corner points of the feasible region: x − y ≤ 3, x + 2y ≤ 6, x ≥ 0, y ≥ 0","given feasible region کے corner points determine کریں: x − y ≤ 3, x + 2y ≤ 6, x ≥ 0, y ≥ 0",Hard,2,PRO,1
+TOPIC_SEP,1,5.3 Maximization,topic_separator,,,,,,1
+q_9_math_ch5_sq_037,1,5.3 Maximization,numerical_short,"Maximize the objective function subject to the given constraints: f(x,y) = 2x + 5y; 2y − x ≤ 8, x − y ≤ 4, x ≥ 0, y ≥ 0","given constraints کے تحت objective function maximize کریں: f(x,y) = 2x + 5y; 2y − x ≤ 8, x − y ≤ 4, x ≥ 0, y ≥ 0",Hard,2,PRO,1
+q_9_math_ch5_sq_038,1,5.3 Maximization,numerical_short,"Maximize the objective function subject to the given constraints: z = x + 3y; 2x + 5y ≤ 30, 5x + 4y ≤ 20, x ≥ 0, y ≥ 0","given constraints کے تحت objective function maximize کریں: z = x + 3y; 2x + 5y ≤ 30, 5x + 4y ≤ 20, x ≥ 0, y ≥ 0",Hard,2,PRO,1
+TOPIC_SEP,1,5.3 Minimization,topic_separator,,,,,,1
+q_9_math_ch5_sq_039,1,5.3 Minimization,numerical_short,"Minimize the objective function subject to the given constraints: z = 2x + y; x + y ≥ 3, 7x + 5y ≤ 35, x ≥ 0, y ≥ 0","given constraints کے تحت objective function minimize کریں: z = 2x + y; x + y ≥ 3, 7x + 5y ≤ 35, x ≥ 0, y ≥ 0",Hard,2,PRO,1
+TOPIC_SEP,1,5.3 Optimization,topic_separator,,,,,,1
+q_9_math_ch5_sq_040,1,5.3 Optimization,explain_reason,Explain why a linear objective function over a bounded polygonal feasible region is evaluated at its corner points.,وضاحت کریں کہ bounded polygonal feasible region پر linear objective function کو corner points پر کیوں evaluate کیا جاتا ہے۔,Hard,2,ELITE,1

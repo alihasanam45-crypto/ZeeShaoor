@@ -66,12 +66,6 @@ export interface SqBalanceTargets {
   subType: { theory: number; numerical: number };
 }
 
-export const DEFAULT_BALANCE: SqBalanceTargets = {
-  difficulty: { easy: 0.3, medium: 0.4, hard: 0.3 },
-  slo: { knowledge: 0.35, comprehension: 0.4, application: 0.25 },
-  subType: { theory: 0.7, numerical: 0.3 },
-};
-
 export interface SqGenerationConfig {
   mode: SqMode;
   sections: SqSectionDef[];
@@ -217,8 +211,4 @@ export function sqTotalMarks(sections: SqSectionDef[]): number {
 
 export function sqTotalAttempts(sections: SqSectionDef[]): number {
   return sections.reduce((s, sec) => s + sec.attempt, 0);
-}
-
-export function sqTotalGiven(sections: SqSectionDef[]): number {
-  return sections.reduce((s, sec) => s + sec.given, 0);
 }

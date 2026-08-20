@@ -54,16 +54,26 @@
   --fg-faint: #94a3b8;     /* decorative only — never load-bearing         */
   --fg-on-accent: #ffffff;
 
-  /* Accent (indigo → violet) --------------------------------------------- */
-  --accent: #4f46e5;
-  --accent-hover: #4338ca;
-  --accent-active: #3730a3;
-  --accent-fg: #ffffff;
-  --accent-soft: rgba(79, 70, 229, 0.09);
-  --accent-soft-hover: rgba(79, 70, 229, 0.14);
-  --accent-text: #4338ca;  /* accent used AS text on light bg      ~7.0:1  */
-  --accent-ring: rgba(79, 70, 229, 0.45);
-  --accent-grad: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  /* Accent — every shade below is DERIVED from --brand-accent via
+     color-mix(), so setting that one variable re-themes every button,
+     ring, gradient and soft-fill in the product at once. It defaults to
+     the original indigo, so nothing changes until an institution sets
+     its own colour — see Section 3. oklch is used for the mix (not srgb,
+     like the rest of this file) because it keeps hue stable across a
+     tonal ramp; srgb mixing visibly shifts hue on saturated colours. --- */
+  --brand-accent: #087a55; /* ZeeShaoor green — was #4f46e5 (placeholder indigo) */
+
+  --accent: var(--brand-accent);
+  --accent-hover: color-mix(in oklch, var(--brand-accent) 90%, black 10%);
+  --accent-active: color-mix(in oklch, var(--brand-accent) 78%, black 22%);
+  --accent-fg: #ffffff; /* assumes a mid-to-dark brand colour — for a pastel
+                            one, also set --accent-fg to a dark value; CSS
+                            cannot pick this automatically */
+  --accent-soft: color-mix(in oklch, var(--brand-accent) 9%, transparent 91%);
+  --accent-soft-hover: color-mix(in oklch, var(--brand-accent) 14%, transparent 86%);
+  --accent-text: color-mix(in oklch, var(--brand-accent) 72%, black 28%);  /* ~7:1 on white for the default indigo — re-check contrast for a very light --brand-accent */
+  --accent-ring: color-mix(in oklch, var(--brand-accent) 45%, transparent 55%);
+  --accent-grad: linear-gradient(135deg, var(--brand-accent) 0%, color-mix(in oklch, var(--brand-accent) 55%, black 45%) 100%);
 
   /* Status --------------------------------------------------------------- */
   --success: #047857;
@@ -131,15 +141,19 @@
   --fg-faint: #64748b;
   --fg-on-accent: #ffffff;
 
-  --accent: #6366f1;
-  --accent-hover: #818cf8;
-  --accent-active: #a5b4fc;
+  /* Accent — same --brand-accent as light (Section 1), mixed toward WHITE
+     instead of black: on a dark canvas, emphasis reads as brighter, not
+     darker. No --brand-accent is redeclared here — it inherits the value
+     set on :root (or overridden higher up for a specific institution). */
+  --accent: color-mix(in oklch, var(--brand-accent) 82%, white 18%);
+  --accent-hover: color-mix(in oklch, var(--brand-accent) 65%, white 35%);
+  --accent-active: color-mix(in oklch, var(--brand-accent) 48%, white 52%);
   --accent-fg: #ffffff;
-  --accent-soft: rgba(99, 102, 241, 0.16);
-  --accent-soft-hover: rgba(99, 102, 241, 0.24);
-  --accent-text: #a5b4fc;  /* accent AS text on dark bg            ~8.2:1  */
-  --accent-ring: rgba(129, 140, 248, 0.55);
-  --accent-grad: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --accent-soft: color-mix(in oklch, var(--brand-accent) 16%, transparent 84%);
+  --accent-soft-hover: color-mix(in oklch, var(--brand-accent) 24%, transparent 76%);
+  --accent-text: color-mix(in oklch, var(--brand-accent) 58%, white 42%);  /* accent AS text on dark bg */
+  --accent-ring: color-mix(in oklch, var(--brand-accent) 55%, transparent 45%);
+  --accent-grad: linear-gradient(135deg, var(--brand-accent) 0%, color-mix(in oklch, var(--brand-accent) 55%, white 45%) 100%);
 
   --success: #10b981;
   --success-soft: rgba(16, 185, 129, 0.16);
@@ -177,7 +191,22 @@
 }
 
 /* ---------------------------------------------------------------------------
-   3. TAILWIND TOKEN MAP
+   3. INSTITUTION BRANDING
+   One variable re-themes the whole product. To brand a page tree for a
+   given institution, set --brand-accent on any ancestor — usually the
+   layout root for that institution's routes:
+
+     <body style={{ ['--brand-accent' as any]: institution.brandColor }}>
+
+   Every accent token in Sections 1 and 2 recomputes from that value
+   automatically, correctly, in both themes — no component needs to know
+   branding exists. If an institution's colour is very light or pastel,
+   also set --accent-fg to a dark value on the same element (see the note
+   next to it above) — CSS cannot choose that automatically.
+   ------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------------
+   4. TAILWIND TOKEN MAP
    `inline` keeps the var() indirection so one class works in both themes.
    ------------------------------------------------------------------------ */
 @theme inline {
@@ -187,6 +216,29 @@
   --font-display: var(--font-display), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas,
     "Liberation Mono", monospace;
+
+  /* Type scale — fluid, clamp()-based, so `text-sm` … `text-5xl` stay
+     correctly sized from a phone up to a 4K monitor without a separate
+     breakpoint override anywhere. Each size pairs with its own
+     line-height, the v4 convention for --text-*. */
+  --text-xs: clamp(0.72rem, 0.69rem + 0.14vw, 0.78rem);
+  --text-xs--line-height: 1.5;
+  --text-sm: clamp(0.82rem, 0.79rem + 0.16vw, 0.89rem);
+  --text-sm--line-height: 1.5;
+  --text-base: clamp(0.94rem, 0.9rem + 0.2vw, 1rem);
+  --text-base--line-height: 1.6;
+  --text-lg: clamp(1.05rem, 1rem + 0.28vw, 1.15rem);
+  --text-lg--line-height: 1.55;
+  --text-xl: clamp(1.2rem, 1.12rem + 0.4vw, 1.35rem);
+  --text-xl--line-height: 1.4;
+  --text-2xl: clamp(1.4rem, 1.28rem + 0.6vw, 1.6rem);
+  --text-2xl--line-height: 1.3;
+  --text-3xl: clamp(1.7rem, 1.5rem + 1vw, 2rem);
+  --text-3xl--line-height: 1.2;
+  --text-4xl: clamp(2.1rem, 1.8rem + 1.5vw, 2.6rem);
+  --text-4xl--line-height: 1.1;
+  --text-5xl: clamp(2.6rem, 2.2rem + 2vw, 3.4rem);
+  --text-5xl--line-height: 1.05;
 
   /* Colour --------------------------------------------------------------- */
   --color-bg: var(--bg);
@@ -273,7 +325,7 @@
 }
 
 /* ---------------------------------------------------------------------------
-   4. KEYFRAMES
+   5. KEYFRAMES
    ------------------------------------------------------------------------ */
 @keyframes fade-in {
   from { opacity: 0; }
@@ -301,7 +353,7 @@
 }
 
 /* ---------------------------------------------------------------------------
-   5. BASE LAYER
+   6. BASE LAYER
    ------------------------------------------------------------------------ */
 @layer base {
   * {
@@ -322,21 +374,27 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Theme cross-fade. Scoped to the properties that actually change so we
-     never animate layout, and never fight `transform`-driven animations. */
-  body,
-  body * {
-    transition:
-      background-color 220ms var(--ease-smooth),
-      border-color 220ms var(--ease-smooth),
-      color 220ms var(--ease-smooth),
-      fill 220ms var(--ease-smooth),
-      stroke 220ms var(--ease-smooth);
-  }
+  /* NO blanket `transition: background-color/color …` on every element.
+     ------------------------------------------------------------------------
+     Applying a colour transition to every node is the single most expensive
+     rule you can put in a stylesheet: it forces the engine to set up and tick
+     transition bookkeeping for every element in the document on every theme
+     change, on a page that can hold thousands of nodes.
 
-  /* …but never delay a deliberate interaction behind the theme cross-fade. */
-  button, a, input, select, textarea, [role="button"], [role="tab"] {
-    transition-duration: 150ms;
+     The theme swap is therefore instantaneous. That is also what Linear,
+     Vercel and GitHub ship — next-themes even provides
+     `disableTransitionOnChange` precisely because the global cross-fade is
+     more trouble than it is worth. Motion is spent where it carries meaning
+     instead: hover, focus, press, and enter/exit, declared per component. */
+
+  /* Interactive affordances animate on their own state changes. Scoped with
+     :where() so any component can override without a specificity fight. */
+  :where(button, a, input, select, textarea, [role="button"], [role="tab"]) {
+    transition:
+      background-color 150ms var(--ease-smooth),
+      border-color 150ms var(--ease-smooth),
+      color 150ms var(--ease-smooth),
+      box-shadow 150ms var(--ease-smooth);
   }
 
   /* Headings use tighter tracking as they grow — optical correction. */
@@ -392,7 +450,7 @@
 }
 
 /* ---------------------------------------------------------------------------
-   6. COMPONENT UTILITIES
+   7. COMPONENT UTILITIES
    Multi-property patterns that would be noisy to repeat as utility soup.
    ------------------------------------------------------------------------ */
 @layer components {
@@ -504,8 +562,8 @@
 }
 
 /* ---------------------------------------------------------------------------
-   7. MOTION PREFERENCES
-   Honour the OS setting: keep meaning, drop movement.
+   8. MOTION & ACCESSIBILITY PREFERENCES
+   Honour what the OS reports: keep meaning, adapt presentation.
    ------------------------------------------------------------------------ */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -517,8 +575,89 @@
   }
 }
 
+/* Some people turn transparency off system-wide because blur genuinely
+   hurts to look at, not as a performance setting. Give the affected
+   surface back its solid colour instead of fighting the preference. */
+@media (prefers-reduced-transparency: reduce) {
+  .zs-glass {
+    background-color: var(--surface-overlay);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+/* Windows High Contrast Mode and its equivalents. forced-color-adjust:
+   none tells the browser to stop auto-simplifying these specific
+   elements and trust the system colour keywords below instead — a trade
+   that only makes sense for the handful of elements re-styled here. */
+@media (forced-colors: active) {
+  .zs-card, .zs-glass {
+    forced-color-adjust: none;
+    background-color: Canvas;
+    color: CanvasText;
+    box-shadow: none;
+    border: 1px solid CanvasText;
+  }
+  :focus-visible {
+    outline: 2px solid Highlight;
+  }
+  /* Gradient-clipped text can render fully invisible under forced
+     colours — this is the fix, not a style choice. */
+  .zs-gradient-text {
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    color: CanvasText;
+  }
+}
+
 /* ---------------------------------------------------------------------------
-   8. PRINT — the Paper Generator's preview must print clean.
+   9. VIEW TRANSITIONS
+   CSS-side styling for the browser's native View Transitions API — the
+   cross-fade/morph you get moving between pages without a hard reload.
+   `@view-transition { navigation: auto }` opts full navigations in on
+   browsers that support it and is a no-op everywhere else, so it is safe
+   to ship as-is. For this app's normal CLIENT-SIDE route changes (App
+   Router navigation via next/link) it also needs Next's experimental
+   `viewTransition` flag turned on in next.config, plus the changing
+   region wrapped in `unstable_ViewTransition` — a small, separate step
+   for whenever that gets switched on; nothing here depends on it.
+   ------------------------------------------------------------------------ */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 240ms;
+  animation-timing-function: var(--ease-smooth);
+}
+::view-transition-old(root) { animation-name: zs-vt-out; }
+::view-transition-new(root) { animation-name: zs-vt-in; }
+
+@keyframes zs-vt-out {
+  from { opacity: 1; transform: none; }
+  to   { opacity: 0; transform: translateY(-4px); }
+}
+@keyframes zs-vt-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Opt a single element into its own named transition — it will morph
+   between routes instead of cross-fading with everything else — from
+   React with style={{ viewTransitionName: 'zs-vt-<stable-id>' }}.
+   Unused names cost nothing, so none are declared here. */
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   10. PRINT — the Paper Generator's preview must print clean.
    ------------------------------------------------------------------------ */
 @media print {
   :root { color-scheme: light; }

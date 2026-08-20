@@ -138,7 +138,24 @@ export async function POST(req: Request) {
     const resolvedSubject = body.subject
 
     if (!resolvedClass || !resolvedSubject) {
-      return NextResponse.json({ success: false, message: 'Class aur Subject zaruri hain.' }, { status: 400 })
+      return NextResponse.json({
+        success: false,
+        error: 'Class and Subject are required.',
+        message: 'Class aur Subject zaruri hain.',
+      }, { status: 400 })
+    }
+
+    // An empty chapter selection is a client-side mistake, not a server error:
+    // answer 400 with a message the UI can show verbatim. `chapter: "mixed"`
+    // (deliberate all-chapter mix) is still accepted.
+    const hasChapterList = Array.isArray(body.chapters) && body.chapters.length > 0
+    const hasSingleChapter = typeof chapter === 'string' && chapter.trim() !== ''
+    if (!hasChapterList && !hasSingleChapter) {
+      return NextResponse.json({
+        success: false,
+        error: 'No chapters selected. Please select at least one chapter.',
+        message: 'No chapters selected. Please select at least one chapter.',
+      }, { status: 400 })
     }
 
     const cleanClass = String(resolvedClass).replace(/^(Class\s*)/i, '').replace(/th|st|nd|rd/gi, '').trim()
@@ -186,9 +203,13 @@ export async function POST(req: Request) {
         lCount = Number(custom.longCount) || 0
       }
     } else {
+      // The generator UI sends { mcqCount, sqCount, lqCount }; older callers send
+      // { mcqCount, shortCount, longCount }. `lqCount` was destructured but never
+      // read, so every non-board request asked the DB for 0 Long questions and
+      // `longQuestions` always came back empty. Accept both spellings.
       mCount = Number(mcqCount) || 0
-      sCount = Number(shortCount) || 0
-      lCount = Number(longCount) || 0
+      sCount = Number(shortCount ?? sqCount) || 0
+      lCount = Number(longCount ?? lqCount) || 0
 
       // Board mode via boardConfig
       if (boardConfig) {
@@ -204,6 +225,16 @@ export async function POST(req: Request) {
       } else if (sqCount) {
         sCount = Number(sqCount)
       }
+    }
+
+    // Asking for 0 MCQ + 0 SQ + 0 LQ can only produce an empty paper. Fail fast
+    // and loudly instead of returning success with nothing in it.
+    if (mCount + sCount + lCount <= 0) {
+      return NextResponse.json({
+        success: false,
+        error: 'No questions requested — set a count for MCQ, Short or Long questions.',
+        message: 'No questions requested — set a count for MCQ, Short or Long questions.',
+      }, { status: 400 })
     }
 
     // Use fallback-aware fetching in board mode
@@ -251,11 +282,14 @@ export async function POST(req: Request) {
       }
 
       console.warn(`GEN: 0 results — ${reason}`)
+      // 400, not 404: the request itself asked for a combination that has no
+      // questions. The client renders `error`/`message` directly.
       return NextResponse.json({
         success: false,
+        error: 'No questions found for the selected criteria.',
         message: `${name} — ${reason}`,
         diagnostics: { query: baseQuery, requested: { mcq: mCount, short: sCount, long: lCount }, inSubject, inClass, grandTotal },
-      }, { status: 404 })
+      }, { status: 400 })
     }
 
     // Dual-template board section building
@@ -387,6 +421,11 @@ export async function POST(req: Request) {
     }, { status: 200 })
 
   } catch (err: any) {
-    return NextResponse.json({ success: false, message: err.message }, { status: 500 })
+    console.error('GEN: unhandled error', err)
+    return NextResponse.json({
+      success: false,
+      error: err?.message || 'Paper generation failed.',
+      message: err?.message || 'Paper generation failed.',
+    }, { status: 500 })
   }
 }

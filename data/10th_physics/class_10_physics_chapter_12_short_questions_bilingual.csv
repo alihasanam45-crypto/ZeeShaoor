@@ -1,0 +1,58 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,12.1 Waves and Nature of Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_001,1,12.1 Waves and Nature of Waves,definition_function,Define a wave and state what it transfers from one place to another.,wave کی تعریف کریں اور بیان کریں کہ یہ ایک جگہ سے دوسری جگہ کیا منتقل کرتی ہے۔,Easy,2,PRO,1
+q_10_phy_ch12_sq_002,1,12.1 Waves and Nature of Waves,concept_explanation,Explain how particles of a medium behave while a wave transfers energy through it.,وضاحت کریں کہ جب wave medium میں energy transfer کرتی ہے تو medium کے particles کیسے حرکت کرتے ہیں۔,Easy,2,ULTRA,1
+q_10_phy_ch12_sq_003,1,12.1 Waves and Nature of Waves,application_scenario,Explain why a floating twig does not travel with the water ripples passing beneath it.,وضاحت کریں کہ floating twig اپنے نیچے سے گزرنے والی water ripples کے ساتھ کیوں travel نہیں کرتی۔,Easy,2,ELITE,1
+TOPIC_SEP,1,12.1 Water-Wave Experiment,topic_separator,,,,,,1
+q_10_phy_ch12_sq_004,1,12.1 Water-Wave Experiment,process_steps,Describe the basic setup used in a ripple tank to demonstrate wave motion.,wave motion demonstrate کرنے کے لیے ripple tank کی basic setup بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,12.2 Types of Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_005,1,12.2 Types of Waves,difference,Differentiate between mechanical waves and electromagnetic waves and give one example of each.,mechanical waves اور electromagnetic waves میں فرق بیان کریں اور ہر ایک کی ایک مثال دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,12.2 Mechanical Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_006,1,12.2 Mechanical Waves,definition_example,Define a mechanical wave and give two examples.,mechanical wave کی تعریف کریں اور دو مثالیں دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,12.2 Electromagnetic Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_007,1,12.2 Electromagnetic Waves,definition_example,Define an electromagnetic wave and give two examples.,electromagnetic wave کی تعریف کریں اور دو مثالیں دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,12.2 Transverse Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_008,1,12.2 Transverse Waves,definition_example,Define a transverse wave and give one example from daily life.,transverse wave کی تعریف کریں اور روزمرہ زندگی سے ایک مثال دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,12.2 Longitudinal Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_009,1,12.2 Longitudinal Waves,definition_example,Define a longitudinal wave and give one example.,longitudinal wave کی تعریف کریں اور ایک مثال دیں۔,Easy,2,PRO,1
+q_10_phy_ch12_sq_010,1,12.2 Transverse Waves,list_state,State the meanings of crest and trough in a transverse wave.,transverse wave میں crest اور trough کے meanings بیان کریں۔,Easy,2,ULTRA,1
+q_10_phy_ch12_sq_011,1,12.2 Longitudinal Waves,list_state,State the meanings of compression and rarefaction in a longitudinal wave.,longitudinal wave میں compression اور rarefaction کے meanings بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,12.3 Wave Characteristics,topic_separator,,,,,,1
+q_10_phy_ch12_sq_012,1,12.3 Wave Characteristics,definition_unit,Define frequency and state its SI unit.,frequency کی تعریف کریں اور اس کی SI unit بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch12_sq_013,1,12.3 Wave Characteristics,definition_unit,Define wavelength and state its SI unit.,wavelength کی تعریف کریں اور اس کی SI unit بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch12_sq_014,1,12.3 Wave Characteristics,definition_function,Define amplitude and state what it indicates about a wave.,amplitude کی تعریف کریں اور بیان کریں کہ یہ wave کے بارے میں کیا ظاہر کرتی ہے۔,Easy,2,PRO,1
+q_10_phy_ch12_sq_015,1,12.3 Wave Characteristics,definition_formula,Define time period and write its relationship with frequency.,time period کی تعریف کریں اور frequency کے ساتھ اس کا relationship لکھیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,12.4 Reflection of Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_016,1,12.4 Reflection of Waves,definition_example,Define reflection of waves and give one example.,reflection of waves کی تعریف کریں اور ایک مثال دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,12.2 Types of Mechanical Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_017,1,12.2 Types of Mechanical Waves,compare_contrast,Compare transverse and longitudinal waves in terms of particle vibration and wave travel.,particle vibration اور wave travel کے لحاظ سے transverse اور longitudinal waves کا موازنہ کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,12.2 Electromagnetic Spectrum,topic_separator,,,,,,1
+q_10_phy_ch12_sq_018,1,12.2 Electromagnetic Spectrum,classification,Enlist the main regions of the electromagnetic spectrum in order of increasing frequency.,electromagnetic spectrum کے main regions کو increasing frequency کی ترتیب میں لکھیں۔,Medium,2,ELITE,1
+q_10_phy_ch12_sq_019,1,12.3 Wave Characteristics,formula_relationship,State the wave-speed equation and identify each physical quantity in it.,wave-speed equation بیان کریں اور اس میں موجود ہر physical quantity کی نشاندہی کریں۔,Medium,2,PRO,1
+q_10_phy_ch12_sq_020,1,12.3 Wave Characteristics,diagram_based,Describe how wavelength and amplitude are measured from a transverse-wave graph.,transverse-wave graph سے wavelength اور amplitude measure کرنے کا طریقہ بیان کریں۔,Medium,2,ELITE,1
+q_10_phy_ch12_sq_021,1,12.3 Wave Characteristics,numerical_short,"Calculate the speed of a wave using the given data: f = 5 Hz, λ = 2 m.","دیے گئے data سے wave کی speed معلوم کریں: f = 5 Hz, λ = 2 m",Medium,2,PRO,1
+q_10_phy_ch12_sq_022,1,12.3 Wave Characteristics,numerical_short,"Calculate the frequency of a wave using the given data: v = 300 m/s, λ = 3 m.","دیے گئے data سے wave کی frequency معلوم کریں: v = 300 m/s, λ = 3 m",Medium,2,PRO,1
+q_10_phy_ch12_sq_023,1,12.3 Wave Characteristics,numerical_short,Calculate the time period of a wave using the given data: f = 50 Hz.,دیے گئے data سے wave کا time period معلوم کریں: f = 50 Hz,Medium,2,PRO,1
+q_10_phy_ch12_sq_024,1,12.4 Reflection of Waves,law_principle,State the law of reflection of waves and define the angles involved.,law of reflection of waves بیان کریں اور متعلقہ angles کی تعریف کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,12.4 Refraction of Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_025,1,12.4 Refraction of Waves,definition_function,Define refraction of waves and state why a wave changes direction during refraction.,refraction of waves کی تعریف کریں اور بیان کریں کہ refraction کے دوران wave کی direction کیوں change ہوتی ہے۔,Medium,2,PRO,1
+q_10_phy_ch12_sq_026,1,12.4 Refraction of Waves,compare_contrast,Compare the speed and wavelength of water waves in deep and shallow water while stating what remains unchanged.,deep اور shallow water میں water waves کی speed اور wavelength کا موازنہ کریں اور بتائیں کہ کون سی quantity unchanged رہتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,12.4 Diffraction of Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_027,1,12.4 Diffraction of Waves,definition_example,Define diffraction and give one example involving sound or water waves.,diffraction کی تعریف کریں اور sound یا water waves سے متعلق ایک مثال دیں۔,Medium,2,PRO,1
+q_10_phy_ch12_sq_028,1,12.4 Diffraction of Waves,cause_effect,Explain how slit width relative to wavelength affects the amount of diffraction.,وضاحت کریں کہ wavelength کے مقابلے میں slit width diffraction کی مقدار کو کیسے affect کرتی ہے۔,Medium,2,PRO,1
+q_10_phy_ch12_sq_029,1,12.4 Diffraction of Waves,application_scenario,Explain why a person can be heard speaking from behind a wall.,وضاحت کریں کہ wall کے پیچھے بولنے والے person کی آواز کیوں سنائی دیتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,12.5 Seismic Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_030,1,12.5 Seismic Waves,definition_example,Define seismic waves and state two natural causes that produce them.,seismic waves کی تعریف کریں اور انہیں produce کرنے والے دو natural causes بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,12.5 Primary Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_031,1,12.5 Primary Waves,features_characteristics,State two characteristics of primary seismic waves and the media through which they can travel.,primary seismic waves کی دو characteristics اور وہ media بیان کریں جن سے یہ travel کر سکتی ہیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,12.5 Tsunami Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_032,1,12.5 Tsunami Waves,cause_effect,Explain how an underwater earthquake can generate a tsunami.,وضاحت کریں کہ underwater earthquake tsunami کیسے generate کر سکتا ہے۔,Medium,2,PRO,1
+q_10_phy_ch12_sq_033,1,12.1 Waves and Nature of Waves,explain_reason,"Justify the statement that waves transfer energy without transferring matter, using one experiment or observation.",ایک experiment یا observation کی مدد سے یہ statement justify کریں کہ waves matter transfer کیے بغیر energy transfer کرتی ہیں۔,Hard,2,PRO,1
+TOPIC_SEP,1,12.2 Mechanical and Electromagnetic Waves,topic_separator,,,,,,1
+q_10_phy_ch12_sq_034,1,12.2 Mechanical and Electromagnetic Waves,compare_contrast,"Compare mechanical and electromagnetic waves in terms of medium, speed, and examples.",medium، speed اور examples کے لحاظ سے mechanical اور electromagnetic waves کا موازنہ کریں۔,Hard,2,PRO,1
+q_10_phy_ch12_sq_035,1,12.3 Wave Characteristics,numerical_short,A sound wave has frequency 250 Hz and speed 340 m/s. Calculate its wavelength.,"sound wave کی wavelength معلوم کریں: f = 250 Hz, v = 340 m/s",Hard,2,PRO,1
+q_10_phy_ch12_sq_036,1,12.3 Wave Characteristics,numerical_short,A wave has wavelength 0.5 m and frequency 200 Hz. Calculate its speed.,"wave کی speed معلوم کریں: λ = 0.5 m, f = 200 Hz",Hard,2,PRO,1
+q_10_phy_ch12_sq_037,1,12.4 Refraction of Waves,diagram_based,"Explain the changes in direction, speed, and wavelength when oblique water waves move from deep water into shallow water.",وضاحت کریں کہ oblique water waves deep water سے shallow water میں move کریں تو direction، speed اور wavelength میں کیا changes آتی ہیں۔,Hard,2,ELITE,1
+q_10_phy_ch12_sq_038,1,12.4 Diffraction of Waves,concept_explanation,Explain why maximum diffraction occurs when the slit is equal to or smaller than the wavelength.,وضاحت کریں کہ slit wavelength کے equal یا smaller ہو تو maximum diffraction کیوں occur کرتی ہے۔,Hard,2,PRO,1
+q_10_phy_ch12_sq_039,1,12.5 Tsunami Waves,sequence,"Describe the sequence of changes in speed, wavelength, frequency, and amplitude as a tsunami approaches shallow coastal water.",tsunami کے shallow coastal water approach کرنے پر speed، wavelength، frequency اور amplitude میں changes کی sequence بیان کریں۔,Hard,2,PRO,1
+q_10_phy_ch12_sq_040,1,12.5 Tsunami Waves,cause_effect,Explain why a tsunami may pass unnoticed in deep ocean but becomes destructive near the shore.,وضاحت کریں کہ tsunami deep ocean میں unnoticed رہ سکتی ہے لیکن shore کے near destructive کیوں بن جاتی ہے۔,Hard,2,PRO,1

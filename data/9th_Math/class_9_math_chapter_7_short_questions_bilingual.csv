@@ -1,0 +1,71 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,7.1 Coordinate Plane,topic_separator,,,,,,1
+q_9_math_ch7_sq_001,1,7.1 Coordinate Plane,definition_function,"Define a Cartesian coordinate plane and identify the x-axis, y-axis, and origin.",Cartesian coordinate plane کی تعریف کریں اور x-axis، y-axis اور origin identify کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,7.1 Coordinates of a Point,topic_separator,,,,,,1
+q_9_math_ch7_sq_002,1,7.1 Coordinates of a Point,definition_function,"Define the abscissa and ordinate of a point P(x,y).","point P(x,y) کی abscissa اور ordinate کی تعریف کریں۔",Easy,2,ULTRA,1
+TOPIC_SEP,1,7.1 Quadrants,topic_separator,,,,,,1
+q_9_math_ch7_sq_003,1,7.1 Quadrants,classification,State the signs of x- and y-coordinates in all four quadrants.,all four quadrants میں x- اور y-coordinates کے signs بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,7.1 Points on Coordinate Axes,topic_separator,,,,,,1
+q_9_math_ch7_sq_004,1,7.1 Points on Coordinate Axes,compare_contrast,Compare the coordinate forms of a point lying on the x-axis and a point lying on the y-axis.,x-axis پر lying point اور y-axis پر lying point کی coordinate forms کا موازنہ کریں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,7.1 Distance Formula,topic_separator,,,,,,1
+q_9_math_ch7_sq_005,1,7.1 Distance Formula,definition_formula,"State the distance formula for two points P(x₁,y₁) and Q(x₂,y₂).","two points P(x₁,y₁) اور Q(x₂,y₂) کے لیے distance formula بیان کریں۔",Easy,2,PRO,1
+TOPIC_SEP,1,7.1 Midpoint Formula,topic_separator,,,,,,1
+q_9_math_ch7_sq_006,1,7.1 Midpoint Formula,definition_formula,"State the midpoint formula for the line segment joining P(x₁,y₁) and Q(x₂,y₂).","P(x₁,y₁) اور Q(x₂,y₂) کو join کرنے والے line segment کے لیے midpoint formula بیان کریں۔",Easy,2,PRO,1
+TOPIC_SEP,1,7.2 Gradient of a Line,topic_separator,,,,,,1
+q_9_math_ch7_sq_007,1,7.2 Gradient of a Line,definition_formula,Define the gradient or slope of a line and state its formula using two points.,line کی gradient یا slope کی تعریف کریں اور two points سے اس کا formula بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,7.2 Horizontal and Vertical Lines,topic_separator,,,,,,1
+q_9_math_ch7_sq_008,1,7.2 Horizontal and Vertical Lines,difference,Differentiate between the gradients of horizontal and vertical lines.,horizontal اور vertical lines کی gradients میں فرق بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,7.2 Inclination of a Line,topic_separator,,,,,,1
+q_9_math_ch7_sq_009,1,7.2 Inclination of a Line,definition_formula,Define the inclination of a line and state its relationship with the gradient.,line کی inclination کی تعریف کریں اور gradient کے ساتھ اس کا relationship بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,7.2 Parallel Lines,topic_separator,,,,,,1
+q_9_math_ch7_sq_010,1,7.2 Parallel Lines,law_principle,State the gradient condition for two non-vertical parallel lines.,two non-vertical parallel lines کے لیے gradient condition بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,7.2 Perpendicular Lines,topic_separator,,,,,,1
+q_9_math_ch7_sq_011,1,7.2 Perpendicular Lines,law_principle,State the gradient condition for two non-vertical perpendicular lines.,two non-vertical perpendicular lines کے لیے gradient condition بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,7.2 Slope-Intercept Form,topic_separator,,,,,,1
+q_9_math_ch7_sq_012,1,7.2 Slope-Intercept Form,definition_formula,State the slope-intercept form of a straight line and identify its constants.,straight line کی slope-intercept form بیان کریں اور اس کے constants identify کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,7.2 Point-Slope Form,topic_separator,,,,,,1
+q_9_math_ch7_sq_013,1,7.2 Point-Slope Form,definition_formula,State the point-slope form of a straight line and identify the given point and gradient.,straight line کی point-slope form بیان کریں اور given point اور gradient identify کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,7.2 Intercept Form,topic_separator,,,,,,1
+q_9_math_ch7_sq_014,1,7.2 Intercept Form,definition_formula,State the intercept form of a straight line and identify the x- and y-intercepts.,straight line کی intercept form بیان کریں اور x- اور y-intercepts identify کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,7.2 Normal Form,topic_separator,,,,,,1
+q_9_math_ch7_sq_015,1,7.2 Normal Form,definition_formula,State the normal form of a straight line and identify the meaning of p and α.,straight line کی normal form بیان کریں اور p اور α کا meaning identify کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,7.2 General Form of a Line,topic_separator,,,,,,1
+q_9_math_ch7_sq_016,1,7.2 General Form of a Line,definition_formula,State the general form of a straight-line equation and write its gradient when b ≠ 0.,straight-line equation کی general form بیان کریں اور b ≠ 0 ہونے پر gradient لکھیں۔,Easy,2,ULTRA,1
+q_9_math_ch7_sq_017,1,7.1 Quadrants,application_scenario,"Identify the quadrant containing each point: A(−4,3) and B(5,−2).","each point کا quadrant identify کریں: A(−4,3) and B(5,−2)",Medium,2,ELITE,1
+q_9_math_ch7_sq_018,1,7.1 Distance Formula,numerical_short,"Find the distance between the points: P(1,2) and Q(4,6)","points کے درمیان distance معلوم کریں: P(1,2) and Q(4,6)",Medium,2,PRO,1
+q_9_math_ch7_sq_019,1,7.1 Distance Formula,numerical_short,"Find the distance between the points: A(2,3) and B(7,8)","points کے درمیان distance معلوم کریں: A(2,3) and B(7,8)",Medium,2,PRO,1
+q_9_math_ch7_sq_020,1,7.1 Midpoint Formula,numerical_short,"Find the midpoint of the line segment joining the points: (−2,4) and (6,−2)","given points کو join کرنے والے line segment کا midpoint معلوم کریں: (−2,4) and (6,−2)",Medium,2,PRO,1
+TOPIC_SEP,1,7.1 Centre of a Circle,topic_separator,,,,,,1
+q_9_math_ch7_sq_021,1,7.1 Centre of a Circle,application_scenario,"The endpoints of a diameter are A(−5,−2) and B(5,−4). Find the centre of the circle.","diameter کے endpoints A(−5,−2) اور B(5,−4) ہیں۔ circle کا centre معلوم کریں۔",Medium,2,ELITE,1
+TOPIC_SEP,1,7.2 Gradient,topic_separator,,,,,,1
+q_9_math_ch7_sq_022,1,7.2 Gradient,numerical_short,"Calculate the gradient of the line passing through the points: (1,2) and (4,6)","given points سے passing line کی gradient calculate کریں: (1,2) and (4,6)",Medium,2,PRO,1
+TOPIC_SEP,1,7.2 Collinearity,topic_separator,,,,,,1
+q_9_math_ch7_sq_023,1,7.2 Collinearity,concept_explanation,State how equality of gradients is used to test whether three points are collinear.,بیان کریں کہ three points کی collinearity test کرنے کے لیے equality of gradients کیسے use ہوتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,7.2 Equation Parallel to an Axis,topic_separator,,,,,,1
+q_9_math_ch7_sq_024,1,7.2 Equation Parallel to an Axis,compare_contrast,Compare the equations of lines parallel to the x-axis and y-axis.,x-axis اور y-axis کے parallel lines کی equations کا موازنہ کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,7.2 Equation of a Line,topic_separator,,,,,,1
+q_9_math_ch7_sq_025,1,7.2 Equation of a Line,numerical_short,"Find the equation of the line in slope-intercept form passing through the points: (3,7) and (5,11)","given points سے passing line کی equation slope-intercept form میں معلوم کریں: (3,7) and (5,11)",Medium,2,PRO,1
+q_9_math_ch7_sq_026,1,7.2 Equation of a Line,numerical_short,"Find the equation of the line passing through (−4,7) and parallel to: 2x − 7y + 4 = 0","point (−4,7) سے passing اور given line کے parallel line کی equation معلوم کریں: 2x − 7y + 4 = 0",Medium,2,PRO,1
+q_9_math_ch7_sq_027,1,7.2 Equation of a Line,numerical_short,"Find the equation of the line through (−4,−6) and perpendicular to a line having gradient −3/2.","point (−4,−6) سے passing اور gradient −3/2 والی line کے perpendicular line کی equation معلوم کریں۔",Medium,2,PRO,1
+TOPIC_SEP,1,7.2 Conversion of Line Forms,topic_separator,,,,,,1
+q_9_math_ch7_sq_028,1,7.2 Conversion of Line Forms,process_steps,State the steps for converting ax + by + c = 0 into slope-intercept form.,ax + by + c = 0 کو slope-intercept form میں convert کرنے کے steps بیان کریں۔,Medium,2,ULTRA,1
+q_9_math_ch7_sq_029,1,7.2 Conversion of Line Forms,numerical_short,Convert the equation into slope-intercept form: 2x + 3y − 6 = 0,درج ذیل equation کو slope-intercept form میں convert کریں: 2x + 3y − 6 = 0,Medium,2,PRO,1
+TOPIC_SEP,1,7.2 Parallel and Perpendicular Lines,topic_separator,,,,,,1
+q_9_math_ch7_sq_030,1,7.2 Parallel and Perpendicular Lines,application_scenario,"Determine whether the lines are parallel, perpendicular, or neither: 2x + y − 3 = 0 and 4x + 2y + 5 = 0",determine کریں کہ lines parallel، perpendicular یا neither ہیں: 2x + y − 3 = 0 and 4x + 2y + 5 = 0,Medium,2,PRO,1
+TOPIC_SEP,1,7.3 Real-Life Applications,topic_separator,,,,,,1
+q_9_math_ch7_sq_031,1,7.3 Real-Life Applications,numerical_short,"Find the midpoint representing the centre of a bridge whose endpoints are: (2,5) and (8,9)","bridge کے centre کو represent کرنے والا midpoint معلوم کریں، جب endpoints ہوں: (2,5) and (8,9)",Medium,2,ELITE,1
+q_9_math_ch7_sq_032,1,7.3 Real-Life Applications,numerical_short,"Find the straight-line distance between two cities represented by the points: (3,4) and (7,1)","two cities کے درمیان straight-line distance معلوم کریں، جب points ہوں: (3,4) and (7,1)",Medium,2,ELITE,1
+TOPIC_SEP,1,7.1 Collinearity,topic_separator,,,,,,1
+q_9_math_ch7_sq_033,1,7.1 Collinearity,numerical_short,"Find h if the points A(−1,h), B(3,2), and C(7,3) are collinear.","h معلوم کریں، اگر points A(−1,h), B(3,2), and C(7,3) collinear ہوں۔",Hard,2,PRO,1
+TOPIC_SEP,1,7.1 Triangle Verification,topic_separator,,,,,,1
+q_9_math_ch7_sq_034,1,7.1 Triangle Verification,numerical_short,"Use the distance formula to verify whether A(−1,2), B(7,5), and C(2,−6) form a right-angled triangle.","distance formula استعمال کرکے verify کریں کہ A(−1,2), B(7,5), and C(2,−6) right-angled triangle بناتے ہیں یا نہیں۔",Hard,2,PRO,1
+TOPIC_SEP,1,7.2 Two-Point Form,topic_separator,,,,,,1
+q_9_math_ch7_sq_035,1,7.2 Two-Point Form,numerical_short,"Find the equation of the line through the points: (−2,1) and (6,−4)","given points سے passing line کی equation معلوم کریں: (−2,1) and (6,−4)",Hard,2,PRO,1
+q_9_math_ch7_sq_036,1,7.2 Intercept Form,numerical_short,Find the equation of the line whose x-intercept is 2 and y-intercept is −4.,وہ line کی equation معلوم کریں جس کا x-intercept 2 اور y-intercept −4 ہے۔,Hard,2,PRO,1
+q_9_math_ch7_sq_037,1,7.2 Normal Form,numerical_short,Convert the equation into normal form and identify p and α: 2x + 3y − 6 = 0,given equation کو normal form میں convert کریں اور p اور α identify کریں: 2x + 3y − 6 = 0,Hard,2,PRO,1
+TOPIC_SEP,1,7.2 Multiple Forms of a Line,topic_separator,,,,,,1
+q_9_math_ch7_sq_038,1,7.2 Multiple Forms of a Line,numerical_short,"For a line with gradient −3 and y-intercept 2, write its equations in slope-intercept and point-slope forms using the point (1,−1).","gradient −3 اور y-intercept 2 والی line کی equations slope-intercept اور point-slope forms میں لکھیں، using point (1,−1).",Hard,2,PRO,1
+TOPIC_SEP,1,7.3 Navigation Application,topic_separator,,,,,,1
+q_9_math_ch7_sq_039,1,7.3 Navigation Application,numerical_short,"A plane travels from A(50,60) to B(120,150). Determine its heading angle measured north of east.","plane A(50,60) سے B(120,150) travel کرتی ہے۔ north of east measured heading angle determine کریں۔",Hard,2,ELITE,1
+TOPIC_SEP,1,7.3 Coordinate-Geometry Application,topic_separator,,,,,,1
+q_9_math_ch7_sq_040,1,7.3 Coordinate-Geometry Application,numerical_short,"A drone flies from (2,3) to (10,15). Calculate the gradient of its path and the total distance travelled.","drone (2,3) سے (10,15) تک fly کرتی ہے۔ path کی gradient اور total distance travelled calculate کریں۔",Hard,2,PRO,1

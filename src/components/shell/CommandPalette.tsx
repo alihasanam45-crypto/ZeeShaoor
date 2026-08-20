@@ -130,7 +130,18 @@ export default function CommandPalette({
     if (open) inputRef.current?.focus()
   }, [open])
 
-  useEffect(() => setHighlighted(0), [query])
+  // Reset the highlight when the query changes.
+  //
+  // This is React's documented "adjust state when a prop changes" pattern:
+  // storing the previous value in state (not a ref, which may not be read or
+  // written during render) and comparing during render. An effect would paint
+  // one frame with the previous — now out-of-range — index against the new
+  // result list before correcting itself.
+  const [lastQuery, setLastQuery] = useState(query)
+  if (lastQuery !== query) {
+    setLastQuery(query)
+    setHighlighted(0)
+  }
 
   // Keep the highlighted row in view while arrowing through a long list.
   useEffect(() => {

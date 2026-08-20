@@ -3,13 +3,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import {
   ChevronsLeft,
   ChevronsRight,
   LogOut,
   Menu as MenuIcon,
   Search,
+  Shield,
+  User,
   X,
 } from 'lucide-react'
 import ThemeToggle from '@/components/ThemeToggle'
@@ -20,6 +22,43 @@ import SidebarNav from './SidebarNav'
 import { isNavItemActive, type AppShellProps } from './types'
 
 const COLLAPSE_KEY = 'zs-sidebar-collapsed'
+
+/* ---------------------------------------------------------------------------
+   Sidebar-collapse store.
+
+   Backed by localStorage and exposed through useSyncExternalStore so the value
+   is read at render time (no post-mount setState, no cascading render) while
+   still being SSR-safe. `emitCollapseChange` also notifies other open tabs'
+   listeners in this tab, which a bare `storage` event does not.
+   ------------------------------------------------------------------------ */
+const collapseListeners = new Set<() => void>()
+
+function subscribeToCollapse(onChange: () => void) {
+  collapseListeners.add(onChange)
+  // Keep multiple tabs in sync.
+  window.addEventListener('storage', onChange)
+  return () => {
+    collapseListeners.delete(onChange)
+    window.removeEventListener('storage', onChange)
+  }
+}
+
+function getCollapseSnapshot(): boolean {
+  try {
+    return localStorage.getItem(COLLAPSE_KEY) === '1'
+  } catch {
+    return false
+  }
+}
+
+function setCollapsePreference(next: boolean) {
+  try {
+    localStorage.setItem(COLLAPSE_KEY, next ? '1' : '0')
+  } catch {
+    /* private mode — the toggle still works for this session */
+  }
+  collapseListeners.forEach((listener) => listener())
+}
 
 /**
  * The single application frame for the student, teacher and admin portals.
@@ -48,38 +87,35 @@ export default function AppShell({
 }: AppShellProps) {
   const pathname = usePathname() ?? ''
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const [collapsed, setCollapsed] = useState(false)
   const [paletteOpen, setPaletteOpen] = useState(false)
+
+  /* Sidebar collapse is external (localStorage) state, so it is read through
+     useSyncExternalStore rather than an effect. The server snapshot is always
+     `false`, which matches the first client paint and keeps hydration clean;
+     React then swaps in the stored value without a cascading re-render. */
+  const collapsed = useSyncExternalStore(
+    subscribeToCollapse,
+    getCollapseSnapshot,
+    () => false,
+  )
 
   const drawerRef = useRef<HTMLDivElement>(null)
   const menuButtonRef = useRef<HTMLButtonElement>(null)
 
-  // Restore the collapse preference after mount — reading localStorage during
-  // render would desync server and client HTML.
-  useEffect(() => {
-    try {
-      setCollapsed(localStorage.getItem(COLLAPSE_KEY) === '1')
-    } catch {
-      /* private mode */
-    }
-  }, [])
-
   const toggleCollapsed = useCallback(() => {
-    setCollapsed((prev) => {
-      const next = !prev
-      try {
-        localStorage.setItem(COLLAPSE_KEY, next ? '1' : '0')
-      } catch {
-        /* private mode */
-      }
-      return next
-    })
+    setCollapsePreference(!getCollapseSnapshot())
   }, [])
 
   // Close the drawer on navigation so the next page is not hidden behind it.
-  useEffect(() => {
+  //
+  // React's "adjust state when a prop changes" pattern: the previous route is
+  // held in state and compared during render. An effect would paint the new
+  // page with the drawer still open for one frame before closing it.
+  const [lastPathname, setLastPathname] = useState(pathname)
+  if (lastPathname !== pathname) {
+    setLastPathname(pathname)
     setDrawerOpen(false)
-  }, [pathname])
+  }
 
   // Drawer: scroll lock, Escape to close, and focus management.
   useEffect(() => {
@@ -98,10 +134,14 @@ export default function AppShell({
     const firstLink = drawerRef.current?.querySelector<HTMLElement>('a, button')
     firstLink?.focus()
 
+    // Captured now: by cleanup time the ref may already point elsewhere, and
+    // we specifically want to restore focus to the trigger that opened this.
+    const trigger = menuButtonRef.current
+
     return () => {
       document.body.style.overflow = previousOverflow
       document.removeEventListener('keydown', onKeyDown)
-      menuButtonRef.current?.focus()
+      trigger?.focus()
     }
   }, [drawerOpen])
 
@@ -141,6 +181,7 @@ export default function AppShell({
             height={32}
             priority
             className="shrink-0 rounded-lg"
+            style={{ width: 32, height: 32 }}
           />
           {(!collapsed || inDrawer) && (
             <span className="min-w-0">
@@ -165,11 +206,13 @@ export default function AppShell({
         )}
       </div>
 
-      <SidebarNav
-        nav={nav}
-        collapsed={collapsed && !inDrawer}
-        onNavigate={() => setDrawerOpen(false)}
-      />
+      <div className="min-h-0 flex-1 overflow-y-auto">
+        <SidebarNav
+          nav={nav}
+          collapsed={collapsed && !inDrawer}
+          onNavigate={() => setDrawerOpen(false)}
+        />
+      </div>
 
       {/* Collapse control — desktop only; the drawer is never collapsed. */}
       {!inDrawer && (
@@ -210,7 +253,7 @@ export default function AppShell({
       <aside
         className={cn(
           'relative z-30 hidden shrink-0 flex-col border-r border-line bg-surface transition-[width] duration-300 ease-out-quint lg:flex',
-          collapsed ? 'w-[68px]' : 'w-64 xl:w-72',
+          collapsed ? 'w-17' : 'w-64 xl:w-72',
         )}
       >
         {sidebarBody(false)}
@@ -229,7 +272,7 @@ export default function AppShell({
             role="dialog"
             aria-modal="true"
             aria-label="Navigation"
-            className="absolute inset-y-0 left-0 flex w-[17rem] max-w-[85vw] flex-col border-r border-line bg-surface shadow-overlay animate-slide-down"
+            className="absolute inset-y-0 left-0 flex w-68 max-w-[85vw] flex-col border-r border-line bg-surface shadow-overlay animate-slide-down"
           >
             {sidebarBody(true)}
           </div>
@@ -279,7 +322,7 @@ export default function AppShell({
               aria-label="Search"
               className="rounded-lg p-2 text-fg-subtle transition-colors hover:bg-surface-hover hover:text-fg md:hidden"
             >
-              <Search className="h-[18px] w-[18px]" aria-hidden />
+              <Search className="h-4.5 w-4.5" aria-hidden />
             </button>
 
             {headerActions}
@@ -314,6 +357,9 @@ export default function AppShell({
                 )}
                 items={[
                   { type: 'label', label: user.role },
+                  { label: 'My profile (soon)', icon: <User className="h-4 w-4" />, disabled: true },
+                  { label: 'Security (soon)', icon: <Shield className="h-4 w-4" />, disabled: true },
+                  { type: 'separator' },
                   ...(onSignOut
                     ? ([
                         {

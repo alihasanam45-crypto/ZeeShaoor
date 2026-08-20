@@ -1,0 +1,56 @@
+﻿question_hash,active,topic,bloom_level,question,urdu_translation,A,B,C,D,correct_answer,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,2.1 Scientific Notation,Topic,,,,,,,,,,,1
+q_9_math_ch2_001,1,2.1 Scientific Notation,Remember,"In scientific notation a × 10ⁿ, the coefficient a must satisfy:",scientific notation a × 10ⁿ میں coefficient a کون سی condition satisfy کرتا ہے؟,1 ≤ |a| < 10,0 ≤ |a| < 1,|a| ≥ 10,a = 0 only,A | 1 ≤ |a| < 10,Easy,1,PRO,1
+q_9_math_ch2_002,1,2.1 Scientific Notation,Apply,"Write 53,000 in scientific notation.","53,000 کو scientific notation میں لکھیں۔",53 × 10³,0.53 × 10⁵,5.3 × 10⁴,5.3 × 10³,C | 5.3 × 10⁴,Easy,1,PRO,1
+q_9_math_ch2_003,1,2.1 Scientific Notation,Apply,Write 0.00072 in scientific notation.,0.00072 کو scientific notation میں لکھیں۔,72 × 10⁻⁴,7.2 × 10⁴,7.2 × 10⁻⁴,0.72 × 10⁻³,C | 7.2 × 10⁻⁴,Easy,1,PRO,1
+q_9_math_ch2_004,1,2.1 Scientific Notation,Apply,The ordinary form of 6.04 × 10⁵ is:,6.04 × 10⁵ کی ordinary form کیا ہے؟,604000,60400,0.000604,6040000,A | 604000,Easy,1,PRO,1
+q_9_math_ch2_005,1,2.1 Scientific Notation,Apply,The ordinary form of 3.5 × 10⁻³ is:,3.5 × 10⁻³ کی ordinary form کیا ہے؟,0.035,3500,0.0035,0.00035,C | 0.0035,Easy,1,PRO,1
+TOPIC_SEP,1,2.2 Logarithms,Topic,,,,,,,,,,,1
+q_9_math_ch2_006,1,2.2 Logarithms,Remember,"If aˣ = y, then the equivalent logarithmic form is:",اگر aˣ = y ہو تو equivalent logarithmic form کیا ہے؟,logᵧ a = x,logₐ y = x,logₓ y = a,logₐ x = y,B | logₐ y = x,Easy,1,PRO,1
+q_9_math_ch2_007,1,2.2 Logarithms,Understand,"In logₐ y = x, the base a must satisfy:",logₐ y = x میں base a کون سی conditions satisfy کرتی ہے؟,a = 1,a < 0,a = 0,a > 0 and a ≠ 1,D | a > 0 and a ≠ 1,Medium,1,PRO,1
+q_9_math_ch2_008,1,2.2 Logarithms,Apply,Convert 2⁵ = 32 into logarithmic form.,2⁵ = 32 کو logarithmic form میں convert کریں۔,log₅ 32 = 2,log₂ 32 = 5,log₃₂ 2 = 5,log₂ 5 = 32,B | log₂ 32 = 5,Easy,1,PRO,1
+q_9_math_ch2_009,1,2.2 Logarithms,Apply,Convert log₃ 81 = 4 into exponential form.,log₃ 81 = 4 کو exponential form میں convert کریں۔,4³ = 81,81⁴ = 3,3⁴ = 81,3⁸¹ = 4,C | 3⁴ = 81,Easy,1,PRO,1
+q_9_math_ch2_010,1,2.2 Logarithms,Apply,Evaluate log₁₀ 1000.,log₁₀ 1000 evaluate کریں۔,2,10,100,3,D | 3,Easy,1,PRO,1
+q_9_math_ch2_011,1,2.2 Logarithms,Apply,Evaluate log₂ (1/8).,log₂ (1/8) evaluate کریں۔,3,−8,1/3,−3,D | −3,Medium,1,PRO,1
+q_9_math_ch2_012,1,2.2 Logarithms,Understand,Why is logₐ 1 = 0 for every valid base a?,ہر valid base a کے لیے logₐ 1 = 0 کیوں ہے؟,a⁰ = 1,a¹ = 0,1ᵃ = 0,a⁰ = a,A | a⁰ = 1,Medium,1,PRO,1
+TOPIC_SEP,1,2.3 Common Logarithms,Topic,,,,,,,,,,,1
+q_9_math_ch2_013,1,2.3 Common Logarithms,Remember,A logarithm with base 10 is called:,base 10 والے logarithm کو کیا کہتے ہیں؟,Natural logarithm / natural logarithm,Binary logarithm / binary logarithm,Antilogarithm / antilogarithm,Common logarithm / common logarithm,D | Common logarithm / common logarithm,Easy,1,PRO,1
+q_9_math_ch2_014,1,2.3 Common Logarithms,Remember,The integer part of a common logarithm is called the:,common logarithm کے integer part کو کیا کہتے ہیں؟,Mantissa / mantissa,Characteristic / characteristic,Base / base,Index / index,B | Characteristic / characteristic,Easy,1,PRO,1
+q_9_math_ch2_015,1,2.3 Common Logarithms,Remember,The decimal part of a common logarithm is called the:,common logarithm کے decimal part کو کیا کہتے ہیں؟,Characteristic / characteristic,Mantissa / mantissa,Exponent / exponent,Radicand / radicand,B | Mantissa / mantissa,Easy,1,PRO,1
+TOPIC_SEP,1,2.3 Characteristic,Topic,,,,,,,,,,,1
+q_9_math_ch2_016,1,2.3 Characteristic,Understand,The characteristic of log₁₀ 357.2 is:,log₁₀ 357.2 کی characteristic کیا ہے؟,2,3,1,−2,A | 2,Medium,1,PRO,1
+q_9_math_ch2_017,1,2.3 Characteristic,Understand,The characteristic of log₁₀ 0.0047 is:,log₁₀ 0.0047 کی characteristic کیا ہے؟,−3,−2,3,2,A | −3,Medium,1,PRO,1
+q_9_math_ch2_018,1,2.3 Characteristic,Analyze,"For a positive number greater than 1 with n digits before the decimal point, its characteristic is:",1 سے greater positive number جس میں decimal point سے پہلے n digits ہوں، اس کی characteristic کیا ہے؟,n,1 − n,−n,n − 1,D | n − 1,Hard,1,PRO,1
+TOPIC_SEP,1,2.3 Logarithm Tables,Topic,,,,,,,,,,,1
+q_9_math_ch2_019,1,2.3 Logarithm Tables,Understand,A standard common-log table is mainly used to find the:,standard common-log table mainly کس کو find کرنے کے لیے use ہوتی ہے؟,Mantissa / mantissa,Characteristic only / صرف characteristic,Base / base,Natural exponent / natural exponent,A | Mantissa / mantissa,Medium,1,PRO,1
+TOPIC_SEP,1,2.3 Antilogarithms,Topic,,,,,,,,,,,1
+q_9_math_ch2_020,1,2.3 Antilogarithms,Remember,The inverse operation of taking a logarithm is called:,logarithm لینے کی inverse operation کو کیا کہتے ہیں؟,Factorization / factorization,Rationalization / rationalization,Differentiation / differentiation,Antilogarithm / antilogarithm,D | Antilogarithm / antilogarithm,Easy,1,PRO,1
+q_9_math_ch2_021,1,2.3 Antilogarithms,Apply,"If log₁₀ N = 2.3010, then N is approximately:",اگر log₁₀ N = 2.3010 ہو تو N approximately کیا ہے؟,20,200,2000,2,B | 200,Hard,1,PRO,1
+TOPIC_SEP,1,2.4 Laws of Logarithms,Topic,,,,,,,,,,,1
+q_9_math_ch2_022,1,2.4 Laws of Logarithms,Remember,The product law of logarithms is:,logarithms کا product law کیا ہے؟,logₐ(MN) = logₐM + logₐN,logₐ(MN) = logₐM − logₐN,logₐ(MN) = logₐM · logₐN,logₐ(MN) = M + N,A | logₐ(MN) = logₐM + logₐN,Medium,1,PRO,1
+q_9_math_ch2_023,1,2.4 Laws of Logarithms,Remember,The quotient law of logarithms is:,logarithms کا quotient law کیا ہے؟,logₐ(M/N) = logₐM − logₐN,logₐ(M/N) = logₐM + logₐN,logₐ(M/N) = logₐM/logₐN,logₐ(M/N) = M − N,A | logₐ(M/N) = logₐM − logₐN,Medium,1,PRO,1
+q_9_math_ch2_024,1,2.4 Laws of Logarithms,Remember,The power law of logarithms is:,logarithms کا power law کیا ہے؟,logₐ(Mᵏ) = (logₐM)ᵏ,logₐ(Mᵏ) = logₐM + k,logₐ(Mᵏ) = M logₐk,logₐ(Mᵏ) = k logₐM,D | logₐ(Mᵏ) = k logₐM,Medium,1,PRO,1
+q_9_math_ch2_025,1,2.4 Laws of Logarithms,Apply,Simplify logₐ 8 + logₐ 4.,logₐ 8 + logₐ 4 کو simplify کریں۔,logₐ 2,logₐ 12,logₐ 32,logₐ 4,C | logₐ 32,Medium,1,PRO,1
+q_9_math_ch2_026,1,2.4 Laws of Logarithms,Apply,Simplify log₁₀ 500 − log₁₀ 5.,log₁₀ 500 − log₁₀ 5 کو simplify کریں۔,1,10,100,2,D | 2,Medium,1,PRO,1
+q_9_math_ch2_027,1,2.4 Laws of Logarithms,Apply,Simplify 3 logₐ x.,3 logₐ x کو simplify کریں۔,logₐ(3x),(logₐx)³,logₐ(x³),logₐ(x/3),C | logₐ(x³),Medium,1,PRO,1
+TOPIC_SEP,1,2.4 Change of Base,Topic,,,,,,,,,,,1
+q_9_math_ch2_028,1,2.4 Change of Base,Remember,The change-of-base formula for logₐ b using base c is:,base c استعمال کرتے ہوئے logₐ b کا change-of-base formula کیا ہے؟,logₐ b = log_c a / log_c b,logₐ b = log_c(ab),logₐ b = log_c b − log_c a,logₐ b = log_c b / log_c a,D | logₐ b = log_c b / log_c a,Hard,1,PRO,1
+q_9_math_ch2_029,1,2.4 Change of Base,Apply,"Using common logarithms, log₂ 8 equals:",common logarithms استعمال کرتے ہوئے log₂ 8 کس کے equal ہے؟,2,3,4,8,B | 3,Medium,1,PRO,1
+TOPIC_SEP,1,2.4 Logarithmic Equations,Topic,,,,,,,,,,,1
+q_9_math_ch2_030,1,2.4 Logarithmic Equations,Apply,Solve log₂ x = 5.,log₂ x = 5 solve کریں۔,10,32,25,64,B | 32,Medium,1,PRO,1
+q_9_math_ch2_031,1,2.4 Logarithmic Equations,Analyze,Solve log₃(x − 1) = 2.,log₃(x − 1) = 2 solve کریں۔,8,9,10,28,C | 10,Hard,1,PRO,1
+TOPIC_SEP,1,2.4 Logarithmic Expressions,Topic,,,,,,,,,,,1
+q_9_math_ch2_032,1,2.4 Logarithmic Expressions,Analyze,"If log a = 2 and log b = 3, then log(a²b) equals:",اگر log a = 2 اور log b = 3 ہو تو log(a²b) کس کے equal ہے؟,5,6,7,12,C | 7,Hard,1,PRO,1
+TOPIC_SEP,1,2.5 Natural Logarithms,Topic,,,,,,,,,,,1
+q_9_math_ch2_033,1,2.5 Natural Logarithms,Remember,A logarithm with base e is called:,base e والے logarithm کو کیا کہتے ہیں؟,Natural logarithm / natural logarithm,Common logarithm / common logarithm,Binary logarithm / binary logarithm,Characteristic / characteristic,A | Natural logarithm / natural logarithm,Easy,1,PRO,1
+q_9_math_ch2_034,1,2.5 Natural Logarithms,Remember,The approximate value of e is:,e کی approximate value کیا ہے؟,3.142,1.618,2.718,10,C | 2.718,Easy,1,PRO,1
+q_9_math_ch2_035,1,2.5 Natural Logarithms,Apply,Evaluate ln e⁴.,ln e⁴ evaluate کریں۔,e⁴,1/4,0,4,D | 4,Medium,1,PRO,1
+TOPIC_SEP,1,2.6 Applications of Logarithms,Topic,,,,,,,,,,,1
+q_9_math_ch2_036,1,2.6 Applications of Logarithms,Understand,The decibel scale is mainly used to measure:,decibel scale mainly کس کو measure کرنے کے لیے use ہوتی ہے؟,Temperature / temperature,Sound intensity level / sound intensity level,Length / length,Mass / mass,B | Sound intensity level / sound intensity level,Medium,1,PRO,1
+q_9_math_ch2_037,1,2.6 Applications of Logarithms,Understand,A logarithmic scale is useful when quantities vary over:,logarithmic scale useful ہوتی ہے جب quantities کس range میں vary کریں؟,Several orders of magnitude / کئی orders of magnitude,Only one small interval / صرف one small interval,No measurable range / کوئی measurable range نہیں,Only negative integers / صرف negative integers,A | Several orders of magnitude / کئی orders of magnitude,Hard,1,PRO,1
+TOPIC_SEP,1,2.6 Growth and Decay,Topic,,,,,,,,,,,1
+q_9_math_ch2_038,1,2.6 Growth and Decay,Apply,"If a quantity doubles every period, after 3 periods it becomes:",اگر quantity ہر period میں double ہو تو 3 periods کے بعد کیا ہوگی؟,Three times the original / original کی three times,Eight times the original / original کی eight times,Six times the original / original کی six times,Nine times the original / original کی nine times,B | Eight times the original / original کی eight times,Easy,1,PRO,1
+TOPIC_SEP,1,2.6 Earthquake Scale,Topic,,,,,,,,,,,1
+q_9_math_ch2_039,1,2.6 Earthquake Scale,Understand,A one-unit increase on a base-10 logarithmic magnitude scale represents a factor of:,base-10 logarithmic magnitude scale پر one-unit increase کس factor کو represent کرتا ہے؟,2,5,10,100,C | 10,Hard,1,PRO,1
+TOPIC_SEP,1,2.6 Logarithmic Modelling,Topic,,,,,,,,,,,1
+q_9_math_ch2_040,1,2.6 Logarithmic Modelling,Analyze,Which operation converts an exponential relation into a linear relation in its exponent?,کون سی operation exponential relation کو exponent کے لحاظ سے linear relation میں convert کرتی ہے؟,Taking square roots only / صرف square roots لینا,Taking logarithms / logarithms لینا,Adding zero / zero add کرنا,Multiplying by the base / base سے multiply کرنا,B | Taking logarithms / logarithms لینا,Hard,1,PRO,1

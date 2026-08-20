@@ -1,0 +1,16 @@
+﻿question_hash,active,topic,question_type,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+sep_9_bio_ch3_001,1,3.2 Structure of Cell,Topic,topic_separator,,,,,,1
+q_9_bio_ch3_lq_001,1,3.2 Structure of Cell,Long,explain,Explain the fluid mosaic model of the cell membrane.,خلوی جھلی کے سیال موزیک ماڈل کی وضاحت کریں۔,Medium,5,PRO,1
+q_9_bio_ch3_lq_002,1,3.2 Structure of Cell,Long,describe,Describe the structure and functions of the cell wall.,خلوی دیوار کی ساخت اور افعال بیان کریں۔,Easy,5,PRO,1
+q_9_bio_ch3_lq_003,1,3.2 Structure of Cell,Long,describe,Discuss the components of the nucleus.,مرکزے کے اجزا پر بحث کریں۔,Medium,5,PRO,1
+q_9_bio_ch3_lq_004,1,3.2 Structure of Cell,Long,describe,Describe the structure and functions of lysosomes and the endoplasmic reticulum.,لائسوسومز اور اینڈوپلازمک ریٹیکولم کی ساخت اور افعال بیان کریں۔,Medium,5,PRO,1
+q_9_bio_ch3_lq_005,1,3.2 Structure of Cell,Long,describe,Describe the formation and functions of the Golgi complex.,گولجی کمپلیکس کی تشکیل اور افعال بیان کریں۔,Medium,5,PRO,1
+q_9_bio_ch3_lq_006,1,3.2 Structure of Cell,Long,diagram_based,Describe the structure and functions of the chloroplast.,کلوروپلاسٹ کی ساخت اور افعال بیان کریں۔,Medium,5,PRO,1
+q_9_bio_ch3_lq_007,1,3.2 Structure of Cell,Long,cause_effect,Explain the impact that mitochondrial dysfunction or absence may have on the ability of other organelles to operate in a cell.,وضاحت کریں کہ مائٹوکانڈریا کی خرابی یا عدم موجودگی خلیے کے دوسرے عضیات کی کارکردگی کو کس طرح متاثر کر سکتی ہے۔,Hard,5,PRO,1
+q_9_bio_ch3_lq_008,1,3.2 Structure of Cell,Long,cause_effect,"Explain what may happen if coordination between ribosomes and the nucleus fails, and why this coordination is important.",وضاحت کریں کہ رائبوسومز اور مرکزے کے درمیان ہم آہنگی ناکام ہونے کی صورت میں کیا ہو سکتا ہے اور یہ ہم آہنگی کیوں اہم ہے۔,Hard,5,PRO,1
+sep_9_bio_ch3_002,1,3.3 Structural Advantages of Plant and Animal Cells,Topic,topic_separator,,,,,,1
+q_9_bio_ch3_lq_009,1,3.3 Structural Advantages of Plant and Animal Cells,Long,explain,Explain how turgor pressure develops in a plant cell.,وضاحت کریں کہ نباتاتی خلیے میں ترگر دباؤ کس طرح پیدا ہوتا ہے۔,Medium,5,PRO,1
+q_9_bio_ch3_lq_010,1,3.3 Structural Advantages of Plant and Animal Cells,Long,compare,Write any four differences between a plant cell and an animal cell.,نباتاتی خلیے اور حیوانی خلیے میں کوئی چار اختلافات لکھیں۔,Medium,5,PRO,1
+sep_9_bio_ch3_003,1,3.4 Cell Specialization,Topic,topic_separator,,,,,,1
+q_9_bio_ch3_lq_011,1,3.4 Cell Specialization,Long,explain,Describe the concept of division of labour and explain how it applies in multicellular organisms. Give at least three examples.,تقسیمِ کار کا تصور بیان کریں اور وضاحت کریں کہ یہ کثیر خلوی جانداروں میں کس طرح لاگو ہوتا ہے۔ کم از کم تین مثالیں دیں۔,Hard,5,PRO,1
+q_9_bio_ch3_lq_012,1,3.4 Cell Specialization,Long,elaborate,Write a detailed note on cell specialization.,خلوی تخصص پر تفصیلی نوٹ لکھیں۔,Medium,5,PRO,1

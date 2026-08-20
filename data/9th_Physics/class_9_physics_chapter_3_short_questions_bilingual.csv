@@ -1,0 +1,75 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,3.1 Concept of Force,topic_separator,,,,,,1
+q_9_phy_ch3_sq_001,1,3.1 Concept of Force,definition_function,Define force and state two changes it may produce in the motion of a body.,force کی تعریف کریں اور body کی motion میں پیدا ہونے والی دو changes بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,3.1 Contact and Non-Contact Forces,topic_separator,,,,,,1
+q_9_phy_ch3_sq_002,1,3.1 Contact and Non-Contact Forces,difference,Differentiate between contact and non-contact forces and give two examples of each.,contact اور non-contact forces میں فرق بیان کریں اور ہر ایک کی دو examples دیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.1 Contact Forces,topic_separator,,,,,,1
+q_9_phy_ch3_sq_003,1,3.1 Contact Forces,classification,"Classify friction, drag, thrust, normal force, air resistance, tension, and elastic force as contact forces and state one feature of any two.",friction، drag، thrust، normal force، air resistance، tension اور elastic force کو contact forces کے طور پر classify کریں اور کسی دو کی ایک feature بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,3.1 Non-Contact Forces,topic_separator,,,,,,1
+q_9_phy_ch3_sq_004,1,3.1 Non-Contact Forces,classification,Name the main non-contact forces and state why they are also called field forces.,main non-contact forces کے نام لکھیں اور بیان کریں کہ انہیں field forces کیوں کہا جاتا ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.1 Gravitational Force,topic_separator,,,,,,1
+q_9_phy_ch3_sq_005,1,3.1 Gravitational Force,law_principle,State Newton's law of gravitation and identify the quantities on which gravitational force depends.,Newton's law of gravitation بیان کریں اور وہ quantities identify کریں جن پر gravitational force depend کرتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.1 Electrostatic and Magnetic Forces,topic_separator,,,,,,1
+q_9_phy_ch3_sq_006,1,3.1 Electrostatic and Magnetic Forces,compare_contrast,Compare electrostatic and magnetic forces using the objects on which they act and their attractive or repulsive nature.,جن objects پر forces act کرتی ہیں اور attractive یا repulsive nature کے لحاظ سے electrostatic اور magnetic forces کا موازنہ کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,3.2 Fundamental Forces,topic_separator,,,,,,1
+q_9_phy_ch3_sq_007,1,3.2 Fundamental Forces,list_state,Name the four fundamental forces of nature.,nature کی چار fundamental forces کے نام لکھیں۔,Medium,2,ULTRA,1
+q_9_phy_ch3_sq_008,1,3.2 Fundamental Forces,compare_contrast,"Compare gravitational, electromagnetic, strong nuclear, and weak nuclear forces in terms of range and relative role.",range اور relative role کے لحاظ سے gravitational، electromagnetic، strong nuclear اور weak nuclear forces کا موازنہ کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,3.2 Strong and Weak Nuclear Forces,topic_separator,,,,,,1
+q_9_phy_ch3_sq_009,1,3.2 Strong and Weak Nuclear Forces,difference,Differentiate between strong and weak nuclear forces using their functions and ranges.,functions اور ranges کے لحاظ سے strong اور weak nuclear forces میں فرق بیان کریں۔,Hard,2,ULTRA,1
+TOPIC_SEP,1,3.2 Unification of Forces,topic_separator,,,,,,1
+q_9_phy_ch3_sq_010,1,3.2 Unification of Forces,concept_explanation,State the contribution of Dr. Abdus Salam to the unification of fundamental forces.,fundamental forces کی unification میں Dr. Abdus Salam کی contribution بیان کریں۔,Easy,2,IMPORTANT,1
+TOPIC_SEP,1,3.3 Free-Body Diagram,topic_separator,,,,,,1
+q_9_phy_ch3_sq_011,1,3.3 Free-Body Diagram,definition_function,Define a free-body diagram and state how force magnitude and direction are represented in it.,free-body diagram کی تعریف کریں اور بیان کریں کہ اس میں force magnitude اور direction کیسے represent ہوتی ہیں۔,Easy,2,PRO,1
+q_9_phy_ch3_sq_012,1,3.3 Free-Body Diagram,diagram_based,State the four forces that may appear on the free-body diagram of a book pushed across a horizontal table.,horizontal table پر pushed book کے free-body diagram میں ظاہر ہونے والی چار forces بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,3.4 Newton's First Law,topic_separator,,,,,,1
+q_9_phy_ch3_sq_013,1,3.4 Newton's First Law,law_principle,State Newton's first law of motion and explain why it is also called the law of inertia.,Newton's first law of motion بیان کریں اور explain کریں کہ اسے law of inertia کیوں کہا جاتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,3.4 Inertia,topic_separator,,,,,,1
+q_9_phy_ch3_sq_014,1,3.4 Inertia,definition_function,Define inertia and state how mass affects it.,inertia کی تعریف کریں اور بیان کریں کہ mass اسے کیسے affect کرتی ہے۔,Easy,2,ULTRA,1
+q_9_phy_ch3_sq_015,1,3.4 Newton's First Law,explain_reason,Explain why Newton's first law cannot be demonstrated perfectly on Earth.,وضاحت کریں کہ Newton's first law کو Earth پر perfectly demonstrate کیوں نہیں کیا جا سکتا۔,Medium,2,PRO,1
+q_9_phy_ch3_sq_016,1,3.4 Inertia,application_scenario,Explain why passengers move backward when a stationary car suddenly accelerates.,وضاحت کریں کہ stationary car کے suddenly accelerate کرنے پر passengers backward کیوں move کرتے ہیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.4 Newton's Second Law,topic_separator,,,,,,1
+q_9_phy_ch3_sq_017,1,3.4 Newton's Second Law,law_principle,State Newton's second law of motion and write its mathematical form.,Newton's second law of motion بیان کریں اور اس کی mathematical form لکھیں۔,Easy,2,PRO,1
+q_9_phy_ch3_sq_018,1,3.4 Newton's Second Law,formula_relationship,Explain how acceleration depends on net force and mass according to Newton's second law.,Newton's second law کے مطابق explain کریں کہ acceleration، net force اور mass پر کیسے depend کرتی ہے۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,3.4 Force Unit,topic_separator,,,,,,1
+q_9_phy_ch3_sq_019,1,3.4 Force Unit,definition_unit,Define one newton and write it in base SI units.,one newton کی تعریف کریں اور اسے base SI units میں لکھیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.4 Net Force,topic_separator,,,,,,1
+q_9_phy_ch3_sq_020,1,3.4 Net Force,explain_reason,Explain why the force used in Newton's second law must be the net force.,وضاحت کریں کہ Newton's second law میں استعمال ہونے والی force، net force کیوں ہونی چاہیے۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.4 Newton's Third Law,topic_separator,,,,,,1
+q_9_phy_ch3_sq_021,1,3.4 Newton's Third Law,law_principle,State Newton's third law and explain why action and reaction do not cancel each other.,Newton's third law بیان کریں اور explain کریں کہ action اور reaction ایک دوسرے کو cancel کیوں نہیں کرتے۔,Hard,2,PRO,1
+TOPIC_SEP,1,3.4 Action-Reaction Pairs,topic_separator,,,,,,1
+q_9_phy_ch3_sq_022,1,3.4 Action-Reaction Pairs,application_scenario,Identify the action and reaction forces when a bullet is fired from a gun.,gun سے bullet fire ہونے پر action اور reaction forces identify کریں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,3.5 Limitations of Newton's Laws,topic_separator,,,,,,1
+q_9_phy_ch3_sq_023,1,3.5 Limitations of Newton's Laws,concept_explanation,State the conditions under which Newton's laws require relativistic mechanics.,وہ conditions بیان کریں جن میں Newton's laws کے لیے relativistic mechanics required ہوتی ہے۔,Hard,2,ELITE,1
+TOPIC_SEP,1,3.6 Mass and Weight,topic_separator,,,,,,1
+q_9_phy_ch3_sq_024,1,3.6 Mass and Weight,difference,"Differentiate between mass and weight using nature, unit, direction, and variation with location.",nature، unit، direction اور location کے ساتھ variation کے لحاظ سے mass اور weight میں فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.6 Gravitational Field,topic_separator,,,,,,1
+q_9_phy_ch3_sq_025,1,3.6 Gravitational Field,definition_unit,Define gravitational field strength and state its SI unit.,gravitational field strength کی تعریف کریں اور اس کی SI unit بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.6 Weight,topic_separator,,,,,,1
+q_9_phy_ch3_sq_026,1,3.6 Weight,definition_formula,Define weight and write its relationship with mass and gravitational field strength.,weight کی تعریف کریں اور mass و gravitational field strength کے ساتھ اس کا relationship لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,3.7 Mechanical and Electronic Balances,topic_separator,,,,,,1
+q_9_phy_ch3_sq_027,1,3.7 Mechanical and Electronic Balances,compare_contrast,Compare mechanical and electronic balances in terms of working method and precision.,working method اور precision کے لحاظ سے mechanical اور electronic balances کا موازنہ کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,3.7 Force Meter,topic_separator,,,,,,1
+q_9_phy_ch3_sq_028,1,3.7 Force Meter,definition_function,Define a force meter and state the quantity and unit it measures.,force meter کی تعریف کریں اور اس سے measured quantity اور unit بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.8 Friction,topic_separator,,,,,,1
+q_9_phy_ch3_sq_029,1,3.8 Friction,definition_function,Define friction and state its dissipative effect on mechanical energy.,friction کی تعریف کریں اور mechanical energy پر اس کا dissipative effect بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,3.8 Static and Kinetic Friction,topic_separator,,,,,,1
+q_9_phy_ch3_sq_030,1,3.8 Static and Kinetic Friction,difference,Differentiate between static and kinetic friction and define limiting friction.,static اور kinetic friction میں فرق بیان کریں اور limiting friction کی تعریف کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.8 Rolling and Sliding Friction,topic_separator,,,,,,1
+q_9_phy_ch3_sq_031,1,3.8 Rolling and Sliding Friction,compare_contrast,Compare rolling and sliding friction and state how ball bearings reduce friction.,rolling اور sliding friction کا موازنہ کریں اور بیان کریں کہ ball bearings friction کیسے reduce کرتے ہیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.8 Methods to Reduce Friction,topic_separator,,,,,,1
+q_9_phy_ch3_sq_032,1,3.8 Methods to Reduce Friction,list_state,State four methods used to reduce friction in machines and vehicles.,machines اور vehicles میں friction reduce کرنے کے چار methods بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,3.8 Terminal Velocity,topic_separator,,,,,,1
+q_9_phy_ch3_sq_033,1,3.8 Terminal Velocity,definition_function,Define terminal velocity and state the force condition at which it is reached.,terminal velocity کی تعریف کریں اور وہ force condition بیان کریں جس پر یہ reached ہوتی ہے۔,Easy,2,PRO,1
+q_9_phy_ch3_sq_034,1,3.8 Terminal Velocity,explain_reason,Explain why a parachute reduces the terminal velocity of a falling person.,وضاحت کریں کہ parachute falling person کی terminal velocity کیوں reduce کرتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,3.9 Momentum,topic_separator,,,,,,1
+q_9_phy_ch3_sq_035,1,3.9 Momentum,definition_unit,Define momentum and state its mathematical relationship and SI unit.,momentum کی تعریف کریں اور اس کا mathematical relationship اور SI unit بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,3.9 Impulse,topic_separator,,,,,,1
+q_9_phy_ch3_sq_036,1,3.9 Impulse,definition_formula,Define impulse and write its relationship with change in momentum.,impulse کی تعریف کریں اور change in momentum کے ساتھ اس کا relationship لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,3.9 Momentum and Force,topic_separator,,,,,,1
+q_9_phy_ch3_sq_037,1,3.9 Momentum and Force,formula_relationship,State Newton's second law in terms of the rate of change of momentum.,Newton's second law کو rate of change of momentum کی صورت میں بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.9 Impulse Applications,topic_separator,,,,,,1
+q_9_phy_ch3_sq_038,1,3.9 Impulse Applications,explain_reason,Explain why a fielder moves the hands backward while catching a fast cricket ball.,وضاحت کریں کہ fast cricket ball catch کرتے وقت fielder hands کو backward کیوں move کرتا ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,3.10 Conservation of Momentum,topic_separator,,,,,,1
+q_9_phy_ch3_sq_039,1,3.10 Conservation of Momentum,law_principle,State the principle of conservation of momentum and specify the condition required for it.,principle of conservation of momentum بیان کریں اور اس کے لیے required condition specify کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.10 Momentum Numerical,topic_separator,,,,,,1
+q_9_phy_ch3_sq_040,1,3.10 Momentum Numerical,numerical_short,A 5 g bullet moves at 300 m/s and is fired from a 10 kg gun. Calculate the recoil speed of the gun.,"درج ذیل data سے gun کی recoil speed معلوم کریں: bullet mass = 5 g, bullet speed = 300 m/s, gun mass = 10 kg",Hard,2,PRO,1

@@ -3,7 +3,26 @@
 import { signOut, useSession } from 'next-auth/react'
 import type { ReactNode } from 'react'
 import AppShell from './AppShell'
+import { ADMIN_NAV, STUDENT_NAV, TEACHER_NAV } from './nav'
 import type { Brand, NavSection } from './types'
+
+/**
+ * Portal navigation is selected here, on the client, by key.
+ *
+ * The nav lists cannot be passed down as props: each item's `icon` is a React
+ * component, and a server layout may only hand a client component plain,
+ * serializable values. Passing the arrays across that boundary logs
+ * "Only plain objects can be passed to Client Components" once per item.
+ * Sending a short string and resolving it client-side keeps the boundary
+ * clean — and keeps the icon components out of the RSC payload entirely.
+ */
+const NAV_BY_PORTAL: Record<PortalKey, NavSection[]> = {
+  teacher: TEACHER_NAV,
+  student: STUDENT_NAV,
+  admin: ADMIN_NAV,
+}
+
+export type PortalKey = 'teacher' | 'student' | 'admin'
 
 /**
  * Client wrapper that supplies the signed-in user to `AppShell`.
@@ -14,7 +33,7 @@ import type { Brand, NavSection } from './types'
  */
 export default function PortalShell({
   brand,
-  nav,
+  portal,
   role,
   children,
   headerActions,
@@ -26,7 +45,8 @@ export default function PortalShell({
   fallbackName,
 }: {
   brand: Brand
-  nav: NavSection[]
+  /** Which portal's navigation to render. Resolved client-side — see above. */
+  portal: PortalKey
   role: string
   children: ReactNode
   headerActions?: ReactNode
@@ -49,7 +69,7 @@ export default function PortalShell({
   return (
     <AppShell
       brand={brand}
-      nav={nav}
+      nav={NAV_BY_PORTAL[portal]}
       user={{ name, role }}
       headerActions={headerActions}
       sidebarFooter={sidebarFooter}

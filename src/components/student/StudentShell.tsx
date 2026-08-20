@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { Bell, Focus } from 'lucide-react'
 import PortalShell from '@/components/shell/PortalShell'
-import { STUDENT_NAV } from '@/components/shell/nav'
 import { cn } from '@/components/ui/cn'
 import AIAssistOrb from './AIAssistOrb'
 import NotificationHub, { SEED_NOTIFICATIONS, type HubNotification } from './NotificationHub'
@@ -35,7 +34,7 @@ export default function StudentShell({ children }: { children: React.ReactNode }
   return (
     <PortalShell
       brand={{ title: 'ZeeShaoor.pk', subtitle: 'Student Portal', href: '/student/dashboard' }}
-      nav={STUDENT_NAV}
+      portal="student"
       role="Student"
       // Dashboard widgets dim themselves in focus mode via
       // `group-data-[focus=on]/shell:*`, so the shell root must keep exposing

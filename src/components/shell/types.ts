@@ -24,11 +24,15 @@ export type NavItem = {
   exact?: boolean
   /** Optional trailing count/status chip. */
   badge?: { label: string; tone?: 'accent' | 'danger' | 'warning' | 'success' }
+  /** Shown greyed-out, not clickable — a real, planned page with no route yet. */
+  disabled?: boolean
 }
 
 export type NavSection = {
   heading: string
   items: NavItem[]
+  /** When true, the section can be expanded/collapsed in the sidebar. */
+  collapsible?: boolean
 }
 
 export type Brand = {

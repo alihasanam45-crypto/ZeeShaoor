@@ -1,49 +1,40 @@
-import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth/options'
 import { ROUTE_CONFIG } from '@/config/routes'
 import { getTeacherOverviewMetrics } from '@/actions/teacher-dashboard-actions'
 import {
+  Badge,
+  Button,
+  Card,
+  CardHeader,
+  EmptyState,
+  PageContainer,
+  PageHeader,
+  StatCard,
+} from '@/components/ui'
+import {
   ArrowRight,
-  BookOpen,
+  BarChart3,
   CalendarClock,
   ClipboardList,
+  FileText,
+  FileClock,
   GraduationCap,
   LayoutGrid,
   LifeBuoy,
   Users,
+  WandSparkles,
 } from 'lucide-react'
 
-const CARD = 'rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)]'
-
-function StatTile({
-  icon,
-  label,
-  value,
-  href,
-}: {
-  icon: React.ReactNode
-  label: string
-  value: number
-  href: string
-}) {
-  return (
-    <Link
-      href={href}
-      className="group flex items-center gap-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all hover:border-indigo-200 hover:shadow-[0_8px_30px_rgb(99,102,241,0.10)]"
-    >
-      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600">
-        {icon}
-      </span>
-      <div className="min-w-0">
-        <p className="text-2xl font-black leading-tight text-slate-800">{value}</p>
-        <p className="text-xs font-medium text-slate-400">{label}</p>
-      </div>
-      <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-slate-300 transition-colors group-hover:text-indigo-400" />
-    </Link>
-  )
-}
+/* Quick actions surface the four things a teacher does most, so the dashboard
+   is a launchpad rather than a read-only summary. */
+const QUICK_ACTIONS = [
+  { label: 'Generate a paper', href: '/teacher/generator', icon: WandSparkles },
+  { label: 'Assign homework', href: '/teacher/homework', icon: ClipboardList },
+  { label: 'Plan a lesson', href: '/teacher/lesson-planner', icon: GraduationCap },
+  { label: 'Review grades', href: '/teacher/grade-distribution', icon: BarChart3 },
+]
 
 export default async function TeacherOverviewPage() {
   const session = await getServerSession(authOptions)
@@ -55,129 +46,169 @@ export default async function TeacherOverviewPage() {
   const data = await getTeacherOverviewMetrics()
 
   return (
-    <div className="mx-auto w-full max-w-6xl space-y-8 p-8 lg:p-12">
-      {/* Header */}
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-            Welcome back, {data.teacherName}
-          </h1>
-          <p className="mt-1 text-sm text-slate-500">
-            Your teaching overview across {data.totals.assignedClasses}{' '}
-            {data.totals.assignedClasses === 1 ? 'class' : 'classes'} and{' '}
-            {data.totals.subjectsTaught}{' '}
-            {data.totals.subjectsTaught === 1 ? 'subject' : 'subjects'}
-          </p>
-        </div>
-        <Link
-          href="/teacher/generator"
-          className="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-5 py-3 text-sm font-semibold text-white shadow-[0_8px_30px_rgb(99,102,241,0.20)] transition-all hover:opacity-90"
-        >
-          <BookOpen className="h-4 w-4" />
-          Open Paper Generator
-        </Link>
-      </div>
+    <PageContainer width="wide">
+      <PageHeader
+        eyebrow="Teacher Portal"
+        title={`Welcome back, ${data.teacherName}`}
+        description={`Your teaching overview across ${data.totals.assignedClasses} ${
+          data.totals.assignedClasses === 1 ? 'class' : 'classes'
+        } and ${data.totals.subjectsTaught} ${
+          data.totals.subjectsTaught === 1 ? 'subject' : 'subjects'
+        }.`}
+        actions={
+          <Button href="/teacher/generator" leadingIcon={<WandSparkles className="h-4 w-4" />}>
+            Open Paper Generator
+          </Button>
+        }
+      />
 
-      {/* Stat tiles */}
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
-        <StatTile
-          icon={<LayoutGrid className="h-5 w-5" />}
+      {/* Metrics */}
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <StatCard
+          label="Papers Generated"
+          value="Soon"
+          icon={<FileText className="h-5 w-5" />}
+        />
+        <StatCard
+          label="Draft Papers"
+          value="Soon"
+          icon={<FileClock className="h-5 w-5" />}
+        />
+        <StatCard
           label="Assigned Classes"
           value={data.totals.assignedClasses}
+          icon={<LayoutGrid className="h-5 w-5" />}
           href="/teacher/learning-paths"
         />
-        <StatTile
-          icon={<Users className="h-5 w-5" />}
+        <StatCard
           label="Total Students"
           value={data.totals.totalStudents}
+          icon={<Users className="h-5 w-5" />}
+          tone="info"
           href="/teacher/at-risk"
         />
-        <StatTile
-          icon={<ClipboardList className="h-5 w-5" />}
+        <StatCard
           label="Homework Tasks"
           value={data.homeworkTasks}
+          icon={<ClipboardList className="h-5 w-5" />}
+          tone="success"
           href="/teacher/homework"
         />
-        <StatTile
-          icon={<CalendarClock className="h-5 w-5" />}
+        <StatCard
           label="Upcoming Meetings"
           value={data.upcomingMeetings}
+          icon={<CalendarClock className="h-5 w-5" />}
+          tone="warning"
           href="/teacher/meetings"
         />
       </div>
 
-      {/* Open interventions banner */}
+      {/* Open interventions — only rendered when there is something to act on. */}
       {data.openInterventions > 0 && (
-        <Link
+        <Card
           href="/teacher/at-risk"
-          className="flex items-center gap-3 rounded-3xl border border-amber-200 bg-amber-50 p-5 transition-colors hover:bg-amber-100/70"
+          padding="sm"
+          className="flex items-center gap-3.5 ring-1 ring-inset ring-warning-soft"
         >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-amber-100 text-amber-600">
+          <span
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-warning-soft text-warning-text"
+            aria-hidden
+          >
             <LifeBuoy className="h-5 w-5" />
           </span>
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-semibold text-amber-800">
+            <p className="text-sm font-semibold text-fg">
               {data.openInterventions} open{' '}
               {data.openInterventions === 1 ? 'intervention' : 'interventions'} in your classes
             </p>
-            <p className="text-xs text-amber-600">Review at-risk students and resolve their action plans</p>
-          </div>
-          <ArrowRight className="h-4 w-4 shrink-0 text-amber-500" />
-        </Link>
-      )}
-
-      {/* Class breakdown */}
-      <section className={CARD}>
-        <div className="mb-6 flex items-center gap-3">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600">
-            <GraduationCap className="h-5 w-5" />
-          </span>
-          <div>
-            <h2 className="text-lg font-bold text-slate-800">My Classes</h2>
-            <p className="text-xs text-slate-400">Assigned classes with live active-student counts</p>
-          </div>
-        </div>
-
-        {data.classes.length > 0 ? (
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {data.classes.map((cls) => (
-              <div
-                key={cls.classId}
-                className="rounded-2xl border border-slate-100 bg-slate-50 p-5"
-              >
-                <div className="flex items-start justify-between gap-3">
-                  <div className="min-w-0">
-                    <p className="text-sm font-bold text-slate-800">Class {cls.classId}</p>
-                    <p className="mt-1 flex flex-wrap gap-1.5">
-                      {cls.subjects.map((subject) => (
-                        <span
-                          key={subject}
-                          className="rounded-full bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-600"
-                        >
-                          {subject}
-                        </span>
-                      ))}
-                    </p>
-                  </div>
-                  <div className="shrink-0 text-right">
-                    <p className="text-xl font-black text-slate-800">{cls.studentCount}</p>
-                    <p className="text-[10px] font-medium uppercase tracking-wider text-slate-400">
-                      students
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="py-10 text-center">
-            <p className="text-sm font-semibold text-slate-500">No classes assigned yet</p>
-            <p className="mt-1 text-xs text-slate-400">
-              An administrator assigns your subjects and classes — they&apos;ll appear here once set.
+            <p className="mt-0.5 text-[13px] text-fg-subtle">
+              Review at-risk students and resolve their action plans
             </p>
           </div>
-        )}
-      </section>
-    </div>
+          <ArrowRight className="h-4 w-4 shrink-0 text-fg-faint" aria-hidden />
+        </Card>
+      )}
+
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
+        {/* Classes */}
+        <Card className="lg:col-span-2">
+          <CardHeader
+            icon={<GraduationCap className="h-5 w-5" />}
+            title="My Classes"
+            description="Assigned classes with live active-student counts"
+          />
+
+          <div className="mt-5">
+            {data.classes.length > 0 ? (
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                {data.classes.map((cls) => (
+                  <div
+                    key={cls.classId}
+                    className="rounded-xl bg-surface-inset p-4 ring-1 ring-inset ring-line"
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        <p className="text-sm font-semibold text-fg">Class {cls.classId}</p>
+                        <div className="mt-2 flex flex-wrap gap-1.5">
+                          {cls.subjects.map((subject) => (
+                            <Badge key={subject} tone="accent" size="sm">
+                              {subject}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="shrink-0 text-right">
+                        <p className="text-xl font-bold leading-none text-fg" data-numeric>
+                          {cls.studentCount}
+                        </p>
+                        <p className="mt-1 text-[10px] font-medium uppercase tracking-wider text-fg-faint">
+                          students
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <EmptyState
+                icon={<GraduationCap className="h-6 w-6" />}
+                title="No classes assigned yet"
+                description="An administrator assigns your subjects and classes — they'll appear here once set."
+              />
+            )}
+          </div>
+        </Card>
+
+        {/* Quick actions */}
+        <Card>
+          <CardHeader
+            title="Quick actions"
+            description="Jump straight into your most-used tools"
+          />
+          <ul className="mt-4 space-y-1.5">
+            {QUICK_ACTIONS.map(({ label, href, icon: Icon }) => (
+              <li key={href}>
+                <a
+                  href={href}
+                  className="group flex items-center gap-3 rounded-xl px-3 py-2.5 text-[13.5px] font-medium text-fg-muted transition-colors hover:bg-surface-hover hover:text-fg"
+                >
+                  <span
+                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent-soft text-accent-text"
+                    aria-hidden
+                  >
+                    <Icon className="h-4 w-4" />
+                  </span>
+                  <span className="flex-1 truncate">{label}</span>
+                  <ArrowRight
+                    className="h-3.5 w-3.5 shrink-0 text-fg-faint transition-transform group-hover:translate-x-0.5"
+                    aria-hidden
+                  />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      </div>
+    </PageContainer>
   )
 }

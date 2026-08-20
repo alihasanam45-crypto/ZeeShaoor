@@ -25,8 +25,6 @@ import {
   GraduationCap,
   Atom,
   BookMarked,
-  ListChecks,
-  ChevronUp,
   ChevronRight,
   ScrollText,
   Gauge,
@@ -34,6 +32,7 @@ import {
   Sun,
   Moon,
   Trash2,
+  AlertTriangle,
 } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ninthPhysicsChapters, type Topic, type Chapter } from "@/data/ninthPhysicsChapters";
@@ -48,6 +47,8 @@ import {
   type SqMode,
   type SqSectionDef,
 } from "@/lib/sq-engine";
+import { CLASSES, getSubjects } from "@/config/curriculum";
+import { savePaperHandoff, PAPER_PREVIEW_ROUTE } from "@/lib/paper-handoff";
 import {
   LQ_PRESETS as LQ_ENGINE_PRESETS,
   LQ_MODE_ORDER,
@@ -66,21 +67,8 @@ import {
 // ---------------------------------------------------------------------------------------------------------------------------------------
 import { useGlobalTheme, usePalette as useP, type Palette } from "@/components/theme/ThemeProvider";
 
-// Subject names MUST match CLASS_SUBJECT_MATRIX in src/models/Question.ts
-// exactly — they are the literal values stored in the `subject` field and are
-// matched with strict equality. This list previously said "Maths", "Islamiat"
-// and "S.Studies", none of which exist in the database, so those subjects
-// could never return a question.
-const CLASS_SUBJECTS: Record<string, string[]> = {
-  "Class 5": ["Mathematics","English","Urdu","Science","Islamiyat","Social Studies"],
-  "Class 6": ["Mathematics","English","Urdu","Science","Islamiyat","Computer"],
-  "Class 7": ["Mathematics","English","Urdu","Science","Islamiyat","Computer"],
-  "Class 8": ["Mathematics","English","Urdu","Science","Islamiyat","Computer"],
-  "Class 9": ["Physics","Chemistry","Biology","Mathematics","English","Urdu","Islamiyat (Compulsory)","Computer"],
-  "Class 10": ["Physics","Chemistry","Biology","Mathematics","English","Urdu","Islamiyat (Compulsory)","Computer"],
-  "Class 11": ["Physics","Chemistry","Biology","Mathematics","English","Urdu","Islamiyat (Compulsory)","Computer","Economics"],
-  "Class 12": ["Physics","Chemistry","Biology","Mathematics","English","Urdu","Islamiyat (Compulsory)","Computer","Economics"],
-};
+// Class/subject scope now comes from @/config/curriculum — the single source of
+// truth for the combinations that actually have seeded question data.
 
 /** "Class 10" -> "10". Matches the normalization the generator API applies. */
 function classLevelOf(label: string): string {
@@ -95,6 +83,11 @@ const SUBJECT_ICONS: Record<string, string> = {
 
 const SQ_PRESETS = SQ_ENGINE_PRESETS;
 const LQ_PRESETS = LQ_ENGINE_PRESETS;
+
+// Seed balance sent to the generator API as sqConfig.balance. This was previously
+// held in useState but nothing ever set it, so it is a constant — same value,
+// same payload, one less piece of state.
+const SQ_BALANCE_SEED = { easy:30, medium:40, hard:30, knowledge:35, comprehension:40, application:25, theory:70, numerical:30 };
 
 type HybridGroup = 'quick_strict' | 'chapter_monthly' | 'grand_halfbook' | 'ultimate_bise';
 interface HybridPreset {
@@ -174,8 +167,6 @@ function getBoardPresets(): BoardPreset[] {
   return [...PUNJAB_BOARDS.map(b => ({...b, ...PUNJAB_BOARD_BASE})), FEDERAL_BOARD];
 }
 
-const CLASSES = Object.keys(CLASS_SUBJECTS);
-
 type Phase = "mcq"|"sq"|"lq"|"hybrid"|"board"|"custom";
 
 interface LiveConfig {
@@ -224,16 +215,33 @@ function FlipNum({ value }: { value: number }) {
   );
 }
 
+/* Every message this toast receives is a warning or a failure — "Please select
+   Class and Subject first", "Session expired", "Access denied", "Generation
+   failed", "Network error". It was previously painted in the indigo brand
+   gradient, which reads as a success confirmation, and it was invisible to
+   screen readers.
+
+   Presentation only: the props and the call sites are unchanged. */
 function Toast({ msg, onDone }: { msg:string; onDone:()=>void }) {
   const P = useP();
-  useEffect(() => { const t = setTimeout(onDone, 2800); return ()=>clearTimeout(t); }, [onDone]);
+  // 2.8s was not enough to read a sentence like "Session expired — please sign
+  // in again." before it vanished.
+  useEffect(() => { const t = setTimeout(onDone, 5000); return ()=>clearTimeout(t); }, [onDone]);
   return (
-    <div style={{
-      position:"fixed", bottom:90, left:"50%", transform:"translateX(-50%)",
-      background: P.gradient, color:"#fff", padding:"11px 22px", borderRadius:10,
-      fontWeight:500, fontSize:14, zIndex:9999, boxShadow:"0 8px 24px rgba(0,0,0,0.4)",
-      animation:"toastIn 0.25s ease",
-    }}>{msg}</div>
+    <div
+      role="alert"
+      style={{
+        position:"fixed", bottom:90, left:"50%", transform:"translateX(-50%)",
+        display:"flex", alignItems:"center", gap:10, maxWidth:"min(90vw, 30rem)",
+        background: P.surfaceOverlay, color: P.text, padding:"12px 18px", borderRadius:12,
+        fontWeight:500, fontSize:14, zIndex:9999,
+        boxShadow: P.shadowOverlay,
+        border:`1px solid ${P.danger}`,
+        animation:"toastIn 0.25s ease",
+      }}>
+      <AlertTriangle size={16} style={{ color:P.danger, flexShrink:0 }} aria-hidden/>
+      <span>{msg}</span>
+    </div>
   );
 }
 
@@ -302,30 +310,6 @@ function OptionBox({ label, sub, selected, onClick, wide }: OptionBoxProps) {
         }}><CheckCircle2 size={10} color="#fff"/></div>
       )}
     </div>
-  );
-}
-
-function TopicChip({ label, selected, onClick }: { label:string; selected:boolean; onClick:()=>void }) {
-  const P = useP();
-  return (
-    <button onClick={onClick} style={{
-      textAlign:"left", padding:"4px 8px", borderRadius:5,
-      border:`1px solid ${selected ? P.borderActive : "transparent"}`,
-      background: selected ? "rgba(74,158,202,0.10)" : "transparent",
-      color: selected ? P.text : P.textDim,
-      fontSize:11.5, fontWeight: selected ? 500 : 400,
-      cursor:"pointer", width:"100%",
-      display:"flex", alignItems:"center", gap:5,
-      transition:"all 0.1s",
-    }}>
-      <span style={{
-        width:12, height:12, borderRadius:3, flexShrink:0,
-        border:`1.5px solid ${selected?P.blue:P.border}`,
-        background: selected ? P.gradient : "transparent",
-        display:"flex", alignItems:"center", justifyContent:"center",
-      }}>{selected && <CheckCircle2 size={8} color="#fff"/>}</span>
-      <span style={{ lineHeight:1.2 }}>{label}</span>
-    </button>
   );
 }
 
@@ -440,7 +424,7 @@ function GridModal({ open, onClose, selectedClass, selectedSubject, selectedChap
   const P = useP();
   const [step, setStep] = useState<"class"|"subject"|"chapter">("class");
   const { particles, burst } = useParticles();
-  const subjects = selectedClass ? CLASS_SUBJECTS[selectedClass] || [] : [];
+  const subjects = getSubjects(selectedClass);
 
   const chapters = useMemo(() => {
     if (selectedClass==="Class 9" && selectedSubject==="Physics") {
@@ -626,48 +610,6 @@ function boardPills(bp: BoardPreset) {
     sqPill: sqPillLabel,
     lqPill: `${bp.lqAttempt}/${bp.lqGiven} LQs (${lqMarks}M)`,
   };
-}
-
-// ---------------------------------------------------------------------------------------------------------------------------------------
-// Accordion row — collapsed shows name + one-line summary,
-// clicking expands the full options below.
-// ---------------------------------------------------------------------------------------------------------------------------------------
-interface AccordionRowProps {
-  icon: React.ReactNode; label: string; summary: string;
-  open: boolean; onToggle: () => void; children: React.ReactNode;
-}
-function AccordionRow({ icon, label, summary, open, onToggle, children }: AccordionRowProps) {
-  const P = useP();
-  return (
-    <div style={{
-      border:`1.5px solid ${open ? P.borderActive : P.border}`, borderRadius:12,
-      background: open ? P.bgHover : P.glassFaint,
-      backdropFilter:"blur(8px)", WebkitBackdropFilter:"blur(8px)",
-      boxShadow: open ? "0 8px 30px rgba(99,102,241,0.10)" : "none",
-      overflow:"hidden", transition:"all 0.15s",
-    }}>
-      <div onClick={onToggle} style={{
-        display:"flex", alignItems:"center", gap:10, padding:"11px 14px", cursor:"pointer",
-      }}>
-        <div style={{
-          width:30, height:30, borderRadius:8, flexShrink:0,
-          background: open ? P.gradient : P.bgElevated,
-          display:"flex", alignItems:"center", justifyContent:"center",
-          color: open ? "#fff" : P.steel,
-        }}>{icon}</div>
-        <div style={{ flex:1, minWidth:0 }}>
-          <span style={{ fontSize:13.5, fontWeight:700, color: open ? P.text : P.textMuted }}>{label}</span>
-          {!open && <span style={{ fontSize:11.5, color:P.textDim, marginLeft:8 }}>{summary}</span>}
-        </div>
-        {open ? <ChevronUp size={15} color={P.blue}/> : <ChevronDown size={15} color={P.textMuted}/>}
-      </div>
-      {open && (
-        <div style={{ padding:"0 14px 14px" }} onClick={e => e.stopPropagation()}>
-          {children}
-        </div>
-      )}
-    </div>
-  );
 }
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
@@ -981,7 +923,6 @@ export default function GeneratorPage() {
   const [sqPattern, setSqPattern] = useState<string>("flex_choice_topical_quiz");
   const [sqMode, setSqMode] = useState<SqMode>("flexible_choice");
   const [sqSections, setSqSections] = useState<SqSectionDef[]>([{ label:"All", given:5, attempt:5 } as SqSectionDef]);
-  const [sqBalance, setSqBalance] = useState({ easy:30, medium:40, hard:30, knowledge:35, comprehension:40, application:25, theory:70, numerical:30 });
 
   const [lqMode, setLqMode] = useState<LqMode>("bise_pattern");
   const [lqPattern, setLqPattern] = useState<string>("lq_bise_full");
@@ -1055,6 +996,17 @@ export default function GeneratorPage() {
     });
   }, [chapters]);
 
+  // The subject dropdown is strictly reactive to the class: as soon as the
+  // selected class no longer offers the selected subject, the subject (and the
+  // chapter/topic picks hanging off it) are cleared.
+  useEffect(() => {
+    if (selectedSubject && !getSubjects(selectedClass).includes(selectedSubject)) {
+      setSelectedSubject("");
+      setSelectedChapters([]);
+      setSelectedTopics([]);
+    }
+  }, [selectedClass, selectedSubject]);
+
   const toggleTopic = (id: string) => {
     setSelectedTopics(prev => prev.includes(id) ? prev.filter(x=>x!==id) : [...prev, id]);
   };
@@ -1117,7 +1069,7 @@ export default function GeneratorPage() {
         selectionLabel="Custom Paper"; break;
     }
     return { mcq, sq, lq, totalMarks, estTime, selectionLabel };
-  }, [activePhase, mcqCount, sqPattern, sqMode, sqSections, sqBalance, lqPattern, lqMode, lqSections, hybridPreset, hybridGroup, boardPattern, customMcq, customSq, customLq]);
+  }, [activePhase, mcqCount, sqPattern, sqMode, sqSections, lqPattern, lqMode, lqSections, hybridPreset, hybridGroup, boardPattern, customMcq, customSq, customLq]);
 
   const live = getLiveConfig();
 
@@ -1214,6 +1166,13 @@ export default function GeneratorPage() {
 
   const handleGenerate = async () => {
     if (!selectedClass||!selectedSubject) { setToast("Please select Class and Subject first"); return; }
+    // Guard BEFORE the loading state: an empty scope produced a spinner that
+    // vanished with nothing to show. Topics are optional (only Class 9 Physics
+    // has a topic breakdown), so a chapter tick is the real requirement.
+    if (selectedChapters.length === 0) {
+      setToast("Please select at least one chapter to generate a paper");
+      return;
+    }
     setGenerating(true);
     try {
       const cfg = getLiveConfig();
@@ -1231,7 +1190,7 @@ export default function GeneratorPage() {
           mode: sqMode,
           sections: sqMode==="custom_builder" ? sqSections : (SQ_PRESETS.find(p=>p.id===sqPattern)?.sections||[]),
           pattern: sqPattern,
-          balance: sqBalance,
+          balance: SQ_BALANCE_SEED,
         },
         lqConfig: {
           mode: lqMode,
@@ -1256,8 +1215,43 @@ export default function GeneratorPage() {
       let data: any = null;
       try { data = await res.json(); } catch { /* non-JSON (e.g. middleware redirect page) */ }
       if (data?.success) {
-        sessionStorage.setItem("generatorData", JSON.stringify({ ...payload, result: data.data }));
-        router.push("/teacher/paper");
+        const result = data.data || {};
+        const mcqs = result.mcqs || [];
+        const shortQuestions = result.shortQuestions || [];
+        const longQuestions = result.longQuestions || [];
+        // A "successful" response with an empty paper must not navigate — the
+        // paper page would find nothing to render and bounce straight back.
+        if (mcqs.length + shortQuestions.length + longQuestions.length === 0) {
+          setToast("No questions found for the selected criteria.");
+          return;
+        }
+        // Hand-off to the full-screen preview. Key, shape and version are owned
+        // by @/lib/paper-handoff — both sides import the same module, so the
+        // writer can no longer drift from the reader (which is how a successful
+        // generation once bounced silently back to the generator).
+        //
+        // `config` carries the exact settings this paper was drawn from, so the
+        // preview keeps the teacher's selections and not just the questions.
+        const stored = savePaperHandoff({
+          paperData: { mcqs, shortQuestions, longQuestions },
+          metadata: {
+            class: selectedClass,
+            subject: selectedSubject,
+            chapter: selectedChapters.length === 1
+              ? (chapters.find(c => c.id === selectedChapters[0])?.label || selectedChapters[0])
+              : `${selectedChapters.length} chapters`,
+            totalQuestions: mcqs.length + shortQuestions.length + longQuestions.length,
+          },
+          config: payload,
+          result,
+        });
+        // A failed write must not navigate: the preview would find nothing and
+        // redirect straight back, losing the paper with no explanation.
+        if (!stored) {
+          setToast("Could not open the preview — browser storage is full or blocked.");
+          return;
+        }
+        router.push(PAPER_PREVIEW_ROUTE);
       } else if (res.status === 401) {
         setToast(data?.message || "Session expired — please sign in again.");
       } else if (res.status === 403) {
@@ -1265,14 +1259,15 @@ export default function GeneratorPage() {
       } else {
         setToast(data?.message || data?.error || "Generation failed");
       }
-    } catch {
-      setToast("Network error. Try again.");
+    } catch (err: any) {
+      // Never swallow the throw: the loading state used to just disappear.
+      setToast(err?.message ? `Generation failed — ${err.message}` : "Network error. Try again.");
     } finally {
       setGenerating(false);
     }
   };
 
-  const subjects = selectedClass ? CLASS_SUBJECTS[selectedClass] || [] : [];
+  const subjects = getSubjects(selectedClass);
 
   const styleTag = `
     @keyframes toastIn { from{transform:translateX(-50%) translateY(16px);opacity:0;} to{transform:translateX(-50%) translateY(0);opacity:1;} }
@@ -1288,14 +1283,19 @@ export default function GeneratorPage() {
 
   if (status === "loading") {
     return (
-      <div style={{ minHeight:"100vh", background:P.bg, display:"flex", alignItems:"center", justifyContent:"center" }}>
+      // height:100% (not 100vh) — this renders inside the app shell's scroll
+      // container, and a viewport-height box there produces a second scrollbar.
+      <div role="status" aria-label="Loading Paper Generator"
+        style={{ height:"100%", minHeight:320, background:P.bg, display:"flex", alignItems:"center", justifyContent:"center" }}>
         <div style={{ width:36, height:36, borderRadius:"50%", border:`3px solid ${P.border}`, borderTopColor:P.blue, animation:"spin 0.8s linear infinite" }}/>
       </div>
     );
   }
 
   return (
-    <div style={{ height:"100%", background:P.bg, display:"flex", fontFamily:"-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif", color:P.text, overflow:"hidden", transition:"background 0.35s ease, color 0.35s ease" }}>
+    // fontFamily:inherit lets the generator pick up Inter from the design
+    // system instead of pinning its own system-font stack.
+    <div style={{ height:"100%", background:P.bg, display:"flex", fontFamily:"inherit", color:P.text, overflow:"hidden", transition:"background 0.35s ease, color 0.35s ease" }}>
       <style>{styleTag}</style>
 
       {/* ------ SIDEBAR ------ */}
@@ -1537,13 +1537,27 @@ export default function GeneratorPage() {
             {live.selectionLabel}
           </div>
 
-          <div role="button" tabIndex={0} onClick={() => !generating && handleGenerate()} style={{
+          {/* This is the page's primary action but was a plain <div role="button">
+              with only an onClick — Enter and Space did nothing, so it was
+              unreachable by keyboard. The handler below activates the exact
+              same handleGenerate(); no generation logic is changed. */}
+          <div role="button" tabIndex={0} onClick={() => !generating && handleGenerate()}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                if (!generating) handleGenerate();
+              }
+            }}
+            aria-busy={generating}
+            aria-disabled={generating}
+            aria-label={generating ? "Generating paper" : "Generate paper"}
+            style={{
             display:"flex", alignItems:"center", gap:8, padding:"0 24px", height:40, borderRadius:99,
-            background: generating ? "rgba(99,102,241,0.22)" : P.gradient,
+            background: generating ? P.accentSoft : P.gradient,
             color:"#fff", fontWeight:600, fontSize:14, cursor: generating ? "not-allowed" : "pointer",
             animation: genPulse && !generating ? "genPulse 0.9s ease" : "none",
-            flexShrink:0, boxShadow:"0 4px 20px rgba(99,102,241,0.4)",
-            border: generating ? "1px solid rgba(129,140,248,0.4)" : "1px solid transparent",
+            flexShrink:0, boxShadow: P.shadowAccent,
+            border: generating ? `1px solid ${P.borderActive}` : "1px solid transparent",
           }}>
             {generating ? (
               <motion.span initial={{ opacity:0 }} animate={{ opacity:1 }}

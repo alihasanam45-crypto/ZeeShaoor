@@ -1,0 +1,6 @@
+﻿question_hash,active,topic,question_type,question_style,question,difficulty,marks,weightage,smart_syllabus
+q_9_eng_poetry_summary_001,1,ENGLISH_A | Poetry Summary | Chapter 3 - Daffodils | Poet: William Wordsworth | SINGLE SUMMARY,Long,poem_summary,Write a summary of the poem “Daffodils” by William Wordsworth.,Medium,5,PRO,1
+q_9_eng_poetry_summary_002,1,ENGLISH_A | Poetry Summary | Chapter 7 - If | Poet: Rudyard Kipling | SINGLE SUMMARY,Long,poem_summary,Write a summary of the poem “If” by Rudyard Kipling.,Medium,5,PRO,1
+q_9_eng_poetry_summary_003,1,ENGLISH_A | Poetry Summary | Daffodils and If | DUAL CHOICE | ATTEMPT ANY 1,Long,poem_summary,"Write a summary of any ONE of the following poems:
+(a) “Daffodils” by William Wordsworth
+(b) “If” by Rudyard Kipling",Medium,5,PRO,1

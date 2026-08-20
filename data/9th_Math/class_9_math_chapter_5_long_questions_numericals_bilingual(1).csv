@@ -1,0 +1,43 @@
+﻿question_hash,active,topic,question_type,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+sep_9_math_ch5_001,1,5.1 Linear Equations in One Variable,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_001,1,5.1 Linear Equations in One Variable,Long,process_procedure,"Explain the method of solving a linear equation in one variable, including removal of fractions, collection of like terms, verification, and number-line representation.",one variable میں linear equation solve کرنے کا method واضح کریں، جس میں fractions remove کرنا، like terms collect کرنا، verification اور number-line representation شامل ہوں۔,Medium,5,PRO,1
+sep_9_math_ch5_002,1,5.2 Linear Inequalities in One Variable,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_002,1,5.2 Linear Inequalities in One Variable,Long,state_and_explain,"State and explain the properties used to solve linear inequalities, especially the effect of multiplication or division by a negative number, and describe interval and number-line notation.",linear inequalities solve کرنے کی properties بیان اور واضح کریں، خصوصاً negative number سے multiplication یا division کا effect، اور interval و number-line notation بیان کریں۔,Medium,5,PRO,1
+sep_9_math_ch5_003,1,5.2 Linear Inequalities in Two Variables,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_003,1,5.2 Linear Inequalities in Two Variables,Long,process_procedure,"Describe the procedure for graphing a linear inequality in two variables by using its associated equation, boundary line, test point, and solution half-plane.",associated equation، boundary line، test point اور solution half-plane کی مدد سے two variables میں linear inequality graph کرنے کی procedure بیان کریں۔,Hard,5,PRO,1
+sep_9_math_ch5_004,1,5.2 System of Linear Inequalities,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_004,1,5.2 System of Linear Inequalities,Long,diagram_based,Explain how the common solution region of a system of linear inequalities is obtained and represented graphically.,وضاحت کریں کہ system of linear inequalities کا common solution region graphically کیسے obtain اور represent کیا جاتا ہے۔,Medium,5,ULTRA,1
+sep_9_math_ch5_005,1,5.3 Linear Programming and Optimization,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_005,1,5.3 Linear Programming and Optimization,Long,process_procedure,"Define decision variables, constraints, feasible region, corner points, objective function, feasible solution, and optimal solution. Explain the corner-point method for maximization or minimization.",decision variables، constraints، feasible region، corner points، objective function، feasible solution اور optimal solution کی تعریف کریں اور maximization یا minimization کے لیے corner-point method کی وضاحت کریں۔,Hard,5,PRO,1
+sep_9_math_ch5_006,1,5.1 Linear Equations — Solved Examples,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_006,1,5.1 Linear Equations — Solved Examples,Numerical,solve,Solve and verify: (a) 5x − 10 = 10 | (b) 12x + 30 = −6 | (c) x/3 + 6 = −12 | (d) (x − 2)/5 − (x − 4)/2 = 2.,solve اور verify کریں: (a) 5x − 10 = 10 | (b) 12x + 30 = −6 | (c) x/3 + 6 = −12 | (d) (x − 2)/5 − (x − 4)/2 = 2,Medium,4,ULTRA,1
+sep_9_math_ch5_007,1,Exercise 5.1 Linear Equations,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_007,1,Exercise 5.1 Linear Equations,Numerical,solve,Solve the linear equations and represent each solution on the real-number line: (a) 12x + 30 = −6 | (b) x/3 + 6 = −12.,linear equations solve کریں اور each solution کو real-number line پر represent کریں: (a) 12x + 30 = −6 | (b) x/3 + 6 = −12,Medium,4,PRO,1
+sep_9_math_ch5_008,1,Exercise 5.1 Linear Inequalities,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_008,1,Exercise 5.1 Linear Inequalities,Numerical,solve,Solve and represent the solution sets on number lines: (a) x − 6 ≤ −2 | (b) −9 > −16 + x | (c) 3 + 2x ≥ 23 | (d) 6(x + 10) < 0.,inequalities solve کریں اور solution sets کو number lines پر represent کریں: (a) x − 6 ≤ −2 | (b) −9 > −16 + x | (c) 3 + 2x ≥ 23 | (d) 6(x + 10) < 0,Medium,4,PRO,1
+sep_9_math_ch5_009,1,Exercise 5.1 Graphing Linear Inequalities,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_009,1,Exercise 5.1 Graphing Linear Inequalities,Numerical,determine,"Draw the boundary line, choose a test point, and shade the solution region for: (a) 2x + y ≤ 6 | (b) 3x + 7y ≥ 21 | (c) 3x − 2y ≥ 6 | (d) 5x − 4y < 20 | (e) 3y − 4 < 0.",boundary line draw کریں، test point choose کریں اور solution region shade کریں: (a) 2x + y ≤ 6 | (b) 3x + 7y ≥ 21 | (c) 3x − 2y ≥ 6 | (d) 5x − 4y < 20 | (e) 3y − 4 < 0,Hard,4,PRO,1
+sep_9_math_ch5_010,1,Exercise 5.1 Systems of Inequalities,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_010,1,Exercise 5.1 Systems of Inequalities,Numerical,solve,Graph and determine the common solution region: (a) 2x − 3y ≤ 6 and 2x + 3y < 12 | (b) 3x + 7y ≥ 21 and x − 2y ≤ 2 | (c) 4x − 3y < 12 and 3y ≤ 4.,systems graph کریں اور common solution region معلوم کریں: (a) 2x − 3y ≤ 6 and 2x + 3y < 12 | (b) 3x + 7y ≥ 21 and x − 2y ≤ 2 | (c) 4x − 3y < 12 and 3y ≤ 4,Hard,4,PRO,1
+sep_9_math_ch5_011,1,5.3 Feasible Region — Solved Examples,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_011,1,5.3 Feasible Region — Solved Examples,Numerical,determine,"Determine the feasible region and its corner points for x − y ≤ 3, x + 2y ≤ 6, x ≥ 0, and y ≥ 0.","feasible region اور اس کے corner points معلوم کریں: x − y ≤ 3, x + 2y ≤ 6, x ≥ 0, y ≥ 0",Hard,4,ULTRA,1
+sep_9_math_ch5_012,1,Exercise 5.2 Maximization Problem 1,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_012,1,Exercise 5.2 Maximization Problem 1,Numerical,solve,"Maximize f(x,y)=2x+5y subject to 2y−x≤8, x−y≤4, x≥0, and y≥0.","given constraints کے تحت f(x,y)=2x+5y maximize کریں: 2y−x≤8, x−y≤4, x≥0, y≥0",Hard,4,PRO,1
+sep_9_math_ch5_013,1,Exercise 5.2 Maximization Problem 2,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_013,1,Exercise 5.2 Maximization Problem 2,Numerical,solve,"Maximize z=x+3y subject to 2x+5y≤30, 5x+4y≤20, x≥0, and y≥0.","given constraints کے تحت z=x+3y maximize کریں: 2x+5y≤30, 5x+4y≤20, x≥0, y≥0",Hard,4,PRO,1
+sep_9_math_ch5_014,1,Exercise 5.2 Maximization Problem 3,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_014,1,Exercise 5.2 Maximization Problem 3,Numerical,solve,"Maximize z=2x+3y subject to 2x+y≤4, 4x−y≤4, x≥0, and y≥0.","given constraints کے تحت z=2x+3y maximize کریں: 2x+y≤4, 4x−y≤4, x≥0, y≥0",Hard,4,PRO,1
+sep_9_math_ch5_015,1,Exercise 5.2 Minimization Problem,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_015,1,Exercise 5.2 Minimization Problem,Numerical,solve,"Minimize z=2x+y subject to x+y≥3, 7x+5y≤35, x≥0, and y≥0.","given constraints کے تحت z=2x+y minimize کریں: x+y≥3, 7x+5y≤35, x≥0, y≥0",Hard,4,PRO,1
+sep_9_math_ch5_016,1,Exercise 5.2 Maximization Problem 4,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_016,1,Exercise 5.2 Maximization Problem 4,Numerical,solve,"Maximize f(x,y)=2x+3y subject to 2x+y≤8, x+2y≤14, x≥0, and y≥0.","given constraints کے تحت f(x,y)=2x+3y maximize کریں: 2x+y≤8, x+2y≤14, x≥0, y≥0",Hard,4,PRO,1
+sep_9_math_ch5_017,1,Exercise 5.2 Minimum and Maximum,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_017,1,Exercise 5.2 Minimum and Maximum,Numerical,solve,"Find the minimum and maximum values of z=3x+y subject to 3x+5y≥15, x+6y≥9, x≥0, and y≥0, wherever the feasible region permits.","given constraints کے تحت z=3x+y کی minimum اور maximum values معلوم کریں، جہاں feasible region اجازت دے: 3x+5y≥15, x+6y≥9, x≥0, y≥0",Hard,4,PRO,1
+sep_9_math_ch5_018,1,Review Exercise 5 Inequality,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_018,1,Review Exercise 5 Inequality,Numerical,solve,Solve and express the answer in interval notation: 5(x−3) ≥ 26x − (10x+4).,inequality solve کریں اور answer کو interval notation میں express کریں: 5(x−3) ≥ 26x − (10x+4),Medium,4,PRO,1
+sep_9_math_ch5_019,1,Review Exercise 5 Graphical Systems,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_019,1,Review Exercise 5 Graphical Systems,Numerical,determine,Graph and find the common solution region: (a) 3x−4y≤12 and 3x+2y≥3 | (b) x+y<4 and x−2y<6.,systems graph کریں اور common solution region معلوم کریں: (a) 3x−4y≤12 and 3x+2y≥3 | (b) x+y<4 and x−2y<6,Hard,4,PRO,1
+sep_9_math_ch5_020,1,Review Exercise 5 Maximization,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_020,1,Review Exercise 5 Maximization,Numerical,solve,"Maximize g=x+4y subject to x+y≤4, x≥0, and y≥0.","given constraints کے تحت g=x+4y maximize کریں: x+y≤4, x≥0, y≥0",Medium,4,PRO,1
+sep_9_math_ch5_021,1,Review Exercise 5 Minimization,Topic,topic_separator,,,,,,1
+q_9_math_ch5_lq_021,1,Review Exercise 5 Minimization,Numerical,solve,"Minimize f=3x+5y subject to x+3y≥3, x+y≥2, x≥0, and y≥0.","given constraints کے تحت f=3x+5y minimize کریں: x+3y≥3, x+y≥2, x≥0, y≥0",Hard,4,PRO,1

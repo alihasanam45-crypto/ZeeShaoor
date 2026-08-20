@@ -1,3 +1,8 @@
+'use client'
+
+// Client-only: the `icon` fields are React components and must not cross the
+// server→client boundary. See components/shell/nav.ts for the full rationale.
+
 import type { ElementType } from 'react'
 import {
   Activity, Heart, HeartPulse, Network, TrendingUp,

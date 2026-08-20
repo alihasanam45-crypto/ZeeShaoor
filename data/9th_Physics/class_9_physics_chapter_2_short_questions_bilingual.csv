@@ -1,0 +1,65 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,2.1 Scalars and Vectors,topic_separator,,,,,,1
+q_9_phy_ch2_sq_001,1,2.1 Scalars and Vectors,definition_example,Define a scalar quantity and give three suitable examples.,scalar quantity کی تعریف کریں اور تین مناسب مثالیں دیں۔,Easy,2,PRO,1
+q_9_phy_ch2_sq_002,1,2.1 Scalars and Vectors,definition_example,Define a vector quantity and give three suitable examples.,vector quantity کی تعریف کریں اور تین مناسب مثالیں دیں۔,Easy,2,PRO,1
+q_9_phy_ch2_sq_003,1,2.1 Scalars and Vectors,difference,Differentiate between scalar and vector quantities using magnitude and direction.,magnitude اور direction کے لحاظ سے scalar اور vector quantities میں فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,2.1 Representation of Vectors,topic_separator,,,,,,1
+q_9_phy_ch2_sq_004,1,2.1 Representation of Vectors,features_characteristics,State how the magnitude and direction of a vector are represented graphically.,بیان کریں کہ vector کی magnitude اور direction کو graphically کیسے represent کیا جاتا ہے۔,Easy,2,ULTRA,1
+q_9_phy_ch2_sq_005,1,2.1 Representation of Vectors,application_scenario,Explain how the direction of a vector is indicated when it is written without bold type.,وضاحت کریں کہ vector کو bold type کے بغیر لکھنے پر اس کی direction کیسے ظاہر کی جاتی ہے۔,Medium,2,PRO,1
+q_9_phy_ch2_sq_006,1,2.1 Representation of Vectors,process_steps,Describe the steps for drawing a vector of a given magnitude and direction using a suitable scale.,مناسب scale استعمال کرتے ہوئے دی گئی magnitude اور direction کا vector draw کرنے کے steps بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,2.1 Resultant Vector,topic_separator,,,,,,1
+q_9_phy_ch2_sq_007,1,2.1 Resultant Vector,definition_function,Define a resultant vector and state what combined effect it represents.,resultant vector کی تعریف کریں اور بیان کریں کہ یہ کس combined effect کو represent کرتا ہے۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,2.1 Addition of Vectors,topic_separator,,,,,,1
+q_9_phy_ch2_sq_008,1,2.1 Addition of Vectors,law_principle,State the head-to-tail rule for the graphical addition of vectors.,vectors کی graphical addition کے لیے head-to-tail rule بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,2.2 Rest and Motion,topic_separator,,,,,,1
+q_9_phy_ch2_sq_009,1,2.2 Rest and Motion,difference,Differentiate between rest and motion with reference to surroundings.,surroundings کے حوالے سے rest اور motion میں فرق بیان کریں۔,Easy,2,PRO,1
+q_9_phy_ch2_sq_010,1,2.2 Rest and Motion,concept_explanation,Explain why the state of rest or motion of a body is relative.,وضاحت کریں کہ body کی rest یا motion کی state relative کیوں ہوتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,2.3 Types of Motion,topic_separator,,,,,,1
+q_9_phy_ch2_sq_011,1,2.3 Types of Motion,classification,"Classify motion into translatory, rotatory, and vibratory motion and give one example of each.",motion کو translatory، rotatory اور vibratory motion میں classify کریں اور ہر ایک کی ایک example دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,2.3 Translatory Motion,topic_separator,,,,,,1
+q_9_phy_ch2_sq_012,1,2.3 Translatory Motion,classification,Name the three types of translatory motion and give one example of each.,translatory motion کی تین types کے نام لکھیں اور ہر ایک کی ایک example دیں۔,Easy,2,ULTRA,1
+q_9_phy_ch2_sq_013,1,2.3 Types of Motion,difference,Differentiate between rotatory and vibratory motion using their paths and examples.,path اور examples کے لحاظ سے rotatory اور vibratory motion میں فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,2.4 Distance and Displacement,topic_separator,,,,,,1
+q_9_phy_ch2_sq_014,1,2.4 Distance and Displacement,difference,"Differentiate between distance and displacement using path, direction, and type of quantity.",path، direction اور quantity کی type کے لحاظ سے distance اور displacement میں فرق بیان کریں۔,Medium,2,PRO,1
+q_9_phy_ch2_sq_015,1,2.4 Distance and Displacement,concept_explanation,Explain when the magnitude of displacement can be equal to the distance travelled.,وضاحت کریں کہ displacement کی magnitude، travelled distance کے equal کب ہو سکتی ہے۔,Medium,2,PRO,1
+q_9_phy_ch2_sq_016,1,2.4 Distance and Displacement,application_scenario,A runner completes one full circular lap and returns to the starting point. State the distance and displacement conditions.,runner ایک مکمل circular lap کے بعد starting point پر واپس آتا ہے۔ distance اور displacement کی conditions بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,2.5 Speed and Velocity,topic_separator,,,,,,1
+q_9_phy_ch2_sq_017,1,2.5 Speed and Velocity,definition_unit,Define speed and state its SI unit.,speed کی تعریف کریں اور اس کی SI unit بیان کریں۔,Easy,2,ULTRA,1
+q_9_phy_ch2_sq_018,1,2.5 Speed and Velocity,definition_formula,Define average speed and write its mathematical relationship.,average speed کی تعریف کریں اور اس کا mathematical relationship لکھیں۔,Easy,2,PRO,1
+q_9_phy_ch2_sq_019,1,2.5 Speed and Velocity,difference,Differentiate between average speed and instantaneous speed.,average speed اور instantaneous speed میں فرق بیان کریں۔,Medium,2,ULTRA,1
+q_9_phy_ch2_sq_020,1,2.5 Speed and Velocity,definition_unit,Define velocity and state its SI unit and direction.,velocity کی تعریف کریں اور اس کی SI unit اور direction بیان کریں۔,Easy,2,ULTRA,1
+q_9_phy_ch2_sq_021,1,2.5 Speed and Velocity,difference,Differentiate between speed and velocity using scalar-vector nature and path information.,scalar-vector nature اور path information کے لحاظ سے speed اور velocity میں فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,2.5 Uniform and Non-Uniform Velocity,topic_separator,,,,,,1
+q_9_phy_ch2_sq_022,1,2.5 Uniform and Non-Uniform Velocity,difference,Differentiate between uniform and non-uniform velocity.,uniform اور non-uniform velocity میں فرق بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,2.5 Uniform Circular Motion,topic_separator,,,,,,1
+q_9_phy_ch2_sq_023,1,2.5 Uniform Circular Motion,explain_reason,Explain why a body moving with constant speed in a circle does not have uniform velocity.,وضاحت کریں کہ circle میں constant speed سے moving body کی velocity uniform کیوں نہیں ہوتی۔,Hard,2,PRO,1
+TOPIC_SEP,1,2.6 Acceleration,topic_separator,,,,,,1
+q_9_phy_ch2_sq_024,1,2.6 Acceleration,definition_formula,Define average acceleration and write its mathematical relationship.,average acceleration کی تعریف کریں اور اس کا mathematical relationship لکھیں۔,Easy,2,PRO,1
+q_9_phy_ch2_sq_025,1,2.6 Acceleration,definition_unit,State the SI unit of acceleration and show how it is obtained from velocity and time units.,acceleration کی SI unit بیان کریں اور دکھائیں کہ یہ velocity اور time units سے کیسے حاصل ہوتی ہے۔,Medium,2,ULTRA,1
+q_9_phy_ch2_sq_026,1,2.6 Acceleration,difference,Differentiate between acceleration and deceleration.,acceleration اور deceleration میں فرق بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,2.6 Uniform and Non-Uniform Acceleration,topic_separator,,,,,,1
+q_9_phy_ch2_sq_027,1,2.6 Uniform and Non-Uniform Acceleration,difference,Differentiate between uniform and non-uniform acceleration.,uniform اور non-uniform acceleration میں فرق بیان کریں۔,Medium,2,PRO,1
+q_9_phy_ch2_sq_028,1,2.6 Acceleration,application_scenario,"State whether acceleration is possible during constant velocity and during constant speed, giving a reason for each case.",بیان کریں کہ constant velocity اور constant speed کے دوران acceleration ممکن ہے یا نہیں، اور ہر case کی reason دیں۔,Hard,2,PRO,1
+TOPIC_SEP,1,2.7 Graphical Analysis of Motion,topic_separator,,,,,,1
+q_9_phy_ch2_sq_029,1,2.7 Graphical Analysis of Motion,process_steps,State the main steps for plotting a distance-time graph from a table of observations.,observations کی table سے distance-time graph plot کرنے کے main steps بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,2.7 Distance-Time Graph,topic_separator,,,,,,1
+q_9_phy_ch2_sq_030,1,2.7 Distance-Time Graph,diagram_based,"Describe the shapes of distance-time graphs for a body at rest, moving with uniform speed, accelerating, and decelerating.",rest، uniform speed، acceleration اور deceleration والی body کے distance-time graphs کی shapes بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,2.8 Gradient of Distance-Time Graph,topic_separator,,,,,,1
+q_9_phy_ch2_sq_031,1,2.8 Gradient of Distance-Time Graph,formula_relationship,State what the gradient of a distance-time graph represents and identify the quantities used to calculate it.,بیان کریں کہ distance-time graph کا gradient کیا represent کرتا ہے اور اسے calculate کرنے والی quantities identify کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,2.9–2.10 Speed-Time Graph,topic_separator,,,,,,1
+q_9_phy_ch2_sq_032,1,2.9–2.10 Speed-Time Graph,diagram_based,Describe the speed-time graphs for constant speed and uniform acceleration.,constant speed اور uniform acceleration کے speed-time graphs بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,2.10 Gradient of Speed-Time Graph,topic_separator,,,,,,1
+q_9_phy_ch2_sq_033,1,2.10 Gradient of Speed-Time Graph,formula_relationship,State what the gradient of a speed-time graph represents.,بیان کریں کہ speed-time graph کا gradient کیا represent کرتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,2.11 Area Under Speed-Time Graph,topic_separator,,,,,,1
+q_9_phy_ch2_sq_034,1,2.11 Area Under Speed-Time Graph,formula_relationship,State the physical quantity represented by the area under a speed-time graph and explain the relationship briefly.,speed-time graph کے نیچے area سے represented physical quantity بیان کریں اور relationship briefly explain کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,2.12 Equations of Motion,topic_separator,,,,,,1
+q_9_phy_ch2_sq_035,1,2.12 Equations of Motion,list_state,Write the three equations of motion used for uniformly accelerated straight-line motion and identify their symbols.,uniformly accelerated straight-line motion کے لیے استعمال ہونے والی تین equations of motion لکھیں اور ان کی symbols identify کریں۔,Hard,2,PRO,1
+q_9_phy_ch2_sq_036,1,2.12 Equations of Motion,list_state,State the assumptions used while applying the equations of motion.,equations of motion apply کرتے وقت استعمال ہونے والی assumptions بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,2.13 Free-Fall Acceleration,topic_separator,,,,,,1
+q_9_phy_ch2_sq_037,1,2.13 Free-Fall Acceleration,definition_unit,Define free-fall acceleration and state its direction and approximate value used in calculations.,free-fall acceleration کی تعریف کریں اور calculations میں استعمال ہونے والی direction اور approximate value بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,2.13 Free Fall,topic_separator,,,,,,1
+q_9_phy_ch2_sq_038,1,2.13 Free Fall,explain_reason,Explain whether a heavier object falls faster than a lighter object when air resistance is neglected.,وضاحت کریں کہ air resistance neglect کرنے پر heavier object، lighter object سے faster fall کرتا ہے یا نہیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,2.13 Universal Speed Limit,topic_separator,,,,,,1
+q_9_phy_ch2_sq_039,1,2.13 Universal Speed Limit,concept_explanation,State the universal speed limit and explain its significance for objects having mass.,universal speed limit بیان کریں اور mass رکھنے والے objects کے لیے اس کی significance explain کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,2.5–2.13 Numerical Applications,topic_separator,,,,,,1
+q_9_phy_ch2_sq_040,1,2.5–2.13 Numerical Applications,numerical_short,A car travels 360 km with an average speed of 72 km/h. Calculate the travel time.,"درج ذیل data سے travel time معلوم کریں: distance = 360 km, average speed = 72 km/h",Hard,2,PRO,1

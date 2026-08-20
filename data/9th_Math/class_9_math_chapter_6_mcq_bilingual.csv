@@ -1,0 +1,64 @@
+﻿question_hash,active,topic,bloom_level,question,urdu_translation,A,B,C,D,correct_answer,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,6.1 Angles in Standard Position,Topic,,,,,,,,,,,1
+q_9_math_ch6_001,1,6.1 Angles in Standard Position,Remember,An angle is in standard position when its vertex is at the origin and its initial side lies on the:,angle standard position میں کب ہوتی ہے جب vertex origin پر اور initial side کس پر ہو؟,Positive x-axis / positive x-axis,Positive y-axis / positive y-axis,Negative x-axis / negative x-axis,Negative y-axis / negative y-axis,A | Positive x-axis / positive x-axis,Easy,1,PRO,1
+TOPIC_SEP,1,6.1 Positive and Negative Angles,Topic,,,,,,,,,,,1
+q_9_math_ch6_002,1,6.1 Positive and Negative Angles,Remember,A counterclockwise rotation gives a:,counterclockwise rotation کس type کی angle دیتی ہے؟,Negative angle / negative angle,Positive angle / positive angle,Zero angle only / صرف zero angle,Undefined angle / undefined angle,B | Positive angle / positive angle,Easy,1,PRO,1
+q_9_math_ch6_003,1,6.1 Positive and Negative Angles,Remember,A clockwise rotation gives a:,clockwise rotation کس type کی angle دیتی ہے؟,Positive angle / positive angle,Negative angle / negative angle,Right angle only / صرف right angle,Straight angle only / صرف straight angle,B | Negative angle / negative angle,Easy,1,PRO,1
+TOPIC_SEP,1,6.1 Co-Terminal Angles,Topic,,,,,,,,,,,1
+q_9_math_ch6_004,1,6.1 Co-Terminal Angles,Understand,Co-terminal angles differ by an integral multiple of:,co-terminal angles کس کے integral multiple سے differ کرتی ہیں؟,180° only,90° only,π/4 rad,360° or 2π rad,D | 360° or 2π rad,Easy,1,PRO,1
+TOPIC_SEP,1,6.1 Degree Measure,Topic,,,,,,,,,,,1
+q_9_math_ch6_005,1,6.1 Degree Measure,Remember,One complete rotation equals:,one complete rotation کس کے equal ہے؟,180°,360°,90°,720°,B | 360°,Easy,1,PRO,1
+q_9_math_ch6_006,1,6.1 Degree Measure,Remember,One degree equals:,one degree کس کے equal ہے؟,100′,60″,60′,3600′,C | 60′,Easy,1,PRO,1
+q_9_math_ch6_007,1,6.1 Degree Measure,Remember,One minute of angle equals:,one minute of angle کس کے equal ہے؟,60°,100″,60″,3600″,C | 60″,Easy,1,PRO,1
+TOPIC_SEP,1,6.1 Radian Measure,Topic,,,,,,,,,,,1
+q_9_math_ch6_008,1,6.1 Radian Measure,Remember,One complete revolution equals:,one complete revolution radians میں کس کے equal ہے؟,2π rad,π rad,π/2 rad,4π rad,A | 2π rad,Easy,1,PRO,1
+TOPIC_SEP,1,6.1 Degree-Radian Conversion,Topic,,,,,,,,,,,1
+q_9_math_ch6_009,1,6.1 Degree-Radian Conversion,Remember,The radian measure of 180° is:,180° کی radian measure کیا ہے؟,2π,π/2,π,1,C | π,Easy,1,PRO,1
+TOPIC_SEP,1,6.1 Arc Length,Topic,,,,,,,,,,,1
+q_9_math_ch6_010,1,6.1 Arc Length,Remember,"For θ in radians, the arc-length formula is:",θ radians میں ہو تو arc-length formula کیا ہے؟,ℓ = r/θ,ℓ = rθ,ℓ = πr²θ,ℓ = 2rθ²,B | ℓ = rθ,Easy,1,PRO,1
+TOPIC_SEP,1,6.1 Area of Sector,Topic,,,,,,,,,,,1
+q_9_math_ch6_011,1,6.1 Area of Sector,Remember,"For θ in radians, the area of a sector is:",θ radians میں ہو تو sector کا area کیا ہے؟,A = ½r²θ,A = rθ,A = 2r²θ,A = πrθ,A | A = ½r²θ,Easy,1,PRO,1
+TOPIC_SEP,1,6.2 Trigonometric Ratios,Topic,,,,,,,,,,,1
+q_9_math_ch6_012,1,6.2 Trigonometric Ratios,Remember,"In a right triangle, sin θ equals:",right triangle میں sin θ کس کے equal ہے؟,Perpendicular/Hypotenuse,Base/Hypotenuse,Perpendicular/Base,Hypotenuse/Perpendicular,A | Perpendicular/Hypotenuse,Easy,1,PRO,1
+q_9_math_ch6_013,1,6.2 Trigonometric Ratios,Remember,"In a right triangle, cos θ equals:",right triangle میں cos θ کس کے equal ہے؟,Perpendicular/Hypotenuse,Perpendicular/Base,Base/Hypotenuse,Hypotenuse/Base,C | Base/Hypotenuse,Easy,1,PRO,1
+q_9_math_ch6_014,1,6.2 Trigonometric Ratios,Remember,"In a right triangle, tan θ equals:",right triangle میں tan θ کس کے equal ہے؟,Base/Perpendicular,Hypotenuse/Base,Perpendicular/Hypotenuse,Perpendicular/Base,D | Perpendicular/Base,Easy,1,PRO,1
+TOPIC_SEP,1,6.3 Reciprocal Identities,Topic,,,,,,,,,,,1
+q_9_math_ch6_015,1,6.3 Reciprocal Identities,Remember,The reciprocal of sin θ is:,sin θ کا reciprocal کیا ہے؟,sec θ,cot θ,cosec θ,cos θ,C | cosec θ,Easy,1,PRO,1
+TOPIC_SEP,1,6.4 Special Angles,Topic,,,,,,,,,,,1
+q_9_math_ch6_016,1,6.4 Special Angles,Remember,The value of tan 45° is:,tan 45° کی value کیا ہے؟,0,√3,1/√3,1,D | 1,Easy,1,PRO,1
+TOPIC_SEP,1,6.1 Quadrants,Topic,,,,,,,,,,,1
+q_9_math_ch6_017,1,6.1 Quadrants,Apply,The angle 135° lies in which quadrant?,angle 135° کس quadrant میں lie کرتی ہے؟,First quadrant / first quadrant,Third quadrant / third quadrant,Second quadrant / second quadrant,Fourth quadrant / fourth quadrant,C | Second quadrant / second quadrant,Medium,1,PRO,1
+q_9_math_ch6_018,1,6.1 Quadrants,Apply,The angle −40° lies in which quadrant?,angle −40° کس quadrant میں lie کرتی ہے؟,First quadrant / first quadrant,Second quadrant / second quadrant,Fourth quadrant / fourth quadrant,Third quadrant / third quadrant,C | Fourth quadrant / fourth quadrant,Medium,1,PRO,1
+q_9_math_ch6_019,1,6.1 Co-Terminal Angles,Apply,A positive co-terminal angle of 45° is:,45° کی positive co-terminal angle کیا ہے؟,315°,405°,−315°,225°,B | 405°,Medium,1,PRO,1
+TOPIC_SEP,1,6.1 DMS Conversion,Topic,,,,,,,,,,,1
+q_9_math_ch6_020,1,6.1 DMS Conversion,Apply,"Convert 73.12° to degrees, minutes, and seconds.",73.12° کو degrees، minutes، seconds میں convert کریں۔,73° 12′ 7″,73° 6′ 20″,74° 7′ 12″,73° 7′ 12″,D | 73° 7′ 12″,Medium,1,PRO,1
+TOPIC_SEP,1,6.1 Decimal Degrees,Topic,,,,,,,,,,,1
+q_9_math_ch6_021,1,6.1 Decimal Degrees,Apply,Convert 45°45′45″ to decimal degrees.,45°45′45″ کو decimal degrees میں convert کریں۔,45.7625°,45.4545°,45.7500°,46.0125°,A | 45.7625°,Medium,1,PRO,1
+q_9_math_ch6_022,1,6.1 Degree-Radian Conversion,Apply,Convert 75° to radians.,75° کو radians میں convert کریں۔,5π/6,π/12,7π/12,5π/12,D | 5π/12,Medium,1,PRO,1
+q_9_math_ch6_023,1,6.1 Degree-Radian Conversion,Apply,Convert 5π/3 radians to degrees.,5π/3 radians کو degrees میں convert کریں۔,150°,240°,330°,300°,D | 300°,Medium,1,PRO,1
+q_9_math_ch6_024,1,6.1 Arc Length,Apply,Find the arc length when r=6 cm and θ=π/3.,r=6 cm اور θ=π/3 ہو تو arc length معلوم کریں۔,6π cm,π cm,2π cm,3π cm,C | 2π cm,Medium,1,PRO,1
+q_9_math_ch6_025,1,6.1 Area of Sector,Apply,Find the area of a sector with r=8 cm and θ=π/4.,r=8 cm اور θ=π/4 والے sector کا area معلوم کریں۔,8π cm²,16π cm²,4π cm²,32π cm²,A | 8π cm²,Medium,1,PRO,1
+TOPIC_SEP,1,6.2 Complementary Angles,Topic,,,,,,,,,,,1
+q_9_math_ch6_026,1,6.2 Complementary Angles,Remember,sin(90°−θ) equals:,sin(90°−θ) کس کے equal ہے؟,sin θ,cos θ,tan θ,sec θ,B | cos θ,Medium,1,PRO,1
+q_9_math_ch6_027,1,6.2 Complementary Angles,Remember,tan(90°−θ) equals:,tan(90°−θ) کس کے equal ہے؟,tan θ,sec θ,cosec θ,cot θ,D | cot θ,Medium,1,PRO,1
+TOPIC_SEP,1,6.3 Pythagorean Identities,Topic,,,,,,,,,,,1
+q_9_math_ch6_028,1,6.3 Pythagorean Identities,Remember,Which identity is correct?,کون سی trigonometric identity correct ہے؟,sin²θ + cos²θ = 1,sin²θ − cos²θ = 1,tan²θ + sec²θ = 1,cot²θ − cosec²θ = 1,A | sin²θ + cos²θ = 1,Medium,1,PRO,1
+q_9_math_ch6_029,1,6.3 Pythagorean Identities,Remember,Which identity is correct involving tangent and secant?,tangent اور secant والی کون سی identity correct ہے؟,1 + tan²θ = sec²θ,1 − tan²θ = sec²θ,tan²θ + sec²θ = 1,1 + sec²θ = tan²θ,A | 1 + tan²θ = sec²θ,Medium,1,PRO,1
+q_9_math_ch6_030,1,6.4 Special Angles,Apply,The value of sin 60° is:,sin 60° کی value کیا ہے؟,1/2,√3/2,1/√2,√3,B | √3/2,Medium,1,PRO,1
+q_9_math_ch6_031,1,6.4 Special Angles,Apply,The value of cos 30° is:,cos 30° کی value کیا ہے؟,√3/2,1/2,1,1/√3,A | √3/2,Medium,1,PRO,1
+TOPIC_SEP,1,6.5 Solution of a Triangle,Topic,,,,,,,,,,,1
+q_9_math_ch6_032,1,6.5 Solution of a Triangle,Understand,"To solve a right triangle, three elements are sufficient if they include at least:",right triangle solve کرنے کے لیے three elements sufficient ہیں بشرطیکہ ان میں at least کیا شامل ہو؟,Two right angles / two right angles,No side / no side,One side / one side,Only the area / صرف area,C | One side / one side,Medium,1,PRO,1
+TOPIC_SEP,1,6.1 Sector to Cone,Topic,,,,,,,,,,,1
+q_9_math_ch6_033,1,6.1 Sector to Cone,Analyze,A sector of radius 12 cm and angle 150° is bent into a cone. The cone's base radius is:,radius 12 cm اور angle 150° والا sector cone میں bend کیا جاتا ہے۔ cone کی base radius کیا ہے؟,12 cm,10 cm,2.5 cm,5 cm,D | 5 cm,Hard,1,PRO,1
+TOPIC_SEP,1,6.3 Trigonometric Ratios,Topic,,,,,,,,,,,1
+q_9_math_ch6_034,1,6.3 Trigonometric Ratios,Analyze,"If tan θ=3/4 in the first quadrant, then sin θ is:",first quadrant میں tan θ=3/4 ہو تو sin θ کیا ہے؟,4/5,5/3,3/4,3/5,D | 3/5,Hard,1,PRO,1
+TOPIC_SEP,1,6.3 Trigonometric Identities,Topic,,,,,,,,,,,1
+q_9_math_ch6_035,1,6.3 Trigonometric Identities,Analyze,Simplify sec²θ − tan²θ.,sec²θ − tan²θ کو simplify کریں۔,sin²θ,cos²θ,1,cot²θ,C | 1,Hard,1,PRO,1
+q_9_math_ch6_036,1,6.3 Trigonometric Identities,Analyze,Simplify tan θ + cot θ.,tan θ + cot θ کو simplify کریں۔,sin θ cos θ,sec θ cosec θ,1,sec²θ,B | sec θ cosec θ,Hard,1,PRO,1
+TOPIC_SEP,1,6.5 Solution of Triangle,Topic,,,,,,,,,,,1
+q_9_math_ch6_037,1,6.5 Solution of Triangle,Apply,A right triangle has hypotenuse 13 and an angle 30°. The side opposite 30° is:,right triangle کی hypotenuse 13 اور angle 30° ہے۔ 30° کے opposite side کیا ہے؟,5,7.5,13√3/2,6.5,D | 6.5,Hard,1,PRO,1
+TOPIC_SEP,1,6.6 Angle of Elevation,Topic,,,,,,,,,,,1
+q_9_math_ch6_038,1,6.6 Angle of Elevation,Apply,A person is 50 m from a building and sees its top at 45°. The building height is:,person building سے 50 m دور ہے اور top کو 45° پر دیکھتا ہے۔ building height کیا ہے؟,25 m,50 m,35 m,70 m,B | 50 m,Hard,1,PRO,1
+q_9_math_ch6_039,1,6.6 Angle of Elevation,Analyze,A tower 300 m high casts a 450 m shadow. The angle of elevation of the Sun is approximately:,300 m high tower کا shadow 450 m ہے۔ Sun کا angle of elevation approximately کیا ہے؟,45°,33.7°,56.3°,60°,B | 33.7°,Hard,1,PRO,1
+TOPIC_SEP,1,6.6 Two Observation Points,Topic,,,,,,,,,,,1
+q_9_math_ch6_040,1,6.6 Two Observation Points,Analyze,"A pole is observed at 15°, then after moving 100 m toward it at 30°. Its height is approximately:",pole کو پہلے 15° پر اور 100 m toward move کرنے کے بعد 30° پر observe کیا جاتا ہے۔ height approximately کیا ہے؟,50 m,25 m,100 m,173.2 m,A | 50 m,Hard,1,PRO,1

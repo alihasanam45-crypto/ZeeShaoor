@@ -1,0 +1,78 @@
+﻿question_hash,active,topic,bloom_level,question,urdu_translation,A,B,C,D,correct_answer,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,9.1 Similar Figures,Topic,,,,,,,,,,,1
+q_9_math_ch9_001,1,9.1 Similar Figures,Remember,Similar figures have the same:,similar figures کی same کیا ہوتی ہے؟,Size necessarily / ضروری طور پر size,Area necessarily / ضروری طور پر area,Shape / shape,Perimeter necessarily / ضروری طور پر perimeter,C | Shape / shape,Easy,1,PRO,1
+TOPIC_SEP,1,9.1 Similar Polygons,Topic,,,,,,,,,,,1
+q_9_math_ch9_002,1,9.1 Similar Polygons,Remember,Two polygons are similar when corresponding angles are equal and corresponding sides are:,two polygons similar کب ہوتے ہیں جب corresponding angles equal اور corresponding sides کیسی ہوں؟,Perpendicular / perpendicular,Parallel only / صرف parallel,All equal to 1 / سب 1 کے equal,Proportional / proportional,D | Proportional / proportional,Easy,1,PRO,1
+TOPIC_SEP,1,9.1 Similar Triangles,Topic,,,,,,,,,,,1
+q_9_math_ch9_003,1,9.1 Similar Triangles,Remember,The symbol used for similarity is:,similarity کے لیے کون سا symbol use ہوتا ہے؟,≅,∼,⊥,∈,B | ∼,Easy,1,PRO,1
+TOPIC_SEP,1,9.1 AA Similarity,Topic,,,,,,,,,,,1
+q_9_math_ch9_004,1,9.1 AA Similarity,Remember,"If two angles of one triangle equal two angles of another triangle, the triangles are similar by:",اگر one triangle کے two angles دوسرے triangle کے two angles کے equal ہوں تو triangles کس criterion سے similar ہیں؟,AA,SSS,SAS,RHS,A | AA,Easy,1,PRO,1
+TOPIC_SEP,1,9.1 SAS Similarity,Topic,,,,,,,,,,,1
+q_9_math_ch9_005,1,9.1 SAS Similarity,Remember,"In SAS similarity, the equal angle must be:",SAS similarity میں equal angle کی position کیا ہونی چاہیے؟,Included between the proportional sides / proportional sides کے درمیان included,Opposite both sides / دونوں sides کے opposite,A right angle only / صرف right angle,An exterior angle / exterior angle,A | Included between the proportional sides / proportional sides کے درمیان included,Easy,1,PRO,1
+TOPIC_SEP,1,9.1 SSS Similarity,Topic,,,,,,,,,,,1
+q_9_math_ch9_006,1,9.1 SSS Similarity,Remember,SSS similarity requires:,SSS similarity کے لیے کیا required ہے؟,Only one pair of sides equal / صرف one pair sides equal,All three pairs of corresponding sides proportional / corresponding sides کے all three pairs proportional,Two angles supplementary / two angles supplementary,Equal areas / equal areas,B | All three pairs of corresponding sides proportional / corresponding sides کے all three pairs proportional,Easy,1,PRO,1
+TOPIC_SEP,1,9.1 Scale Factor,Topic,,,,,,,,,,,1
+q_9_math_ch9_007,1,9.1 Scale Factor,Remember,The ratio of corresponding side lengths of similar figures is called the:,similar figures کی corresponding side lengths کے ratio کو کیا کہتے ہیں؟,Area factor / area factor,Frequency / frequency,Gradient / gradient,Scale factor / scale factor,D | Scale factor / scale factor,Easy,1,PRO,1
+TOPIC_SEP,1,9.1 Perimeters of Similar Figures,Topic,,,,,,,,,,,1
+q_9_math_ch9_008,1,9.1 Perimeters of Similar Figures,Understand,The ratio of the perimeters of two similar polygons equals the ratio of their:,two similar polygons کے perimeters کا ratio کس ratio کے equal ہوتا ہے؟,Corresponding sides / corresponding sides,Areas / areas,Volumes / volumes,Angles / angles,A | Corresponding sides / corresponding sides,Easy,1,PRO,1
+TOPIC_SEP,1,9.2 Areas of Similar Figures,Topic,,,,,,,,,,,1
+q_9_math_ch9_009,1,9.2 Areas of Similar Figures,Remember,"If the linear scale factor is k, the area scale factor is:",اگر linear scale factor k ہو تو area scale factor کیا ہوگا؟,k,k²,k³,2k,B | k²,Easy,1,PRO,1
+TOPIC_SEP,1,9.2 Volumes of Similar Solids,Topic,,,,,,,,,,,1
+q_9_math_ch9_010,1,9.2 Volumes of Similar Solids,Remember,"If the linear scale factor is k, the volume scale factor is:",اگر linear scale factor k ہو تو volume scale factor کیا ہوگا؟,k,k²,k³,3k,C | k³,Easy,1,PRO,1
+TOPIC_SEP,1,9.3 Regular Polygons,Topic,,,,,,,,,,,1
+q_9_math_ch9_011,1,9.3 Regular Polygons,Remember,The sum of interior angles of an n-sided polygon is:,n-sided polygon کے interior angles کا sum کیا ہے؟,(n−2)×180°,n×180°,(n−1)×180°,360°/n,A | (n−2)×180°,Easy,1,PRO,1
+q_9_math_ch9_012,1,9.3 Regular Polygons,Remember,Each exterior angle of a regular n-sided polygon is:,regular n-sided polygon کا each exterior angle کیا ہے؟,360°/n,180°/n,(n−2)×180°,n/360°,A | 360°/n,Easy,1,PRO,1
+TOPIC_SEP,1,9.3 Diagonals of Polygons,Topic,,,,,,,,,,,1
+q_9_math_ch9_013,1,9.3 Diagonals of Polygons,Remember,The number of diagonals of an n-sided polygon is:,n-sided polygon میں diagonals کی number کیا ہے؟,n(n−2)/2,n(n−3)/2,n(n−1)/2,2n−3,B | n(n−3)/2,Easy,1,PRO,1
+TOPIC_SEP,1,9.3 Triangle Properties,Topic,,,,,,,,,,,1
+q_9_math_ch9_014,1,9.3 Triangle Properties,Remember,The sum of the interior angles of a triangle is:,triangle کے interior angles کا sum کیا ہے؟,90°,180°,270°,360°,B | 180°,Easy,1,PRO,1
+TOPIC_SEP,1,9.3 Parallelograms,Topic,,,,,,,,,,,1
+q_9_math_ch9_015,1,9.3 Parallelograms,Remember,Opposite sides of a parallelogram are:,parallelogram کی opposite sides کیسی ہوتی ہیں؟,Parallel and equal / parallel اور equal,Perpendicular and unequal / perpendicular اور unequal,Always vertical / ہمیشہ vertical,Adjacent and equal only / صرف adjacent اور equal,A | Parallel and equal / parallel اور equal,Easy,1,PRO,1
+TOPIC_SEP,1,9.3 Tessellation,Topic,,,,,,,,,,,1
+q_9_math_ch9_016,1,9.3 Tessellation,Remember,Which regular polygon can tessellate a plane by itself?,کون سا regular polygon plane کو خود tessellate کر سکتا ہے؟,Regular pentagon / regular pentagon,Regular heptagon / regular heptagon,Square / square,Regular nonagon / regular nonagon,C | Square / square,Easy,1,PRO,1
+q_9_math_ch9_017,1,9.1 Similar Triangles,Apply,"Two triangles have corresponding sides 4.5 cm and 3 cm, and 6 cm and 4 cm. Their common scale ratio is:",two triangles کی corresponding sides 4.5 cm اور 3 cm، اور 6 cm اور 4 cm ہیں۔ common scale ratio کیا ہے؟,2:3,3:2,5:3,4:3,B | 3:2,Medium,1,PRO,1
+TOPIC_SEP,1,9.1 Missing Side,Topic,,,,,,,,,,,1
+q_9_math_ch9_018,1,9.1 Missing Side,Apply,"Two similar triangles have scale factor 3/2 from smaller to larger. If a smaller side is 8 cm, the corresponding larger side is:",smaller سے larger کا scale factor 3/2 ہے۔ smaller side 8 cm ہو تو corresponding larger side کیا ہے؟,12 cm,10 cm,16 cm,20 cm,A | 12 cm,Medium,1,PRO,1
+TOPIC_SEP,1,9.1 Similarity and Parallel Lines,Topic,,,,,,,,,,,1
+q_9_math_ch9_019,1,9.1 Similarity and Parallel Lines,Understand,"When a line is drawn parallel to one side of a triangle, the smaller triangle formed is similar to the original mainly because of:",triangle کی one side کے parallel line draw کرنے سے smaller triangle original کے similar mainly کیوں ہوتا ہے؟,Equal areas / equal areas,Equal perimeters / equal perimeters,Equal corresponding angles / equal corresponding angles,All sides are identical / all sides identical,C | Equal corresponding angles / equal corresponding angles,Medium,1,PRO,1
+TOPIC_SEP,1,9.1 Similar Quadrilaterals,Topic,,,,,,,,,,,1
+q_9_math_ch9_020,1,9.1 Similar Quadrilaterals,Understand,"For two quadrilaterals to be similar, their corresponding angles must be equal and their corresponding sides must have:",two quadrilaterals similar ہونے کے لیے corresponding angles equal اور corresponding sides کا کیا ہونا required ہے؟,A common ratio / common ratio,A common sum / common sum,Equal diagonals only / صرف equal diagonals,Right angles only / صرف right angles,A | A common ratio / common ratio,Medium,1,PRO,1
+TOPIC_SEP,1,9.1 Perimeter Scale Factor,Topic,,,,,,,,,,,1
+q_9_math_ch9_021,1,9.1 Perimeter Scale Factor,Apply,The perimeters of two similar polygons are 24 cm and 36 cm. The linear scale factor from the first to the second is:,two similar polygons کے perimeters 24 cm اور 36 cm ہیں۔ first سے second linear scale factor کیا ہے؟,2/3,3/2,9/4,1/2,B | 3/2,Medium,1,PRO,1
+TOPIC_SEP,1,9.2 Area Scale Factor,Topic,,,,,,,,,,,1
+q_9_math_ch9_022,1,9.2 Area Scale Factor,Apply,Two similar triangles have corresponding side ratio 2:3. Their area ratio is:,two similar triangles کی corresponding side ratio 2:3 ہے۔ area ratio کیا ہے؟,2:3,8:27,6:9,4:9,D | 4:9,Medium,1,PRO,1
+TOPIC_SEP,1,9.2 Area of Similar Figures,Topic,,,,,,,,,,,1
+q_9_math_ch9_023,1,9.2 Area of Similar Figures,Apply,A small similar figure has area 20 cm² and the linear scale factor to a larger figure is 3. The larger area is:,small similar figure کا area 20 cm² اور larger figure تک linear scale factor 3 ہے۔ larger area کیا ہے؟,60 cm²,120 cm²,540 cm²,180 cm²,D | 180 cm²,Medium,1,PRO,1
+TOPIC_SEP,1,9.2 Volume Scale Factor,Topic,,,,,,,,,,,1
+q_9_math_ch9_024,1,9.2 Volume Scale Factor,Apply,Two similar solids have linear scale factor 2. Their volume ratio is:,two similar solids کا linear scale factor 2 ہے۔ volume ratio کیا ہے؟,2:1,4:1,8:1,6:1,C | 8:1,Medium,1,PRO,1
+TOPIC_SEP,1,9.2 Mass of Similar Solids,Topic,,,,,,,,,,,1
+q_9_math_ch9_025,1,9.2 Mass of Similar Solids,Understand,"For similar solids made of the same material, the ratio of their masses equals the ratio of their:",same material سے بنے similar solids کی masses کا ratio کس ratio کے equal ہوتا ہے؟,Surface lengths / surface lengths,Volumes / volumes,Angles / angles,Perimeters / perimeters,B | Volumes / volumes,Medium,1,PRO,1
+TOPIC_SEP,1,9.3 Regular Polygon Interior Angle,Topic,,,,,,,,,,,1
+q_9_math_ch9_026,1,9.3 Regular Polygon Interior Angle,Apply,Each interior angle of a regular hexagon is:,regular hexagon کا each interior angle کیا ہے؟,60°,90°,120°,135°,C | 120°,Medium,1,PRO,1
+TOPIC_SEP,1,9.3 Regular Polygon Exterior Angle,Topic,,,,,,,,,,,1
+q_9_math_ch9_027,1,9.3 Regular Polygon Exterior Angle,Apply,Each exterior angle of a regular octagon is:,regular octagon کا each exterior angle کیا ہے؟,40°,60°,135°,45°,D | 45°,Medium,1,PRO,1
+TOPIC_SEP,1,9.3 Number of Sides,Topic,,,,,,,,,,,1
+q_9_math_ch9_028,1,9.3 Number of Sides,Apply,A regular polygon has each exterior angle 30°. It has:,regular polygon کا each exterior angle 30° ہے۔ اس کی sides کتنی ہیں؟,6 sides,10 sides,15 sides,12 sides,D | 12 sides,Medium,1,PRO,1
+TOPIC_SEP,1,9.3 Diagonals,Topic,,,,,,,,,,,1
+q_9_math_ch9_029,1,9.3 Diagonals,Apply,The number of diagonals in a hexagon is:,hexagon میں diagonals کی number کیا ہے؟,9,6,12,15,A | 9,Medium,1,PRO,1
+TOPIC_SEP,1,9.3 Exterior Angle Theorem,Topic,,,,,,,,,,,1
+q_9_math_ch9_030,1,9.3 Exterior Angle Theorem,Understand,An exterior angle of a triangle equals the sum of the two:,triangle کا exterior angle کن two angles کے sum کے equal ہوتا ہے؟,Adjacent interior angles / adjacent interior angles,Right angles / right angles,Equal sides / equal sides,Remote interior angles / remote interior angles,D | Remote interior angles / remote interior angles,Medium,1,PRO,1
+TOPIC_SEP,1,9.3 Parallelogram Diagonals,Topic,,,,,,,,,,,1
+q_9_math_ch9_031,1,9.3 Parallelogram Diagonals,Remember,The diagonals of a parallelogram:,parallelogram کی diagonals کیا کرتی ہیں؟,Are always equal / ہمیشہ equal ہوتی ہیں,Bisect each other / ایک دوسرے کو bisect کرتی ہیں,Are always perpendicular / ہمیشہ perpendicular ہوتی ہیں,Never intersect / کبھی intersect نہیں کرتیں,B | Bisect each other / ایک دوسرے کو bisect کرتی ہیں,Medium,1,PRO,1
+q_9_math_ch9_032,1,9.3 Tessellation,Understand,A regular hexagon tessellates because each interior angle is 120° and:,regular hexagon tessellate کرتا ہے کیونکہ each interior angle 120° ہے اور کیا؟,Two angles make 180° only / two angles صرف 180° بناتے ہیں,Five angles make 600° / five angles 600° بناتے ہیں,Three angles meet to make 360° / three angles مل کر 360° بناتے ہیں,Its diagonals are equal / اس کی diagonals equal ہیں,C | Three angles meet to make 360° / three angles مل کر 360° بناتے ہیں,Medium,1,PRO,1
+TOPIC_SEP,1,9.2 Area to Length Ratio,Topic,,,,,,,,,,,1
+q_9_math_ch9_033,1,9.2 Area to Length Ratio,Analyze,The areas of two similar triangles are in the ratio 49:81. Their corresponding side ratio is:,two similar triangles کے areas کا ratio 49:81 ہے۔ corresponding sides کا ratio کیا ہے؟,49:81,14:18,7:9,343:729,C | 7:9,Hard,1,PRO,1
+TOPIC_SEP,1,9.2 Volume to Length Ratio,Topic,,,,,,,,,,,1
+q_9_math_ch9_034,1,9.2 Volume to Length Ratio,Analyze,The volumes of two similar solids are in the ratio 64:125. Their linear scale ratio is:,two similar solids کے volumes کا ratio 64:125 ہے۔ linear scale ratio کیا ہے؟,8:25,16:25,64:125,4:5,D | 4:5,Hard,1,PRO,1
+TOPIC_SEP,1,9.2 Similar Solids Mass,Topic,,,,,,,,,,,1
+q_9_math_ch9_035,1,9.2 Similar Solids Mass,Analyze,"A solid is enlarged with linear scale factor 3. If the original mass is 5 kg and material is unchanged, the new mass is:",solid کو linear scale factor 3 سے enlarge کیا گیا۔ original mass 5 kg اور material same ہو تو new mass کیا ہے؟,135 kg,15 kg,45 kg,405 kg,A | 135 kg,Hard,1,PRO,1
+TOPIC_SEP,1,9.3 Polygon Interior Angles,Topic,,,,,,,,,,,1
+q_9_math_ch9_036,1,9.3 Polygon Interior Angles,Analyze,The sum of interior angles of a 15-sided polygon is:,15-sided polygon کے interior angles کا sum کیا ہے؟,2160°,2520°,2340°,2700°,C | 2340°,Hard,1,PRO,1
+TOPIC_SEP,1,9.3 Regular Polygon from Interior Angle,Topic,,,,,,,,,,,1
+q_9_math_ch9_037,1,9.3 Regular Polygon from Interior Angle,Analyze,A regular polygon has each interior angle 150°. The number of sides is:,regular polygon کا each interior angle 150° ہے۔ sides کی number کیا ہے؟,10,12,15,18,B | 12,Hard,1,PRO,1
+TOPIC_SEP,1,9.3 Diagonal Reverse Problem,Topic,,,,,,,,,,,1
+q_9_math_ch9_038,1,9.3 Diagonal Reverse Problem,Analyze,A polygon has 20 diagonals. How many sides does it have?,polygon کی 20 diagonals ہیں۔ اس کی sides کتنی ہیں؟,7,9,10,8,D | 8,Hard,1,PRO,1
+TOPIC_SEP,1,9.1 Combined Similarity,Topic,,,,,,,,,,,1
+q_9_math_ch9_039,1,9.1 Combined Similarity,Analyze,"Two similar polygons have perimeter ratio 5:7. If the larger area is 196 cm², the smaller area is:",two similar polygons کا perimeter ratio 5:7 ہے۔ larger area 196 cm² ہو تو smaller area کیا ہے؟,140 cm²,70 cm²,144 cm²,100 cm²,D | 100 cm²,Hard,1,PRO,1
+TOPIC_SEP,1,9.3 Real-Life Scaling,Topic,,,,,,,,,,,1
+q_9_math_ch9_040,1,9.3 Real-Life Scaling,Analyze,A rectangular floor plan is drawn at a linear scale of 1:50. An area of 24 cm² on the plan represents an actual area of:,rectangular floor plan linear scale 1:50 پر draw ہے۔ plan پر 24 cm² actual area میں کیا represent کرتا ہے؟,1200 cm²,2400 cm²,60000 cm²,30000 cm²,C | 60000 cm²,Hard,1,PRO,1

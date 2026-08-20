@@ -1,0 +1,37 @@
+﻿question_hash,active,topic,question_type,question_style,question,difficulty,marks,weightage,smart_syllabus
+sep_9_eng_ch6_001,1,ENGLISH_A | Unit 6 - The Value of Time | Textbook Paragraph Translation,Topic,topic_separator,,,,,1
+q_9_eng_ch6_lq_001,1,ENGLISH_A | Unit 6 - The Value of Time | Textbook Paragraph Translation,Long,translate_to_urdu,"Translate the following paragraph into Urdu:
+Taseer was known for his cheerful nature and kind-heartedness, but he had one serious flaw: poor time management. He wasted hours on video games, chatting with friends, and daydreaming, while his schoolwork and chores piled up.",Medium,4,PRO,1
+q_9_eng_ch6_lq_002,1,ENGLISH_A | Unit 6 - The Value of Time | Textbook Paragraph Translation,Long,translate_to_urdu,"Translate the following paragraph into Urdu:
+Taseer's grandfather showed him an empty glass jar and a basket containing big rocks, pebbles, and sand. Taseer first poured in the sand and pebbles, but the large rocks could not fit, leaving him puzzled.",Medium,4,PRO,1
+q_9_eng_ch6_lq_003,1,ENGLISH_A | Unit 6 - The Value of Time | Textbook Paragraph Translation,Long,translate_to_urdu,"Translate the following paragraph into Urdu:
+His grandfather emptied the jar and methodically placed the large rocks first. He then added the pebbles and finally poured in the sand, which filled the remaining spaces. This simple demonstration helped Taseer understand priorities.",Medium,4,PRO,1
+q_9_eng_ch6_lq_004,1,ENGLISH_A | Unit 6 - The Value of Time | Textbook Paragraph Translation,Long,translate_to_urdu,"Translate the following paragraph into Urdu:
+The big rocks represented the significant things in life, such as schoolwork, family, and health. The pebbles represented other priorities, including hobbies and friendships, while the sand represented small and trivial matters. The lesson showed that important responsibilities must be given time before minor activities.",Medium,4,PRO,1
+q_9_eng_ch6_lq_005,1,ENGLISH_A | Unit 6 - The Value of Time | Textbook Paragraph Translation,Long,translate_to_urdu,"Translate the following paragraph into Urdu:
+Taseer began making a schedule and setting aside time for schoolwork, chores, family, hobbies, and relaxation. With practice and determination, he gained control of his time, improved his grades, and became less stressed. His relationships also improved because he became more reliable and responsible.",Medium,4,PRO,1
+sep_9_eng_ch6_002,1,ENGLISH_A | Unit 6 - The Value of Time | Simple English Alternative,Topic,topic_separator,,,,,1
+q_9_eng_ch6_lq_006,1,ENGLISH_A | Unit 6 - The Value of Time | Simple English Alternative,Long,rewrite_simple_english,"Rewrite the following paragraph in simple English:
+Taseer was known for his cheerful nature and kind-heartedness, but he had one serious flaw: poor time management. He wasted hours on video games, chatting with friends, and daydreaming, while his schoolwork and chores piled up.",Hard,4,PRO,1
+q_9_eng_ch6_lq_007,1,ENGLISH_A | Unit 6 - The Value of Time | Simple English Alternative,Long,rewrite_simple_english,"Rewrite the following paragraph in simple English:
+Taseer's grandfather showed him an empty glass jar and a basket containing big rocks, pebbles, and sand. Taseer first poured in the sand and pebbles, but the large rocks could not fit, leaving him puzzled.",Hard,4,PRO,1
+q_9_eng_ch6_lq_008,1,ENGLISH_A | Unit 6 - The Value of Time | Simple English Alternative,Long,rewrite_simple_english,"Rewrite the following paragraph in simple English:
+His grandfather emptied the jar and methodically placed the large rocks first. He then added the pebbles and finally poured in the sand, which filled the remaining spaces. This simple demonstration helped Taseer understand priorities.",Hard,4,PRO,1
+q_9_eng_ch6_lq_009,1,ENGLISH_A | Unit 6 - The Value of Time | Simple English Alternative,Long,rewrite_simple_english,"Rewrite the following paragraph in simple English:
+The big rocks represented the significant things in life, such as schoolwork, family, and health. The pebbles represented other priorities, including hobbies and friendships, while the sand represented small and trivial matters. The lesson showed that important responsibilities must be given time before minor activities.",Hard,4,PRO,1
+q_9_eng_ch6_lq_010,1,ENGLISH_A | Unit 6 - The Value of Time | Simple English Alternative,Long,rewrite_simple_english,"Rewrite the following paragraph in simple English:
+Taseer began making a schedule and setting aside time for schoolwork, chores, family, hobbies, and relaxation. With practice and determination, he gained control of his time, improved his grades, and became less stressed. His relationships also improved because he became more reliable and responsible.",Hard,4,PRO,1
+sep_9_eng_ch6_003,1,ENGLISH_A | Unit 6 - The Value of Time | Tense Identification,Topic,topic_separator,,,,,1
+q_9_eng_ch6_lq_011,1,ENGLISH_A | Unit 6 - The Value of Time | Tense Identification,Long,sentence_transformation_item,Identify the tense of every underlined verb in the grammar passage about Taseer's time-management journey.,Hard,6,ULTRA,1
+sep_9_eng_ch6_004,1,ENGLISH_A | Unit 6 - The Value of Time | Vocabulary and Synonyms,Topic,topic_separator,,,,,1
+q_9_eng_ch6_lq_012,1,ENGLISH_A | Unit 6 - The Value of Time | Vocabulary and Synonyms,Long,word_phrase_usage_item,"Find synonyms of: engrossed, admirable, frowned, amazement, allocated, interpret, cherished, approached, methodically, and reliable. Use them in sentences.",Hard,10,ULTRA,1
+sep_9_eng_ch6_005,1,ENGLISH_A | Unit 6 - The Value of Time | Word Formation,Topic,topic_separator,,,,,1
+q_9_eng_ch6_lq_013,1,ENGLISH_A | Unit 6 - The Value of Time | Word Formation,Long,sentence_transformation_item,"Change the nouns nature, management, struggle, gratification, expression, reaction, presence, lesson, and progress into adjectives.",Hard,9,ULTRA,1
+sep_9_eng_ch6_006,1,ENGLISH_A | Unit 6 - The Value of Time | Conjunction Exercises,Topic,topic_separator,,,,,1
+q_9_eng_ch6_lq_014,1,ENGLISH_A | Unit 6 - The Value of Time | Conjunction Exercises,Long,sentence_transformation_item,"Complete the conjunction exercises using suitable coordinating, subordinating, and correlative conjunctions.",Hard,8,ULTRA,1
+sep_9_eng_ch6_007,1,ENGLISH_A | Unit 6 - The Value of Time | Transition Devices,Topic,topic_separator,,,,,1
+q_9_eng_ch6_lq_015,1,ENGLISH_A | Unit 6 - The Value of Time | Transition Devices,Long,sentence_transformation_item,Complete the transition-word exercises and rewrite sentences using equivalent conjunctions.,Hard,8,ULTRA,1
+sep_9_eng_ch6_008,1,ENGLISH_A | Unit 6 - The Value of Time | Oral Communication,Topic,topic_separator,,,,,1
+q_9_eng_ch6_lq_016,1,ENGLISH_A | Unit 6 - The Value of Time | Oral Communication,Long,dialogue,Discuss how Taseer's story would change if his grandfather had not intervened.,Hard,8,ULTRA,1
+sep_9_eng_ch6_009,1,ENGLISH_A | Unit 6 - The Value of Time | Story Writing,Topic,topic_separator,,,,,1
+q_9_eng_ch6_lq_017,1,ENGLISH_A | Unit 6 - The Value of Time | Story Writing,Long,story,"Write a story about an unexpected friendship between two characters from different backgrounds. Use setting, characters, plot, conflict, resolution, and theme.",Hard,8,PRO,1

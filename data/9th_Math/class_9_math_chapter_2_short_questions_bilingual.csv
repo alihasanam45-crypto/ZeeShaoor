@@ -1,0 +1,64 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,2.1 Scientific Notation,topic_separator,,,,,,1
+q_9_math_ch2_sq_001,1,2.1 Scientific Notation,definition_formula,Define scientific notation and state the condition imposed on the coefficient in a × 10ⁿ.,scientific notation کی تعریف کریں اور a × 10ⁿ میں coefficient پر imposed condition بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch2_sq_002,1,2.1 Scientific Notation,numerical_short,Express the number in scientific notation: 0.000567,درج ذیل number کو scientific notation میں express کریں: 0.000567,Easy,2,PRO,1
+q_9_math_ch2_sq_003,1,2.1 Scientific Notation,numerical_short,Express the number in scientific notation: 734,درج ذیل number کو scientific notation میں express کریں: 734,Easy,2,PRO,1
+q_9_math_ch2_sq_004,1,2.1 Scientific Notation,numerical_short,Express the quantity in ordinary notation: 2.6 × 10³,درج ذیل quantity کو ordinary notation میں express کریں: 2.6 × 10³,Easy,2,PRO,1
+q_9_math_ch2_sq_005,1,2.1 Scientific Notation,numerical_short,Express the quantity in ordinary notation: 8.794 × 10⁴,درج ذیل quantity کو ordinary notation میں express کریں: 8.794 × 10⁴,Easy,2,PRO,1
+TOPIC_SEP,1,2.2 Logarithms,topic_separator,,,,,,1
+q_9_math_ch2_sq_006,1,2.2 Logarithms,definition_formula,Define a logarithm and state the equivalent exponential and logarithmic forms.,logarithm کی تعریف کریں اور equivalent exponential اور logarithmic forms بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch2_sq_007,1,2.2 Logarithms,numerical_short,Express the equation in logarithmic form: 3⁷ = 2187,درج ذیل equation کو logarithmic form میں express کریں: 3⁷ = 2187,Easy,2,PRO,1
+q_9_math_ch2_sq_008,1,2.2 Logarithms,numerical_short,Express the equation in exponential form: log₉729 = 3,درج ذیل equation کو exponential form میں express کریں: log₉729 = 3,Easy,2,PRO,1
+q_9_math_ch2_sq_009,1,2.2 Logarithms,list_state,State the restrictions on the base and argument of a real logarithm.,real logarithm کی base اور argument پر restrictions بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,2.2 Common and Natural Logarithms,topic_separator,,,,,,1
+q_9_math_ch2_sq_010,1,2.2 Common and Natural Logarithms,difference,Differentiate between common and natural logarithms by stating their bases and standard notations.,bases اور standard notations کے لحاظ سے common اور natural logarithms میں فرق بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,2.3 Characteristic and Mantissa,topic_separator,,,,,,1
+q_9_math_ch2_sq_011,1,2.3 Characteristic and Mantissa,definition_function,Define the characteristic and mantissa of a common logarithm and state the role of each part.,common logarithm کی characteristic اور mantissa کی تعریف کریں اور ہر part کا role بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,2.3 Characteristic,topic_separator,,,,,,1
+q_9_math_ch2_sq_012,1,2.3 Characteristic,numerical_short,Determine the characteristic of the common logarithm of the number: 357.2,درج ذیل number کے common logarithm کی characteristic معلوم کریں: 357.2,Easy,2,ELITE,1
+q_9_math_ch2_sq_013,1,2.3 Characteristic,numerical_short,Determine the characteristic of the common logarithm of the number: 0.0047,درج ذیل number کے common logarithm کی characteristic معلوم کریں: 0.0047,Easy,2,ELITE,1
+TOPIC_SEP,1,2.3 Antilogarithms,topic_separator,,,,,,1
+q_9_math_ch2_sq_014,1,2.3 Antilogarithms,definition_function,Define an antilogarithm and state its relationship with a logarithm.,antilogarithm کی تعریف کریں اور logarithm کے ساتھ اس کا relationship بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,2.4 Laws of Logarithms,topic_separator,,,,,,1
+q_9_math_ch2_sq_015,1,2.4 Laws of Logarithms,list_state,"State the product, quotient, and power laws of logarithms.",logarithms کے product، quotient اور power laws بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,2.5 Natural Logarithms,topic_separator,,,,,,1
+q_9_math_ch2_sq_016,1,2.5 Natural Logarithms,list_state,"State the values of ln(1) and ln(e), and mention why ln(0) is undefined.",ln(1) اور ln(e) کی values بیان کریں اور ذکر کریں کہ ln(0) undefined کیوں ہے۔,Easy,2,IMPORTANT,1
+q_9_math_ch2_sq_017,1,2.1 Scientific Notation,numerical_short,Write the quantity in normalized scientific notation: 0.33 × 10³,درج ذیل quantity کو normalized scientific notation میں لکھیں: 0.33 × 10³,Medium,2,PRO,1
+TOPIC_SEP,1,2.2 Logarithmic Equations,topic_separator,,,,,,1
+q_9_math_ch2_sq_018,1,2.2 Logarithmic Equations,numerical_short,Find the value of x: log₉x = 0.5,x کی value معلوم کریں: log₉x = 0.5,Medium,2,PRO,1
+TOPIC_SEP,1,2.2 Exponential Equations,topic_separator,,,,,,1
+q_9_math_ch2_sq_019,1,2.2 Exponential Equations,numerical_short,Find the value of x: (1/9)³ˣ = 27,x کی value معلوم کریں: (1/9)³ˣ = 27,Medium,2,PRO,1
+TOPIC_SEP,1,2.3 Logarithm Tables,topic_separator,,,,,,1
+q_9_math_ch2_sq_020,1,2.3 Logarithm Tables,process_steps,State the main steps for finding the common logarithm of a positive number by using a logarithm table.,logarithm table استعمال کرکے positive number کا common logarithm معلوم کرنے کے main steps بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,2.3 Antilogarithm Tables,topic_separator,,,,,,1
+q_9_math_ch2_sq_021,1,2.3 Antilogarithm Tables,process_steps,State the main steps for finding a number from its common logarithm by using an antilogarithm table.,antilogarithm table استعمال کرکے common logarithm سے number معلوم کرنے کے main steps بیان کریں۔,Medium,2,ELITE,1
+q_9_math_ch2_sq_022,1,2.3 Logarithm Tables,numerical_short,Evaluate the expression with the help of logarithm tables: (3.68 × 4.21)/5.234,logarithm tables کی مدد سے درج ذیل expression evaluate کریں: (3.68 × 4.21)/5.234,Medium,2,PRO,1
+q_9_math_ch2_sq_023,1,2.4 Laws of Logarithms,numerical_short,Evaluate without using a calculator: log₂18 − log₂9,calculator استعمال کیے بغیر evaluate کریں: log₂18 − log₂9,Medium,2,PRO,1
+q_9_math_ch2_sq_024,1,2.4 Laws of Logarithms,numerical_short,Evaluate without using a calculator: log₂64 + log₂2,calculator استعمال کیے بغیر evaluate کریں: log₂64 + log₂2,Medium,2,PRO,1
+TOPIC_SEP,1,2.4 Single Logarithm,topic_separator,,,,,,1
+q_9_math_ch2_sq_025,1,2.4 Single Logarithm,numerical_short,Write the expression as a single logarithm: 2log₃x + log₃y,درج ذیل expression کو single logarithm میں لکھیں: 2log₃x + log₃y,Medium,2,PRO,1
+TOPIC_SEP,1,2.4 Expansion of Logarithms,topic_separator,,,,,,1
+q_9_math_ch2_sq_026,1,2.4 Expansion of Logarithms,numerical_short,Expand the logarithmic expression by applying the laws of logarithms: log(xy⁶),laws of logarithms apply کرکے درج ذیل logarithmic expression expand کریں: log(xy⁶),Medium,2,PRO,1
+TOPIC_SEP,1,2.4 Change of Base Law,topic_separator,,,,,,1
+q_9_math_ch2_sq_027,1,2.4 Change of Base Law,law_principle,State the change-of-base law and identify the conditions under which it is valid.,change-of-base law بیان کریں اور وہ conditions identify کریں جن میں یہ valid ہے۔,Medium,2,ULTRA,1
+q_9_math_ch2_sq_028,1,2.4 Change of Base Law,numerical_short,Express the logarithm by changing its base to common logarithms: log₃₂27,base کو common logarithms میں change کرکے درج ذیل logarithm express کریں: log₃₂27,Medium,2,ELITE,1
+TOPIC_SEP,1,2.4 Logarithmic Equations,topic_separator,,,,,,1
+q_9_math_ch2_sq_029,1,2.4 Logarithmic Equations,numerical_short,Find the value of x: log 2 + log x = 1,x کی value معلوم کریں: log 2 + log x = 1,Medium,2,PRO,1
+q_9_math_ch2_sq_030,1,2.4 Logarithmic Equations,numerical_short,Find the value of x: log₂x + log₂8 = 5,x کی value معلوم کریں: log₂x + log₂8 = 5,Medium,2,PRO,1
+TOPIC_SEP,1,2.4 Applications of Logarithms,topic_separator,,,,,,1
+q_9_math_ch2_sq_031,1,2.4 Applications of Logarithms,application_scenario,Explain why logarithmic scales are useful for representing quantities that vary over several orders of magnitude.,وضاحت کریں کہ several orders of magnitude تک vary کرنے والی quantities کو represent کرنے کے لیے logarithmic scales useful کیوں ہوتی ہیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,2.4 Decibel Scale,topic_separator,,,,,,1
+q_9_math_ch2_sq_032,1,2.4 Decibel Scale,numerical_short,"Calculate the sound level from the given model: L = 40log₁₀(I/I₀), I = 10⁶I₀","given model سے sound level calculate کریں: L = 40log₁₀(I/I₀), I = 10⁶I₀",Medium,2,ELITE,1
+q_9_math_ch2_sq_033,1,2.4 Expansion of Logarithms,numerical_short,Expand the expression completely by using logarithm laws: log₂(((x − y)/z)³),logarithm laws استعمال کرکے درج ذیل expression مکمل expand کریں: log₂(((x − y)/z)³),Hard,2,ELITE,1
+q_9_math_ch2_sq_034,1,2.4 Single Logarithm,numerical_short,Write the expression as a single logarithm: 2ln a + 3ln b − 4ln c,درج ذیل expression کو single logarithm میں لکھیں: 2ln a + 3ln b − 4ln c,Hard,2,PRO,1
+q_9_math_ch2_sq_035,1,2.4 Logarithmic Equations,numerical_short,Solve the logarithmic equation: log₂(x + 1) − log₂(x − 4) = 2,درج ذیل logarithmic equation solve کریں: log₂(x + 1) − log₂(x − 4) = 2,Hard,2,PRO,1
+TOPIC_SEP,1,2.4 Exponential Equations,topic_separator,,,,,,1
+q_9_math_ch2_sq_036,1,2.4 Exponential Equations,numerical_short,Solve the exponential equation: 81ˣ = 243ˣ⁺²,درج ذیل exponential equation solve کریں: 81ˣ = 243ˣ⁺²,Hard,2,PRO,1
+TOPIC_SEP,1,2.4 Logarithm-Table Calculation,topic_separator,,,,,,1
+q_9_math_ch2_sq_037,1,2.4 Logarithm-Table Calculation,numerical_short,Evaluate the expression with the help of logarithm tables: ((20.46)² × 2.4122)/754.3,logarithm tables کی مدد سے درج ذیل expression evaluate کریں: ((20.46)² × 2.4122)/754.3,Hard,2,PRO,1
+TOPIC_SEP,1,2.4 Earthquake Magnitude,topic_separator,,,,,,1
+q_9_math_ch2_sq_038,1,2.4 Earthquake Magnitude,numerical_short,"Calculate the earthquake magnitude from the model: M = log₁₀(A/A₀), A = 10000, A₀ = 10","given model سے earthquake magnitude calculate کریں: M = log₁₀(A/A₀), A = 10000, A₀ = 10",Hard,2,PRO,1
+TOPIC_SEP,1,2.4 Exponential Growth,topic_separator,,,,,,1
+q_9_math_ch2_sq_039,1,2.4 Exponential Growth,numerical_short,Determine when the investment doubles under the model: y = 100000(1.05)ᵗ,given model کے تحت investment double ہونے کا time determine کریں: y = 100000(1.05)ᵗ,Hard,2,PRO,1
+TOPIC_SEP,1,2.4 Exponential Decay,topic_separator,,,,,,1
+q_9_math_ch2_sq_040,1,2.4 Exponential Decay,numerical_short,Calculate the temperature at an altitude of 500 m using the model: T = 20 × 0.97ʰ⁄¹⁰⁰,given model استعمال کرکے altitude 500 m پر temperature calculate کریں: T = 20 × 0.97ʰ⁄¹⁰⁰,Hard,2,PRO,1

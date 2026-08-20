@@ -1,22 +1,55 @@
-import { NextResponse } from "next/server";
-import { connectToDatabase } from "@/lib/mongodb";
-import Question from "@/models/Question";
+import { NextResponse } from 'next/server'
+import { connectToDatabase } from '@/lib/mongodb'
+import Question from '@/models/Question'
+import { ANY_ROLE, requireApiRole } from '@/lib/security/rbac'
+import { apiSuccess, handleApiError } from '@/lib/security/errors'
 
-// ELITE FIX: This forces Next.js to NEVER cache this API and always return fresh JSON
-export const dynamic = "force-dynamic"; 
+/**
+ * Daily practice sample.
+ *
+ * This handler sits under the page namespace (`/student/assignments`) rather
+ * than `/api`, which is why it needs its own guard: the proxy's API branch
+ * never matches it, only the page-portal rule does.
+ *
+ * Two fixes: it was unauthenticated, and `$sample` returned whole documents —
+ * including `correctAnswer` — so the daily set shipped its own answer key.
+ */
 
-export async function GET(req: Request) {
+export const dynamic = 'force-dynamic'
+
+const SET_SIZE = 5
+
+/** Answer-free projection. */
+const QUIZ_PROJECTION = {
+  classLevel: 1,
+  subject: 1,
+  chapter: 1,
+  questionType: 1,
+  questionText: 1,
+  options: 1,
+  difficulty: 1,
+  marks: 1,
+} as const
+
+export async function GET() {
+  const guard = await requireApiRole(ANY_ROLE, { action: 'GET /student/assignments' })
+  if (guard instanceof NextResponse) return guard
+
   try {
-    // 1. Establish Database Connection
-    await connectToDatabase();
-    
-    // 2. ELITE QUERY: Fetch 5 random questions for the student's daily target
-    const assignments = await Question.aggregate([{ $sample: { size: 5 } }]);
-    
-    // 3. Return Pure JSON
-    return NextResponse.json({ data: assignments }, { status: 200 });
-  } catch (error: any) {
-    console.error("Student API Error:", error);
-    return NextResponse.json({ error: error.message || "Failed to load assignments" }, { status: 500 });
+    await connectToDatabase()
+
+    const user = guard.user
+    // Scope the sample to the student's own class level where it is known.
+    const stages: Record<string, unknown>[] = []
+    if (user.role === 'student' && user.classId) {
+      stages.push({ $match: { classLevel: user.classId } })
+    }
+    stages.push({ $sample: { size: SET_SIZE } }, { $project: QUIZ_PROJECTION })
+
+    const assignments = await Question.aggregate(stages)
+
+    return apiSuccess({ assignments })
+  } catch (err) {
+    return handleApiError(err, 'GET /student/assignments')
   }
 }

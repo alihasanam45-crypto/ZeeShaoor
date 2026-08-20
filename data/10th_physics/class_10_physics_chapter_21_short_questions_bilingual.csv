@@ -1,0 +1,70 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,21.1 The Sun,topic_separator,,,,,,1
+q_10_phy_ch21_sq_001,1,21.1 The Sun,features_characteristics,"Describe the Sun as a star in terms of size, composition, and the regions of the electromagnetic spectrum in which it radiates.",Sun کو star کے طور پر size، composition اور electromagnetic spectrum کے radiation regions کے لحاظ سے describe کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.1 Solar Energy,topic_separator,,,,,,1
+q_10_phy_ch21_sq_002,1,21.1 Solar Energy,definition_function,State the main source of the Sun's energy and name the nuclei involved.,Sun کی energy کا main source اور involved nuclei کے names بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.1 Solar Radiation,topic_separator,,,,,,1
+q_10_phy_ch21_sq_003,1,21.1 Solar Radiation,concept_explanation,Explain how energy from the Sun reaches Earth through space.,وضاحت کریں کہ Sun کی energy space کے through Earth تک کیسے پہنچتی ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.2 Planetary Data,topic_separator,,,,,,1
+q_10_phy_ch21_sq_004,1,21.2 Planetary Data,list_state,Enlist five physical quantities used to compare planets.,planets کو compare کرنے کے لیے used five physical quantities فہرست کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.2 Solar System,topic_separator,,,,,,1
+q_10_phy_ch21_sq_005,1,21.2 Solar System,definition_function,Define a planet and state one difference between a planet and a star.,planet کی تعریف کریں اور planet اور star میں one difference بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,21.2 Planetary Density,topic_separator,,,,,,1
+q_10_phy_ch21_sq_006,1,21.2 Planetary Density,definition_formula,Define average density and write the formula used for a planet.,average density کی تعریف کریں اور planet کے لیے used formula لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.2 Surface Gravity,topic_separator,,,,,,1
+q_10_phy_ch21_sq_007,1,21.2 Surface Gravity,definition_function,Define surface gravitational field strength and state its SI unit.,surface gravitational field strength کی تعریف کریں اور اس کی SI unit بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.3 Gravitation and Orbits,topic_separator,,,,,,1
+q_10_phy_ch21_sq_008,1,21.3 Gravitation and Orbits,concept_explanation,State the force that keeps planets and satellites in orbit.,وہ force بیان کریں جو planets اور satellites کو orbit میں رکھتی ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.3 Natural and Artificial Satellites,topic_separator,,,,,,1
+q_10_phy_ch21_sq_009,1,21.3 Natural and Artificial Satellites,difference,Differentiate between natural and artificial satellites and give one example of each.,natural اور artificial satellites میں فرق بیان کریں اور ہر ایک کی one example دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.3 Artificial Satellites,topic_separator,,,,,,1
+q_10_phy_ch21_sq_010,1,21.3 Artificial Satellites,list_state,State three uses of artificial satellites.,artificial satellites کے three uses بیان کریں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,21.3 Geostationary Satellite,topic_separator,,,,,,1
+q_10_phy_ch21_sq_011,1,21.3 Geostationary Satellite,definition_function,Define a geostationary satellite and state its orbital position.,geostationary satellite کی تعریف کریں اور اس کی orbital position بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.4 Cyclones,topic_separator,,,,,,1
+q_10_phy_ch21_sq_012,1,21.4 Cyclones,definition_function,Define a cyclone and state the pressure condition at its centre.,cyclone کی تعریف کریں اور اس کے centre کی pressure condition بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.4 Coriolis Effect,topic_separator,,,,,,1
+q_10_phy_ch21_sq_013,1,21.4 Coriolis Effect,definition_function,Define the Coriolis effect and state its cause.,Coriolis effect کی تعریف کریں اور اس کی cause بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.5 Global Warming,topic_separator,,,,,,1
+q_10_phy_ch21_sq_014,1,21.5 Global Warming,definition_function,Define global warming and state its main atmospheric cause.,global warming کی تعریف کریں اور اس کی main atmospheric cause بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.7 Background Radiation,topic_separator,,,,,,1
+q_10_phy_ch21_sq_015,1,21.7 Background Radiation,definition_function,Define background radiation.,background radiation کی تعریف کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,21.7 Sources of Background Radiation,topic_separator,,,,,,1
+q_10_phy_ch21_sq_016,1,21.7 Sources of Background Radiation,list_state,State four significant sources of background radiation.,background radiation کے four significant sources بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch21_sq_017,1,21.1 The Sun,concept_explanation,Explain how nuclear fusion in the Sun converts mass into radiant energy.,وضاحت کریں کہ Sun میں nuclear fusion mass کو radiant energy میں کیسے convert کرتی ہے۔,Medium,2,PRO,1
+q_10_phy_ch21_sq_018,1,21.2 Planetary Data,table_based,Explain how orbital distance and orbital period are compared when interpreting planetary data.,planetary data interpret کرتے وقت orbital distance اور orbital period کا comparison explain کریں۔,Medium,2,PRO,1
+q_10_phy_ch21_sq_019,1,21.2 Planetary Data,compare_contrast,"Compare two planets using density, surface temperature, and surface gravitational field strength.",density، surface temperature اور surface gravitational field strength کی مدد سے two planets کا موازنہ کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,21.2 Planetary Temperature,topic_separator,,,,,,1
+q_10_phy_ch21_sq_020,1,21.2 Planetary Temperature,cause_effect,Explain why a planet's surface temperature depends on both its distance from the Sun and its atmosphere.,وضاحت کریں کہ planet کا surface temperature Sun سے distance اور atmosphere دونوں پر کیوں depend کرتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,21.3 Orbits,topic_separator,,,,,,1
+q_10_phy_ch21_sq_021,1,21.3 Orbits,concept_explanation,Explain why an orbiting satellite continuously falls toward Earth without reaching the surface.,وضاحت کریں کہ orbiting satellite continuously Earth کی طرف fall کرتی ہے لیکن surface تک کیوں نہیں پہنچتی۔,Medium,2,PRO,1
+q_10_phy_ch21_sq_022,1,21.3 Geostationary Satellite,features_characteristics,State the conditions required for a satellite to appear geostationary.,satellite کے geostationary appear ہونے کے required conditions بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,21.3 Orbital Motion,topic_separator,,,,,,1
+q_10_phy_ch21_sq_023,1,21.3 Orbital Motion,cause_effect,Explain how orbital speed changes when a satellite moves to a lower circular orbit.,وضاحت کریں کہ satellite lower circular orbit میں move کرے تو orbital speed کیسے change ہوتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,21.4 Cyclone Formation,topic_separator,,,,,,1
+q_10_phy_ch21_sq_024,1,21.4 Cyclone Formation,process_steps,Describe how convection currents over warm ocean water contribute to cyclone formation.,بیان کریں کہ warm ocean water کے اوپر convection currents cyclone formation میں کیسے contribute کرتی ہیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,21.4 Cyclone Rotation,topic_separator,,,,,,1
+q_10_phy_ch21_sq_025,1,21.4 Cyclone Rotation,cause_effect,Explain why cyclones rotate in opposite directions in the northern and southern hemispheres.,وضاحت کریں کہ northern اور southern hemispheres میں cyclones opposite directions میں کیوں rotate کرتی ہیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,21.4 Extreme Weather,topic_separator,,,,,,1
+q_10_phy_ch21_sq_026,1,21.4 Extreme Weather,cause_effect,Explain how warm ocean water can increase the intensity of a tropical cyclone.,وضاحت کریں کہ warm ocean water tropical cyclone کی intensity کیسے increase کر سکتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,21.5 Greenhouse Effect,topic_separator,,,,,,1
+q_10_phy_ch21_sq_027,1,21.5 Greenhouse Effect,concept_explanation,Explain how greenhouse gases absorb and re-emit outgoing infrared radiation.,وضاحت کریں کہ greenhouse gases outgoing infrared radiation کو absorb اور re-emit کیسے کرتی ہیں۔,Medium,2,PRO,1
+q_10_phy_ch21_sq_028,1,21.5 Global Warming,list_state,Enlist four extreme weather events that can become more severe because of global warming.,global warming کی وجہ سے زیادہ severe ہونے والے four extreme weather events فہرست کریں۔,Medium,2,PRO,1
+q_10_phy_ch21_sq_029,1,21.5 Global Warming,cause_effect,Explain how global warming contributes to rising sea level.,وضاحت کریں کہ global warming rising sea level میں کیسے contribute کرتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,21.6 Geothermal Energy,topic_separator,,,,,,1
+q_10_phy_ch21_sq_030,1,21.6 Geothermal Energy,definition_function,Define geothermal energy and state two uses.,geothermal energy کی تعریف کریں اور اس کے two uses بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,21.7 Natural Background Radiation,topic_separator,,,,,,1
+q_10_phy_ch21_sq_031,1,21.7 Natural Background Radiation,classification,"Classify radon gas, rocks and buildings, food and drink, and cosmic rays as sources of background radiation.",radon gas، rocks and buildings، food and drink اور cosmic rays کو background radiation کے sources کے طور پر classify کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,21.7 Radiation Exposure,topic_separator,,,,,,1
+q_10_phy_ch21_sq_032,1,21.7 Radiation Exposure,cause_effect,Explain why people at high altitude may receive more cosmic radiation than people at sea level.,وضاحت کریں کہ high altitude پر لوگ sea level کے لوگوں سے زیادہ cosmic radiation کیوں receive کر سکتے ہیں۔,Medium,2,ELITE,1
+q_10_phy_ch21_sq_033,1,21.2 Planetary Data,table_based,"Interpret a set of planetary data to identify the planet with greatest density, highest surface gravity, and longest orbital period.",planetary data set interpret کرکے greatest density، highest surface gravity اور longest orbital period والے planet identify کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,21.2 Planetary Climate,topic_separator,,,,,,1
+q_10_phy_ch21_sq_034,1,21.2 Planetary Climate,compare_contrast,Compare the factors controlling the surface temperatures of a planet with a thin atmosphere and a planet with a dense greenhouse atmosphere.,thin atmosphere اور dense greenhouse atmosphere والے planets کے surface temperatures control کرنے والے factors کا موازنہ کریں۔,Hard,2,ELITE,1
+q_10_phy_ch21_sq_035,1,21.3 Orbital Motion,concept_explanation,Explain how forward velocity and gravitational acceleration combine to produce a stable circular orbit.,وضاحت کریں کہ forward velocity اور gravitational acceleration stable circular orbit کیسے produce کرتے ہیں۔,Hard,2,PRO,1
+q_10_phy_ch21_sq_036,1,21.4 Cyclones,sequence,"Describe the sequence from ocean heating and moist-air ascent to pressure fall, cloud formation, rotation, and cyclone development.",ocean heating اور moist-air ascent سے pressure fall، cloud formation، rotation اور cyclone development تک sequence بیان کریں۔,Hard,2,PRO,1
+q_10_phy_ch21_sq_037,1,21.5 Global Warming,cause_effect,"Explain how global warming can contribute to hurricanes, heat waves, flooding, wildfires, droughts, and winter storms.",وضاحت کریں کہ global warming hurricanes، heat waves، flooding، wildfires، droughts اور winter storms میں کیسے contribute کر سکتی ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,21.7 Radon Exposure,topic_separator,,,,,,1
+q_10_phy_ch21_sq_038,1,21.7 Radon Exposure,cause_effect,Explain why radon accumulation in poorly ventilated buildings is a health concern.,وضاحت کریں کہ poorly ventilated buildings میں radon accumulation health concern کیوں ہے۔,Hard,2,ELITE,1
+q_10_phy_ch21_sq_039,1,21.7 Background Radiation,compare_contrast,Compare internal and external exposure to natural background radiation using suitable sources.,suitable sources کی مدد سے natural background radiation کی internal اور external exposure کا موازنہ کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,21.7 Radiation Protection,topic_separator,,,,,,1
+q_10_phy_ch21_sq_040,1,21.7 Radiation Protection,application_scenario,"Explain how time, distance, and shielding can be used to reduce exposure to environmental radiation.",وضاحت کریں کہ time، distance اور shielding environmental radiation exposure reduce کرنے کے لیے کیسے use ہو سکتے ہیں۔,Hard,2,PRO,1

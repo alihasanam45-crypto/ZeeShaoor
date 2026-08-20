@@ -1,0 +1,67 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,8 Introduction to Logic,topic_separator,,,,,,1
+q_9_math_ch8_sq_001,1,8 Introduction to Logic,definition_function,Define logic and state two roles it performs in mathematical reasoning.,logic کی تعریف کریں اور mathematical reasoning میں اس کے دو roles بیان کریں۔,Easy,2,IMPORTANT,1
+q_9_math_ch8_sq_002,1,8 Introduction to Logic,difference,Differentiate between inductive and deductive reasoning with one feature of each.,inductive اور deductive reasoning میں فرق بیان کریں اور ہر ایک کی one feature لکھیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,8.1 Statement,topic_separator,,,,,,1
+q_9_math_ch8_sq_003,1,8.1 Statement,definition_example,Define a mathematical statement and give one true and one false example.,mathematical statement کی تعریف کریں اور one true اور one false example دیں۔,Easy,2,ULTRA,1
+q_9_math_ch8_sq_004,1,8.1 Statement,classification,Classify the expressions as statements or non-statements and justify briefly: 3 + 4 = 7; Close the door.,expressions کو statements یا non-statements میں classify کریں اور مختصر justification دیں: 3 + 4 = 7; Close the door.,Medium,2,ELITE,1
+TOPIC_SEP,1,8.1.1 Logical Operators,topic_separator,,,,,,1
+q_9_math_ch8_sq_005,1,8.1.1 Logical Operators,table_based,"Write the symbols and readings of negation, conjunction, disjunction, implication, and biconditional.",negation، conjunction، disjunction، implication اور biconditional کے symbols اور readings لکھیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,8.1.2 Negation,topic_separator,,,,,,1
+q_9_math_ch8_sq_006,1,8.1.2 Negation,definition_function,Define the negation of a statement p and state how its truth value is related to p.,statement p کی negation کی تعریف کریں اور بیان کریں کہ اس کی truth value، p سے کیسے related ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,8.1.2 Conjunction,topic_separator,,,,,,1
+q_9_math_ch8_sq_007,1,8.1.2 Conjunction,definition_function,Define the conjunction p ∧ q and state the condition under which it is true.,conjunction p ∧ q کی تعریف کریں اور وہ condition بیان کریں جس میں یہ true ہوتی ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,8.1.2 Disjunction,topic_separator,,,,,,1
+q_9_math_ch8_sq_008,1,8.1.2 Disjunction,definition_function,Define the disjunction p ∨ q and state the condition under which it is false.,disjunction p ∨ q کی تعریف کریں اور وہ condition بیان کریں جس میں یہ false ہوتی ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,8.1.2 Implication,topic_separator,,,,,,1
+q_9_math_ch8_sq_009,1,8.1.2 Implication,definition_function,Define the conditional p → q and identify its antecedent and consequent.,conditional p → q کی تعریف کریں اور اس کے antecedent اور consequent identify کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,8.1.2 Biconditional,topic_separator,,,,,,1
+q_9_math_ch8_sq_010,1,8.1.2 Biconditional,definition_function,Define the biconditional p ↔ q and state when it is true.,biconditional p ↔ q کی تعریف کریں اور بیان کریں کہ یہ کب true ہوتی ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,8.1.2 Related Conditionals,topic_separator,,,,,,1
+q_9_math_ch8_sq_011,1,8.1.2 Related Conditionals,classification,"For a conditional p → q, write its converse, inverse, and contrapositive.",conditional p → q کے لیے اس کا converse، inverse اور contrapositive لکھیں۔,Medium,2,PRO,1
+q_9_math_ch8_sq_012,1,8.1.2 Related Conditionals,compare_contrast,Compare the logical equivalence of a conditional with its contrapositive and of a converse with its inverse.,conditional اور contrapositive کی logical equivalence، نیز converse اور inverse کی equivalence کا موازنہ کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,8.1.2 Truth Tables,topic_separator,,,,,,1
+q_9_math_ch8_sq_013,1,8.1.2 Truth Tables,table_based,Construct the truth table of the compound statement: (p → q) ∧ p,compound statement کی truth table construct کریں: (p → q) ∧ p,Medium,2,PRO,1
+q_9_math_ch8_sq_014,1,8.1.2 Truth Tables,table_based,"Construct the truth table and classify the statement as always true, always false, or contingent: [(p → q) ∧ p] → q",truth table construct کریں اور statement کو always true، always false یا contingent classify کریں: [(p → q) ∧ p] → q,Hard,2,PRO,1
+TOPIC_SEP,1,8.1.3 Mathematical Proof,topic_separator,,,,,,1
+q_9_math_ch8_sq_015,1,8.1.3 Mathematical Proof,definition_function,Define a mathematical proof and state why a logical sequence of steps is necessary.,mathematical proof کی تعریف کریں اور بیان کریں کہ logical sequence of steps کیوں necessary ہے۔,Medium,2,ELITE,1
+q_9_math_ch8_sq_016,1,8.1.3 Mathematical Proof,list_state,State the standard algebraic forms of an odd integer and an even integer.,odd integer اور even integer کی standard algebraic forms بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,"8.1.4 Theorem, Conjecture and Axiom",topic_separator,,,,,,1
+q_9_math_ch8_sq_017,1,"8.1.4 Theorem, Conjecture and Axiom",compare_contrast,"Differentiate among a theorem, conjecture, and axiom by stating the proof status of each.",theorem، conjecture اور axiom میں ان کے proof status کی بنیاد پر فرق بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,8.1.5 Deductive Proof,topic_separator,,,,,,1
+q_9_math_ch8_sq_018,1,8.1.5 Deductive Proof,process_steps,State the main steps of a deductive algebraic proof that establishes LHS = RHS.,LHS = RHS establish کرنے والے deductive algebraic proof کے main steps بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,Exercise 8 — Reasoning,topic_separator,,,,,,1
+q_9_math_ch8_sq_019,1,Exercise 8 — Reasoning,classification,Classify the reasoning as inductive or deductive: a conclusion is drawn from repeated experiments.,reasoning کو inductive یا deductive classify کریں: repeated experiments سے conclusion draw کیا جاتا ہے۔,Easy,2,PRO,1
+q_9_math_ch8_sq_020,1,Exercise 8 — Reasoning,classification,Classify the reasoning as inductive or deductive: a conclusion is drawn from accepted general facts.,reasoning کو inductive یا deductive classify کریں: accepted general facts سے conclusion draw کیا جاتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 8 — Negation,topic_separator,,,,,,1
+q_9_math_ch8_sq_021,1,Exercise 8 — Negation,concept_explanation,Write the negation of the statement: The stove is burning.,statement کی negation لکھیں: The stove is burning.,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 8 — Conditionals,topic_separator,,,,,,1
+q_9_math_ch8_sq_022,1,Exercise 8 — Conditionals,concept_explanation,"Write the converse, inverse, and contrapositive of the conditional: If p, then q.","conditional کا converse، inverse اور contrapositive لکھیں: If p, then q.",Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 8 — Truth Tables,topic_separator,,,,,,1
+q_9_math_ch8_sq_023,1,Exercise 8 — Truth Tables,table_based,Construct the truth table of the compound statement: ~(p ∨ q) ∨ (~q),compound statement کی truth table construct کریں: ~(p ∨ q) ∨ (~q),Medium,2,PRO,1
+q_9_math_ch8_sq_024,1,Exercise 8 — Truth Tables,table_based,Construct the truth table of the compound statement: ~(~q ∨ ~p),compound statement کی truth table construct کریں: ~(~q ∨ ~p),Medium,2,PRO,1
+q_9_math_ch8_sq_025,1,Exercise 8 — Truth Tables,table_based,Construct the truth table of the biconditional: (p ∨ q) ↔ (p ∧ q),biconditional کی truth table construct کریں: (p ∨ q) ↔ (p ∧ q),Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 8 — Statement and Proof,topic_separator,,,,,,1
+q_9_math_ch8_sq_026,1,Exercise 8 — Statement and Proof,difference,"Differentiate between a mathematical statement and its proof, giving one example of each.",mathematical statement اور اس کے proof میں فرق بیان کریں اور ہر ایک کی one example دیں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,Exercise 8 — Axiom and Theorem,topic_separator,,,,,,1
+q_9_math_ch8_sq_027,1,Exercise 8 — Axiom and Theorem,difference,Differentiate between an axiom and a theorem and give one example of each.,axiom اور theorem میں فرق بیان کریں اور ہر ایک کی one example دیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,Exercise 8 — Logical Reasoning,topic_separator,,,,,,1
+q_9_math_ch8_sq_028,1,Exercise 8 — Logical Reasoning,explain_reason,Explain the importance of logical reasoning in a mathematical proof with one brief example.,mathematical proof میں logical reasoning کی importance one brief example کے ساتھ explain کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,Exercise 8 — Classification,topic_separator,,,,,,1
+q_9_math_ch8_sq_029,1,Exercise 8 — Classification,classification,"Classify the statement as an axiom, conjecture, or theorem: There is exactly one straight line through any two points.",statement کو axiom، conjecture یا theorem classify کریں: There is exactly one straight line through any two points.,Easy,2,PRO,1
+q_9_math_ch8_sq_030,1,Exercise 8 — Classification,classification,"Classify the statement as an axiom, conjecture, or theorem: Every even integer greater than 2 is a sum of two prime numbers.",statement کو axiom، conjecture یا theorem classify کریں: Every even integer greater than 2 is a sum of two prime numbers.,Medium,2,PRO,1
+q_9_math_ch8_sq_031,1,Exercise 8 — Classification,classification,"Classify the statement as an axiom, conjecture, or theorem: The sum of the angles of a triangle is 180°.",statement کو axiom، conjecture یا theorem classify کریں: The sum of the angles of a triangle is 180°.,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 8 — Deductive Proof,topic_separator,,,,,,1
+q_9_math_ch8_sq_032,1,Exercise 8 — Deductive Proof,numerical_short,Formulate a deductive proof of the identity: (x − 4)² + 9 = x² − 8x + 25,identity کا deductive proof formulate کریں: (x − 4)² + 9 = x² − 8x + 25,Medium,2,PRO,1
+q_9_math_ch8_sq_033,1,Exercise 8 — Deductive Proof,numerical_short,Formulate a deductive proof of the identity: (x + 1)² − (x − 1)² = 4x,identity کا deductive proof formulate کریں: (x + 1)² − (x − 1)² = 4x,Medium,2,PRO,1
+q_9_math_ch8_sq_034,1,Exercise 8 — Deductive Proof,numerical_short,Formulate a deductive proof of the identity: (x + 5)² − (x − 5)² = 20x,identity کا deductive proof formulate کریں: (x + 5)² − (x − 5)² = 20x,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 8 — Justification of Steps,topic_separator,,,,,,1
+q_9_math_ch8_sq_035,1,Exercise 8 — Justification of Steps,numerical_short,Prove by justifying each algebraic step: (4 + 16x)/4 = 1 + 4x,each algebraic step justify کرکے prove کریں: (4 + 16x)/4 = 1 + 4x,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 8 — Parity Proofs,topic_separator,,,,,,1
+q_9_math_ch8_sq_036,1,Exercise 8 — Parity Proofs,numerical_short,Suppose x is an odd integer. Prove that 7x + 5 is even.,فرض کریں x odd integer ہے۔ prove کریں کہ 7x + 5 even ہے۔,Medium,2,PRO,1
+q_9_math_ch8_sq_037,1,Exercise 8 — Parity Proofs,numerical_short,Suppose x is an odd integer. Prove that x² − 4x + 6 is odd.,فرض کریں x odd integer ہے۔ prove کریں کہ x² − 4x + 6 odd ہے۔,Hard,2,PRO,1
+q_9_math_ch8_sq_038,1,Exercise 8 — Parity Proofs,numerical_short,Suppose x is an even integer. Prove that x² + 2x + 4 is even.,فرض کریں x even integer ہے۔ prove کریں کہ x² + 2x + 4 even ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 8 — Set Proof,topic_separator,,,,,,1
+q_9_math_ch8_sq_039,1,Exercise 8 — Set Proof,numerical_short,Prove the set identity for non-empty sets A and B: (A ∩ B)′ = A′ ∪ B′,non-empty sets A اور B کے لیے set identity prove کریں: (A ∩ B)′ = A′ ∪ B′,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 8 — Fraction Identity,topic_separator,,,,,,1
+q_9_math_ch8_sq_040,1,Exercise 8 — Fraction Identity,numerical_short,"For non-zero real numbers a, b, and c, prove: a/b + c/b = (a + c)/b",non-zero real numbers a، b اور c کے لیے prove کریں: a/b + c/b = (a + c)/b,Easy,2,PRO,1

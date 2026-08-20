@@ -1,0 +1,47 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,3.1 Why Do Atoms Form Bonds?,topic_separator,,,,,,1
+q_9_chem_ch3_sq_001,1,3.1 Why Do Atoms Form Bonds?,explain_reason,Why do atoms form chemical bonds?,ایٹم کیمیائی بند کیوں بناتے ہیں؟,Easy,2,PRO,1
+q_9_chem_ch3_sq_002,1,3.1 Why Do Atoms Form Bonds?,definition_function,Define the duplet rule and state one related characteristic or function.,ڈوپلیٹ قاعدہ کی تعریف کریں اور ایک اہم خصوصیت بیان کریں۔,Easy,2,ULTRA,1
+q_9_chem_ch3_sq_003,1,3.1 Why Do Atoms Form Bonds?,definition_function,Define the octet rule and state one related characteristic or function.,آکٹیٹ قاعدہ کی تعریف کریں اور ایک اہم خصوصیت بیان کریں۔,Easy,2,PRO,1
+q_9_chem_ch3_sq_004,1,3.1 Why Do Atoms Form Bonds?,list_state,Name the electrons that mainly take part in bond formation Also state one supporting reason or feature.,بند بنانے میں بنیادی طور پر کون سے الیکٹران حصہ لیتے ہیں۔ شناخت کی بنیاد بھی بیان کریں۔,Easy,2,PRO,1
+q_9_chem_ch3_sq_005,1,3.1 Why Do Atoms Form Bonds?,definition_function,Define a chemical bond and state one related characteristic or function.,کیمیائی بند کی تعریف کریں اور ایک اہم خصوصیت بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,3.2 Ionic Bond,topic_separator,,,,,,1
+q_9_chem_ch3_sq_006,1,3.2 Ionic Bond,process_steps,How is an ionic bond formed?,آئونی بند کیسے بنتا ہے؟,Easy,2,PRO,1
+q_9_chem_ch3_sq_007,1,3.2 Ionic Bond,cause_effect,Explain what happens to a sodium atom during formation of sodium chloride.,سوڈیم کلورائیڈ بننے کے دوران سوڈیم ایٹم کے ساتھ کیا ہوتا ہے؟,Medium,2,PRO,1
+q_9_chem_ch3_sq_008,1,3.2 Ionic Bond,cause_effect,Explain what happens to a chlorine atom during formation of sodium chloride.,سوڈیم کلورائیڈ بننے کے دوران کلورین ایٹم کے ساتھ کیا ہوتا ہے؟,Medium,2,PRO,1
+q_9_chem_ch3_sq_009,1,3.2 Ionic Bond,list_state,(a) What holds oppositely charged ions together in an ionic compound? (b) Name the compound that is mainly ionic.,(الف) آئونی مرکب میں مخالف بار والے آئنوں کو کیا اکٹھا رکھتا ہے۔ (ب) درج ذیل میں سے کون سا مرکب بنیادی طور پر آئونی ہے۔,Easy,2,PRO,1
+q_9_chem_ch3_sq_010,1,3.2 Ionic Bond,explain_reason,Why do ionic compounds have high melting and boiling points?,آئونی مرکبات کے نقطۂ پگھلاؤ اور ابال بلند کیوں ہوتے ہیں؟,Medium,2,PRO,1
+q_9_chem_ch3_sq_011,1,3.2 Ionic Bond,explain_reason,Why do solid ionic compounds not conduct electricity?,ٹھوس آئونی مرکبات بجلی کیوں نہیں چلاتے؟,Medium,2,PRO,1
+q_9_chem_ch3_sq_012,1,3.2 Ionic Bond,explain_reason,Why do molten ionic compounds conduct electricity?,پگھلے ہوئے آئونی مرکبات بجلی کیوں چلاتے ہیں؟,Medium,2,PRO,1
+q_9_chem_ch3_sq_013,1,3.2 Ionic Bond,definition_function,Define produced by electrolysis of molten sodium chloride and state one related characteristic or function.,پگھلے ہوئے سوڈیم کلورائیڈ کے برقی تجزیے سے کیا بنتا ہے۔ ایک متعلقہ خصوصیت بھی بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,3.2 Covalent and Coordinate Covalent Bonds,topic_separator,,,,,,1
+q_9_chem_ch3_sq_014,1,3.2 Covalent and Coordinate Covalent Bonds,process_steps,How is a covalent bond formed?,اشتراکی بند کیسے بنتا ہے؟,Easy,2,PRO,1
+q_9_chem_ch3_sq_015,1,3.2 Covalent and Coordinate Covalent Bonds,process_steps,State how many electron pairs are shared in a single covalent bond.,تعداد یا مقدار بیان کریں: ایک سنگل اشتراکی بند میں کتنے الیکٹران جوڑے مشترک ہوتے ہیں۔,Easy,2,ULTRA,1
+q_9_chem_ch3_sq_016,1,3.2 Covalent and Coordinate Covalent Bonds,process_steps,State how many electron pairs are shared in a double covalent bond.,تعداد یا مقدار بیان کریں: ڈبل اشتراکی بند میں کتنے الیکٹران جوڑے مشترک ہوتے ہیں۔,Easy,2,ULTRA,1
+q_9_chem_ch3_sq_017,1,3.2 Covalent and Coordinate Covalent Bonds,process_steps,State how many electron pairs are shared in a triple covalent bond.,تعداد یا مقدار بیان کریں: ٹرپل اشتراکی بند میں کتنے الیکٹران جوڑے مشترک ہوتے ہیں۔,Easy,2,ULTRA,1
+q_9_chem_ch3_sq_018,1,3.2 Covalent and Coordinate Covalent Bonds,features_characteristics,(a) Name the molecule that contains a double covalent bond (b) Name the molecule that contains a triple covalent bond.,(الف) نام یا شناخت لکھیں: کون سا سالمہ ڈبل اشتراکی بند رکھتا ہے۔ (ب) نام یا شناخت لکھیں: کون سا سالمہ ٹرپل اشتراکی بند رکھتا ہے۔,Medium,2,PRO,1
+q_9_chem_ch3_sq_019,1,3.2 Covalent and Coordinate Covalent Bonds,application_scenario,A covalent bond between identical atoms is usually called what?,یکساں ایٹموں کے درمیان اشتراکی بند کو عموماً کیا کہتے ہیں؟,Easy,2,PRO,1
+q_9_chem_ch3_sq_020,1,3.2 Covalent and Coordinate Covalent Bonds,explain_reason,Why is a covalent bond between two different atoms often polar?,دو مختلف ایٹموں کے درمیان اشتراکی بند اکثر قطبی کیوں ہوتا ہے؟,Medium,2,PRO,1
+q_9_chem_ch3_sq_021,1,3.2 Covalent and Coordinate Covalent Bonds,definition_function,Define a coordinate covalent bond and state one related characteristic or function.,کوارڈی نیٹ اشتراکی بند کی تعریف کریں اور ایک اہم خصوصیت بیان کریں۔,Medium,2,PRO,1
+q_9_chem_ch3_sq_022,1,3.2 Covalent and Coordinate Covalent Bonds,features_characteristics,Name the compound that contains both ionic and covalent bonds Also state one supporting reason or feature.,نام یا شناخت لکھیں: کون سا مرکب آئونی اور اشتراکی دونوں بند رکھتا ہے۔ شناخت کی بنیاد بھی بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.3 Metallic Bond,topic_separator,,,,,,1
+q_9_chem_ch3_sq_023,1,3.3 Metallic Bond,definition_function,Define the basic model of metallic bonding and state one related characteristic or function.,دھاتی بند کا بنیادی نمونہ کی تعریف کریں اور ایک اہم خصوصیت بیان کریں۔,Medium,2,PRO,1
+q_9_chem_ch3_sq_024,1,3.3 Metallic Bond,explain_reason,Why do metals conduct electricity?,دھاتیں بجلی کیوں چلاتی ہیں؟,Medium,2,PRO,1
+q_9_chem_ch3_sq_025,1,3.3 Metallic Bond,explain_reason,Why are metals malleable and ductile?,دھاتیں قابلِ پٹائی اور قابلِ تار کشی کیوں ہوتی ہیں؟,Medium,2,PRO,1
+q_9_chem_ch3_sq_026,1,3.3 Metallic Bond,classification,Classify bond is present in brass formed from copper and zinc Also state one supporting reason or feature.,تانبے اور زنک سے بننے والے پیتل میں کون سا بند ہوتا ہے۔ شناخت کی بنیاد بھی بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,3.4 Electronegativity and Polarity,topic_separator,,,,,,1
+q_9_chem_ch3_sq_027,1,3.4 Electronegativity and Polarity,definition_function,Define electronegativity and state one related characteristic or function.,برق منفی کی تعریف کریں اور ایک اہم خصوصیت بیان کریں۔,Medium,2,ULTRA,1
+q_9_chem_ch3_sq_028,1,3.4 Electronegativity and Polarity,list_state,Name the bond that is expected when the electronegativity difference is very large.,جب برق منفی کا فرق بہت زیادہ ہو تو کون سا بند متوقع ہے؟,Medium,2,ELITE,1
+TOPIC_SEP,1,3.7 Intermolecular Forces,topic_separator,,,,,,1
+q_9_chem_ch3_sq_029,1,3.7 Intermolecular Forces,list_state,State the two intermolecular forces are emphasized.,کن دو بین السالماتی قوتوں پر زور دیا گیا ہے؟,Easy,2,ULTRA,1
+q_9_chem_ch3_sq_030,1,3.7 Intermolecular Forces,explain_reason,Why is water liquid at room temperature while hydrogen sulphide is a gas?,پانی کمرے کے درجہ حرارت پر مائع جبکہ ہائیڈروجن سلفائیڈ گیس کیوں ہے؟,Hard,2,PRO,1
+q_9_chem_ch3_sq_031,1,3.7 Intermolecular Forces,features_characteristics,"Name the compound that has the highest boiling point among H₂O, H₂S, HF and NH₃.",H₂O، H₂S، HF اور NH₃ میں سب سے بلند نقطۂ ابال کس کا ہے؟,Hard,2,PRO,1
+TOPIC_SEP,1,3.6 Properties of Ionic and Covalent Compounds,topic_separator,,,,,,1
+q_9_chem_ch3_sq_032,1,3.6 Properties of Ionic and Covalent Compounds,features_characteristics,State the property that is typical of lower-molecular-mass covalent compounds.,کم سالماتی کمیت والے اشتراکی مرکبات کی عام خصوصیت کون سی ہے؟,Medium,2,ULTRA,1
+q_9_chem_ch3_sq_033,1,3.6 Properties of Ionic and Covalent Compounds,explain_reason,Why are many covalent compounds poor electrical conductors?,بہت سے اشتراکی مرکبات کمزور برقی موصل کیوں ہوتے ہیں؟,Medium,2,PRO,1
+q_9_chem_ch3_sq_034,1,3.6 Properties of Ionic and Covalent Compounds,list_state,Name the form that of carbon is used as a lubricant Also state one supporting reason or feature.,کاربن کی کون سی شکل بطور لبریکینٹ استعمال ہوتی ہے۔ شناخت کی بنیاد بھی بیان کریں۔,Easy,2,PRO,1
+q_9_chem_ch3_sq_035,1,3.6 Properties of Ionic and Covalent Compounds,explain_reason,Why does graphite conduct electricity?,گریفائٹ بجلی کیوں چلاتا ہے؟,Hard,2,PRO,1
+q_9_chem_ch3_sq_036,1,3.6 Properties of Ionic and Covalent Compounds,explain_reason,Why is diamond exceptionally hard?,ہیرا غیر معمولی طور پر سخت کیوں ہے؟,Hard,2,PRO,1
+q_9_chem_ch3_sq_037,1,3.6 Properties of Ionic and Covalent Compounds,list_state,Identify the explanation best accounts for iodine being solid while chlorine that is gas at room temperature.,نام یا شناخت لکھیں: کون سی وضاحت کمرے کے درجہ حرارت پر آیوڈین کے ٹھوس اور کلورین کے گیس ہونے کی بہترین وجہ بیان کرتی ہے۔,Hard,2,ELITE,1
+q_9_chem_ch3_sq_038,1,3.6 Properties of Ionic and Covalent Compounds,list_state,"Identify the ionic compound that has the highest melting point among LiCl, NaCl, KCl and RbCl.",LiCl، NaCl، KCl اور RbCl میں سب سے بلند نقطۂ پگھلاؤ کس کا ہے؟,Hard,2,PRO,1
+q_9_chem_ch3_sq_039,1,3.6 Properties of Ionic and Covalent Compounds,compare_contrast,Which statement best compares ionic and covalent compounds?,آئونی اور اشتراکی مرکبات کا بہترین تقابل کون سا بیان ہے؟,Hard,2,PRO,1

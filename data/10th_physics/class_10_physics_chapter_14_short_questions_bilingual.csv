@@ -1,0 +1,61 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,14.1 Reflection of Light,topic_separator,,,,,,1
+q_10_phy_ch14_sq_001,1,14.1 Reflection of Light,definition_example,Define reflection of light and give one everyday example.,reflection of light کی تعریف کریں اور روزمرہ زندگی سے ایک example دیں۔,Easy,2,PRO,1
+q_10_phy_ch14_sq_002,1,14.1 Reflection of Light,definition_function,"Define the normal, angle of incidence, and angle of reflection.",normal، angle of incidence اور angle of reflection کی definitions بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,14.1 Laws of Reflection,topic_separator,,,,,,1
+q_10_phy_ch14_sq_003,1,14.1 Laws of Reflection,law_principle,State the two laws of reflection of light.,reflection of light کے two laws بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,14.1 Types of Reflection,topic_separator,,,,,,1
+q_10_phy_ch14_sq_004,1,14.1 Types of Reflection,difference,Differentiate between regular reflection and diffuse reflection.,regular reflection اور diffuse reflection میں فرق بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,14.1 Plane Mirror,topic_separator,,,,,,1
+q_10_phy_ch14_sq_005,1,14.1 Plane Mirror,features_characteristics,State four characteristics of an image formed by a plane mirror.,plane mirror سے formed image کی four characteristics بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch14_sq_006,1,14.1 Plane Mirror,definition_function,Define lateral inversion and state how it appears in a plane mirror.,lateral inversion کی تعریف کریں اور بیان کریں کہ یہ plane mirror میں کیسے appear ہوتی ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,14.2 Refraction of Light,topic_separator,,,,,,1
+q_10_phy_ch14_sq_007,1,14.2 Refraction of Light,definition_function,Define refraction of light and state its basic cause.,refraction of light کی تعریف کریں اور اس کی basic cause بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch14_sq_008,1,14.2 Refraction of Light,concept_explanation,State how a light ray bends when it enters a denser or a rarer medium.,بیان کریں کہ light ray denser یا rarer medium میں enter ہونے پر کیسے bend کرتی ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,14.2 Refractive Index,topic_separator,,,,,,1
+q_10_phy_ch14_sq_009,1,14.2 Refractive Index,definition_formula,Define refractive index in terms of the speeds of light and write its formula.,speeds of light کے terms میں refractive index کی تعریف کریں اور اس کا formula لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,14.2 Snell's Law,topic_separator,,,,,,1
+q_10_phy_ch14_sq_010,1,14.2 Snell's Law,law_principle,State Snell's law and write its mathematical form for light entering a medium from air.,Snell's law بیان کریں اور air سے medium میں light enter ہونے کے لیے اس کی mathematical form لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,14.2 Refraction Through Prism,topic_separator,,,,,,1
+q_10_phy_ch14_sq_011,1,14.2 Refraction Through Prism,definition_function,Define the angle of deviation produced by a prism.,prism سے produced angle of deviation کی تعریف کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,14.3 Total Internal Reflection,topic_separator,,,,,,1
+q_10_phy_ch14_sq_012,1,14.3 Total Internal Reflection,definition_function,Define the critical angle and state the condition associated with it.,critical angle کی تعریف کریں اور اس سے associated condition بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch14_sq_013,1,14.3 Total Internal Reflection,definition_function,Define total internal reflection and state its two necessary conditions.,total internal reflection کی تعریف کریں اور اس کی two necessary conditions بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,14.4 Thin Lenses,topic_separator,,,,,,1
+q_10_phy_ch14_sq_014,1,14.4 Thin Lenses,difference,Differentiate between a convex lens and a concave lens in terms of shape and action on parallel rays.,shape اور parallel rays پر action کے لحاظ سے convex lens اور concave lens میں فرق بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,14.4 Lens Terms,topic_separator,,,,,,1
+q_10_phy_ch14_sq_015,1,14.4 Lens Terms,definition_function,"Define focal length, principal axis, and principal focus of a lens.",lens کی focal length، principal axis اور principal focus کی definitions بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,14.4 Power of a Lens,topic_separator,,,,,,1
+q_10_phy_ch14_sq_016,1,14.4 Power of a Lens,definition_unit,Define the power of a lens and state its SI unit.,power of a lens کی تعریف کریں اور اس کی SI unit بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch14_sq_017,1,14.1 Plane Mirror,process_steps,Describe an experiment to locate the position and study the characteristics of an image formed by a plane mirror.,plane mirror سے formed image کی position locate اور characteristics study کرنے والا experiment بیان کریں۔,Medium,2,PRO,1
+q_10_phy_ch14_sq_018,1,14.2 Refraction of Light,explain_reason,Explain why a pencil partly immersed in water appears bent or broken.,وضاحت کریں کہ water میں partly immersed pencil bent یا broken کیوں appear ہوتی ہے۔,Medium,2,PRO,1
+q_10_phy_ch14_sq_019,1,14.2 Refractive Index,numerical_short,"Calculate the speed of light in water using the given data: n = 1.33, c = 3.0 × 10⁸ m/s.","دیے گئے data سے water میں light کی speed معلوم کریں: n = 1.33, c = 3.0 × 10⁸ m/s",Medium,2,PRO,1
+q_10_phy_ch14_sq_020,1,14.2 Snell's Law,numerical_short,"Calculate the refractive index of a liquid using the given data: i = 45°, r = 30°.","دیے گئے data سے liquid کا refractive index معلوم کریں: i = 45°, r = 30°",Medium,2,PRO,1
+q_10_phy_ch14_sq_021,1,14.2 Refraction Through Prism,diagram_based,"Describe the path of an incident ray through a triangular prism and identify the refracted, emergent, and deviated rays.",triangular prism سے incident ray کا path بیان کریں اور refracted، emergent اور deviated rays کی نشاندہی کریں۔,Medium,2,ELITE,1
+q_10_phy_ch14_sq_022,1,14.3 Total Internal Reflection,formula_relationship,State the relationship between refractive index and critical angle when the second medium is air.,second medium air ہونے پر refractive index اور critical angle کا relationship بیان کریں۔,Medium,2,PRO,1
+q_10_phy_ch14_sq_023,1,14.3 Total Internal Reflection,numerical_short,Calculate the refractive index of a material whose critical angle in air is 30°.,اس material کا refractive index معلوم کریں جس کا critical angle in air = 30° ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,14.3 Optical Fibres,topic_separator,,,,,,1
+q_10_phy_ch14_sq_024,1,14.3 Optical Fibres,function_purpose,Explain how total internal reflection guides light through an optical fibre.,وضاحت کریں کہ total internal reflection optical fibre میں light کو کیسے guide کرتی ہے۔,Medium,2,PRO,1
+q_10_phy_ch14_sq_025,1,14.3 Optical Fibres,advantages_disadvantages,State four advantages of optical fibres over copper cables.,copper cables کے مقابلے میں optical fibres کے four advantages بیان کریں۔,Medium,2,PRO,1
+q_10_phy_ch14_sq_026,1,14.4 Thin Lenses,diagram_based,State the three principal-ray rules used to construct image diagrams for a convex lens.,convex lens کے image diagrams construct کرنے کے لیے three principal-ray rules بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,14.4 Image Formation,topic_separator,,,,,,1
+q_10_phy_ch14_sq_027,1,14.4 Image Formation,difference,Differentiate between real and virtual images using any three points.,any three points کی مدد سے real اور virtual images میں فرق بیان کریں۔,Medium,2,PRO,1
+q_10_phy_ch14_sq_028,1,14.4 Image Formation,table_based,Describe the image formed by a convex lens when the object is at 2F and when it is between F and 2F.,بیان کریں کہ convex lens object کے 2F پر اور F و 2F کے درمیان ہونے پر کیسی image form کرتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,14.4 Linear Magnification,topic_separator,,,,,,1
+q_10_phy_ch14_sq_029,1,14.4 Linear Magnification,definition_formula,Define linear magnification and write its mathematical formula.,linear magnification کی تعریف کریں اور اس کا mathematical formula لکھیں۔,Medium,2,PRO,1
+q_10_phy_ch14_sq_030,1,14.4 Linear Magnification,numerical_short,"Calculate image height using the given data: h₀ = 8 cm, M = −2.","دیے گئے data سے image height معلوم کریں: h₀ = 8 cm, M = −2",Medium,2,PRO,1
+TOPIC_SEP,1,14.5 Optical Devices,topic_separator,,,,,,1
+q_10_phy_ch14_sq_031,1,14.5 Optical Devices,function_purpose,Explain how a convex lens is used as a magnifying glass.,وضاحت کریں کہ convex lens کو magnifying glass کے طور پر کیسے use کیا جاتا ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,14.6 Eye Defects,topic_separator,,,,,,1
+q_10_phy_ch14_sq_032,1,14.6 Eye Defects,difference,Differentiate between short-sightedness and long-sightedness and state the correcting lens for each.,short-sightedness اور long-sightedness میں فرق بیان کریں اور ہر defect کے لیے correcting lens لکھیں۔,Medium,2,PRO,1
+q_10_phy_ch14_sq_033,1,14.2 Refraction of Light,process_steps,Describe an experiment using transparent blocks to study refraction and explain the observations.,transparent blocks استعمال کرکے refraction study کرنے والا experiment اور observations بیان کریں۔,Hard,2,PRO,1
+q_10_phy_ch14_sq_034,1,14.3 Total Internal Reflection,concept_explanation,Explain the transition from refraction to critical-angle refraction and then to total internal reflection as incidence angle increases.,incidence angle increase ہونے پر refraction سے critical-angle refraction اور پھر total internal reflection تک transition explain کریں۔,Hard,2,PRO,1
+q_10_phy_ch14_sq_035,1,14.3 Optical Fibres,application_scenario,Explain why optical fibres can transmit signals around bends with little loss and remain unaffected by electrical interference.,وضاحت کریں کہ optical fibres bends کے around little loss کے ساتھ signals کیوں transmit کرتی ہیں اور electrical interference سے unaffected کیوں رہتی ہیں۔,Hard,2,ELITE,1
+q_10_phy_ch14_sq_036,1,14.4 Image Formation,diagram_based,Compare the image formed by a convex lens for an object beyond 2F with the image formed for an object within F.,object beyond 2F اور object within F کے لیے convex lens کی formed images کا موازنہ کریں۔,Hard,2,PRO,1
+q_10_phy_ch14_sq_037,1,14.5 Optical Devices,compare_contrast,"Compare image formation in a camera, slide projector, and photograph enlarger.",camera، slide projector اور photograph enlarger میں image formation کا موازنہ کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,14.7 Gravitational and Acoustic Lenses,topic_separator,,,,,,1
+q_10_phy_ch14_sq_038,1,14.7 Gravitational and Acoustic Lenses,compare_contrast,Compare gravitational lensing with acoustic lenses in terms of the wave controlled and one application of each.,controlled wave اور one application کے لحاظ سے gravitational lensing اور acoustic lenses کا موازنہ کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,14.8 Dispersion of Light,topic_separator,,,,,,1
+q_10_phy_ch14_sq_039,1,14.8 Dispersion of Light,concept_explanation,Explain why a prism separates white light into seven colours and why violet bends more than red.,وضاحت کریں کہ prism white light کو seven colours میں کیوں separate کرتا ہے اور violet red سے زیادہ کیوں bend ہوتی ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,14.8 Infrared Thermometers,topic_separator,,,,,,1
+q_10_phy_ch14_sq_040,1,14.8 Infrared Thermometers,application_scenario,Explain how an infrared thermometer detects non-visible radiation and uses it for non-contact temperature measurement.,وضاحت کریں کہ infrared thermometer non-visible radiation کو کیسے detect کرتی ہے اور اسے non-contact temperature measurement کے لیے کیسے use کرتی ہے۔,Hard,2,ELITE,1

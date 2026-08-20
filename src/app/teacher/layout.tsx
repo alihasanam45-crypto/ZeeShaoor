@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react'
 import PortalShell from '@/components/shell/PortalShell'
-import { TEACHER_NAV } from '@/components/shell/nav'
 import { requirePortal } from '@/lib/security/page-guard'
 
 /**
@@ -18,7 +17,7 @@ export default async function TeacherLayout({ children }: { children: ReactNode 
   return (
     <PortalShell
       brand={{ title: 'ZeeShaoor.pk', subtitle: 'Teacher Portal', href: '/teacher' }}
-      nav={TEACHER_NAV}
+      portal="teacher"
       role="Teacher"
       sidebarFooter={
         <p className="text-[10px] leading-relaxed text-fg-faint">
