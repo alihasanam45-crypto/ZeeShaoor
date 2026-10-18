@@ -1,0 +1,71 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,6.1 Angles in Standard Position,topic_separator,,,,,,1
+q_9_math_ch6_sq_001,1,6.1 Angles in Standard Position,definition_function,"Define an angle in standard position and identify its initial side, terminal side, and vertex.",standard position میں angle کی تعریف کریں اور اس کی initial side، terminal side اور vertex identify کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.1 Positive and Negative Angles,topic_separator,,,,,,1
+q_9_math_ch6_sq_002,1,6.1 Positive and Negative Angles,difference,Differentiate between positive and negative angles by stating their directions of rotation.,directions of rotation کے لحاظ سے positive اور negative angles میں فرق بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.1 Co-Terminal Angles,topic_separator,,,,,,1
+q_9_math_ch6_sq_003,1,6.1 Co-Terminal Angles,definition_formula,Define co-terminal angles and state the general relationship used to generate them.,co-terminal angles کی تعریف کریں اور انہیں generate کرنے کا general relationship بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.1 Degree Measure,topic_separator,,,,,,1
+q_9_math_ch6_sq_004,1,6.1 Degree Measure,definition_unit,"Define degree measure and state the relationships among degrees, minutes, and seconds.",degree measure کی تعریف کریں اور degrees، minutes اور seconds کے relationships بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.1 Radian Measure,topic_separator,,,,,,1
+q_9_math_ch6_sq_005,1,6.1 Radian Measure,definition_unit,Define one radian and state the radian measure of a complete revolution.,one radian کی تعریف کریں اور complete revolution کی radian measure بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.1 Degree-Radian Relationship,topic_separator,,,,,,1
+q_9_math_ch6_sq_006,1,6.1 Degree-Radian Relationship,formula_relationship,State the relationships used to convert degrees into radians and radians into degrees.,degrees کو radians اور radians کو degrees میں convert کرنے کے relationships بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.1 Arc Length,topic_separator,,,,,,1
+q_9_math_ch6_sq_007,1,6.1 Arc Length,definition_formula,Define arc length and state its relationship with radius and central angle in radians.,arc length کی تعریف کریں اور radius و central angle in radians کے ساتھ اس کا relationship بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.1 Area of a Sector,topic_separator,,,,,,1
+q_9_math_ch6_sq_008,1,6.1 Area of a Sector,definition_formula,Define a circular sector and state the formula for its area when the angle is measured in radians.,circular sector کی تعریف کریں اور angle radians میں ہونے پر اس کے area کا formula بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.2 Trigonometric Ratios,topic_separator,,,,,,1
+q_9_math_ch6_sq_009,1,6.2 Trigonometric Ratios,definition_formula,"Define sin θ, cos θ, and tan θ in a right-angled triangle.",right-angled triangle میں sin θ، cos θ اور tan θ کی تعریف کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,6.2 Reciprocal Ratios,topic_separator,,,,,,1
+q_9_math_ch6_sq_010,1,6.2 Reciprocal Ratios,list_state,"State the reciprocal relationships among sin θ, cos θ, tan θ, cosec θ, sec θ, and cot θ.",sin θ، cos θ، tan θ، cosec θ، sec θ اور cot θ کے reciprocal relationships بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.2 Complementary-Angle Ratios,topic_separator,,,,,,1
+q_9_math_ch6_sq_011,1,6.2 Complementary-Angle Ratios,list_state,"State the complementary-angle relationships for sine, cosine, tangent, and cotangent.",sine، cosine، tangent اور cotangent کے complementary-angle relationships بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.3 Fundamental Identities,topic_separator,,,,,,1
+q_9_math_ch6_sq_012,1,6.3 Fundamental Identities,list_state,State the three fundamental Pythagorean trigonometric identities.,three fundamental Pythagorean trigonometric identities بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,6.4 Trigonometric Ratios of Special Angles,topic_separator,,,,,,1
+q_9_math_ch6_sq_013,1,6.4 Trigonometric Ratios of Special Angles,table_based,"Write the values of sin θ, cos θ, and tan θ for θ = 0°, 30°, 45°, 60°, and 90°.","θ = 0°, 30°, 45°, 60° اور 90° کے لیے sin θ، cos θ اور tan θ کی values لکھیں۔",Easy,2,ULTRA,1
+TOPIC_SEP,1,6.5 Solution of a Right Triangle,topic_separator,,,,,,1
+q_9_math_ch6_sq_014,1,6.5 Solution of a Right Triangle,definition_function,Explain what is meant by solving a right triangle and state the minimum information required.,وضاحت کریں کہ right triangle solve کرنے سے کیا مراد ہے اور minimum required information بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.6 Angle of Elevation,topic_separator,,,,,,1
+q_9_math_ch6_sq_015,1,6.6 Angle of Elevation,definition_example,Define the angle of elevation and give one practical example.,angle of elevation کی تعریف کریں اور one practical example دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.6 Angle of Depression,topic_separator,,,,,,1
+q_9_math_ch6_sq_016,1,6.6 Angle of Depression,definition_example,Define the angle of depression and give one practical example.,angle of depression کی تعریف کریں اور one practical example دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.1 Quadrants and Standard Position,topic_separator,,,,,,1
+q_9_math_ch6_sq_017,1,6.1 Quadrants and Standard Position,application_scenario,Identify the quadrant containing the terminal side of each angle: 135° and −40°.,each angle کی terminal side کا quadrant identify کریں: 135° and −40°,Medium,2,ELITE,1
+q_9_math_ch6_sq_018,1,6.1 Co-Terminal Angles,numerical_short,Find one positive and one negative co-terminal angle of 45°.,45° کی one positive اور one negative co-terminal angle معلوم کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,6.1 Degree-Minute-Second Conversion,topic_separator,,,,,,1
+q_9_math_ch6_sq_019,1,6.1 Degree-Minute-Second Conversion,numerical_short,"Convert the angle into degrees, minutes, and seconds: 73.12°",درج ذیل angle کو degrees، minutes اور seconds میں convert کریں: 73.12°,Medium,2,PRO,1
+TOPIC_SEP,1,6.1 Decimal-Degree Conversion,topic_separator,,,,,,1
+q_9_math_ch6_sq_020,1,6.1 Decimal-Degree Conversion,numerical_short,Convert the angle into decimal degrees: 45°45′45″,درج ذیل angle کو decimal degrees میں convert کریں: 45°45′45″,Medium,2,ELITE,1
+TOPIC_SEP,1,6.1 Degree-Radian Conversion,topic_separator,,,,,,1
+q_9_math_ch6_sq_021,1,6.1 Degree-Radian Conversion,numerical_short,Convert the angle into radians and express the answer in terms of π: 75°45′,درج ذیل angle کو radians میں convert کریں اور answer کو π کی terms میں express کریں: 75°45′,Medium,2,PRO,1
+TOPIC_SEP,1,6.1 Radian-Degree Conversion,topic_separator,,,,,,1
+q_9_math_ch6_sq_022,1,6.1 Radian-Degree Conversion,numerical_short,Convert the angle into degrees and minutes: 17π/24 rad,درج ذیل angle کو degrees اور minutes میں convert کریں: 17π/24 rad,Medium,2,PRO,1
+q_9_math_ch6_sq_023,1,6.1 Arc Length,numerical_short,"Calculate the arc length for the given data: r = 6 cm, θ = π/3 rad","given data سے arc length calculate کریں: r = 6 cm, θ = π/3 rad",Medium,2,ELITE,1
+q_9_math_ch6_sq_024,1,6.1 Area of a Sector,numerical_short,"Calculate the area of a sector for the given data: r = 8 cm, θ = π/4 rad","given data سے sector کا area calculate کریں: r = 8 cm, θ = π/4 rad",Medium,2,ELITE,1
+q_9_math_ch6_sq_025,1,6.2 Trigonometric Ratios,numerical_short,A right triangle has hypotenuse 13 units and an acute angle of 30°. Find the side opposite the 30° angle.,right triangle کی hypotenuse 13 units اور acute angle 30° ہے۔ 30° angle کے opposite side معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,6.3 Trigonometric Identities,topic_separator,,,,,,1
+q_9_math_ch6_sq_026,1,6.3 Trigonometric Identities,numerical_short,"If sin θ = 3/5 and θ is acute, find cos²θ.",اگر sin θ = 3/5 اور θ acute ہو تو cos²θ معلوم کریں۔,Medium,2,PRO,1
+q_9_math_ch6_sq_027,1,6.3 Trigonometric Identities,numerical_short,Simplify the expression by applying a fundamental identity: sec²θ − tan²θ,fundamental identity apply کرکے درج ذیل expression simplify کریں: sec²θ − tan²θ,Medium,2,PRO,1
+TOPIC_SEP,1,6.4 Special Angles,topic_separator,,,,,,1
+q_9_math_ch6_sq_028,1,6.4 Special Angles,numerical_short,Evaluate the exact value: sin 60°,exact value evaluate کریں: sin 60°,Medium,2,PRO,1
+q_9_math_ch6_sq_029,1,6.5 Solution of a Right Triangle,process_steps,State the procedure for finding the unknown sides and acute angles of a right triangle.,right triangle کی unknown sides اور acute angles معلوم کرنے کی procedure بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,6.5 Pythagoras Theorem,topic_separator,,,,,,1
+q_9_math_ch6_sq_030,1,6.5 Pythagoras Theorem,numerical_short,Each side of a square field is 60 m. Find the length of its diagonal.,square field کی each side 60 m ہے۔ اس کی diagonal کی length معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,6.5 Right-Triangle Application,topic_separator,,,,,,1
+q_9_math_ch6_sq_031,1,6.5 Right-Triangle Application,numerical_short,A ladder is 8 m long and its foot is 2 m from a wall. Find the height reached by the ladder.,ladder کی length 8 m اور foot wall سے 2 m دور ہے۔ ladder کی reached height معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,6.6 Elevation and Depression,topic_separator,,,,,,1
+q_9_math_ch6_sq_032,1,6.6 Elevation and Depression,compare_contrast,Differentiate between angles of elevation and depression using the observer's horizontal line.,observer کی horizontal line کے لحاظ سے angles of elevation اور depression میں فرق بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,6.1 Sector and Cone,topic_separator,,,,,,1
+q_9_math_ch6_sq_033,1,6.1 Sector and Cone,numerical_short,A sector of radius 12 cm and angle 150° is bent to form a cone. Find the radius of the cone's base.,radius 12 cm اور angle 150° والا sector cone بنانے کے لیے bend کیا جاتا ہے۔ cone کی base radius معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,6.3 Remaining Trigonometric Ratios,topic_separator,,,,,,1
+q_9_math_ch6_sq_034,1,6.3 Remaining Trigonometric Ratios,numerical_short,"If tan θ = 3/√2 and θ lies in the first quadrant, find the remaining trigonometric ratios.",اگر tan θ = 3/√2 اور θ first quadrant میں ہو تو remaining trigonometric ratios معلوم کریں۔,Hard,2,PRO,1
+q_9_math_ch6_sq_035,1,6.3 Trigonometric Identities,numerical_short,Prove the identity: tan θ + cot θ = 1/(sin θ cos θ),درج ذیل identity prove کریں: tan θ + cot θ = 1/(sin θ cos θ),Hard,2,PRO,1
+q_9_math_ch6_sq_036,1,6.3 Trigonometric Identities,numerical_short,Prove the identity: sin θ/(1 − cos θ) = (1 + cos θ)/sin θ,درج ذیل identity prove کریں: sin θ/(1 − cos θ) = (1 + cos θ)/sin θ,Hard,2,PRO,1
+q_9_math_ch6_sq_037,1,6.6 Angle of Elevation,numerical_short,A flag post is observed at an angle of elevation of 60° from a point 40 m away. Find the height of the post.,flag post کو 40 m away point سے angle of elevation 60° پر observe کیا جاتا ہے۔ post کی height معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,6.6 Two Observation Points,topic_separator,,,,,,1
+q_9_math_ch6_sq_038,1,6.6 Two Observation Points,numerical_short,"The angle of elevation of a pole is 15°. After moving 100 m toward the pole, the angle becomes 30°. Find the height of the pole.",pole کا angle of elevation 15° ہے۔ pole کی طرف 100 m move کرنے کے بعد angle 30° ہو جاتا ہے۔ pole کی height معلوم کریں۔,Hard,2,PRO,1
+q_9_math_ch6_sq_039,1,6.6 Angle of Depression,numerical_short,A lighthouse is 150 m high and the angle of depression of a ship is 60°. Find the horizontal distance between the ship and the tower.,lighthouse 150 m high ہے اور ship کا angle of depression 60° ہے۔ ship اور tower کے درمیان horizontal distance معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,6.6 River-Width Application,topic_separator,,,,,,1
+q_9_math_ch6_sq_040,1,6.6 River-Width Application,numerical_short,"From the top of a 300 m hill, the angles of depression to the near and far shores of a river are 70° and 50°. Find the river's width.",300 m hill کے top سے river کے near اور far shores کے angles of depression 70° اور 50° ہیں۔ river کی width معلوم کریں۔,Hard,2,PRO,1

@@ -1,0 +1,73 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,16.1 Electric Current,topic_separator,,,,,,1
+q_10_phy_ch16_sq_001,1,16.1 Electric Current,definition_formula,Define electric current and write its mathematical expression.,electric current کی تعریف کریں اور اس کا mathematical expression لکھیں۔,Easy,2,PRO,1
+q_10_phy_ch16_sq_002,1,16.1 Electric Current,definition_unit,State the SI unit of electric current and define one ampere.,electric current کی SI unit بیان کریں اور one ampere کی تعریف کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,16.1 Electrical Conduction in Metals,topic_separator,,,,,,1
+q_10_phy_ch16_sq_003,1,16.1 Electrical Conduction in Metals,concept_explanation,Explain electrical conduction in metals in terms of free electrons.,free electrons کی مدد سے metals میں electrical conduction explain کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,16.1 Direct and Alternating Current,topic_separator,,,,,,1
+q_10_phy_ch16_sq_004,1,16.1 Direct and Alternating Current,difference,Differentiate between direct current and alternating current.,direct current اور alternating current میں فرق بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,16.1 Conventional and Electronic Current,topic_separator,,,,,,1
+q_10_phy_ch16_sq_005,1,16.1 Conventional and Electronic Current,difference,Differentiate between conventional current and electronic current.,conventional current اور electronic current میں فرق بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,16.1 Ammeter,topic_separator,,,,,,1
+q_10_phy_ch16_sq_006,1,16.1 Ammeter,function_purpose,State the function of an ammeter and describe how it is connected in a circuit.,ammeter کا function بیان کریں اور بتائیں کہ اسے circuit میں کیسے connect کیا جاتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,16.2 Electromotive Force,topic_separator,,,,,,1
+q_10_phy_ch16_sq_007,1,16.2 Electromotive Force,definition_formula,Define electromotive force and write its mathematical expression.,electromotive force کی تعریف کریں اور اس کا mathematical expression لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,16.2 Potential Difference,topic_separator,,,,,,1
+q_10_phy_ch16_sq_008,1,16.2 Potential Difference,definition_formula,Define potential difference and write its mathematical expression.,potential difference کی تعریف کریں اور اس کا mathematical expression لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,16.2 Voltage,topic_separator,,,,,,1
+q_10_phy_ch16_sq_009,1,16.2 Voltage,definition_unit,State the SI unit of emf and potential difference and define one volt.,emf اور potential difference کی SI unit بیان کریں اور one volt کی تعریف کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,16.2 Voltmeter,topic_separator,,,,,,1
+q_10_phy_ch16_sq_010,1,16.2 Voltmeter,function_purpose,State the function of a voltmeter and describe how it is connected in a circuit.,voltmeter کا function بیان کریں اور بتائیں کہ اسے circuit میں کیسے connect کیا جاتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,16.3 Ohm's Law,topic_separator,,,,,,1
+q_10_phy_ch16_sq_011,1,16.3 Ohm's Law,law_principle,State Ohm's law and write its mathematical form.,Ohm's law بیان کریں اور اس کی mathematical form لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,16.3 Resistance,topic_separator,,,,,,1
+q_10_phy_ch16_sq_012,1,16.3 Resistance,definition_unit,Define electrical resistance and state its SI unit.,electrical resistance کی تعریف کریں اور اس کی SI unit بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,16.4 Resistors in Series,topic_separator,,,,,,1
+q_10_phy_ch16_sq_013,1,16.4 Resistors in Series,formula_relationship,State the formula for equivalent resistance of resistors connected in series.,series میں connected resistors کی equivalent resistance کا formula بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,16.4 Resistors in Parallel,topic_separator,,,,,,1
+q_10_phy_ch16_sq_014,1,16.4 Resistors in Parallel,formula_relationship,State the formula for equivalent resistance of resistors connected in parallel.,parallel میں connected resistors کی equivalent resistance کا formula بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,16.5 Resistivity,topic_separator,,,,,,1
+q_10_phy_ch16_sq_015,1,16.5 Resistivity,definition_formula,"Define resistivity and write its relationship with resistance, length, and cross-sectional area.",resistivity کی تعریف کریں اور resistance، length اور cross-sectional area کے ساتھ اس کا relationship لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,16.7 Kilowatt-Hour,topic_separator,,,,,,1
+q_10_phy_ch16_sq_016,1,16.7 Kilowatt-Hour,definition_function,Define the kilowatt-hour and state the physical quantity it measures.,kilowatt-hour کی تعریف کریں اور وہ physical quantity بیان کریں جسے یہ measure کرتی ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,16.2 Cells in Series and Parallel,topic_separator,,,,,,1
+q_10_phy_ch16_sq_017,1,16.2 Cells in Series and Parallel,compare_contrast,Compare the total emf of identical cells connected in series and in parallel.,identical cells کے series اور parallel connections میں total emf کا موازنہ کریں۔,Medium,2,PRO,1
+q_10_phy_ch16_sq_018,1,16.3 Ohm's Law,diagram_based,Describe the V-I graph of an ohmic conductor and state what its gradient represents.,ohmic conductor کا V-I graph describe کریں اور بیان کریں کہ اس کا gradient کیا represent کرتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,16.3 Resistance and Temperature,topic_separator,,,,,,1
+q_10_phy_ch16_sq_019,1,16.3 Resistance and Temperature,cause_effect,Explain how increasing temperature affects the resistance of a metallic conductor.,وضاحت کریں کہ temperature increase ہونے سے metallic conductor کی resistance پر کیا effect ہوتا ہے۔,Medium,2,PRO,1
+q_10_phy_ch16_sq_020,1,16.3 Ohm's Law,numerical_short,"Calculate the resistance of a component using the given data: V = 12 V, I = 3 A.","دیے گئے data سے component کی resistance معلوم کریں: V = 12 V, I = 3 A",Medium,2,PRO,1
+TOPIC_SEP,1,16.4 Series Circuit,topic_separator,,,,,,1
+q_10_phy_ch16_sq_021,1,16.4 Series Circuit,concept_explanation,State which electrical quantity remains the same through all components in series and how the supply voltage is distributed.,بیان کریں کہ series circuit کے تمام components میں کون سی electrical quantity same رہتی ہے اور supply voltage کیسے distribute ہوتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,16.4 Parallel Circuit,topic_separator,,,,,,1
+q_10_phy_ch16_sq_022,1,16.4 Parallel Circuit,concept_explanation,State which electrical quantity remains the same across parallel branches and how current divides.,بیان کریں کہ parallel branches کے across کون سی electrical quantity same رہتی ہے اور current کیسے divide ہوتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,16.4 Circuit Calculation,topic_separator,,,,,,1
+q_10_phy_ch16_sq_023,1,16.4 Circuit Calculation,numerical_short,"Three resistors of 4 Ω, 6 Ω, and 8 Ω are connected in series to a 24 V source. Calculate the total resistance and circuit current.",4 Ω، 6 Ω اور 8 Ω کے three resistors کو 24 V source کے ساتھ series میں connect کیا گیا ہے۔ total resistance اور circuit current معلوم کریں۔,Medium,2,PRO,1
+q_10_phy_ch16_sq_024,1,16.4 Circuit Calculation,numerical_short,Two resistors of 10 Ω and 30 Ω are connected in parallel across 20 V. Calculate the total resistance and total current.,10 Ω اور 30 Ω کے two resistors کو 20 V کے across parallel میں connect کیا گیا ہے۔ total resistance اور total current معلوم کریں۔,Medium,2,PRO,1
+q_10_phy_ch16_sq_025,1,16.5 Resistivity,cause_effect,Explain how length and cross-sectional area affect the resistance of a wire.,وضاحت کریں کہ length اور cross-sectional area wire کی resistance کو کیسے affect کرتے ہیں۔,Medium,2,PRO,1
+q_10_phy_ch16_sq_026,1,16.5 Resistivity,compare_contrast,Differentiate between resistance and resistivity.,resistance اور resistivity میں فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,16.6 Thermistors and LDRs,topic_separator,,,,,,1
+q_10_phy_ch16_sq_027,1,16.6 Thermistors and LDRs,compare_contrast,Compare the response of an NTC thermistor and an LDR to temperature and light intensity.,temperature اور light intensity کے لیے NTC thermistor اور LDR کے response کا موازنہ کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,16.6 Variable Potential Divider,topic_separator,,,,,,1
+q_10_phy_ch16_sq_028,1,16.6 Variable Potential Divider,function_purpose,Explain the function of a variable potential divider and write the voltage-ratio relationship used.,variable potential divider کا function explain کریں اور used voltage-ratio relationship لکھیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,16.6 Resistor Colour Code,topic_separator,,,,,,1
+q_10_phy_ch16_sq_029,1,16.6 Resistor Colour Code,process_steps,Describe how resistor colour bands are used to determine resistance value and tolerance.,بیان کریں کہ resistor colour bands سے resistance value اور tolerance کیسے determine کی جاتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,16.7 Electric Power,topic_separator,,,,,,1
+q_10_phy_ch16_sq_030,1,16.7 Electric Power,definition_formula,Define electric power and write two equivalent formulas used to calculate it.,electric power کی تعریف کریں اور اسے calculate کرنے کے لیے two equivalent formulas لکھیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,16.7 Electrical Energy,topic_separator,,,,,,1
+q_10_phy_ch16_sq_031,1,16.7 Electrical Energy,formula_relationship,State the relationship for electrical energy and identify the quantities in it.,electrical energy کا relationship بیان کریں اور اس میں موجود quantities کی نشاندہی کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,16.8 Household Circuits,topic_separator,,,,,,1
+q_10_phy_ch16_sq_032,1,16.8 Household Circuits,explain_reason,Explain why domestic appliances are connected in parallel.,وضاحت کریں کہ domestic appliances parallel میں کیوں connect کی جاتی ہیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,16.1 Measuring Current,topic_separator,,,,,,1
+q_10_phy_ch16_sq_033,1,16.1 Measuring Current,explain_reason,Explain why an ammeter must have very low resistance and be connected in series.,وضاحت کریں کہ ammeter کی resistance very low اور connection series میں کیوں ہونا چاہیے۔,Hard,2,PRO,1
+TOPIC_SEP,1,16.2 Measuring Voltage,topic_separator,,,,,,1
+q_10_phy_ch16_sq_034,1,16.2 Measuring Voltage,explain_reason,Explain why a voltmeter must have very high resistance and be connected in parallel.,وضاحت کریں کہ voltmeter کی resistance very high اور connection parallel میں کیوں ہونا چاہیے۔,Hard,2,PRO,1
+TOPIC_SEP,1,16.4 Series and Parallel Resistors,topic_separator,,,,,,1
+q_10_phy_ch16_sq_035,1,16.4 Series and Parallel Resistors,compare_contrast,"Compare series and parallel resistor combinations in terms of current, voltage, and equivalent resistance.",current، voltage اور equivalent resistance کے لحاظ سے series اور parallel resistor combinations کا موازنہ کریں۔,Hard,2,PRO,1
+q_10_phy_ch16_sq_036,1,16.5 Resistivity,application_scenario,A copper wire is replaced by an aluminium wire of the same dimensions. Explain how current and power consumption may change for the same applied voltage.,same dimensions کی copper wire کو aluminium wire سے replace کیا جاتا ہے۔ same applied voltage پر current اور power consumption میں possible change explain کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,16.7 Electric Power and Energy,topic_separator,,,,,,1
+q_10_phy_ch16_sq_037,1,16.7 Electric Power and Energy,numerical_short,A 5 A current passes through a 7 Ω resistor for 10 minutes. Calculate the power dissipated and the electrical energy used.,7 Ω resistor میں 5 A current 10 minutes تک flow کرتی ہے۔ dissipated power اور used electrical energy معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,16.8 Fuses and Trip Switches,topic_separator,,,,,,1
+q_10_phy_ch16_sq_038,1,16.8 Fuses and Trip Switches,application_scenario,Select a suitable fuse rating for a 230 V appliance rated at 5 A and justify the choice.,230 V پر 5 A rated appliance کے لیے suitable fuse rating select کریں اور choice justify کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,16.8 Electrical Safety,topic_separator,,,,,,1
+q_10_phy_ch16_sq_039,1,16.8 Electrical Safety,cause_effect,Explain what happens when a live wire touches an earthed metal casing and how the fuse or circuit breaker responds.,وضاحت کریں کہ live wire earthed metal casing کو touch کرے تو کیا ہوتا ہے اور fuse یا circuit breaker کیسے respond کرتا ہے۔,Hard,2,PRO,1
+q_10_phy_ch16_sq_040,1,16.8 Electrical Safety,compare_contrast,Compare earthing and double insulation as methods of protecting users from electric shock.,users کو electric shock سے protect کرنے کے methods کے طور پر earthing اور double insulation کا موازنہ کریں۔,Hard,2,ELITE,1

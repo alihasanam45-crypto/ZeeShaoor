@@ -1,0 +1,67 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,10.1 Functions and their Graphs,topic_separator,,,,,,1
+q_9_math_ch10_sq_001,1,10.1 Functions and their Graphs,definition_function,Define a function and identify the independent and dependent variables in y = f(x).,function کی تعریف کریں اور y = f(x) میں independent اور dependent variables identify کریں۔,Easy,2,IMPORTANT,1
+q_9_math_ch10_sq_002,1,10.1 Functions and their Graphs,list_state,State four forms in which a function can be represented.,وہ four forms بیان کریں جن میں function represent کی جا سکتی ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,10.1.1 Graph of Linear Functions,topic_separator,,,,,,1
+q_9_math_ch10_sq_003,1,10.1.1 Graph of Linear Functions,definition_formula,Define a linear function and identify the meanings of m and c in y = mx + c.,linear function کی تعریف کریں اور y = mx + c میں m اور c کے meanings identify کریں۔,Easy,2,ULTRA,1
+q_9_math_ch10_sq_004,1,10.1.1 Graph of Linear Functions,process_steps,State the intercept method for sketching the graph of a linear function.,linear function کا graph sketch کرنے کے لیے intercept method بیان کریں۔,Medium,2,ELITE,1
+q_9_math_ch10_sq_005,1,10.1.1 Graph of Linear Functions,cause_effect,Explain how the sign of the gradient affects the direction of a straight-line graph.,وضاحت کریں کہ gradient کا sign straight-line graph کی direction کو کیسے affect کرتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,10.1.2 Graph of Quadratic Functions,topic_separator,,,,,,1
+q_9_math_ch10_sq_006,1,10.1.2 Graph of Quadratic Functions,definition_formula,Define a quadratic function and state its general form with the condition on a.,quadratic function کی تعریف کریں اور a کی condition کے ساتھ اس کی general form بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch10_sq_007,1,10.1.2 Graph of Quadratic Functions,compare_contrast,Compare the graphs of y = x² and y = −x² in terms of direction of opening and symmetry.,y = x² اور y = −x² کے graphs کا direction of opening اور symmetry کے لحاظ سے موازنہ کریں۔,Medium,2,ELITE,1
+q_9_math_ch10_sq_008,1,10.1.2 Graph of Quadratic Functions,features_characteristics,State three characteristic features of the graph of a quadratic function.,quadratic function کے graph کی three characteristic features بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,10.1.3 Graph of Cubic Functions,topic_separator,,,,,,1
+q_9_math_ch10_sq_009,1,10.1.3 Graph of Cubic Functions,definition_formula,Define a cubic function and state its standard form with the condition on a.,cubic function کی تعریف کریں اور a کی condition کے ساتھ اس کی standard form بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch10_sq_010,1,10.1.3 Graph of Cubic Functions,features_characteristics,State three characteristic features of a cubic-function graph.,cubic-function graph کی three characteristic features بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,10.1.4 Graph of Reciprocal Functions,topic_separator,,,,,,1
+q_9_math_ch10_sq_011,1,10.1.4 Graph of Reciprocal Functions,definition_formula,Define a reciprocal function and state the restriction on its variable.,reciprocal function کی تعریف کریں اور اس کے variable پر restriction بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,10.1.4 Asymptotes,topic_separator,,,,,,1
+q_9_math_ch10_sq_012,1,10.1.4 Asymptotes,definition_function,Define an asymptote and distinguish vertical and horizontal asymptotes.,asymptote کی تعریف کریں اور vertical اور horizontal asymptotes میں فرق بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,10.1.5 Graph of Exponential Functions,topic_separator,,,,,,1
+q_9_math_ch10_sq_013,1,10.1.5 Graph of Exponential Functions,definition_formula,Define an exponential function of the form y = kaˣ and state the conditions given for its constants.,y = kaˣ کی form والی exponential function کی تعریف کریں اور constants کی given conditions بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,10.1.5 Exponential Growth,topic_separator,,,,,,1
+q_9_math_ch10_sq_014,1,10.1.5 Exponential Growth,features_characteristics,State the main graphical features of y = aˣ when a > 1.,a > 1 ہونے پر y = aˣ کی main graphical features بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,10.1.6 Power Functions,topic_separator,,,,,,1
+q_9_math_ch10_sq_015,1,10.1.6 Power Functions,classification,"Classify power functions according to positive integer, negative integer, and rational values of n in y = axⁿ.",y = axⁿ میں n کی positive integer، negative integer اور rational values کے مطابق power functions classify کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,10.2 Exponential Growth and Decay,topic_separator,,,,,,1
+q_9_math_ch10_sq_016,1,10.2 Exponential Growth and Decay,difference,Differentiate between exponential growth and exponential decay using the sign of the exponent or growth constant.,exponent یا growth constant کے sign سے exponential growth اور exponential decay میں فرق بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,10.2.1 Gradient of a Curve,topic_separator,,,,,,1
+q_9_math_ch10_sq_017,1,10.2.1 Gradient of a Curve,definition_formula,Define a tangent to a curve and state how its gradient is calculated from two points on the tangent.,curve کی tangent کی تعریف کریں اور tangent کے two points سے gradient calculate کرنے کا طریقہ بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,10.2.2 Real-Life Applications,topic_separator,,,,,,1
+q_9_math_ch10_sq_018,1,10.2.2 Real-Life Applications,compare_contrast,"Differentiate among cost, revenue, profit, and break-even point in a graphical business model.",graphical business model میں cost، revenue، profit اور break-even point میں فرق بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,Exercise 10.1 — Linear Graphs,topic_separator,,,,,,1
+q_9_math_ch10_sq_019,1,Exercise 10.1 — Linear Graphs,diagram_based,Sketch the graph of the linear function by making a table of values: y = 3x − 5,table of values بنا کر linear function کا graph sketch کریں: y = 3x − 5,Easy,2,PRO,1
+q_9_math_ch10_sq_020,1,Exercise 10.1 — Linear Graphs,diagram_based,Sketch the graph and identify both intercepts: y = −2x + 8,graph sketch کریں اور دونوں intercepts identify کریں: y = −2x + 8,Medium,2,PRO,1
+q_9_math_ch10_sq_021,1,Exercise 10.1 — Linear Graphs,diagram_based,Sketch the graph and state whether it rises or falls from left to right: y = 0.5x − 1,graph sketch کریں اور بیان کریں کہ left سے right کی طرف rise کرتا ہے یا fall: y = 0.5x − 1,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 10.1 — Quadratic Graphs,topic_separator,,,,,,1
+q_9_math_ch10_sq_022,1,Exercise 10.1 — Quadratic Graphs,table_based,Prepare a value table for the quadratic function over suitable integer values of x: y = x² + 2x − 5,suitable integer values of x پر quadratic function کی value table تیار کریں: y = x² + 2x − 5,Medium,2,PRO,1
+q_9_math_ch10_sq_023,1,Exercise 10.1 — Quadratic Graphs,diagram_based,Sketch the graph and identify the y-intercept: y = 2x² − 7x − 9,graph sketch کریں اور y-intercept identify کریں: y = 2x² − 7x − 9,Medium,2,PRO,1
+q_9_math_ch10_sq_024,1,Exercise 10.1 — Quadratic Graphs,compare_contrast,Plot y = x² and y = −x² on the same axes and compare their shapes.,same axes پر y = x² اور y = −x² plot کریں اور shapes کا موازنہ کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 10.1 — Cubic Graphs,topic_separator,,,,,,1
+q_9_math_ch10_sq_025,1,Exercise 10.1 — Cubic Graphs,table_based,Prepare a value table for −3 ≤ x ≤ 3 and sketch the graph: y = −x³,−3 ≤ x ≤ 3 کے لیے value table تیار کریں اور graph sketch کریں: y = −x³,Medium,2,PRO,1
+q_9_math_ch10_sq_026,1,Exercise 10.1 — Cubic Graphs,diagram_based,Sketch the cubic graph over −2 ≤ x ≤ 3: y = 2x³ − 3x² + x − 5,−2 ≤ x ≤ 3 پر cubic graph sketch کریں: y = 2x³ − 3x² + x − 5,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 10.1 — Reciprocal Graphs,topic_separator,,,,,,1
+q_9_math_ch10_sq_027,1,Exercise 10.1 — Reciprocal Graphs,diagram_based,Sketch the reciprocal graph and mark its vertical asymptote: y = 1/(x − 3),reciprocal graph sketch کریں اور vertical asymptote mark کریں: y = 1/(x − 3),Medium,2,PRO,1
+q_9_math_ch10_sq_028,1,Exercise 10.1 — Reciprocal Graphs,table_based,Prepare a value table on both sides of x = 0 for the function: y = 2/x + 3,function کے لیے x = 0 کی دونوں sides پر value table تیار کریں: y = 2/x + 3,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 10.1 — Exponential Graphs,topic_separator,,,,,,1
+q_9_math_ch10_sq_029,1,Exercise 10.1 — Exponential Graphs,diagram_based,Sketch the exponential graph for selected integer values of x: y = 4ˣ,selected integer values of x کے لیے exponential graph sketch کریں: y = 4ˣ,Easy,2,PRO,1
+q_9_math_ch10_sq_030,1,Exercise 10.1 — Exponential Graphs,compare_contrast,Plot y = 4ˣ and y = 5ˣ on the same axes and compare their rates of growth.,same axes پر y = 4ˣ اور y = 5ˣ plot کریں اور growth rates compare کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 10.1 — Power Graphs,topic_separator,,,,,,1
+q_9_math_ch10_sq_031,1,Exercise 10.1 — Power Graphs,diagram_based,Sketch the power-function graph and state its symmetry: y = 3x³,power-function graph sketch کریں اور symmetry بیان کریں: y = 3x³,Easy,2,PRO,1
+q_9_math_ch10_sq_032,1,Exercise 10.1 — Power Graphs,diagram_based,Sketch the graph for x ≠ 0 and identify its asymptotes: y = 2x⁻²,x ≠ 0 کے لیے graph sketch کریں اور asymptotes identify کریں: y = 2x⁻²,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 10.2 — Exponential Growth,topic_separator,,,,,,1
+q_9_math_ch10_sq_033,1,Exercise 10.2 — Exponential Growth,numerical_short,A village population is modeled by p = 753e⁰·⁰³ᵗ. Find the population predicted after 10 years.,village population model p = 753e⁰·⁰³ᵗ ہے۔ 10 years کے بعد predicted population معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 10.2 — Exponential Decay,topic_separator,,,,,,1
+q_9_math_ch10_sq_034,1,Exercise 10.2 — Exponential Decay,table_based,"For S = 1000e⁻ᵗ, calculate values at t = 0, 1, 2, and 3 and describe the trend.","S = 1000e⁻ᵗ کے لیے t = 0, 1, 2, 3 پر values calculate کریں اور trend describe کریں۔",Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 10.2 — Tangent Gradient,topic_separator,,,,,,1
+q_9_math_ch10_sq_035,1,Exercise 10.2 — Tangent Gradient,diagram_based,Draw a tangent to y = x² at x = 2 and estimate its gradient from two points on the tangent.,y = x² پر x = 2 کے مقام پر tangent draw کریں اور tangent کے two points سے gradient estimate کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 10.2 — Salary Model,topic_separator,,,,,,1
+q_9_math_ch10_sq_036,1,Exercise 10.2 — Salary Model,numerical_short,A monthly salary is modeled by S(x) = 25000 + 1500x. Find the salary after 8 years.,monthly salary کا model S(x) = 25000 + 1500x ہے۔ 8 years کے بعد salary معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 10.2 — Break-Even Analysis,topic_separator,,,,,,1
+q_9_math_ch10_sq_037,1,Exercise 10.2 — Break-Even Analysis,numerical_short,"For C(x) = 90000 + 600x and R(x) = 1800x, determine the break-even number of units.",C(x) = 90000 + 600x اور R(x) = 1800x کے لیے break-even units کی number determine کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 10.2 — Profit Analysis,topic_separator,,,,,,1
+q_9_math_ch10_sq_038,1,Exercise 10.2 — Profit Analysis,numerical_short,"Using C(x) = 90000 + 600x and R(x) = 1800x, find the profit when 150 units are sold.",C(x) = 90000 + 600x اور R(x) = 1800x استعمال کرتے ہوئے 150 units sold ہونے پر profit معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Review Exercise 10 — Graph Interpretation,topic_separator,,,,,,1
+q_9_math_ch10_sq_039,1,Review Exercise 10 — Graph Interpretation,classification,"Classify each function as linear, quadratic, cubic, reciprocal, exponential, or power: y = 2x − 3; y = x³; y = 5ˣ.",each function کو linear، quadratic، cubic، reciprocal، exponential یا power classify کریں: y = 2x − 3; y = x³; y = 5ˣ.,Easy,2,PRO,1
+TOPIC_SEP,1,Review Exercise 10 — Intercepts,topic_separator,,,,,,1
+q_9_math_ch10_sq_040,1,Review Exercise 10 — Intercepts,numerical_short,Find the x- and y-intercepts of the function: y = 4x − 12,function کے x- اور y-intercepts معلوم کریں: y = 4x − 12,Easy,2,PRO,1

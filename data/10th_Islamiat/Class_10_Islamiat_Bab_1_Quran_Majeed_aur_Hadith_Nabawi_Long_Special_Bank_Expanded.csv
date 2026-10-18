@@ -1,0 +1,26 @@
+﻿question_hash,active,topic,question_type,question_style,question,difficulty,marks,weightage,smart_syllabus
+q_10_isl_b1_long_001,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | EXERCISE DIRECT | حفاظت و تدوین حدیث,Long,detailed_question_textbook,جمع و تدوین حدیث پر نوٹ لکھیں۔,Medium,10,ELITE,1
+q_10_isl_b1_long_002,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | EXTRA IMPORTANT | حدیث کے معنی و اقسام,Long,detailed_question_extra_important,حدیث کے معنی و مفہوم، حدیث قولی، فعلی، تقریری اور قدسی کی وضاحت کریں۔,Medium,10,ULTRA,1
+q_10_isl_b1_long_003,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | EXTRA IMPORTANT | حدیث کی اہمیت,Long,detailed_question_extra_important,قرآن مجید کی تشریح اور اسلامی زندگی کی رہنمائی میں حدیث نبوی ﷺ کی اہمیت تفصیل سے بیان کریں۔,Medium,10,ULTRA,1
+q_10_isl_b1_long_004,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | EXTRA IMPORTANT | دور نبوی میں حفاظت حدیث,Long,detailed_question_extra_important,دور نبوی ﷺ میں حفظ، عمل اور کتابت کے ذریعے حفاظت حدیث کے طریقوں کی وضاحت کریں۔,Medium,10,ULTRA,1
+q_10_isl_b1_long_005,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | EXTRA IMPORTANT | جمع و تدوین حدیث,Long,detailed_question_extra_important,صحیفہ صادقہ، تحریری ہدایات، دور تابعین اور مستند کتب حدیث کی روشنی میں جمع و تدوین حدیث کا ارتقا بیان کریں۔,Medium,10,ULTRA,1
+q_10_isl_b1_hadith_01,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | BOOK DIRECT | منتخب احادیث نبویہ | حدیث 1,Special,selected_hadith_translation,"درج ذیل حدیث مبارکہ کا اردو ترجمہ لکھیں:
+بَقِيَّةُ رِجْزٍ، أَوْ عَذَابٌ أُرْسِلَ عَلَى طَائِفَةٍ مِنْ بَنِي إِسْرَائِيلَ، فَإِذَا وَقَعَ بِأَرْضٍ وَأَنْتُمْ بِهَا فَلَا تَخْرُجُوا مِنْهَا، وَإِذَا وَقَعَ بِأَرْضٍ وَلَسْتُمْ بِهَا فَلَا تَهْبِطُوا عَلَيْهَا",Medium,5,ELITE,1
+q_10_isl_b1_hadith_02,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | BOOK DIRECT | منتخب احادیث نبویہ | حدیث 2,Special,selected_hadith_translation,"درج ذیل حدیث مبارکہ کا اردو ترجمہ لکھیں:
+فَيَرْضَى لَكُمْ أَنْ تَعْبُدُوهُ، وَلَا تُشْرِكُوا بِهِ شَيْئًا، وَأَنْ تَعْتَصِمُوا بِحَبْلِ اللَّهِ جَمِيعًا وَلَا تَفَرَّقُوا، وَيَكْرَهُ لَكُمْ: قِيلَ وَقَالَ، وَكَثْرَةَ السُّؤَالِ، وَإِضَاعَةَ الْمَالِ",Medium,5,ELITE,1
+q_10_isl_b1_hadith_03,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | BOOK DIRECT | منتخب احادیث نبویہ | حدیث 3,Special,selected_hadith_translation,"درج ذیل حدیث مبارکہ کا اردو ترجمہ لکھیں:
+مَا مِنْ مُسْلِمٍ يَغْرِسُ غَرْسًا أَوْ يَزْرَعُ زَرْعًا فَيَأْكُلُ مِنْهُ طَيْرٌ أَوْ إِنْسَانٌ أَوْ بَهِيمَةٌ إِلَّا كَانَ لَهُ بِهِ صَدَقَةٌ",Medium,5,ELITE,1
+q_10_isl_b1_hadith_04,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | BOOK DIRECT | منتخب احادیث نبویہ | حدیث 4,Special,selected_hadith_translation,"درج ذیل حدیث مبارکہ کا اردو ترجمہ لکھیں:
+مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلَا يُؤْذِ جَارَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيُكْرِمْ ضَيْفَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",Medium,5,ELITE,1
+q_10_isl_b1_hadith_05,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | BOOK DIRECT | منتخب احادیث نبویہ | حدیث 5,Special,selected_hadith_translation,"درج ذیل حدیث مبارکہ کا اردو ترجمہ لکھیں:
+الْمُسْلِمُ أَخُو الْمُسْلِمِ، لَا يَظْلِمُهُ وَلَا يَخْذُلُهُ، وَلَا يَحْقِرُهُ",Medium,5,ELITE,1
+q_10_isl_b1_hadith_06,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | BOOK DIRECT | منتخب احادیث نبویہ | حدیث 6,Special,selected_hadith_translation,"درج ذیل حدیث مبارکہ کا اردو ترجمہ لکھیں:
+اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا",Medium,5,ELITE,1
+q_10_isl_b1_hadith_07,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | BOOK DIRECT | منتخب احادیث نبویہ | حدیث 7,Special,selected_hadith_translation,"درج ذیل حدیث مبارکہ کا اردو ترجمہ لکھیں:
+مَا أَمَرْتُكُمْ بِهِ فَخُذُوهُ، وَمَا نَهَيْتُكُمْ عَنْهُ فَانْتَهُوا",Medium,5,ELITE,1
+q_10_isl_b1_hadith_08,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | BOOK DIRECT | منتخب احادیث نبویہ | حدیث 8,Special,selected_hadith_translation,"درج ذیل حدیث مبارکہ کا اردو ترجمہ لکھیں:
+إِيَّاكُمْ وَالظَّنَّ فَإِنَّ الظَّنَّ أَكْذَبُ الْحَدِيثِ",Medium,5,ELITE,1
+q_10_isl_b1_hadith_09,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | BOOK DIRECT | منتخب احادیث نبویہ | حدیث 9,Special,selected_hadith_translation,"درج ذیل حدیث مبارکہ کا اردو ترجمہ لکھیں:
+لَعْنَةُ اللَّهِ عَلَى الرَّاشِي وَالْمُرْتَشِي",Medium,5,ELITE,1
+q_10_isl_b1_hadith_10,1,ISLAMIAT | CLASS 10 | BAB 1 - قرآن مجید اور حدیث نبوی ﷺ | BOOK-BASED PAPER GENERATOR | BOOK DIRECT | منتخب احادیث نبویہ | حدیث 10,Special,selected_hadith_translation,"درج ذیل حدیث مبارکہ کا اردو ترجمہ لکھیں:
+إِنَّ اللَّهَ يَرْفَعُ بِهَذَا الْكِتَابِ أَقْوَامًا، وَيَضَعُ بِهِ آخَرِينَ",Medium,5,ELITE,1

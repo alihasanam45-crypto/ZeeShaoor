@@ -1,0 +1,57 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,18.1 Electromagnetic Induction,topic_separator,,,,,,1
+q_10_phy_ch18_sq_001,1,18.1 Electromagnetic Induction,definition_function,Define electromagnetic induction and state the condition required to produce an induced current.,electromagnetic induction کی تعریف کریں اور induced current پیدا ہونے کی required condition بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch18_sq_002,1,18.1 Electromagnetic Induction,concept_explanation,State what happens to a galvanometer when a magnet is stationary near a coil and when it is moved toward the coil.,بیان کریں کہ magnet coil کے near stationary ہو اور پھر coil کی طرف move کیا جائے تو galvanometer کے ساتھ کیا ہوتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,18.1 Faraday's Law,topic_separator,,,,,,1
+q_10_phy_ch18_sq_003,1,18.1 Faraday's Law,law_principle,State Faraday's law of electromagnetic induction.,Faraday's law of electromagnetic induction بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,18.1 Lenz's Law,topic_separator,,,,,,1
+q_10_phy_ch18_sq_004,1,18.1 Lenz's Law,law_principle,State Lenz's law and identify what it determines.,Lenz's law بیان کریں اور identify کریں کہ یہ کیا determine کرتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,18.1 Induced EMF,topic_separator,,,,,,1
+q_10_phy_ch18_sq_005,1,18.1 Induced EMF,list_state,State three factors that affect the magnitude of induced emf in a coil.,coil میں induced emf کی magnitude کو affect کرنے والے three factors بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,18.2 AC Generator,topic_separator,,,,,,1
+q_10_phy_ch18_sq_006,1,18.2 AC Generator,definition_function,State the energy conversion performed by an AC generator.,AC generator کی performed energy conversion بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch18_sq_007,1,18.2 AC Generator,function_purpose,State the functions of slip rings and carbon brushes in an AC generator.,AC generator میں slip rings اور carbon brushes کے functions بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch18_sq_008,1,18.2 AC Generator,features_characteristics,"State the meaning of the peaks, troughs, and zero points on an AC emf-time graph.",AC emf-time graph پر peaks، troughs اور zero points کے meanings بیان کریں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,18.3 Transformer,topic_separator,,,,,,1
+q_10_phy_ch18_sq_009,1,18.3 Transformer,definition_function,Define a transformer and state the type of current on which it operates.,transformer کی تعریف کریں اور وہ current type بیان کریں جس پر یہ operate کرتا ہے۔,Easy,2,PRO,1
+q_10_phy_ch18_sq_010,1,18.3 Transformer,difference,Differentiate between a step-up transformer and a step-down transformer.,step-up transformer اور step-down transformer میں فرق بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch18_sq_011,1,18.3 Transformer,definition_function,Define primary and secondary coils of a transformer.,transformer کی primary اور secondary coils کی definitions بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,18.4 Electron Beams,topic_separator,,,,,,1
+q_10_phy_ch18_sq_012,1,18.4 Electron Beams,definition_function,Define an electron beam and state one method used to produce it.,electron beam کی تعریف کریں اور اسے produce کرنے کا one method بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,18.4 Cathode-Ray Oscilloscope,topic_separator,,,,,,1
+q_10_phy_ch18_sq_013,1,18.4 Cathode-Ray Oscilloscope,function_purpose,State the main function of a cathode-ray oscilloscope.,cathode-ray oscilloscope کا main function بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,18.5 Electromagnetic Waves,topic_separator,,,,,,1
+q_10_phy_ch18_sq_014,1,18.5 Electromagnetic Waves,features_characteristics,State two properties of electromagnetic waves and their speed in vacuum.,electromagnetic waves کی two properties اور vacuum میں ان کی speed بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,18.6 Photon Model,topic_separator,,,,,,1
+q_10_phy_ch18_sq_015,1,18.6 Photon Model,definition_function,Define a photon and state the two physical quantities it carries.,photon کی تعریف کریں اور وہ two physical quantities بیان کریں جو یہ carry کرتا ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,18.6 Photon Energy,topic_separator,,,,,,1
+q_10_phy_ch18_sq_016,1,18.6 Photon Energy,formula_relationship,State the relationship between photon energy and frequency.,photon energy اور frequency کے درمیان relationship بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch18_sq_017,1,18.1 Electromagnetic Induction,process_steps,"Describe an experiment using a coil, magnet, and galvanometer to demonstrate electromagnetic induction.",coil، magnet اور galvanometer استعمال کرکے electromagnetic induction demonstrate کرنے والا experiment بیان کریں۔,Medium,2,PRO,1
+q_10_phy_ch18_sq_018,1,18.1 Induced EMF,cause_effect,Explain how the speed of relative motion and the number of coil turns affect induced emf.,وضاحت کریں کہ relative motion کی speed اور coil turns کی number induced emf کو کیسے affect کرتی ہیں۔,Medium,2,PRO,1
+q_10_phy_ch18_sq_019,1,18.1 Lenz's Law,explain_reason,Explain why the induced current opposes the change that produces it.,وضاحت کریں کہ induced current اسے produce کرنے والی change کو oppose کیوں کرتی ہے۔,Medium,2,ELITE,1
+q_10_phy_ch18_sq_020,1,18.2 AC Generator,process_steps,Describe the working of a simple AC generator with a rotating coil.,rotating coil والے simple AC generator کی working بیان کریں۔,Medium,2,PRO,1
+q_10_phy_ch18_sq_021,1,18.2 AC Generator,cause_effect,Explain why the direction of induced current reverses after each half-turn of the generator coil.,وضاحت کریں کہ generator coil کے ہر half-turn کے بعد induced current کی direction کیوں reverse ہوتی ہے۔,Medium,2,PRO,1
+q_10_phy_ch18_sq_022,1,18.2 AC Generator,diagram_based,"Relate the position of a rotating coil to the peaks, troughs, and zeros of its generated emf.",rotating coil کی position کو generated emf کے peaks، troughs اور zeros سے relate کریں۔,Medium,2,ELITE,1
+q_10_phy_ch18_sq_023,1,18.3 Transformer,law_principle,Explain the operating principle of a simple iron-cored transformer.,simple iron-cored transformer کا operating principle explain کریں۔,Medium,2,PRO,1
+q_10_phy_ch18_sq_024,1,18.3 Transformer,formula_relationship,State the transformer turns-ratio equation and identify each symbol.,transformer turns-ratio equation بیان کریں اور ہر symbol identify کریں۔,Medium,2,PRO,1
+q_10_phy_ch18_sq_025,1,18.3 Transformer,numerical_short,"Calculate the secondary voltage using the given data: Vₚ = 12 V, Nₚ = 100, Nₛ = 500.","دیے گئے data سے secondary voltage معلوم کریں: Vₚ = 12 V, Nₚ = 100, Nₛ = 500",Medium,2,PRO,1
+q_10_phy_ch18_sq_026,1,18.3 Transformer,explain_reason,Explain why a transformer does not operate with a steady direct current.,وضاحت کریں کہ transformer steady direct current کے ساتھ operate کیوں نہیں کرتا۔,Medium,2,PRO,1
+TOPIC_SEP,1,18.4 Electron Beam Deflection,topic_separator,,,,,,1
+q_10_phy_ch18_sq_027,1,18.4 Electron Beam Deflection,compare_contrast,Compare the deflection of an electron beam by electric and magnetic fields.,electric اور magnetic fields سے electron beam کی deflection کا موازنہ کریں۔,Medium,2,PRO,1
+q_10_phy_ch18_sq_028,1,18.4 Cathode-Ray Oscilloscope,function_purpose,"State the functions of the electron gun, Y-plates, X-plates, and fluorescent screen in a CRO.",CRO میں electron gun، Y-plates، X-plates اور fluorescent screen کے functions بیان کریں۔,Medium,2,ELITE,1
+q_10_phy_ch18_sq_029,1,18.4 Cathode-Ray Oscilloscope,diagram_based,Explain how a CRO displays the variation of an electrical signal with time.,وضاحت کریں کہ CRO electrical signal کی time کے ساتھ variation کیسے display کرتی ہے۔,Medium,2,PRO,1
+q_10_phy_ch18_sq_030,1,18.5 Electromagnetic Waves,compare_contrast,Compare electromagnetic waves with mechanical waves in terms of medium and field vibration.,medium اور field vibration کے لحاظ سے electromagnetic waves اور mechanical waves کا موازنہ کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,18.6 Scattering of Light,topic_separator,,,,,,1
+q_10_phy_ch18_sq_031,1,18.6 Scattering of Light,cause_effect,Explain why the sky appears blue during daytime.,وضاحت کریں کہ daytime میں sky blue کیوں appear ہوتی ہے۔,Medium,2,PRO,1
+q_10_phy_ch18_sq_032,1,18.6 Scattering of Light,cause_effect,Explain why the Sun appears reddish near sunrise or sunset.,وضاحت کریں کہ sunrise یا sunset کے near Sun reddish کیوں appear ہوتا ہے۔,Medium,2,PRO,1
+q_10_phy_ch18_sq_033,1,18.1 Lenz's Law,concept_explanation,Explain how Lenz's law illustrates the conservation of energy in electromagnetic induction.,وضاحت کریں کہ Lenz's law electromagnetic induction میں conservation of energy کو کیسے illustrate کرتی ہے۔,Hard,2,ELITE,1
+q_10_phy_ch18_sq_034,1,18.2 AC Generator,compare_contrast,Compare an AC generator with a DC motor in terms of energy conversion and ring arrangement.,energy conversion اور ring arrangement کے لحاظ سے AC generator اور DC motor کا موازنہ کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,18.3 Power Transmission,topic_separator,,,,,,1
+q_10_phy_ch18_sq_035,1,18.3 Power Transmission,cause_effect,Explain why electrical power is transmitted at high voltage and how this reduces line losses.,وضاحت کریں کہ electrical power high voltage پر کیوں transmit کی جاتی ہے اور یہ line losses کو کیسے reduce کرتی ہے۔,Hard,2,PRO,1
+q_10_phy_ch18_sq_036,1,18.3 Transformer,numerical_short,A transformer changes 240 V to 12 V and has 1200 primary turns. Calculate the required secondary turns.,ایک transformer 240 V کو 12 V میں change کرتا ہے اور primary turns = 1200 ہیں۔ required secondary turns معلوم کریں۔,Hard,2,PRO,1
+q_10_phy_ch18_sq_037,1,18.4 Electron Beams,application_scenario,Explain how crossed electric and magnetic fields can be used to control an electron beam.,وضاحت کریں کہ crossed electric اور magnetic fields electron beam کو control کرنے کے لیے کیسے use ہو سکتی ہیں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,18.6 Photoelectric Effect,topic_separator,,,,,,1
+q_10_phy_ch18_sq_038,1,18.6 Photoelectric Effect,definition_function,Define the photoelectric effect and explain the role of photon frequency in electron emission.,photoelectric effect کی تعریف کریں اور electron emission میں photon frequency کا role explain کریں۔,Hard,2,PRO,1
+q_10_phy_ch18_sq_039,1,18.6 Photon Model,explain_reason,Explain why intense light of frequency below the threshold may fail to eject electrons from a surface.,وضاحت کریں کہ threshold سے below frequency کی intense light surface سے electrons eject کرنے میں fail کیوں ہو سکتی ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,18.6 Solar Sails,topic_separator,,,,,,1
+q_10_phy_ch18_sq_040,1,18.6 Solar Sails,application_scenario,Explain how photons exert pressure on a solar sail and produce acceleration.,وضاحت کریں کہ photons solar sail پر pressure exert کرکے acceleration کیسے produce کرتے ہیں۔,Hard,2,ELITE,1

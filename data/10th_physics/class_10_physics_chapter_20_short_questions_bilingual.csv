@@ -1,0 +1,70 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,20.1 Structure of Atom,topic_separator,,,,,,1
+q_10_phy_ch20_sq_001,1,20.1 Structure of Atom,features_characteristics,Describe the basic structure of an atom in terms of nucleus and electron cloud.,nucleus اور electron cloud کے لحاظ سے atom کی basic structure بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch20_sq_002,1,20.1 Structure of Atom,list_state,"State the charges and relative locations of protons, neutrons, and electrons.",protons، neutrons اور electrons کے charges اور relative locations بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,20.1 Atomic and Mass Numbers,topic_separator,,,,,,1
+q_10_phy_ch20_sq_003,1,20.1 Atomic and Mass Numbers,definition_formula,Define atomic number and mass number and write the relationship used to calculate neutrons.,atomic number اور mass number کی definitions بیان کریں اور neutrons calculate کرنے کا relationship لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,20.1 Nuclide Notation,topic_separator,,,,,,1
+q_10_phy_ch20_sq_004,1,20.1 Nuclide Notation,definition_function,Define a nuclide and explain the symbols used in nuclide notation.,nuclide کی تعریف کریں اور nuclide notation میں used symbols explain کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,20.1 Isotopes,topic_separator,,,,,,1
+q_10_phy_ch20_sq_005,1,20.1 Isotopes,definition_example,Define isotopes and give one example.,isotopes کی تعریف کریں اور ایک example دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,20.1 Rutherford Scattering,topic_separator,,,,,,1
+q_10_phy_ch20_sq_006,1,20.1 Rutherford Scattering,list_state,State three conclusions drawn from Rutherford's alpha-particle scattering experiment.,Rutherford alpha-particle scattering experiment سے drawn three conclusions بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,20.2 Radioactivity,topic_separator,,,,,,1
+q_10_phy_ch20_sq_007,1,20.2 Radioactivity,definition_function,Define radioactivity and state why radioactive decay is called spontaneous and random.,radioactivity کی تعریف کریں اور بیان کریں کہ radioactive decay کو spontaneous اور random کیوں کہا جاتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,20.2 Alpha Radiation,topic_separator,,,,,,1
+q_10_phy_ch20_sq_008,1,20.2 Alpha Radiation,definition_function,Describe an alpha particle in terms of composition and charge.,composition اور charge کے لحاظ سے alpha particle describe کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,20.2 Beta Radiation,topic_separator,,,,,,1
+q_10_phy_ch20_sq_009,1,20.2 Beta Radiation,definition_function,Describe a beta-minus particle and state its charge.,beta-minus particle describe کریں اور اس کا charge بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,20.2 Gamma Radiation,topic_separator,,,,,,1
+q_10_phy_ch20_sq_010,1,20.2 Gamma Radiation,definition_function,Describe gamma radiation and state its electrical charge.,gamma radiation describe کریں اور اس کا electrical charge بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,20.2 Nuclear Radiation,topic_separator,,,,,,1
+q_10_phy_ch20_sq_011,1,20.2 Nuclear Radiation,classification,"Arrange alpha, beta, and gamma radiations in order of increasing penetrating power.",alpha، beta اور gamma radiations کو increasing penetrating power کی order میں arrange کریں۔,Easy,2,ULTRA,1
+q_10_phy_ch20_sq_012,1,20.2 Nuclear Radiation,classification,"Arrange alpha, beta, and gamma radiations in order of decreasing ionizing power.",alpha، beta اور gamma radiations کو decreasing ionizing power کی order میں arrange کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,20.3 Nuclear Decay Equations,topic_separator,,,,,,1
+q_10_phy_ch20_sq_013,1,20.3 Nuclear Decay Equations,law_principle,State how mass number and atomic number change during alpha decay.,بیان کریں کہ alpha decay کے دوران mass number اور atomic number کیسے change ہوتے ہیں۔,Easy,2,PRO,1
+q_10_phy_ch20_sq_014,1,20.3 Nuclear Decay Equations,law_principle,State how mass number and atomic number change during beta-minus decay.,بیان کریں کہ beta-minus decay کے دوران mass number اور atomic number کیسے change ہوتے ہیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,20.4 Nuclear Fission and Fusion,topic_separator,,,,,,1
+q_10_phy_ch20_sq_015,1,20.4 Nuclear Fission and Fusion,difference,Differentiate between nuclear fission and nuclear fusion.,nuclear fission اور nuclear fusion میں فرق بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,20.6 Half-Life,topic_separator,,,,,,1
+q_10_phy_ch20_sq_016,1,20.6 Half-Life,definition_function,Define half-life and state what fraction remains after one half-life.,half-life کی تعریف کریں اور بیان کریں کہ one half-life کے بعد کیا fraction remain کرتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,20.1 Atomic Structure,topic_separator,,,,,,1
+q_10_phy_ch20_sq_017,1,20.1 Atomic Structure,concept_explanation,Explain why electrons cannot be described as moving in fixed planetary-style circular paths.,وضاحت کریں کہ electrons کو fixed planetary-style circular paths میں moving کیوں describe نہیں کیا جا سکتا۔,Medium,2,ELITE,1
+q_10_phy_ch20_sq_018,1,20.1 Atomic and Mass Numbers,numerical_short,"Calculate the number of neutrons in a nuclide using the given data: Z = 6, A = 14.","دیے گئے data سے nuclide میں neutrons کی number معلوم کریں: Z = 6, A = 14",Medium,2,PRO,1
+q_10_phy_ch20_sq_019,1,20.1 Rutherford Scattering,explain_reason,Explain why most alpha particles passed straight through the foil while a few were strongly deflected.,وضاحت کریں کہ most alpha particles foil سے straight pass ہوئیں جبکہ few strongly deflect کیوں ہوئیں۔,Medium,2,PRO,1
+q_10_phy_ch20_sq_020,1,20.2 Nuclear Radiation,compare_contrast,"Compare alpha, beta, and gamma radiations in terms of charge, mass, ionization, and penetration.",charge، mass، ionization اور penetration کے لحاظ سے alpha، beta اور gamma radiations کا موازنہ کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,20.2 Deflection in Fields,topic_separator,,,,,,1
+q_10_phy_ch20_sq_021,1,20.2 Deflection in Fields,compare_contrast,"Compare the deflection of alpha, beta, and gamma radiations in electric and magnetic fields.",electric اور magnetic fields میں alpha، beta اور gamma radiations کی deflection کا موازنہ کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,20.2 Shielding,topic_separator,,,,,,1
+q_10_phy_ch20_sq_022,1,20.2 Shielding,function_purpose,"State suitable shielding materials for alpha, beta, and gamma radiations.",alpha، beta اور gamma radiations کے لیے suitable shielding materials بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,20.3 Nuclear Equations,topic_separator,,,,,,1
+q_10_phy_ch20_sq_023,1,20.3 Nuclear Equations,process_steps,Explain how conservation of mass number and atomic number is used to complete a nuclear decay equation.,وضاحت کریں کہ nuclear decay equation complete کرنے کے لیے conservation of mass number اور atomic number کیسے use ہوتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,20.4 Nuclear Fission,topic_separator,,,,,,1
+q_10_phy_ch20_sq_024,1,20.4 Nuclear Fission,process_steps,Describe a nuclear fission chain reaction and state the role of released neutrons.,nuclear fission chain reaction describe کریں اور released neutrons کا role بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,20.4 Nuclear Reactor,topic_separator,,,,,,1
+q_10_phy_ch20_sq_025,1,20.4 Nuclear Reactor,function_purpose,"State the functions of fuel, moderator, control rods, and coolant in a nuclear reactor.",nuclear reactor میں fuel، moderator، control rods اور coolant کے functions بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,20.4 Nuclear Fusion,topic_separator,,,,,,1
+q_10_phy_ch20_sq_026,1,20.4 Nuclear Fusion,explain_reason,Explain why nuclear fusion requires extremely high temperature.,وضاحت کریں کہ nuclear fusion کو extremely high temperature کیوں required ہوتا ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,20.4 Stellar Energy,topic_separator,,,,,,1
+q_10_phy_ch20_sq_027,1,20.4 Stellar Energy,concept_explanation,Explain why nuclear fusion is regarded as the main energy source of stars.,وضاحت کریں کہ nuclear fusion کو stars کا main energy source کیوں سمجھا جاتا ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,20.5 Mass-Energy Equivalence,topic_separator,,,,,,1
+q_10_phy_ch20_sq_028,1,20.5 Mass-Energy Equivalence,law_principle,State the mass-energy equivalence relation and identify its quantities.,mass-energy equivalence relation بیان کریں اور اس کی quantities identify کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,20.5 Mass Defect,topic_separator,,,,,,1
+q_10_phy_ch20_sq_029,1,20.5 Mass Defect,definition_function,Define mass defect and explain how it is related to nuclear energy release.,mass defect کی تعریف کریں اور nuclear energy release سے اس کا relationship explain کریں۔,Medium,2,PRO,1
+q_10_phy_ch20_sq_030,1,20.6 Half-Life,numerical_short,A radioactive sample has a half-life of 5 years. Calculate the fraction remaining after 15 years.,radioactive sample کی half-life 5 years ہے۔ 15 years کے بعد remaining fraction معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,20.6 Carbon Dating,topic_separator,,,,,,1
+q_10_phy_ch20_sq_031,1,20.6 Carbon Dating,process_steps,Explain the principle of carbon dating and state the isotope used.,carbon dating کا principle explain کریں اور used isotope بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,20.9 Uses of Nuclear Radiation,topic_separator,,,,,,1
+q_10_phy_ch20_sq_032,1,20.9 Uses of Nuclear Radiation,list_state,"State four applications of nuclear radiation in medicine, industry, food treatment, or safety devices.",medicine، industry، food treatment یا safety devices میں nuclear radiation کی four applications بیان کریں۔,Medium,2,ELITE,1
+q_10_phy_ch20_sq_033,1,20.2 Nuclear Radiation,cause_effect,"Explain why alpha radiation is highly ionizing but weakly penetrating, while gamma radiation shows the opposite behaviour.",وضاحت کریں کہ alpha radiation highly ionizing مگر weakly penetrating کیوں ہے جبکہ gamma radiation opposite behaviour کیوں دکھاتی ہے۔,Hard,2,PRO,1
+q_10_phy_ch20_sq_034,1,20.3 Nuclear Equations,application_scenario,Complete a textbook-level alpha-decay equation by determining the daughter nuclide from the parent mass and atomic numbers.,parent mass اور atomic numbers سے daughter nuclide determine کرکے textbook-level alpha-decay equation complete کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,20.4 Fission and Fusion,topic_separator,,,,,,1
+q_10_phy_ch20_sq_035,1,20.4 Fission and Fusion,compare_contrast,"Compare fission and fusion in terms of nuclei involved, conditions, chain reaction, and common applications.",involved nuclei، conditions، chain reaction اور common applications کے لحاظ سے fission اور fusion کا موازنہ کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,20.5 Energy Calculation,topic_separator,,,,,,1
+q_10_phy_ch20_sq_036,1,20.5 Energy Calculation,numerical_short,"Calculate the energy equivalent of a mass defect using the given data: m = 1.0 × 10⁻⁹ kg, c = 3.0 × 10⁸ m/s.","دیے گئے data سے mass defect کی equivalent energy معلوم کریں: m = 1.0 × 10⁻⁹ kg, c = 3.0 × 10⁸ m/s",Hard,2,PRO,1
+q_10_phy_ch20_sq_037,1,20.6 Half-Life,numerical_short,A 50 mg sample has a half-life of 10.6 h. Calculate the mass remaining after 53 h.,50 mg sample کی half-life 10.6 h ہے۔ 53 h کے بعد remaining mass معلوم کریں۔,Hard,2,PRO,1
+q_10_phy_ch20_sq_038,1,20.6 Half-Life,diagram_based,Explain how half-life can be estimated from a radioactive decay curve without waiting for the sample to decay completely.,وضاحت کریں کہ sample کے completely decay ہونے کا wait کیے بغیر radioactive decay curve سے half-life کیسے estimate کی جا سکتی ہے۔,Hard,2,ELITE,1
+TOPIC_SEP,1,20.9 Biological Effects,topic_separator,,,,,,1
+q_10_phy_ch20_sq_039,1,20.9 Biological Effects,cause_effect,"Explain how ionizing radiation can cause cell death, mutation, and cancer.",وضاحت کریں کہ ionizing radiation cell death، mutation اور cancer کیسے cause کر سکتی ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,20.9 Radiation Applications,topic_separator,,,,,,1
+q_10_phy_ch20_sq_040,1,20.9 Radiation Applications,application_scenario,"Explain how radiation type and half-life are considered when selecting an isotope for a smoke alarm, medical tracer, or cancer treatment.",وضاحت کریں کہ smoke alarm، medical tracer یا cancer treatment کے لیے isotope select کرتے وقت radiation type اور half-life کو کیسے consider کیا جاتا ہے۔,Hard,2,ELITE,1

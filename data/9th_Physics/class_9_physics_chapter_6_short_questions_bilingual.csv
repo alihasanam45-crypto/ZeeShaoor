@@ -1,0 +1,73 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,6.1 Deformation of Solids,topic_separator,,,,,,1
+q_9_phy_ch6_sq_001,1,6.1 Deformation of Solids,definition_example,Define deforming force and give one example of extension and one of compression.,deforming force کی تعریف کریں اور extension اور compression کی ایک ایک example دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.1 Elasticity,topic_separator,,,,,,1
+q_9_phy_ch6_sq_002,1,6.1 Elasticity,definition_function,Define elasticity and state what happens when the elastic limit is exceeded.,elasticity کی تعریف کریں اور بیان کریں کہ elastic limit exceed ہونے پر کیا ہوتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,6.1 Elastic and Inelastic Materials,topic_separator,,,,,,1
+q_9_phy_ch6_sq_003,1,6.1 Elastic and Inelastic Materials,difference,Differentiate between elastic and inelastic materials and give one example of each.,elastic اور inelastic materials میں فرق بیان کریں اور ہر ایک کی ایک example دیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,6.1 Elastic Limit,topic_separator,,,,,,1
+q_9_phy_ch6_sq_004,1,6.1 Elastic Limit,explain_reason,Explain why a material does not regain its original shape after deformation beyond the elastic limit.,وضاحت کریں کہ elastic limit سے beyond deformation کے بعد material original shape کیوں regain نہیں کرتی۔,Medium,2,PRO,1
+TOPIC_SEP,1,6.2 Hooke's Law,topic_separator,,,,,,1
+q_9_phy_ch6_sq_005,1,6.2 Hooke's Law,law_principle,State Hooke's law and write its mathematical relationship.,Hooke's law بیان کریں اور اس کا mathematical relationship لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,6.2 Spring Constant,topic_separator,,,,,,1
+q_9_phy_ch6_sq_006,1,6.2 Spring Constant,definition_unit,Define spring constant and state its SI unit and physical meaning.,spring constant کی تعریف کریں اور اس کی SI unit اور physical meaning بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.2 Load-Extension Graph,topic_separator,,,,,,1
+q_9_phy_ch6_sq_007,1,6.2 Load-Extension Graph,diagram_based,Describe the force-extension graph within and beyond the elastic limit and state what its gradient represents.,elastic limit کے within اور beyond force-extension graph بیان کریں اور اس کا gradient کیا represent کرتا ہے یہ state کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,6.2 Hooke's Law Experiment,topic_separator,,,,,,1
+q_9_phy_ch6_sq_008,1,6.2 Hooke's Law Experiment,process_steps,Describe the main procedure for plotting a force-extension graph of a helical spring.,helical spring کا force-extension graph plot کرنے کا main procedure بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,6.2 Applications of Hooke's Law,topic_separator,,,,,,1
+q_9_phy_ch6_sq_009,1,6.2 Applications of Hooke's Law,list_state,State four applications of Hooke's law in measuring instruments and machines.,measuring instruments اور machines میں Hooke's law کی چار applications بیان کریں۔,Easy,2,PRO,1
+q_9_phy_ch6_sq_010,1,6.2 Hooke's Law,explain_reason,Explain why springs are made of steel rather than ordinary iron.,وضاحت کریں کہ springs ordinary iron کے بجائے steel کی کیوں بنائی جاتی ہیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,6.2 Spring Numerical,topic_separator,,,,,,1
+q_9_phy_ch6_sq_011,1,6.2 Spring Numerical,numerical_short,A spring is stretched 20 mm by a load of 40 N. Calculate its spring constant.,"درج ذیل data سے spring constant معلوم کریں: extension = 20 mm, load = 40 N",Medium,2,PRO,1
+TOPIC_SEP,1,6.3 Density,topic_separator,,,,,,1
+q_9_phy_ch6_sq_012,1,6.3 Density,definition_unit,Define density and state its SI unit.,density کی تعریف کریں اور اس کی SI unit بیان کریں۔,Easy,2,PRO,1
+q_9_phy_ch6_sq_013,1,6.3 Density,concept_explanation,Explain why density is a property of a material rather than of the size of an object.,وضاحت کریں کہ density object کی size کے بجائے material کی property کیوں ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,6.3 Density Measurement,topic_separator,,,,,,1
+q_9_phy_ch6_sq_014,1,6.3 Density Measurement,process_steps,Describe how the density of a regularly shaped solid is determined.,بیان کریں کہ regularly shaped solid کی density کیسے determine کی جاتی ہے۔,Easy,2,ELITE,1
+q_9_phy_ch6_sq_015,1,6.3 Density Measurement,process_steps,Describe how the density of an irregular insoluble solid is determined using a measuring cylinder.,بیان کریں کہ measuring cylinder استعمال کرکے irregular insoluble solid کی density کیسے determine کی جاتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,6.3 Density Applications,topic_separator,,,,,,1
+q_9_phy_ch6_sq_016,1,6.3 Density Applications,application_scenario,Explain how density can be used to distinguish a silver spoon from a stainless-steel spoon.,وضاحت کریں کہ density سے silver spoon کو stainless-steel spoon سے کیسے distinguish کیا جا سکتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,6.3 Density Numerical,topic_separator,,,,,,1
+q_9_phy_ch6_sq_017,1,6.3 Density Numerical,numerical_short,The mass of 5 litres of milk is 4.5 kg. Calculate its density in SI units.,"درج ذیل data سے milk کی density SI units میں معلوم کریں: volume = 5 L, mass = 4.5 kg",Medium,2,PRO,1
+TOPIC_SEP,1,6.4 Pressure,topic_separator,,,,,,1
+q_9_phy_ch6_sq_018,1,6.4 Pressure,definition_formula,Define pressure and write its mathematical relationship.,pressure کی تعریف کریں اور اس کا mathematical relationship لکھیں۔,Easy,2,PRO,1
+q_9_phy_ch6_sq_019,1,6.4 Pressure,definition_unit,State the SI unit of pressure and express one pascal in base force-area form.,pressure کی SI unit بیان کریں اور one pascal کو force-area form میں express کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,6.4 Force and Pressure,topic_separator,,,,,,1
+q_9_phy_ch6_sq_020,1,6.4 Force and Pressure,difference,Differentiate between force and pressure.,force اور pressure میں فرق بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,6.4 Pressure Applications,topic_separator,,,,,,1
+q_9_phy_ch6_sq_021,1,6.4 Pressure Applications,explain_reason,Explain why heavy animals have broad feet whereas fast-running animals may have smaller contact areas.,وضاحت کریں کہ heavy animals کے feet broad کیوں ہوتے ہیں جبکہ fast-running animals کے contact areas smaller ہو سکتے ہیں۔,Medium,2,PRO,1
+q_9_phy_ch6_sq_022,1,6.4 Pressure Applications,application_scenario,Explain why walking barefoot on pebbles is painful and why a sharp thumb pin enters wood easily.,وضاحت کریں کہ pebbles پر barefoot walking painful کیوں ہوتی ہے اور sharp thumb pin wood میں easily کیوں enter کرتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,6.5 Pressure in Liquids,topic_separator,,,,,,1
+q_9_phy_ch6_sq_023,1,6.5 Pressure in Liquids,formula_relationship,State the relationship for pressure at a depth in a liquid and identify the factors on which it depends.,liquid میں depth پر pressure کا relationship بیان کریں اور وہ factors identify کریں جن پر یہ depend کرتی ہے۔,Easy,2,PRO,1
+q_9_phy_ch6_sq_024,1,6.5 Pressure in Liquids,concept_explanation,Explain why pressure at the same depth in the same liquid is independent of the area and shape of the container.,وضاحت کریں کہ same liquid میں same depth پر pressure، container کے area اور shape سے independent کیوں ہوتی ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,6.5 Pressure Direction,topic_separator,,,,,,1
+q_9_phy_ch6_sq_025,1,6.5 Pressure Direction,explain_reason,Explain why liquid pressure produces a force normal to a surface.,وضاحت کریں کہ liquid pressure surface پر normal force کیوں produce کرتی ہے۔,Easy,2,ELITE,1
+TOPIC_SEP,1,6.5 Liquid Pressure Experiment,topic_separator,,,,,,1
+q_9_phy_ch6_sq_026,1,6.5 Liquid Pressure Experiment,process_steps,Describe an experiment using holes at different heights in a water container to show that liquid pressure increases with depth.,water container میں different heights پر holes استعمال کرکے liquid pressure کے depth کے ساتھ increase کو show کرنے والا experiment بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,6.5 Liquid Pressure Numerical,topic_separator,,,,,,1
+q_9_phy_ch6_sq_027,1,6.5 Liquid Pressure Numerical,numerical_short,Calculate the water pressure on a diver at a depth of 10 m when seawater density is 1030 kg/m³ and g = 10 m/s².,"درج ذیل data سے diver پر water pressure معلوم کریں: h = 10 m, ρ = 1030 kg/m³, g = 10 m/s²",Hard,2,PRO,1
+TOPIC_SEP,1,6.6 Atmospheric Pressure,topic_separator,,,,,,1
+q_9_phy_ch6_sq_028,1,6.6 Atmospheric Pressure,definition_function,Define atmospheric pressure and state why it acts in all directions.,atmospheric pressure کی تعریف کریں اور بیان کریں کہ یہ all directions میں کیوں act کرتی ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,6.6 Standard Atmospheric Pressure,topic_separator,,,,,,1
+q_9_phy_ch6_sq_029,1,6.6 Standard Atmospheric Pressure,definition_unit,State the approximate value of standard atmospheric pressure at sea level.,sea level پر standard atmospheric pressure کی approximate value بیان کریں۔,Easy,2,ULTRA,1
+q_9_phy_ch6_sq_030,1,6.6 Atmospheric Pressure,explain_reason,Explain why the human body is not crushed by atmospheric pressure.,وضاحت کریں کہ human body atmospheric pressure سے crush کیوں نہیں ہوتی۔,Medium,2,ELITE,1
+TOPIC_SEP,1,6.6 Evidence of Atmospheric Pressure,topic_separator,,,,,,1
+q_9_phy_ch6_sq_031,1,6.6 Evidence of Atmospheric Pressure,process_steps,Describe the collapsing-can activity that demonstrates atmospheric pressure.,atmospheric pressure demonstrate کرنے والی collapsing-can activity بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,6.6 Atmospheric Pressure with Height,topic_separator,,,,,,1
+q_9_phy_ch6_sq_032,1,6.6 Atmospheric Pressure with Height,cause_effect,Explain why atmospheric pressure decreases with increasing altitude.,وضاحت کریں کہ altitude increase ہونے پر atmospheric pressure کیوں decrease ہوتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,6.6 Weather Indicator,topic_separator,,,,,,1
+q_9_phy_ch6_sq_033,1,6.6 Weather Indicator,cause_effect,Explain how a fall in atmospheric pressure may indicate approaching rain.,وضاحت کریں کہ atmospheric pressure میں fall approaching rain کو کیسے indicate کر سکتی ہے۔,Easy,2,ELITE,1
+TOPIC_SEP,1,6.7 Mercury Barometer,topic_separator,,,,,,1
+q_9_phy_ch6_sq_034,1,6.7 Mercury Barometer,process_steps,Describe the construction and working principle of a simple mercury barometer.,simple mercury barometer کی construction اور working principle بیان کریں۔,Hard,2,PRO,1
+q_9_phy_ch6_sq_035,1,6.7 Mercury Barometer,explain_reason,Explain how trapped air or a leak at the sealed end affects the height of the mercury column in a barometer.,وضاحت کریں کہ sealed end پر trapped air یا leak barometer کے mercury column کی height کو کیسے affect کرتی ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,6.8 Manometer,topic_separator,,,,,,1
+q_9_phy_ch6_sq_036,1,6.8 Manometer,definition_function,Define a manometer and explain how unequal liquid levels indicate gas pressure relative to atmospheric pressure.,manometer کی تعریف کریں اور explain کریں کہ unequal liquid levels gas pressure کو atmospheric pressure کے relative کیسے indicate کرتی ہیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,6.9 Pascal's Law,topic_separator,,,,,,1
+q_9_phy_ch6_sq_037,1,6.9 Pascal's Law,law_principle,State Pascal's law and give one practical application.,Pascal's law بیان کریں اور ایک practical application دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,6.9 Hydraulic Press,topic_separator,,,,,,1
+q_9_phy_ch6_sq_038,1,6.9 Hydraulic Press,concept_explanation,Explain how a hydraulic press acts as a force multiplier.,وضاحت کریں کہ hydraulic press force multiplier کے طور پر کیسے act کرتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,6.9 Hydraulic Brakes,topic_separator,,,,,,1
+q_9_phy_ch6_sq_039,1,6.9 Hydraulic Brakes,process_steps,Describe how pressure is transmitted through brake fluid to operate hydraulic brakes.,بیان کریں کہ brake fluid کے through pressure transmit ہو کر hydraulic brakes کو کیسے operate کرتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,6.9 Hydraulic Press Numerical,topic_separator,,,,,,1
+q_9_phy_ch6_sq_040,1,6.9 Hydraulic Press Numerical,numerical_short,A hydraulic press has piston areas of 10 cm² and 100 cm². Calculate the input force required to lift a 4000 N load.,"درج ذیل data سے required input force معلوم کریں: A₁ = 10 cm², A₂ = 100 cm², load = 4000 N",Medium,2,PRO,1

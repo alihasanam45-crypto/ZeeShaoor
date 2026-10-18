@@ -1,0 +1,74 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,11.1 Heat Transfer and Thermal Equilibrium,topic_separator,,,,,,1
+q_10_phy_ch11_sq_001,1,11.1 Heat Transfer and Thermal Equilibrium,definition_function,Define heat transfer and state the direction in which thermal energy flows between two objects.,حرارت کی منتقلی کی تعریف کریں اور بیان کریں کہ دو اجسام کے درمیان حرارتی توانائی کس سمت میں بہتی ہے۔,Easy,2,PRO,1
+q_10_phy_ch11_sq_002,1,11.1 Heat Transfer and Thermal Equilibrium,definition_function,Define thermal equilibrium.,حرارتی توازن کی تعریف کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,11.1 Modes of Heat Transfer,topic_separator,,,,,,1
+q_10_phy_ch11_sq_003,1,11.1 Modes of Heat Transfer,classification,Name the three primary modes of heat transfer.,حرارت کی منتقلی کے تین بنیادی طریقوں کے نام لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,11.1 Conduction,topic_separator,,,,,,1
+q_10_phy_ch11_sq_004,1,11.1 Conduction,definition_function,Define conduction of heat.,ترسیلِ حرارت کی تعریف کریں۔,Easy,2,PRO,1
+q_10_phy_ch11_sq_005,1,11.1 Conduction,explain_reason,Why does heat travel faster through metals than through non-metals?,حرارت غیر دھاتوں کے مقابلے میں دھاتوں میں زیادہ تیزی سے کیوں منتقل ہوتی ہے؟,Easy,2,PRO,1
+TOPIC_SEP,1,11.1 Conduction in Metals,topic_separator,,,,,,1
+q_10_phy_ch11_sq_006,1,11.1 Conduction in Metals,function_purpose,State the role of free electrons in the conduction of heat through metals.,دھاتوں میں ترسیلِ حرارت کے دوران آزاد الیکٹرون کا کردار بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,11.2 Convection,topic_separator,,,,,,1
+q_10_phy_ch11_sq_007,1,11.2 Convection,definition_function,Define convection.,حملِ حرارت کی تعریف کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,11.2 Convection Currents,topic_separator,,,,,,1
+q_10_phy_ch11_sq_008,1,11.2 Convection Currents,cause_effect,What causes convection currents in liquids and gases?,مائعات اور گیسوں میں حملی روئیں کس وجہ سے پیدا ہوتی ہیں؟,Easy,2,PRO,1
+TOPIC_SEP,1,11.2 Convection in Fluids,topic_separator,,,,,,1
+q_10_phy_ch11_sq_009,1,11.2 Convection in Fluids,concept_explanation,State why heated fluid rises while cooler fluid sinks.,بیان کریں کہ گرم سیال اوپر کیوں اٹھتا ہے جبکہ ٹھنڈا سیال نیچے کیوں بیٹھتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,11.2 Land and Sea Breezes,topic_separator,,,,,,1
+q_10_phy_ch11_sq_010,1,11.2 Land and Sea Breezes,difference,Differentiate between a sea breeze and a land breeze.,سمندری ہوا اور خشکی کی ہوا میں فرق بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,11.2 Thermal Currents,topic_separator,,,,,,1
+q_10_phy_ch11_sq_011,1,11.2 Thermal Currents,application_scenario,How do birds and gliders use thermal air currents?,پرندے اور گلائیڈر گرم ہوا کی حملی روؤں کو کیسے استعمال کرتے ہیں؟,Easy,2,ELITE,1
+TOPIC_SEP,1,11.3 Radiation,topic_separator,,,,,,1
+q_10_phy_ch11_sq_012,1,11.3 Radiation,definition_function,Define thermal radiation and state whether it requires a material medium.,حرارتی اشعاع کی تعریف کریں اور بیان کریں کہ آیا اسے مادی میڈیم کی ضرورت ہوتی ہے۔,Easy,2,PRO,1
+q_10_phy_ch11_sq_013,1,11.3 Radiation,application_scenario,How does heat from the Sun reach Earth?,سورج کی حرارت زمین تک کیسے پہنچتی ہے؟,Easy,2,PRO,1
+TOPIC_SEP,1,11.3 Surface Properties and Radiation,topic_separator,,,,,,1
+q_10_phy_ch11_sq_014,1,11.3 Surface Properties and Radiation,list_state,State the surface characteristics of a good absorber and emitter of infrared radiation.,infrared radiation کے اچھے absorber اور emitter کی surface characteristics بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,11.3 Infrared Thermometer,topic_separator,,,,,,1
+q_10_phy_ch11_sq_015,1,11.3 Infrared Thermometer,function_purpose,State the function of an infrared thermometer.,infrared thermometer کا function بیان کریں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,11.4 Greenhouse Effect,topic_separator,,,,,,1
+q_10_phy_ch11_sq_016,1,11.4 Greenhouse Effect,definition_function,Define the greenhouse effect.,گرین ہاؤس اثر کی تعریف کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,11.1 Conduction in Solids,topic_separator,,,,,,1
+q_10_phy_ch11_sq_017,1,11.1 Conduction in Solids,concept_explanation,Explain thermal conduction in a non-metallic solid in terms of atomic or molecular lattice vibrations.,ایٹمی یا سالماتی جالی کے ارتعاشات کی مدد سے غیر دھاتی ٹھوس میں ترسیلِ حرارت کی وضاحت کریں۔,Medium,2,PRO,1
+q_10_phy_ch11_sq_018,1,11.1 Conduction in Metals,compare_contrast,Compare heat conduction in metals and non-metals in terms of particle vibrations and free electrons.,ذرات کے ارتعاش اور آزاد الیکٹرون کے لحاظ سے دھاتوں اور غیر دھاتوں میں ترسیلِ حرارت کا موازنہ کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,11.1 Applications of Conduction,topic_separator,,,,,,1
+q_10_phy_ch11_sq_019,1,11.1 Applications of Conduction,application_scenario,Explain how conduction transfers heat through a metal cooking pan while its wooden or plastic handle remains relatively cool.,وضاحت کریں کہ دھاتی cooking pan میں ترسیل کے ذریعے حرارت کیسے منتقل ہوتی ہے جبکہ اس کا لکڑی یا پلاسٹک کا handle نسبتاً ٹھنڈا رہتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,11.2 Liquid Convection Experiment,topic_separator,,,,,,1
+q_10_phy_ch11_sq_020,1,11.2 Liquid Convection Experiment,process_steps,Describe the experiment using water and potassium permanganate crystals to demonstrate convection currents in a liquid.,پانی اور potassium permanganate crystals استعمال کرکے مائع میں حملی روئیں دکھانے والا تجربہ بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,11.2 Convection in Air,topic_separator,,,,,,1
+q_10_phy_ch11_sq_021,1,11.2 Convection in Air,diagram_based,Explain the circulation of warm and cool air in a convection-current diagram.,حملی رو کے diagram میں گرم اور ٹھنڈی ہوا کی گردش کی وضاحت کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,11.2 Room Heating and Cooling,topic_separator,,,,,,1
+q_10_phy_ch11_sq_022,1,11.2 Room Heating and Cooling,application_scenario,Explain how convection is used to heat or cool a room.,وضاحت کریں کہ کمرے کو گرم یا ٹھنڈا کرنے کے لیے حملِ حرارت کیسے استعمال ہوتا ہے۔,Medium,2,PRO,1
+q_10_phy_ch11_sq_023,1,11.2 Land and Sea Breezes,cause_effect,Explain how convection currents produce a sea breeze during the day.,وضاحت کریں کہ دن کے وقت حملی روئیں سمندری ہوا کیسے پیدا کرتی ہیں۔,Medium,2,PRO,1
+q_10_phy_ch11_sq_024,1,11.2 Land and Sea Breezes,cause_effect,Explain how convection currents produce a land breeze at night.,وضاحت کریں کہ رات کے وقت حملی روئیں خشکی کی ہوا کیسے پیدا کرتی ہیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,11.2 Convection in Seawater,topic_separator,,,,,,1
+q_10_phy_ch11_sq_025,1,11.2 Convection in Seawater,cause_effect,Explain how convection in seawater supports marine life.,وضاحت کریں کہ سمندری پانی میں حملِ حرارت آبی حیات کو کیسے سہارا دیتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,11.2 Household Hot-Water System,topic_separator,,,,,,1
+q_10_phy_ch11_sq_026,1,11.2 Household Hot-Water System,process_steps,Describe the circulation of water in a household hot-water system.,گھریلو گرم پانی کے نظام میں پانی کی گردش بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,11.3 Radiation from a Fireplace,topic_separator,,,,,,1
+q_10_phy_ch11_sq_027,1,11.3 Radiation from a Fireplace,explain_reason,Explain why a person feels heat from a fireplace even though air is a poor conductor.,وضاحت کریں کہ ہوا کے خراب موصل ہونے کے باوجود شخص fireplace سے حرارت کیوں محسوس کرتا ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,11.3 Thermal Equilibrium,topic_separator,,,,,,1
+q_10_phy_ch11_sq_028,1,11.3 Thermal Equilibrium,cause_effect,Explain why a hot object cools and a cold object warms when each is placed in a room.,وضاحت کریں کہ کمرے میں رکھنے پر گرم جسم ٹھنڈا اور ٹھنڈا جسم گرم کیوں ہوتا ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,11.3 Leslie's Cube,topic_separator,,,,,,1
+q_10_phy_ch11_sq_029,1,11.3 Leslie's Cube,process_steps,Describe Leslie's cube experiment for comparing the emission of infrared radiation from different surfaces.,مختلف سطحوں سے infrared radiation کے اخراج کا موازنہ کرنے والا Leslie's cube experiment بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,11.3 Surface Colour and Texture,topic_separator,,,,,,1
+q_10_phy_ch11_sq_030,1,11.3 Surface Colour and Texture,compare_contrast,"Compare dull black and polished silver surfaces as absorbers, emitters, and reflectors of infrared radiation.",infrared radiation کے absorber، emitter اور reflector کے طور پر dull black اور polished silver surfaces کا موازنہ کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,11.3 Surface Temperature and Area,topic_separator,,,,,,1
+q_10_phy_ch11_sq_031,1,11.3 Surface Temperature and Area,cause_effect,Explain how surface temperature and surface area affect the rate of emission of thermal radiation.,وضاحت کریں کہ surface temperature اور surface area حرارتی اشعاع کے emission rate کو کیسے affect کرتے ہیں۔,Medium,2,PRO,1
+q_10_phy_ch11_sq_032,1,11.4 Greenhouse Effect,concept_explanation,Explain how glass or plastic in a greenhouse allows short-wavelength radiation to enter but reduces the escape of long-wavelength infrared radiation.,وضاحت کریں کہ greenhouse میں glass یا plastic short-wavelength radiation کو داخل ہونے دیتی ہے لیکن long-wavelength infrared radiation کے اخراج کو کیسے کم کرتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,11.1–11.3 Modes of Heat Transfer,topic_separator,,,,,,1
+q_10_phy_ch11_sq_033,1,11.1–11.3 Modes of Heat Transfer,compare_contrast,"Compare conduction, convection, and radiation in terms of mechanism, need for a medium, and one practical example of each.",mechanism، medium کی ضرورت اور ہر ایک کی ایک عملی مثال کے لحاظ سے ترسیل، حمل اور اشعاع کا موازنہ کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,11.2 Convection and Coastal Climate,topic_separator,,,,,,1
+q_10_phy_ch11_sq_034,1,11.2 Convection and Coastal Climate,cause_effect,Analyze how land and sea breezes help maintain a moderate coastal climate.,تجزیہ کریں کہ خشکی اور سمندر کی ہوائیں ساحلی آب و ہوا کو معتدل رکھنے میں کیسے مدد دیتی ہیں۔,Hard,2,PRO,1
+TOPIC_SEP,1,11.2 Convection and Gliding,topic_separator,,,,,,1
+q_10_phy_ch11_sq_035,1,11.2 Convection and Gliding,application_scenario,Explain scientifically how birds and gliders can remain in the air for long periods without continuous powered flight.,سائنسی طور پر وضاحت کریں کہ پرندے اور گلائیڈر مسلسل طاقت سے پرواز کیے بغیر طویل وقت تک فضا میں کیسے رہ سکتے ہیں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,11.3 Absorption and Emission of Radiation,topic_separator,,,,,,1
+q_10_phy_ch11_sq_036,1,11.3 Absorption and Emission of Radiation,process_steps,"Describe an experiment that compares the absorption of infrared radiation by dull black and shiny surfaces, including the expected observation and conclusion.",وہ تجربہ بیان کریں جو dull black اور shiny surfaces کے ذریعے infrared radiation کے absorption کا موازنہ کرتا ہے، including expected observation اور conclusion۔,Hard,2,ULTRA,1
+TOPIC_SEP,1,11.3 Applications of Heat Transfer,topic_separator,,,,,,1
+q_10_phy_ch11_sq_037,1,11.3 Applications of Heat Transfer,diagram_based,"Explain how the design of a thermos flask reduces heat transfer by conduction, convection, and radiation.",وضاحت کریں کہ thermos flask کا design ترسیل، حمل اور اشعاع کے ذریعے heat transfer کو کیسے reduce کرتا ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,11.3 Thermal Insulation in Buildings,topic_separator,,,,,,1
+q_10_phy_ch11_sq_038,1,11.3 Thermal Insulation in Buildings,advantages_disadvantages,"Explain how double-glazed windows, wall insulation, thick curtains, and false ceilings reduce thermal energy transfer in buildings.",وضاحت کریں کہ double-glazed windows، wall insulation، thick curtains اور false ceilings عمارتوں میں thermal energy transfer کو کیسے reduce کرتے ہیں۔,Hard,2,PRO,1
+TOPIC_SEP,1,11.3 Radiation and Thermal Equilibrium,topic_separator,,,,,,1
+q_10_phy_ch11_sq_039,1,11.3 Radiation and Thermal Equilibrium,concept_explanation,Explain the cooling of a hot metal object in a cooler room by considering both emission and absorption of radiation until thermal equilibrium is reached.,گرم دھاتی جسم کے ٹھنڈے کمرے میں ٹھنڈا ہونے کی وضاحت radiation کے emission اور absorption دونوں کو مدِنظر رکھتے ہوئے کریں، یہاں تک کہ thermal equilibrium قائم ہو جائے۔,Hard,2,PRO,1
+TOPIC_SEP,1,11.4 Enhanced Greenhouse Effect,topic_separator,,,,,,1
+q_10_phy_ch11_sq_040,1,11.4 Enhanced Greenhouse Effect,cause_effect,Explain the enhanced greenhouse effect caused by human activities and discuss its relationship with global warming.,انسانی سرگرمیوں سے پیدا ہونے والے enhanced greenhouse effect کی وضاحت کریں اور global warming کے ساتھ اس کے relationship پر بحث کریں۔,Hard,2,PRO,1

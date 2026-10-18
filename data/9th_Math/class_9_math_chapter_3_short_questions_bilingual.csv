@@ -1,0 +1,69 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,3.1 Mathematical Patterns,topic_separator,,,,,,1
+q_9_math_ch3_sq_001,1,3.1 Mathematical Patterns,definition_example,Define a mathematical pattern and give one example of a numerical sequence.,mathematical pattern کی تعریف کریں اور numerical sequence کی ایک example دیں۔,Easy,2,IMPORTANT,1
+q_9_math_ch3_sq_002,1,3.1 Mathematical Patterns,sequence,"State the rule used to generate the Fibonacci sequence and write its next three terms after 1, 1, 2, 3, 5.","Fibonacci sequence generate کرنے کا rule بیان کریں اور 1, 1, 2, 3, 5 کے بعد next three terms لکھیں۔",Easy,2,ELITE,1
+TOPIC_SEP,1,3.2 Sets,topic_separator,,,,,,1
+q_9_math_ch3_sq_003,1,3.2 Sets,definition_example,Define a set and give one example written in roster form.,set کی تعریف کریں اور roster form میں ایک example دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.2 Representation of Sets,topic_separator,,,,,,1
+q_9_math_ch3_sq_004,1,3.2 Representation of Sets,difference,Differentiate between roster form and set-builder form using one example of each.,roster form اور set-builder form میں فرق بیان کریں اور ہر ایک کی one example دیں۔,Easy,2,ULTRA,1
+q_9_math_ch3_sq_005,1,3.2 Representation of Sets,numerical_short,"Write the set in tabular form: {x | x = 2n, n ∈ N}","درج ذیل set کو tabular form میں لکھیں: {x | x = 2n, n ∈ N}",Easy,2,PRO,1
+TOPIC_SEP,1,3.2 Types of Sets,topic_separator,,,,,,1
+q_9_math_ch3_sq_006,1,3.2 Types of Sets,classification,"Classify sets as empty, singleton, finite, and infinite, giving one example of each.",sets کو empty، singleton، finite اور infinite میں classify کریں اور ہر ایک کی one example دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.2 Subsets,topic_separator,,,,,,1
+q_9_math_ch3_sq_007,1,3.2 Subsets,definition_example,Define a subset and proper subset and give one symbolic example of each.,subset اور proper subset کی تعریف کریں اور ہر ایک کی one symbolic example دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.2 Power Set,topic_separator,,,,,,1
+q_9_math_ch3_sq_008,1,3.2 Power Set,definition_formula,Define the power set of A and state the number of its elements when n(A) = m.,A کے power set کی تعریف کریں اور n(A) = m ہونے پر اس کے elements کی number بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch3_sq_009,1,3.2 Power Set,numerical_short,"Write the power set of A: A = {1, 2}","درج ذیل set کا power set لکھیں: A = {1, 2}",Easy,2,PRO,1
+TOPIC_SEP,1,3.3 Set Operations,topic_separator,,,,,,1
+q_9_math_ch3_sq_010,1,3.3 Set Operations,definition_function,Define union and intersection of two sets and state the symbols used for them.,two sets کے union اور intersection کی تعریف کریں اور ان کے symbols بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch3_sq_011,1,3.3 Set Operations,definition_example,Define the complement of a set with respect to a universal set and give one example.,universal set کے respect میں set کے complement کی تعریف کریں اور one example دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.3 Set Difference,topic_separator,,,,,,1
+q_9_math_ch3_sq_012,1,3.3 Set Difference,definition_example,Define the difference A − B and illustrate it with one finite-set example.,difference A − B کی تعریف کریں اور one finite-set example سے illustrate کریں۔,Easy,2,ELITE,1
+q_9_math_ch3_sq_013,1,3.3 Set Operations,numerical_short,"List the members of A ∪ B for the given sets: A = {2,4,6,8,10}, B = {1,2,3,4,5}","given sets کے لیے A ∪ B کے members لکھیں: A = {2,4,6,8,10}, B = {1,2,3,4,5}",Easy,2,PRO,1
+q_9_math_ch3_sq_014,1,3.3 Set Operations,numerical_short,"List the members of A ∩ C for the given sets: A = {2,4,6,8,10}, C = {1,3,5,7,9}","given sets کے لیے A ∩ C کے members لکھیں: A = {2,4,6,8,10}, C = {1,3,5,7,9}",Easy,2,PRO,1
+TOPIC_SEP,1,3.3 Cartesian Product,topic_separator,,,,,,1
+q_9_math_ch3_sq_015,1,3.3 Cartesian Product,definition_formula,Define the Cartesian product A × B and state the relationship for n(A × B).,Cartesian product A × B کی تعریف کریں اور n(A × B) کا relationship بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.3 Relations,topic_separator,,,,,,1
+q_9_math_ch3_sq_016,1,3.3 Relations,definition_function,Define a relation from A to B and state how its domain and range are obtained.,A سے B تک relation کی تعریف کریں اور بیان کریں کہ اس کا domain اور range کیسے حاصل ہوتے ہیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.2 Equality and Equivalent Sets,topic_separator,,,,,,1
+q_9_math_ch3_sq_017,1,3.2 Equality and Equivalent Sets,difference,Differentiate between equal and equivalent sets using two points.,equal اور equivalent sets میں two points کی بنیاد پر فرق بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,3.3 Set Identities,topic_separator,,,,,,1
+q_9_math_ch3_sq_018,1,3.3 Set Identities,law_principle,State the identity and domination laws for union and intersection of sets.,sets کے union اور intersection کے identity اور domination laws بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,3.3 Set Properties,topic_separator,,,,,,1
+q_9_math_ch3_sq_019,1,3.3 Set Properties,law_principle,State the commutative and associative properties of union and intersection.,union اور intersection کی commutative اور associative properties بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.3 Distributive Properties,topic_separator,,,,,,1
+q_9_math_ch3_sq_020,1,3.3 Distributive Properties,law_principle,State the distributive properties of union over intersection and intersection over union.,union over intersection اور intersection over union کی distributive properties بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.3 De Morgan's Laws,topic_separator,,,,,,1
+q_9_math_ch3_sq_021,1,3.3 De Morgan's Laws,law_principle,State De Morgan's two laws for sets.,sets کے لیے De Morgan's two laws بیان کریں۔,Medium,2,PRO,1
+q_9_math_ch3_sq_022,1,3.3 Set Identities,diagram_based,Explain how a Venn diagram can be used to verify the identity A − B = A ∩ B′.,وضاحت کریں کہ Venn diagram سے identity A − B = A ∩ B′ کیسے verify کی جاتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.3 Inclusion-Exclusion Principle,topic_separator,,,,,,1
+q_9_math_ch3_sq_023,1,3.3 Inclusion-Exclusion Principle,formula_relationship,State the inclusion-exclusion formula for two finite sets and identify each term.,two finite sets کے لیے inclusion-exclusion formula بیان کریں اور each term identify کریں۔,Medium,2,ULTRA,1
+q_9_math_ch3_sq_024,1,3.3 Inclusion-Exclusion Principle,numerical_short,"Find n(A ∩ B) from the given data: n(A ∪ B) = 50, n(A) = 30, n(B) = 35","given data سے n(A ∩ B) معلوم کریں: n(A ∪ B) = 50, n(A) = 30, n(B) = 35",Medium,2,PRO,1
+TOPIC_SEP,1,3.3 Three-Set Inclusion-Exclusion,topic_separator,,,,,,1
+q_9_math_ch3_sq_025,1,3.3 Three-Set Inclusion-Exclusion,formula_relationship,State the inclusion-exclusion formula for three finite sets.,three finite sets کے لیے inclusion-exclusion formula بیان کریں۔,Medium,2,ULTRA,1
+q_9_math_ch3_sq_026,1,3.3 Cartesian Product,numerical_short,"Write A × B for the given sets: A = {1,2}, B = {a,b,c}","given sets کے لیے A × B لکھیں: A = {1,2}, B = {a,b,c}",Medium,2,PRO,1
+q_9_math_ch3_sq_027,1,3.3 Relations,numerical_short,"Find the relation, domain, and range in A for the condition y = x, where A = {1,2,3,4}.","A میں given condition کے لیے relation، domain اور range معلوم کریں: y = x, A = {1,2,3,4}",Medium,2,PRO,1
+TOPIC_SEP,1,3.3 Functions,topic_separator,,,,,,1
+q_9_math_ch3_sq_028,1,3.3 Functions,definition_function,Define a function from A to B and state the condition that distinguishes it from a general relation.,A سے B تک function کی تعریف کریں اور وہ condition بیان کریں جو اسے general relation سے distinguish کرتی ہے۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,3.3 Types of Functions,topic_separator,,,,,,1
+q_9_math_ch3_sq_029,1,3.3 Types of Functions,classification,"Classify functions as into, onto, one-one, and bijective, stating the defining condition of each.",functions کو into، onto، one-one اور bijective میں classify کریں اور ہر ایک کی defining condition بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,3.3 Function Diagrams,topic_separator,,,,,,1
+q_9_math_ch3_sq_030,1,3.3 Function Diagrams,diagram_based,State the criteria used to decide from a mapping diagram whether a relation is a function and whether it is one-one or onto.,mapping diagram سے یہ decide کرنے کے criteria بیان کریں کہ relation function ہے یا نہیں اور one-one یا onto ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,3.3 Notation of Functions,topic_separator,,,,,,1
+q_9_math_ch3_sq_031,1,3.3 Notation of Functions,numerical_short,"Evaluate the function at the given inputs: g(x) = 3x + 2, find g(0) and g(−3).","given inputs پر function evaluate کریں: g(x) = 3x + 2, find g(0) and g(−3)",Medium,2,PRO,1
+TOPIC_SEP,1,3.3 Linear and Quadratic Functions,topic_separator,,,,,,1
+q_9_math_ch3_sq_032,1,3.3 Linear and Quadratic Functions,difference,Differentiate between linear and quadratic functions by stating their standard forms and graph types.,standard forms اور graph types کے لحاظ سے linear اور quadratic functions میں فرق بیان کریں۔,Medium,2,ELITE,1
+q_9_math_ch3_sq_033,1,3.3 Set Identities,numerical_short,"Verify De Morgan's laws for the given sets: U = {1,2,3,…,20}, A = {2,4,6,…,20}, B = {1,3,5,…,19}","given sets کے لیے De Morgan's laws verify کریں: U = {1,2,3,…,20}, A = {2,4,6,…,20}, B = {1,3,5,…,19}",Hard,2,PRO,1
+TOPIC_SEP,1,3.3 Set Relationships,topic_separator,,,,,,1
+q_9_math_ch3_sq_034,1,3.3 Set Relationships,numerical_short,"Find P ∩ Q for the sets: P = {x | x = 5m, m ∈ N}, Q = {x | x = 2m, m ∈ N}","given sets کے لیے P ∩ Q معلوم کریں: P = {x | x = 5m, m ∈ N}, Q = {x | x = 2m, m ∈ N}",Hard,2,PRO,1
+TOPIC_SEP,1,3.3 Inclusion-Exclusion Application,topic_separator,,,,,,1
+q_9_math_ch3_sq_035,1,3.3 Inclusion-Exclusion Application,numerical_short,"Out of 180 students, 120 passed Mathematics, 90 passed Science, and 60 passed both. Find the number who passed at least one test and the number who passed neither test.",180 students میں 120 نے Mathematics، 90 نے Science اور 60 نے دونوں pass کیے۔ at least one test pass کرنے والوں اور neither test pass کرنے والوں کی number معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,3.3 Three-Set Survey,topic_separator,,,,,,1
+q_9_math_ch3_sq_036,1,3.3 Three-Set Survey,numerical_short,"Use inclusion-exclusion to find how many developers use at least one language: n(P)=150, n(J)=130, n(H)=120, n(P∩J)=70, n(P∩H)=60, n(J∩H)=50, n(P∩J∩H)=40.","inclusion-exclusion استعمال کرکے at least one language use کرنے والے developers کی number معلوم کریں: n(P)=150, n(J)=130, n(H)=120, n(P∩J)=70, n(P∩H)=60, n(J∩H)=50, n(P∩J∩H)=40",Hard,2,PRO,1
+q_9_math_ch3_sq_037,1,3.3 Functions,numerical_short,"Determine the constants a and b from the function data: f(x) = ax + b + 1, f(3) = 8, f(6) = 14.","function data سے constants a اور b determine کریں: f(x) = ax + b + 1, f(3) = 8, f(6) = 14",Hard,2,PRO,1
+TOPIC_SEP,1,3.3 Quadratic Functions,topic_separator,,,,,,1
+q_9_math_ch3_sq_038,1,3.3 Quadratic Functions,numerical_short,"Determine the constants c and d from the function data: f(x) = cx² + d, f(1) = 6, f(−2) = 10.","function data سے constants c اور d determine کریں: f(x) = cx² + d, f(1) = 6, f(−2) = 10",Hard,2,PRO,1
+TOPIC_SEP,1,3.3 Function Evaluation,topic_separator,,,,,,1
+q_9_math_ch3_sq_039,1,3.3 Function Evaluation,numerical_short,"For f(x) = x² − 3x + 2, simplify the expression f(a + 1).",given function کے لیے expression f(a + 1) simplify کریں: f(x) = x² − 3x + 2,Hard,2,PRO,1
+TOPIC_SEP,1,3.3 Function Classification,topic_separator,,,,,,1
+q_9_math_ch3_sq_040,1,3.3 Function Classification,application_scenario,"A function maps A = {1,2,3} to B = {a,b} as {(1,a),(2,b),(3,b)}. Classify the function as one-one, onto, bijective, or into and justify the classification.","function A = {1,2,3} سے B = {a,b} تک {(1,a),(2,b),(3,b)} کے مطابق map کرتی ہے۔ function کو one-one، onto، bijective یا into classify کریں اور justification دیں۔",Hard,2,PRO,1

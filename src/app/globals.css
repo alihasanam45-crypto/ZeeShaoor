@@ -1,8 +1,667 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-body {
-  background-color: #0b0f19;
-  color: white;
+/* ============================================================================
+   ZeeShaoor.pk — DESIGN SYSTEM FOUNDATION
+   ----------------------------------------------------------------------------
+   Single source of truth for the entire product surface (student, teacher and
+   admin portals + the Paper Generator).
+
+   Architecture
+   ------------
+   1. `:root`  holds the LIGHT theme primitive values.
+   2. `.dark`  overrides those same names with DARK theme values.
+   3. `@theme inline` maps them into Tailwind's token namespaces so every
+      utility (`bg-surface`, `text-fg-muted`, `border-line`, `shadow-card`, …)
+      resolves through `var()` at runtime.
+
+   Because step 3 uses `inline`, Tailwind emits `var(--surface)` rather than a
+   baked hex value — that is what makes a single class like `bg-surface`
+   correct in BOTH themes with zero `dark:` duplication.
+
+   Rule of thumb for contributors:
+     ✅  bg-surface / text-fg / border-line          (semantic, theme-aware)
+     ❌  bg-white dark:bg-slate-900                  (manual, drifts over time)
+   ========================================================================= */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------------------------------------------------------------------------
+   1. LIGHT THEME — "Frosted Porcelain"
+   Cool-neutral canvas, true-white surfaces, indigo→violet accent.
+   ------------------------------------------------------------------------ */
+:root {
+  color-scheme: light;
+
+  /* Canvas & surfaces ---------------------------------------------------- */
+  --bg: #f7f8fb;           /* app canvas                                   */
+  --bg-subtle: #eef1f6;    /* recessed wells, striped table rows           */
+  --surface: #ffffff;      /* cards, panels                                */
+  --surface-raised: #ffffff;
+  --surface-overlay: #ffffff; /* modals, popovers, dropdowns               */
+  --surface-inset: #f4f6fa;   /* inputs, code blocks                       */
+  --surface-hover: rgba(15, 23, 42, 0.04);
+  --surface-active: rgba(15, 23, 42, 0.07);
+
+  /* Borders -------------------------------------------------------------- */
+  --line: rgba(15, 23, 42, 0.09);
+  --line-strong: rgba(15, 23, 42, 0.16);
+  --line-subtle: rgba(15, 23, 42, 0.05);
+
+  /* Foreground ----------------------------------------------------------- */
+  --fg: #0b1120;           /* headings                            ~16.8:1  */
+  --fg-muted: #475569;     /* body copy                            ~7.5:1  */
+  --fg-subtle: #64748b;    /* secondary / labels                   ~4.8:1  */
+  --fg-faint: #94a3b8;     /* decorative only — never load-bearing         */
+  --fg-on-accent: #ffffff;
+
+  /* Accent — every shade below is DERIVED from --brand-accent via
+     color-mix(), so setting that one variable re-themes every button,
+     ring, gradient and soft-fill in the product at once. It defaults to
+     the original indigo, so nothing changes until an institution sets
+     its own colour — see Section 3. oklch is used for the mix (not srgb,
+     like the rest of this file) because it keeps hue stable across a
+     tonal ramp; srgb mixing visibly shifts hue on saturated colours. --- */
+  --brand-accent: #087a55; /* ZeeShaoor green — was #4f46e5 (placeholder indigo) */
+
+  --accent: var(--brand-accent);
+  --accent-hover: color-mix(in oklch, var(--brand-accent) 90%, black 10%);
+  --accent-active: color-mix(in oklch, var(--brand-accent) 78%, black 22%);
+  --accent-fg: #ffffff; /* assumes a mid-to-dark brand colour — for a pastel
+                            one, also set --accent-fg to a dark value; CSS
+                            cannot pick this automatically */
+  --accent-soft: color-mix(in oklch, var(--brand-accent) 9%, transparent 91%);
+  --accent-soft-hover: color-mix(in oklch, var(--brand-accent) 14%, transparent 86%);
+  --accent-text: color-mix(in oklch, var(--brand-accent) 72%, black 28%);  /* ~7:1 on white for the default indigo — re-check contrast for a very light --brand-accent */
+  --accent-ring: color-mix(in oklch, var(--brand-accent) 45%, transparent 55%);
+  --accent-grad: linear-gradient(135deg, var(--brand-accent) 0%, color-mix(in oklch, var(--brand-accent) 55%, black 45%) 100%);
+
+  /* Status --------------------------------------------------------------- */
+  --success: #047857;
+  --success-soft: rgba(4, 120, 87, 0.10);
+  --success-text: #047857;
+  --warning: #b45309;
+  --warning-soft: rgba(180, 83, 9, 0.10);
+  --warning-text: #b45309;
+  --danger: #be123c;
+  --danger-soft: rgba(190, 18, 60, 0.10);
+  --danger-text: #be123c;
+  --info: #0369a1;
+  --info-soft: rgba(3, 105, 161, 0.10);
+  --info-text: #0369a1;
+
+  /* Glass & scrim -------------------------------------------------------- */
+  --glass: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.9);
+  --scrim: rgba(15, 23, 42, 0.32);
+
+  /* Elevation — soft, wide, low-opacity (Stripe/Linear character) --------- */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.04), 0 8px 24px -6px rgba(15, 23, 42, 0.08);
+  --shadow-raised: 0 2px 6px rgba(15, 23, 42, 0.05), 0 12px 32px -8px rgba(15, 23, 42, 0.12);
+  --shadow-overlay: 0 8px 16px rgba(15, 23, 42, 0.08), 0 24px 64px -12px rgba(15, 23, 42, 0.20);
+  --shadow-accent: 0 4px 14px rgba(79, 70, 229, 0.24);
+
+  /* Charts — colour-blind-safe, ordered by perceptual distance ----------- */
+  --chart-1: #4f46e5;
+  --chart-2: #0891b2;
+  --chart-3: #7c3aed;
+  --chart-4: #b45309;
+  --chart-5: #047857;
+  --chart-6: #be123c;
+  --chart-grid: rgba(15, 23, 42, 0.08);
+  --chart-axis: #64748b;
+}
+
+/* ---------------------------------------------------------------------------
+   2. DARK THEME — "Obsidian"
+   Near-black cool canvas with layered elevation. Surfaces get LIGHTER as they
+   rise (physical light model) rather than relying on shadow, which is close to
+   invisible on dark backgrounds.
+   ------------------------------------------------------------------------ */
+.dark {
+  color-scheme: dark;
+
+  --bg: #08080d;
+  --bg-subtle: #0d0d15;
+  --surface: #101019;
+  --surface-raised: #16161f;
+  --surface-overlay: #1a1a25;
+  --surface-inset: #0b0b12;
+  --surface-hover: rgba(255, 255, 255, 0.05);
+  --surface-active: rgba(255, 255, 255, 0.08);
+
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.17);
+  --line-subtle: rgba(255, 255, 255, 0.05);
+
+  --fg: #f1f5f9;           /*                                     ~16.1:1  */
+  --fg-muted: #cbd5e1;     /*                                     ~11.4:1  */
+  --fg-subtle: #94a3b8;    /*                                      ~6.6:1  */
+  --fg-faint: #64748b;
+  --fg-on-accent: #ffffff;
+
+  /* Accent — same --brand-accent as light (Section 1), mixed toward WHITE
+     instead of black: on a dark canvas, emphasis reads as brighter, not
+     darker. No --brand-accent is redeclared here — it inherits the value
+     set on :root (or overridden higher up for a specific institution). */
+  --accent: color-mix(in oklch, var(--brand-accent) 82%, white 18%);
+  --accent-hover: color-mix(in oklch, var(--brand-accent) 65%, white 35%);
+  --accent-active: color-mix(in oklch, var(--brand-accent) 48%, white 52%);
+  --accent-fg: #ffffff;
+  --accent-soft: color-mix(in oklch, var(--brand-accent) 16%, transparent 84%);
+  --accent-soft-hover: color-mix(in oklch, var(--brand-accent) 24%, transparent 76%);
+  --accent-text: color-mix(in oklch, var(--brand-accent) 58%, white 42%);  /* accent AS text on dark bg */
+  --accent-ring: color-mix(in oklch, var(--brand-accent) 55%, transparent 45%);
+  --accent-grad: linear-gradient(135deg, var(--brand-accent) 0%, color-mix(in oklch, var(--brand-accent) 55%, white 45%) 100%);
+
+  --success: #10b981;
+  --success-soft: rgba(16, 185, 129, 0.16);
+  --success-text: #6ee7b7;
+  --warning: #f59e0b;
+  --warning-soft: rgba(245, 158, 11, 0.16);
+  --warning-text: #fcd34d;
+  --danger: #f43f5e;
+  --danger-soft: rgba(244, 63, 94, 0.16);
+  --danger-text: #fda4af;
+  --info: #0ea5e9;
+  --info-soft: rgba(14, 165, 233, 0.16);
+  --info-text: #7dd3fc;
+
+  --glass: rgba(16, 16, 25, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --scrim: rgba(3, 3, 8, 0.72);
+
+  /* On dark, elevation reads through ring + depth, not soft shadow. */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.5), 0 8px 24px -6px rgba(0, 0, 0, 0.6);
+  --shadow-raised: 0 2px 6px rgba(0, 0, 0, 0.55), 0 12px 32px -8px rgba(0, 0, 0, 0.7);
+  --shadow-overlay: 0 8px 16px rgba(0, 0, 0, 0.6), 0 24px 64px -12px rgba(0, 0, 0, 0.8);
+  --shadow-accent: 0 4px 20px rgba(99, 102, 241, 0.35);
+
+  --chart-1: #818cf8;
+  --chart-2: #22d3ee;
+  --chart-3: #c084fc;
+  --chart-4: #fbbf24;
+  --chart-5: #34d399;
+  --chart-6: #fb7185;
+  --chart-grid: rgba(255, 255, 255, 0.07);
+  --chart-axis: #94a3b8;
+}
+
+/* ---------------------------------------------------------------------------
+   3. INSTITUTION BRANDING
+   One variable re-themes the whole product. To brand a page tree for a
+   given institution, set --brand-accent on any ancestor — usually the
+   layout root for that institution's routes:
+
+     <body style={{ ['--brand-accent' as any]: institution.brandColor }}>
+
+   Every accent token in Sections 1 and 2 recomputes from that value
+   automatically, correctly, in both themes — no component needs to know
+   branding exists. If an institution's colour is very light or pastel,
+   also set --accent-fg to a dark value on the same element (see the note
+   next to it above) — CSS cannot choose that automatically.
+   ------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------------
+   4. TAILWIND TOKEN MAP
+   `inline` keeps the var() indirection so one class works in both themes.
+   ------------------------------------------------------------------------ */
+@theme inline {
+  /* Type ----------------------------------------------------------------- */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-display), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas,
+    "Liberation Mono", monospace;
+
+  /* Type scale — fluid, clamp()-based, so `text-sm` … `text-5xl` stay
+     correctly sized from a phone up to a 4K monitor without a separate
+     breakpoint override anywhere. Each size pairs with its own
+     line-height, the v4 convention for --text-*. */
+  --text-xs: clamp(0.72rem, 0.69rem + 0.14vw, 0.78rem);
+  --text-xs--line-height: 1.5;
+  --text-sm: clamp(0.82rem, 0.79rem + 0.16vw, 0.89rem);
+  --text-sm--line-height: 1.5;
+  --text-base: clamp(0.94rem, 0.9rem + 0.2vw, 1rem);
+  --text-base--line-height: 1.6;
+  --text-lg: clamp(1.05rem, 1rem + 0.28vw, 1.15rem);
+  --text-lg--line-height: 1.55;
+  --text-xl: clamp(1.2rem, 1.12rem + 0.4vw, 1.35rem);
+  --text-xl--line-height: 1.4;
+  --text-2xl: clamp(1.4rem, 1.28rem + 0.6vw, 1.6rem);
+  --text-2xl--line-height: 1.3;
+  --text-3xl: clamp(1.7rem, 1.5rem + 1vw, 2rem);
+  --text-3xl--line-height: 1.2;
+  --text-4xl: clamp(2.1rem, 1.8rem + 1.5vw, 2.6rem);
+  --text-4xl--line-height: 1.1;
+  --text-5xl: clamp(2.6rem, 2.2rem + 2vw, 3.4rem);
+  --text-5xl--line-height: 1.05;
+
+  /* Colour --------------------------------------------------------------- */
+  --color-bg: var(--bg);
+  --color-bg-subtle: var(--bg-subtle);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-overlay: var(--surface-overlay);
+  --color-surface-inset: var(--surface-inset);
+  --color-surface-hover: var(--surface-hover);
+  --color-surface-active: var(--surface-active);
+
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-line-subtle: var(--line-subtle);
+
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-fg-faint: var(--fg-faint);
+  --color-fg-on-accent: var(--fg-on-accent);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-active: var(--accent-active);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-soft-hover: var(--accent-soft-hover);
+  --color-accent-text: var(--accent-text);
+
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-success-text: var(--success-text);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-warning-text: var(--warning-text);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-danger-text: var(--danger-text);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-info-text: var(--info-text);
+
+  --color-glass: var(--glass);
+  --color-glass-border: var(--glass-border);
+  --color-scrim: var(--scrim);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-chart-6: var(--chart-6);
+  --color-chart-grid: var(--chart-grid);
+  --color-chart-axis: var(--chart-axis);
+
+  /* Radius — one step up from stock Tailwind for a softer, modern feel ---- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-3xl: 28px;
+
+  /* Elevation ------------------------------------------------------------ */
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-card: var(--shadow-card);
+  --shadow-raised: var(--shadow-raised);
+  --shadow-overlay: var(--shadow-overlay);
+  --shadow-accent: var(--shadow-accent);
+
+  /* Motion — a small, opinionated set. Everything decelerates.  ---------- */
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --animate-fade-in: fade-in 0.2s var(--ease-smooth) both;
+  --animate-slide-up: slide-up 0.3s var(--ease-out-quint) both;
+  --animate-slide-down: slide-down 0.2s var(--ease-out-quint) both;
+  --animate-scale-in: scale-in 0.18s var(--ease-out-quint) both;
+  --animate-shimmer: shimmer 1.6s linear infinite;
+  --animate-pulse-ring: pulse-ring 2s var(--ease-smooth) infinite;
+}
+
+/* ---------------------------------------------------------------------------
+   5. KEYFRAMES
+   ------------------------------------------------------------------------ */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-6px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes shimmer {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(200%); }
+}
+@keyframes pulse-ring {
+  0%        { transform: scale(0.6); opacity: 0.85; }
+  70%, 100% { transform: scale(1.8); opacity: 0; }
+}
+
+/* ---------------------------------------------------------------------------
+   6. BASE LAYER
+   ------------------------------------------------------------------------ */
+@layer base {
+  * {
+    border-color: var(--line);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* NO blanket `transition: background-color/color …` on every element.
+     ------------------------------------------------------------------------
+     Applying a colour transition to every node is the single most expensive
+     rule you can put in a stylesheet: it forces the engine to set up and tick
+     transition bookkeeping for every element in the document on every theme
+     change, on a page that can hold thousands of nodes.
+
+     The theme swap is therefore instantaneous. That is also what Linear,
+     Vercel and GitHub ship — next-themes even provides
+     `disableTransitionOnChange` precisely because the global cross-fade is
+     more trouble than it is worth. Motion is spent where it carries meaning
+     instead: hover, focus, press, and enter/exit, declared per component. */
+
+  /* Interactive affordances animate on their own state changes. Scoped with
+     :where() so any component can override without a specificity fight. */
+  :where(button, a, input, select, textarea, [role="button"], [role="tab"]) {
+    transition:
+      background-color 150ms var(--ease-smooth),
+      border-color 150ms var(--ease-smooth),
+      color 150ms var(--ease-smooth),
+      box-shadow 150ms var(--ease-smooth);
+  }
+
+  /* Headings use tighter tracking as they grow — optical correction. */
+  h1, h2, h3, h4 {
+    color: var(--fg);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  h1 { letter-spacing: -0.03em; }
+
+  p, li { text-wrap: pretty; }
+
+  /* Accessible focus: visible on every surface, never on mouse click. */
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+  :focus:not(:focus-visible) { outline: none; }
+
+  ::selection {
+    background-color: var(--accent-soft-hover);
+    color: var(--fg);
+  }
+
+  /* Inputs inherit type by default — browsers otherwise fall back to system. */
+  input, textarea, select, button { font: inherit; }
+
+  /* Tabular numerals everywhere numbers are compared vertically. */
+  .tabular, td, th, [data-numeric] {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Scrollbars ---------------------------------------------------------- */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--line-strong) transparent;
+  }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--line-strong);
+    border-radius: 9999px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--fg-faint);
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-corner { background: transparent; }
+}
+
+/* ---------------------------------------------------------------------------
+   7. COMPONENT UTILITIES
+   Multi-property patterns that would be noisy to repeat as utility soup.
+   ------------------------------------------------------------------------ */
+@layer components {
+  /* Frosted panel — headers, docks, floating bars. */
+  .zs-glass {
+    background-color: var(--glass);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+  }
+
+  /* The signature card. Hairline ring + soft lift, never a heavy border. */
+  .zs-card {
+    background-color: var(--surface);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-card), inset 0 0 0 1px var(--line);
+  }
+
+  /* Interactive card — lifts toward the pointer. */
+  .zs-card-interactive {
+    transition:
+      box-shadow 220ms var(--ease-out-quint),
+      transform 220ms var(--ease-out-quint);
+  }
+  .zs-card-interactive:hover {
+    box-shadow: var(--shadow-raised), inset 0 0 0 1px var(--line-strong);
+    transform: translateY(-2px);
+  }
+  .zs-card-interactive:active { transform: translateY(0); }
+
+  /* Top-edge specular highlight — the detail that sells "premium". */
+  .zs-sheen {
+    position: relative;
+    isolation: isolate;
+  }
+  .zs-sheen::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      color-mix(in srgb, var(--fg) 14%, transparent),
+      transparent
+    );
+    pointer-events: none;
+  }
+
+  /* Skeleton shimmer — inherits surface so it works in both themes. */
+  .zs-skeleton {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--surface-inset);
+    border-radius: var(--radius-md);
+  }
+  .zs-skeleton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--surface-hover),
+      transparent
+    );
+    animation: shimmer 1.6s linear infinite;
+  }
+
+  /* Gradient text — brand moments only, never body copy. */
+  .zs-gradient-text {
+    background: var(--accent-grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Screen-reader-only, with a focusable variant for skip links. */
+  .zs-sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .zs-focus-reveal:focus {
+    position: fixed;
+    top: 1rem; left: 1rem;
+    z-index: 100;
+    width: auto; height: auto;
+    padding: 0.625rem 1rem;
+    margin: 0;
+    clip-path: none;
+    background-color: var(--surface-overlay);
+    color: var(--fg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-overlay);
+  }
+
+  /* Hide scrollbar but keep scrolling (nav rails, chip strips). */
+  .zs-scroll-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .zs-scroll-hidden::-webkit-scrollbar { display: none; }
+}
+
+/* ---------------------------------------------------------------------------
+   8. MOTION & ACCESSIBILITY PREFERENCES
+   Honour what the OS reports: keep meaning, adapt presentation.
+   ------------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Some people turn transparency off system-wide because blur genuinely
+   hurts to look at, not as a performance setting. Give the affected
+   surface back its solid colour instead of fighting the preference. */
+@media (prefers-reduced-transparency: reduce) {
+  .zs-glass {
+    background-color: var(--surface-overlay);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+/* Windows High Contrast Mode and its equivalents. forced-color-adjust:
+   none tells the browser to stop auto-simplifying these specific
+   elements and trust the system colour keywords below instead — a trade
+   that only makes sense for the handful of elements re-styled here. */
+@media (forced-colors: active) {
+  .zs-card, .zs-glass {
+    forced-color-adjust: none;
+    background-color: Canvas;
+    color: CanvasText;
+    box-shadow: none;
+    border: 1px solid CanvasText;
+  }
+  :focus-visible {
+    outline: 2px solid Highlight;
+  }
+  /* Gradient-clipped text can render fully invisible under forced
+     colours — this is the fix, not a style choice. */
+  .zs-gradient-text {
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    color: CanvasText;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   9. VIEW TRANSITIONS
+   CSS-side styling for the browser's native View Transitions API — the
+   cross-fade/morph you get moving between pages without a hard reload.
+   `@view-transition { navigation: auto }` opts full navigations in on
+   browsers that support it and is a no-op everywhere else, so it is safe
+   to ship as-is. For this app's normal CLIENT-SIDE route changes (App
+   Router navigation via next/link) it also needs Next's experimental
+   `viewTransition` flag turned on in next.config, plus the changing
+   region wrapped in `unstable_ViewTransition` — a small, separate step
+   for whenever that gets switched on; nothing here depends on it.
+   ------------------------------------------------------------------------ */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 240ms;
+  animation-timing-function: var(--ease-smooth);
+}
+::view-transition-old(root) { animation-name: zs-vt-out; }
+::view-transition-new(root) { animation-name: zs-vt-in; }
+
+@keyframes zs-vt-out {
+  from { opacity: 1; transform: none; }
+  to   { opacity: 0; transform: translateY(-4px); }
+}
+@keyframes zs-vt-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Opt a single element into its own named transition — it will morph
+   between routes instead of cross-fading with everything else — from
+   React with style={{ viewTransitionName: 'zs-vt-<stable-id>' }}.
+   Unused names cost nothing, so none are declared here. */
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   10. PRINT — the Paper Generator's preview must print clean.
+   ------------------------------------------------------------------------ */
+@media print {
+  :root { color-scheme: light; }
+  body { background: #fff !important; color: #000 !important; }
+  .zs-no-print, aside, nav, header button { display: none !important; }
+  .zs-card { box-shadow: none !important; border: 1px solid #ddd !important; }
 }

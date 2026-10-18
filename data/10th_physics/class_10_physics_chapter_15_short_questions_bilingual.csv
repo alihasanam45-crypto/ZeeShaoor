@@ -1,0 +1,66 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,15.1 Electric Charge,topic_separator,,,,,,1
+q_10_phy_ch15_sq_001,1,15.1 Electric Charge,definition_unit,Define electric charge and state its SI unit.,electric charge کی تعریف کریں اور اس کی SI unit بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch15_sq_002,1,15.1 Electric Charge,list_state,State the two types of electric charge and describe the interaction between like and unlike charges.,electric charge کی two types بیان کریں اور like و unlike charges کے interaction کی وضاحت کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,15.1 Charging by Friction,topic_separator,,,,,,1
+q_10_phy_ch15_sq_003,1,15.1 Charging by Friction,concept_explanation,Explain how rubbing two different materials can charge them by transfer of electrons.,وضاحت کریں کہ two different materials کو rub کرنے سے electrons transfer ہو کر وہ charge کیسے ہوتے ہیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,15.1 Conservation of Charge,topic_separator,,,,,,1
+q_10_phy_ch15_sq_004,1,15.1 Conservation of Charge,law_principle,State the law of conservation of electric charge.,law of conservation of electric charge بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,15.2 Electrostatic Induction,topic_separator,,,,,,1
+q_10_phy_ch15_sq_005,1,15.2 Electrostatic Induction,definition_function,Define electrostatic induction and state how it differs from charging by contact.,electrostatic induction کی تعریف کریں اور charging by contact سے اس کا فرق بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,15.2 Earthing,topic_separator,,,,,,1
+q_10_phy_ch15_sq_006,1,15.2 Earthing,definition_function,Define earthing and state its purpose during electrostatic induction.,earthing کی تعریف کریں اور electrostatic induction کے دوران اس کا purpose بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,15.2 Gold-Leaf Electroscope,topic_separator,,,,,,1
+q_10_phy_ch15_sq_007,1,15.2 Gold-Leaf Electroscope,function_purpose,State the function of a gold-leaf electroscope and name its main parts.,gold-leaf electroscope کا function اور اس کے main parts کے names بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch15_sq_008,1,15.2 Gold-Leaf Electroscope,concept_explanation,Explain why the leaves of a charged electroscope diverge.,وضاحت کریں کہ charged electroscope کی leaves diverge کیوں کرتی ہیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,15.3 Applications of Electrostatics,topic_separator,,,,,,1
+q_10_phy_ch15_sq_009,1,15.3 Applications of Electrostatics,list_state,Enlist two applications of electrostatics in daily life.,روزمرہ زندگی میں electrostatics کی two applications فہرست کریں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,15.3 Electrostatic Precipitator,topic_separator,,,,,,1
+q_10_phy_ch15_sq_010,1,15.3 Electrostatic Precipitator,function_purpose,State the purpose of an electrostatic precipitator.,electrostatic precipitator کا purpose بیان کریں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,15.4 Coulomb's Law,topic_separator,,,,,,1
+q_10_phy_ch15_sq_011,1,15.4 Coulomb's Law,law_principle,State Coulomb's law and write its mathematical form.,Coulomb's law بیان کریں اور اس کی mathematical form لکھیں۔,Easy,2,PRO,1
+q_10_phy_ch15_sq_012,1,15.4 Coulomb's Law,definition_unit,State the electrostatic constant and its SI unit as used in Coulomb's law.,Coulomb's law میں used electrostatic constant اور اس کی SI unit بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,15.5 Electric Field,topic_separator,,,,,,1
+q_10_phy_ch15_sq_013,1,15.5 Electric Field,definition_function,Define an electric field and state the direction assigned to it at a point.,electric field کی تعریف کریں اور کسی point پر اس کی assigned direction بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,15.5 Electric Field Intensity,topic_separator,,,,,,1
+q_10_phy_ch15_sq_014,1,15.5 Electric Field Intensity,definition_formula,Define electric field intensity and write its formula and SI unit.,electric field intensity کی تعریف کریں اور اس کا formula اور SI unit لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,15.6 Conductors and Insulators,topic_separator,,,,,,1
+q_10_phy_ch15_sq_015,1,15.6 Conductors and Insulators,difference,Differentiate between electrical conductors and insulators and give two examples of each.,electrical conductors اور insulators میں فرق بیان کریں اور ہر ایک کی two examples دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,15.7 Electrical Breakdown,topic_separator,,,,,,1
+q_10_phy_ch15_sq_016,1,15.7 Electrical Breakdown,definition_example,Define electrical breakdown and give one visible example.,electrical breakdown کی تعریف کریں اور ایک visible example دیں۔,Easy,2,PRO,1
+q_10_phy_ch15_sq_017,1,15.1 Charging by Friction,explain_reason,Explain why some materials gain electrons while others lose electrons when rubbed together.,وضاحت کریں کہ کچھ materials rub ہونے پر electrons gain جبکہ کچھ lose کیوں کرتے ہیں۔,Medium,2,ELITE,1
+q_10_phy_ch15_sq_018,1,15.2 Electrostatic Induction,process_steps,Describe the steps for charging a conductor by electrostatic induction and earthing.,electrostatic induction اور earthing سے conductor charge کرنے کے steps بیان کریں۔,Medium,2,PRO,1
+q_10_phy_ch15_sq_019,1,15.2 Gold-Leaf Electroscope,process_steps,Explain how a gold-leaf electroscope can determine the nature of charge on a body.,وضاحت کریں کہ gold-leaf electroscope body پر charge کی nature کیسے determine کرتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,15.3 Photocopier,topic_separator,,,,,,1
+q_10_phy_ch15_sq_020,1,15.3 Photocopier,process_steps,Describe how electrostatic charging is used in a photocopier.,بیان کریں کہ photocopier میں electrostatic charging کیسے use ہوتی ہے۔,Medium,2,ELITE,1
+q_10_phy_ch15_sq_021,1,15.3 Electrostatic Precipitator,process_steps,Explain how an electrostatic precipitator removes smoke and dust particles from industrial gases.,وضاحت کریں کہ electrostatic precipitator industrial gases سے smoke اور dust particles کیسے remove کرتی ہے۔,Medium,2,PRO,1
+q_10_phy_ch15_sq_022,1,15.4 Coulomb's Law,cause_effect,Explain how electrostatic force changes when the separation between two point charges increases.,وضاحت کریں کہ two point charges کے درمیان separation increase ہونے پر electrostatic force کیسے change ہوتی ہے۔,Medium,2,PRO,1
+q_10_phy_ch15_sq_023,1,15.4 Coulomb's Law,numerical_short,"Calculate the electrostatic force between two charges using the given data: q₁ = 8 μC, q₂ = 4 μC, r = 0.12 m.","دیے گئے data سے two charges کے درمیان electrostatic force معلوم کریں: q₁ = 8 μC, q₂ = 4 μC, r = 0.12 m",Medium,2,PRO,1
+TOPIC_SEP,1,15.5 Electric Field Lines,topic_separator,,,,,,1
+q_10_phy_ch15_sq_024,1,15.5 Electric Field Lines,features_characteristics,State four properties of electric field lines.,electric field lines کی four properties بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,15.5 Electric Field Patterns,topic_separator,,,,,,1
+q_10_phy_ch15_sq_025,1,15.5 Electric Field Patterns,diagram_based,Describe the electric field pattern around a positive point charge and a negative point charge.,positive point charge اور negative point charge کے around electric field pattern بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,15.5 Charged Conducting Sphere,topic_separator,,,,,,1
+q_10_phy_ch15_sq_026,1,15.5 Charged Conducting Sphere,concept_explanation,Explain why the electric field inside a charged conducting sphere is zero.,وضاحت کریں کہ charged conducting sphere کے اندر electric field zero کیوں ہوتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,15.5 Parallel Conducting Plates,topic_separator,,,,,,1
+q_10_phy_ch15_sq_027,1,15.5 Parallel Conducting Plates,diagram_based,Describe the electric field between two oppositely charged parallel conducting plates.,two oppositely charged parallel conducting plates کے درمیان electric field بیان کریں۔,Medium,2,PRO,1
+q_10_phy_ch15_sq_028,1,15.5 Electric Field Intensity,numerical_short,A test charge of 25 μC experiences a force of 0.500 N. Calculate the electric field intensity.,25 μC test charge پر 0.500 N force act کرتی ہے۔ electric field intensity معلوم کریں۔,Medium,2,PRO,1
+q_10_phy_ch15_sq_029,1,15.6 Conductors and Insulators,process_steps,Describe an experiment to distinguish an electrical conductor from an insulator.,electrical conductor اور insulator کو distinguish کرنے والا experiment بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,15.6 Charge on Conductors,topic_separator,,,,,,1
+q_10_phy_ch15_sq_030,1,15.6 Charge on Conductors,concept_explanation,Explain why excess charge on an isolated conductor resides on its outer surface.,وضاحت کریں کہ isolated conductor پر excess charge اس کی outer surface پر کیوں reside کرتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,15.7 Corona Discharge,topic_separator,,,,,,1
+q_10_phy_ch15_sq_031,1,15.7 Corona Discharge,definition_function,Define corona discharge and state why it is more likely near sharp points.,corona discharge کی تعریف کریں اور بیان کریں کہ sharp points کے near یہ زیادہ likely کیوں ہوتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,15.7 Lightning Conductor,topic_separator,,,,,,1
+q_10_phy_ch15_sq_032,1,15.7 Lightning Conductor,function_purpose,Explain how a lightning conductor protects a building.,وضاحت کریں کہ lightning conductor building کو کیسے protect کرتا ہے۔,Medium,2,PRO,1
+q_10_phy_ch15_sq_033,1,15.4 Coulomb's Law,numerical_short,Two identical charges repel each other with force 0.2 N at a separation of 9 cm. Calculate the magnitude of each charge.,two identical charges 9 cm separation پر 0.2 N force سے repel کرتی ہیں۔ ہر charge کی magnitude معلوم کریں۔,Hard,2,PRO,1
+q_10_phy_ch15_sq_034,1,15.4 Coulomb's Law,numerical_short,Two equal charges are brought from 6 cm separation to 2 cm separation. Determine the factor by which the electrostatic force changes.,two equal charges کی separation 6 cm سے 2 cm کی جاتی ہے۔ electrostatic force میں change factor معلوم کریں۔,Hard,2,PRO,1
+q_10_phy_ch15_sq_035,1,15.5 Electric Field Patterns,compare_contrast,"Compare the electric field around a point charge, a charged conducting sphere, and oppositely charged parallel plates.",point charge، charged conducting sphere اور oppositely charged parallel plates کے electric fields کا موازنہ کریں۔,Hard,2,PRO,1
+q_10_phy_ch15_sq_036,1,15.6 Conductors and Insulators,application_scenario,A conductor and an insulator are placed in the same electric field. Explain how their charge distributions differ.,conductor اور insulator کو same electric field میں place کیا جاتا ہے۔ ان کی charge distributions کا فرق explain کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,15.7 Lightning,topic_separator,,,,,,1
+q_10_phy_ch15_sq_037,1,15.7 Lightning,sequence,"Describe the sequence of charge separation, electric-field buildup, air breakdown, and discharge that produces lightning.",lightning produce کرنے والی charge separation، electric-field buildup، air breakdown اور discharge کی sequence بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,15.7 Lichtenberg Figures,topic_separator,,,,,,1
+q_10_phy_ch15_sq_038,1,15.7 Lichtenberg Figures,definition_example,Define Lichtenberg figures and explain why they show branching self-similar patterns.,Lichtenberg figures کی تعریف کریں اور explain کریں کہ وہ branching self-similar patterns کیوں دکھاتی ہیں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,15.7 Electrostatic Hazards,topic_separator,,,,,,1
+q_10_phy_ch15_sq_039,1,15.7 Electrostatic Hazards,advantages_disadvantages,Explain two real-life hazards of electrostatic discharge and state a preventive measure for each.,electrostatic discharge کے two real-life hazards explain کریں اور ہر ایک کے لیے preventive measure بیان کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,15.3 Electrostatic Applications,topic_separator,,,,,,1
+q_10_phy_ch15_sq_040,1,15.3 Electrostatic Applications,compare_contrast,Compare the working principles of an electrostatic precipitator and electrostatic spray painting.,electrostatic precipitator اور electrostatic spray painting کے working principles کا موازنہ کریں۔,Hard,2,ELITE,1

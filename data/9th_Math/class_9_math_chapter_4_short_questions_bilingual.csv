@@ -1,0 +1,64 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,4.1 Factorization,topic_separator,,,,,,1
+q_9_math_ch4_sq_001,1,4.1 Factorization,definition_function,Define factorization of an algebraic expression and state its main purpose in algebraic manipulation.,algebraic expression کی factorization کی تعریف کریں اور algebraic manipulation میں اس کا main purpose بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,4.1 Common-Factor Method,topic_separator,,,,,,1
+q_9_math_ch4_sq_002,1,4.1 Common-Factor Method,process_steps,State the steps used to factorize an algebraic expression by taking out the greatest common factor.,greatest common factor باہر نکال کر algebraic expression factorize کرنے کے steps بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch4_sq_003,1,4.1 Common-Factor Method,numerical_short,Factorize the expression by taking out the common factor: 12x + 36,common factor باہر نکال کر درج ذیل expression factorize کریں: 12x + 36,Easy,2,PRO,1
+TOPIC_SEP,1,4.1 Algebraic Identities,topic_separator,,,,,,1
+q_9_math_ch4_sq_004,1,4.1 Algebraic Identities,list_state,"State the identities for (a + b)², (a − b)², and a² − b².",(a + b)²، (a − b)² اور a² − b² کی identities بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,4.1 Difference of Squares,topic_separator,,,,,,1
+q_9_math_ch4_sq_005,1,4.1 Difference of Squares,numerical_short,Factorize the expression by using the difference-of-squares identity: x² − 9,difference-of-squares identity استعمال کرکے درج ذیل expression factorize کریں: x² − 9,Easy,2,PRO,1
+TOPIC_SEP,1,4.1 Perfect-Square Trinomials,topic_separator,,,,,,1
+q_9_math_ch4_sq_006,1,4.1 Perfect-Square Trinomials,numerical_short,Factorize the perfect-square trinomial: x² − 6x + 9,درج ذیل perfect-square trinomial factorize کریں: x² − 6x + 9,Easy,2,PRO,1
+TOPIC_SEP,1,4.1 Trinomial Factorization,topic_separator,,,,,,1
+q_9_math_ch4_sq_007,1,4.1 Trinomial Factorization,process_steps,State the method used to factorize a quadratic trinomial of the form x² + bx + c.,x² + bx + c کی form والے quadratic trinomial کو factorize کرنے کا method بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch4_sq_008,1,4.1 Trinomial Factorization,numerical_short,Factorize the trinomial: x² + 5x + 6,درج ذیل trinomial factorize کریں: x² + 5x + 6,Easy,2,PRO,1
+TOPIC_SEP,1,4.2 Cubic Identities,topic_separator,,,,,,1
+q_9_math_ch4_sq_009,1,4.2 Cubic Identities,list_state,State the factorization identities for a³ + b³ and a³ − b³.,a³ + b³ اور a³ − b³ کی factorization identities بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,4.2 Sum of Cubes,topic_separator,,,,,,1
+q_9_math_ch4_sq_010,1,4.2 Sum of Cubes,numerical_short,Factorize the expression: x³ + 64y³,درج ذیل expression factorize کریں: x³ + 64y³,Easy,2,PRO,1
+TOPIC_SEP,1,4.2 Difference of Cubes,topic_separator,,,,,,1
+q_9_math_ch4_sq_011,1,4.2 Difference of Cubes,numerical_short,Factorize the expression: x³y³ − 8,درج ذیل expression factorize کریں: x³y³ − 8,Easy,2,PRO,1
+TOPIC_SEP,1,4.2 Perfect Cubes,topic_separator,,,,,,1
+q_9_math_ch4_sq_012,1,4.2 Perfect Cubes,definition_example,Define a perfect-cube polynomial and give one example in expanded form.,perfect-cube polynomial کی تعریف کریں اور expanded form میں one example دیں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,4.3 HCF and LCM of Algebraic Expressions,topic_separator,,,,,,1
+q_9_math_ch4_sq_013,1,4.3 HCF and LCM of Algebraic Expressions,definition_function,Define the HCF and LCM of algebraic expressions and state the difference between their selection rules.,algebraic expressions کے HCF اور LCM کی تعریف کریں اور ان کے selection rules میں فرق بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,4.3 HCF by Factorization,topic_separator,,,,,,1
+q_9_math_ch4_sq_014,1,4.3 HCF by Factorization,numerical_short,Find the HCF by factorization: 21x²y and 35xy²,factorization سے HCF معلوم کریں: 21x²y and 35xy²,Easy,2,PRO,1
+TOPIC_SEP,1,4.3 LCM by Prime Factorization,topic_separator,,,,,,1
+q_9_math_ch4_sq_015,1,4.3 LCM by Prime Factorization,numerical_short,"Find the LCM by prime factorization: 2a²b, 4ab², 6ab","prime factorization سے LCM معلوم کریں: 2a²b, 4ab², 6ab",Easy,2,PRO,1
+TOPIC_SEP,1,4.4 Square Root of an Algebraic Expression,topic_separator,,,,,,1
+q_9_math_ch4_sq_016,1,4.4 Square Root of an Algebraic Expression,definition_function,Define the square root of an algebraic expression and name the two methods used to determine it.,algebraic expression کے square root کی تعریف کریں اور اسے determine کرنے کے two methods کے نام لکھیں۔,Easy,2,ULTRA,1
+q_9_math_ch4_sq_017,1,4.1 Trinomial Factorization,numerical_short,Factorize the trinomial: 2x² + 7x + 3,درج ذیل trinomial factorize کریں: 2x² + 7x + 3,Medium,2,PRO,1
+q_9_math_ch4_sq_018,1,4.1 Trinomial Factorization,numerical_short,Factorize the expression: −x² − 23x − 60,درج ذیل expression factorize کریں: −x² − 23x − 60,Medium,2,PRO,1
+TOPIC_SEP,1,4.2 Perfect-Cube Identity,topic_separator,,,,,,1
+q_9_math_ch4_sq_019,1,4.2 Perfect-Cube Identity,numerical_short,Factorize the polynomial by recognizing a perfect cube: x³ + 3x² + 3x + 1,perfect cube identify کرکے درج ذیل polynomial factorize کریں: x³ + 3x² + 3x + 1,Medium,2,PRO,1
+TOPIC_SEP,1,4.2 Special Factorization,topic_separator,,,,,,1
+q_9_math_ch4_sq_020,1,4.2 Special Factorization,process_steps,Explain how a fourth-degree expression can be rewritten as a difference of two squares before factorization.,وضاحت کریں کہ fourth-degree expression کو factorization سے پہلے difference of two squares کی form میں کیسے rewrite کیا جاتا ہے۔,Medium,2,ELITE,1
+q_9_math_ch4_sq_021,1,4.2 Special Factorization,numerical_short,Factorize the expression: x⁴ + 64,درج ذیل expression factorize کریں: x⁴ + 64,Medium,2,PRO,1
+TOPIC_SEP,1,4.2 Product-Type Factorization,topic_separator,,,,,,1
+q_9_math_ch4_sq_022,1,4.2 Product-Type Factorization,process_steps,State the substitution strategy used to factorize products of four consecutive or related linear factors.,four consecutive یا related linear factors کے products کو factorize کرنے کے لیے substitution strategy بیان کریں۔,Medium,2,ELITE,1
+q_9_math_ch4_sq_023,1,4.2 Product-Type Factorization,numerical_short,Factorize the expression: (x + 3)(x + 4)(x + 5)(x + 6) − 360,درج ذیل expression factorize کریں: (x + 3)(x + 4)(x + 5)(x + 6) − 360,Medium,2,PRO,1
+q_9_math_ch4_sq_024,1,4.3 HCF by Factorization,numerical_short,Find the HCF by factorization: x³ − 1 and x² + x + 1,factorization سے HCF معلوم کریں: x³ − 1 and x² + x + 1,Medium,2,PRO,1
+TOPIC_SEP,1,4.3 HCF by Division Method,topic_separator,,,,,,1
+q_9_math_ch4_sq_025,1,4.3 HCF by Division Method,process_steps,State the successive-division procedure used to find the HCF of two polynomials.,two polynomials کا HCF معلوم کرنے کے لیے successive-division procedure بیان کریں۔,Medium,2,ULTRA,1
+q_9_math_ch4_sq_026,1,4.3 LCM by Prime Factorization,numerical_short,Find the LCM by prime factorization: x² + x and x³ + x²,prime factorization سے LCM معلوم کریں: x² + x and x³ + x²,Medium,2,PRO,1
+TOPIC_SEP,1,4.3 HCF-LCM Relationship,topic_separator,,,,,,1
+q_9_math_ch4_sq_027,1,4.3 HCF-LCM Relationship,formula_relationship,"State the relationship among the HCF, LCM, and product of two polynomials.",two polynomials کے HCF، LCM اور product کے درمیان relationship بیان کریں۔,Medium,2,PRO,1
+q_9_math_ch4_sq_028,1,4.3 HCF-LCM Relationship,numerical_short,Find the product of two polynomials when their HCF is x + a and their LCM is 12x²(x + a)(x² − a²).,"two polynomials کا product معلوم کریں، جب HCF اور LCM ہوں: HCF = x + a, LCM = 12x²(x + a)(x² − a²)",Medium,2,PRO,1
+TOPIC_SEP,1,4.4 Square Root by Factorization,topic_separator,,,,,,1
+q_9_math_ch4_sq_029,1,4.4 Square Root by Factorization,process_steps,State the steps for finding the square root of a polynomial by factorization.,factorization سے polynomial کا square root معلوم کرنے کے steps بیان کریں۔,Medium,2,ULTRA,1
+q_9_math_ch4_sq_030,1,4.4 Square Root by Factorization,numerical_short,Find the square root by factorization: 36a² + 84a + 49,factorization سے square root معلوم کریں: 36a² + 84a + 49,Medium,2,PRO,1
+TOPIC_SEP,1,4.4 Square Root by Division Method,topic_separator,,,,,,1
+q_9_math_ch4_sq_031,1,4.4 Square Root by Division Method,process_steps,Explain why the division method is useful for finding the square root of a higher-degree polynomial.,وضاحت کریں کہ higher-degree polynomial کا square root معلوم کرنے کے لیے division method useful کیوں ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,4.4 Real-World Factorization,topic_separator,,,,,,1
+q_9_math_ch4_sq_032,1,4.4 Real-World Factorization,application_scenario,"Explain how zeroes of a factorized cost, return, or profit function are interpreted in a real-world model.",وضاحت کریں کہ factorized cost، return یا profit function کے zeroes کو real-world model میں کیسے interpret کیا جاتا ہے۔,Medium,2,ELITE,1
+q_9_math_ch4_sq_033,1,4.2 Special Factorization,numerical_short,Factorize the expression completely: x⁴ + 2x² + 9,درج ذیل expression مکمل factorize کریں: x⁴ + 2x² + 9,Hard,2,PRO,1
+q_9_math_ch4_sq_034,1,4.2 Product-Type Factorization,numerical_short,Factorize the expression completely: (x² + 6x + 3)(x² + 6x − 9) + 36,درج ذیل expression مکمل factorize کریں: (x² + 6x + 3)(x² + 6x − 9) + 36,Hard,2,PRO,1
+q_9_math_ch4_sq_035,1,4.3 HCF by Division Method,numerical_short,Find the HCF by division method: 27x³ + 9x² − 3x − 9 and 3x − 2,division method سے HCF معلوم کریں: 27x³ + 9x² − 3x − 9 and 3x − 2,Hard,2,PRO,1
+q_9_math_ch4_sq_036,1,4.3 HCF-LCM Relationship,numerical_short,"The HCF is y − 7, the LCM is y³ − 10y² + 11y + 70, and one polynomial is y² − 5y − 14. Find the other polynomial.","HCF، LCM اور one polynomial given ہیں۔ other polynomial معلوم کریں: HCF = y − 7, LCM = y³ − 10y² + 11y + 70, p(y) = y² − 5y − 14",Hard,2,PRO,1
+q_9_math_ch4_sq_037,1,4.4 Square Root by Division Method,numerical_short,Find the square root by division method: x⁴ − 12x³ + 42x² − 36x + 9,division method سے square root معلوم کریں: x⁴ − 12x³ + 42x² − 36x + 9,Hard,2,PRO,1
+q_9_math_ch4_sq_038,1,4.4 Real-World Factorization,numerical_short,Factorize the return function and find the investment levels at which the return is zero: R(x) = −x² + 6x − 8,return function factorize کریں اور وہ investment levels معلوم کریں جہاں return zero ہو: R(x) = −x² + 6x − 8,Hard,2,PRO,1
+q_9_math_ch4_sq_039,1,4.4 Real-World Factorization,numerical_short,Factorize the profit function and find its break-even point or points: P(x) = x³ − 15x² + 75x − 125,profit function factorize کریں اور break-even point یا points معلوم کریں: P(x) = x³ − 15x² + 75x − 125,Hard,2,PRO,1
+TOPIC_SEP,1,4.4 Optimization by Factorization,topic_separator,,,,,,1
+q_9_math_ch4_sq_040,1,4.4 Optimization by Factorization,numerical_short,Determine the production level that maximizes the profit model: P(x) = −5x² + 50x − 120,given profit model کو maximize کرنے والا production level determine کریں: P(x) = −5x² + 50x − 120,Hard,2,ELITE,1

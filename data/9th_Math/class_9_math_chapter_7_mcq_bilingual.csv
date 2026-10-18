@@ -1,0 +1,67 @@
+﻿question_hash,active,topic,bloom_level,question,urdu_translation,A,B,C,D,correct_answer,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,7.1 Coordinate Plane,Topic,,,,,,,,,,,1
+q_9_math_ch7_001,1,7.1 Coordinate Plane,Remember,The horizontal coordinate axis is called the:,horizontal coordinate axis کو کیا کہتے ہیں؟,y-axis / y-axis,x-axis / x-axis,origin / origin,ordinate / ordinate,B | x-axis / x-axis,Easy,1,PRO,1
+q_9_math_ch7_002,1,7.1 Coordinate Plane,Remember,The vertical coordinate axis is called the:,vertical coordinate axis کو کیا کہتے ہیں؟,y-axis / y-axis,x-axis / x-axis,abscissa / abscissa,origin / origin,A | y-axis / y-axis,Easy,1,PRO,1
+q_9_math_ch7_003,1,7.1 Coordinate Plane,Remember,The point of intersection of the coordinate axes is the:,coordinate axes کے intersection point کو کیا کہتے ہیں؟,Midpoint / midpoint,Gradient / gradient,Intercept / intercept,Origin / origin,D | Origin / origin,Easy,1,PRO,1
+TOPIC_SEP,1,7.1 Coordinates,Topic,,,,,,,,,,,1
+q_9_math_ch7_004,1,7.1 Coordinates,Remember,"In P(x,y), x is called the:","P(x,y) میں x کو کیا کہتے ہیں؟",Ordinate / ordinate,Gradient / gradient,Radius / radius,Abscissa / abscissa,D | Abscissa / abscissa,Easy,1,PRO,1
+q_9_math_ch7_005,1,7.1 Coordinates,Remember,"In P(x,y), y is called the:","P(x,y) میں y کو کیا کہتے ہیں؟",Abscissa / abscissa,Slope / slope,Ordinate / ordinate,Origin / origin,C | Ordinate / ordinate,Easy,1,PRO,1
+TOPIC_SEP,1,7.1 Quadrants,Topic,,,,,,,,,,,1
+q_9_math_ch7_006,1,7.1 Quadrants,Remember,A point with x>0 and y>0 lies in:,x>0 اور y>0 والا point کس quadrant میں lie کرتا ہے؟,Quadrant I / Quadrant I,Quadrant II / Quadrant II,Quadrant III / Quadrant III,Quadrant IV / Quadrant IV,A | Quadrant I / Quadrant I,Easy,1,PRO,1
+q_9_math_ch7_007,1,7.1 Quadrants,Remember,A point with x<0 and y<0 lies in:,x<0 اور y<0 والا point کس quadrant میں lie کرتا ہے؟,Quadrant I / Quadrant I,Quadrant II / Quadrant II,Quadrant IV / Quadrant IV,Quadrant III / Quadrant III,D | Quadrant III / Quadrant III,Easy,1,PRO,1
+TOPIC_SEP,1,7.1 Axes,Topic,,,,,,,,,,,1
+q_9_math_ch7_008,1,7.1 Axes,Understand,A point on the x-axis has the form:,x-axis پر point کی form کیا ہوتی ہے؟,"(0,b)","(a,0)","(a,a)","(0,0) only","B | (a,0)",Easy,1,PRO,1
+q_9_math_ch7_009,1,7.1 Axes,Understand,A point on the y-axis has the form:,y-axis پر point کی form کیا ہوتی ہے؟,"(a,0)","(b,b)","(0,b)","(1,b)","C | (0,b)",Easy,1,PRO,1
+TOPIC_SEP,1,7.1 Distance Formula,Topic,,,,,,,,,,,1
+q_9_math_ch7_010,1,7.1 Distance Formula,Remember,"The distance between (x₁,y₁) and (x₂,y₂) is:","(x₁,y₁) اور (x₂,y₂) کے درمیان distance کیا ہے؟",(x₂−x₁)+(y₂−y₁),√[(x₂+x₁)²+(y₂+y₁)²],√[(x₂−x₁)²+(y₂−y₁)²],(x₂−x₁)²−(y₂−y₁)²,C | √[(x₂−x₁)²+(y₂−y₁)²],Easy,1,PRO,1
+TOPIC_SEP,1,7.1 Midpoint Formula,Topic,,,,,,,,,,,1
+q_9_math_ch7_011,1,7.1 Midpoint Formula,Remember,"The midpoint of (x₁,y₁) and (x₂,y₂) is:","(x₁,y₁) اور (x₂,y₂) کا midpoint کیا ہے؟","(x₁+x₂,y₁+y₂)","((x₂−x₁)/2,(y₂−y₁)/2)","(x₁x₂,y₁y₂)","((x₁+x₂)/2,(y₁+y₂)/2)","D | ((x₁+x₂)/2,(y₁+y₂)/2)",Easy,1,PRO,1
+TOPIC_SEP,1,7.2 Slope,Topic,,,,,,,,,,,1
+q_9_math_ch7_012,1,7.2 Slope,Remember,The slope of a line joining two points is:,two points کو join کرنے والی line کی slope کیا ہے؟,m=(x₂−x₁)/(y₂−y₁),m=(y₂+y₁)/(x₂+x₁),m=(y₂−y₁)/(x₂−x₁),m=x₁y₂−x₂y₁,C | m=(y₂−y₁)/(x₂−x₁),Easy,1,PRO,1
+q_9_math_ch7_013,1,7.2 Slope,Remember,The slope of a horizontal line is:,horizontal line کی slope کیا ہے؟,1,−1,0,Undefined,C | 0,Easy,1,PRO,1
+q_9_math_ch7_014,1,7.2 Slope,Remember,The slope of a vertical line is:,vertical line کی slope کیا ہے؟,0,1,−1,Undefined / undefined,D | Undefined / undefined,Easy,1,PRO,1
+TOPIC_SEP,1,7.2 Parallel Lines,Topic,,,,,,,,,,,1
+q_9_math_ch7_015,1,7.2 Parallel Lines,Remember,Two non-vertical parallel lines have slopes that are:,two non-vertical parallel lines کی slopes کیسی ہوتی ہیں؟,Negative reciprocals / negative reciprocals,Equal / equal,Both zero only / صرف دونوں zero,Always undefined / always undefined,B | Equal / equal,Easy,1,PRO,1
+TOPIC_SEP,1,7.2 Perpendicular Lines,Topic,,,,,,,,,,,1
+q_9_math_ch7_016,1,7.2 Perpendicular Lines,Remember,"For two non-vertical perpendicular lines, the product of their slopes is:",two non-vertical perpendicular lines کے slopes کا product کیا ہے؟,−1,0,1,2,A | −1,Easy,1,PRO,1
+q_9_math_ch7_017,1,7.1 Quadrants,Apply,"The point (−4,3) lies in:","point (−4,3) کس quadrant میں lie کرتا ہے؟",Quadrant II / Quadrant II,Quadrant I / Quadrant I,Quadrant III / Quadrant III,Quadrant IV / Quadrant IV,A | Quadrant II / Quadrant II,Medium,1,PRO,1
+q_9_math_ch7_018,1,7.1 Distance Formula,Apply,"Find the distance between (1,2) and (4,6).","(1,2) اور (4,6) کے درمیان distance معلوم کریں۔",4,5,6,√13,B | 5,Medium,1,PRO,1
+q_9_math_ch7_019,1,7.1 Distance Formula,Apply,"Find the distance between A(5,6) and B(5,−2).","A(5,6) اور B(5,−2) کے درمیان distance معلوم کریں۔",4,8,6,10,B | 8,Medium,1,PRO,1
+q_9_math_ch7_020,1,7.1 Midpoint Formula,Apply,"Find the midpoint of (−2,4) and (6,−2).","(−2,4) اور (6,−2) کا midpoint معلوم کریں۔","(4,2)","(1,1)","(2,−1)","(2,1)","D | (2,1)",Medium,1,PRO,1
+TOPIC_SEP,1,7.1 Circle Application,Topic,,,,,,,,,,,1
+q_9_math_ch7_021,1,7.1 Circle Application,Apply,"The endpoints of a diameter are A(−5,−2) and B(5,−4). The centre is:","diameter کے endpoints A(−5,−2) اور B(5,−4) ہیں۔ centre کیا ہے؟","(0,3)","(0,−3)","(5,−3)","(−5,−4)","B | (0,−3)",Medium,1,PRO,1
+q_9_math_ch7_022,1,7.2 Slope,Apply,"Find the slope through (1,2) and (4,6).","(1,2) اور (4,6) سے passing line کی slope معلوم کریں۔",3/4,−4/3,4/3,2,C | 4/3,Medium,1,PRO,1
+TOPIC_SEP,1,7.2 Inclination,Topic,,,,,,,,,,,1
+q_9_math_ch7_023,1,7.2 Inclination,Understand,"For a non-vertical line with inclination α, its slope is:",inclination α والی non-vertical line کی slope کیا ہے؟,m=tan α,m=sin α,m=cos α,m=cot α,A | m=tan α,Medium,1,PRO,1
+TOPIC_SEP,1,7.2 Collinearity,Topic,,,,,,,,,,,1
+q_9_math_ch7_024,1,7.2 Collinearity,Understand,Three points are collinear if the slopes of consecutive joining segments are:,three points collinear کب ہوتے ہیں جب consecutive joining segments کی slopes کیسی ہوں؟,Negative reciprocals / negative reciprocals,Both undefined only / صرف دونوں undefined,Equal / equal,Their sum is one / ان کا sum one ہو,C | Equal / equal,Medium,1,PRO,1
+TOPIC_SEP,1,7.2 Equation Parallel to x-axis,Topic,,,,,,,,,,,1
+q_9_math_ch7_025,1,7.2 Equation Parallel to x-axis,Remember,The equation of a line parallel to the x-axis at ordinate a is:,ordinate a پر x-axis کے parallel line کی equation کیا ہے؟,y=a,x=a,y=ax,x+y=a,A | y=a,Medium,1,PRO,1
+TOPIC_SEP,1,7.2 Equation Parallel to y-axis,Topic,,,,,,,,,,,1
+q_9_math_ch7_026,1,7.2 Equation Parallel to y-axis,Remember,The equation of a line parallel to the y-axis at abscissa b is:,abscissa b پر y-axis کے parallel line کی equation کیا ہے؟,y=b,x=b,x=by,x+y=b,B | x=b,Medium,1,PRO,1
+TOPIC_SEP,1,7.2 Slope-Intercept Form,Topic,,,,,,,,,,,1
+q_9_math_ch7_027,1,7.2 Slope-Intercept Form,Remember,The slope-intercept form of a straight line is:,straight line کی slope-intercept form کیا ہے؟,y−y₁=m(x−x₁),x/a+y/b=1,ax+by+c=0 only,y=mx+c,D | y=mx+c,Medium,1,PRO,1
+TOPIC_SEP,1,7.2 Point-Slope Form,Topic,,,,,,,,,,,1
+q_9_math_ch7_028,1,7.2 Point-Slope Form,Remember,The point-slope form is:,point-slope form کیا ہے؟,y=mx+c,x/a+y/b=1,y−y₁=m(x−x₁),x cosα+y sinα=p,C | y−y₁=m(x−x₁),Medium,1,PRO,1
+TOPIC_SEP,1,7.2 Intercept Form,Topic,,,,,,,,,,,1
+q_9_math_ch7_029,1,7.2 Intercept Form,Remember,The intercept form of a line is:,line کی intercept form کیا ہے؟,x/a+y/b=1,y=mx+c,y−y₁=m(x−x₁),ax+by=0,A | x/a+y/b=1,Medium,1,PRO,1
+TOPIC_SEP,1,7.2 Normal Form,Topic,,,,,,,,,,,1
+q_9_math_ch7_030,1,7.2 Normal Form,Remember,The normal form of a line is:,line کی normal form کیا ہے؟,y=mx+c,x/a+y/b=1,x cosα+y sinα=p,x+y=p²,C | x cosα+y sinα=p,Medium,1,PRO,1
+TOPIC_SEP,1,7.2 General Form,Topic,,,,,,,,,,,1
+q_9_math_ch7_031,1,7.2 General Form,Understand,"In ax+by+c=0 with b≠0, the slope is:",ax+by+c=0 میں b≠0 ہو تو slope کیا ہے؟,a/b,−b/a,c/b,−a/b,D | −a/b,Medium,1,PRO,1
+TOPIC_SEP,1,7.3 Real-Life Applications,Topic,,,,,,,,,,,1
+q_9_math_ch7_032,1,7.3 Real-Life Applications,Apply,"The midpoint of locations (2,5) and (8,9) is:","locations (2,5) اور (8,9) کا midpoint کیا ہے؟","(5,7)","(10,14)","(3,2)","(6,7)","A | (5,7)",Medium,1,PRO,1
+TOPIC_SEP,1,7.1 Triangle Verification,Topic,,,,,,,,,,,1
+q_9_math_ch7_033,1,7.1 Triangle Verification,Analyze,"The points A(−1,2), B(7,5), C(2,−6) form a right triangle with the right angle at:","points A(−1,2)، B(7,5)، C(2,−6) right triangle بناتے ہیں۔ right angle کہاں ہے؟",B,C,Origin,A,D | A,Hard,1,PRO,1
+TOPIC_SEP,1,7.1 Collinearity Parameter,Topic,,,,,,,,,,,1
+q_9_math_ch7_034,1,7.1 Collinearity Parameter,Analyze,"If A(−1,h), B(3,2), C(7,3) are collinear, then h is:","اگر A(−1,h)، B(3,2)، C(7,3) collinear ہوں تو h کیا ہے؟",0,1,2,3,B | 1,Hard,1,PRO,1
+TOPIC_SEP,1,7.2 Parallel and Perpendicular Slopes,Topic,,,,,,,,,,,1
+q_9_math_ch7_035,1,7.2 Parallel and Perpendicular Slopes,Analyze,A line is perpendicular to a line of slope −6. Its slope is:,line slope −6 والی line کے perpendicular ہے۔ اس کی slope کیا ہے؟,1/6,−1/6,6,−6,A | 1/6,Hard,1,PRO,1
+TOPIC_SEP,1,7.2 Two-Point Form,Topic,,,,,,,,,,,1
+q_9_math_ch7_036,1,7.2 Two-Point Form,Apply,"The equation through (−2,1) and (6,−4) is:","(−2,1) اور (6,−4) سے passing line کی equation کیا ہے؟",5x−8y+18=0,8x+5y+11=0,5x+8y+2=0,x+y+1=0,C | 5x+8y+2=0,Hard,1,PRO,1
+q_9_math_ch7_037,1,7.2 Intercept Form,Apply,"A line cuts the axes at (2,0) and (0,−4). Its equation is:","line axes کو (2,0) اور (0,−4) پر cut کرتی ہے۔ equation کیا ہے؟",2x+y−4=0,2x−y−4=0,x−2y−4=0,x+y−2=0,B | 2x−y−4=0,Hard,1,PRO,1
+q_9_math_ch7_038,1,7.2 Normal Form,Analyze,"For x cos120°+y sin120°=5, the slope is:",x cos120°+y sin120°=5 کے لیے slope کیا ہے؟,1/√3,−1/√3,√3,−√3,A | 1/√3,Hard,1,PRO,1
+TOPIC_SEP,1,7.2 Transformation of General Form,Topic,,,,,,,,,,,1
+q_9_math_ch7_039,1,7.2 Transformation of General Form,Analyze,The slope-intercept form of 2x+3y−6=0 is:,2x+3y−6=0 کی slope-intercept form کیا ہے؟,y=(2/3)x−2,y=(2/3)x+2,y=−(3/2)x+2,y=−(2/3)x+2,D | y=−(2/3)x+2,Hard,1,PRO,1
+TOPIC_SEP,1,7.3 Navigation Application,Topic,,,,,,,,,,,1
+q_9_math_ch7_040,1,7.3 Navigation Application,Analyze,"A plane travels from (50,60) to (120,150). Its heading angle north of east is approximately:","plane (50,60) سے (120,150) travel کرتا ہے۔ north of east heading angle approximately کیا ہے؟",37.87°,52.13°,45°,60°,B | 52.13°,Hard,1,PRO,1

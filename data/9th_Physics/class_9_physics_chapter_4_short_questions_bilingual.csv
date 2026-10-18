@@ -1,0 +1,72 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,4.1 Like and Unlike Parallel Forces,topic_separator,,,,,,1
+q_9_phy_ch4_sq_001,1,4.1 Like and Unlike Parallel Forces,difference,Differentiate between like and unlike parallel forces and give one example of each.,like اور unlike parallel forces میں فرق بیان کریں اور ہر ایک کی ایک example دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,4.2 Addition of Forces,topic_separator,,,,,,1
+q_9_phy_ch4_sq_002,1,4.2 Addition of Forces,definition_function,Define resultant force and state how coplanar force vectors can be added graphically.,resultant force کی تعریف کریں اور بیان کریں کہ coplanar force vectors کو graphically کیسے add کیا جاتا ہے۔,Easy,2,ULTRA,1
+q_9_phy_ch4_sq_003,1,4.2 Addition of Forces,process_steps,Describe the head-to-tail procedure for determining the resultant of three forces drawn to scale.,scale پر draw کی گئی three forces کا resultant determine کرنے کے لیے head-to-tail procedure بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,4.3 Turning Effect of a Force,topic_separator,,,,,,1
+q_9_phy_ch4_sq_004,1,4.3 Turning Effect of a Force,definition_example,Define the turning effect of a force and give two daily-life examples.,turning effect of a force کی تعریف کریں اور daily life سے دو examples دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,4.3 Rigid Body and Axis of Rotation,topic_separator,,,,,,1
+q_9_phy_ch4_sq_005,1,4.3 Rigid Body and Axis of Rotation,definition_function,Define a rigid body and an axis of rotation.,rigid body اور axis of rotation کی تعریف کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,4.3 Line of Action and Moment Arm,topic_separator,,,,,,1
+q_9_phy_ch4_sq_006,1,4.3 Line of Action and Moment Arm,definition_function,Define the line of action and moment arm of a force.,force کی line of action اور moment arm کی تعریف کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,4.3 Moment of Force,topic_separator,,,,,,1
+q_9_phy_ch4_sq_007,1,4.3 Moment of Force,definition_formula,Define moment of force or torque and write its mathematical relationship.,moment of force یا torque کی تعریف کریں اور اس کا mathematical relationship لکھیں۔,Easy,2,PRO,1
+q_9_phy_ch4_sq_008,1,4.3 Moment of Force,definition_unit,State the SI unit of torque and explain the sign convention for clockwise and anticlockwise torque.,torque کی SI unit بیان کریں اور clockwise اور anticlockwise torque کے لیے sign convention explain کریں۔,Medium,2,ULTRA,1
+q_9_phy_ch4_sq_009,1,4.3 Moment of Force,explain_reason,Explain why the torque of a force is zero when its line of action passes through the axis of rotation.,وضاحت کریں کہ force کی line of action axis of rotation سے pass کرے تو torque zero کیوں ہوتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,4.3 Couple,topic_separator,,,,,,1
+q_9_phy_ch4_sq_010,1,4.3 Couple,definition_example,Define a couple and give two practical examples.,couple کی تعریف کریں اور دو practical examples دیں۔,Easy,2,PRO,1
+q_9_phy_ch4_sq_011,1,4.3 Couple,concept_explanation,Explain how two equal and opposite parallel forces can produce rotation without a resultant force.,وضاحت کریں کہ two equal and opposite parallel forces resultant force کے بغیر rotation کیسے produce کرتی ہیں۔,Hard,2,PRO,1
+TOPIC_SEP,1,4.4 Resolution of Vectors,topic_separator,,,,,,1
+q_9_phy_ch4_sq_012,1,4.4 Resolution of Vectors,definition_function,Define the resolution of a force and state the meaning of rectangular components.,resolution of a force کی تعریف کریں اور rectangular components کا meaning بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,4.4 Rectangular Components,topic_separator,,,,,,1
+q_9_phy_ch4_sq_013,1,4.4 Rectangular Components,formula_relationship,Write the relationships for the horizontal and vertical components of a force making an angle with the x-axis.,x-axis کے ساتھ angle بنانے والی force کے horizontal اور vertical components کے relationships لکھیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,4.5 Resultant from Components,topic_separator,,,,,,1
+q_9_phy_ch4_sq_014,1,4.5 Resultant from Components,formula_relationship,State how the magnitude and direction of a force are determined from its perpendicular components.,بیان کریں کہ force کی magnitude اور direction اس کے perpendicular components سے کیسے determine کی جاتی ہیں۔,Medium,2,ULTRA,1
+q_9_phy_ch4_sq_015,1,4.4 Resolution of Vectors,numerical_short,Calculate the x- and y-components of a 200 N force acting at 30° above the horizontal.,"درج ذیل force کے x- اور y-components معلوم کریں: F = 200 N, θ = 30°",Hard,2,PRO,1
+TOPIC_SEP,1,4.6 Principle of Moments,topic_separator,,,,,,1
+q_9_phy_ch4_sq_016,1,4.6 Principle of Moments,law_principle,State the principle of moments for a balanced body.,balanced body کے لیے principle of moments بیان کریں۔,Easy,2,PRO,1
+q_9_phy_ch4_sq_017,1,4.6 Principle of Moments,application_scenario,Explain how changing the distances of two children from the pivot can balance a see-saw.,وضاحت کریں کہ pivot سے two children کی distances change کرنے سے see-saw کیسے balance ہو سکتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,4.7 Centre of Gravity,topic_separator,,,,,,1
+q_9_phy_ch4_sq_018,1,4.7 Centre of Gravity,definition_function,Define the centre of gravity and state where it lies for a regular uniform body.,centre of gravity کی تعریف کریں اور بیان کریں کہ regular uniform body کے لیے یہ کہاں lie کرتا ہے۔,Easy,2,PRO,1
+q_9_phy_ch4_sq_019,1,4.7 Centre of Gravity,table_based,"State the centre of gravity of a rectangle, triangle, circular plate, sphere, cylinder, and metre rule.",rectangle، triangle، circular plate، sphere، cylinder اور metre rule کا centre of gravity بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,4.7 Centre of Gravity of a Lamina,topic_separator,,,,,,1
+q_9_phy_ch4_sq_020,1,4.7 Centre of Gravity of a Lamina,process_steps,Describe how the centre of gravity of an irregular plane lamina is determined using suspension points and a plumb line.,بیان کریں کہ suspension points اور plumb line سے irregular plane lamina کا centre of gravity کیسے determine کیا جاتا ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,4.7 Centre of Mass,topic_separator,,,,,,1
+q_9_phy_ch4_sq_021,1,4.7 Centre of Mass,definition_function,Define the centre of mass and state its relationship with the centre of gravity near Earth's surface.,centre of mass کی تعریف کریں اور Earth surface کے near centre of gravity کے ساتھ اس کا relationship بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,4.7 Centre of Mass and Gravity,topic_separator,,,,,,1
+q_9_phy_ch4_sq_022,1,4.7 Centre of Mass and Gravity,difference,Differentiate between centre of mass and centre of gravity.,centre of mass اور centre of gravity میں فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,4.8 Equilibrium,topic_separator,,,,,,1
+q_9_phy_ch4_sq_023,1,4.8 Equilibrium,definition_example,Define equilibrium and give one example each of static and dynamic equilibrium.,equilibrium کی تعریف کریں اور static و dynamic equilibrium کی ایک ایک example دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,4.8 Static and Dynamic Equilibrium,topic_separator,,,,,,1
+q_9_phy_ch4_sq_024,1,4.8 Static and Dynamic Equilibrium,difference,Differentiate between static and dynamic equilibrium.,static اور dynamic equilibrium میں فرق بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,4.9 First Condition of Equilibrium,topic_separator,,,,,,1
+q_9_phy_ch4_sq_025,1,4.9 First Condition of Equilibrium,law_principle,State the first condition of equilibrium in vector form and along the x- and y-axes.,first condition of equilibrium کو vector form اور x- و y-axes کے along بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,4.9 Second Condition of Equilibrium,topic_separator,,,,,,1
+q_9_phy_ch4_sq_026,1,4.9 Second Condition of Equilibrium,law_principle,State the second condition of equilibrium and explain the physical meaning of zero resultant torque.,second condition of equilibrium بیان کریں اور zero resultant torque کا physical meaning explain کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,4.9 Complete Equilibrium,topic_separator,,,,,,1
+q_9_phy_ch4_sq_027,1,4.9 Complete Equilibrium,compare_contrast,Compare translational and rotational equilibrium and state the conditions required for complete equilibrium.,translational اور rotational equilibrium کا موازنہ کریں اور complete equilibrium کے لیے required conditions بیان کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,4.9 Solving Equilibrium Problems,topic_separator,,,,,,1
+q_9_phy_ch4_sq_028,1,4.9 Solving Equilibrium Problems,process_steps,State the main steps used to solve a coplanar-force equilibrium problem.,coplanar-force equilibrium problem solve کرنے کے main steps بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,4.10 States of Equilibrium,topic_separator,,,,,,1
+q_9_phy_ch4_sq_029,1,4.10 States of Equilibrium,classification,"Classify equilibrium as stable, unstable, or neutral and state the response of a body after a slight displacement in each case.",equilibrium کو stable، unstable یا neutral میں classify کریں اور ہر case میں slight displacement کے بعد body کا response بیان کریں۔,Medium,2,PRO,1
+q_9_phy_ch4_sq_030,1,4.10 States of Equilibrium,diagram_based,"Identify the equilibrium states of a cone resting on its base, a ball on a curved surface, and a cylinder on its side.",base پر resting cone، curved surface پر ball اور side پر cylinder کی equilibrium states identify کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,4.11 Improvement of Stability,topic_separator,,,,,,1
+q_9_phy_ch4_sq_031,1,4.11 Improvement of Stability,list_state,State the two basic methods used to improve the stability of an object.,object کی stability improve کرنے کے دو basic methods بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,4.12 Applications of Stability,topic_separator,,,,,,1
+q_9_phy_ch4_sq_032,1,4.12 Applications of Stability,application_scenario,Explain why racing cars are designed with a low centre of mass and a wide base.,وضاحت کریں کہ racing cars کو low centre of mass اور wide base کے ساتھ کیوں design کیا جاتا ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,4.12 Balancing Toys,topic_separator,,,,,,1
+q_9_phy_ch4_sq_033,1,4.12 Balancing Toys,concept_explanation,Explain how a low centre of gravity below the pivot helps a balancing toy return to its original position.,وضاحت کریں کہ pivot کے below low centre of gravity balancing toy کو original position پر return کرنے میں کیسے help کرتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,4.12 Rotational and Translational Motion,topic_separator,,,,,,1
+q_9_phy_ch4_sq_034,1,4.12 Rotational and Translational Motion,compare_contrast,Compare the corresponding quantities in translational and rotational motion.,translational اور rotational motion میں corresponding quantities کا موازنہ کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,4.12 Rotational Motion,topic_separator,,,,,,1
+q_9_phy_ch4_sq_035,1,4.12 Rotational Motion,concept_explanation,State the rotational analogue of Newton's first law and explain the effect of a resultant torque.,Newton's first law کا rotational analogue بیان کریں اور resultant torque کا effect explain کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,4.13 Centripetal Force,topic_separator,,,,,,1
+q_9_phy_ch4_sq_036,1,4.13 Centripetal Force,definition_formula,Define centripetal force and write its mathematical relationship.,centripetal force کی تعریف کریں اور اس کا mathematical relationship لکھیں۔,Easy,2,PRO,1
+q_9_phy_ch4_sq_037,1,4.13 Centripetal Force,explain_reason,Explain why centripetal force acts perpendicular to the instantaneous velocity in uniform circular motion.,وضاحت کریں کہ uniform circular motion میں centripetal force instantaneous velocity کے perpendicular کیوں act کرتی ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,4.13 Sources of Centripetal Force,topic_separator,,,,,,1
+q_9_phy_ch4_sq_038,1,4.13 Sources of Centripetal Force,list_state,State the sources of centripetal force for a stone whirled by a string and for the Moon orbiting Earth.,string سے whirled stone اور Earth کو orbit کرنے والے Moon کے لیے centripetal force کے sources بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,4.13 Applications of Centripetal Force,topic_separator,,,,,,1
+q_9_phy_ch4_sq_039,1,4.13 Applications of Centripetal Force,application_scenario,Explain how a washing-machine spin dryer removes water from wet clothes.,وضاحت کریں کہ washing-machine spin dryer wet clothes سے water کیسے remove کرتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,4.3 Moment Numerical,topic_separator,,,,,,1
+q_9_phy_ch4_sq_040,1,4.3 Moment Numerical,numerical_short,A force of 300 N acts perpendicularly at a distance of 1.2 m from a door hinge. Calculate the torque and state its rotational sense.,"درج ذیل data سے torque معلوم کریں اور rotational sense بیان کریں: F = 300 N, perpendicular distance = 1.2 m",Hard,2,PRO,1

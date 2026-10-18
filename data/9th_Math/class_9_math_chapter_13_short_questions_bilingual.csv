@@ -1,0 +1,75 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,13 Introduction to Probability,topic_separator,,,,,,1
+q_9_math_ch13_sq_001,1,13 Introduction to Probability,definition_formula,Define probability and state its formula in terms of favourable and total possible outcomes.,probability کی تعریف کریں اور favourable اور total possible outcomes کی terms میں اس کا formula بیان کریں۔,Easy,2,IMPORTANT,1
+TOPIC_SEP,1,13 Basic Concepts of Probability,topic_separator,,,,,,1
+q_9_math_ch13_sq_002,1,13 Basic Concepts of Probability,list_state,"Define experiment, outcome, favourable outcome, sample space, sample point, and event.",experiment، outcome، favourable outcome، sample space، sample point اور event کی definitions بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,13 Types of Events,topic_separator,,,,,,1
+q_9_math_ch13_sq_003,1,13 Types of Events,classification,"Classify events as certain, impossible, likely, unlikely, and equally likely by stating their probability ranges or values.",events کو certain، impossible، likely، unlikely اور equally likely میں probability ranges یا values کے مطابق classify کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,13 Range of Probability,topic_separator,,,,,,1
+q_9_math_ch13_sq_004,1,13 Range of Probability,law_principle,State the range of probability for any event A and interpret its two extreme values.,any event A کے لیے probability کا range بیان کریں اور two extreme values interpret کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,13.1 Probability of a Single Event,topic_separator,,,,,,1
+q_9_math_ch13_sq_005,1,13.1 Probability of a Single Event,process_steps,State the steps for finding the probability of a single event from its sample space.,sample space سے single event کی probability معلوم کرنے کے steps بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,13.1 Sample Space of a Die,topic_separator,,,,,,1
+q_9_math_ch13_sq_006,1,13.1 Sample Space of a Die,list_state,Write the sample space for one roll of a fair die and identify the event of obtaining an even number.,fair die کے one roll کا sample space لکھیں اور even number حاصل ہونے کا event identify کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,13.1 Pair of Dice,topic_separator,,,,,,1
+q_9_math_ch13_sq_007,1,13.1 Pair of Dice,table_based,Describe how the 36 ordered outcomes of two fair dice are arranged in a sample-space table.,describe کریں کہ two fair dice کے 36 ordered outcomes کو sample-space table میں کیسے arrange کیا جاتا ہے۔,Medium,2,ELITE,1
+q_9_math_ch13_sq_008,1,13.1 Pair of Dice,numerical_short,"For two fair dice, formulate the event of obtaining an even number on both dice and state how its probability is calculated.",two fair dice کے لیے both dice پر even number حاصل ہونے کا event formulate کریں اور probability calculate کرنے کا طریقہ بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,13.2 Probability of an Event Not Occurring,topic_separator,,,,,,1
+q_9_math_ch13_sq_009,1,13.2 Probability of an Event Not Occurring,definition_formula,Define the complement A′ of an event A and state the complement rule.,event A کے complement A′ کی تعریف کریں اور complement rule بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,13.2 Complementary Events,topic_separator,,,,,,1
+q_9_math_ch13_sq_010,1,13.2 Complementary Events,formula_relationship,State the relationship between the probabilities of an event and its complement and explain why their sum is 1.,event اور اس کے complement کی probabilities کا relationship بیان کریں اور explain کریں کہ ان کا sum 1 کیوں ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,13.3 Real-Life Probability,topic_separator,,,,,,1
+q_9_math_ch13_sq_011,1,13.3 Real-Life Probability,application_scenario,Explain how the complement rule is used to find the probability that a missile does not hit a target.,وضاحت کریں کہ missile کے target کو hit نہ کرنے کی probability معلوم کرنے کے لیے complement rule کیسے use ہوتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,13.3 Selection from a Bag,topic_separator,,,,,,1
+q_9_math_ch13_sq_012,1,13.3 Selection from a Bag,application_scenario,Describe the sample space and favourable outcomes when one ball is selected from a bag containing balls of two colours.,two colours کی balls والے bag سے one ball select کرنے پر sample space اور favourable outcomes describe کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,13.3 Playing Cards,topic_separator,,,,,,1
+q_9_math_ch13_sq_013,1,13.3 Playing Cards,list_state,"State the number of cards, suits, and cards in each suit in a standard pack of playing cards.",standard pack of playing cards میں total cards، suits اور each suit کے cards کی number بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,13.4 Relative Frequency,topic_separator,,,,,,1
+q_9_math_ch13_sq_014,1,13.4 Relative Frequency,definition_formula,Define relative frequency and state its formula in terms of a specific frequency and total frequency.,relative frequency کی تعریف کریں اور specific frequency اور total frequency کی terms میں اس کا formula بیان کریں۔,Easy,2,PRO,1
+q_9_math_ch13_sq_015,1,13.4 Relative Frequency,explain_reason,Explain why relative frequency is regarded as an estimate of probability.,وضاحت کریں کہ relative frequency کو probability کا estimate کیوں سمجھا جاتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,13.5 Real-Life Application of Relative Frequency,topic_separator,,,,,,1
+q_9_math_ch13_sq_016,1,13.5 Real-Life Application of Relative Frequency,application_scenario,State how survey responses are converted into relative frequencies and percentages.,بیان کریں کہ survey responses کو relative frequencies اور percentages میں کیسے convert کیا جاتا ہے۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,13.6 Expected Frequency,topic_separator,,,,,,1
+q_9_math_ch13_sq_017,1,13.6 Expected Frequency,definition_formula,Define expected frequency and state its relationship with the number of trials and event probability.,expected frequency کی تعریف کریں اور number of trials اور event probability کے ساتھ relationship بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,13.7 Expected-Frequency Property,topic_separator,,,,,,1
+q_9_math_ch13_sq_018,1,13.7 Expected-Frequency Property,explain_reason,Explain why the sum of all expected frequencies is equal or approximately equal to the total number of trials.,وضاحت کریں کہ all expected frequencies کا sum total number of trials کے equal یا approximately equal کیوں ہوتا ہے۔,Hard,2,ELITE,1
+TOPIC_SEP,1,Exercise 13.1 — Lettered Die,topic_separator,,,,,,1
+q_9_math_ch13_sq_019,1,Exercise 13.1 — Lettered Die,numerical_short,"A die has faces labelled L, M, N, O, P, U. Find the probability that it lands on a consonant.","die کے faces L, M, N, O, P, U سے labelled ہیں۔ consonant پر landing کی probability معلوم کریں۔",Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 13.1 — Pair of Dice,topic_separator,,,,,,1
+q_9_math_ch13_sq_020,1,Exercise 13.1 — Pair of Dice,numerical_short,Two fair dice are rolled. Find the probability that the sum of the dots is at least 4.,two fair dice roll کیے جاتے ہیں۔ dots کا sum at least 4 ہونے کی probability معلوم کریں۔,Medium,2,PRO,1
+q_9_math_ch13_sq_021,1,Exercise 13.1 — Pair of Dice,numerical_short,Two fair dice are rolled. Find the probability that the product of the dots lies between 5 and 10.,two fair dice roll کیے جاتے ہیں۔ dots کا product 5 اور 10 کے درمیان ہونے کی probability معلوم کریں۔,Hard,2,PRO,1
+q_9_math_ch13_sq_022,1,Exercise 13.1 — Pair of Dice,numerical_short,Two fair dice are rolled. Find the probability that the difference between the dots is 4.,two fair dice roll کیے جاتے ہیں۔ dots کا difference 4 ہونے کی probability معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 13.1 — Word Probability,topic_separator,,,,,,1
+q_9_math_ch13_sq_023,1,Exercise 13.1 — Word Probability,numerical_short,One letter is selected at random from MATHEMATICS. Find the probability of selecting a vowel.,MATHEMATICS سے one letter random select کیا جاتا ہے۔ vowel select ہونے کی probability معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 13.1 — Word Complement,topic_separator,,,,,,1
+q_9_math_ch13_sq_024,1,Exercise 13.1 — Word Complement,numerical_short,One letter is selected at random from MATHEMATICS. Find the probability of not selecting M.,MATHEMATICS سے one letter random select کیا جاتا ہے۔ M select نہ ہونے کی probability معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 13.1 — Die Complement,topic_separator,,,,,,1
+q_9_math_ch13_sq_025,1,Exercise 13.1 — Die Complement,numerical_short,A fair die is rolled. Find the probability of obtaining 3 or 4 and then the probability of obtaining neither 3 nor 4.,fair die roll کیا جاتا ہے۔ 3 یا 4 حاصل ہونے کی probability اور پھر neither 3 nor 4 کی probability معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 13.1 — Number Cards,topic_separator,,,,,,1
+q_9_math_ch13_sq_026,1,Exercise 13.1 — Number Cards,numerical_short,Cards numbered 1 to 30 are placed in a box. Find the probability of selecting a number from 17 to 22 inclusive.,1 سے 30 تک numbered cards box میں ہیں۔ 17 سے 22 inclusive number select ہونے کی probability معلوم کریں۔,Easy,2,PRO,1
+q_9_math_ch13_sq_027,1,Exercise 13.1 — Number Cards,numerical_short,Cards numbered 1 to 30 are placed in a box. Find the probability of selecting a number that is not between 12 and 15 inclusive.,1 سے 30 تک numbered cards box میں ہیں۔ 12 اور 15 inclusive کے درمیان نہ ہونے والا number select ہونے کی probability معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 13.1 — Examination Complement,topic_separator,,,,,,1
+q_9_math_ch13_sq_028,1,Exercise 13.1 — Examination Complement,numerical_short,The probability that Ayesha passes an examination is 0.85. Find the probability that she does not pass.,Ayesha کے examination pass کرنے کی probability 0.85 ہے۔ اس کے not pass ہونے کی probability معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 13.1 — Coin and Die,topic_separator,,,,,,1
+q_9_math_ch13_sq_029,1,Exercise 13.1 — Coin and Die,table_based,A fair coin is tossed and a fair die is rolled. Write the sample space and find the probability of a tail with a die number at least 4.,fair coin toss اور fair die roll کیا جاتا ہے۔ sample space لکھیں اور tail کے ساتھ die number at least 4 کی probability معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 13.1 — Playing Cards,topic_separator,,,,,,1
+q_9_math_ch13_sq_030,1,Exercise 13.1 — Playing Cards,numerical_short,A card is drawn from a standard pack. Find the probability of selecting a queen.,standard pack سے one card draw کیا جاتا ہے۔ queen select ہونے کی probability معلوم کریں۔,Easy,2,PRO,1
+q_9_math_ch13_sq_031,1,Exercise 13.1 — Playing Cards,numerical_short,A card is drawn from a standard pack. Find the probability of selecting neither a queen nor a jack.,standard pack سے one card draw کیا جاتا ہے۔ neither queen nor jack select ہونے کی probability معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 13.1 — Urn Probability,topic_separator,,,,,,1
+q_9_math_ch13_sq_032,1,Exercise 13.1 — Urn Probability,numerical_short,"An urn contains 10 red, 5 green, and 8 blue balls. Find the probability of selecting a green ball and the probability of not selecting a green ball.",urn میں 10 red، 5 green اور 8 blue balls ہیں۔ green ball select ہونے اور green ball select نہ ہونے کی probabilities معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 13.1 — Three Coins,topic_separator,,,,,,1
+q_9_math_ch13_sq_033,1,Exercise 13.1 — Three Coins,table_based,Three coins are tossed together. Write the sample space and find the probability of obtaining at least two tails.,three coins together toss کیے جاتے ہیں۔ sample space لکھیں اور at least two tails کی probability معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 13.1 — Card Colours,topic_separator,,,,,,1
+q_9_math_ch13_sq_034,1,Exercise 13.1 — Card Colours,numerical_short,A card is drawn from a standard pack. Find the probability of selecting a red king or a red jack.,standard pack سے one card draw کیا جاتا ہے۔ red king یا red jack select ہونے کی probability معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 13.2 — Relative Frequency Table,topic_separator,,,,,,1
+q_9_math_ch13_sq_035,1,Exercise 13.2 — Relative Frequency Table,table_based,"For frequencies 3, 5, 6, 9, 10, 8, 2, calculate the relative frequency of each category.","frequencies 3, 5, 6, 9, 10, 8, 2 کے لیے each category کی relative frequency calculate کریں۔",Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 13.2 — Survey Percentages,topic_separator,,,,,,1
+q_9_math_ch13_sq_036,1,Exercise 13.2 — Survey Percentages,numerical_short,"In a survey of 80 students, 23 prefer red and 25 prefer pink. Find the relative frequency and percentage for each colour.",80 students کے survey میں 23 red اور 25 pink prefer کرتے ہیں۔ each colour کی relative frequency اور percentage معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 13.2 — Expected Frequency,topic_separator,,,,,,1
+q_9_math_ch13_sq_037,1,Exercise 13.2 — Expected Frequency,numerical_short,An event has probability 0.24 in 50 trials. Find its expected frequency.,event کی probability 0.24 ہے اور trials 50 ہیں۔ expected frequency معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 13.2 — Die Expected Frequency,topic_separator,,,,,,1
+q_9_math_ch13_sq_038,1,Exercise 13.2 — Die Expected Frequency,numerical_short,A fair die is rolled 300 times. Find the expected number of times that 1 or 6 appears.,fair die 300 times roll کیا جاتا ہے۔ 1 یا 6 آنے کی expected number معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 13.2 — Defective Bolts,topic_separator,,,,,,1
+q_9_math_ch13_sq_039,1,Exercise 13.2 — Defective Bolts,numerical_short,"The probability that a bolt is defective is 0.3. In a batch of 800 bolts, find the expected number of non-defective bolts.",bolt کے defective ہونے کی probability 0.3 ہے۔ 800 bolts کے batch میں non-defective bolts کی expected number معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Review Exercise 13 — Relative and Expected Frequency,topic_separator,,,,,,1
+q_9_math_ch13_sq_040,1,Review Exercise 13 — Relative and Expected Frequency,numerical_short,"A lot contains 25 items, of which 8 are defective. Find the relative frequency of non-defective items and their expected frequency in 200 similar selections.",lot میں 25 items ہیں جن میں 8 defective ہیں۔ non-defective items کی relative frequency اور 200 similar selections میں expected frequency معلوم کریں۔,Easy,2,PRO,1

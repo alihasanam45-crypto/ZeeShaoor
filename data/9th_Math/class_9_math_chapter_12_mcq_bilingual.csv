@@ -1,0 +1,79 @@
+﻿question_hash,active,topic,bloom_level,question,urdu_translation,A,B,C,D,correct_answer,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,12.1 Information Handling,Topic,,,,,,,,,,,1
+q_9_math_ch12_001,1,12.1 Information Handling,Remember,"Information handling is the process of collecting, organizing, summarizing, analyzing and:",information handling collecting، organizing، summarizing، analyzing اور کس process پر مشتمل ہے؟,Ignoring numerical data / numerical data ignore کرنا,Drawing only triangles / صرف triangles draw کرنا,Proving theorems only / صرف theorems prove کرنا,Interpreting numerical data / numerical data کو interpret کرنا,D | Interpreting numerical data / numerical data کو interpret کرنا,Easy,1,PRO,1
+TOPIC_SEP,1,12.1 Types of Data,Topic,,,,,,,,,,,1
+q_9_math_ch12_002,1,12.1 Types of Data,Remember,Data that takes only specific countable values is called:,specific countable values لینے والے data کو کیا کہتے ہیں؟,Continuous data / continuous data,Grouped data only / صرف grouped data,Discrete data / discrete data,Class boundary / class boundary,C | Discrete data / discrete data,Easy,1,PRO,1
+q_9_math_ch12_003,1,12.1 Types of Data,Remember,Data that can take every possible value in an interval is called:,interval میں every possible value لینے والے data کو کیا کہتے ہیں؟,Discrete data / discrete data,Tally data / tally data,Continuous data / continuous data,Modal data / modal data,C | Continuous data / continuous data,Easy,1,PRO,1
+TOPIC_SEP,1,12.1 Ungrouped Data,Topic,,,,,,,,,,,1
+q_9_math_ch12_004,1,12.1 Ungrouped Data,Remember,Ungrouped data is also known as:,ungrouped data کو اور کیا کہتے ہیں؟,Raw data / raw data,Adjusted data / adjusted data,Cumulative data / cumulative data,Weighted data / weighted data,A | Raw data / raw data,Easy,1,PRO,1
+TOPIC_SEP,1,12.1 Grouped Data,Topic,,,,,,,,,,,1
+q_9_math_ch12_005,1,12.1 Grouped Data,Remember,Data arranged into classes or groups is called:,classes یا groups میں arranged data کو کیا کہتے ہیں؟,Grouped data / grouped data,Ungrouped data / ungrouped data,Logical data / logical data,Sample space / sample space,A | Grouped data / grouped data,Easy,1,PRO,1
+TOPIC_SEP,1,12.1 Frequency Distribution,Topic,,,,,,,,,,,1
+q_9_math_ch12_006,1,12.1 Frequency Distribution,Remember,A table of classes with their frequencies is called a:,classes اور ان کی frequencies والی table کو کیا کہتے ہیں؟,Truth table / truth table,Probability tree / probability tree,Frequency distribution / frequency distribution,Coordinate plane / coordinate plane,C | Frequency distribution / frequency distribution,Easy,1,PRO,1
+TOPIC_SEP,1,12.1 Frequency,Topic,,,,,,,,,,,1
+q_9_math_ch12_007,1,12.1 Frequency,Remember,The number of times a value occurs in data is its:,data میں value جتنی times occur کرے اسے کیا کہتے ہیں؟,Range / range,Midpoint / midpoint,Frequency / frequency,Boundary / boundary,C | Frequency / frequency,Easy,1,PRO,1
+TOPIC_SEP,1,12.1 Range,Topic,,,,,,,,,,,1
+q_9_math_ch12_008,1,12.1 Range,Remember,The difference between the greatest and smallest data values is the:,greatest اور smallest data values کے difference کو کیا کہتے ہیں؟,Mean / mean,Mode / mode,Class mark / class mark,Range / range,D | Range / range,Easy,1,PRO,1
+TOPIC_SEP,1,12.1 Class Limits,Topic,,,,,,,,,,,1
+q_9_math_ch12_009,1,12.1 Class Limits,Remember,The smallest value included in a class is its:,class میں included smallest value کو کیا کہتے ہیں؟,Lower class limit / lower class limit,Upper class limit / upper class limit,Class frequency / class frequency,Adjusted frequency / adjusted frequency,A | Lower class limit / lower class limit,Easy,1,PRO,1
+TOPIC_SEP,1,12.1 Histogram,Topic,,,,,,,,,,,1
+q_9_math_ch12_010,1,12.1 Histogram,Remember,A histogram represents a frequency distribution by:,histogram frequency distribution کو کس کے ذریعے represent کرتا ہے؟,Separated circles / separated circles,Only points with no lines / صرف points بغیر lines,A single straight line / single straight line,Adjacent rectangles / adjacent rectangles,D | Adjacent rectangles / adjacent rectangles,Easy,1,PRO,1
+TOPIC_SEP,1,12.1 Frequency Polygon,Topic,,,,,,,,,,,1
+q_9_math_ch12_011,1,12.1 Frequency Polygon,Remember,A line graph formed by plotting frequencies against class midpoints is a:,frequencies کو class midpoints کے against plot کرکے بننے والا line graph کیا ہے؟,Histogram / histogram,Frequency polygon / frequency polygon,Pie chart / pie chart,Truth table / truth table,B | Frequency polygon / frequency polygon,Easy,1,PRO,1
+TOPIC_SEP,1,12.1 Class Mark,Topic,,,,,,,,,,,1
+q_9_math_ch12_012,1,12.1 Class Mark,Remember,The midpoint of a class is also called the:,class کے midpoint کو اور کیا کہتے ہیں؟,Class frequency / class frequency,Class mark / class mark,Range / range,Median class / median class,B | Class mark / class mark,Easy,1,PRO,1
+TOPIC_SEP,1,12.2 Central Tendency,Topic,,,,,,,,,,,1
+q_9_math_ch12_013,1,12.2 Central Tendency,Remember,A measure that represents the centre of a data set is called a measure of:,data set کے centre کو represent کرنے والی measure کو کیا کہتے ہیں؟,Central tendency / central tendency,Probability / probability,Similarity / similarity,Logical equivalence / logical equivalence,A | Central tendency / central tendency,Easy,1,PRO,1
+TOPIC_SEP,1,12.2 Arithmetic Mean,Topic,,,,,,,,,,,1
+q_9_math_ch12_014,1,12.2 Arithmetic Mean,Remember,The arithmetic mean of n observations is:,n observations کا arithmetic mean کیا ہے؟,Σx×n,n/Σx,Σx−n,Σx/n,D | Σx/n,Easy,1,PRO,1
+TOPIC_SEP,1,12.2 Median,Topic,,,,,,,,,,,1
+q_9_math_ch12_015,1,12.2 Median,Remember,The middle value of an arranged data set is the:,arranged data set کی middle value کو کیا کہتے ہیں؟,Mean / mean,Median / median,Mode / mode,Range / range,B | Median / median,Easy,1,PRO,1
+TOPIC_SEP,1,12.2 Mode,Topic,,,,,,,,,,,1
+q_9_math_ch12_016,1,12.2 Mode,Remember,The value occurring most frequently in a data set is the:,data set میں most frequently occur ہونے والی value کو کیا کہتے ہیں؟,Median / median,Mode / mode,Mean / mean,Class boundary / class boundary,B | Mode / mode,Easy,1,PRO,1
+TOPIC_SEP,1,12.1 Class Size,Topic,,,,,,,,,,,1
+q_9_math_ch12_017,1,12.1 Class Size,Understand,A practical formula for class size is:,class size کا practical formula کیا ہے؟,Number of classes/Range,Range×Frequency,Range/Number of classes,Upper limit+Lower limit,C | Range/Number of classes,Medium,1,PRO,1
+TOPIC_SEP,1,12.1 Class Boundaries,Topic,,,,,,,,,,,1
+q_9_math_ch12_018,1,12.1 Class Boundaries,Apply,The class boundaries of the class 5–9 are:,class 5–9 کی class boundaries کیا ہیں؟,4.5–9.5,5–9,4–10,5.5–8.5,A | 4.5–9.5,Medium,1,PRO,1
+TOPIC_SEP,1,12.1 Adjusted Frequency,Topic,,,,,,,,,,,1
+q_9_math_ch12_019,1,12.1 Adjusted Frequency,Understand,"For unequal class widths, the height of a histogram rectangle is proportional to:",unequal class widths میں histogram rectangle کی height کس کے proportional ہوتی ہے؟,Frequency multiplied by class width / frequency کو class width سے multiply کرنا,Class midpoint only / صرف class midpoint,Frequency divided by class width / frequency کو class width سے divide کرنا,Cumulative frequency only / صرف cumulative frequency,C | Frequency divided by class width / frequency کو class width سے divide کرنا,Medium,1,PRO,1
+TOPIC_SEP,1,12.1 Class Midpoint,Topic,,,,,,,,,,,1
+q_9_math_ch12_020,1,12.1 Class Midpoint,Apply,The midpoint of the class 34–38 is:,class 34–38 کا midpoint کیا ہے؟,34,36,35,38,B | 36,Medium,1,PRO,1
+TOPIC_SEP,1,12.1 Frequency Polygon Construction,Topic,,,,,,,,,,,1
+q_9_math_ch12_021,1,12.1 Frequency Polygon Construction,Understand,"To close a frequency polygon, its end segments are extended to:",frequency polygon close کرنے کے لیے end segments کہاں extend کیے جاتے ہیں؟,The y-axis at maximum frequency / maximum frequency پر y-axis تک,The origin only / صرف origin تک,The class boundaries vertically / class boundaries vertically,The x-axis at the next class midpoints / next class midpoints پر x-axis تک,D | The x-axis at the next class midpoints / next class midpoints پر x-axis تک,Medium,1,PRO,1
+q_9_math_ch12_022,1,12.2 Arithmetic Mean,Apply,"The mean of 64, 75, 81, 87 and 90 is:",64، 75، 81، 87 اور 90 کا mean کیا ہے؟,78.4,80,81.4,79.4,D | 79.4,Medium,1,PRO,1
+TOPIC_SEP,1,12.2 Missing Observation,Topic,,,,,,,,,,,1
+q_9_math_ch12_023,1,12.2 Missing Observation,Apply,"If the mean of 5, 7, 8, 9 and x is 7.5, then x is:",اگر 5، 7، 8، 9 اور x کا mean 7.5 ہو تو x کیا ہے؟,7.5,8.5,9.5,10,B | 8.5,Medium,1,PRO,1
+TOPIC_SEP,1,12.2 Grouped Mean,Topic,,,,,,,,,,,1
+q_9_math_ch12_024,1,12.2 Grouped Mean,Remember,"For a grouped frequency distribution, the direct mean formula is:",grouped frequency distribution کے لیے direct mean formula کیا ہے؟,Σfx/Σf,Σx/n,Σf/Σfx,Σfx×Σf,A | Σfx/Σf,Medium,1,PRO,1
+TOPIC_SEP,1,12.2 Assumed Mean,Topic,,,,,,,,,,,1
+q_9_math_ch12_025,1,12.2 Assumed Mean,Remember,"For grouped data using deviations D=x−A, the short mean formula is:",grouped data میں deviations D=x−A use کرتے ہوئے short mean formula کیا ہے؟,X̄=A−ΣfD,X̄=ΣD/A,X̄=AΣfD,X̄=A+ΣfD/Σf,D | X̄=A+ΣfD/Σf,Medium,1,PRO,1
+TOPIC_SEP,1,12.2 Median for Odd n,Topic,,,,,,,,,,,1
+q_9_math_ch12_026,1,12.2 Median for Odd n,Apply,"For 7 arranged observations, the median is the:",7 arranged observations کے لیے median کون سی observation ہے؟,3rd observation,4th observation,5th observation,Average of 3rd and 4th,B | 4th observation,Medium,1,PRO,1
+TOPIC_SEP,1,12.2 Median for Even n,Topic,,,,,,,,,,,1
+q_9_math_ch12_027,1,12.2 Median for Even n,Apply,"For 10 arranged observations, the median is the average of the:",10 arranged observations کے لیے median کن observations کا average ہے؟,5th and 6th observations,4th and 5th observations,6th and 7th observations,1st and 10th observations,A | 5th and 6th observations,Medium,1,PRO,1
+TOPIC_SEP,1,12.2 Median Calculation,Topic,,,,,,,,,,,1
+q_9_math_ch12_028,1,12.2 Median Calculation,Apply,"The median of 5, 8, 12, 13, 16, 18, 20 is:",5، 8، 12، 13، 16، 18، 20 کا median کیا ہے؟,12,14.5,13,16,C | 13,Medium,1,PRO,1
+TOPIC_SEP,1,12.2 Modal Class,Topic,,,,,,,,,,,1
+q_9_math_ch12_029,1,12.2 Modal Class,Understand,The class having the highest frequency is called the:,highest frequency رکھنے والی class کو کیا کہتے ہیں؟,Median class / median class,Boundary class / boundary class,Modal class / modal class,Mean class / mean class,C | Modal class / modal class,Medium,1,PRO,1
+TOPIC_SEP,1,12.2 Multiple Modes,Topic,,,,,,,,,,,1
+q_9_math_ch12_030,1,12.2 Multiple Modes,Understand,A data set in which two values occur with the same highest frequency is:,data set میں two values same highest frequency سے occur ہوں تو اسے کیا کہتے ہیں؟,Bimodal / bimodal,Unimodal / unimodal,Continuous / continuous,Ungrouped only / صرف ungrouped,A | Bimodal / bimodal,Medium,1,PRO,1
+TOPIC_SEP,1,12.2 Weighted Mean,Topic,,,,,,,,,,,1
+q_9_math_ch12_031,1,12.2 Weighted Mean,Remember,The weighted mean formula is:,weighted mean کا formula کیا ہے؟,ΣX/ΣW,ΣW/ΣX,ΣWX/ΣW,ΣWX/n,C | ΣWX/ΣW,Medium,1,PRO,1
+TOPIC_SEP,1,12.2 Sum from Mean,Topic,,,,,,,,,,,1
+q_9_math_ch12_032,1,12.2 Sum from Mean,Apply,"If the mean of 45 numbers is 80, their sum is:",اگر 45 numbers کا mean 80 ہو تو ان کا sum کیا ہے؟,125,1800,4000,3600,D | 3600,Medium,1,PRO,1
+TOPIC_SEP,1,12.2 Corrected Mean,Topic,,,,,,,,,,,1
+q_9_math_ch12_033,1,12.2 Corrected Mean,Analyze,"The mean of 15 values was calculated as 50, but 25 was copied as 52. The corrected mean is approximately:",15 values کا mean 50 calculate ہوا مگر 25 کو 52 copy کیا گیا۔ corrected mean approximately کیا ہے؟,48.20,49.87,50.13,51.80,B | 49.87,Hard,1,PRO,1
+TOPIC_SEP,1,12.2 Grouped Median,Topic,,,,,,,,,,,1
+q_9_math_ch12_034,1,12.2 Grouped Median,Analyze,"For classes 110–114, 115–119, 120–124, 125–129, 130–134 with frequencies 5,12,23,6,4, the grouped median is approximately:",classes 110–114، 115–119، 120–124، 125–129، 130–134 اور frequencies 5،12،23،6،4 کے لیے grouped median approximately کیا ہے؟,119.50,123.00,121.24,124.50,C | 121.24,Hard,1,PRO,1
+TOPIC_SEP,1,12.2 Grouped Mode,Topic,,,,,,,,,,,1
+q_9_math_ch12_035,1,12.2 Grouped Mode,Analyze,"For class intervals 48–50, 50–52, 52–54, 54–56, 56–58, 58–60 with frequencies 5,7,10,9,6,3, the grouped mode is:",class intervals 48–50، 50–52، 52–54، 54–56، 56–58، 58–60 اور frequencies 5،7،10،9،6،3 کے لیے grouped mode کیا ہے؟,52.0,53.5,54.0,55.5,B | 53.5,Hard,1,PRO,1
+TOPIC_SEP,1,12.2 Weighted Mean Calculation,Topic,,,,,,,,,,,1
+q_9_math_ch12_036,1,12.2 Weighted Mean Calculation,Analyze,"Marks 74, 78, 74 and 90 have weights 4, 3, 5 and 6. Their weighted mean is:",marks 74، 78، 74 اور 90 کے weights 4، 3، 5 اور 6 ہیں۔ weighted mean کیا ہے؟,80,78,81,84,A | 80,Hard,1,PRO,1
+TOPIC_SEP,1,12.1 Number of Classes,Topic,,,,,,,,,,,1
+q_9_math_ch12_037,1,12.1 Number of Classes,Analyze,"The smallest value is 25, the greatest is 80 and desired class size is 6. The minimum whole number of classes required is:",smallest value 25، greatest 80 اور desired class size 6 ہو تو minimum whole number of classes کتنی required ہیں؟,8,9,11,10,D | 10,Hard,1,PRO,1
+TOPIC_SEP,1,12.1 Unequal Histogram,Topic,,,,,,,,,,,1
+q_9_math_ch12_038,1,12.1 Unequal Histogram,Analyze,"For an unequal class 12–17 with frequency 20, the adjusted frequency is:",unequal class 12–17 کی frequency 20 ہو تو adjusted frequency کیا ہے؟,5,4,10,100,B | 4,Hard,1,PRO,1
+TOPIC_SEP,1,12.2 Assumed-Mean Calculation,Topic,,,,,,,,,,,1
+q_9_math_ch12_039,1,12.2 Assumed-Mean Calculation,Analyze,"For deviations D=−6,−4,−2,0,2,4,6 with frequencies 1,3,6,20,26,12,2 and A=20, the mean is approximately:",deviations D=−6،−4،−2،0،2،4،6؛ frequencies 1،3،6،20،26،12،2 اور A=20 کے لیے mean approximately کیا ہے؟,21.17,20.00,20.82,22.34,A | 21.17,Hard,1,PRO,1
+TOPIC_SEP,1,12.2 Weighted Cost,Topic,,,,,,,,,,,1
+q_9_math_ch12_040,1,12.2 Weighted Cost,Analyze,"Quantities 10,12,4,3,2 kg have costs per kg Rs 96,48,190,49,650 respectively. The weighted mean cost per kg is approximately:",quantities 10،12،4،3،2 kg اور costs per kg Rs 96،48،190،49،650 ہوں تو weighted mean cost per kg approximately کیا ہے؟,Rs 206.60,Rs 96.00,Rs 155.20,Rs 120.74,D | Rs 120.74,Hard,1,PRO,1

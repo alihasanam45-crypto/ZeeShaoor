@@ -1,0 +1,11 @@
+﻿question_hash,active,topic,question_type,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+sep_9_bio_ch4_001,1,4.1 Cell Cycle,Topic,topic_separator,,,,,,1
+q_9_bio_ch4_lq_001,1,4.1 Cell Cycle,Long,cause_effect,Explain the role that mistakes in cell-cycle checkpoints may play in the emergence of cancer.,وضاحت کریں کہ خلوی چکر کے چیک پوائنٹس میں غلطیاں سرطان کے پیدا ہونے میں کیا کردار ادا کر سکتی ہیں۔,Hard,5,PRO,1
+q_9_bio_ch4_lq_002,1,4.1 Cell Cycle,Long,cause_effect,"Explain why skin cells divide continuously throughout an organism's life, whereas nerve and muscle cells permanently exit the cell cycle.",وضاحت کریں کہ جلد کے خلیے جاندار کی پوری زندگی مسلسل تقسیم ہوتے رہتے ہیں جبکہ عصبی اور عضلاتی خلیے خلوی چکر سے مستقل طور پر نکل جاتے ہیں۔,Hard,5,PRO,1
+sep_9_bio_ch4_002,1,4.2 Mitosis,Topic,topic_separator,,,,,,1
+q_9_bio_ch4_lq_003,1,4.2 Mitosis,Long,process_procedure,Describe the events that occur during the phases of mitosis.,مائٹوسس کے مراحل میں ہونے والے واقعات بیان کریں۔,Medium,5,PRO,1
+q_9_bio_ch4_lq_004,1,4.2 Mitosis,Long,compare,Describe cytokinesis in animal and plant cells.,حیوانی اور نباتاتی خلیوں میں سائٹو کائنیسس بیان کریں۔,Medium,5,PRO,1
+q_9_bio_ch4_lq_005,1,4.2 Mitosis,Long,discuss,Describe the significance of mitosis.,مائٹوسس کی اہمیت بیان کریں۔,Easy,5,PRO,1
+sep_9_bio_ch4_003,1,4.3 Meiosis,Topic,topic_separator,,,,,,1
+q_9_bio_ch4_lq_006,1,4.3 Meiosis,Long,process_procedure,Describe the events that occur during the phases of meiosis I.,میوسس I کے مراحل میں ہونے والے واقعات بیان کریں۔,Hard,5,PRO,1
+q_9_bio_ch4_lq_007,1,4.3 Meiosis,Long,discuss,Describe the significance of meiosis.,میوسس کی اہمیت بیان کریں۔,Medium,5,PRO,1

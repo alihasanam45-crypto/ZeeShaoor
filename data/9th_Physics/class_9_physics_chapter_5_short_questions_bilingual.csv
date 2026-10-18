@@ -1,0 +1,69 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,5.1 Work,topic_separator,,,,,,1
+q_9_phy_ch5_sq_001,1,5.1 Work,definition_formula,Define work in physics and write its mathematical relationship when force and displacement are parallel.,physics میں work کی تعریف کریں اور force و displacement parallel ہونے پر اس کا mathematical relationship لکھیں۔,Easy,2,PRO,1
+q_9_phy_ch5_sq_002,1,5.1 Work,concept_explanation,State the two essential conditions required for a force to do work on an object.,force کے object پر work کرنے کے لیے required دو essential conditions بیان کریں۔,Easy,2,ULTRA,1
+q_9_phy_ch5_sq_003,1,5.1 Work,explain_reason,Explain why no work is done when an applied force produces no displacement.,وضاحت کریں کہ applied force displacement produce نہ کرے تو work کیوں نہیں ہوتا۔,Easy,2,PRO,1
+TOPIC_SEP,1,5.1 Work at an Angle,topic_separator,,,,,,1
+q_9_phy_ch5_sq_004,1,5.1 Work at an Angle,formula_relationship,State how work is calculated when a force acts at an angle to the displacement.,بیان کریں کہ force displacement کے ساتھ angle پر act کرے تو work کیسے calculate کیا جاتا ہے۔,Medium,2,PRO,1
+q_9_phy_ch5_sq_005,1,5.1 Work at an Angle,explain_reason,Explain why work is zero when force is perpendicular to displacement.,وضاحت کریں کہ force displacement کے perpendicular ہو تو work zero کیوں ہوتا ہے۔,Medium,2,PRO,1
+q_9_phy_ch5_sq_006,1,5.1 Work,features_characteristics,State why work is a scalar quantity.,بیان کریں کہ work scalar quantity کیوں ہے۔,Easy,2,ELITE,1
+TOPIC_SEP,1,5.1 Force-Distance Graph,topic_separator,,,,,,1
+q_9_phy_ch5_sq_007,1,5.1 Force-Distance Graph,diagram_based,State what the area under a force-distance graph represents.,بیان کریں کہ force-distance graph کے نیچے area کیا represent کرتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,5.1 Unit of Work,topic_separator,,,,,,1
+q_9_phy_ch5_sq_008,1,5.1 Unit of Work,definition_unit,Define one joule and express it in newton-metre.,one joule کی تعریف کریں اور اسے newton-metre میں express کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,5.1 Work Numerical,topic_separator,,,,,,1
+q_9_phy_ch5_sq_009,1,5.1 Work Numerical,numerical_short,A force of 20 N acts at 60° to the horizontal and moves a box through 3 m. Calculate the work done.,"درج ذیل data سے work done معلوم کریں: F = 20 N, θ = 60°, displacement = 3 m",Hard,2,PRO,1
+TOPIC_SEP,1,5.2 Energy,topic_separator,,,,,,1
+q_9_phy_ch5_sq_010,1,5.2 Energy,definition_unit,Define energy and state its SI unit.,energy کی تعریف کریں اور اس کی SI unit بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,5.2 Mechanical Energy,topic_separator,,,,,,1
+q_9_phy_ch5_sq_011,1,5.2 Mechanical Energy,classification,Name the two basic forms of mechanical energy and state the basis of each form.,mechanical energy کی دو basic forms کے نام لکھیں اور ہر form کی basis بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,5.2 Kinetic Energy,topic_separator,,,,,,1
+q_9_phy_ch5_sq_012,1,5.2 Kinetic Energy,definition_formula,Define kinetic energy and write its mathematical relationship.,kinetic energy کی تعریف کریں اور اس کا mathematical relationship لکھیں۔,Easy,2,PRO,1
+q_9_phy_ch5_sq_013,1,5.2 Kinetic Energy,cause_effect,Explain how kinetic energy changes when the mass or speed of a body changes.,وضاحت کریں کہ body کی mass یا speed change ہونے پر kinetic energy کیسے change ہوتی ہے۔,Medium,2,PRO,1
+q_9_phy_ch5_sq_014,1,5.2 Kinetic Energy,explain_reason,Explain how a slow-moving car can possess more kinetic energy than a fast-moving motorcycle.,وضاحت کریں کہ slow-moving car، fast-moving motorcycle سے زیادہ kinetic energy کیسے possess کر سکتی ہے۔,Medium,2,PRO,1
+q_9_phy_ch5_sq_015,1,5.2 Kinetic Energy,concept_explanation,State whether kinetic energy can be negative and justify the answer.,بیان کریں کہ kinetic energy negative ہو سکتی ہے یا نہیں اور جواب justify کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.2 Potential Energy,topic_separator,,,,,,1
+q_9_phy_ch5_sq_016,1,5.2 Potential Energy,definition_example,Define potential energy and give one example based on position and one based on deformation.,potential energy کی تعریف کریں اور position اور deformation پر based ایک ایک example دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,5.2 Forms of Potential Energy,topic_separator,,,,,,1
+q_9_phy_ch5_sq_017,1,5.2 Forms of Potential Energy,classification,"Distinguish among gravitational, elastic, chemical, and nuclear potential energy.",gravitational، elastic، chemical اور nuclear potential energy میں فرق بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,5.2 Gravitational Potential Energy,topic_separator,,,,,,1
+q_9_phy_ch5_sq_018,1,5.2 Gravitational Potential Energy,definition_formula,Define gravitational potential energy and write its mathematical relationship near Earth's surface.,gravitational potential energy کی تعریف کریں اور Earth surface کے near اس کا mathematical relationship لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,5.2 Energy Transformation,topic_separator,,,,,,1
+q_9_phy_ch5_sq_019,1,5.2 Energy Transformation,application_scenario,Describe the energy transformations when a ball is thrown vertically upward and then falls.,ball کو vertically upward throw کرنے اور پھر fall ہونے کے دوران energy transformations بیان کریں۔,Medium,2,PRO,1
+q_9_phy_ch5_sq_020,1,5.2 Energy Transformation,application_scenario,Describe the energy changes when a cricket ball strikes and breaks a window pane.,cricket ball کے window pane کو strike کرکے break کرنے کے دوران energy changes بیان کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,5.3 Conservation of Energy,topic_separator,,,,,,1
+q_9_phy_ch5_sq_021,1,5.3 Conservation of Energy,law_principle,State the principle of conservation of energy.,principle of conservation of energy بیان کریں۔,Easy,2,PRO,1
+q_9_phy_ch5_sq_022,1,5.3 Conservation of Energy,concept_explanation,Explain the interchange of potential and kinetic energy in a freely falling body.,freely falling body میں potential اور kinetic energy کے interchange کی وضاحت کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.3 Waste Energy,topic_separator,,,,,,1
+q_9_phy_ch5_sq_023,1,5.3 Waste Energy,cause_effect,Explain why some transferred energy appears as waste heat in real processes.,وضاحت کریں کہ real processes میں کچھ transferred energy waste heat کی صورت میں کیوں appear ہوتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,5.3 Perpetual Energy Machines,topic_separator,,,,,,1
+q_9_phy_ch5_sq_024,1,5.3 Perpetual Energy Machines,explain_reason,Explain why a perpetual-energy machine cannot operate.,وضاحت کریں کہ perpetual-energy machine operate کیوں نہیں کر سکتی۔,Hard,2,PRO,1
+TOPIC_SEP,1,5.4 Fossil-Fuel Energy,topic_separator,,,,,,1
+q_9_phy_ch5_sq_025,1,5.4 Fossil-Fuel Energy,process_steps,Describe the main energy-conversion stages in electricity generation from fossil fuels.,fossil fuels سے electricity generation میں main energy-conversion stages بیان کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,5.4 Hydroelectric Generation,topic_separator,,,,,,1
+q_9_phy_ch5_sq_026,1,5.4 Hydroelectric Generation,process_steps,Describe how gravitational potential energy of stored water is converted into electrical energy.,بیان کریں کہ stored water کی gravitational potential energy electrical energy میں کیسے convert ہوتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.4 Solar Energy,topic_separator,,,,,,1
+q_9_phy_ch5_sq_027,1,5.4 Solar Energy,compare_contrast,Compare solar heating panels and photovoltaic cells in terms of their energy output.,energy output کے لحاظ سے solar heating panels اور photovoltaic cells کا موازنہ کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,5.4 Nuclear and Geothermal Energy,topic_separator,,,,,,1
+q_9_phy_ch5_sq_028,1,5.4 Nuclear and Geothermal Energy,difference,Differentiate between nuclear and geothermal energy using their sources and electricity-generation processes.,sources اور electricity-generation processes کے لحاظ سے nuclear اور geothermal energy میں فرق بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,"5.4 Wind, Tidal and Wave Energy",topic_separator,,,,,,1
+q_9_phy_ch5_sq_029,1,"5.4 Wind, Tidal and Wave Energy",classification,"State how wind, tides, and sea waves can be used to generate electricity.",بیان کریں کہ wind، tides اور sea waves کو electricity generate کرنے کے لیے کیسے use کیا جاتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,5.4 Biofuel Energy,topic_separator,,,,,,1
+q_9_phy_ch5_sq_030,1,5.4 Biofuel Energy,process_steps,Explain how biogas is produced from biomass in a digester.,وضاحت کریں کہ digester میں biomass سے biogas کیسے produce ہوتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,5.5 Renewable and Non-Renewable Sources,topic_separator,,,,,,1
+q_9_phy_ch5_sq_031,1,5.5 Renewable and Non-Renewable Sources,difference,Differentiate between renewable and non-renewable energy sources and give three examples of each.,renewable اور non-renewable energy sources میں فرق بیان کریں اور ہر ایک کی تین examples دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,5.6 Energy Production,topic_separator,,,,,,1
+q_9_phy_ch5_sq_032,1,5.6 Energy Production,advantages_disadvantages,State two advantages and two disadvantages of hydroelectric power generation.,hydroelectric power generation کے دو advantages اور دو disadvantages بیان کریں۔,Medium,2,PRO,1
+q_9_phy_ch5_sq_033,1,5.6 Energy Production,advantages_disadvantages,State major environmental disadvantages of fossil-fuel and nuclear power generation.,fossil-fuel اور nuclear power generation کے major environmental disadvantages بیان کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,5.7 Power,topic_separator,,,,,,1
+q_9_phy_ch5_sq_034,1,5.7 Power,definition_formula,Define power and write its mathematical relationship in terms of work and time.,power کی تعریف کریں اور work اور time کے لحاظ سے اس کا mathematical relationship لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,5.7 Unit of Power,topic_separator,,,,,,1
+q_9_phy_ch5_sq_035,1,5.7 Unit of Power,definition_unit,"Define one watt and state the relationships of kilowatt, megawatt, and horsepower with watt.",one watt کی تعریف کریں اور kilowatt، megawatt اور horsepower کے watt کے ساتھ relationships بیان کریں۔,Easy,2,ULTRA,1
+q_9_phy_ch5_sq_036,1,5.7 Power,compare_contrast,Two forces do different amounts of work in different times. State how their powers should be compared.,two forces different times میں different amounts of work کرتی ہیں۔ بیان کریں کہ ان کی powers کا comparison کیسے کیا جائے۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.8 Efficiency,topic_separator,,,,,,1
+q_9_phy_ch5_sq_037,1,5.8 Efficiency,definition_formula,Define efficiency and write its percentage relationship using useful output and total input energy.,efficiency کی تعریف کریں اور useful output اور total input energy سے اس کا percentage relationship لکھیں۔,Easy,2,PRO,1
+q_9_phy_ch5_sq_038,1,5.8 Efficiency,explain_reason,Explain why a real working system cannot have 100% efficiency.,وضاحت کریں کہ real working system کی efficiency 100% کیوں نہیں ہو سکتی۔,Medium,2,PRO,1
+TOPIC_SEP,1,5.8 Efficiency Numerical,topic_separator,,,,,,1
+q_9_phy_ch5_sq_039,1,5.8 Efficiency Numerical,numerical_short,A 10 kg box is pushed up a 15 m ramp by an 80 N force and rises through 5 m. Calculate the system's efficiency using g = 10 m/s².,"درج ذیل data سے system کی efficiency معلوم کریں: m = 10 kg, ramp length = 15 m, F = 80 N, height = 5 m, g = 10 m/s²",Hard,2,PRO,1
+TOPIC_SEP,1,5.7 Power Numerical,topic_separator,,,,,,1
+q_9_phy_ch5_sq_040,1,5.7 Power Numerical,numerical_short,A 40 kg boy runs upstairs through a vertical height of 10 m in 8 s. Calculate the power developed using g = 10 m/s².,"درج ذیل data سے developed power معلوم کریں: m = 40 kg, h = 10 m, t = 8 s, g = 10 m/s²",Hard,2,PRO,1

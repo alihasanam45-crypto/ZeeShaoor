@@ -1,0 +1,76 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,19.1 Semiconductors,topic_separator,,,,,,1
+q_10_phy_ch19_sq_001,1,19.1 Semiconductors,definition_example,Define a semiconductor and give two examples.,semiconductor کی تعریف کریں اور دو examples دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.1 Doping,topic_separator,,,,,,1
+q_10_phy_ch19_sq_002,1,19.1 Doping,definition_function,Define doping and state why it is used in semiconductor materials.,doping کی تعریف کریں اور بیان کریں کہ اسے semiconductor materials میں کیوں use کیا جاتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.1 N-Type Semiconductor,topic_separator,,,,,,1
+q_10_phy_ch19_sq_003,1,19.1 N-Type Semiconductor,definition_function,Define an N-type semiconductor and identify its majority charge carrier.,N-type semiconductor کی تعریف کریں اور اس کا majority charge carrier identify کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.1 P-Type Semiconductor,topic_separator,,,,,,1
+q_10_phy_ch19_sq_004,1,19.1 P-Type Semiconductor,definition_function,Define a P-type semiconductor and identify its majority charge carrier.,P-type semiconductor کی تعریف کریں اور اس کا majority charge carrier identify کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.1 Semiconductor Impurities,topic_separator,,,,,,1
+q_10_phy_ch19_sq_005,1,19.1 Semiconductor Impurities,difference,Differentiate between pentavalent and trivalent impurities in semiconductor doping.,semiconductor doping میں pentavalent اور trivalent impurities میں فرق بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,19.2 PN Junction,topic_separator,,,,,,1
+q_10_phy_ch19_sq_006,1,19.2 PN Junction,definition_function,Define a PN junction and state how it is formed.,PN junction کی تعریف کریں اور بیان کریں کہ یہ کیسے form ہوتی ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.2 Depletion Region,topic_separator,,,,,,1
+q_10_phy_ch19_sq_007,1,19.2 Depletion Region,definition_function,Define the depletion region and state why it contains few mobile charge carriers.,depletion region کی تعریف کریں اور بیان کریں کہ اس میں mobile charge carriers کم کیوں ہوتے ہیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.2 Barrier Potential,topic_separator,,,,,,1
+q_10_phy_ch19_sq_008,1,19.2 Barrier Potential,definition_function,Define barrier potential and state its effect on majority carriers.,barrier potential کی تعریف کریں اور majority carriers پر اس کا effect بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,19.2 Forward Bias,topic_separator,,,,,,1
+q_10_phy_ch19_sq_009,1,19.2 Forward Bias,process_steps,State how a PN-junction diode is connected in forward bias.,بیان کریں کہ PN-junction diode کو forward bias میں کیسے connect کیا جاتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.2 Reverse Bias,topic_separator,,,,,,1
+q_10_phy_ch19_sq_010,1,19.2 Reverse Bias,process_steps,State how a PN-junction diode is connected in reverse bias.,بیان کریں کہ PN-junction diode کو reverse bias میں کیسے connect کیا جاتا ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.2 Diode,topic_separator,,,,,,1
+q_10_phy_ch19_sq_011,1,19.2 Diode,function_purpose,State the main electrical function of a semiconductor diode.,semiconductor diode کا main electrical function بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.3 Rectification,topic_separator,,,,,,1
+q_10_phy_ch19_sq_012,1,19.3 Rectification,definition_function,Define rectification and state the role of a diode in this process.,rectification کی تعریف کریں اور اس process میں diode کا role بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.3 Light-Emitting Diode,topic_separator,,,,,,1
+q_10_phy_ch19_sq_013,1,19.3 Light-Emitting Diode,definition_function,Define an LED and state the bias condition required for light emission.,LED کی تعریف کریں اور light emission کے لیے required bias condition بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.4 Analogue and Digital Signals,topic_separator,,,,,,1
+q_10_phy_ch19_sq_014,1,19.4 Analogue and Digital Signals,difference,Differentiate between analogue and digital signals.,analogue اور digital signals میں فرق بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.4 Binary Data,topic_separator,,,,,,1
+q_10_phy_ch19_sq_015,1,19.4 Binary Data,definition_function,Define a bit and a byte and state how many bits form one byte.,bit اور byte کی definitions بیان کریں اور لکھیں کہ one byte میں کتنے bits ہوتے ہیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,19.5 Logic Gates,topic_separator,,,,,,1
+q_10_phy_ch19_sq_016,1,19.5 Logic Gates,definition_function,Define a logic gate and state its role in a digital circuit.,logic gate کی تعریف کریں اور digital circuit میں اس کا role بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,19.1 N-Type and P-Type Semiconductors,topic_separator,,,,,,1
+q_10_phy_ch19_sq_017,1,19.1 N-Type and P-Type Semiconductors,compare_contrast,Compare N-type and P-type semiconductors in terms of impurity and majority charge carriers.,impurity اور majority charge carriers کے لحاظ سے N-type اور P-type semiconductors کا موازنہ کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,19.1 Semiconductor Conductivity,topic_separator,,,,,,1
+q_10_phy_ch19_sq_018,1,19.1 Semiconductor Conductivity,cause_effect,Explain how doping increases the conductivity of an intrinsic semiconductor.,وضاحت کریں کہ doping intrinsic semiconductor کی conductivity کو کیسے increase کرتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,19.2 Forward and Reverse Bias,topic_separator,,,,,,1
+q_10_phy_ch19_sq_019,1,19.2 Forward and Reverse Bias,compare_contrast,Compare forward bias and reverse bias in terms of depletion width and current.,depletion width اور current کے لحاظ سے forward bias اور reverse bias کا موازنہ کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,19.2 Diode Characteristic,topic_separator,,,,,,1
+q_10_phy_ch19_sq_020,1,19.2 Diode Characteristic,diagram_based,Describe the main features of the current-voltage characteristic of a semiconductor diode.,semiconductor diode کی current-voltage characteristic کی main features بیان کریں۔,Medium,2,ELITE,1
+q_10_phy_ch19_sq_021,1,19.3 Rectification,process_steps,Explain how a diode converts alternating current into a unidirectional current.,وضاحت کریں کہ diode alternating current کو unidirectional current میں کیسے convert کرتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,19.3 LED,topic_separator,,,,,,1
+q_10_phy_ch19_sq_022,1,19.3 LED,explain_reason,Explain why a current-limiting resistor is connected in series with an LED.,وضاحت کریں کہ LED کے ساتھ current-limiting resistor series میں کیوں connect کیا جاتا ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,19.4 Analogue-to-Digital Conversion,topic_separator,,,,,,1
+q_10_phy_ch19_sq_023,1,19.4 Analogue-to-Digital Conversion,process_steps,"Describe the three stages of analogue-to-digital conversion: sampling, quantization, and encoding.",analogue-to-digital conversion کے three stages sampling، quantization اور encoding بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,19.4 Digital Signals,topic_separator,,,,,,1
+q_10_phy_ch19_sq_024,1,19.4 Digital Signals,advantages_disadvantages,State three advantages of digital signals over analogue signals.,analogue signals کے مقابلے میں digital signals کے three advantages بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,19.5 AND Gate,topic_separator,,,,,,1
+q_10_phy_ch19_sq_025,1,19.5 AND Gate,law_principle,State the operation of an AND gate and write its truth table.,AND gate کی operation بیان کریں اور اس کی truth table لکھیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,19.5 OR Gate,topic_separator,,,,,,1
+q_10_phy_ch19_sq_026,1,19.5 OR Gate,law_principle,State the operation of an OR gate and write its truth table.,OR gate کی operation بیان کریں اور اس کی truth table لکھیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,19.5 NOT Gate,topic_separator,,,,,,1
+q_10_phy_ch19_sq_027,1,19.5 NOT Gate,law_principle,State the operation of a NOT gate and write its truth table.,NOT gate کی operation بیان کریں اور اس کی truth table لکھیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,19.5 NAND Gate,topic_separator,,,,,,1
+q_10_phy_ch19_sq_028,1,19.5 NAND Gate,law_principle,State the operation of a NAND gate and write its truth table.,NAND gate کی operation بیان کریں اور اس کی truth table لکھیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,19.5 NOR Gate,topic_separator,,,,,,1
+q_10_phy_ch19_sq_029,1,19.5 NOR Gate,law_principle,State the operation of a NOR gate and write its truth table.,NOR gate کی operation بیان کریں اور اس کی truth table لکھیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,19.5 Universal Gates,topic_separator,,,,,,1
+q_10_phy_ch19_sq_030,1,19.5 Universal Gates,concept_explanation,Explain why NAND and NOR are called universal gates.,وضاحت کریں کہ NAND اور NOR کو universal gates کیوں کہا جاتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,19.6 Burglar Alarm,topic_separator,,,,,,1
+q_10_phy_ch19_sq_031,1,19.6 Burglar Alarm,application_scenario,"Explain the roles of an LDR, push-button switch, NAND gate, and alarm in a burglar-alarm circuit.",burglar-alarm circuit میں LDR، push-button switch، NAND gate اور alarm کے roles explain کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,19.6 Fire Alarm,topic_separator,,,,,,1
+q_10_phy_ch19_sq_032,1,19.6 Fire Alarm,application_scenario,"Select a suitable basic logic gate for an alarm that must activate when smoke or high temperature is detected, and justify the choice.",اس alarm کے لیے suitable basic logic gate select کریں جو smoke یا high temperature detect ہونے پر activate ہو، اور choice justify کریں۔,Medium,2,PRO,1
+q_10_phy_ch19_sq_033,1,19.2 PN Junction,concept_explanation,Explain the formation of the depletion region and barrier potential immediately after a PN junction is made.,PN junction form ہونے کے immediately بعد depletion region اور barrier potential کی formation explain کریں۔,Hard,2,PRO,1
+q_10_phy_ch19_sq_034,1,19.2 Diode Characteristic,compare_contrast,Compare the diode's behaviour below and above forward threshold voltage and under reverse bias.,forward threshold voltage سے below، above اور reverse bias میں diode behaviour کا موازنہ کریں۔,Hard,2,PRO,1
+q_10_phy_ch19_sq_035,1,19.4 Analogue-to-Digital Conversion,cause_effect,Explain how sampling rate and the number of quantization levels affect the accuracy of digital data.,وضاحت کریں کہ sampling rate اور quantization levels کی number digital data accuracy کو کیسے affect کرتی ہیں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,19.5 Boolean Logic,topic_separator,,,,,,1
+q_10_phy_ch19_sq_036,1,19.5 Boolean Logic,diagram_based,Show how a NOR gate followed by a NOT gate can perform the function of an OR gate.,دکھائیں کہ NOR gate کے بعد NOT gate use کرکے OR gate کا function کیسے حاصل کیا جا سکتا ہے۔,Hard,2,PRO,1
+q_10_phy_ch19_sq_037,1,19.5 Boolean Logic,diagram_based,Show how inverted inputs connected to a NOR gate can perform the function of an AND gate.,دکھائیں کہ inverted inputs کو NOR gate سے connect کرکے AND gate کا function کیسے حاصل کیا جا سکتا ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,19.5 Logic Evaluation,topic_separator,,,,,,1
+q_10_phy_ch19_sq_038,1,19.5 Logic Evaluation,application_scenario,"Determine the output sequence of a NAND gate for input pairs 00, 01, 10, and 11, and explain the exceptional case.",input pairs 00، 01، 10 اور 11 کے لیے NAND gate کی output sequence determine کریں اور exceptional case explain کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,19.6 Security Systems,topic_separator,,,,,,1
+q_10_phy_ch19_sq_039,1,19.6 Security Systems,application_scenario,Design the logical condition for a safety system that operates only when a door is closed and a key is inserted.,اس safety system کی logical condition design کریں جو only door closed اور key inserted ہونے پر operate کرے۔,Hard,2,PRO,1
+TOPIC_SEP,1,19.6 Burglar and Fire Alarms,topic_separator,,,,,,1
+q_10_phy_ch19_sq_040,1,19.6 Burglar and Fire Alarms,compare_contrast,Compare the sensing inputs and logic requirements of the burglar-alarm and fire-alarm applications.,burglar-alarm اور fire-alarm applications کے sensing inputs اور logic requirements کا موازنہ کریں۔,Hard,2,ELITE,1

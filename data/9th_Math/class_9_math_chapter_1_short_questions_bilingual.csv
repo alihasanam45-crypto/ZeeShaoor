@@ -1,0 +1,65 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,1.1 Introduction to Real Numbers,topic_separator,,,,,,1
+q_9_math_ch1_sq_001,1,1.1 Introduction to Real Numbers,classification,"Classify natural numbers, whole numbers, integers, rational numbers, irrational numbers, and real numbers by stating the inclusion relationship among these sets.",natural numbers، whole numbers، integers، rational numbers، irrational numbers اور real numbers کو classify کریں اور ان sets کے inclusion relationships بیان کریں۔,Medium,2,ELITE,1
+q_9_math_ch1_sq_002,1,1.1 Introduction to Real Numbers,difference,Differentiate between rational and irrational numbers using their fractional and decimal representations.,fractional اور decimal representations کے لحاظ سے rational اور irrational numbers میں فرق بیان کریں۔,Easy,2,PRO,1
+q_9_math_ch1_sq_003,1,1.1 Introduction to Real Numbers,definition_example,"Define a rational number and give two examples, including zero.",rational number کی تعریف کریں اور zero سمیت دو examples دیں۔,Easy,2,ULTRA,1
+q_9_math_ch1_sq_004,1,1.1 Introduction to Real Numbers,explain_reason,Explain why zero is a rational number by writing it in the required fractional form.,zero کو required fractional form میں لکھ کر وضاحت کریں کہ یہ rational number کیوں ہے۔,Easy,2,PRO,1
+TOPIC_SEP,1,1.1 Decimal Representation of Real Numbers,topic_separator,,,,,,1
+q_9_math_ch1_sq_005,1,1.1 Decimal Representation of Real Numbers,compare_contrast,"Compare terminating, recurring, and non-terminating non-recurring decimals and state the number type represented by each.",terminating، recurring اور non-terminating non-recurring decimals کا موازنہ کریں اور ہر ایک سے represented number type بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,1.1 Recurring Decimals,topic_separator,,,,,,1
+q_9_math_ch1_sq_006,1,1.1 Recurring Decimals,numerical_short,Convert the recurring decimal into a rational number: 0.4̅,درج ذیل recurring decimal کو rational number میں convert کریں: 0.4̅,Medium,2,PRO,1
+q_9_math_ch1_sq_007,1,1.1 Recurring Decimals,numerical_short,"Convert the recurring decimal into a rational number, where 37 repeats: 0.37̅",درج ذیل recurring decimal کو rational number میں convert کریں، جہاں 37 repeat ہوتا ہے: 0.37̅,Hard,2,PRO,1
+TOPIC_SEP,1,1.1 Real Numbers on the Number Line,topic_separator,,,,,,1
+q_9_math_ch1_sq_008,1,1.1 Real Numbers on the Number Line,process_steps,State the geometrical steps used to locate √5 on the real-number line.,real-number line پر √5 locate کرنے کے geometrical steps بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,1.1 Properties of Equality,topic_separator,,,,,,1
+q_9_math_ch1_sq_009,1,1.1 Properties of Equality,list_state,"State the reflexive, symmetric, and transitive properties of equality for real numbers.",real numbers کے لیے equality کی reflexive، symmetric اور transitive properties بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,1.1 Properties of Real Numbers,topic_separator,,,,,,1
+q_9_math_ch1_sq_010,1,1.1 Properties of Real Numbers,law_principle,State the commutative and associative properties of addition and multiplication for real numbers.,real numbers کے لیے addition اور multiplication کی commutative اور associative properties بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,1.1 Distributive Property,topic_separator,,,,,,1
+q_9_math_ch1_sq_011,1,1.1 Distributive Property,numerical_short,"Verify the distributive property a(b + c) = ab + ac for the given values: a = 3/2, b = 5/3, c = 7/5","دی گئی values کے لیے distributive property verify کریں: a = 3/2, b = 5/3, c = 7/5",Hard,2,PRO,1
+TOPIC_SEP,1,1.1 Associative Property,topic_separator,,,,,,1
+q_9_math_ch1_sq_012,1,1.1 Associative Property,numerical_short,"Verify the associative property of addition for the given values: a = 4/3, b = 5/2, c = 7/4","دی گئی values کے لیے addition کی associative property verify کریں: a = 4/3, b = 5/2, c = 7/4",Hard,2,PRO,1
+TOPIC_SEP,1,1.1 Order Properties,topic_separator,,,,,,1
+q_9_math_ch1_sq_013,1,1.1 Order Properties,law_principle,State the trichotomy property of real numbers and mention its three mutually exclusive cases.,real numbers کی trichotomy property بیان کریں اور اس کے تین mutually exclusive cases لکھیں۔,Easy,2,PRO,1
+q_9_math_ch1_sq_014,1,1.1 Order Properties,cause_effect,Explain how multiplying both sides of an inequality by a negative real number affects the inequality sign.,وضاحت کریں کہ inequality کے دونوں sides کو negative real number سے multiply کرنے پر inequality sign کیسے affect ہوتا ہے۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,1.1 Rational Numbers Between Two Numbers,topic_separator,,,,,,1
+q_9_math_ch1_sq_015,1,1.1 Rational Numbers Between Two Numbers,numerical_short,Find two rational numbers lying between 4 and 5.,4 اور 5 کے درمیان واقع دو rational numbers معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,1.2 Laws of Indices,topic_separator,,,,,,1
+q_9_math_ch1_sq_016,1,1.2 Laws of Indices,list_state,State any four laws of indices used for simplifying radical and exponential expressions.,radical اور exponential expressions simplify کرنے کے لیے استعمال ہونے والے indices کے کوئی چار laws بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch1_sq_017,1,1.2 Laws of Indices,numerical_short,Simplify the expression: 2ˣ × 8ˣ = 64,درج ذیل expression سے x معلوم کریں: 2ˣ × 8ˣ = 64,Medium,2,PRO,1
+TOPIC_SEP,1,1.2 Radical Expressions,topic_separator,,,,,,1
+q_9_math_ch1_sq_018,1,1.2 Radical Expressions,definition_function,Define a radical expression and identify the index and radicand in ⁿ√a.,radical expression کی تعریف کریں اور ⁿ√a میں index اور radicand identify کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,1.2 Surds,topic_separator,,,,,,1
+q_9_math_ch1_sq_019,1,1.2 Surds,definition_example,Define a surd and give two examples that distinguish it from an exact radical.,surd کی تعریف کریں اور دو examples دیں جو اسے exact radical سے distinguish کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,1.2 Types of Surds,topic_separator,,,,,,1
+q_9_math_ch1_sq_020,1,1.2 Types of Surds,classification,"Classify surds as monomial, binomial, and conjugate surds, giving one symbolic example of each.",surds کو monomial، binomial اور conjugate surds میں classify کریں اور ہر ایک کی one symbolic example دیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,1.2 Conjugate Surds,topic_separator,,,,,,1
+q_9_math_ch1_sq_021,1,1.2 Conjugate Surds,explain_reason,Explain why the product of two conjugate binomial surds is rational.,وضاحت کریں کہ two conjugate binomial surds کا product rational کیوں ہوتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,1.2 Simplification of Surds,topic_separator,,,,,,1
+q_9_math_ch1_sq_022,1,1.2 Simplification of Surds,numerical_short,Simplify the expression: √75 + √27,درج ذیل expression simplify کریں: √75 + √27,Easy,2,PRO,1
+TOPIC_SEP,1,1.2 Rationalization,topic_separator,,,,,,1
+q_9_math_ch1_sq_023,1,1.2 Rationalization,process_steps,State the procedure for rationalizing a denominator containing a binomial surd.,binomial surd والے denominator کو rationalize کرنے کی procedure بیان کریں۔,Medium,2,ULTRA,1
+q_9_math_ch1_sq_024,1,1.2 Rationalization,numerical_short,Rationalize and simplify the expression: 3/(√5 + √2),درج ذیل expression کو rationalize اور simplify کریں: 3/(√5 + √2),Hard,2,PRO,1
+TOPIC_SEP,1,1.2 Radical Simplification,topic_separator,,,,,,1
+q_9_math_ch1_sq_025,1,1.2 Radical Simplification,numerical_short,Simplify the radical expression: ⁵√(x¹⁵y³⁵/z²⁰),درج ذیل radical expression simplify کریں: ⁵√(x¹⁵y³⁵/z²⁰),Hard,2,PRO,1
+q_9_math_ch1_sq_026,1,1.2 Laws of Indices,numerical_short,Simplify the expression using laws of indices: ∛((27)²ˣ),laws of indices استعمال کرتے ہوئے درج ذیل expression simplify کریں: ∛((27)²ˣ),Medium,2,PRO,1
+TOPIC_SEP,1,1.2 Surd Expressions,topic_separator,,,,,,1
+q_9_math_ch1_sq_027,1,1.2 Surd Expressions,numerical_short,Express the area of a rectangle in the form a + b√2 when its sides are: 2 + √18 m and 5 − 4/√2 m,rectangle کا area a + b√2 کی form میں express کریں، جب sides ہوں: 2 + √18 m and 5 − 4/√2 m,Hard,2,PRO,1
+TOPIC_SEP,1,1.3.1 Temperature Scales,topic_separator,,,,,,1
+q_9_math_ch1_sq_028,1,1.3.1 Temperature Scales,formula_relationship,"State the relationships used to convert temperature among Celsius, Fahrenheit, and Kelvin scales.",Celsius، Fahrenheit اور Kelvin scales کے درمیان temperature convert کرنے کے relationships بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch1_sq_029,1,1.3.1 Temperature Scales,numerical_short,Convert the temperature to Fahrenheit using the given relationship: C = 48°C,given relationship استعمال کرتے ہوئے temperature کو Fahrenheit میں convert کریں: C = 48°C,Medium,2,PRO,1
+q_9_math_ch1_sq_030,1,1.3.1 Temperature Scales,numerical_short,Convert the normal human-body temperature into Celsius and Kelvin scales: F = 98.6°F,normal human-body temperature کو Celsius اور Kelvin scales میں convert کریں: F = 98.6°F,Medium,2,ELITE,1
+TOPIC_SEP,1,1.3.2 Profit and Loss,topic_separator,,,,,,1
+q_9_math_ch1_sq_031,1,1.3.2 Profit and Loss,definition_formula,Define profit and loss and state the formulas used to calculate their percentages.,profit اور loss کی تعریف کریں اور ان کے percentages calculate کرنے کے formulas بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch1_sq_032,1,1.3.2 Profit and Loss,numerical_short,"Calculate the profit percentage for the given transaction: CP = Rs 6590, SP = Rs 6850","given transaction کے لیے profit percentage calculate کریں: CP = Rs 6590, SP = Rs 6850",Medium,2,ELITE,1
+q_9_math_ch1_sq_033,1,1.3.2 Profit and Loss,numerical_short,"Calculate the loss percentage for the given transaction: CP = Rs 850, SP = Rs 720","given transaction کے لیے loss percentage calculate کریں: CP = Rs 850, SP = Rs 720",Medium,2,ELITE,1
+q_9_math_ch1_sq_034,1,1.3.2 Profit and Loss,numerical_short,Find the selling price required to obtain a 15% profit when the cost price is Rs 1520.,15% profit حاصل کرنے کے لیے selling price معلوم کریں، جب cost price ہو: Rs 1520,Medium,2,PRO,1
+TOPIC_SEP,1,1.3.2 Ratio and Distribution,topic_separator,,,,,,1
+q_9_math_ch1_sq_035,1,1.3.2 Ratio and Distribution,numerical_short,"Distribute a total profit of Rs 450,000 among three partners whose investments are in the ratio 4:7:14.","total profit Rs 450,000 کو three partners میں distribute کریں، جن کی investments کا ratio ہے: 4:7:14",Hard,2,ELITE,1
+TOPIC_SEP,1,1.3.2 Simple Profit,topic_separator,,,,,,1
+q_9_math_ch1_sq_036,1,1.3.2 Simple Profit,definition_formula,"Define simple profit and state the relationship among principal, rate, time, and profit.",simple profit کی تعریف کریں اور principal، rate، time اور profit کے درمیان relationship بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch1_sq_037,1,1.3.2 Simple Profit,numerical_short,"Find the rate of profit for the given data: principal = Rs 6400, time = 12 years, simple profit = Rs 3840","given data سے rate of profit معلوم کریں: principal = Rs 6400, time = 12 years, simple profit = Rs 3840",Medium,2,ELITE,1
+TOPIC_SEP,1,1.3 Applications of Real Numbers,topic_separator,,,,,,1
+q_9_math_ch1_sq_038,1,1.3 Applications of Real Numbers,numerical_short,Find three consecutive integers whose sum is 42.,وہ three consecutive integers معلوم کریں جن کا sum 42 ہے۔,Easy,2,PRO,1
+q_9_math_ch1_sq_039,1,1.3 Applications of Real Numbers,numerical_short,Find two numbers whose sum is 68 and difference is 22.,وہ two numbers معلوم کریں جن کا sum 68 اور difference 22 ہے۔,Easy,2,PRO,1
+q_9_math_ch1_sq_040,1,1.3 Applications of Real Numbers,numerical_short,"A total of 96 balls is divided into two buckets, and one bucket contains 28 more balls than the other. Find the number of balls in each bucket.",96 balls کو two buckets میں divide کیا گیا ہے اور one bucket میں other سے 28 balls زیادہ ہیں۔ each bucket میں balls کی number معلوم کریں۔,Hard,2,PRO,1

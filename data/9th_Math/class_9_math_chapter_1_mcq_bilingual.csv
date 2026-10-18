@@ -1,0 +1,66 @@
+﻿question_hash,active,topic,bloom_level,question,urdu_translation,A,B,C,D,correct_answer,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,1.1 Real Numbers,Topic,,,,,,,,,,,1
+q_9_math_ch1_001,1,1.1 Real Numbers,Remember,The set of real numbers is the union of which two sets?,real numbers کا set کن two sets کا union ہے؟,Natural and whole numbers / natural اور whole numbers,Rational and irrational numbers / rational اور irrational numbers,Prime and composite numbers / prime اور composite numbers,Even and odd numbers / even اور odd numbers,B | Rational and irrational numbers / rational اور irrational numbers,Easy,1,PRO,1
+TOPIC_SEP,1,1.1 Rational Numbers,Topic,,,,,,,,,,,1
+q_9_math_ch1_002,1,1.1 Rational Numbers,Remember,A rational number can be expressed in which form?,rational number کو کس form میں express کیا جا سکتا ہے؟,"p/q, where q = 0","p/q, where p,q ∈ Z and q ≠ 0",√p only,π/q only,"B | p/q, where p,q ∈ Z and q ≠ 0",Easy,1,PRO,1
+TOPIC_SEP,1,1.1 Decimal Representation,Topic,,,,,,,,,,,1
+q_9_math_ch1_003,1,1.1 Decimal Representation,Understand,Which decimal form always represents a rational number?,کون سی decimal form ہمیشہ rational number represent کرتی ہے؟,Non-terminating non-recurring decimal / non-terminating non-recurring decimal,Only an irrational radical / صرف irrational radical,Terminating or recurring decimal / terminating یا recurring decimal,A decimal with no digits / بغیر digits والی decimal,C | Terminating or recurring decimal / terminating یا recurring decimal,Easy,1,PRO,1
+TOPIC_SEP,1,1.1 Irrational Numbers,Topic,,,,,,,,,,,1
+q_9_math_ch1_004,1,1.1 Irrational Numbers,Apply,Which number is irrational?,کون سا number irrational ہے؟,√7,15/4,0.6̅,2.353535,A | √7,Easy,1,PRO,1
+TOPIC_SEP,1,1.1 Rational and Irrational Numbers,Topic,,,,,,,,,,,1
+q_9_math_ch1_005,1,1.1 Rational and Irrational Numbers,Apply,What is the nature of (2 − √2)(2 + √2)?,(2 − √2)(2 + √2) کی nature کیا ہے؟,Irrational / irrational,Rational / rational,Non-real / non-real,Undefined / undefined,B | Rational / rational,Medium,1,PRO,1
+TOPIC_SEP,1,1.1 Recurring Decimals,Topic,,,,,,,,,,,1
+q_9_math_ch1_006,1,1.1 Recurring Decimals,Apply,The recurring decimal 0.4̅ is equal to:,recurring decimal 0.4̅ کس کے equal ہے؟,2/5,4/9,4/10,9/4,B | 4/9,Hard,1,PRO,1
+q_9_math_ch1_007,1,1.1 Recurring Decimals,Apply,"The recurring decimal 0.37̅, where 37 repeats, is equal to:",recurring decimal 0.37̅، جہاں 37 repeat ہوتا ہے، کس کے equal ہے؟,37/99,37/100,3/7,99/37,A | 37/99,Hard,1,PRO,1
+TOPIC_SEP,1,1.1 Number Line,Topic,,,,,,,,,,,1
+q_9_math_ch1_008,1,1.1 Number Line,Understand,Which construction theorem is used to locate √5 on a number line?,√5 کو number line پر locate کرنے کے لیے کون سا theorem use ہوتا ہے؟,Remainder theorem / remainder theorem,Pythagoras theorem / Pythagoras theorem,Factor theorem / factor theorem,De Morgan's law / De Morgan's law,B | Pythagoras theorem / Pythagoras theorem,Medium,1,PRO,1
+TOPIC_SEP,1,1.1 Properties of Real Numbers,Topic,,,,,,,,,,,1
+q_9_math_ch1_009,1,1.1 Properties of Real Numbers,Remember,Which property is shown by a + b = b + a?,a + b = b + a کون سی property show کرتی ہے؟,Commutative property of addition / addition کی commutative property,Associative property of addition / addition کی associative property,Additive identity / additive identity,Distributive property / distributive property,A | Commutative property of addition / addition کی commutative property,Easy,1,PRO,1
+q_9_math_ch1_010,1,1.1 Properties of Real Numbers,Remember,What is the additive identity in real numbers?,real numbers میں additive identity کیا ہے؟,1,−1,a,0,D | 0,Easy,1,PRO,1
+q_9_math_ch1_011,1,1.1 Properties of Real Numbers,Remember,What is the multiplicative identity in real numbers?,real numbers میں multiplicative identity کیا ہے؟,0,−1,1,a,C | 1,Easy,1,PRO,1
+q_9_math_ch1_012,1,1.1 Properties of Real Numbers,Understand,Which real number has no multiplicative inverse?,کون سا real number multiplicative inverse نہیں رکھتا؟,1,−1,0,2,C | 0,Easy,1,PRO,1
+TOPIC_SEP,1,1.1 Properties of Equality,Topic,,,,,,,,,,,1
+q_9_math_ch1_013,1,1.1 Properties of Equality,Remember,"If a = b, then b = a is called the:",اگر a = b ہو تو b = a کو کیا کہتے ہیں؟,Reflexive property / reflexive property,Symmetric property / symmetric property,Transitive property / transitive property,Cancellation property / cancellation property,B | Symmetric property / symmetric property,Medium,1,PRO,1
+TOPIC_SEP,1,1.1 Order Properties,Topic,,,,,,,,,,,1
+q_9_math_ch1_014,1,1.1 Order Properties,Understand,"If a < b and c < 0, then which statement is correct?",اگر a < b اور c < 0 ہو تو کون سا statement correct ہے؟,ac < bc,ac > bc,ac = bc,a + c > b + c,B | ac > bc,Medium,1,PRO,1
+q_9_math_ch1_015,1,1.1 Order Properties,Analyze,"If 0 < a < b, how are their reciprocals ordered?",اگر 0 < a < b ہو تو ان کے reciprocals کی order کیا ہوگی؟,1/a < 1/b,1/a = 1/b,1/a = b,1/a > 1/b,D | 1/a > 1/b,Hard,1,PRO,1
+TOPIC_SEP,1,1.1 Rational Numbers Between Two Numbers,Topic,,,,,,,,,,,1
+q_9_math_ch1_016,1,1.1 Rational Numbers Between Two Numbers,Apply,Which number lies between 3 and 4?,کون سا number 3 اور 4 کے درمیان ہے؟,7/2,5/2,9/2,2,A | 7/2,Medium,1,PRO,1
+TOPIC_SEP,1,1.2 Radical Expressions,Topic,,,,,,,,,,,1
+q_9_math_ch1_017,1,1.2 Radical Expressions,Remember,"In ⁿ√a, the number n is called the:",ⁿ√a میں n کو کیا کہتے ہیں؟,Radicand / radicand,Coefficient / coefficient,Exponent of a only / صرف a کا exponent,Index of the radical / radical کا index,D | Index of the radical / radical کا index,Easy,1,PRO,1
+TOPIC_SEP,1,1.2 Laws of Indices,Topic,,,,,,,,,,,1
+q_9_math_ch1_018,1,1.2 Laws of Indices,Apply,Simplify aᵐ × aⁿ.,aᵐ × aⁿ کو simplify کریں۔,aᵐ⁺ⁿ,aᵐⁿ,aᵐ⁻ⁿ,2aᵐ⁺ⁿ,A | aᵐ⁺ⁿ,Easy,1,PRO,1
+q_9_math_ch1_019,1,1.2 Laws of Indices,Apply,Simplify (aᵐ)ⁿ.,(aᵐ)ⁿ کو simplify کریں۔,aᵐ⁺ⁿ,aᵐ⁻ⁿ,aᵐ/ⁿ,aᵐⁿ,D | aᵐⁿ,Easy,1,PRO,1
+q_9_math_ch1_020,1,1.2 Laws of Indices,Apply,"For a ≠ 0, a⁰ equals:",a ≠ 0 کے لیے a⁰ کس کے equal ہے؟,1,0,a,−1,A | 1,Easy,1,PRO,1
+TOPIC_SEP,1,1.2 Surds,Topic,,,,,,,,,,,1
+q_9_math_ch1_021,1,1.2 Surds,Remember,Which expression is a surd?,کون سا expression surd ہے؟,√5,√9,√π,4,A | √5,Medium,1,PRO,1
+q_9_math_ch1_022,1,1.2 Surds,Understand,Which statement is correct?,کون سا statement correct ہے؟,Every irrational number is a surd / ہر irrational number surd ہے,Every surd is rational / ہر surd rational ہے,"Every surd is irrational, but every irrational number is not a surd / ہر surd irrational ہے، مگر ہر irrational number surd نہیں",No radical can be a surd / کوئی radical surd نہیں ہو سکتا,"C | Every surd is irrational, but every irrational number is not a surd / ہر surd irrational ہے، مگر ہر irrational number surd نہیں",Medium,1,PRO,1
+TOPIC_SEP,1,1.2 Types of Surds,Topic,,,,,,,,,,,1
+q_9_math_ch1_023,1,1.2 Types of Surds,Remember,The expressions √a + √b and √a − √b are called:,√a + √b اور √a − √b کو کیا کہتے ہیں؟,Like terms / like terms,Monomial surds / monomial surds,Perfect squares / perfect squares,Conjugate surds / conjugate surds,D | Conjugate surds / conjugate surds,Medium,1,PRO,1
+TOPIC_SEP,1,1.2 Conjugate Surds,Topic,,,,,,,,,,,1
+q_9_math_ch1_024,1,1.2 Conjugate Surds,Understand,The product of two conjugate surds is generally:,two conjugate surds کا product generally کیا ہوتا ہے؟,Irrational / irrational,Undefined / undefined,Always zero / ہمیشہ zero,Rational / rational,D | Rational / rational,Medium,1,PRO,1
+TOPIC_SEP,1,1.2 Rationalization,Topic,,,,,,,,,,,1
+q_9_math_ch1_025,1,1.2 Rationalization,Apply,Which factor rationalizes the denominator √5 + √2?,denominator √5 + √2 کو کون سا factor rationalize کرتا ہے؟,√5 + √2,√10,√5 − √2,5 − 2,C | √5 − √2,Medium,1,PRO,1
+q_9_math_ch1_026,1,1.2 Rationalization,Apply,Rationalize 3/(√5 + √2).,3/(√5 + √2) کو rationalize کریں۔,√5 + √2,3√7,√5 − √2,(√5 − √2)/3,C | √5 − √2,Hard,1,PRO,1
+TOPIC_SEP,1,1.2 Radical Simplification,Topic,,,,,,,,,,,1
+q_9_math_ch1_027,1,1.2 Radical Simplification,Apply,Simplify ⁴√(16x⁴y⁸).,⁴√(16x⁴y⁸) کو simplify کریں۔,4xy²,2x²y,xy⁴,2xy²,D | 2xy²,Medium,1,PRO,1
+q_9_math_ch1_028,1,1.2 Laws of Indices,Apply,Simplify (64)⁻⁴⁄³.,(64)⁻⁴⁄³ کو simplify کریں۔,1/16,256,1/64,1/256,D | 1/256,Hard,1,PRO,1
+TOPIC_SEP,1,1.2 Surd Expressions,Topic,,,,,,,,,,,1
+q_9_math_ch1_029,1,1.2 Surd Expressions,Analyze,"If x = 3 + √8, which expression is its conjugate?",اگر x = 3 + √8 ہو تو اس کا conjugate کون سا expression ہے؟,−3 + √8,3 + √8,3 − √8,√8 − 3,C | 3 − √8,Medium,1,PRO,1
+q_9_math_ch1_030,1,1.2 Surd Expressions,Analyze,"If x = 3 + √8, then x + 1/x equals:",اگر x = 3 + √8 ہو تو x + 1/x کس کے equal ہے؟,3,2√8,6,9,C | 6,Hard,1,PRO,1
+TOPIC_SEP,1,1.3 Applications of Real Numbers,Topic,,,,,,,,,,,1
+q_9_math_ch1_031,1,1.3 Applications of Real Numbers,Apply,"A temperature is 30°C. Using F = (9/5)C + 32, its Fahrenheit value is:",temperature 30°C ہے۔ F = (9/5)C + 32 سے Fahrenheit value کیا ہوگی؟,54°F,86°F,62°F,90°F,B | 86°F,Medium,1,PRO,1
+q_9_math_ch1_032,1,1.3 Applications of Real Numbers,Apply,"A temperature is 77°F. Using C = (5/9)(F − 32), its Celsius value is:",temperature 77°F ہے۔ C = (5/9)(F − 32) سے Celsius value کیا ہوگی؟,15°C,35°C,25°C,45°C,C | 25°C,Medium,1,PRO,1
+TOPIC_SEP,1,1.3 Profit and Loss,Topic,,,,,,,,,,,1
+q_9_math_ch1_033,1,1.3 Profit and Loss,Remember,"If SP > CP, the difference SP − CP is called:",اگر SP > CP ہو تو SP − CP کو کیا کہتے ہیں؟,Loss / loss,Profit / profit,Discount / discount,Tax / tax,B | Profit / profit,Easy,1,PRO,1
+q_9_math_ch1_034,1,1.3 Profit and Loss,Apply,An item costs Rs 800 and is sold for Rs 920. The profit percentage is:,item کی cost Rs 800 اور selling price Rs 920 ہے۔ profit percentage کیا ہے؟,12%,20%,25%,15%,D | 15%,Medium,1,PRO,1
+TOPIC_SEP,1,1.3 Simple Profit,Topic,,,,,,,,,,,1
+q_9_math_ch1_035,1,1.3 Simple Profit,Remember,The formula for simple profit or simple interest is:,simple profit یا simple interest کا formula کیا ہے؟,P = Prt,P = P/r/t,P = P + r + t,P = Pr/t²,A | P = Prt,Medium,1,PRO,1
+q_9_math_ch1_036,1,1.3 Simple Profit,Apply,Find the simple profit on Rs 5000 at 8% per year for 2 years.,Rs 5000 پر 8% per year کے حساب سے 2 years کا simple profit معلوم کریں۔,Rs 400,Rs 800,Rs 1000,Rs 1600,B | Rs 800,Hard,1,PRO,1
+TOPIC_SEP,1,1.3 Markup and Tax,Topic,,,,,,,,,,,1
+q_9_math_ch1_037,1,1.3 Markup and Tax,Apply,An item marked Rs 2000 has a 10% markup. Its new price is:,Rs 2000 marked item پر 10% markup ہے۔ new price کیا ہوگی؟,Rs 2200,Rs 1800,Rs 2010,Rs 2400,A | Rs 2200,Easy,1,PRO,1
+TOPIC_SEP,1,1.3 Ratios,Topic,,,,,,,,,,,1
+q_9_math_ch1_038,1,1.3 Ratios,Apply,"If a class has 18 boys and 12 girls, the simplified ratio boys:girls is:",class میں 18 boys اور 12 girls ہیں۔ simplified ratio boys:girls کیا ہے؟,3:2,2:3,18:12,6:5,A | 3:2,Easy,1,PRO,1
+TOPIC_SEP,1,1.3 Real-Life Modelling,Topic,,,,,,,,,,,1
+q_9_math_ch1_039,1,1.3 Real-Life Modelling,Analyze,Which operation is used to find the midpoint temperature between −4°C and 10°C?,−4°C اور 10°C کے درمیان midpoint temperature find کرنے کے لیے کون سی operation use ہوتی ہے؟,Multiply the values / values کو multiply کرنا,Take each reciprocal / ہر value کا reciprocal لینا,Square both values / دونوں values کو square کرنا,Add the values and divide by 2 / values کو add کرکے 2 سے divide کرنا,D | Add the values and divide by 2 / values کو add کرکے 2 سے divide کرنا,Hard,1,PRO,1
+q_9_math_ch1_040,1,1.1 Properties of Real Numbers,Remember,Which property is shown by a(b + c) = ab + ac?,a(b + c) = ab + ac کون سی property show کرتی ہے؟,Commutative property / commutative property,Associative property / associative property,Distributive property / distributive property,Inverse property / inverse property,C | Distributive property / distributive property,Easy,1,PRO,1

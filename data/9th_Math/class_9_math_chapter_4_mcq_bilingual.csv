@@ -1,0 +1,69 @@
+﻿question_hash,active,topic,bloom_level,question,urdu_translation,A,B,C,D,correct_answer,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,4.1 Common Factors,Topic,,,,,,,,,,,1
+q_9_math_ch4_001,1,4.1 Common Factors,Remember,The greatest expression dividing two algebraic expressions without remainder is called:,two algebraic expressions کو remainder کے بغیر divide کرنے والی greatest expression کیا کہلاتی ہے؟,HCF / HCF,LCM / LCM,Square root / square root,Coefficient / coefficient,A | HCF / HCF,Easy,1,PRO,1
+TOPIC_SEP,1,4.1 Factorization,Topic,,,,,,,,,,,1
+q_9_math_ch4_002,1,4.1 Factorization,Apply,Factorize 12x + 36.,12x + 36 کو factorize کریں۔,12(3x + 1),x(12 + 36x),12(x + 3),6(x + 3),C | 12(x + 3),Easy,1,PRO,1
+q_9_math_ch4_003,1,4.1 Factorization,Apply,Factorize x² − 9.,x² − 9 کو factorize کریں۔,(x − 3)(x + 3),(x − 9)(x + 1),(x − 3)²,(x + 3)²,A | (x − 3)(x + 3),Easy,1,PRO,1
+TOPIC_SEP,1,4.1 Algebraic Identities,Topic,,,,,,,,,,,1
+q_9_math_ch4_004,1,4.1 Algebraic Identities,Remember,The identity for (a + b)² is:,(a + b)² کی identity کیا ہے؟,a² + b²,a² + 2ab + b²,a² − 2ab + b²,a² + ab + b²,B | a² + 2ab + b²,Easy,1,PRO,1
+q_9_math_ch4_005,1,4.1 Algebraic Identities,Remember,The identity for (a − b)² is:,(a − b)² کی identity کیا ہے؟,a² + 2ab + b²,a² − b²,a² − ab + b²,a² − 2ab + b²,D | a² − 2ab + b²,Easy,1,PRO,1
+TOPIC_SEP,1,4.1 Trinomial Factorization,Topic,,,,,,,,,,,1
+q_9_math_ch4_006,1,4.1 Trinomial Factorization,Apply,Factorize x² + 5x + 6.,x² + 5x + 6 کو factorize کریں۔,(x + 2)(x + 3),(x − 2)(x − 3),(x + 1)(x + 6),(x − 1)(x − 6),A | (x + 2)(x + 3),Easy,1,PRO,1
+TOPIC_SEP,1,4.2 Cubic Identities,Topic,,,,,,,,,,,1
+q_9_math_ch4_007,1,4.2 Cubic Identities,Remember,The factorization of a³ + b³ is:,a³ + b³ کی factorization کیا ہے؟,(a − b)(a² + ab + b²),(a + b)³,(a + b)(a² + ab + b²),(a + b)(a² − ab + b²),D | (a + b)(a² − ab + b²),Easy,1,PRO,1
+q_9_math_ch4_008,1,4.2 Cubic Identities,Remember,The factorization of a³ − b³ is:,a³ − b³ کی factorization کیا ہے؟,(a − b)(a² + ab + b²),(a + b)(a² − ab + b²),(a − b)³,(a − b)(a² − ab + b²),A | (a − b)(a² + ab + b²),Easy,1,PRO,1
+TOPIC_SEP,1,4.2 Perfect Cubes,Topic,,,,,,,,,,,1
+q_9_math_ch4_009,1,4.2 Perfect Cubes,Apply,Factorize 8x³ + 27.,8x³ + 27 کو factorize کریں۔,(2x − 3)(4x² + 6x + 9),(8x + 27)(x² + 1),(2x + 3)(4x² − 6x + 9),(2x + 3)³,C | (2x + 3)(4x² − 6x + 9),Easy,1,PRO,1
+TOPIC_SEP,1,4.3 HCF,Topic,,,,,,,,,,,1
+q_9_math_ch4_010,1,4.3 HCF,Apply,The HCF of 6x²y and 9xy² is:,6x²y اور 9xy² کا HCF کیا ہے؟,18x²y²,3xy,3x²y²,xy,B | 3xy,Easy,1,PRO,1
+TOPIC_SEP,1,4.3 LCM,Topic,,,,,,,,,,,1
+q_9_math_ch4_011,1,4.3 LCM,Apply,The LCM of 4x²y and 8x³y² is:,4x²y اور 8x³y² کا LCM کیا ہے؟,4x²y,32x⁵y³,2xy,8x³y²,D | 8x³y²,Easy,1,PRO,1
+TOPIC_SEP,1,4.3 HCF and LCM,Topic,,,,,,,,,,,1
+q_9_math_ch4_012,1,4.3 HCF and LCM,Remember,"For two polynomials p(x) and q(x), LCM × HCF equals:",two polynomials p(x) اور q(x) کے لیے LCM × HCF کس کے equal ہے؟,p(x)+q(x),p(x)−q(x),p(x)q(x),p(x)/q(x),C | p(x)q(x),Easy,1,PRO,1
+TOPIC_SEP,1,4.4 Square Root of Algebraic Expressions,Topic,,,,,,,,,,,1
+q_9_math_ch4_013,1,4.4 Square Root of Algebraic Expressions,Remember,The two methods stated for finding the square root of an algebraic expression are:,algebraic expression کا square root find کرنے کے two methods کون سے ہیں؟,Addition and subtraction methods / addition اور subtraction methods,Factorization and division methods / factorization اور division methods,Graph and table methods / graph اور table methods,Union and intersection methods / union اور intersection methods,B | Factorization and division methods / factorization اور division methods,Easy,1,PRO,1
+TOPIC_SEP,1,4.4 Square Root,Topic,,,,,,,,,,,1
+q_9_math_ch4_014,1,4.4 Square Root,Apply,The square root of x² − 6x + 9 is:,x² − 6x + 9 کا square root کیا ہے؟,±(x + 3),±(x − 3),x² − 3,±(x − 9),B | ±(x − 3),Easy,1,PRO,1
+TOPIC_SEP,1,4.2 Polynomial Degree,Topic,,,,,,,,,,,1
+q_9_math_ch4_015,1,4.2 Polynomial Degree,Remember,A cubic polynomial has degree:,cubic polynomial کی degree کیا ہوتی ہے؟,1,2,3,4,C | 3,Easy,1,PRO,1
+TOPIC_SEP,1,4.2 Factor Theorem Forms,Topic,,,,,,,,,,,1
+q_9_math_ch4_016,1,4.2 Factor Theorem Forms,Understand,Which expression is a perfect cube?,کون سا expression perfect cube ہے؟,x³ + x + 1,x² + 2x + 2,x³ + 3x² + 3x + 1,x³ + 2x² + 1,C | x³ + 3x² + 3x + 1,Easy,1,PRO,1
+q_9_math_ch4_017,1,4.1 Trinomial Factorization,Apply,Factorize 2x² + 7x + 3.,2x² + 7x + 3 کو factorize کریں۔,(2x + 1)(x + 3),(2x + 3)(x + 1),(2x − 1)(x − 3),(x + 7)(2x + 3),A | (2x + 1)(x + 3),Medium,1,PRO,1
+q_9_math_ch4_018,1,4.1 Trinomial Factorization,Apply,Factorize x² − 5x + 6.,x² − 5x + 6 کو factorize کریں۔,(x + 2)(x + 3),(x − 1)(x − 6),(x + 1)(x + 6),(x − 2)(x − 3),D | (x − 2)(x − 3),Medium,1,PRO,1
+TOPIC_SEP,1,4.2 Special Factorization,Topic,,,,,,,,,,,1
+q_9_math_ch4_019,1,4.2 Special Factorization,Apply,Factorize x⁴ + 4x² + 16.,x⁴ + 4x² + 16 کو factorize کریں۔,(x² − 2x + 4)(x² + 2x + 4),(x² + 4)²,(x² − 4)(x² + 4),(x − 2)²(x + 2)²,A | (x² − 2x + 4)(x² + 2x + 4),Medium,1,PRO,1
+q_9_math_ch4_020,1,4.2 Special Factorization,Apply,Factorize x⁴ − 14x² + 1.,x⁴ − 14x² + 1 کو factorize کریں۔,(x² − 7)²,(x² − 1)(x² + 1),(x² − 2x − 1)(x² + 2x − 1),(x² − 4x + 1)(x² + 4x + 1),D | (x² − 4x + 1)(x² + 4x + 1),Medium,1,PRO,1
+TOPIC_SEP,1,4.2 Product-Type Factorization,Topic,,,,,,,,,,,1
+q_9_math_ch4_021,1,4.2 Product-Type Factorization,Apply,Factorize (x+1)(x+2)(x+3)(x+4)+1.,(x+1)(x+2)(x+3)(x+4)+1 کو factorize کریں۔,(x² + 5x + 5)²,(x² + 5x + 4)²,(x+1)(x+4),(x² + 4x + 1)(x² + 6x + 1),A | (x² + 5x + 5)²,Medium,1,PRO,1
+TOPIC_SEP,1,4.2 Perfect Cube,Topic,,,,,,,,,,,1
+q_9_math_ch4_022,1,4.2 Perfect Cube,Apply,Factorize 8x³ + 60x² + 150x + 125.,8x³ + 60x² + 150x + 125 کو factorize کریں۔,(2x − 5)³,(x + 5)³,(8x + 5)³,(2x + 5)³,D | (2x + 5)³,Medium,1,PRO,1
+TOPIC_SEP,1,4.2 Difference of Cubes,Topic,,,,,,,,,,,1
+q_9_math_ch4_023,1,4.2 Difference of Cubes,Apply,Factorize x³ − 27y³.,x³ − 27y³ کو factorize کریں۔,(x − 3y)(x² + 3xy + 9y²),(x + 3y)(x² − 3xy + 9y²),(x − 3y)³,(x − 27y)(x² + y²),A | (x − 3y)(x² + 3xy + 9y²),Medium,1,PRO,1
+TOPIC_SEP,1,4.3 HCF by Factorization,Topic,,,,,,,,,,,1
+q_9_math_ch4_024,1,4.3 HCF by Factorization,Apply,Find the HCF of x² − 9 and x² + 6x + 9.,x² − 9 اور x² + 6x + 9 کا HCF معلوم کریں۔,x − 3,x + 3,x² − 9,1,B | x + 3,Medium,1,PRO,1
+TOPIC_SEP,1,4.3 LCM by Factorization,Topic,,,,,,,,,,,1
+q_9_math_ch4_025,1,4.3 LCM by Factorization,Apply,Find the LCM of x² − 1 and x² − 3x + 2.,x² − 1 اور x² − 3x + 2 کا LCM معلوم کریں۔,(x − 1),(x − 1)(x + 1)(x − 2),(x + 1)(x − 2),(x² − 1)(x² − 3x + 2),B | (x − 1)(x + 1)(x − 2),Medium,1,PRO,1
+q_9_math_ch4_026,1,4.3 HCF and LCM,Understand,"To find an LCM by prime factorization, we take:",prime factorization سے LCM find کرنے کے لیے ہم کیا لیتے ہیں؟,Only common factors with least powers / صرف common factors کی least powers,The sum of all factors / all factors کا sum,Each factor with the greatest required power / each factor کی greatest required power,Only numerical coefficients / صرف numerical coefficients,C | Each factor with the greatest required power / each factor کی greatest required power,Medium,1,PRO,1
+TOPIC_SEP,1,4.4 Square Root by Factorization,Topic,,,,,,,,,,,1
+q_9_math_ch4_027,1,4.4 Square Root by Factorization,Apply,Find the square root of 36a² + 84a + 49.,36a² + 84a + 49 کا square root معلوم کریں۔,±(6a − 7),±(6a + 7),±(3a + 7),36a + 49,B | ±(6a + 7),Medium,1,PRO,1
+q_9_math_ch4_028,1,4.4 Square Root,Apply,Find the square root of 64y² − 32y + 4.,64y² − 32y + 4 کا square root معلوم کریں۔,±(8y + 2),±(4y − 2),±(8y − 2),64y − 4,C | ±(8y − 2),Medium,1,PRO,1
+TOPIC_SEP,1,4.4 Real-World Factorization,Topic,,,,,,,,,,,1
+q_9_math_ch4_029,1,4.4 Real-World Factorization,Apply,"If R(x)=−x²+6x−8, the zero-return investment levels are:",اگر R(x)=−x²+6x−8 ہو تو zero-return investment levels کیا ہیں؟,x = 2 and x = 4,x = −2 and x = −4,x = 1 and x = 8,x = 3 only,A | x = 2 and x = 4,Medium,1,PRO,1
+q_9_math_ch4_030,1,4.4 Real-World Factorization,Apply,"If V(x)=2x³−6x²+4x, one zero of V is:",اگر V(x)=2x³−6x²+4x ہو تو V کا one zero کیا ہے؟,−1,3/2,0,4,C | 0,Medium,1,PRO,1
+TOPIC_SEP,1,4.3 Division Method,Topic,,,,,,,,,,,1
+q_9_math_ch4_031,1,4.3 Division Method,Understand,The division method for HCF of polynomials is based on repeatedly using the:,polynomials کے HCF کے division method کی basis کیا ہے؟,Sum as the next divisor / sum کو next divisor بنانا,Product as the next divisor / product کو next divisor بنانا,Remainder as the next divisor / remainder کو next divisor بنانا,Derivative as the next divisor / derivative کو next divisor بنانا,C | Remainder as the next divisor / remainder کو next divisor بنانا,Medium,1,PRO,1
+TOPIC_SEP,1,4.2 Conjugate Structure,Topic,,,,,,,,,,,1
+q_9_math_ch4_032,1,4.2 Conjugate Structure,Analyze,Why can a⁴ + 4b⁴ be factorized using a square adjustment?,a⁴ + 4b⁴ کو square adjustment سے factorize کیوں کیا جا سکتا ہے؟,It is already a perfect cube / یہ already perfect cube ہے,It has no variables / اس میں variables نہیں,Its degree is one / اس کی degree one ہے,It can be rewritten as a difference of two squares / اسے difference of two squares کے طور پر rewrite کیا جا سکتا ہے,D | It can be rewritten as a difference of two squares / اسے difference of two squares کے طور پر rewrite کیا جا سکتا ہے,Medium,1,PRO,1
+q_9_math_ch4_033,1,4.2 Product-Type Factorization,Analyze,Factorize (x²+5x+4)(x²+5x+6)−3.,(x²+5x+4)(x²+5x+6)−3 کو factorize کریں۔,(x² + 5x + 1)(x² + 5x + 9),(x² + 5x + 3)(x² + 5x + 7),(x² + 5x + 4)(x² + 5x + 3),(x² + 5x)² + 21,B | (x² + 5x + 3)(x² + 5x + 7),Hard,1,PRO,1
+q_9_math_ch4_034,1,4.2 Product-Type Factorization,Analyze,Factorize (x+2)(x+3)(x+4)(x+5)−15.,(x+2)(x+3)(x+4)(x+5)−15 کو factorize کریں۔,(x² + 7x + 5)(x² + 7x + 17),(x² + 7x + 7)(x² + 7x + 15),(x² + 5x + 7)(x² + 9x + 15),(x+2)(x+5),B | (x² + 7x + 7)(x² + 7x + 15),Hard,1,PRO,1
+q_9_math_ch4_035,1,4.2 Special Factorization,Analyze,Factorize x⁴ + 64.,x⁴ + 64 کو factorize کریں۔,(x² + 8)²,(x² − 8)(x² + 8),(x − 4)²(x + 4)²,(x² − 4x + 8)(x² + 4x + 8),D | (x² − 4x + 8)(x² + 4x + 8),Hard,1,PRO,1
+TOPIC_SEP,1,4.3 HCF-LCM Relationship,Topic,,,,,,,,,,,1
+q_9_math_ch4_036,1,4.3 HCF-LCM Relationship,Analyze,"If HCF=x−7, LCM=x³−10x²+11x+70, and p(x)=x²−12x+35, then q(x) is:",اگر HCF=x−7، LCM=x³−10x²+11x+70، اور p(x)=x²−12x+35 ہو تو q(x) کیا ہے؟,x² + 5x − 14,x² − 12x + 35,x² − 7x + 2,x² − 5x − 14,D | x² − 5x − 14,Hard,1,PRO,1
+TOPIC_SEP,1,4.4 Square Root by Division,Topic,,,,,,,,,,,1
+q_9_math_ch4_037,1,4.4 Square Root by Division,Analyze,The square root of x⁴−12x³+42x²−36x+9 is:,x⁴−12x³+42x²−36x+9 کا square root کیا ہے؟,±(x² − 6x + 3),±(x² + 6x + 3),±(x² − 3x + 6),x² − 12x + 9,A | ±(x² − 6x + 3),Hard,1,PRO,1
+TOPIC_SEP,1,4.2 Surd Algebra,Topic,,,,,,,,,,,1
+q_9_math_ch4_038,1,4.2 Surd Algebra,Analyze,"If x=3+√8, then x²+1/x² equals:",اگر x=3+√8 ہو تو x²+1/x² کس کے equal ہے؟,6,36,32,34,D | 34,Hard,1,PRO,1
+TOPIC_SEP,1,4.2 Rationalization Parameters,Topic,,,,,,,,,,,1
+q_9_math_ch4_039,1,4.2 Rationalization Parameters,Analyze,"If (8−3√2)/(4+3√2)=p+q√2, then p is:",اگر (8−3√2)/(4+3√2)=p+q√2 ہو تو p کیا ہے؟,−17,5,17,8,C | 17,Hard,1,PRO,1
+TOPIC_SEP,1,4.4 Optimization by Factorization,Topic,,,,,,,,,,,1
+q_9_math_ch4_040,1,4.4 Optimization by Factorization,Analyze,"For P(x)=−5x²+50x−120, the x-value at maximum profit is:",P(x)=−5x²+50x−120 کے لیے maximum profit پر x-value کیا ہے؟,4,5,6,10,B | 5,Hard,1,PRO,1

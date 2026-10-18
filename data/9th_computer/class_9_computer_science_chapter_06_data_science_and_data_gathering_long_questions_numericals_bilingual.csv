@@ -1,0 +1,20 @@
+﻿question_hash,active,topic,question_type,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+sep_9_cs_ch6_001,1,6.2 Data Types,Topic,topic_separator,,,,,,1
+q_9_cs_ch6_lq_001,1,6.2 Data Types,Long,compare,Explain the differences between qualitative and quantitative data with suitable examples.,qualitative اور quantitative data میں differences کو suitable examples کے ساتھ explain کریں۔,Medium,5,PRO,1
+sep_9_cs_ch6_002,1,6.3.1 Methods and Tools of Data Collection,Topic,topic_separator,,,,,,1
+q_9_cs_ch6_lq_002,1,6.3.1 Methods and Tools of Data Collection,Long,process_procedure,Describe the process of conducting a survey to gather data about students’ favourite extracurricular activities.,students کی favourite extracurricular activities کے بارے میں data gather کرنے کے لیے survey conduct کرنے کا process بیان کریں۔,Medium,5,PRO,1
+q_9_cs_ch6_lq_003,1,6.3.1 Methods and Tools of Data Collection,Long,advantages_limitations,Analyse the benefits and challenges of using digital tools such as Google Forms for data collection.,data collection کے لیے Google Forms جیسے digital tools کے benefits اور challenges کا analysis کریں۔,Hard,5,PRO,1
+sep_9_cs_ch6_003,1,6.3 Organising and Analysing Data,Topic,topic_separator,,,,,,1
+q_9_cs_ch6_lq_004,1,6.3 Organising and Analysing Data,Long,application_case,Explain the role of tables and charts in data analysis and provide suitable examples.,data analysis میں tables اور charts کا role explain کریں اور suitable examples دیں۔,Medium,5,PRO,1
+sep_9_cs_ch6_004,1,6.5 Data Visualization,Topic,topic_separator,,,,,,1
+q_9_cs_ch6_lq_005,1,6.5 Data Visualization,Long,discuss,Discuss the importance and benefits of data visualization.,data visualization کی importance اور benefits پر بحث کریں۔,Medium,5,PRO,1
+q_9_cs_ch6_lq_006,1,6.5 Data Visualization,Long,application_case,"Explain why businesses and decision-makers use charts, graphs, and dashboards for understanding data and supporting decisions.",وضاحت کریں کہ businesses اور decision-makers data سمجھنے اور decisions support کرنے کے لیے charts، graphs اور dashboards کیوں use کرتے ہیں۔,Hard,5,PRO,1
+sep_9_cs_ch6_005,1,6.4 Structured and Unstructured Data,Topic,topic_separator,,,,,,1
+q_9_cs_ch6_lq_007,1,6.4 Structured and Unstructured Data,Long,compare,"Compare structured and unstructured data in terms of format, organisation, examples, and ease of analysis.",structured اور unstructured data کا format، organisation، examples اور ease of analysis کے لحاظ سے موازنہ کریں۔,Medium,5,ULTRA,1
+sep_9_cs_ch6_006,1,6.6 Data Pre-Processing and Analysis,Topic,topic_separator,,,,,,1
+q_9_cs_ch6_lq_008,1,6.6 Data Pre-Processing and Analysis,Long,process_procedure,"Explain data pre-processing, including data-quality checking, validation, cleaning, handling missing data, outliers, and bias.",data pre-processing کی وضاحت کریں، جس میں data-quality checking، validation، cleaning، missing data، outliers اور bias کو handle کرنا شامل ہو۔,Hard,5,ULTRA,1
+q_9_cs_ch6_lq_009,1,6.6 Data Pre-Processing and Analysis,Long,compare,Compare qualitative and quantitative analysis and explain the type of data handled by each.,qualitative اور quantitative analysis کا موازنہ کریں اور ہر ایک کے handled data کی type بیان کریں۔,Medium,5,ULTRA,1
+sep_9_cs_ch6_007,1,6.7 Cloud Storage and Data Backups,Topic,topic_separator,,,,,,1
+q_9_cs_ch6_lq_010,1,6.7 Cloud Storage and Data Backups,Long,discuss,"Explain cloud storage, data backups, remote access, and version control. Discuss their importance in protecting and recovering data.",cloud storage، data backups، remote access اور version control کی وضاحت کریں۔ data protection اور recovery میں ان کی importance پر بحث کریں۔,Hard,5,ULTRA,1
+sep_9_cs_ch6_008,1,6.8 Introduction to Data Science,Topic,topic_separator,,,,,,1
+q_9_cs_ch6_lq_011,1,6.8 Introduction to Data Science,Long,describe,"Explain data science and data analytics. Describe the roles of computer skills, mathematics, business knowledge, Python, and SQL.",data science اور data analytics کی وضاحت کریں۔ computer skills، mathematics، business knowledge، Python اور SQL کے roles بیان کریں۔,Hard,5,ULTRA,1

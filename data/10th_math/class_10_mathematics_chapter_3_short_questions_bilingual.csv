@@ -1,0 +1,64 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,3.1 Matrices,topic_separator,,,,,,1
+q_10_math_ch3_sq_001,1,3.1 Matrices,definition_example,Define a matrix and give one practical example of information that can be arranged in matrix form.,matrix کی تعریف کریں اور information کی ایک practical example دیں جسے matrix form میں arrange کیا جا سکتا ہو۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.1.1 Rows and Columns of a Matrix,topic_separator,,,,,,1
+q_10_math_ch3_sq_002,1,3.1.1 Rows and Columns of a Matrix,compare_contrast,Differentiate between a row and a column of a matrix.,matrix کی row اور column میں فرق بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,3.1.2 Elements or Entries,topic_separator,,,,,,1
+q_10_math_ch3_sq_003,1,3.1.2 Elements or Entries,definition_example,"Define an element of a matrix and identify the entries of A = [[1, 2, 3], [4, 5, 6]].","matrix کے element کی تعریف کریں اور درج ذیل matrix کی entries identify کریں: A = [[1, 2, 3], [4, 5, 6]]",Medium,2,ULTRA,1
+TOPIC_SEP,1,3.1.3 Order or Size of a Matrix,topic_separator,,,,,,1
+q_10_math_ch3_sq_004,1,3.1.3 Order or Size of a Matrix,definition_formula,Define the order of a matrix and state how it is written when a matrix has m rows and n columns.,matrix کے order کی تعریف کریں اور بیان کریں کہ m rows اور n columns والی matrix کا order کیسے لکھا جاتا ہے۔,Medium,2,ULTRA,1
+q_10_math_ch3_sq_005,1,3.1.3 Order or Size of a Matrix,numerical_short,"Determine the order of each matrix: A = [[3, 5]] and B = [[1], [2], [3]].","درج ذیل matrices کے orders معلوم کریں: A = [[3, 5]], B = [[1], [2], [3]]",Easy,2,PRO,1
+TOPIC_SEP,1,3.1.4 Equal Matrices,topic_separator,,,,,,1
+q_10_math_ch3_sq_006,1,3.1.4 Equal Matrices,law_principle,State the conditions under which two matrices are equal.,وہ conditions بیان کریں جن میں two matrices equal ہوتی ہیں۔,Medium,2,ULTRA,1
+q_10_math_ch3_sq_007,1,3.1.4 Equal Matrices,numerical_short,"Determine x and y if the matrices are equal: [[2x + 1, 4], [7, 5]] = [[9, 4], [7, y]].","اگر درج ذیل matrices equal ہوں تو x اور y معلوم کریں: [[2x + 1, 4], [7, 5]] = [[9, 4], [7, y]]",Medium,2,PRO,1
+TOPIC_SEP,1,3.2 Types of Matrices,topic_separator,,,,,,1
+q_10_math_ch3_sq_008,1,3.2 Types of Matrices,classification,"Classify row, column, zero, square, and rectangular matrices by their defining characteristics.",row، column، zero، square اور rectangular matrices کو ان کی defining characteristics کی بنیاد پر classify کریں۔,Medium,2,ULTRA,1
+q_10_math_ch3_sq_009,1,3.2 Types of Matrices,compare_contrast,Differentiate between a diagonal matrix and a scalar matrix.,diagonal matrix اور scalar matrix میں فرق بیان کریں۔,Medium,2,ULTRA,1
+q_10_math_ch3_sq_010,1,3.2 Types of Matrices,compare_contrast,Differentiate between a scalar matrix and an identity matrix.,scalar matrix اور identity matrix میں فرق بیان کریں۔,Medium,2,ULTRA,1
+q_10_math_ch3_sq_011,1,3.2 Types of Matrices,definition_formula,Define the transpose of a matrix and state how rows and columns are interchanged.,matrix کے transpose کی تعریف کریں اور بیان کریں کہ rows اور columns کیسے interchange ہوتے ہیں۔,Medium,2,ULTRA,1
+q_10_math_ch3_sq_012,1,3.2 Types of Matrices,compare_contrast,Differentiate between symmetric and skew-symmetric matrices.,symmetric اور skew-symmetric matrices میں فرق بیان کریں۔,Medium,2,ULTRA,1
+q_10_math_ch3_sq_013,1,3.2 Types of Matrices,numerical_short,"Identify the types of the following matrices: [[1, 0], [0, 1]] and [[0, 0], [0, 0]].","درج ذیل matrices کی types identify کریں: [[1, 0], [0, 1]], [[0, 0], [0, 0]]",Easy,2,PRO,1
+q_10_math_ch3_sq_014,1,3.2 Types of Matrices,numerical_short,"Find the transpose of the matrix: A = [[2, 3], [4, 5], [6, 7]].","درج ذیل matrix کا transpose معلوم کریں: A = [[2, 3], [4, 5], [6, 7]]",Easy,2,PRO,1
+q_10_math_ch3_sq_015,1,3.2 Types of Matrices,numerical_short,"Find the negative of the matrix: A = [[−3, 0], [5, 6]].","درج ذیل matrix کا negative معلوم کریں: A = [[−3, 0], [5, 6]]",Easy,2,PRO,1
+TOPIC_SEP,1,3.3 Algebraic Operations on Matrices,topic_separator,,,,,,1
+q_10_math_ch3_sq_016,1,3.3 Algebraic Operations on Matrices,list_state,Enlist the basic algebraic operations defined for matrices and state which familiar arithmetic operation is not defined directly.,matrices کے لیے defined basic algebraic operations enlist کریں اور وہ familiar arithmetic operation بیان کریں جو directly defined نہیں ہے۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,3.3.1 Multiplication of a Matrix by a Scalar,topic_separator,,,,,,1
+q_10_math_ch3_sq_017,1,3.3.1 Multiplication of a Matrix by a Scalar,definition_formula,Define scalar multiplication of a matrix and state how it affects each element.,matrix کی scalar multiplication کی تعریف کریں اور بیان کریں کہ یہ ہر element پر کیسے اثر انداز ہوتی ہے۔,Medium,2,ULTRA,1
+q_10_math_ch3_sq_018,1,3.3.1 Multiplication of a Matrix by a Scalar,numerical_short,"For A = [[2, −1], [3, 4]], calculate −3A.","درج ذیل matrix کے لیے −3A calculate کریں: A = [[2, −1], [3, 4]]",Easy,2,PRO,1
+TOPIC_SEP,1,3.3.2 Addition of Matrices,topic_separator,,,,,,1
+q_10_math_ch3_sq_019,1,3.3.2 Addition of Matrices,law_principle,State the condition required for two matrices to be conformable for addition.,two matrices کے addition کے لیے conformable ہونے کی required condition بیان کریں۔,Medium,2,ULTRA,1
+q_10_math_ch3_sq_020,1,3.3.2 Addition of Matrices,numerical_short,"Add the matrices: A = [[5, 7], [−2, 3]] and B = [[3, −1], [4, 2]].","درج ذیل matrices کو add کریں: A = [[5, 7], [−2, 3]], B = [[3, −1], [4, 2]]",Easy,2,PRO,1
+TOPIC_SEP,1,3.3.3 Subtraction of Matrices,topic_separator,,,,,,1
+q_10_math_ch3_sq_021,1,3.3.3 Subtraction of Matrices,numerical_short,"Find A − B for A = [[5, 9], [4, 8]] and B = [[3, 6], [2, 1]].","درج ذیل matrices کے لیے A − B معلوم کریں: A = [[5, 9], [4, 8]], B = [[3, 6], [2, 1]]",Easy,2,PRO,1
+TOPIC_SEP,1,3.3.4 Commutative and Associative Laws of Addition of Matrices,topic_separator,,,,,,1
+q_10_math_ch3_sq_022,1,3.3.4 Commutative and Associative Laws of Addition of Matrices,law_principle,State the commutative and associative laws of matrix addition.,matrix addition کے commutative اور associative laws بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.3.5 Additive Identity of a Matrix,topic_separator,,,,,,1
+q_10_math_ch3_sq_023,1,3.3.5 Additive Identity of a Matrix,definition_function,Define the additive identity matrix and state its effect when added to a matrix.,additive identity matrix کی تعریف کریں اور matrix میں add کرنے پر اس کا effect بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.3.6 Additive Inverse of a Matrix,topic_separator,,,,,,1
+q_10_math_ch3_sq_024,1,3.3.6 Additive Inverse of a Matrix,definition_formula,Define the additive inverse of a matrix and write the relation that verifies it.,matrix کے additive inverse کی تعریف کریں اور اسے verify کرنے والا relation لکھیں۔,Easy,2,ULTRA,1
+q_10_math_ch3_sq_025,1,3.3 Algebraic Operations on Matrices,numerical_short,"For the same matrices X, Y, and Z, calculate X + 2Y + 3Z.","درج ذیل matrices کے لیے X + 2Y + 3Z calculate کریں: X = [[1, −1], [−2, 2]], Y = [[1, 2], [3, 4]], Z = [[3, 0], [0, −2]]",Hard,2,PRO,1
+TOPIC_SEP,1,3.4 Multiplication of Matrices,topic_separator,,,,,,1
+q_10_math_ch3_sq_026,1,3.4 Multiplication of Matrices,law_principle,State the condition under which the product AB of two matrices is defined and write the order of the product.,وہ condition بیان کریں جس میں two matrices کا product AB defined ہوتا ہے اور product کا order لکھیں۔,Medium,2,ULTRA,1
+q_10_math_ch3_sq_027,1,3.4 Multiplication of Matrices,process_steps,Explain the row-by-column rule used to multiply two matrices.,two matrices کو multiply کرنے کے لیے استعمال ہونے والا row-by-column rule explain کریں۔,Medium,2,ULTRA,1
+q_10_math_ch3_sq_028,1,3.4 Multiplication of Matrices,numerical_short,"Find AB for A = [[1, 2], [−1, 0]] and B = [[3, 2], [1, −1]].","درج ذیل matrices کے لیے AB معلوم کریں: A = [[1, 2], [−1, 0]], B = [[3, 2], [1, −1]]",Hard,2,PRO,1
+TOPIC_SEP,1,3.4.1 Commutative Law of Multiplication of Matrices,topic_separator,,,,,,1
+q_10_math_ch3_sq_029,1,3.4.1 Commutative Law of Multiplication of Matrices,explain_reason,Explain why matrix multiplication is not commutative in general.,وضاحت کریں کہ matrix multiplication عام طور پر commutative کیوں نہیں ہوتی۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,3.4.2 Associative Law of Multiplication of Matrices,topic_separator,,,,,,1
+q_10_math_ch3_sq_030,1,3.4.2 Associative Law of Multiplication of Matrices,law_principle,State the associative law of matrix multiplication.,matrix multiplication کا associative law بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.4.3 Distributive Laws of Multiplication Over Addition and Subtraction,topic_separator,,,,,,1
+q_10_math_ch3_sq_031,1,3.4.3 Distributive Laws of Multiplication Over Addition and Subtraction,law_principle,State the left distributive law of matrix multiplication over addition and subtraction.,addition اور subtraction پر matrix multiplication کا left distributive law بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,3.4.4 Multiplicative Identity of a Matrix,topic_separator,,,,,,1
+q_10_math_ch3_sq_032,1,3.4.4 Multiplicative Identity of a Matrix,definition_function,Define the multiplicative identity matrix and state its effect on multiplication.,multiplicative identity matrix کی تعریف کریں اور multiplication میں اس کا effect بیان کریں۔,Easy,2,ULTRA,1
+q_10_math_ch3_sq_033,1,3.4 Multiplication of Matrices,numerical_short,"Determine whether both AB and BA are possible for A = [[2, 0], [5, −3]] and B = [[−2], [1]], and calculate the possible product.","درج ذیل matrices کے لیے determine کریں کہ AB اور BA دونوں possible ہیں یا نہیں، اور possible product calculate کریں: A = [[2, 0], [5, −3]], B = [[−2], [1]]",Hard,2,PRO,1
+TOPIC_SEP,1,3.5.1 Determinant of a Matrix of Order 2,topic_separator,,,,,,1
+q_10_math_ch3_sq_034,1,3.5.1 Determinant of a Matrix of Order 2,definition_formula,Define the determinant of a 2 × 2 matrix and write its general formula.,2 × 2 matrix کے determinant کی تعریف کریں اور اس کا general formula لکھیں۔,Easy,2,ULTRA,1
+q_10_math_ch3_sq_035,1,3.5.1 Determinant of a Matrix of Order 2,numerical_short,"Calculate the determinant of the matrix: [[8, 2], [4, 3]].","درج ذیل matrix کا determinant calculate کریں: [[8, 2], [4, 3]]",Easy,2,PRO,1
+TOPIC_SEP,1,3.5.2 Singular and Non-Singular Matrices,topic_separator,,,,,,1
+q_10_math_ch3_sq_036,1,3.5.2 Singular and Non-Singular Matrices,compare_contrast,Differentiate between singular and non-singular square matrices using their determinants.,singular اور non-singular square matrices میں determinants کی بنیاد پر فرق بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,3.5.3 Adjoint of a Matrix,topic_separator,,,,,,1
+q_10_math_ch3_sq_037,1,3.5.3 Adjoint of a Matrix,definition_formula,Define the adjoint of a 2 × 2 matrix and state how it is formed.,2 × 2 matrix کے adjoint کی تعریف کریں اور بیان کریں کہ اسے کیسے form کیا جاتا ہے۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,3.5.4 Multiplicative Inverse of a Non-Singular Matrix,topic_separator,,,,,,1
+q_10_math_ch3_sq_038,1,3.5.4 Multiplicative Inverse of a Non-Singular Matrix,definition_formula,Define the multiplicative inverse of a non-singular square matrix and state the identity relation it satisfies.,non-singular square matrix کے multiplicative inverse کی تعریف کریں اور اس کا identity relation بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,3.5.5 Adjoint Method to Find Inverse of a Square Matrix,topic_separator,,,,,,1
+q_10_math_ch3_sq_039,1,3.5.5 Adjoint Method to Find Inverse of a Square Matrix,process_steps,Enlist the steps of the adjoint method for finding the inverse of a 2 × 2 matrix.,2 × 2 matrix کا inverse معلوم کرنے کے adjoint method کے steps enlist کریں۔,Hard,2,ULTRA,1
+q_10_math_ch3_sq_040,1,3.5.5 Adjoint Method to Find Inverse of a Square Matrix,numerical_short,"Find the inverse of the matrix by the adjoint method: A = [[8, 5], [4, 3]].","درج ذیل matrix کا inverse adjoint method سے معلوم کریں: A = [[8, 5], [4, 3]]",Hard,2,PRO,1

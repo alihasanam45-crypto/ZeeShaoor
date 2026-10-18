@@ -1,0 +1,24 @@
+﻿question_hash,active,topic,question_type,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+sep_9_cs_ch3_001,1,3.1 Network as a System,Topic,topic_separator,,,,,,1
+q_9_cs_ch3_lq_001,1,3.1 Network as a System,Long,discuss,"Discuss the objectives of computer networks, including resource sharing, data communication, and connectivity.",computer networks کے objectives پر بحث کریں، جن میں resource sharing، data communication اور connectivity شامل ہوں۔,Medium,5,PRO,1
+sep_9_cs_ch3_002,1,3.5 Transmission Modes,Topic,topic_separator,,,,,,1
+q_9_cs_ch3_lq_002,1,3.5 Transmission Modes,Numerical,calculate,"In a simplex communication system, data is transmitted at 500 bits per second (bps). Compute the transmission time for: (a) a 10-kilobit message, and (b) a 10-kilobyte message. Show complete working without including final answers in the question statement.",simplex communication system میں data 500 bits per second (bps) کی rate سے transmit ہوتا ہے۔ transmission time calculate کریں: (a) 10-kilobit message، اور (b) 10-kilobyte message۔ complete working دکھائیں اور سوال میں final answers شامل نہ کریں۔,Hard,4,PRO,1
+q_9_cs_ch3_lq_003,1,3.5 Transmission Modes,Long,compare,"Differentiate among simplex, half-duplex, and full-duplex transmission modes with suitable examples.",simplex، half-duplex اور full-duplex transmission modes میں suitable examples کے ساتھ فرق بیان کریں۔,Medium,5,ULTRA,1
+sep_9_cs_ch3_003,1,3.8 Network Protocols,Topic,topic_separator,,,,,,1
+q_9_cs_ch3_lq_004,1,3.8 Network Protocols,Long,classification,Explain the meaning of protocols in data communication and describe their different types and functions.,data communication میں protocols کا مطلب بیان کریں اور ان کی مختلف types اور functions کی وضاحت کریں۔,Medium,5,PRO,1
+sep_9_cs_ch3_004,1,3.12 Real-World Applications of Computer Networks,Topic,topic_separator,,,,,,1
+q_9_cs_ch3_lq_005,1,3.12 Real-World Applications of Computer Networks,Long,discuss,"Describe the real-world applications of computer networks in business, education, healthcare, and other supported fields.",business، education، healthcare اور دیگر supported fields میں computer networks کی real-world applications بیان کریں۔,Medium,5,PRO,1
+sep_9_cs_ch3_005,1,3.4 Network Topologies,Topic,topic_separator,,,,,,1
+q_9_cs_ch3_lq_006,1,3.4 Network Topologies,Long,diagram_based,"Explain any two network topologies with suitable labelled diagrams. Discuss their structure, working, advantages, and limitations.",کسی دو network topologies کی suitable labelled diagrams کے ساتھ وضاحت کریں۔ ان کی structure، working، advantages اور limitations بیان کریں۔,Hard,5,PRO,1
+sep_9_cs_ch3_006,1,3.6 The OSI Networking Model,Topic,topic_separator,,,,,,1
+q_9_cs_ch3_lq_007,1,3.6 The OSI Networking Model,Long,classification,Define the OSI networking model and explain any three of its layers with their major functions.,OSI networking model کی تعریف کریں اور اس کی کسی تین layers کو ان کے major functions کے ساتھ explain کریں۔,Medium,5,PRO,1
+sep_9_cs_ch3_007,1,3.2 Fundamental Concepts in Data Communication,Topic,topic_separator,,,,,,1
+q_9_cs_ch3_lq_008,1,3.2 Fundamental Concepts in Data Communication,Long,describe,"Explain the fundamental components of data communication, including sender, receiver, message, medium, and protocol.",data communication کے fundamental components کی وضاحت کریں، جن میں sender، receiver، message، medium اور protocol شامل ہوں۔,Medium,5,ULTRA,1
+sep_9_cs_ch3_008,1,3.3 Networking Devices,Topic,topic_separator,,,,,,1
+q_9_cs_ch3_lq_009,1,3.3 Networking Devices,Long,compare,"Compare the functions of routers, switches, hubs, modems, and repeaters in a computer network.",computer network میں routers، switches، hubs، modems اور repeaters کے functions کا موازنہ کریں۔,Medium,5,ULTRA,1
+sep_9_cs_ch3_009,1,3.7 IPv4 and IPv6,Topic,topic_separator,,,,,,1
+q_9_cs_ch3_lq_010,1,3.7 IPv4 and IPv6,Long,compare,"Compare IPv4 and IPv6 in terms of address structure, capacity, and use in computer networks.",IPv4 اور IPv6 کا address structure، capacity اور computer networks میں use کے لحاظ سے موازنہ کریں۔,Hard,5,ELITE,1
+sep_9_cs_ch3_010,1,3.9 Network Security,Topic,topic_separator,,,,,,1
+q_9_cs_ch3_lq_011,1,3.9 Network Security,Long,advantages_limitations,"Discuss major network security methods, including firewalls, encryption, authentication, and safe access practices.",major network security methods پر بحث کریں، جن میں firewalls، encryption، authentication اور safe access practices شامل ہوں۔,Hard,5,ULTRA,1
+sep_9_cs_ch3_011,1,3.11 Types of Networks,Topic,topic_separator,,,,,,1
+q_9_cs_ch3_lq_012,1,3.11 Types of Networks,Long,compare,"Compare LAN, MAN, and WAN in terms of geographical coverage, connectivity, and common applications.",LAN، MAN اور WAN کا geographical coverage، connectivity اور common applications کے لحاظ سے موازنہ کریں۔,Medium,5,ULTRA,1

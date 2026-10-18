@@ -1,0 +1,68 @@
+﻿question_hash,active,topic,bloom_level,question,urdu_translation,A,B,C,D,correct_answer,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,8.1 Inductive and Deductive Reasoning,Topic,,,,,,,,,,,1
+q_9_math_ch8_001,1,8.1 Inductive and Deductive Reasoning,Remember,Reasoning from repeated observations to a general conclusion is called:,repeated observations سے general conclusion نکالنے کو کیا کہتے ہیں؟,Deductive reasoning / deductive reasoning,Biconditional reasoning / biconditional reasoning,Contrapositive proof / contrapositive proof,Inductive reasoning / inductive reasoning,D | Inductive reasoning / inductive reasoning,Easy,1,PRO,1
+q_9_math_ch8_002,1,8.1 Inductive and Deductive Reasoning,Remember,Reasoning from accepted facts or premises to a conclusion is called:,accepted facts یا premises سے conclusion نکالنے کو کیا کہتے ہیں؟,Inductive reasoning / inductive reasoning,Experimental guessing / experimental guessing,Deductive reasoning / deductive reasoning,Conjecture only / صرف conjecture,C | Deductive reasoning / deductive reasoning,Easy,1,PRO,1
+TOPIC_SEP,1,8.1 Mathematical Statements,Topic,,,,,,,,,,,1
+q_9_math_ch8_003,1,8.1 Mathematical Statements,Remember,A mathematical statement is a sentence that is:,mathematical statement وہ sentence ہے جو کیا ہو سکتی ہے؟,Always a question / ہمیشہ question,"True or false, but not both / true یا false، مگر دونوں نہیں",Neither true nor false / نہ true نہ false,Both true and false / دونوں true اور false,"B | True or false, but not both / true یا false، مگر دونوں نہیں",Easy,1,PRO,1
+q_9_math_ch8_004,1,8.1 Mathematical Statements,Apply,Which expression is a true mathematical statement?,کون سا expression true mathematical statement ہے؟,3 + 4 = 8,The integers form a finite set,3² + 4² = 5²,Every isosceles triangle is equilateral,C | 3² + 4² = 5²,Easy,1,PRO,1
+TOPIC_SEP,1,8.1 Logical Operators,Topic,,,,,,,,,,,1
+q_9_math_ch8_005,1,8.1 Logical Operators,Remember,The symbol used for negation is:,negation کے لیے کون سا symbol use ہوتا ہے؟,∧,∨,∼,→,C | ∼,Easy,1,PRO,1
+q_9_math_ch8_006,1,8.1 Logical Operators,Remember,The symbol p ∧ q is read as:,symbol p ∧ q کو کیسے read کیا جاتا ہے؟,p or q / p or q,If p then q / اگر p تو q,p and q / p and q,p if and only if q / p iff q,C | p and q / p and q,Easy,1,PRO,1
+q_9_math_ch8_007,1,8.1 Logical Operators,Remember,The symbol p ∨ q is read as:,symbol p ∨ q کو کیسے read کیا جاتا ہے؟,p and q / p and q,p or q / p or q,not p / not p,p implies q / p implies q,B | p or q / p or q,Easy,1,PRO,1
+q_9_math_ch8_008,1,8.1 Logical Operators,Remember,The symbol p → q represents a:,symbol p → q کس کو represent کرتا ہے؟,Conjunction / conjunction,Conditional statement / conditional statement,Disjunction / disjunction,Negation / negation,B | Conditional statement / conditional statement,Easy,1,PRO,1
+q_9_math_ch8_009,1,8.1 Logical Operators,Remember,The symbol p ↔ q is read as:,symbol p ↔ q کو کیسے read کیا جاتا ہے؟,p and q / p and q,p or q / p or q,not q / not q,p if and only if q / p if and only if q,D | p if and only if q / p if and only if q,Easy,1,PRO,1
+TOPIC_SEP,1,8.1 Negation,Topic,,,,,,,,,,,1
+q_9_math_ch8_010,1,8.1 Negation,Understand,"If p is true, then ∼p is:",اگر p true ہو تو ∼p کیا ہوگا؟,False / false,True / true,Both true and false / دونوں true اور false,Undefined / undefined,A | False / false,Easy,1,PRO,1
+TOPIC_SEP,1,8.1 Conjunction,Topic,,,,,,,,,,,1
+q_9_math_ch8_011,1,8.1 Conjunction,Remember,A conjunction p ∧ q is true when:,conjunction p ∧ q کب true ہوتی ہے؟,Both p and q are true / p اور q دونوں true ہوں,Only p is true / صرف p true ہو,Only q is true / صرف q true ہو,Both are false / دونوں false ہوں,A | Both p and q are true / p اور q دونوں true ہوں,Easy,1,PRO,1
+TOPIC_SEP,1,8.1 Disjunction,Topic,,,,,,,,,,,1
+q_9_math_ch8_012,1,8.1 Disjunction,Remember,A disjunction p ∨ q is false when:,disjunction p ∨ q کب false ہوتی ہے؟,Both are true / دونوں true ہوں,Only p is true / صرف p true ہو,Only q is true / صرف q true ہو,Both p and q are false / p اور q دونوں false ہوں,D | Both p and q are false / p اور q دونوں false ہوں,Easy,1,PRO,1
+TOPIC_SEP,1,8.1 Conditional,Topic,,,,,,,,,,,1
+q_9_math_ch8_013,1,8.1 Conditional,Remember,"In p → q, p is called the:",p → q میں p کو کیا کہتے ہیں؟,Consequent / consequent,Conclusion only / صرف conclusion,Biconditional / biconditional,Antecedent or hypothesis / antecedent یا hypothesis,D | Antecedent or hypothesis / antecedent یا hypothesis,Easy,1,PRO,1
+q_9_math_ch8_014,1,8.1 Conditional,Remember,"In p → q, q is called the:",p → q میں q کو کیا کہتے ہیں؟,Antecedent / antecedent,Consequent or conclusion / consequent یا conclusion,Negation / negation,Premise only / صرف premise,B | Consequent or conclusion / consequent یا conclusion,Easy,1,PRO,1
+TOPIC_SEP,1,8.1 Types of Mathematical Claims,Topic,,,,,,,,,,,1
+q_9_math_ch8_015,1,8.1 Types of Mathematical Claims,Remember,A statement accepted as true without proof is called an:,proof کے بغیر true accept کیے جانے والے statement کو کیا کہتے ہیں؟,Axiom / axiom,Conjecture / conjecture,Theorem / theorem,Contrapositive / contrapositive,A | Axiom / axiom,Easy,1,PRO,1
+q_9_math_ch8_016,1,8.1 Types of Mathematical Claims,Remember,A statement proved true using known facts is called a:,known facts سے prove کیے گئے true statement کو کیا کہتے ہیں؟,Theorem / theorem,Axiom / axiom,Conjecture / conjecture,Question / question,A | Theorem / theorem,Easy,1,PRO,1
+TOPIC_SEP,1,8.1 Conditional Truth Table,Topic,,,,,,,,,,,1
+q_9_math_ch8_017,1,8.1 Conditional Truth Table,Understand,A conditional p → q is false only when:,conditional p → q صرف کب false ہوتی ہے؟,p and q are both true / p اور q دونوں true ہوں,p is false and q is true / p false اور q true ہو,p and q are both false / p اور q دونوں false ہوں,p is true and q is false / p true اور q false ہو,D | p is true and q is false / p true اور q false ہو,Medium,1,PRO,1
+TOPIC_SEP,1,8.1 Biconditional,Topic,,,,,,,,,,,1
+q_9_math_ch8_018,1,8.1 Biconditional,Understand,A biconditional p ↔ q is true when:,biconditional p ↔ q کب true ہوتی ہے؟,p and q have the same truth value / p اور q کی truth value same ہو,Only p is true / صرف p true ہو,Only q is true / صرف q true ہو,p and q always differ / p اور q ہمیشہ different ہوں,A | p and q have the same truth value / p اور q کی truth value same ہو,Medium,1,PRO,1
+TOPIC_SEP,1,8.1 Converse,Topic,,,,,,,,,,,1
+q_9_math_ch8_019,1,8.1 Converse,Remember,The converse of p → q is:,p → q کا converse کیا ہے؟,∼p → ∼q,q → p,∼q → ∼p,p ↔ q,B | q → p,Medium,1,PRO,1
+TOPIC_SEP,1,8.1 Inverse,Topic,,,,,,,,,,,1
+q_9_math_ch8_020,1,8.1 Inverse,Remember,The inverse of p → q is:,p → q کا inverse کیا ہے؟,q → p,∼q → ∼p,∼p → ∼q,p ∧ q,C | ∼p → ∼q,Medium,1,PRO,1
+TOPIC_SEP,1,8.1 Contrapositive,Topic,,,,,,,,,,,1
+q_9_math_ch8_021,1,8.1 Contrapositive,Remember,The contrapositive of p → q is:,p → q کا contrapositive کیا ہے؟,q → p,∼p → ∼q,p ∨ q,∼q → ∼p,D | ∼q → ∼p,Medium,1,PRO,1
+TOPIC_SEP,1,8.1 Logical Equivalence,Topic,,,,,,,,,,,1
+q_9_math_ch8_022,1,8.1 Logical Equivalence,Understand,A conditional statement is logically equivalent to its:,conditional statement logically کس کے equivalent ہوتی ہے؟,Converse / converse,Contrapositive / contrapositive,Inverse / inverse,Negation only / صرف negation,B | Contrapositive / contrapositive,Medium,1,PRO,1
+q_9_math_ch8_023,1,8.1 Logical Equivalence,Understand,The converse of a conditional is logically equivalent to its:,conditional کا converse logically کس کے equivalent ہے؟,Contrapositive / contrapositive,Original conditional / original conditional,Conjunction / conjunction,Inverse / inverse,D | Inverse / inverse,Medium,1,PRO,1
+TOPIC_SEP,1,8.1 Truth Values,Topic,,,,,,,,,,,1
+q_9_math_ch8_024,1,8.1 Truth Values,Apply,"If p is false and q is true, the truth value of p ∨ q is:",اگر p false اور q true ہو تو p ∨ q کی truth value کیا ہے؟,F,T and F,T,Undefined,C | T,Medium,1,PRO,1
+q_9_math_ch8_025,1,8.1 Truth Values,Apply,"If p is false and q is false, the truth value of p → q is:",اگر p false اور q false ہو تو p → q کی truth value کیا ہے؟,F,Both,T,Undefined,C | T,Medium,1,PRO,1
+q_9_math_ch8_026,1,8.1 Truth Values,Apply,"If p is true and q is false, the truth value of p ↔ q is:",اگر p true اور q false ہو تو p ↔ q کی truth value کیا ہے؟,F,T,Both,Undefined,A | F,Medium,1,PRO,1
+TOPIC_SEP,1,8.1 Negation of Statements,Topic,,,,,,,,,,,1
+q_9_math_ch8_027,1,8.1 Negation of Statements,Apply,The negation of 'The stove is burning' is:,'The stove is burning' کی negation کیا ہے؟,The stove is dim / stove dim ہے,The stove is on low heat / stove low heat پر ہے,The stove is both burning and not burning / stove burn بھی ہو رہا اور نہیں بھی,The stove is not burning / stove burn نہیں ہو رہا,D | The stove is not burning / stove burn نہیں ہو رہا,Medium,1,PRO,1
+TOPIC_SEP,1,8.1 Theorem and Conjecture,Topic,,,,,,,,,,,1
+q_9_math_ch8_028,1,8.1 Theorem and Conjecture,Understand,A mathematical claim believed true from observations but not yet proved is a:,observations کی بنیاد پر true سمجھے جانے مگر ابھی prove نہ ہونے والے claim کو کیا کہتے ہیں؟,Theorem / theorem,Axiom / axiom,Biconditional / biconditional,Conjecture / conjecture,D | Conjecture / conjecture,Medium,1,PRO,1
+TOPIC_SEP,1,8.1 Axiom and Postulate,Topic,,,,,,,,,,,1
+q_9_math_ch8_029,1,8.1 Axiom and Postulate,Understand,A postulate is most commonly associated with:,postulate زیادہ تر کس field سے associated ہوتا ہے؟,Statistics / statistics,Geometry / geometry,Logarithm tables / logarithm tables,Probability experiments / probability experiments,B | Geometry / geometry,Medium,1,PRO,1
+TOPIC_SEP,1,8.1 Mathematical Proof,Topic,,,,,,,,,,,1
+q_9_math_ch8_030,1,8.1 Mathematical Proof,Understand,A mathematical proof provides:,mathematical proof کیا provide کرتی ہے؟,A logical sequence establishing a statement / statement establish کرنے والی logical sequence,A repeated experiment only / صرف repeated experiment,An unproved opinion / unproved opinion,A random numerical guess / random numerical guess,A | A logical sequence establishing a statement / statement establish کرنے والی logical sequence,Medium,1,PRO,1
+TOPIC_SEP,1,8.1 Odd and Even Proofs,Topic,,,,,,,,,,,1
+q_9_math_ch8_031,1,8.1 Odd and Even Proofs,Apply,An odd integer x can be represented as:,odd integer x کو کس form میں represent کیا جا سکتا ہے؟,x = 2k,x = k/2,"x = 2k + 1, k ∈ Z",x = 2k + 2,"C | x = 2k + 1, k ∈ Z",Medium,1,PRO,1
+q_9_math_ch8_032,1,8.1 Odd and Even Proofs,Apply,An even integer x can be represented as:,even integer x کو کس form میں represent کیا جا سکتا ہے؟,x = 2k + 1,x = k + 1/2,"x = 2k, k ∈ Z",x = 2k − 1,"C | x = 2k, k ∈ Z",Medium,1,PRO,1
+TOPIC_SEP,1,8.1 Compound Truth Values,Topic,,,,,,,,,,,1
+q_9_math_ch8_033,1,8.1 Compound Truth Values,Analyze,"If p is true and q is false, the truth value of (p → q) ∧ p is:",اگر p true اور q false ہو تو (p → q) ∧ p کی truth value کیا ہے؟,F,T,T only when p is false,Undefined,A | F,Hard,1,PRO,1
+q_9_math_ch8_034,1,8.1 Compound Truth Values,Analyze,The compound statement [(p → q) ∧ p] → q is:,compound statement [(p → q) ∧ p] → q کیا ہے؟,Always false / ہمیشہ false,Always true / ہمیشہ true,True only when p is false / صرف p false ہونے پر true,Equivalent to ∼q / ∼q کے equivalent,B | Always true / ہمیشہ true,Hard,1,PRO,1
+TOPIC_SEP,1,8.1 Converse and Contrapositive,Topic,,,,,,,,,,,1
+q_9_math_ch8_035,1,8.1 Converse and Contrapositive,Analyze,The contrapositive of q → p is:,q → p کا contrapositive کیا ہے؟,∼p → ∼q,∼q → ∼p,p → q,q ↔ p,A | ∼p → ∼q,Hard,1,PRO,1
+TOPIC_SEP,1,8.1 Truth Table Analysis,Topic,,,,,,,,,,,1
+q_9_math_ch8_036,1,8.1 Truth Table Analysis,Analyze,How many rows are required in a truth table containing three independent statements?,three independent statements والی truth table میں کتنی rows required ہوتی ہیں؟,4,8,6,16,B | 8,Hard,1,PRO,1
+TOPIC_SEP,1,8.1 Set Proofs,Topic,,,,,,,,,,,1
+q_9_math_ch8_037,1,8.1 Set Proofs,Analyze,Which identity follows from De Morgan's law?,De Morgan's law سے کون سی identity follow کرتی ہے؟,(A ∪ B)′ = A′ ∩ B′,(A ∪ B)′ = A′ ∪ B′,(A ∩ B)′ = A′ ∩ B′,A′ = A,A | (A ∪ B)′ = A′ ∩ B′,Hard,1,PRO,1
+TOPIC_SEP,1,8.1 Deductive Algebraic Proof,Topic,,,,,,,,,,,1
+q_9_math_ch8_038,1,8.1 Deductive Algebraic Proof,Analyze,Which property justifies changing a(b+c) into ab+ac in a deductive proof?,deductive proof میں a(b+c) کو ab+ac میں change کرنے کو کون سی property justify کرتی ہے؟,Commutative property only / صرف commutative property,Multiplicative inverse / multiplicative inverse,Transitive property / transitive property,Distributive property / distributive property,D | Distributive property / distributive property,Hard,1,PRO,1
+TOPIC_SEP,1,8.1 Proof by Contrapositive,Topic,,,,,,,,,,,1
+q_9_math_ch8_039,1,8.1 Proof by Contrapositive,Analyze,"To prove 'If n² is even, then n is even' by contrapositive, one proves:","'If n² is even, then n is even' کو contrapositive سے prove کرنے کے لیے کیا prove کیا جاتا ہے؟","If n is even, then n² is even / اگر n even ہو تو n² even ہے","If n is odd, then n² is odd / اگر n odd ہو تو n² odd ہے","If n² is odd, then n is even / اگر n² odd ہو تو n even ہے","If n is odd, then n² is even / اگر n odd ہو تو n² even ہے","B | If n is odd, then n² is odd / اگر n odd ہو تو n² odd ہے",Hard,1,PRO,1
+TOPIC_SEP,1,8.1 Classification of Claims,Topic,,,,,,,,,,,1
+q_9_math_ch8_040,1,8.1 Classification of Claims,Analyze,The statement 'Every even integer greater than 2 is a sum of two prime numbers' is classified in the chapter as a:,statement 'ہر even integer greater than 2 دو prime numbers کا sum ہے' chapter میں کس طور classify ہے؟,Axiom / axiom,Proved theorem / proved theorem,Conjecture / conjecture,Definition / definition,C | Conjecture / conjecture,Hard,1,PRO,1

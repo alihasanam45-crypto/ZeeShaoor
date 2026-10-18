@@ -1,0 +1,80 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,12 Introduction to Information Handling,topic_separator,,,,,,1
+q_9_math_ch12_sq_001,1,12 Introduction to Information Handling,definition_function,Define information handling and state its main stages from collection to interpretation.,information handling کی تعریف کریں اور collection سے interpretation تک اس کے main stages بیان کریں۔,Easy,2,IMPORTANT,1
+TOPIC_SEP,1,12 Data Types,topic_separator,,,,,,1
+q_9_math_ch12_sq_002,1,12 Data Types,difference,Differentiate between discrete and continuous data and give one example of each.,discrete اور continuous data میں فرق بیان کریں اور ہر ایک کی one example دیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,12.1 Grouped and Ungrouped Data,topic_separator,,,,,,1
+q_9_math_ch12_sq_003,1,12.1 Grouped and Ungrouped Data,difference,Differentiate between grouped and ungrouped data by stating one feature of each.,grouped اور ungrouped data میں فرق بیان کریں اور ہر ایک کی one feature لکھیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,12.1.1 Frequency Distribution,topic_separator,,,,,,1
+q_9_math_ch12_sq_004,1,12.1.1 Frequency Distribution,definition_function,Define a frequency distribution and state the functions of tally marks and frequencies.,frequency distribution کی تعریف کریں اور tally marks اور frequencies کے functions بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,12.1.1 Range and Class Size,topic_separator,,,,,,1
+q_9_math_ch12_sq_005,1,12.1.1 Range and Class Size,definition_formula,Define range and class size and state how each is calculated.,range اور class size کی تعریف کریں اور بیان کریں کہ each کیسے calculate ہوتا ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,12.1.1 Class Limits and Boundaries,topic_separator,,,,,,1
+q_9_math_ch12_sq_006,1,12.1.1 Class Limits and Boundaries,compare_contrast,Differentiate between class limits and class boundaries.,class limits اور class boundaries میں فرق بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,12.1.1 Class Boundaries,topic_separator,,,,,,1
+q_9_math_ch12_sq_007,1,12.1.1 Class Boundaries,process_steps,State the method for converting inclusive class limits into continuous class boundaries.,inclusive class limits کو continuous class boundaries میں convert کرنے کا method بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,12.1.2 Histogram,topic_separator,,,,,,1
+q_9_math_ch12_sq_008,1,12.1.2 Histogram,definition_function,Define a histogram and identify the quantities represented on its horizontal and vertical axes.,histogram کی تعریف کریں اور horizontal اور vertical axes پر represented quantities identify کریں۔,Easy,2,ULTRA,1
+q_9_math_ch12_sq_009,1,12.1.2 Histogram,difference,Differentiate between a histogram and a bar graph using the arrangement of rectangles.,rectangles کی arrangement کے لحاظ سے histogram اور bar graph میں فرق بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,12.1.3 Unequal Class Intervals,topic_separator,,,,,,1
+q_9_math_ch12_sq_010,1,12.1.3 Unequal Class Intervals,formula_relationship,State the adjusted-frequency relationship used for a histogram with unequal class intervals.,unequal class intervals والے histogram کے لیے adjusted-frequency relationship بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,12.1.4 Frequency Polygon,topic_separator,,,,,,1
+q_9_math_ch12_sq_011,1,12.1.4 Frequency Polygon,definition_function,Define a frequency polygon and state the coordinates used for plotting its points.,frequency polygon کی تعریف کریں اور points plot کرنے کے لیے used coordinates بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,12.1.4 Class Midpoint,topic_separator,,,,,,1
+q_9_math_ch12_sq_012,1,12.1.4 Class Midpoint,definition_formula,Define a class midpoint and state its formula in terms of the class limits.,class midpoint کی تعریف کریں اور class limits کی terms میں اس کا formula بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,12.2 Measures of Location,topic_separator,,,,,,1
+q_9_math_ch12_sq_013,1,12.2 Measures of Location,list_state,Name the four measures of location discussed for summarizing data.,data summarize کرنے کے لیے discussed four measures of location کے نام لکھیں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,12.2.1 Arithmetic Mean,topic_separator,,,,,,1
+q_9_math_ch12_sq_014,1,12.2.1 Arithmetic Mean,definition_formula,Define arithmetic mean and state its formula for ungrouped data.,arithmetic mean کی تعریف کریں اور ungrouped data کے لیے اس کا formula بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,12.2.1 Mean of Grouped Data,topic_separator,,,,,,1
+q_9_math_ch12_sq_015,1,12.2.1 Mean of Grouped Data,definition_formula,State the direct formula for the mean of a grouped frequency distribution and identify each symbol.,grouped frequency distribution کے mean کا direct formula بیان کریں اور each symbol identify کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,12.2.2 Median,topic_separator,,,,,,1
+q_9_math_ch12_sq_016,1,12.2.2 Median,compare_contrast,Compare the procedures for finding the median of an odd-sized and an even-sized ungrouped data set.,odd-sized اور even-sized ungrouped data set کا median معلوم کرنے کی procedures کا موازنہ کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,12.2.3 Mode,topic_separator,,,,,,1
+q_9_math_ch12_sq_017,1,12.2.3 Mode,definition_example,Define mode and explain the cases of no mode and more than one mode.,mode کی تعریف کریں اور no mode اور more than one mode کے cases explain کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,12.2.4 Weighted Mean,topic_separator,,,,,,1
+q_9_math_ch12_sq_018,1,12.2.4 Weighted Mean,definition_formula,Define weighted mean and state how it differs from the ordinary arithmetic mean.,weighted mean کی تعریف کریں اور ordinary arithmetic mean سے اس کا فرق بیان کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,Exercise 12.1 — Frequency Table,topic_separator,,,,,,1
+q_9_math_ch12_sq_019,1,Exercise 12.1 — Frequency Table,table_based,"Prepare a frequency distribution with tally marks for the data: 2, 3, 2, 5, 4, 3, 2, 4, 5, 3.","data کے لیے tally marks کے ساتھ frequency distribution تیار کریں: 2, 3, 2, 5, 4, 3, 2, 4, 5, 3۔",Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 12.1 — Range,topic_separator,,,,,,1
+q_9_math_ch12_sq_020,1,Exercise 12.1 — Range,numerical_short,"Find the range of the observations: 12, 18, 7, 25, 16, 9.","observations کا range معلوم کریں: 12, 18, 7, 25, 16, 9۔",Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 12.1 — Class Size,topic_separator,,,,,,1
+q_9_math_ch12_sq_021,1,Exercise 12.1 — Class Size,numerical_short,A data set has range 48 and is divided into 6 equal classes. Find the class size.,data set کا range 48 ہے اور اسے 6 equal classes میں divide کیا گیا ہے۔ class size معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 12.1 — Class Boundaries,topic_separator,,,,,,1
+q_9_math_ch12_sq_022,1,Exercise 12.1 — Class Boundaries,numerical_short,Write the class boundaries for the inclusive class interval 20–29.,inclusive class interval 20–29 کی class boundaries لکھیں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 12.1 — Class Midpoints,topic_separator,,,,,,1
+q_9_math_ch12_sq_023,1,Exercise 12.1 — Class Midpoints,numerical_short,"Find the class midpoints of the intervals 10–19, 20–29, and 30–39.",intervals 10–19، 20–29 اور 30–39 کے class midpoints معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 12.1 — Histogram,topic_separator,,,,,,1
+q_9_math_ch12_sq_024,1,Exercise 12.1 — Histogram,diagram_based,"Draw a histogram for class intervals 0–10, 10–20, 20–30, 30–40 with frequencies 3, 7, 9, 5.","class intervals 0–10, 10–20, 20–30, 30–40 اور frequencies 3, 7, 9, 5 کے لیے histogram draw کریں۔",Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 12.1 — Unequal Intervals,topic_separator,,,,,,1
+q_9_math_ch12_sq_025,1,Exercise 12.1 — Unequal Intervals,table_based,"Calculate adjusted frequencies for intervals of widths 5, 10, and 20 with frequencies 8, 12, and 20.","widths 5, 10 اور 20 والے intervals اور frequencies 8, 12 اور 20 کے لیے adjusted frequencies calculate کریں۔",Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 12.1 — Frequency Polygon,topic_separator,,,,,,1
+q_9_math_ch12_sq_026,1,Exercise 12.1 — Frequency Polygon,diagram_based,"Draw a frequency polygon for class midpoints 5, 15, 25, 35 with frequencies 2, 6, 9, 3.","class midpoints 5, 15, 25, 35 اور frequencies 2, 6, 9, 3 کے لیے frequency polygon draw کریں۔",Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 12.1 — Histogram to Polygon,topic_separator,,,,,,1
+q_9_math_ch12_sq_027,1,Exercise 12.1 — Histogram to Polygon,process_steps,Describe how a frequency polygon is drawn directly over a histogram and then closed at both ends.,describe کریں کہ frequency polygon کو histogram کے اوپر directly کیسے draw اور دونوں ends پر close کیا جاتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,Exercise 12.2 — Ungrouped Mean,topic_separator,,,,,,1
+q_9_math_ch12_sq_028,1,Exercise 12.2 — Ungrouped Mean,numerical_short,"Find the arithmetic mean of the values: 8, 12, 15, 10, 5.","values کا arithmetic mean معلوم کریں: 8, 12, 15, 10, 5۔",Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 12.2 — Grouped Mean,topic_separator,,,,,,1
+q_9_math_ch12_sq_029,1,Exercise 12.2 — Grouped Mean,numerical_short,"Find the mean for x = 2, 4, 6, 8 with corresponding frequencies 3, 5, 4, 2.","x = 2, 4, 6, 8 اور corresponding frequencies 3, 5, 4, 2 کے لیے mean معلوم کریں۔",Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 12.2 — Assumed Mean,topic_separator,,,,,,1
+q_9_math_ch12_sq_030,1,Exercise 12.2 — Assumed Mean,numerical_short,"Using assumed mean A = 25, find the mean when ΣfD = 36 and Σf = 18.",assumed mean A = 25 استعمال کرتے ہوئے mean معلوم کریں جب ΣfD = 36 اور Σf = 18 ہو۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 12.2 — Odd-Size Median,topic_separator,,,,,,1
+q_9_math_ch12_sq_031,1,Exercise 12.2 — Odd-Size Median,numerical_short,"Find the median of the ordered data: 3, 6, 8, 11, 14, 17, 20.","ordered data کا median معلوم کریں: 3, 6, 8, 11, 14, 17, 20۔",Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 12.2 — Even-Size Median,topic_separator,,,,,,1
+q_9_math_ch12_sq_032,1,Exercise 12.2 — Even-Size Median,numerical_short,"Find the median of the ordered data: 4, 7, 9, 12, 15, 18.","ordered data کا median معلوم کریں: 4, 7, 9, 12, 15, 18۔",Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 12.2 — Grouped Median,topic_separator,,,,,,1
+q_9_math_ch12_sq_033,1,Exercise 12.2 — Grouped Median,numerical_short,"Find the median of a grouped distribution with median class 20–30, lower boundary 19.5, class width 10, class frequency 12, cumulative frequency before it 18, and total frequency 50.",grouped distribution کا median معلوم کریں جہاں median class 20–30، lower boundary 19.5، class width 10، class frequency 12، preceding cumulative frequency 18 اور total frequency 50 ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 12.2 — Ungrouped Mode,topic_separator,,,,,,1
+q_9_math_ch12_sq_034,1,Exercise 12.2 — Ungrouped Mode,numerical_short,"Find the mode of the data: 4, 6, 4, 7, 8, 4, 6, 9.","data کا mode معلوم کریں: 4, 6, 4, 7, 8, 4, 6, 9۔",Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 12.2 — Grouped Mode,topic_separator,,,,,,1
+q_9_math_ch12_sq_035,1,Exercise 12.2 — Grouped Mode,numerical_short,"Find the mode when the modal-class lower boundary is 29.5, class width is 10, and the preceding, modal, and succeeding frequencies are 8, 15, and 11.",mode معلوم کریں جب modal-class lower boundary 29.5، class width 10 اور preceding، modal، succeeding frequencies 8، 15، 11 ہوں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 12.2 — Weighted Mean,topic_separator,,,,,,1
+q_9_math_ch12_sq_036,1,Exercise 12.2 — Weighted Mean,numerical_short,"Find the weighted mean of scores 70, 80, 90 with weights 2, 3, 5.","scores 70, 80, 90 اور weights 2, 3, 5 کا weighted mean معلوم کریں۔",Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 12.2 — Comparison of Averages,topic_separator,,,,,,1
+q_9_math_ch12_sq_037,1,Exercise 12.2 — Comparison of Averages,compare_contrast,"For the data 2, 3, 3, 5, 7, calculate mean, median, and mode and compare the three values.","data 2, 3, 3, 5, 7 کے mean، median اور mode calculate کریں اور three values compare کریں۔",Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 12.2 — Missing Frequency,topic_separator,,,,,,1
+q_9_math_ch12_sq_038,1,Exercise 12.2 — Missing Frequency,numerical_short,"The mean of values 10, 20, 30 with frequencies 2, f, 3 is 22. Find f.","values 10, 20, 30 کی frequencies 2, f, 3 ہیں اور mean 22 ہے۔ f معلوم کریں۔",Hard,2,PRO,1
+TOPIC_SEP,1,Review Exercise 12 — Data Classification,topic_separator,,,,,,1
+q_9_math_ch12_sq_039,1,Review Exercise 12 — Data Classification,classification,"Classify each variable as discrete or continuous: number of books, body height, daily temperature, number of students.",each variable کو discrete یا continuous classify کریں: number of books، body height، daily temperature، number of students۔,Medium,2,PRO,1
+TOPIC_SEP,1,Review Exercise 12 — Interpretation,topic_separator,,,,,,1
+q_9_math_ch12_sq_040,1,Review Exercise 12 — Interpretation,application_scenario,"A distribution has mean 50, median 45, and mode 40. State which measure represents the most frequent value and which represents the central ordered value.",distribution کا mean 50، median 45 اور mode 40 ہے۔ بیان کریں کہ most frequent value اور central ordered value کو کون سی measure represent کرتی ہے۔,Medium,2,ELITE,1

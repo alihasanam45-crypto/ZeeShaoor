@@ -1,0 +1,72 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,9.1 Similarity of Polygons,topic_separator,,,,,,1
+q_9_math_ch9_sq_001,1,9.1 Similarity of Polygons,definition_function,Define similar polygons and state the two conditions required for their similarity.,similar polygons کی تعریف کریں اور ان کی similarity کے لیے required two conditions بیان کریں۔,Easy,2,IMPORTANT,1
+q_9_math_ch9_sq_002,1,9.1 Similarity of Polygons,definition_function,Define the scale factor of two similar figures and state how corresponding sides are related.,two similar figures کے scale factor کی تعریف کریں اور corresponding sides کا relationship بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,9.1.1 Identification of Similar Triangles,topic_separator,,,,,,1
+q_9_math_ch9_sq_003,1,9.1.1 Identification of Similar Triangles,law_principle,State the AA criterion for similarity of two triangles.,two triangles کی similarity کے لیے AA criterion بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch9_sq_004,1,9.1.1 Identification of Similar Triangles,law_principle,State the SAS criterion for similarity of two triangles.,two triangles کی similarity کے لیے SAS criterion بیان کریں۔,Medium,2,ULTRA,1
+q_9_math_ch9_sq_005,1,9.1.1 Identification of Similar Triangles,law_principle,State the SSS criterion for similarity of two triangles.,two triangles کی similarity کے لیے SSS criterion بیان کریں۔,Easy,2,ULTRA,1
+q_9_math_ch9_sq_006,1,9.1.1 Identification of Similar Triangles,explain_reason,Explain why triangles formed by two intersecting transversals between parallel lines are similar.,وضاحت کریں کہ parallel lines کے درمیان two intersecting transversals سے formed triangles similar کیوں ہوتے ہیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,9.1.2 Similarity of Quadrilaterals,topic_separator,,,,,,1
+q_9_math_ch9_sq_007,1,9.1.2 Similarity of Quadrilaterals,definition_function,State the conditions under which two quadrilaterals are similar.,وہ conditions بیان کریں جن میں two quadrilaterals similar ہوتے ہیں۔,Easy,2,ULTRA,1
+q_9_math_ch9_sq_008,1,9.1.2 Similarity of Quadrilaterals,application_scenario,Explain how corresponding angles and side ratios are checked to establish similarity of two parallelograms.,وضاحت کریں کہ two parallelograms کی similarity establish کرنے کے لیے corresponding angles اور side ratios کیسے check کیے جاتے ہیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,9.2 Area of Similar Figures,topic_separator,,,,,,1
+q_9_math_ch9_sq_009,1,9.2 Area of Similar Figures,formula_relationship,State the relationship between the ratio of areas and the ratio of corresponding lengths of two similar figures.,two similar figures کے areas کے ratio اور corresponding lengths کے ratio کا relationship بیان کریں۔,Easy,2,PRO,1
+q_9_math_ch9_sq_010,1,9.2 Area of Similar Figures,cause_effect,"If the linear scale factor is k, state how the area changes and explain the exponent used.",اگر linear scale factor k ہو تو area میں change بیان کریں اور used exponent explain کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,9.3 Volume of Similar Solids,topic_separator,,,,,,1
+q_9_math_ch9_sq_011,1,9.3 Volume of Similar Solids,formula_relationship,State the relationship between the ratio of volumes and the ratio of corresponding lengths of two similar solids.,two similar solids کے volumes کے ratio اور corresponding lengths کے ratio کا relationship بیان کریں۔,Easy,2,PRO,1
+q_9_math_ch9_sq_012,1,9.3 Volume of Similar Solids,cause_effect,"If the linear scale factor is k, state how the volume changes and explain the exponent used.",اگر linear scale factor k ہو تو volume میں change بیان کریں اور used exponent explain کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,9.3 Masses of Similar Solids,topic_separator,,,,,,1
+q_9_math_ch9_sq_013,1,9.3 Masses of Similar Solids,formula_relationship,State the relationship between masses and volumes of similar solids made of the same material.,same material سے made similar solids کے masses اور volumes کا relationship بیان کریں۔,Medium,2,ULTRA,1
+TOPIC_SEP,1,9.4.1 Regular Polygons,topic_separator,,,,,,1
+q_9_math_ch9_sq_014,1,9.4.1 Regular Polygons,definition_formula,State the formula for the sum of interior angles of an n-sided polygon and identify n.,n-sided polygon کے interior angles کے sum کا formula بیان کریں اور n identify کریں۔,Easy,2,ULTRA,1
+q_9_math_ch9_sq_015,1,9.4.1 Regular Polygons,formula_relationship,State the formulas for one interior angle and one exterior angle of a regular n-gon.,regular n-gon کے one interior angle اور one exterior angle کے formulas بیان کریں۔,Medium,2,PRO,1
+q_9_math_ch9_sq_016,1,9.4.1 Regular Polygons,formula_relationship,State the formula for the number of diagonals of an n-sided polygon.,n-sided polygon کی diagonals کی number کا formula بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,9.4.2 Triangles and 9.4.3 Parallelograms,topic_separator,,,,,,1
+q_9_math_ch9_sq_017,1,9.4.2 Triangles and 9.4.3 Parallelograms,compare_contrast,Compare two geometrical properties of an isosceles triangle with two properties of a parallelogram.,isosceles triangle کی two geometrical properties کا parallelogram کی two properties کے ساتھ موازنہ کریں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,9.4.4 Tessellation,topic_separator,,,,,,1
+q_9_math_ch9_sq_018,1,9.4.4 Tessellation,explain_reason,"Explain why equilateral triangles, squares, and regular hexagons can tessellate a plane by themselves.",وضاحت کریں کہ equilateral triangles، squares اور regular hexagons plane کو خود tessellate کیوں کر سکتے ہیں۔,Hard,2,ELITE,1
+TOPIC_SEP,1,Exercise 9.1 — Similar Solids,topic_separator,,,,,,1
+q_9_math_ch9_sq_019,1,Exercise 9.1 — Similar Solids,numerical_short,Determine whether cuboids with dimensions 3 cm × 5 cm × 4 cm and 4.5 cm × 7.5 cm × 6 cm are similar.,determine کریں کہ dimensions 3 cm × 5 cm × 4 cm اور 4.5 cm × 7.5 cm × 6 cm والے cuboids similar ہیں یا نہیں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 9.1 — SSS Similarity,topic_separator,,,,,,1
+q_9_math_ch9_sq_020,1,Exercise 9.1 — SSS Similarity,numerical_short,"Show that triangles with side lengths 6 cm, 9 cm, 12 cm and 10.5 cm, 15.75 cm, 21 cm are similar.","show کریں کہ side lengths 6 cm, 9 cm, 12 cm اور 10.5 cm, 15.75 cm, 21 cm والے triangles similar ہیں۔",Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 9.1 — Corresponding Sides,topic_separator,,,,,,1
+q_9_math_ch9_sq_021,1,Exercise 9.1 — Corresponding Sides,numerical_short,"Two similar triangles have corresponding sides 12 cm and 6 cm. If another side of the larger triangle is 16 cm, find the corresponding side of the smaller triangle.",two similar triangles کی corresponding sides 12 cm اور 6 cm ہیں۔ اگر larger triangle کی another side 16 cm ہو تو smaller triangle کی corresponding side معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 9.1 — Parallel Segments,topic_separator,,,,,,1
+q_9_math_ch9_sq_022,1,Exercise 9.1 — Parallel Segments,diagram_based,"In two intersecting triangles, parallel segments have lengths 4 cm and x cm, while corresponding transversal segments are 2.7 cm and 1.8 cm. Find x.",two intersecting triangles میں parallel segments کی lengths 4 cm اور x cm ہیں جبکہ corresponding transversal segments 2.7 cm اور 1.8 cm ہیں۔ x معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 9.1 — Shadow Application,topic_separator,,,,,,1
+q_9_math_ch9_sq_023,1,Exercise 9.1 — Shadow Application,numerical_short,"A man 1.8 m tall casts a 0.76 m shadow. At the same time, a pole casts a 3 m shadow. Find the height of the pole.",1.8 m tall man کا shadow 0.76 m ہے۔ same time پر pole کا shadow 3 m ہے۔ pole کی height معلوم کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,Exercise 9.1 — Stair and Plank,topic_separator,,,,,,1
+q_9_math_ch9_sq_024,1,Exercise 9.1 — Stair and Plank,diagram_based,A plank spans a stair 20 cm wide and 16 cm high. A box 8 cm high is placed under it. Find the box width using similar triangles.,plank ایک stair کو span کرتا ہے جو 20 cm wide اور 16 cm high ہے۔ 8 cm high box اس کے نیچے رکھا ہے۔ similar triangles سے box width معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 9.1 — Isosceles Trapezoid,topic_separator,,,,,,1
+q_9_math_ch9_sq_025,1,Exercise 9.1 — Isosceles Trapezoid,diagram_based,"In an isosceles trapezoid, the parallel bases are 8 cm and 4 cm, and a diagonal segment is 3 cm. Use similar triangles to find the corresponding diagonal segment.",isosceles trapezoid میں parallel bases 8 cm اور 4 cm ہیں اور one diagonal segment 3 cm ہے۔ similar triangles سے corresponding diagonal segment معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 9.1 — Regular Polygon Scaling,topic_separator,,,,,,1
+q_9_math_ch9_sq_026,1,Exercise 9.1 — Regular Polygon Scaling,numerical_short,A regular dodecagon has perimeter 72 cm. Its side lengths are reduced by the factor 1/√2. Find the side length of the scaled dodecagon.,regular dodecagon کا perimeter 72 cm ہے۔ side lengths factor 1/√2 سے reduce کی جاتی ہیں۔ scaled dodecagon کی side length معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 9.2 — Area Ratios,topic_separator,,,,,,1
+q_9_math_ch9_sq_027,1,Exercise 9.2 — Area Ratios,numerical_short,Find the ratio of the areas of two similar figures when the ratio of corresponding sides is 3:4.,two similar figures کے areas کا ratio معلوم کریں جب corresponding sides کا ratio 3:4 ہو۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 9.2 — Unknown Area,topic_separator,,,,,,1
+q_9_math_ch9_sq_028,1,Exercise 9.2 — Unknown Area,numerical_short,"Two similar triangles have corresponding sides 10 cm and 25 cm. If the smaller area is 40 cm², find the larger area.",two similar triangles کی corresponding sides 10 cm اور 25 cm ہیں۔ اگر smaller area 40 cm² ہو تو larger area معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 9.2 — Unknown Length,topic_separator,,,,,,1
+q_9_math_ch9_sq_029,1,Exercise 9.2 — Unknown Length,numerical_short,"Two similar triangles have areas 13.5 cm² and 24 cm². If the corresponding side of the larger triangle is 3 cm, find the corresponding side of the smaller triangle.",two similar triangles کے areas 13.5 cm² اور 24 cm² ہیں۔ اگر larger triangle کی corresponding side 3 cm ہو تو smaller triangle کی side معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 9.2 — Circular Regions,topic_separator,,,,,,1
+q_9_math_ch9_sq_030,1,Exercise 9.2 — Circular Regions,numerical_short,"Two circular regions have areas 153 cm² and 833 cm². If the larger radius is 7 cm, find the smaller radius.",two circular regions کے areas 153 cm² اور 833 cm² ہیں۔ اگر larger radius 7 cm ہو تو smaller radius معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 9.2 — Polygon Areas,topic_separator,,,,,,1
+q_9_math_ch9_sq_031,1,Exercise 9.2 — Polygon Areas,numerical_short,"Two similar polygons have corresponding-side ratio 3:5. If the smaller area is 54 cm², find the larger area.",two similar polygons کا corresponding-side ratio 3:5 ہے۔ اگر smaller area 54 cm² ہو تو larger area معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 9.2 — Triangle and Trapezium Areas,topic_separator,,,,,,1
+q_9_math_ch9_sq_032,1,Exercise 9.2 — Triangle and Trapezium Areas,numerical_short,"In similar triangles ABC and ADE, AB = 4.2 cm and AD = 3 cm. If area of triangle ADE is 125 cm², find the area of triangle ABC.",similar triangles ABC اور ADE میں AB = 4.2 cm اور AD = 3 cm ہیں۔ اگر triangle ADE کا area 125 cm² ہو تو triangle ABC کا area معلوم کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,Exercise 9.3 — Volume Ratio,topic_separator,,,,,,1
+q_9_math_ch9_sq_033,1,Exercise 9.3 — Volume Ratio,numerical_short,Find the ratio of volumes of two similar solids when their corresponding lengths are in the ratio 2:3.,two similar solids کے volumes کا ratio معلوم کریں جب corresponding lengths کا ratio 2:3 ہو۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 9.3 — Unknown Volume,topic_separator,,,,,,1
+q_9_math_ch9_sq_034,1,Exercise 9.3 — Unknown Volume,numerical_short,"Two similar containers have corresponding heights 4 cm and 10 cm. If the smaller volume is 64 cm³, find the larger volume.",two similar containers کی corresponding heights 4 cm اور 10 cm ہیں۔ اگر smaller volume 64 cm³ ہو تو larger volume معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 9.3 — Mass Ratio,topic_separator,,,,,,1
+q_9_math_ch9_sq_035,1,Exercise 9.3 — Mass Ratio,numerical_short,Two similar metal solids have corresponding-side ratio 3:5. Find the ratio of their masses.,two similar metal solids کا corresponding-side ratio 3:5 ہے۔ ان کے masses کا ratio معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 9.4 — Polygon Angles,topic_separator,,,,,,1
+q_9_math_ch9_sq_036,1,Exercise 9.4 — Polygon Angles,numerical_short,Find one interior angle and one exterior angle of a regular octagon.,regular octagon کا one interior angle اور one exterior angle معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 9.4 — Number of Sides,topic_separator,,,,,,1
+q_9_math_ch9_sq_037,1,Exercise 9.4 — Number of Sides,numerical_short,A regular polygon has each exterior angle equal to 24°. Find the number of its sides.,regular polygon کا each exterior angle 24° ہے۔ اس کی sides کی number معلوم کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,Exercise 9.4 — Diagonals,topic_separator,,,,,,1
+q_9_math_ch9_sq_038,1,Exercise 9.4 — Diagonals,numerical_short,Find the number of diagonals in a regular decagon.,regular decagon میں diagonals کی number معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 9.4 — Parallelogram Angles,topic_separator,,,,,,1
+q_9_math_ch9_sq_039,1,Exercise 9.4 — Parallelogram Angles,numerical_short,One angle of a parallelogram is 68°. Find the measures of the remaining three angles.,parallelogram کا one angle 68° ہے۔ remaining three angles کی measures معلوم کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,Exercise 9.4 — Tessellation,topic_separator,,,,,,1
+q_9_math_ch9_sq_040,1,Exercise 9.4 — Tessellation,application_scenario,Decide whether a regular pentagon can tessellate a plane by itself and justify using its interior angle.,decide کریں کہ regular pentagon plane کو by itself tessellate کر سکتا ہے یا نہیں اور interior angle سے justification دیں۔,Hard,2,ELITE,1

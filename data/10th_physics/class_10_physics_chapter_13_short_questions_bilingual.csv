@@ -1,0 +1,63 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,13.1 Production of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_001,1,13.1 Production of Sound,definition_example,State how sound is produced and give two examples of vibrating sound sources.,بیان کریں کہ sound کیسے produce ہوتی ہے اور vibrating sound sources کی دو examples دیں۔,Easy,2,PRO,1
+q_10_phy_ch13_sq_002,1,13.1 Production of Sound,application_scenario,Explain how a tuning fork demonstrates that vibration produces sound.,وضاحت کریں کہ tuning fork یہ کیسے demonstrate کرتی ہے کہ vibration sound produce کرتی ہے۔,Easy,2,ELITE,1
+TOPIC_SEP,1,13.1 Propagation of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_003,1,13.1 Propagation of Sound,definition_function,Define a sound wave and state why it is classified as a mechanical wave.,sound wave کی تعریف کریں اور بیان کریں کہ اسے mechanical wave کیوں classify کیا جاتا ہے۔,Easy,2,PRO,1
+q_10_phy_ch13_sq_004,1,13.1 Propagation of Sound,list_state,State the meanings of compression and rarefaction in a sound wave.,sound wave میں compression اور rarefaction کے meanings بیان کریں۔,Easy,2,ULTRA,1
+q_10_phy_ch13_sq_005,1,13.1 Propagation of Sound,definition_formula,Define the wavelength of a sound wave in terms of successive compressions or rarefactions.,successive compressions یا rarefactions کے لحاظ سے sound wave کی wavelength کی تعریف کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,13.2 Speed of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_006,1,13.2 Speed of Sound,formula_relationship,State the equation used to calculate the speed of sound and identify its symbols.,speed of sound calculate کرنے والی equation بیان کریں اور اس کے symbols کی نشاندہی کریں۔,Easy,2,PRO,1
+q_10_phy_ch13_sq_007,1,13.2 Speed of Sound,list_state,State the approximate speed of sound in air and the factors that affect it.,air میں sound کی approximate speed اور اسے affect کرنے والے factors بیان کریں۔,Easy,2,PRO,1
+q_10_phy_ch13_sq_008,1,13.2 Speed of Sound,classification,"Arrange solids, liquids, and gases in decreasing order of the speed of sound.",solids، liquids اور gases کو speed of sound کی decreasing order میں arrange کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,13.3 Characteristics of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_009,1,13.3 Characteristics of Sound,definition_function,Define loudness and state the wave property on which it mainly depends.,loudness کی تعریف کریں اور وہ wave property بیان کریں جس پر یہ mainly depend کرتی ہے۔,Easy,2,PRO,1
+q_10_phy_ch13_sq_010,1,13.3 Characteristics of Sound,definition_function,Define pitch and state the wave property on which it depends.,pitch کی تعریف کریں اور وہ wave property بیان کریں جس پر یہ depend کرتی ہے۔,Easy,2,PRO,1
+q_10_phy_ch13_sq_011,1,13.3 Characteristics of Sound,definition_function,Define quality of sound and state what it enables a listener to distinguish.,quality of sound کی تعریف کریں اور بیان کریں کہ یہ listener کو کیا distinguish کرنے دیتی ہے۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,13.4 Echo and Reflection of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_012,1,13.4 Echo and Reflection of Sound,definition_example,Define an echo and give one everyday example.,echo کی تعریف کریں اور روزمرہ زندگی سے ایک example دیں۔,Easy,2,PRO,1
+q_10_phy_ch13_sq_013,1,13.4 Echo and Reflection of Sound,list_state,State the minimum time interval and minimum wall distance required for a distinct echo in air.,air میں distinct echo کے لیے required minimum time interval اور minimum wall distance بیان کریں۔,Easy,2,ULTRA,1
+TOPIC_SEP,1,13.5 Refraction and Diffraction of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_014,1,13.5 Refraction and Diffraction of Sound,difference,Differentiate between refraction and diffraction of sound.,refraction اور diffraction of sound میں فرق بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,13.6 Audible Frequency,topic_separator,,,,,,1
+q_10_phy_ch13_sq_015,1,13.6 Audible Frequency,classification,State the human audible frequency range and classify sounds below and above this range.,human audible frequency range بیان کریں اور اس range سے below اور above sounds کو classify کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,13.7 Acoustic Protection of Buildings,topic_separator,,,,,,1
+q_10_phy_ch13_sq_016,1,13.7 Acoustic Protection of Buildings,list_state,Name two soft materials used for acoustic protection and state their purpose.,acoustic protection کے لیے used دو soft materials کے names اور ان کا purpose بیان کریں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,13.1 Bell-Jar Experiment,topic_separator,,,,,,1
+q_10_phy_ch13_sq_017,1,13.1 Bell-Jar Experiment,process_steps,Describe the bell-jar experiment that shows sound requires a material medium.,وہ bell-jar experiment بیان کریں جو ظاہر کرتا ہے کہ sound کو material medium درکار ہوتا ہے۔,Medium,2,PRO,1
+q_10_phy_ch13_sq_018,1,13.1 Bell-Jar Experiment,explain_reason,Explain why the sound of an electric bell becomes weak as air is removed from a bell jar.,وضاحت کریں کہ bell jar سے air remove کرنے پر electric bell کی sound weak کیوں ہو جاتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,13.1 Longitudinal Nature of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_019,1,13.1 Longitudinal Nature of Sound,concept_explanation,Explain the longitudinal nature of sound waves using particle motion and energy transfer.,particle motion اور energy transfer کی مدد سے sound waves کی longitudinal nature explain کریں۔,Medium,2,PRO,1
+q_10_phy_ch13_sq_020,1,13.2 Speed of Sound,cause_effect,Explain how temperature and humidity affect the speed of sound in air.,وضاحت کریں کہ temperature اور humidity air میں speed of sound کو کیسے affect کرتے ہیں۔,Medium,2,ELITE,1
+q_10_phy_ch13_sq_021,1,13.2 Speed of Sound,explain_reason,Explain why sound travels faster in solids than in gases.,وضاحت کریں کہ sound gases کے مقابلے میں solids میں faster کیوں travel کرتی ہے۔,Medium,2,PRO,1
+q_10_phy_ch13_sq_022,1,13.2 Speed of Sound,numerical_short,"Calculate the frequency of a sound wave using the given data: v = 340 m/s, λ = 2.0 m.","دیے گئے data سے sound wave کی frequency معلوم کریں: v = 340 m/s, λ = 2.0 m",Medium,2,PRO,1
+TOPIC_SEP,1,13.3 Loudness and Pitch,topic_separator,,,,,,1
+q_10_phy_ch13_sq_023,1,13.3 Loudness and Pitch,compare_contrast,Differentiate between loudness and pitch in terms of amplitude and frequency.,amplitude اور frequency کے لحاظ سے loudness اور pitch میں فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,13.3 Quality of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_024,1,13.3 Quality of Sound,diagram_based,Explain how oscilloscope traces help distinguish sounds of the same loudness and pitch from different instruments.,وضاحت کریں کہ oscilloscope traces same loudness اور pitch والے different instruments کے sounds کو distinguish کرنے میں کیسے مدد دیتی ہیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,13.4 Reflection of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_025,1,13.4 Reflection of Sound,law_principle,State the law of reflection of sound and describe the tube experiment used to verify it.,law of reflection of sound بیان کریں اور اسے verify کرنے والا tube experiment describe کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,13.4 Measuring Speed by Echo,topic_separator,,,,,,1
+q_10_phy_ch13_sq_026,1,13.4 Measuring Speed by Echo,process_steps,Describe the echo method used to determine the speed of sound in air.,air میں speed of sound determine کرنے والا echo method بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,13.4 Echo,topic_separator,,,,,,1
+q_10_phy_ch13_sq_027,1,13.4 Echo,numerical_short,Lightning is seen 2 s before thunder. Calculate the cloud distance using v = 332 m/s.,lightning thunder سے 2 s پہلے seen ہوتی ہے۔ cloud distance معلوم کریں: v = 332 m/s,Medium,2,PRO,1
+TOPIC_SEP,1,13.5 Refraction of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_028,1,13.5 Refraction of Sound,cause_effect,Explain why distant sounds may be heard more clearly at dawn.,وضاحت کریں کہ dawn کے وقت distant sounds زیادہ clearly کیوں سنائی دے سکتی ہیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,13.5 Diffraction of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_029,1,13.5 Diffraction of Sound,application_scenario,Explain why sound can be heard through an open doorway or around a corner.,وضاحت کریں کہ sound open doorway سے یا corner کے around کیوں سنائی دیتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,13.6 Infrasound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_030,1,13.6 Infrasound,definition_example,Define infrasound and state two of its applications.,infrasound کی تعریف کریں اور اس کی دو applications بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,13.6 Ultrasound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_031,1,13.6 Ultrasound,definition_example,Define ultrasound and state two medical applications.,ultrasound کی تعریف کریں اور اس کی دو medical applications بیان کریں۔,Medium,2,PRO,1
+q_10_phy_ch13_sq_032,1,13.7 Acoustic Protection of Buildings,function_purpose,"Explain the functions of curved ceilings, soundboards, carpets, and curtains in a hall.",hall میں curved ceilings، soundboards، carpets اور curtains کے functions بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,13.1 Production and Propagation of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_033,1,13.1 Production and Propagation of Sound,explain_reason,A vibrating tuning fork can be heard in air but not in a vacuum. Explain the complete physical reason.,vibrating tuning fork air میں heard ہوتی ہے لیکن vacuum میں نہیں۔ complete physical reason explain کریں۔,Hard,2,PRO,1
+q_10_phy_ch13_sq_034,1,13.2 Speed of Sound,table_based,"Compare the speeds of sound in air, distilled water, and steel and explain the trend using particle arrangement.",air، distilled water اور steel میں speeds of sound کا موازنہ کریں اور particle arrangement سے trend explain کریں۔,Hard,2,ELITE,1
+q_10_phy_ch13_sq_035,1,13.3 Characteristics of Sound,compare_contrast,"Explain how amplitude, frequency, and waveform separately affect loudness, pitch, and quality.",وضاحت کریں کہ amplitude، frequency اور waveform separately loudness، pitch اور quality کو کیسے affect کرتے ہیں۔,Hard,2,PRO,1
+q_10_phy_ch13_sq_036,1,13.4 Echo,numerical_short,A person hears an echo 2 s after shouting. Calculate the distance to the reflecting surface using v = 1600 m/s.,ایک person shouting کے 2 s بعد echo سنتا ہے۔ reflecting surface کی distance معلوم کریں: v = 1600 m/s,Hard,2,PRO,1
+TOPIC_SEP,1,13.4 Measuring Speed of Sound,topic_separator,,,,,,1
+q_10_phy_ch13_sq_037,1,13.4 Measuring Speed of Sound,numerical_short,A clap echo returns from a mountain in 6 s. Calculate the mountain distance using v = 343 m/s.,clap echo mountain سے 6 s میں return کرتی ہے۔ mountain distance معلوم کریں: v = 343 m/s,Hard,2,PRO,1
+TOPIC_SEP,1,13.6 SONAR,topic_separator,,,,,,1
+q_10_phy_ch13_sq_038,1,13.6 SONAR,process_steps,"Explain how SONAR determines sea depth, including the distance-time relationship used.",وضاحت کریں کہ SONAR sea depth کیسے determine کرتا ہے، including used distance-time relationship۔,Hard,2,PRO,1
+q_10_phy_ch13_sq_039,1,13.6 SONAR,numerical_short,A SONAR pulse travels 5120 m to the seabed and back. Calculate the depth of the sea.,SONAR pulse seabed تک اور واپس total 5120 m travel کرتی ہے۔ sea depth معلوم کریں۔,Hard,2,PRO,1
+q_10_phy_ch13_sq_040,1,13.7 Acoustic Protection of Buildings,advantages_disadvantages,Explain why both excessive reflection and excessive absorption are undesirable in an auditorium.,وضاحت کریں کہ auditorium میں excessive reflection اور excessive absorption دونوں undesirable کیوں ہیں۔,Hard,2,ELITE,1

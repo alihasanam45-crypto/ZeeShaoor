@@ -1,0 +1,45 @@
+﻿question_hash,active,topic,question_type,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+,1,1.2 Base and Derived Physical Quantities,,,,,,,,1
+q_9_phy_ch1_lq_001,,1.2 Base and Derived Physical Quantities,Long,state_and_explain,What is meant by base and derived quantities? Give the names and symbols of SI base units.,بنیادی اور اخذ شدہ مقداروں سے کیا مراد ہے؟ ایس آئی بنیادی اکائیوں کے نام اور علامات لکھیں۔,Medium,5,high,
+,1,1.3 Derived Units,,,,,,,,1
+q_9_phy_ch1_lq_002,,1.3 Derived Units,Long,describe,Give three examples of derived unit in SI. How are they derived from base units? Describe briefly.,ایس آئی میں اخذ شدہ اکائیوں کی تین مثالیں دیں۔ وہ بنیادی اکائیوں سے کیسے اخذ ہوتی ہیں؟ مختصر بیان کریں۔,Medium,5,high,
+,1,1.5 Vernier Callipers and Micrometer Screw Gauge,,,,,,,,1
+q_9_phy_ch1_lq_003,,1.5 Vernier Callipers and Micrometer Screw Gauge,Long,compare,State the similarities and differences between Vernier Callipers and micrometer screw gauge.,ورنیئر کیلپرز اور مائیکرو میٹر سکرو گیج کے درمیان مماثلتیں اور فرق بیان کریں۔,Medium,5,high,
+,1,1.9 Errors in Measurements,,,,,,,,1
+q_9_phy_ch1_lq_004,,1.9 Errors in Measurements,Long,state_and_explain,"Identify and explain the reasons for human errors, random errors and systematic errors in experiments.",تجربات میں انسانی غلطیوں، رینڈم غلطیوں اور سسٹیمیٹک غلطیوں کے اسباب کی نشاندہی اور وضاحت کریں۔,Medium,5,high,
+,1,1.12 Precision and Accuracy,,,,,,,,1
+q_9_phy_ch1_lq_005,,1.12 Precision and Accuracy,Long,differentiate,Differentiate between precision and accuracy of a measurement with examples.,پیمائش کی precision اور accuracy میں مثالوں کے ساتھ فرق بیان کریں۔,Medium,5,high,
+,1,1.1 Physical and Non-Physical Quantities,,,,,,,,1
+q_9_phy_ch1_lq_006,,1.1 Physical and Non-Physical Quantities,Long,explain,Explain physical and non-physical quantities with measurable and non-measurable examples. Also describe how non-physical quantities can be compared.,طبیعی اور غیر طبیعی مقداروں کی قابلِ پیمائش اور ناقابلِ پیمائش مثالوں کے ساتھ وضاحت کریں۔ یہ بھی بیان کریں کہ غیر طبیعی مقداروں کا موازنہ کیسے کیا جا سکتا ہے۔,Medium,5,high,
+,1,1.2 Measurement of a Physical Quantity,,,,,,,,1
+q_9_phy_ch1_lq_007,,1.2 Measurement of a Physical Quantity,Long,discuss,Discuss the need of a standard unit for measurements and explain why a measurement consists of a number and a unit.,پیمائش کے لیے معیاری اکائی کی ضرورت پر بحث کریں اور وضاحت کریں کہ پیمائش عدد اور اکائی پر کیوں مشتمل ہوتی ہے۔,Easy,5,high,
+,1,1.3 International System of Units,,,,,,,,1
+q_9_phy_ch1_lq_008,,1.3 International System of Units,Long,describe,Describe the International System of Units and explain how SI measurements help scientists share and compare observations.,بین الاقوامی نظامِ اکائیات کی وضاحت کریں اور بیان کریں کہ ایس آئی پیمائشیں سائنس دانوں کو مشاہدات شیئر اور موازنہ کرنے میں کیسے مدد دیتی ہیں۔,Easy,5,high,
+,1,1.4 SI Prefixes and Scientific Notation,,,,,,,,1
+q_9_phy_ch1_lq_009,,1.4 SI Prefixes and Scientific Notation,Long,elaborate,Elaborate the use of SI prefixes and scientific notation for representing very large and very small quantities.,بہت بڑی اور بہت چھوٹی مقداروں کو ظاہر کرنے کے لیے ایس آئی سابقوں اور سائنسی ترقیم کے استعمال کی تفصیل بیان کریں۔,Medium,5,high,
+,1,1.5 Length Measuring Instruments,,,,,,,,1
+q_9_phy_ch1_lq_010,,1.5 Length Measuring Instruments,Long,describe,"Describe metre rule, measuring tape, Vernier Callipers and micrometer screw gauge with their least counts and suitable uses.",میٹر رول، پیمائشی فیتہ، ورنیئر کیلپرز اور مائیکرو میٹر سکرو گیج کو ان کے لیسٹ کاؤنٹس اور مناسب استعمالات کے ساتھ بیان کریں۔,Hard,5,high,
+,1,1.5 Vernier Callipers,,,,,,,,1
+q_9_phy_ch1_lq_011,,1.5 Vernier Callipers,Long,explain,"Explain the method of measuring length using Vernier Callipers, including main scale reading, Vernier scale reading, least count and zero error.",ورنیئر کیلپرز سے لمبائی ناپنے کا طریقہ بیان کریں، جس میں main scale reading، Vernier scale reading، least count اور zero error شامل ہوں۔,Hard,5,high,
+,1,1.5 Micrometer Screw Gauge,,,,,,,,1
+q_9_phy_ch1_lq_012,,1.5 Micrometer Screw Gauge,Long,explain,"Explain the construction and use of a micrometer screw gauge, including pitch, least count, zero error and thickness measurement.",مائیکرو میٹر سکرو گیج کی ساخت اور استعمال کی وضاحت کریں، جس میں pitch، least count، zero error اور موٹائی کی پیمائش شامل ہو۔,Hard,5,high,
+,1,1.6 Mass Measuring Instruments,,,,,,,,1
+q_9_phy_ch1_lq_013,,1.6 Mass Measuring Instruments,Long,describe,Describe the process of measuring mass using a physical balance and explain the difference between mass and weight.,فزیکل بیلنس سے کمیت ناپنے کا طریقہ بیان کریں اور کمیت اور وزن کا فرق واضح کریں۔,Medium,5,high,
+,1,1.8 Volume Measuring Instruments,,,,,,,,1
+q_9_phy_ch1_lq_014,,1.8 Volume Measuring Instruments,Long,explain,Explain the use of measuring cylinder and displacement can method for measuring volume of liquids and non-dissolvable solids.,مائعات اور غیر حل پذیر ٹھوس اجسام کا حجم ناپنے کے لیے پیمائشی سلنڈر اور displacement can method کا استعمال واضح کریں۔,Medium,5,high,
+,1,"1.10 Uncertainty, Significant Figures and Rounding Off",,,,,,,,1
+q_9_phy_ch1_lq_015,,"1.10 Uncertainty, Significant Figures and Rounding Off",Long,explain,"Explain uncertainty in measurement, significant figures and rounding off the digits with suitable examples.",پیمائش میں غیر یقینی، اہم اعداد اور اعداد کو round off کرنے کی مناسب مثالوں کے ساتھ وضاحت کریں۔,Hard,5,high,
+,1,1.4 Scientific Notation — Solved Examples,,,,,,,,1
+q_9_phy_ch1_lq_016,,1.4 Scientific Notation — Solved Examples,Numerical,solve,Solve the following: (a) 5.123 × 10⁴ m + 3.28 × 10⁵ m (b) 2.57 × 10⁻² mm − 3.43 × 10⁻³ mm,درج ذیل کو حل کریں: (a) 5.123 × 10⁴ m + 3.28 × 10⁵ m (b) 2.57 × 10⁻² mm − 3.43 × 10⁻³ mm,Medium,4,high,
+q_9_phy_ch1_lq_017,,1.4 Scientific Notation — Solved Examples,Numerical,find,Find the value of each of the following quantities: (a) (4 × 10³ kg)(6 × 10⁶ m) (b) (6 × 10⁶ m³) / (2 × 10⁻² m²),درج ذیل مقداروں کی قیمت معلوم کریں: (a) (4 × 10³ kg)(6 × 10⁶ m) (b) (6 × 10⁶ m³) / (2 × 10⁻² m²),Medium,4,high,
+,1,Exercise Numericals,,,,,,,,1
+q_9_phy_ch1_lq_018,,Exercise Numericals,Numerical,calculate,Calculate the number of seconds in a (a) day (b) week (c) month and state your answers using SI prefixes.,سیکنڈز کی تعداد معلوم کریں اور جواب ایس آئی سابقوں کے ساتھ لکھیں: (a) day (b) week (c) month,Easy,4,high,
+q_9_phy_ch1_lq_019,,Exercise Numericals,Numerical,state,State the answers of problem 1.1 in scientific notation.,Problem 1.1 کے جوابات سائنسی ترقیم میں لکھیں۔,Easy,4,high,
+q_9_phy_ch1_lq_020,,Exercise Numericals,Numerical,solve,Solve the following addition or subtraction. State your answers in scientific notation. (a) 4 × 10⁻⁴ kg + 3 × 10⁻⁵ kg (b) 5.4 × 10⁻⁶ m − 3.2 × 10⁻⁵ m,درج ذیل جمع یا تفریق کو حل کریں اور جواب سائنسی ترقیم میں لکھیں: (a) 4 × 10⁻⁴ kg + 3 × 10⁻⁵ kg (b) 5.4 × 10⁻⁶ m − 3.2 × 10⁻⁵ m,Medium,4,high,
+q_9_phy_ch1_lq_021,,Exercise Numericals,Numerical,solve,Solve the following multiplication or division. State your answers in scientific notation. (a) (5 × 10⁴ m) × (3 × 10⁻² m) (b) (6 × 10⁸ kg) / (3 × 10⁴ m³),درج ذیل ضرب یا تقسیم کو حل کریں اور جواب سائنسی ترقیم میں لکھیں: (a) (5 × 10⁴ m) × (3 × 10⁻² m) (b) (6 × 10⁸ kg) / (3 × 10⁴ m³),Medium,4,high,
+q_9_phy_ch1_lq_022,,Exercise Numericals,Numerical,calculate,Calculate the following and state your answer in scientific notation: ((3 × 10² kg) × (4.0 km)) / (5 × 10² s²),درج ذیل کو حل کریں اور جواب سائنسی ترقیم میں لکھیں: ((3 × 10² kg) × (4.0 km)) / (5 × 10² s²),Medium,4,high,
+q_9_phy_ch1_lq_023,,Exercise Numericals,Numerical,determine,State the number of significant digits in each measurement. (a) 0.0045 m (b) 2.047 m (c) 3.40 m (d) 3.420 × 10⁴ m,ہر پیمائش میں اہم اعداد کی تعداد لکھیں: (a) 0.0045 m (b) 2.047 m (c) 3.40 m (d) 3.420 × 10⁴ m,Medium,4,high,
+q_9_phy_ch1_lq_024,,Exercise Numericals,Numerical,solve,Write in scientific notation: (a) 0.0035 m (b) 206.4 × 10² m,درج ذیل کو سائنسی ترقیم میں لکھیں: (a) 0.0035 m (b) 206.4 × 10² m,Easy,4,high,
+q_9_phy_ch1_lq_025,,Exercise Numericals,Numerical,determine,Write using correct prefixes: (a) 5.0 × 10⁴ cm (b) 580 × 10² g (c) 45 × 10⁻⁴ s,درج ذیل کو درست سابقوں کے ساتھ لکھیں: (a) 5.0 × 10⁴ cm (b) 580 × 10² g (c) 45 × 10⁻⁴ s,Medium,4,high,
+q_9_phy_ch1_lq_026,,Exercise Numericals,Numerical,calculate,"Light year is a unit of distance used in Astronomy. It is the distance covered by light in one year. Taking the speed of light as 3.0 × 10⁸ m s⁻¹, calculate the distance.",نوری سال فلکیات میں استعمال ہونے والی فاصلے کی اکائی ہے۔ یہ وہ فاصلہ ہے جو روشنی ایک سال میں طے کرتی ہے۔ دی گئی رفتار استعمال کرتے ہوئے فاصلہ معلوم کریں: 3.0 × 10⁸ m s⁻¹,Hard,4,high,
+q_9_phy_ch1_lq_027,,Exercise Numericals,Numerical,calculate,Express the density of mercury given as 13.6 g cm⁻³ in kg m⁻³.,مرکری کی دی گئی کثافت کو kg m⁻³ میں ظاہر کریں: 13.6 g cm⁻³,Hard,4,high,

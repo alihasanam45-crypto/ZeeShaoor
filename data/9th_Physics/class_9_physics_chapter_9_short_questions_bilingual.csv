@@ -1,0 +1,73 @@
+﻿question_hash,active,topic,question_style,question,urdu_translation,difficulty,marks,weightage,smart_syllabus
+TOPIC_SEP,1,9.1 Scope of Physics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_001,1,9.1 Scope of Physics,definition_function,Define science and name its two main groups.,science کی تعریف کریں اور اس کے دو main groups کے نام لکھیں۔,Easy,2,PRO,1
+q_9_phy_ch9_sq_002,1,9.1 Scope of Physics,definition_function,Define physics and state the fundamental entities studied in it.,physics کی تعریف کریں اور اس میں studied fundamental entities بیان کریں۔,Easy,2,PRO,1
+q_9_phy_ch9_sq_003,1,9.1 Scope of Physics,classification,Differentiate between biological sciences and physical sciences using the type of matter studied.,studied matter کی type کے لحاظ سے biological sciences اور physical sciences میں فرق بیان کریں۔,Medium,2,ELITE,1
+q_9_phy_ch9_sq_004,1,9.1 Scope of Physics,concept_explanation,"Explain how matter, energy, space, and time are mutually connected in physics.",وضاحت کریں کہ physics میں matter، energy، space اور time ایک دوسرے سے کیسے connected ہیں۔,Hard,2,ULTRA,1
+TOPIC_SEP,1,9.2 Branches of Physics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_005,1,9.2 Branches of Physics,list_state,Name any six major branches of physics.,physics کی any six major branches کے نام لکھیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,9.2 Mechanics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_006,1,9.2 Mechanics,definition_function,Define mechanics and state the laws on which classical mechanics is based.,mechanics کی تعریف کریں اور وہ laws بیان کریں جن پر classical mechanics based ہے۔,Easy,2,ELITE,1
+TOPIC_SEP,1,9.2 Heat and Thermodynamics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_007,1,9.2 Heat and Thermodynamics,definition_function,Define heat and thermodynamics as a branch of physics and state its subject matter.,physics کی branch کے طور پر heat and thermodynamics کی تعریف کریں اور اس کا subject matter بیان کریں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,9.2 Acoustics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_008,1,9.2 Acoustics,definition_function,Define acoustics and state the form of energy studied in it.,acoustics کی تعریف کریں اور اس میں studied energy کی form بیان کریں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,9.2 Optics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_009,1,9.2 Optics,definition_function,Define optics and state the physical phenomenon it studies.,optics کی تعریف کریں اور وہ physical phenomenon بیان کریں جسے یہ study کرتی ہے۔,Easy,2,ELITE,1
+TOPIC_SEP,1,9.2 Electromagnetism,topic_separator,,,,,,1
+q_9_phy_ch9_sq_010,1,9.2 Electromagnetism,definition_function,Define electromagnetism and state the relationship studied in it.,electromagnetism کی تعریف کریں اور اس میں studied relationship بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,9.2 Quantum Mechanics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_011,1,9.2 Quantum Mechanics,definition_function,Define quantum mechanics and state the scale at which it describes particle behaviour.,quantum mechanics کی تعریف کریں اور وہ scale بیان کریں جس پر یہ particle behaviour describe کرتی ہے۔,Easy,2,ELITE,1
+TOPIC_SEP,1,9.2 Relativistic Mechanics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_012,1,9.2 Relativistic Mechanics,definition_function,Define relativistic mechanics and state the quantities whose relationship it explains.,relativistic mechanics کی تعریف کریں اور وہ quantities بیان کریں جن کا relationship یہ explain کرتی ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,9.2 Nuclear and Particle Physics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_013,1,9.2 Nuclear and Particle Physics,difference,Differentiate between nuclear physics and particle physics.,nuclear physics اور particle physics میں فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,9.2 Astronomy and Cosmology,topic_separator,,,,,,1
+q_9_phy_ch9_sq_014,1,9.2 Astronomy and Cosmology,difference,Differentiate between astronomy and cosmology using their areas of study.,areas of study کے لحاظ سے astronomy اور cosmology میں فرق بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,9.2 Solid-State Physics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_015,1,9.2 Solid-State Physics,definition_function,Define solid-state physics and state the form of matter whose properties it studies.,solid-state physics کی تعریف کریں اور matter کی وہ form بیان کریں جس کی properties یہ study کرتی ہے۔,Easy,2,ELITE,1
+TOPIC_SEP,1,9.3 Interdisciplinary Nature of Physics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_016,1,9.3 Interdisciplinary Nature of Physics,definition_example,Define interdisciplinary fields of physics and give three examples.,interdisciplinary fields of physics کی تعریف کریں اور تین examples دیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,9.3 Biophysics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_017,1,9.3 Biophysics,definition_example,Define biophysics and give two examples of biological processes studied through physics.,biophysics کی تعریف کریں اور physics کے ذریعے studied biological processes کی دو examples دیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,9.3 Medical Physics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_018,1,9.3 Medical Physics,definition_example,Define medical physics and give three diagnostic or treatment applications.,medical physics کی تعریف کریں اور تین diagnostic یا treatment applications دیں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,9.3 Astrophysics,topic_separator,,,,,,1
+q_9_phy_ch9_sq_019,1,9.3 Astrophysics,definition_function,Define astrophysics and state the interaction it studies to understand the universe.,astrophysics کی تعریف کریں اور وہ interaction بیان کریں جسے universe سمجھنے کے لیے study کیا جاتا ہے۔,Medium,2,ELITE,1
+TOPIC_SEP,1,"9.3 Geophysics, Climate Physics and Computational Physics",topic_separator,,,,,,1
+q_9_phy_ch9_sq_020,1,"9.3 Geophysics, Climate Physics and Computational Physics",compare_contrast,"Compare geophysics, climate physics, and computational physics in terms of their areas of study.",areas of study کے لحاظ سے geophysics، climate physics اور computational physics کا موازنہ کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,9.4 Interdisciplinary Research,topic_separator,,,,,,1
+q_9_phy_ch9_sq_021,1,9.4 Interdisciplinary Research,concept_explanation,Explain why interdisciplinary research is necessary for solving modern scientific problems.,وضاحت کریں کہ modern scientific problems solve کرنے کے لیے interdisciplinary research کیوں ضروری ہے۔,Hard,2,PRO,1
+q_9_phy_ch9_sq_022,1,9.4 Interdisciplinary Research,cause_effect,State why complex issues require expertise from multiple disciplines.,بیان کریں کہ complex issues کے لیے multiple disciplines کی expertise کیوں required ہوتی ہے۔,Medium,2,PRO,1
+q_9_phy_ch9_sq_023,1,9.4 Interdisciplinary Research,cause_effect,Explain how interdisciplinary approaches promote innovation.,وضاحت کریں کہ interdisciplinary approaches innovation کو کیسے promote کرتی ہیں۔,Hard,2,ELITE,1
+q_9_phy_ch9_sq_024,1,9.4 Interdisciplinary Research,advantages_disadvantages,State two benefits of rapid global sharing of scientific knowledge and information.,scientific knowledge اور information کی rapid global sharing کے دو benefits بیان کریں۔,Medium,2,ELITE,1
+TOPIC_SEP,1,9.5 Scientific Method,topic_separator,,,,,,1
+q_9_phy_ch9_sq_025,1,9.5 Scientific Method,definition_function,Define the scientific method and state its main purpose.,scientific method کی تعریف کریں اور اس کا main purpose بیان کریں۔,Easy,2,PRO,1
+q_9_phy_ch9_sq_026,1,9.5 Scientific Method,sequence,List the main steps of the scientific method in their correct sequence.,scientific method کے main steps کو correct sequence میں لکھیں۔,Medium,2,PRO,1
+TOPIC_SEP,1,9.5 Observation,topic_separator,,,,,,1
+q_9_phy_ch9_sq_027,1,9.5 Observation,definition_example,Define observation as a step of the scientific method and give one relevant example.,scientific method کے step کے طور پر observation کی تعریف کریں اور ایک relevant example دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,9.5 Hypothesis,topic_separator,,,,,,1
+q_9_phy_ch9_sq_028,1,9.5 Hypothesis,definition_example,Define a hypothesis and give one testable example.,hypothesis کی تعریف کریں اور ایک testable example دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,9.5 Experiment,topic_separator,,,,,,1
+q_9_phy_ch9_sq_029,1,9.5 Experiment,definition_function,Define an experiment and state its role in testing a hypothesis.,experiment کی تعریف کریں اور hypothesis test کرنے میں اس کا role بیان کریں۔,Easy,2,PRO,1
+TOPIC_SEP,1,9.5 Theory,topic_separator,,,,,,1
+q_9_phy_ch9_sq_030,1,9.5 Theory,definition_function,Define a scientific theory and state how it is developed from experiments.,scientific theory کی تعریف کریں اور بیان کریں کہ یہ experiments سے کیسے develop ہوتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,9.5 Prediction,topic_separator,,,,,,1
+q_9_phy_ch9_sq_031,1,9.5 Prediction,definition_function,Define prediction and state how it is used to test a theory.,prediction کی تعریف کریں اور بیان کریں کہ اسے theory test کرنے کے لیے کیسے use کیا جاتا ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,9.5 Falsifiability,topic_separator,,,,,,1
+q_9_phy_ch9_sq_032,1,9.5 Falsifiability,definition_function,Define falsifiability and explain why it is important for a scientific theory.,falsifiability کی تعریف کریں اور explain کریں کہ یہ scientific theory کے لیے کیوں important ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,9.5 Law,topic_separator,,,,,,1
+q_9_phy_ch9_sq_033,1,9.5 Law,definition_function,Define a scientific law and state how repeated testing leads to its acceptance.,scientific law کی تعریف کریں اور بیان کریں کہ repeated testing اس کی acceptance تک کیسے لے جاتی ہے۔,Medium,2,PRO,1
+TOPIC_SEP,1,9.5 Theory and Law,topic_separator,,,,,,1
+q_9_phy_ch9_sq_034,1,9.5 Theory and Law,difference,Differentiate between a scientific theory and a scientific law.,scientific theory اور scientific law میں فرق بیان کریں۔,Medium,2,PRO,1
+TOPIC_SEP,1,9.5 Experiment and Hypothesis,topic_separator,,,,,,1
+q_9_phy_ch9_sq_035,1,9.5 Experiment and Hypothesis,concept_explanation,Explain the relationship between an experiment and a hypothesis.,experiment اور hypothesis کے درمیان relationship explain کریں۔,Medium,2,PRO,1
+q_9_phy_ch9_sq_036,1,9.5 Scientific Method,application_scenario,Formulate a testable hypothesis for the formation of an object's shadow and state how it may be checked experimentally.,object کے shadow کی formation کے لیے ایک testable hypothesis بنائیں اور بیان کریں کہ اسے experimentally کیسے check کیا جا سکتا ہے۔,Hard,2,PRO,1
+TOPIC_SEP,1,9.6 Technology,topic_separator,,,,,,1
+q_9_phy_ch9_sq_037,1,9.6 Technology,definition_example,Define technology and give two examples based on scientific knowledge.,technology کی تعریف کریں اور scientific knowledge پر based دو examples دیں۔,Easy,2,PRO,1
+TOPIC_SEP,1,9.6 Engineering,topic_separator,,,,,,1
+q_9_phy_ch9_sq_038,1,9.6 Engineering,definition_example,Define engineering and give two examples of engineering applications stated in physics.,engineering کی تعریف کریں اور physics میں stated engineering applications کی دو examples دیں۔,Easy,2,ELITE,1
+TOPIC_SEP,1,"9.6 Science, Technology and Engineering",topic_separator,,,,,,1
+q_9_phy_ch9_sq_039,1,"9.6 Science, Technology and Engineering",compare_contrast,"Differentiate among science, technology, and engineering using their purposes and applications.",purposes اور applications کے لحاظ سے science، technology اور engineering میں فرق بیان کریں۔,Hard,2,PRO,1
+TOPIC_SEP,1,9.6 Scientific Base of Technologies and Engineering,topic_separator,,,,,,1
+q_9_phy_ch9_sq_040,1,9.6 Scientific Base of Technologies and Engineering,application_scenario,State the scientific basis of laser technology and mention three areas in which it is used.,laser technology کی scientific basis بیان کریں اور اس کے استعمال کے تین areas لکھیں۔,Hard,2,PRO,1
