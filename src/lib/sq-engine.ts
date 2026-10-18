@@ -1,5 +1,10 @@
 // ZeeShaoor.pk — Short Question Generation Engine
 // Every SQ = 2 marks (BISE Punjab standard)
+//
+// SIMPLE EXPLANATION: for each section we need N "given" questions on the
+// paper, out of which the student "attempts" M. We pick questions one at a
+// time, always choosing whichever remaining question best balances the
+// difficulty / SLO / theory-vs-numerical mix requested in `balance`.
 
 export type SloTag = 'Knowledge' | 'Comprehension' | 'Application';
 export type SqSubType = 'Theory' | 'Numerical_Reasoning';
@@ -48,12 +53,12 @@ export const SQ_MODE_ORDER: SqMode[] = [
 ];
 
 export const SQ_PRESETS: SqPreset[] = [
-  { id: 'flex_choice_topical_quiz',  mode: 'flexible_choice', label: 'Topical Quiz',     desc: '12 given · attempt 10',   sections: [{ label: 'All', given: 12, attempt: 10 }] },
-  { id: 'flex_choice_monthly_review', mode: 'flexible_choice', label: 'Monthly Review',  desc: '20 given · attempt 15',   sections: [{ label: 'All', given: 20, attempt: 15 }] },
-  { id: 'flex_choice_quick_quiz',     mode: 'flexible_choice', label: 'Quick Quiz',      desc: '5 given · attempt 3',     sections: [{ label: 'All', given: 5, attempt: 3 }] },
-  { id: 'bise_full_board',  mode: 'bise_pattern', label: 'Full Board',  desc: '3 sections × 8→5', sections: [{ label: 'Q.2', given: 8, attempt: 5 }, { label: 'Q.3', given: 8, attempt: 5 }, { label: 'Q.4', given: 8, attempt: 5 }] },
-  { id: 'bise_half_board',  mode: 'bise_pattern', label: 'Half Board',  desc: '1 section · 8→5',   sections: [{ label: 'Q.2', given: 8, attempt: 5 }] },
-  { id: 'bise_double_board',mode: 'bise_pattern', label: 'Double Board',desc: '2 sections × 8→5', sections: [{ label: 'Q.2', given: 8, attempt: 5 }, { label: 'Q.3', given: 8, attempt: 5 }] },
+  { id: 'flex_choice_topical_quiz',   mode: 'flexible_choice', label: 'Topical Quiz',     desc: '12 given · attempt 10',   sections: [{ label: 'All', given: 12, attempt: 10 }] },
+  { id: 'flex_choice_monthly_review', mode: 'flexible_choice', label: 'Monthly Review',   desc: '20 given · attempt 15',   sections: [{ label: 'All', given: 20, attempt: 15 }] },
+  { id: 'flex_choice_quick_quiz',     mode: 'flexible_choice', label: 'Quick Quiz',       desc: '5 given · attempt 3',     sections: [{ label: 'All', given: 5, attempt: 3 }] },
+  { id: 'bise_full_board',   mode: 'bise_pattern', label: 'Full Board',   desc: '3 sections × 8→5', sections: [{ label: 'Q.2', given: 8, attempt: 5 }, { label: 'Q.3', given: 8, attempt: 5 }, { label: 'Q.4', given: 8, attempt: 5 }] },
+  { id: 'bise_half_board',   mode: 'bise_pattern', label: 'Half Board',   desc: '1 section · 8→5',   sections: [{ label: 'Q.2', given: 8, attempt: 5 }] },
+  { id: 'bise_double_board', mode: 'bise_pattern', label: 'Double Board', desc: '2 sections × 8→5', sections: [{ label: 'Q.2', given: 8, attempt: 5 }, { label: 'Q.3', given: 8, attempt: 5 }] },
   { id: 'comp_mini_quiz',      mode: 'compulsory', label: 'Mini Quiz',      desc: '5 Qs · all compulsory',    sections: [{ label: 'All', given: 5, attempt: 5 }] },
   { id: 'comp_chapter_test',   mode: 'compulsory', label: 'Chapter Test',   desc: '10 Qs · all compulsory',   sections: [{ label: 'All', given: 10, attempt: 10 }] },
   { id: 'comp_half_book',      mode: 'compulsory', label: 'Half Book',      desc: '15 Qs · all compulsory',   sections: [{ label: 'All', given: 15, attempt: 15 }] },
@@ -70,7 +75,6 @@ export interface SqGenerationConfig {
   mode: SqMode;
   sections: SqSectionDef[];
   balance: SqBalanceTargets;
-  chapterWeights?: Record<string, number>;
 }
 
 export interface SqSectionResult {
@@ -100,6 +104,10 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+/**
+ * Higher score = this question is a BETTER fit right now, because picking it
+ * would push the section's mix closer to the requested balance targets.
+ */
 function computeFitScore(
   q: SqQuestion,
   selected: SqQuestion[],

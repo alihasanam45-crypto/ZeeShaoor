@@ -12,14 +12,28 @@
 // chapter-filtered query matched zero documents.
 //
 // The fix is to stop treating the prose name as an identity. `chapter` in the
-// database is the chapter NUMBER as a string ("1".."12") — unambiguous, stable
+// database is the chapter NUMBER as a string ("1".."26") — unambiguous, stable
 // under renaming and translation, and derivable straight from a filename.
 // Prose names live here, for display only, and are never used to match.
 //
-// Adding a subject: add a `<classLevel>:<Subject>` key. A subject with no entry
-// still works — chapters fall back to "Chapter N".
+// IMPORTANT: chaptersFor() below drives the chapter picker in the generator
+// UI. A class+subject with NO entry here shows "Chapter data coming soon" and
+// cannot be selected at all, even if the database already has questions for
+// it — so every subject enabled in src/config/curriculum.ts MUST have an
+// entry here (exact titles are not load-bearing; only the chapter COUNT and
+// NUMBERING matter for the UI/DB to line up).
 
 export type ChapterNumber = string
+
+/** Build { [n]: "Chapter n" } for n in [start, end] — a placeholder title set
+ *  for subjects whose official BISE chapter titles have not been transcribed
+ *  yet. Safe to use as-is; correct the wording later without touching any
+ *  query, since only the numeric key is load-bearing. */
+function placeholderRange(start: number, end: number): Record<ChapterNumber, string> {
+  const out: Record<ChapterNumber, string> = {}
+  for (let n = start; n <= end; n++) out[String(n)] = `Chapter ${n}`
+  return out
+}
 
 /** Canonical display names, keyed by `<classLevel>:<Subject>`. */
 const CHAPTER_NAMES: Record<string, Record<ChapterNumber, string>> = {
@@ -38,6 +52,10 @@ const CHAPTER_NAMES: Record<string, Record<ChapterNumber, string>> = {
     '9': 'Nature of Science',
   },
 
+  // Class 10 Physics continues the chapter numbering from Class 9 (10, 11,
+  // 12...) — matches data/10th_physics/class_10_physics_chapter_10..21.
+  '10:Physics': placeholderRange(10, 21),
+
   // Derived from the `topic` column of data/10th_computer/*.csv (e.g. ch1's
   // topics all sit under "1.1 Introduction to Operating System (OS)"). These
   // are inferred from the source material rather than transcribed from an
@@ -53,6 +71,19 @@ const CHAPTER_NAMES: Record<string, Record<ChapterNumber, string>> = {
     '7': 'Impact of Artificial Intelligence',
     '8': 'Entrepreneurship in the Digital Age',
   },
+
+  // Placeholder titles below — counts verified against the CSV filenames in
+  // data/<class>_<subject>/, wording not yet transcribed from the textbooks.
+  '9:Chemistry':   placeholderRange(1, 13),
+  '9:Biology':     placeholderRange(1, 11),
+  '9:Mathematics': placeholderRange(1, 13),
+  '9:Computer':    placeholderRange(1, 9),
+  '9:Islamiyat (Compulsory)': placeholderRange(1, 7),
+
+  '10:Chemistry':   placeholderRange(14, 26),
+  '10:Biology':     placeholderRange(1, 10),
+  '10:Mathematics': placeholderRange(1, 12),
+  '10:Islamiyat (Compulsory)': placeholderRange(1, 7),
 }
 
 function key(classLevel: string, subject: string): string {
@@ -75,15 +106,23 @@ export function normalizeChapter(input: unknown): ChapterNumber | null {
 /**
  * Extract a chapter number from a CSV filename. This is the seeder's only
  * chapter source: filenames are consistently numbered ("ch2_kinematics_...",
- * "chapter_4_turning_effects...", "class_9_physics_ch1_mcqs.csv"), whereas the
- * topic column mixes numbered headings with free prose like "Exercise MCQs".
+ * "chapter_4_turning_effects...", "class_9_physics_ch1_mcqs.csv", or
+ * "Bab_3_..." for Islamiyat), whereas the topic column mixes numbered
+ * headings with free prose like "Exercise MCQs".
  *
  * Note the `ch(?:apter)?` alternation cannot match the "cl" of "class_9", so a
  * class number is never mistaken for a chapter number.
  */
 export function chapterFromFilename(filename: string): ChapterNumber | null {
-  const m = filename.match(/ch(?:apter)?[_\-\s]?(\d{1,2})/i)
-  return m ? String(Number(m[1])) : null
+  const patterns = [
+    /ch(?:apter)?[_\-\s]?(\d{1,2})/i,
+    /bab[_\-\s]?(\d{1,2})/i,
+  ]
+  for (const p of patterns) {
+    const m = filename.match(p)
+    if (m) return String(Number(m[1]))
+  }
+  return null
 }
 
 /** Display name for a chapter. Falls back to "Chapter N" when unregistered. */

@@ -3,11 +3,33 @@
  * combinations are currently available in the paper generator.
  *
  * Only classes and subjects with seeded question data belong here.
+ * Subject spelling MUST match CLASS_SUBJECT_MATRIX in src/models/Question.ts
+ * exactly (e.g. "Mathematics" not "Maths", "Islamiyat (Compulsory)" not
+ * "Islamiat") — these are matched with strict equality against the database.
+ *
+ * English and Urdu are deliberately left out for now: their source CSVs are
+ * organised by topic (grammar, comprehension, letter-writing) rather than by
+ * numbered textbook chapters, so they need a different chapter-selection
+ * model before they can be added here safely.
  */
 
 export const CURRICULUM = {
-  'Class 9': ['Physics'],
-  'Class 10': ['Computer'],
+  'Class 9': [
+    'Physics',
+    'Chemistry',
+    'Biology',
+    'Mathematics',
+    'Computer',
+    'Islamiyat (Compulsory)',
+  ],
+  'Class 10': [
+    'Physics',
+    'Chemistry',
+    'Biology',
+    'Mathematics',
+    'Computer',
+    'Islamiyat (Compulsory)',
+  ],
 } as const satisfies Record<string, readonly string[]>;
 
 export type ClassName = keyof typeof CURRICULUM;

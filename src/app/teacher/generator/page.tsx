@@ -1374,7 +1374,17 @@ export default function GeneratorPage() {
 
                   return (
                     <div key={chId}>
-                      <button onClick={() => setModalChapter(chData ?? null)} style={{
+                      <button onClick={() => {
+                        if (chData) {
+                          // Physics jaisay subjects jinke topics hain — topic modal khulega
+                          setModalChapter(chData);
+                        } else {
+                          // Chemistry/Biology/Math waghera — seedha chapter tick/untick ho jaye
+                          setSelectedChapters(prev =>
+                            prev.includes(chId) ? prev.filter(c => c !== chId) : [...prev, chId]
+                          );
+                        }
+                      }} style={{
                         textAlign:"left", padding:"5px 8px", borderRadius:5,
                         border:`1px solid ${checked ? P.borderActive : "transparent"}`,
                         background: checked ? "rgba(74,158,202,0.10)" : "transparent",

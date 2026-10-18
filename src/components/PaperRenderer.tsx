@@ -51,7 +51,153 @@ const getOpts = (q: any): string[] =>
   [q.A || q.option_a, q.B || q.option_b, q.C || q.option_c, q.D || q.option_d].filter(Boolean);
 
 const getChapter = (q: any): string => q.chapter || q.Chapter || 'General';
+function cleanChapterLabel(raw?: string): string {
+  if (!raw) return '—';
+  if (/^mix/i.test(raw)) return 'Mixed';
+  const m = raw.match(/^ch\.?\s*(\d+)/i);
+  if (m) return m[1];
+  return raw;
+}
 
+type InfoLayoutId = 'minimal' | 'grid3' | 'academic-table' | 'saas-card' | 'ultra-dense';
+
+const INFO_LAYOUTS: { id: InfoLayoutId; label: string; desc: string }[] = [
+  { id: 'minimal',        label: 'Minimalist Clean', desc: 'Single elegant line' },
+  { id: 'grid3',          label: 'Compact 3-Column', desc: 'Boxed grid, dense but tidy' },
+  { id: 'academic-table', label: 'Classic Academic', desc: 'Bordered ledger-style table' },
+  { id: 'saas-card',      label: 'Modern SaaS Card', desc: 'Accent-bordered analytics card' },
+  { id: 'ultra-dense',    label: 'Ultra-Dense Tech', desc: 'Monospace, max density' },
+];
+
+
+const cellLbl: React.CSSProperties = { border: '1px solid #999', padding: '3px 6px', background: '#f3f4f6', fontWeight: 700, fontSize: '9px', color: '#4b5563', textTransform: 'uppercase' };
+const cellVal: React.CSSProperties = { border: '1px solid #999', padding: '3px 6px' };
+
+function PaperInfoSection({ layout, metadata, paperCode, totalMarks, totalQs }: {
+  layout: InfoLayoutId;
+  metadata: { class: string; subject: string; chapter?: string };
+  paperCode: string; totalMarks: number; totalQs: number;
+}) {
+  const chapterLabel = cleanChapterLabel(metadata.chapter);
+  const timeAllowed = Math.round(totalMarks * 1.5);
+
+  if (layout === 'minimal') return (
+    <div style={{ fontSize: '11px', color: '#1f2937', lineHeight: '1.9', padding: '2px 0' }}>
+      <div style={{ display: 'flex', gap: '18px', flexWrap: 'wrap' }}>
+        <span><strong style={{ color: '#6b7280', fontWeight: 500 }}>Class</strong> &nbsp;{metadata.class}</span>
+        <span><strong style={{ color: '#6b7280', fontWeight: 500 }}>Subject</strong> &nbsp;{metadata.subject}</span>
+        <span><strong style={{ color: '#6b7280', fontWeight: 500 }}>Chapter</strong> &nbsp;{chapterLabel}</span>
+        <span><strong style={{ color: '#6b7280', fontWeight: 500 }}>Marks</strong> &nbsp;{totalMarks}</span>
+        <span><strong style={{ color: '#6b7280', fontWeight: 500 }}>Time</strong> &nbsp;{timeAllowed}min</span>
+        <span style={{ fontFamily: 'monospace', color: '#7c3aed', fontWeight: 700 }}>{paperCode}</span>
+      </div>
+      <div style={{ marginTop: '6px', display: 'flex', gap: '24px' }}>
+        <span>Student: <span style={{ display: 'inline-block', minWidth: '180px', borderBottom: '1px solid #000' }}>&nbsp;</span></span>
+        <span>Roll#: <span style={{ display: 'inline-block', minWidth: '70px', borderBottom: '1px solid #000' }}>&nbsp;</span></span>
+      </div>
+    </div>
+  );
+
+  if (layout === 'grid3') return (
+    <div style={{ border: '1px solid #e5e7eb', borderRadius: '8px', overflow: 'hidden', marginTop: '4px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }}>
+        {[
+          { l: 'Class', v: metadata.class }, { l: 'Subject', v: metadata.subject }, { l: 'Chapter', v: chapterLabel },
+          { l: 'Total Marks', v: String(totalMarks) }, { l: 'Time Allowed', v: `${timeAllowed} min` }, { l: 'Paper Code', v: paperCode },
+        ].map((it, i) => (
+          <div key={it.l} style={{ padding: '7px 10px', borderRight: i % 3 !== 2 ? '1px solid #e5e7eb' : 'none', borderBottom: i < 3 ? '1px solid #e5e7eb' : 'none' }}>
+            <div style={{ fontSize: '8px', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{it.l}</div>
+            <div style={{ fontSize: '11px', fontWeight: 700, color: '#111827', fontFamily: it.l === 'Paper Code' ? 'monospace' : undefined }}>{it.v}</div>
+          </div>
+        ))}
+      </div>
+      <div style={{ padding: '7px 10px', display: 'flex', gap: '18px', borderTop: '1px solid #e5e7eb', fontSize: '10px', background: '#fafafa' }}>
+        <span>Student: <span style={{ display: 'inline-block', minWidth: '160px', borderBottom: '1px solid #000' }}>&nbsp;</span></span>
+        <span>Roll#: <span style={{ display: 'inline-block', minWidth: '60px', borderBottom: '1px solid #000' }}>&nbsp;</span></span>
+      </div>
+    </div>
+  );
+
+  if (layout === 'academic-table') return (
+    <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '10.5px', marginTop: '4px' }}>
+      <tbody>
+        <tr>
+          <td style={cellLbl}>Class</td><td style={cellVal}>{metadata.class}</td>
+          <td style={cellLbl}>Subject</td><td style={cellVal}>{metadata.subject}</td>
+          <td style={cellLbl}>Chapter</td><td style={cellVal}>{chapterLabel}</td>
+        </tr>
+        <tr>
+          <td style={cellLbl}>Total Marks</td><td style={cellVal}>{totalMarks}</td>
+          <td style={cellLbl}>Time</td><td style={cellVal}>{timeAllowed} min</td>
+          <td style={cellLbl}>Code</td><td style={{ ...cellVal, fontFamily: 'monospace', color: '#7c3aed', fontWeight: 700 }}>{paperCode}</td>
+        </tr>
+        <tr>
+          <td style={cellLbl}>Student</td><td colSpan={3} style={cellVal}>&nbsp;</td>
+          <td style={cellLbl}>Roll#</td><td style={cellVal}>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  );
+
+  if (layout === 'saas-card') return (
+    <div style={{ display: 'flex', gap: '8px', marginTop: '4px', flexWrap: 'wrap' }}>
+      {[
+        { l: 'Class', v: metadata.class, c: '#2563eb' }, { l: 'Subject', v: metadata.subject, c: '#7c3aed' },
+        { l: 'Chapter', v: chapterLabel, c: '#0891b2' }, { l: 'Marks', v: String(totalMarks), c: '#16a34a' },
+        { l: 'Time', v: `${timeAllowed}m`, c: '#d97706' }, { l: 'Code', v: paperCode, c: '#db2777' },
+      ].map(it => (
+        <div key={it.l} style={{ flex: '1 1 90px', borderLeft: `3px solid ${it.c}`, background: 'rgba(0,0,0,0.015)', borderRadius: '0 6px 6px 0', padding: '5px 9px' }}>
+          <div style={{ fontSize: '7.5px', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{it.l}</div>
+          <div style={{ fontSize: '11px', fontWeight: 800, color: '#111827', fontFamily: it.l === 'Code' ? 'monospace' : undefined }}>{it.v}</div>
+        </div>
+      ))}
+      <div style={{ flexBasis: '100%', display: 'flex', gap: '16px', fontSize: '10px', marginTop: '2px', color: '#374151' }}>
+        <span>Student: <span style={{ display: 'inline-block', minWidth: '160px', borderBottom: '1px solid #000' }}>&nbsp;</span></span>
+        <span>Roll#: <span style={{ display: 'inline-block', minWidth: '60px', borderBottom: '1px solid #000' }}>&nbsp;</span></span>
+      </div>
+    </div>
+  );
+
+  return (
+    <div style={{ fontFamily: 'monospace', fontSize: '10px', color: '#111827', background: '#f5f5f5', border: '1px solid #d4d4d4', borderRadius: '4px', padding: '5px 10px', marginTop: '4px', display: 'flex', gap: '14px', flexWrap: 'wrap', alignItems: 'center' }}>
+      <span>CLS:<strong>{metadata.class}</strong></span>
+      <span>SUB:<strong>{metadata.subject}</strong></span>
+      <span>CH:<strong>{chapterLabel}</strong></span>
+      <span>MRK:<strong>{totalMarks}</strong></span>
+      <span>QTY:<strong>{totalQs}</strong></span>
+      <span>TIME:<strong>{timeAllowed}m</strong></span>
+      <span style={{ color: '#7c3aed' }}>CODE:<strong>{paperCode}</strong></span>
+      <span style={{ marginLeft: 'auto' }}>STU:____________ ROLL:______</span>
+    </div>
+  );
+}
+
+function MarksDistributionBox({ mcqs, shortQuestions, longQuestions, marksPerShort, marksPerLong, totalMarks, settings }: any) {
+  const showMCQs = !settings.removeQuestions.includes('MCQs');
+  const showSQs  = !settings.removeQuestions.includes('SQs');
+  const showLQs  = !settings.removeQuestions.includes('LQs');
+  const rows = [
+    showMCQs && mcqs.length > 0 && { label: 'MCQ', count: mcqs.length, each: 1, total: mcqs.length },
+    showSQs && shortQuestions.length > 0 && { label: 'Short', count: shortQuestions.length, each: marksPerShort, total: shortQuestions.length * marksPerShort },
+    showLQs && longQuestions.length > 0 && { label: 'Long', count: longQuestions.length, each: marksPerLong, total: longQuestions.length * marksPerLong },
+  ].filter(Boolean) as { label: string; count: number; each: number; total: number }[];
+
+  return (
+    <div style={{ marginTop: '6px', marginBottom: '4px', borderRadius: '10px', border: '1px solid rgba(0,0,0,0.08)', background: 'linear-gradient(180deg, rgba(0,0,0,0.015), rgba(0,0,0,0))', display: 'flex', overflow: 'hidden' }}>
+      {rows.map(r => (
+        <div key={r.label} style={{ flex: 1, padding: '7px 12px', borderRight: '1px solid rgba(0,0,0,0.06)', textAlign: 'center' }}>
+          <div style={{ fontSize: '7.5px', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>{r.label}</div>
+          <div style={{ fontSize: '13px', fontWeight: 800, color: '#111827', marginTop: '1px' }}>{r.total}<span style={{ fontSize: '8px', color: '#9ca3af', fontWeight: 500 }}>M</span></div>
+          <div style={{ fontSize: '7.5px', color: '#9ca3af', marginTop: '1px' }}>{r.count}×{r.each}</div>
+        </div>
+      ))}
+      <div style={{ flex: 1, padding: '7px 12px', textAlign: 'center', background: 'rgba(124,58,237,0.06)' }}>
+        <div style={{ fontSize: '7.5px', color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 700 }}>Total</div>
+        <div style={{ fontSize: '15px', fontWeight: 900, color: '#7c3aed', marginTop: '1px' }}>{totalMarks}<span style={{ fontSize: '8px', fontWeight: 600 }}>M</span></div>
+      </div>
+    </div>
+  );
+}
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // UTILITIES
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -550,7 +696,7 @@ function PaperHeader({ template, metadata, paperCode, matrixId, totalMarks, mcqs
   );
 
   if (template === 'classic') return (
-    <div style={{ borderBottom: '3px double #000', paddingBottom: '10px', marginBottom: '14px', position: 'relative', zIndex: 1 }}>
+    <div style={{ borderBottom: '3px double #000', paddingBottom: '6px', marginBottom: '10px', position: 'relative', zIndex: 1 }}>
       <div style={{ textAlign: 'center', marginBottom: '8px' }}>
         <div style={{ fontSize: '9px', color: '#888', letterSpacing: '1px', textTransform: 'uppercase' }}>Board of Intermediate & Secondary Education</div>
         <h1 style={{ fontSize: '18px', fontWeight: '900', margin: '2px 0', letterSpacing: '2px', textTransform: 'uppercase' }}>ZeeShaoor.pk</h1>
@@ -571,7 +717,6 @@ function PaperHeader({ template, metadata, paperCode, matrixId, totalMarks, mcqs
           <div style={{ fontSize: '7px', fontFamily: 'monospace', color: '#666', marginTop: '2px' }}>{matrixId}</div>
         </div>
       </div>
-      <MarksTable />
       {showCoverage && <ChapterCoverageBar mcqs={mcqs} shortQuestions={shortQuestions} longQuestions={longQuestions} />}
       {showAnswers && <div style={{ color: '#dc2626', fontWeight: 'bold', marginTop: '5px', fontSize: '10px' }}>⚠ {watermarkText} — TEACHER USE ONLY</div>}
     </div>
@@ -617,7 +762,6 @@ function PaperHeader({ template, metadata, paperCode, matrixId, totalMarks, mcqs
           <div style={{ fontSize: '18px', fontWeight: '900', color: '#374151', lineHeight: '1', borderBottom: '1px solid #000', minWidth: '40px' }}>&nbsp;</div>
         </div>
       </div>
-      <MarksTable />
       {showCoverage && <ChapterCoverageBar mcqs={mcqs} shortQuestions={shortQuestions} longQuestions={longQuestions} />}
       {showAnswers && <div style={{ color: '#dc2626', fontWeight: 'bold', fontSize: '10px', marginTop: '4px' }}>⚠ {watermarkText} — TEACHER ONLY</div>}
       <div style={{ borderBottom: '2px solid #1e1b4b', marginTop: '8px' }} />
@@ -664,7 +808,6 @@ function PaperHeader({ template, metadata, paperCode, matrixId, totalMarks, mcqs
         </div>
       </div>
       <SectionPills />
-      <MarksTable />
       {showCoverage && <ChapterCoverageBar mcqs={mcqs} shortQuestions={shortQuestions} longQuestions={longQuestions} />}
       {showAnswers && <div style={{ color: '#dc2626', fontWeight: 'bold', fontSize: '10px', marginTop: '4px' }}>⚠ {watermarkText} — DO NOT DISTRIBUTE</div>}
     </div>
@@ -687,7 +830,6 @@ function PaperHeader({ template, metadata, paperCode, matrixId, totalMarks, mcqs
         </div>
       </div>
       <SectionPills />
-      <MarksTable />
       {showCoverage && <ChapterCoverageBar mcqs={mcqs} shortQuestions={shortQuestions} longQuestions={longQuestions} />}
       {showAnswers && <div style={{ color: '#dc2626', fontWeight: 'bold', fontSize: '10px', marginTop: '4px' }}>⚠ {watermarkText}</div>}
     </div>
